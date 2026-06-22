@@ -782,7 +782,13 @@
             nasdaqCard.className = `card card-nasdaq ${ms.status}`;
 
             // Price from meta (most recent)
-            nasdaqPrevClose = meta.previousClose;
+            // During pre/post/closed: regularMarketPrice = last session close (our prev close)
+            // During regular hours: previousClose = yesterday's close (correct)
+            if (ms.status === 'market') {
+                nasdaqPrevClose = meta.previousClose;
+            } else {
+                nasdaqPrevClose = meta.regularMarketPrice || meta.previousClose;
+            }
             const lastPrice = meta.regularMarketPrice;
             if (lastPrice) {
                 const priceEl = document.getElementById('nasdaq-price');
