@@ -354,37 +354,72 @@
 
     // ─── Yahoo Finance API (client-side, replaces yfinance backend) ─────────
     const YAHOO_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart/INTC';
-    // CORS proxy — allorigins handles CORS for us
-    const CORS_PROXY = 'https://api.allorigins.win/raw?url=';
-    let useDirect = false; // will be true if direct works (e.g. localhost)
+    // Use our own Vercel proxy if available, fallback to allorigins
+    let proxyMode = 'unknown'; // 'vercel' | 'direct' | 'allorigins'
 
     async function yahooFetch(url) {
-        // Try direct first (works on localhost)
-        if (useDirect) {
+        // If we know our mode, use it directly
+        if (proxyMode === 'vercel') {
+            return await fetchViaVercel(url);
+        }
+        if (proxyMode === 'direct') {
             const resp = await fetch(url);
             if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
             return resp.json();
         }
-        // Try direct (no proxy)
+        if (proxyMode === 'allorigins') {
+            return await fetchViaAllorigins(url);
+        }
+
+        // First call — detect which mode works
+        // Try our own /api/yahoo proxy (Vercel)
+        try {
+            const data = await fetchViaVercel(url);
+            proxyMode = 'vercel';
+            console.log('Using Vercel proxy');
+            return data;
+        } catch (e) {}
+
+        // Try direct (localhost dev)
         try {
             const resp = await fetch(url);
             if (resp.ok) {
-                useDirect = true;
+                proxyMode = 'direct';
                 return resp.json();
             }
-        } catch (e) { /* CORS blocked, use proxy */ }
-        // Use allorigins proxy
-        const proxyUrl = CORS_PROXY + encodeURIComponent(url);
-        const resp = await fetch(proxyUrl);
-        if (!resp.ok) throw new Error(`Proxy HTTP ${resp.status}`);
+        } catch (e) {}
+
+        // Fallback to allorigins
+        try {
+            const data = await fetchViaAllorigins(url);
+            proxyMode = 'allorigins';
+            console.log('Using allorigins proxy');
+            return data;
+        } catch (e) {}
+
+        throw new Error('All data sources failed');
+    }
+
+    async function fetchViaVercel(url) {
+        // Parse Yahoo URL params and route through our serverless function
+        const params = new URL(url).searchParams;
+        const apiUrl = '/api/yahoo?' + params.toString();
+        const resp = await fetch(apiUrl);
+        if (!resp.ok) throw new Error(`Vercel proxy HTTP ${resp.status}`);
         return resp.json();
     }
 
-    // Interval → period mapping (proxy-friendly: small payloads only)
+    async function fetchViaAllorigins(url) {
+        const resp = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(url));
+        if (!resp.ok) throw new Error(`Allorigins HTTP ${resp.status}`);
+        return resp.json();
+    }
+
+    // Interval → period mapping
     const INTERVAL_PERIODS = {
-        '1m': '1d', '2m': '1d', '5m': '1d', '15m': '5d',
-        '30m': '5d', '60m': '1mo', '1h': '1mo',
-        '1d': '1y', '1wk': '5y', '1mo': '5y'
+        '1m': '1d', '2m': '5d', '5m': '5d', '15m': '5d',
+        '30m': '1mo', '60m': '6mo', '1h': '6mo',
+        '1d': '5y', '1wk': 'max', '1mo': 'max'
     };
 
     // ─── Time Formatting ────────────────────────────────────────────────────
