@@ -83,6 +83,7 @@
         @media (max-width: 900px) {
             .cards { grid-template-columns: 1fr; }
             .big-price { font-size: 3rem !important; }
+            .card.focused { order: -1; }
         }
 
         .card {
@@ -91,7 +92,17 @@
             border-radius: 12px;
             padding: 20px 24px;
             text-align: center;
-            transition: border-color 0.3s;
+            transition: all 0.4s ease;
+        }
+
+        .card.focused {
+            transform: scale(1.02);
+            border-width: 2px;
+        }
+        .card:not(.focused) {
+            opacity: 0.5;
+            transform: scale(0.97);
+            filter: brightness(0.8);
         }
 
         .card-nasdaq.market { border-color: var(--green); box-shadow: 0 0 12px rgba(0,200,83,0.1); }
@@ -692,8 +703,16 @@
         document.querySelectorAll('.chart-tabs button').forEach((btn, i) => {
             btn.classList.toggle('active', (i === 0 && tab === 'nasdaq') || (i === 1 && tab === 'hl'));
         });
+        updateCardFocus();
         addSeries();
         loadChartData();
+    }
+
+    function updateCardFocus() {
+        const nc = document.getElementById('nasdaq-card');
+        const hc = document.getElementById('hl-card');
+        nc.classList.toggle('focused', currentTab === 'nasdaq');
+        hc.classList.toggle('focused', currentTab === 'hl');
     }
 
     function setChartType(type) {
@@ -934,6 +953,26 @@
                 `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
                 `<span class="prev-close">Prev Close: $${prevClose.toFixed(2)}</span>`;
         }
+
+        // Real-time chart update from WS tick
+        if (currentTab === 'nasdaq' && mainSeries && chartDataCache.length) {
+            const last = chartDataCache[chartDataCache.length - 1];
+            last.close = price;
+            if (price > last.high) last.high = price;
+            if (price < last.low) last.low = price;
+            if (chartType === 'candles') {
+                mainSeries.update(last);
+            } else {
+                mainSeries.update({ time: last.time, value: price });
+            }
+            // Keep intraday cache in sync
+            if (nasdaqIntradayCache && nasdaqIntradayCache.length) {
+                const lastCached = nasdaqIntradayCache[nasdaqIntradayCache.length - 1];
+                lastCached.close = price;
+                if (price > lastCached.high) lastCached.high = price;
+                if (price < lastCached.low) lastCached.low = price;
+            }
+        }
     }
 
     // ─── Hyperliquid WebSocket ──────────────────────────────────────────────
@@ -1027,6 +1066,7 @@
         document.querySelectorAll('.chart-tabs button').forEach((btn, i) => {
             btn.classList.toggle('active', (i === 0 && currentTab === 'nasdaq') || (i === 1 && currentTab === 'hl'));
         });
+        updateCardFocus();
         createChart();
         fetchNasdaqData();
         fetchHlStats();
