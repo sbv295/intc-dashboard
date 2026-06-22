@@ -790,7 +790,7 @@
 
             // NASDAQ card styling
             const nasdaqCard = document.getElementById('nasdaq-card');
-            nasdaqCard.className = `card card-nasdaq ${ms.status}`;
+            nasdaqCard.className = `card card-nasdaq ${ms.status}${currentTab === 'nasdaq' ? ' focused' : ''}`;
 
             // Price from meta (most recent)
             // During pre/post/closed: regularMarketPrice = last session close (our prev close)
@@ -1087,7 +1087,7 @@
             const badge = document.getElementById('market-badge');
             badge.textContent = ms.label;
             badge.className = `status-badge badge-${ms.status}`;
-            document.getElementById('nasdaq-card').className = `card card-nasdaq ${ms.status}`;
+            document.getElementById('nasdaq-card').className = `card card-nasdaq ${ms.status}${currentTab === 'nasdaq' ? ' focused' : ''}`;
         }, 1000);
     }
 
