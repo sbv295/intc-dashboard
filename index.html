@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTC Dashboard</title>
+    <script src="https://unpkg.com/lightweight-charts@4.1.0/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/protobufjs@7.2.6/dist/protobuf.min.js"></script>
+    <style>
+        :root {
+            --bg: #0f0f14;
+            --surface: #1a1a24;
+            --surface2: #22222e;
+            --border: #2a2a3a;
+            --text: #e8e8f0;
+            --text-dim: #888899;
+            --green: #00c853;
+            --red: #ff1744;
+            --cyan: #00bcd4;
+            --amber: #ffc107;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 16px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header h1 img {
+            height: 2.5em;
+            vertical-align: middle;
+        }
+
+        .header .time-display {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            text-align: right;
+            line-height: 1.6;
+        }
+
+        .status-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 3px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .badge-market { background: #1b3a1b; color: var(--green); }
+        .badge-premarket, .badge-postmarket { background: #3a351b; color: var(--amber); }
+        .badge-closed { background: #2a2a2a; color: #888; }
+
+        /* ─── Price Cards ─────────────────────────────────────── */
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 900px) {
+            .cards { grid-template-columns: 1fr; }
+            .big-price { font-size: 3rem !important; }
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            text-align: center;
+            transition: border-color 0.3s;
+        }
+
+        .card-nasdaq.market { border-color: var(--green); box-shadow: 0 0 12px rgba(0,200,83,0.1); }
+        .card-nasdaq.premarket, .card-nasdaq.postmarket { border-color: var(--amber); box-shadow: 0 0 8px rgba(255,193,7,0.1); }
+        .card-nasdaq.closed { border-color: var(--border); }
+
+        .card-hl {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border-color: #0f3460;
+        }
+
+        .source-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-dim);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .source-label .status-badge {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .big-price {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin: 4px 0;
+            transition: color 0.3s;
+        }
+
+        .price-flash-up { animation: flashGreen 1.2s ease-out; }
+        .price-flash-down { animation: flashRed 1.2s ease-out; }
+
+        @keyframes flashGreen {
+            0% { color: var(--green); text-shadow: 0 0 24px rgba(0,200,83,0.6); }
+            50% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.3); }
+            100% { color: var(--text); text-shadow: none; }
+        }
+        @keyframes flashRed {
+            0% { color: var(--red); text-shadow: 0 0 24px rgba(255,23,68,0.6); }
+            50% { color: var(--red); text-shadow: 0 0 12px rgba(255,23,68,0.3); }
+            100% { color: var(--text); text-shadow: none; }
+        }
+
+        .change { font-size: 1.1rem; font-weight: 600; margin: 4px 0; }
+        .change.up { color: var(--green); }
+        .change.down { color: var(--red); }
+        .prev-close { font-size: 0.8rem; color: var(--text-dim); }
+
+        .price-meta {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin: 6px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .price-meta .change { margin: 0; }
+        .price-meta .prev-close { margin: 0; }
+
+        .session-details {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
+            line-height: 2;
+            text-align: left;
+        }
+        .session-details b { color: var(--text); }
+
+        /* ─── Chart Section ───────────────────────────────────── */
+        .chart-section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .chart-controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .chart-controls label {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 2px;
+            background: var(--bg);
+            border-radius: 6px;
+            padding: 2px;
+        }
+
+        .btn-group button {
+            background: none;
+            border: none;
+            color: var(--text-dim);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-group button.active {
+            background: var(--surface2);
+            color: var(--text);
+        }
+
+        .btn-group button:hover:not(.active) {
+            color: var(--text);
+        }
+
+        .chart-tabs {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 12px;
+        }
+
+        .chart-tabs button {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            padding: 8px 20px;
+            border-radius: 6px 6px 0 0;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chart-tabs button.active {
+            background: var(--surface);
+            color: var(--text);
+            border-bottom-color: var(--surface);
+        }
+
+        #chart-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            #chart-container { height: 280px; }
+            body { padding: 8px; }
+            .header h1 { font-size: 1.1rem; }
+            .header h1 img { height: 1.5em; }
+            .card { padding: 14px 16px; }
+            .big-price { font-size: 2.5rem !important; }
+            .chart-controls { gap: 6px; }
+            .chart-controls label { font-size: 0.65rem; }
+            .btn-group button { padding: 4px 8px; font-size: 0.65rem; }
+            .source-label { font-size: 0.7rem; }
+            .price-meta { font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <h1><img src="Intel_logo.png" alt="Intel">INTC — Intel Corporation</h1>
+        </div>
+        <div class="time-display" id="time-display">--</div>
+    </div>
+
+    <!-- Price Cards -->
+    <div class="cards">
+        <div class="card card-nasdaq closed" id="nasdaq-card">
+            <div class="source-label">NASDAQ: INTC (Live) <span class="status-badge badge-closed" id="market-badge">Loading...</span></div>
+            <div class="big-price" id="nasdaq-price">—</div>
+            <div class="price-meta" id="nasdaq-meta"></div>
+            <div class="session-details" id="nasdaq-sessions"></div>
+        </div>
+        <div class="card card-hl" id="hl-card">
+            <div class="source-label">Hyperliquid 24/7 (xyz:INTC perp)</div>
+            <div class="big-price" id="hl-price">—</div>
+            <div class="change" id="hl-change"></div>
+            <div class="session-details" id="hl-details"></div>
+        </div>
+    </div>
+
+    <!-- Chart Section -->
+    <div class="chart-section">
+        <div class="chart-tabs">
+            <button class="active" onclick="switchTab('nasdaq')">NASDAQ</button>
+            <button onclick="switchTab('hl')">Hyperliquid</button>
+        </div>
+        <div class="chart-controls">
+            <label>Type:</label>
+            <div class="btn-group" id="chart-type-group">
+                <button class="active" onclick="setChartType('line')">Line</button>
+                <button onclick="setChartType('area')">Area</button>
+                <button onclick="setChartType('candles')">Candles</button>
+            </div>
+            <label>Range:</label>
+            <div class="btn-group" id="range-group">
+                <button class="active" onclick="setChartRange('1d')">1D</button>
+                <button onclick="setChartRange('1mo')">1M</button>
+                <button onclick="setChartRange('1y')">1Y</button>
+                <button onclick="setChartRange('5y')">5Y</button>
+                <button onclick="setChartRange('max')">All</button>
+            </div>
+            <label>Interval:</label>
+            <div class="btn-group" id="interval-group">
+                <button onclick="setChartInterval('1m')">1m</button>
+                <button class="active" onclick="setChartInterval('5m')">5m</button>
+                <button onclick="setChartInterval('15m')">15m</button>
+                <button onclick="setChartInterval('30m')">30m</button>
+                <button onclick="setChartInterval('1h')">1h</button>
+                <button onclick="setChartInterval('1d')">1d</button>
+                <button onclick="setChartInterval('1wk')">1wk</button>
+            </div>
+            <label>Timezone:</label>
+            <div class="btn-group" id="tz-group">
+                <button class="active" onclick="setChartTimezone('IST')">IST</button>
+                <button onclick="setChartTimezone('ET')">ET</button>
+            </div>
+        </div>
+        <div id="chart-container"></div>
+    </div>
+
+    <script>
+    // ─── State ──────────────────────────────────────────────────────────────
+    let currentTab = 'nasdaq';
+    let chartType = 'line';
+    let chartInterval = '5m';
+    let chartRange = '1d';
+    let chart = null;
+    let mainSeries = null;
+    let prevNasdaqPrice = null;
+    let prevYahooPrice = null;
+    let prevHlPrice = null;
+    let nasdaqPrevClose = null;
+    let hlWs = null;
+    let yahooWs = null;
+    let hlReconnectTimer = null;
+    let yahooReconnectTimer = null;
+    let shouldFitContent = true;
+    let chartDataCache = [];
+    let chartTimezone = 'IST';
+    let tradingPeriods = null; // from Yahoo API meta
+
+    // ─── Yahoo Finance API (client-side, replaces yfinance backend) ─────────
+    const YAHOO_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart/INTC';
+    // CORS proxy fallback — only used if direct call fails
+    const CORS_PROXIES = [
+        '', // try direct first
+        'https://corsproxy.io/?url=',
+    ];
+    let activeProxy = '';
+    let proxyTested = false;
+
+    async function yahooFetch(url) {
+        if (proxyTested) {
+            const resp = await fetch(activeProxy + url);
+            if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+            return resp.json();
+        }
+        // First call — test proxies
+        for (const proxy of CORS_PROXIES) {
+            try {
+                const resp = await fetch(proxy + url);
+                if (resp.ok) {
+                    const data = await resp.json();
+                    activeProxy = proxy;
+                    proxyTested = true;
+                    return data;
+                }
+            } catch (e) { /* try next */ }
+        }
+        throw new Error('All proxies failed');
+    }
+
+    // Interval → max period mapping (same as yfinance limits)
+    const INTERVAL_PERIODS = {
+        '1m': '5d', '2m': '5d', '5m': '60d', '15m': '60d',
+        '30m': '60d', '60m': '730d', '1h': '730d',
+        '1d': 'max', '1wk': 'max', '1mo': 'max'
+    };
+
+    // ─── Time Formatting ────────────────────────────────────────────────────
+    function formatTimeET(date) {
+        return date.toLocaleString('en-US', {
+            timeZone: 'America/New_York',
+            hour: 'numeric', minute: '2-digit', second: '2-digit',
+            hour12: true
+        }) + ' ET';
+    }
+
+    function formatTimeIST(date) {
+        return date.toLocaleString('en-US', {
+            timeZone: 'Asia/Kolkata',
+            hour: 'numeric', minute: '2-digit', second: '2-digit',
+            hour12: true
+        }) + ' IST';
+    }
+
+    function formatDualTime(date) {
+        return formatTimeIST(date) + '<br>' + formatTimeET(date);
+    }
+
+    function getMarketStatus() {
+        const now = new Date();
+        const etStr = now.toLocaleString('en-US', { timeZone: 'America/New_York', hour12: false });
+        const etDate = new Date(etStr);
+        const h = etDate.getHours();
+        const m = etDate.getMinutes();
+        const mins = h * 60 + m;
+        const day = etDate.getDay(); // 0=Sun, 6=Sat
+
+        if (day === 0 || day === 6) return { status: 'closed', label: 'Closed' };
+        if (mins >= 240 && mins < 570) return { status: 'premarket', label: 'Pre-Market' };
+        if (mins >= 570 && mins < 960) return { status: 'market', label: 'Market Open' };
+        if (mins >= 960 && mins < 1200) return { status: 'postmarket', label: 'Post-Market' };
+        return { status: 'closed', label: 'Closed' };
+    }
+
+    // ─── Chart Setup ────────────────────────────────────────────────────────
+    function getChartTZ() {
+        return chartTimezone === 'IST' ? 'Asia/Kolkata' : 'America/New_York';
+    }
+
+    function setChartTimezone(tz) {
+        chartTimezone = tz;
+        document.querySelectorAll('#tz-group button').forEach(b => {
+            b.classList.toggle('active', b.textContent === tz);
+        });
+        updateChartTimeOptions();
+    }
+
+    function getTickFormatter() {
+        return (time) => {
+            const d = new Date(time * 1000);
+            const tz = getChartTZ();
+            if (chartRange === '1d' || chartRange === '5d') {
+                return d.toLocaleString('en-US', { timeZone: tz, hour: 'numeric', minute: '2-digit', hour12: true });
+            } else if (chartRange === '1mo') {
+                return d.toLocaleString('en-US', { timeZone: tz, month: 'short', day: 'numeric' });
+            } else if (chartRange === '1y') {
+                return d.toLocaleString('en-US', { timeZone: tz, month: 'short', day: 'numeric', year: '2-digit' });
+            } else {
+                return d.toLocaleString('en-US', { timeZone: tz, month: 'short', year: 'numeric' });
+            }
+        };
+    }
+
+    function getCrosshairFormatter() {
+        return (time) => {
+            const d = new Date(time * 1000);
+            const tz = getChartTZ();
+            const label = chartTimezone === 'IST' ? 'IST' : 'ET';
+            if (chartRange === '1d' || chartRange === '5d') {
+                return d.toLocaleString('en-US', { timeZone: tz, hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }) + ' ' + label;
+            } else {
+                return d.toLocaleString('en-US', { timeZone: tz, month: 'short', day: 'numeric', year: 'numeric' });
+            }
+        };
+    }
+
+    function createChart() {
+        const container = document.getElementById('chart-container');
+        container.innerHTML = '';
+
+        chart = LightweightCharts.createChart(container, {
+            width: container.clientWidth,
+            height: container.clientHeight,
+            layout: {
+                background: { type: 'solid', color: '#1a1a24' },
+                textColor: '#888899',
+            },
+            grid: {
+                vertLines: { color: '#2a2a3a' },
+                horzLines: { color: '#2a2a3a' },
+            },
+            crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
+            rightPriceScale: { borderColor: '#2a2a3a' },
+            timeScale: {
+                borderColor: '#2a2a3a',
+                timeVisible: chartRange === '1d' || chartRange === '5d',
+                secondsVisible: false,
+                tickMarkFormatter: getTickFormatter(),
+            },
+            localization: {
+                timeFormatter: getCrosshairFormatter(),
+            },
+        });
+
+        const ro = new ResizeObserver(() => {
+            chart.applyOptions({ width: container.clientWidth });
+        });
+        ro.observe(container);
+
+        addSeries();
+    }
+
+    function updateChartTimeOptions() {
+        if (!chart) return;
+        chart.applyOptions({
+            timeScale: {
+                timeVisible: chartRange === '1d' || chartRange === '5d',
+                tickMarkFormatter: getTickFormatter(),
+            },
+            localization: {
+                timeFormatter: getCrosshairFormatter(),
+            },
+        });
+    }
+
+    function addSeries() {
+        if (mainSeries) {
+            chart.removeSeries(mainSeries);
+            mainSeries = null;
+        }
+
+        const color = currentTab === 'nasdaq' ? '#00bcd4' : '#00e676';
+
+        if (chartType === 'line') {
+            mainSeries = chart.addLineSeries({ color: color, lineWidth: 2 });
+        } else if (chartType === 'area') {
+            mainSeries = chart.addAreaSeries({
+                lineColor: color,
+                topColor: currentTab === 'nasdaq' ? 'rgba(0,188,212,0.2)' : 'rgba(0,230,118,0.2)',
+                bottomColor: 'rgba(0,0,0,0)',
+                lineWidth: 2,
+            });
+        } else if (chartType === 'candles') {
+            mainSeries = chart.addCandlestickSeries({
+                upColor: '#00c853', downColor: '#ff1744',
+                borderUpColor: '#00c853', borderDownColor: '#ff1744',
+                wickUpColor: '#00c853', wickDownColor: '#ff1744',
+            });
+        }
+    }
+
+    // ─── Chart Data Loading ─────────────────────────────────────────────────
+    async function loadChartData() {
+        if (currentTab === 'nasdaq') {
+            await loadNasdaqChart();
+        } else {
+            await loadHlChart();
+        }
+    }
+
+    async function loadNasdaqChart() {
+        try {
+            const period = INTERVAL_PERIODS[chartInterval] || '5d';
+            let url;
+            if (period === 'max') {
+                url = `${YAHOO_BASE}?interval=${chartInterval}&period1=0&period2=9999999999`;
+            } else {
+                url = `${YAHOO_BASE}?interval=${chartInterval}&range=${period}`;
+            }
+
+            const json = await yahooFetch(url);
+            const result = json.chart.result[0];
+            const timestamps = result.timestamp;
+            const quote = result.indicators.quote[0];
+
+            if (!timestamps || !timestamps.length) return;
+
+            // Also extract meta for price/prevClose
+            if (result.meta) {
+                nasdaqPrevClose = result.meta.previousClose || nasdaqPrevClose;
+                tradingPeriods = result.meta.currentTradingPeriod;
+            }
+
+            // Build candle data
+            const data = [];
+            for (let i = 0; i < timestamps.length; i++) {
+                const o = quote.open[i], h = quote.high[i], l = quote.low[i], c = quote.close[i];
+                if (o == null || h == null || l == null || c == null) continue;
+                data.push({ time: timestamps[i], open: o, high: h, low: l, close: c, volume: quote.volume ? quote.volume[i] : 0 });
+            }
+
+            if (!data.length) return;
+            chartDataCache = data;
+
+            if (chartType === 'candles') {
+                mainSeries.setData(data);
+            } else {
+                const lineData = data.map(d => ({ time: d.time, value: d.close }));
+                mainSeries.setData(lineData);
+            }
+            if (shouldFitContent) { applyVisibleRange(); shouldFitContent = false; }
+        } catch (e) {
+            console.error('Failed to load NASDAQ chart:', e);
+        }
+    }
+
+    function applyVisibleRange() {
+        if (!chartDataCache.length) { chart.timeScale().fitContent(); return; }
+
+        const now = Math.floor(Date.now() / 1000);
+        const rangeSeconds = {
+            '1d': 86400,
+            '1mo': 30 * 86400,
+            '1y': 365 * 86400,
+            '5y': 5 * 365 * 86400,
+            'max': null,
+        };
+
+        const seconds = rangeSeconds[chartRange];
+        if (!seconds) {
+            chart.timeScale().fitContent();
+            return;
+        }
+
+        const from = now - seconds;
+        chart.timeScale().setVisibleRange({ from, to: now });
+    }
+
+    async function loadHlChart() {
+        try {
+            const hlInterval = chartInterval === '60m' || chartInterval === '1h' ? '1h' : chartInterval;
+            const now = Date.now();
+            const resp = await fetch('https://api.hyperliquid.xyz/info', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    type: 'candleSnapshot',
+                    req: { coin: 'xyz:INTC', interval: hlInterval, startTime: now - 86400000, endTime: now }
+                })
+            });
+            const candles = await resp.json();
+            if (!candles.length) return;
+
+            if (chartType === 'candles') {
+                const ohlc = candles.map(c => ({
+                    time: Math.floor(parseInt(c.t) / 1000),
+                    open: parseFloat(c.o), high: parseFloat(c.h),
+                    low: parseFloat(c.l), close: parseFloat(c.c),
+                }));
+                mainSeries.setData(ohlc);
+            } else {
+                const lineData = candles.map(c => ({
+                    time: Math.floor(parseInt(c.t) / 1000),
+                    value: parseFloat(c.c),
+                }));
+                mainSeries.setData(lineData);
+            }
+            if (shouldFitContent) { chart.timeScale().fitContent(); shouldFitContent = false; }
+        } catch (e) {
+            console.error('Failed to load HL chart:', e);
+        }
+    }
+
+    // ─── UI Controls ────────────────────────────────────────────────────────
+    function switchTab(tab) {
+        currentTab = tab;
+        shouldFitContent = true;
+        document.querySelectorAll('.chart-tabs button').forEach((btn, i) => {
+            btn.classList.toggle('active', (i === 0 && tab === 'nasdaq') || (i === 1 && tab === 'hl'));
+        });
+        addSeries();
+        loadChartData();
+    }
+
+    function setChartType(type) {
+        chartType = type;
+        shouldFitContent = true;
+        document.querySelectorAll('#chart-type-group button').forEach(btn => {
+            btn.classList.toggle('active', btn.textContent.toLowerCase() === type);
+        });
+        addSeries();
+        loadChartData();
+    }
+
+    function setChartInterval(interval) {
+        chartInterval = interval;
+        shouldFitContent = true;
+        document.querySelectorAll('#interval-group button').forEach(btn => {
+            btn.classList.toggle('active', btn.textContent === interval);
+        });
+        loadChartData();
+    }
+
+    function setChartRange(range) {
+        chartRange = range;
+        document.querySelectorAll('#range-group button').forEach(btn => {
+            const btnRange = btn.textContent === '1D' ? '1d' :
+                            btn.textContent === '1M' ? '1mo' :
+                            btn.textContent === '1Y' ? '1y' :
+                            btn.textContent === '5Y' ? '5y' : 'max';
+            btn.classList.toggle('active', btnRange === range);
+        });
+        const rangeDefaults = { '1d': '5m', '1mo': '15m', '1y': '1d', '5y': '1d', 'max': '1wk' };
+        const newInterval = rangeDefaults[range] || '5m';
+        const intervalChanged = newInterval !== chartInterval;
+        chartInterval = newInterval;
+        document.querySelectorAll('#interval-group button').forEach(btn => {
+            btn.classList.toggle('active', btn.textContent === chartInterval);
+        });
+        updateChartTimeOptions();
+
+        if (intervalChanged) {
+            shouldFitContent = true;
+            loadChartData();
+        } else {
+            applyVisibleRange();
+        }
+    }
+
+    // ─── NASDAQ Data (from Yahoo chart API — replaces yfinance backend) ─────
+    function formatVol(vol) {
+        if (vol === 0 || vol === null || vol === undefined) return 'N/A';
+        if (vol >= 1000000) return (vol / 1000000).toFixed(2) + 'M';
+        if (vol >= 1000) return (vol / 1000).toFixed(1) + 'K';
+        return vol.toString();
+    }
+
+    async function fetchNasdaqData() {
+        try {
+            // Fetch intraday data (5m interval, 1d range) for session breakdown
+            const url = `${YAHOO_BASE}?interval=5m&range=1d&includePrePost=true`;
+            const json = await yahooFetch(url);
+            const result = json.chart.result[0];
+            const meta = result.meta;
+            const timestamps = result.timestamp || [];
+            const quote = result.indicators.quote[0];
+
+            // Time display
+            const now = new Date();
+            document.getElementById('time-display').innerHTML = formatDualTime(now);
+
+            // Market status
+            const ms = getMarketStatus();
+            const badge = document.getElementById('market-badge');
+            badge.textContent = ms.label;
+            badge.className = `status-badge badge-${ms.status}`;
+
+            // NASDAQ card styling
+            const nasdaqCard = document.getElementById('nasdaq-card');
+            nasdaqCard.className = `card card-nasdaq ${ms.status}`;
+
+            // Price from meta (most recent)
+            nasdaqPrevClose = meta.previousClose;
+            const lastPrice = meta.regularMarketPrice;
+            if (lastPrice) {
+                const priceEl = document.getElementById('nasdaq-price');
+                if (prevNasdaqPrice !== null && lastPrice !== prevNasdaqPrice) {
+                    priceEl.classList.remove('price-flash-up', 'price-flash-down');
+                    void priceEl.offsetWidth;
+                    priceEl.classList.add(lastPrice > prevNasdaqPrice ? 'price-flash-up' : 'price-flash-down');
+                }
+                prevNasdaqPrice = lastPrice;
+                priceEl.textContent = `$${lastPrice.toFixed(2)}`;
+
+                // Change + prev close
+                if (meta.previousClose) {
+                    const change = lastPrice - meta.previousClose;
+                    const pct = (change / meta.previousClose) * 100;
+                    const sign = change >= 0 ? '+' : '';
+                    const cls = change >= 0 ? 'up' : 'down';
+                    document.getElementById('nasdaq-meta').innerHTML =
+                        `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
+                        `<span class="prev-close">Prev Close: $${meta.previousClose.toFixed(2)}</span>`;
+                }
+            }
+
+            // Session breakdown from intraday candles
+            const tp = meta.currentTradingPeriod;
+            let preHigh = -Infinity, preLow = Infinity, preVol = 0;
+            let regHigh = -Infinity, regLow = Infinity, regVol = 0;
+            let postHigh = -Infinity, postLow = Infinity, postVol = 0;
+            let hasPre = false, hasReg = false, hasPost = false;
+
+            for (let i = 0; i < timestamps.length; i++) {
+                const t = timestamps[i];
+                const h = quote.high[i], l = quote.low[i], v = quote.volume ? quote.volume[i] : 0;
+                if (h == null || l == null) continue;
+
+                if (tp && t >= tp.pre.start && t < tp.regular.start) {
+                    hasPre = true;
+                    preHigh = Math.max(preHigh, h);
+                    preLow = Math.min(preLow, l);
+                    preVol += v || 0;
+                } else if (tp && t >= tp.regular.start && t < tp.post.start) {
+                    hasReg = true;
+                    regHigh = Math.max(regHigh, h);
+                    regLow = Math.min(regLow, l);
+                    regVol += v || 0;
+                } else if (tp && t >= tp.post.start && t < tp.post.end) {
+                    hasPost = true;
+                    postHigh = Math.max(postHigh, h);
+                    postLow = Math.min(postLow, l);
+                    postVol += v || 0;
+                }
+            }
+
+            let html = '';
+            if (hasPre) html += `<b>Pre-Market:</b> High $${preHigh.toFixed(2)} / Low $${preLow.toFixed(2)} · Volume: ${formatVol(preVol)}<br>`;
+            if (hasReg) html += `<b>Regular Market:</b> High $${regHigh.toFixed(2)} / Low $${regLow.toFixed(2)} · Volume: ${formatVol(regVol)}<br>`;
+            if (hasPost) html += `<b>Post-Market:</b> High $${postHigh.toFixed(2)} / Low $${postLow.toFixed(2)} · Volume: ${formatVol(postVol)}`;
+            document.getElementById('nasdaq-sessions').innerHTML = html;
+
+            // Sync chart
+            if (currentTab === 'nasdaq') loadChartData();
+
+        } catch (e) {
+            console.error('NASDAQ fetch error:', e);
+            // Still update time even if API fails
+            document.getElementById('time-display').innerHTML = formatDualTime(new Date());
+        }
+    }
+
+    // ─── Yahoo Finance WebSocket (live streaming) ───────────────────────────
+    const YahooProto = `
+        syntax = "proto3";
+        message PricingData {
+            string id = 1;
+            float price = 2;
+            int64 time = 3;
+            string exchange = 4;
+            string quoteType = 5;
+            float changePercent = 8;
+            float dayVolume = 9;
+            float dayHigh = 10;
+            float dayLow = 11;
+            float change = 12;
+            float previousClose = 15;
+            string marketHours = 20;
+        }
+    `;
+
+    let yahooRoot = null;
+    let YahooPricingData = null;
+
+    function initYahooProto() {
+        yahooRoot = protobuf.parse(YahooProto).root;
+        YahooPricingData = yahooRoot.lookupType('PricingData');
+    }
+
+    function connectYahooWebSocket() {
+        if (yahooWs && yahooWs.readyState === WebSocket.OPEN) return;
+
+        yahooWs = new WebSocket('wss://streamer.finance.yahoo.com/');
+
+        yahooWs.onopen = () => {
+            yahooWs.send(JSON.stringify({ subscribe: ['INTC'] }));
+        };
+
+        yahooWs.onmessage = (event) => {
+            try {
+                const bytes = Uint8Array.from(atob(event.data), c => c.charCodeAt(0));
+                const decoded = YahooPricingData.decode(bytes);
+                if (decoded.price && decoded.price > 0) {
+                    updateYahooPrice(decoded);
+                }
+            } catch (e) {}
+        };
+
+        yahooWs.onclose = () => {
+            yahooReconnectTimer = setTimeout(connectYahooWebSocket, 5000);
+        };
+
+        yahooWs.onerror = () => { yahooWs.close(); };
+    }
+
+    function updateYahooPrice(data) {
+        const price = data.price;
+        const priceEl = document.getElementById('nasdaq-price');
+
+        if (prevYahooPrice !== null && price !== prevYahooPrice) {
+            priceEl.classList.remove('price-flash-up', 'price-flash-down');
+            void priceEl.offsetWidth;
+            priceEl.classList.add(price > prevYahooPrice ? 'price-flash-up' : 'price-flash-down');
+        }
+        prevYahooPrice = price;
+        priceEl.textContent = `$${price.toFixed(2)}`;
+
+        const prevClose = nasdaqPrevClose;
+        if (prevClose) {
+            const change = price - prevClose;
+            const pct = (change / prevClose) * 100;
+            const sign = change >= 0 ? '+' : '';
+            const cls = change >= 0 ? 'up' : 'down';
+            document.getElementById('nasdaq-meta').innerHTML =
+                `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
+                `<span class="prev-close">Prev Close: $${prevClose.toFixed(2)}</span>`;
+        }
+    }
+
+    // ─── Hyperliquid WebSocket ──────────────────────────────────────────────
+    function connectHlWebSocket() {
+        if (hlWs && hlWs.readyState === WebSocket.OPEN) return;
+
+        hlWs = new WebSocket('wss://api.hyperliquid.xyz/ws');
+
+        hlWs.onopen = () => {
+            hlWs.send(JSON.stringify({
+                method: 'subscribe',
+                subscription: { type: 'l2Book', coin: 'xyz:INTC' }
+            }));
+        };
+
+        hlWs.onmessage = (event) => {
+            try {
+                const msg = JSON.parse(event.data);
+                if (msg.channel === 'l2Book' && msg.data) {
+                    const levels = msg.data.levels;
+                    if (levels && levels[0] && levels[1] && levels[0].length && levels[1].length) {
+                        const bid = parseFloat(levels[0][0].px);
+                        const ask = parseFloat(levels[1][0].px);
+                        const mid = (bid + ask) / 2;
+                        updateHlPrice(mid);
+                    }
+                }
+            } catch (e) {}
+        };
+
+        hlWs.onclose = () => {
+            hlReconnectTimer = setTimeout(connectHlWebSocket, 3000);
+        };
+
+        hlWs.onerror = () => { hlWs.close(); };
+    }
+
+    function updateHlPrice(price) {
+        const priceEl = document.getElementById('hl-price');
+
+        if (prevHlPrice !== null && price !== prevHlPrice) {
+            priceEl.classList.remove('price-flash-up', 'price-flash-down');
+            void priceEl.offsetWidth;
+            priceEl.classList.add(price > prevHlPrice ? 'price-flash-up' : 'price-flash-down');
+        }
+        prevHlPrice = price;
+        priceEl.textContent = `$${price.toFixed(2)}`;
+
+        if (nasdaqPrevClose) {
+            const change = price - nasdaqPrevClose;
+            const pct = (change / nasdaqPrevClose) * 100;
+            const sign = change >= 0 ? '+' : '';
+            const changeEl = document.getElementById('hl-change');
+            changeEl.textContent = `${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%) vs NASDAQ close`;
+            changeEl.className = `change ${change >= 0 ? 'up' : 'down'}`;
+        }
+    }
+
+    async function fetchHlStats() {
+        try {
+            const now = Date.now();
+            const resp = await fetch('https://api.hyperliquid.xyz/info', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    type: 'candleSnapshot',
+                    req: { coin: 'xyz:INTC', interval: '1h', startTime: now - 86400000, endTime: now }
+                })
+            });
+            const candles = await resp.json();
+            if (candles.length) {
+                const high = Math.max(...candles.map(c => parseFloat(c.h)));
+                const low = Math.min(...candles.map(c => parseFloat(c.l)));
+                const vol = candles.reduce((sum, c) => sum + parseFloat(c.v || 0), 0);
+                document.getElementById('hl-details').innerHTML =
+                    `<b>24 Hour:</b> High $${high.toFixed(2)} / Low $${low.toFixed(2)} · Volume: ${formatVol(vol)}`;
+            }
+        } catch (e) {}
+    }
+
+    // ─── Init ───────────────────────────────────────────────────────────────
+    function init() {
+        initYahooProto();
+        createChart();
+        fetchNasdaqData();
+        fetchHlStats();
+        connectHlWebSocket();
+        connectYahooWebSocket();
+
+        // Poll NASDAQ data every 30s (API rate-friendly, WS handles live price)
+        setInterval(fetchNasdaqData, 30000);
+        // Refresh HL stats every 15s
+        setInterval(fetchHlStats, 15000);
+        // Refresh HL chart every 5s (only when on HL tab)
+        setInterval(() => { if (currentTab === 'hl') loadChartData(); }, 5000);
+        // Update time display every second
+        setInterval(() => {
+            document.getElementById('time-display').innerHTML = formatDualTime(new Date());
+            // Update market status badge
+            const ms = getMarketStatus();
+            const badge = document.getElementById('market-badge');
+            badge.textContent = ms.label;
+            badge.className = `status-badge badge-${ms.status}`;
+            document.getElementById('nasdaq-card').className = `card card-nasdaq ${ms.status}`;
+        }, 1000);
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
