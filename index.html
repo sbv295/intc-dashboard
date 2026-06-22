@@ -354,43 +354,37 @@
 
     // ─── Yahoo Finance API (client-side, replaces yfinance backend) ─────────
     const YAHOO_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart/INTC';
-    // CORS proxy list — tries each until one works
-    const CORS_PROXIES = [
-        '', // try direct first
-        'https://api.allorigins.win/raw?url=',
-    ];
-    let activeProxy = '';
-    let proxyTested = false;
+    // CORS proxy — allorigins handles CORS for us
+    const CORS_PROXY = 'https://api.allorigins.win/raw?url=';
+    let useDirect = false; // will be true if direct works (e.g. localhost)
 
     async function yahooFetch(url) {
-        if (proxyTested) {
-            const finalUrl = activeProxy ? activeProxy + encodeURIComponent(url) : url;
-            const resp = await fetch(finalUrl);
+        // Try direct first (works on localhost)
+        if (useDirect) {
+            const resp = await fetch(url);
             if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
             return resp.json();
         }
-        // First call — test proxies
-        for (const proxy of CORS_PROXIES) {
-            try {
-                const finalUrl = proxy ? proxy + encodeURIComponent(url) : url;
-                const resp = await fetch(finalUrl);
-                if (resp.ok) {
-                    const data = await resp.json();
-                    activeProxy = proxy;
-                    proxyTested = true;
-                    console.log('Using CORS proxy:', proxy || 'direct');
-                    return data;
-                }
-            } catch (e) { /* try next */ }
-        }
-        throw new Error('All proxies failed');
+        // Try direct (no proxy)
+        try {
+            const resp = await fetch(url);
+            if (resp.ok) {
+                useDirect = true;
+                return resp.json();
+            }
+        } catch (e) { /* CORS blocked, use proxy */ }
+        // Use allorigins proxy
+        const proxyUrl = CORS_PROXY + encodeURIComponent(url);
+        const resp = await fetch(proxyUrl);
+        if (!resp.ok) throw new Error(`Proxy HTTP ${resp.status}`);
+        return resp.json();
     }
 
-    // Interval → max period mapping (same as yfinance limits)
+    // Interval → period mapping (proxy-friendly: small payloads only)
     const INTERVAL_PERIODS = {
-        '1m': '5d', '2m': '5d', '5m': '60d', '15m': '60d',
-        '30m': '60d', '60m': '730d', '1h': '730d',
-        '1d': 'max', '1wk': 'max', '1mo': 'max'
+        '1m': '1d', '2m': '1d', '5m': '1d', '15m': '5d',
+        '30m': '5d', '60m': '1mo', '1h': '1mo',
+        '1d': '1y', '1wk': '5y', '1mo': '5y'
     };
 
     // ─── Time Formatting ────────────────────────────────────────────────────
@@ -556,15 +550,19 @@
         }
     }
 
+    // Cache for nasdaq intraday data (from fetchNasdaqData)
+    let nasdaqIntradayCache = null;
+
     async function loadNasdaqChart() {
         try {
-            const period = INTERVAL_PERIODS[chartInterval] || '5d';
-            let url;
-            if (period === 'max') {
-                url = `${YAHOO_BASE}?interval=${chartInterval}&period1=0&period2=9999999999`;
-            } else {
-                url = `${YAHOO_BASE}?interval=${chartInterval}&range=${period}`;
+            // For default 5m/1d, reuse data from fetchNasdaqData if available
+            if (chartInterval === '5m' && nasdaqIntradayCache) {
+                renderChartData(nasdaqIntradayCache);
+                return;
             }
+
+            const period = INTERVAL_PERIODS[chartInterval] || '1d';
+            const url = `${YAHOO_BASE}?interval=${chartInterval}&range=${period}&includePrePost=true`;
 
             const json = await yahooFetch(url);
             const result = json.chart.result[0];
@@ -573,13 +571,11 @@
 
             if (!timestamps || !timestamps.length) return;
 
-            // Also extract meta for price/prevClose
             if (result.meta) {
                 nasdaqPrevClose = result.meta.previousClose || nasdaqPrevClose;
                 tradingPeriods = result.meta.currentTradingPeriod;
             }
 
-            // Build candle data
             const data = [];
             for (let i = 0; i < timestamps.length; i++) {
                 const o = quote.open[i], h = quote.high[i], l = quote.low[i], c = quote.close[i];
@@ -588,18 +584,21 @@
             }
 
             if (!data.length) return;
-            chartDataCache = data;
-
-            if (chartType === 'candles') {
-                mainSeries.setData(data);
-            } else {
-                const lineData = data.map(d => ({ time: d.time, value: d.close }));
-                mainSeries.setData(lineData);
-            }
-            if (shouldFitContent) { applyVisibleRange(); shouldFitContent = false; }
+            renderChartData(data);
         } catch (e) {
             console.error('Failed to load NASDAQ chart:', e);
         }
+    }
+
+    function renderChartData(data) {
+        chartDataCache = data;
+        if (chartType === 'candles') {
+            mainSeries.setData(data);
+        } else {
+            const lineData = data.map(d => ({ time: d.time, value: d.close }));
+            mainSeries.setData(lineData);
+        }
+        if (shouldFitContent) { applyVisibleRange(); shouldFitContent = false; }
     }
 
     function applyVisibleRange() {
@@ -779,10 +778,16 @@
             let postHigh = -Infinity, postLow = Infinity, postVol = 0;
             let hasPre = false, hasReg = false, hasPost = false;
 
+            // Also build chart data cache from this response
+            const chartData = [];
             for (let i = 0; i < timestamps.length; i++) {
                 const t = timestamps[i];
-                const h = quote.high[i], l = quote.low[i], v = quote.volume ? quote.volume[i] : 0;
+                const o = quote.open[i], h = quote.high[i], l = quote.low[i], c = quote.close[i];
+                const v = quote.volume ? quote.volume[i] : 0;
                 if (h == null || l == null) continue;
+                if (o != null && c != null) {
+                    chartData.push({ time: t, open: o, high: h, low: l, close: c, volume: v });
+                }
 
                 if (tp && t >= tp.pre.start && t < tp.regular.start) {
                     hasPre = true;
@@ -807,6 +812,9 @@
             if (hasReg) html += `<b>Regular Market:</b> High $${regHigh.toFixed(2)} / Low $${regLow.toFixed(2)} · Volume: ${formatVol(regVol)}<br>`;
             if (hasPost) html += `<b>Post-Market:</b> High $${postHigh.toFixed(2)} / Low $${postLow.toFixed(2)} · Volume: ${formatVol(postVol)}`;
             document.getElementById('nasdaq-sessions').innerHTML = html;
+
+            // Cache intraday data for chart reuse
+            if (chartData.length) nasdaqIntradayCache = chartData;
 
             // Sync chart
             if (currentTab === 'nasdaq') loadChartData();
