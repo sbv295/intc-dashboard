@@ -354,28 +354,31 @@
 
     // ─── Yahoo Finance API (client-side, replaces yfinance backend) ─────────
     const YAHOO_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart/INTC';
-    // CORS proxy fallback — only used if direct call fails
+    // CORS proxy list — tries each until one works
     const CORS_PROXIES = [
         '', // try direct first
-        'https://corsproxy.io/?url=',
+        'https://api.allorigins.win/raw?url=',
     ];
     let activeProxy = '';
     let proxyTested = false;
 
     async function yahooFetch(url) {
         if (proxyTested) {
-            const resp = await fetch(activeProxy + url);
+            const finalUrl = activeProxy ? activeProxy + encodeURIComponent(url) : url;
+            const resp = await fetch(finalUrl);
             if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
             return resp.json();
         }
         // First call — test proxies
         for (const proxy of CORS_PROXIES) {
             try {
-                const resp = await fetch(proxy + url);
+                const finalUrl = proxy ? proxy + encodeURIComponent(url) : url;
+                const resp = await fetch(finalUrl);
                 if (resp.ok) {
                     const data = await resp.json();
                     activeProxy = proxy;
                     proxyTested = true;
+                    console.log('Using CORS proxy:', proxy || 'direct');
                     return data;
                 }
             } catch (e) { /* try next */ }
