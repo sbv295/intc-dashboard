@@ -1021,13 +1021,17 @@
         prevHlPrice = price;
         priceEl.textContent = `$${price.toFixed(2)}`;
 
-        if (nasdaqPrevClose) {
+        const changeEl = document.getElementById('hl-change');
+        const ms = getMarketStatus();
+        if (nasdaqPrevClose && ms.status === 'closed') {
             const change = price - nasdaqPrevClose;
             const pct = (change / nasdaqPrevClose) * 100;
             const sign = change >= 0 ? '+' : '';
-            const changeEl = document.getElementById('hl-change');
             changeEl.textContent = `${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%) vs NASDAQ close`;
             changeEl.className = `change ${change >= 0 ? 'up' : 'down'}`;
+        } else {
+            changeEl.textContent = '';
+            changeEl.className = 'change';
         }
     }
 
