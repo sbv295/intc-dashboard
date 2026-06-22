@@ -301,7 +301,6 @@
             <label>Type:</label>
             <div class="btn-group" id="chart-type-group">
                 <button class="active" onclick="setChartType('line')">Line</button>
-                <button onclick="setChartType('area')">Area</button>
                 <button onclick="setChartType('candles')">Candles</button>
             </div>
             <label>Range:</label>
@@ -560,13 +559,6 @@
 
         if (chartType === 'line') {
             mainSeries = chart.addLineSeries({ color: color, lineWidth: 2 });
-        } else if (chartType === 'area') {
-            mainSeries = chart.addAreaSeries({
-                lineColor: color,
-                topColor: currentTab === 'nasdaq' ? 'rgba(0,188,212,0.2)' : 'rgba(0,230,118,0.2)',
-                bottomColor: 'rgba(0,0,0,0)',
-                lineWidth: 2,
-            });
         } else if (chartType === 'candles') {
             mainSeries = chart.addCandlestickSeries({
                 upColor: '#00c853', downColor: '#ff1744',
@@ -849,9 +841,9 @@
             }
 
             let html = '';
-            if (hasPre) html += `<b>Pre-Market:</b> High $${preHigh.toFixed(2)} / Low $${preLow.toFixed(2)} · Volume: ${formatVol(preVol)}<br>`;
-            if (hasReg) html += `<b>Regular Market:</b> High $${regHigh.toFixed(2)} / Low $${regLow.toFixed(2)} · Volume: ${formatVol(regVol)}<br>`;
-            if (hasPost) html += `<b>Post-Market:</b> High $${postHigh.toFixed(2)} / Low $${postLow.toFixed(2)} · Volume: ${formatVol(postVol)}`;
+            if (hasPre) html += `<b>Pre:</b> H $${preHigh.toFixed(2)} / L $${preLow.toFixed(2)} · Vol: ${formatVol(preVol)}<br>`;
+            if (hasReg) html += `<b>Regular:</b> H $${regHigh.toFixed(2)} / L $${regLow.toFixed(2)} · Vol: ${formatVol(regVol)}<br>`;
+            if (hasPost) html += `<b>Post:</b> H $${postHigh.toFixed(2)} / L $${postLow.toFixed(2)} · Vol: ${formatVol(postVol)}`;
             document.getElementById('nasdaq-sessions').innerHTML = html;
 
             // Cache intraday data for chart reuse
@@ -1025,6 +1017,16 @@
     // ─── Init ───────────────────────────────────────────────────────────────
     function init() {
         initYahooProto();
+        // Auto-select tab based on market status
+        const ms = getMarketStatus();
+        if (ms.status === 'closed') {
+            currentTab = 'hl';
+        } else {
+            currentTab = 'nasdaq';
+        }
+        document.querySelectorAll('.chart-tabs button').forEach((btn, i) => {
+            btn.classList.toggle('active', (i === 0 && currentTab === 'nasdaq') || (i === 1 && currentTab === 'hl'));
+        });
         createChart();
         fetchNasdaqData();
         fetchHlStats();
