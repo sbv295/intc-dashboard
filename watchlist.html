@@ -199,8 +199,14 @@
             margin-top: 6px;
             padding-top: 6px;
             border-top: 1px solid var(--border);
-            text-align: center;
+            display: flex;
+            justify-content: center;
         }
+        .stock-meta.has-volume {
+            justify-content: space-between;
+        }
+        .stock-meta .meta-vol { display: none; }
+        .stock-meta.has-volume .meta-vol { display: inline; }
 
         .stock-extended {
             font-size: 1.05rem;
@@ -299,7 +305,7 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null };
     });
 
     // ─── Yahoo Finance API ──────────────────────────────────────────────────
@@ -376,7 +382,7 @@
                     </div>` : ''}
                 </div>
                 <div class="stock-extended" id="ext-${id}"></div>
-                <div class="stock-meta" id="mcap-${id}"></div>
+                <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
             </div>
         `;
     }
@@ -483,8 +489,12 @@
                 extEl.innerHTML = '';
             }
 
-            // Meta line
-            // (prev close is now shown inline with % change)
+            // Volume (from chart meta)
+            const vol = meta.regularMarketVolume;
+            if (vol && ms === 'market') {
+                state[stock.ticker].volume = vol;
+                displayVolume(stock.ticker, vol);
+            }
 
         } catch (e) {
             // Silent fail
@@ -533,6 +543,10 @@
                 const decoded = YahooPricingData.decode(bytes);
                 if (decoded.price && decoded.price > 0 && decoded.id) {
                     updateYahooPrice(decoded.id, decoded.price);
+                }
+                if (decoded.dayVolume && decoded.id && getMarketStatus() === 'market') {
+                    state[decoded.id] && (state[decoded.id].volume = decoded.dayVolume);
+                    displayVolume(decoded.id, decoded.dayVolume);
                 }
             } catch (e) {}
         };
@@ -677,6 +691,33 @@
         }));
     }
 
+    function formatVolume(v) {
+        if (v >= 1e9) return `${(v/1e9).toFixed(1)}B`;
+        if (v >= 1e6) return `${(v/1e6).toFixed(1)}M`;
+        if (v >= 1e3) return `${(v/1e3).toFixed(0)}K`;
+        return v.toFixed(0);
+    }
+
+    function displayVolume(ticker, vol) {
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        const _sid = stock ? sid(stock) : ticker;
+        const el = document.getElementById(`vol-${_sid}`);
+        const metaEl = document.getElementById(`meta-${_sid}`);
+        if (!el || !metaEl) return;
+        el.textContent = `Vol: ${formatVolume(vol)}`;
+        metaEl.classList.add('has-volume');
+    }
+
+    function hideAllVolumes() {
+        STOCKS.forEach(s => {
+            const _sid = sid(s);
+            const el = document.getElementById(`vol-${_sid}`);
+            const metaEl = document.getElementById(`meta-${_sid}`);
+            if (el) el.textContent = '';
+            if (metaEl) metaEl.classList.remove('has-volume');
+        });
+    }
+
     function displayMarketCap(ticker, mcap) {
         const stock = STOCKS.find(s => s.ticker === ticker);
         const _sid = stock ? sid(stock) : ticker;
@@ -736,6 +777,8 @@
         document.querySelectorAll('.stock-extended').forEach(el => {
             el.classList.toggle('ext-dimmed', extDim);
         });
+        // Volume: only shown during active market
+        if (ms !== 'market') hideAllVolumes();
     }
 
     document.addEventListener('DOMContentLoaded', init);
