@@ -248,7 +248,7 @@
 
     async function fetchViaVercel(url) {
         const params = new URL(url).searchParams;
-        const ticker = url.match(/chart\/([A-Z]+)/)?.[1] || 'INTC';
+        const ticker = url.match(/(?:chart|quoteSummary)\/([A-Z]+)/)?.[1] || 'INTC';
         const apiUrl = '/api/yahoo?' + params.toString() + '&symbol=' + ticker;
         const resp = await fetch(apiUrl);
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
@@ -576,11 +576,8 @@
     async function fetchAllShares() {
         for (const stock of STOCKS) {
             try {
-                const url = `${YAHOO_BASE}${stock.ticker}?modules=defaultKeyStatistics&symbol=${stock.ticker}`;
-                const apiUrl = '/api/yahoo?modules=defaultKeyStatistics&symbol=' + stock.ticker;
-                const resp = await fetch(apiUrl);
-                if (!resp.ok) continue;
-                const json = await resp.json();
+                const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics`;
+                const json = await yahooFetch(url);
                 const stats = json.quoteSummary?.result?.[0]?.defaultKeyStatistics;
                 const shares = stats?.sharesOutstanding?.raw;
                 if (shares) {
