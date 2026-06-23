@@ -827,53 +827,10 @@
             const lastPrice = meta.regularMarketPrice;
             const extEl = document.getElementById('nasdaq-extended');
 
-            if (lastPrice) {
-                const priceEl = document.getElementById('nasdaq-price');
-
-                // Determine main vs extended price based on market status
-                let mainPrice = lastPrice;
-                let extPrice = null;
-                let extLabel = null;
-                let refPrice = null;
-
-                if (ms.status === 'postmarket' || ms.status === 'closed') {
-                    // Main price = regular close, extended = post-market last price
-                    mainPrice = lastPrice; // regularMarketPrice is regular close
-                    // Post-market price will be extracted from candles below
-                    extLabel = 'Post-Market';
-                    refPrice = lastPrice;
-                } else if (ms.status === 'premarket') {
-                    // Main price = previous close, extended = pre-market last price
-                    mainPrice = meta.previousClose || lastPrice;
-                    extLabel = 'Pre-Market';
-                    refPrice = meta.previousClose;
-                }
-
-                if (prevNasdaqPrice !== null && mainPrice !== prevNasdaqPrice) {
-                    priceEl.classList.remove('price-flash-up', 'price-flash-down');
-                    void priceEl.offsetWidth;
-                    priceEl.classList.add(mainPrice > prevNasdaqPrice ? 'price-flash-up' : 'price-flash-down');
-                }
-                prevNasdaqPrice = mainPrice;
-                priceEl.textContent = `$${mainPrice.toFixed(2)}`;
-
-                // Change + prev close
-                if (meta.previousClose) {
-                    const change = mainPrice - meta.previousClose;
-                    const pct = (change / meta.previousClose) * 100;
-                    const sign = change >= 0 ? '+' : '';
-                    const cls = change >= 0 ? 'up' : 'down';
-                    document.getElementById('nasdaq-meta').innerHTML =
-                        `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
-                        `<span class="prev-close">Prev Close: $${meta.previousClose.toFixed(2)}</span>`;
-                }
-
-                // Extended price will be set after parsing candles (need post/pre last price)
-                // Store for later
-                window._extLabel = extLabel;
-                window._extRefPrice = refPrice;
-                window._msStatus = ms.status;
-            }
+            // We'll determine the true regular session close from candle data later
+            // Store lastPrice temporarily; will be corrected after candle parsing
+            window._yahooLastPrice = lastPrice;
+            window._yahooPrevClose = meta.previousClose;
 
             // Session breakdown from intraday candles
             // Use tradingPeriods (today's actual periods) instead of currentTradingPeriod (which may be tomorrow's)
@@ -926,9 +883,48 @@
             document.getElementById('nasdaq-sessions').innerHTML = html;
 
             // Extended price display (post/pre market last traded price)
+            // Also determine the stable main price from candle data
             const extEl2 = document.getElementById('nasdaq-extended');
-            if (window._msStatus === 'postmarket' || window._msStatus === 'closed') {
-                // Get last post-market candle close
+            const priceEl = document.getElementById('nasdaq-price');
+            const lastPrice = window._yahooLastPrice;
+            const yahooPrevClose = window._yahooPrevClose;
+
+            // Get regular session close from candle data
+            let regularCloseFromCandles = null;
+            if (tp) {
+                for (let i = timestamps.length - 1; i >= 0; i--) {
+                    const t = timestamps[i], c = quote.close[i];
+                    if (c != null && t >= tp.regular.start && t < tp.post.start) {
+                        regularCloseFromCandles = c;
+                        break;
+                    }
+                }
+            }
+
+            if (ms.status === 'postmarket' || ms.status === 'closed') {
+                // Big price = regular close (stable), small = post-market price
+                const mainPrice = regularCloseFromCandles || lastPrice;
+
+                if (prevNasdaqPrice !== null && mainPrice !== prevNasdaqPrice) {
+                    priceEl.classList.remove('price-flash-up', 'price-flash-down');
+                    void priceEl.offsetWidth;
+                    priceEl.classList.add(mainPrice > prevNasdaqPrice ? 'price-flash-up' : 'price-flash-down');
+                }
+                prevNasdaqPrice = mainPrice;
+                priceEl.textContent = `$${mainPrice.toFixed(2)}`;
+
+                // Change vs previous close
+                if (yahooPrevClose) {
+                    const change = mainPrice - yahooPrevClose;
+                    const pct = (change / yahooPrevClose) * 100;
+                    const sign = change >= 0 ? '+' : '';
+                    const cls = change >= 0 ? 'up' : 'down';
+                    document.getElementById('nasdaq-meta').innerHTML =
+                        `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
+                        `<span class="prev-close">Prev Close: $${yahooPrevClose.toFixed(2)}</span>`;
+                }
+
+                // Post-market price (from last post candle)
                 let postLastPrice = null;
                 if (tp) {
                     for (let i = timestamps.length - 1; i >= 0; i--) {
@@ -939,20 +935,36 @@
                         }
                     }
                 }
-                if (postLastPrice && window._extRefPrice) {
-                    const extChange = postLastPrice - window._extRefPrice;
-                    const extPct = (extChange / window._extRefPrice) * 100;
+                if (postLastPrice && mainPrice) {
+                    const extChange = postLastPrice - mainPrice;
+                    const extPct = (extChange / mainPrice) * 100;
                     const extSign = extChange >= 0 ? '+' : '';
                     const extCls = extChange >= 0 ? 'up' : 'down';
                     extEl2.innerHTML =
-                        `<span class="ext-label">${window._extLabel}:</span> ` +
+                        `<span class="ext-label">Post-Market:</span> ` +
                         `<span class="ext-value">$${postLastPrice.toFixed(2)}</span> ` +
                         `<span class="ext-change ${extCls}">${extSign}${extChange.toFixed(2)} (${extSign}${extPct.toFixed(2)}%)</span>`;
                 } else {
                     extEl2.innerHTML = '';
                 }
-            } else if (window._msStatus === 'premarket') {
-                // Get last pre-market candle close
+            } else if (ms.status === 'premarket') {
+                // Big price = previous close (stable), small = pre-market price
+                const mainPrice = yahooPrevClose || lastPrice;
+
+                if (prevNasdaqPrice !== null && mainPrice !== prevNasdaqPrice) {
+                    priceEl.classList.remove('price-flash-up', 'price-flash-down');
+                    void priceEl.offsetWidth;
+                    priceEl.classList.add(mainPrice > prevNasdaqPrice ? 'price-flash-up' : 'price-flash-down');
+                }
+                prevNasdaqPrice = mainPrice;
+                priceEl.textContent = `$${mainPrice.toFixed(2)}`;
+
+                if (yahooPrevClose) {
+                    document.getElementById('nasdaq-meta').innerHTML =
+                        `<span class="prev-close">Prev Close: $${yahooPrevClose.toFixed(2)}</span>`;
+                }
+
+                // Pre-market price (from last pre candle)
                 let preLastPrice = null;
                 if (tp) {
                     for (let i = timestamps.length - 1; i >= 0; i--) {
@@ -963,19 +975,39 @@
                         }
                     }
                 }
-                if (preLastPrice && window._extRefPrice) {
-                    const extChange = preLastPrice - window._extRefPrice;
-                    const extPct = (extChange / window._extRefPrice) * 100;
+                if (preLastPrice && yahooPrevClose) {
+                    const extChange = preLastPrice - yahooPrevClose;
+                    const extPct = (extChange / yahooPrevClose) * 100;
                     const extSign = extChange >= 0 ? '+' : '';
                     const extCls = extChange >= 0 ? 'up' : 'down';
                     extEl2.innerHTML =
-                        `<span class="ext-label">${window._extLabel}:</span> ` +
+                        `<span class="ext-label">Pre-Market:</span> ` +
                         `<span class="ext-value">$${preLastPrice.toFixed(2)}</span> ` +
                         `<span class="ext-change ${extCls}">${extSign}${extChange.toFixed(2)} (${extSign}${extPct.toFixed(2)}%)</span>`;
                 } else {
                     extEl2.innerHTML = '';
                 }
             } else {
+                // Market open — show live price from meta
+                if (lastPrice) {
+                    if (prevNasdaqPrice !== null && lastPrice !== prevNasdaqPrice) {
+                        priceEl.classList.remove('price-flash-up', 'price-flash-down');
+                        void priceEl.offsetWidth;
+                        priceEl.classList.add(lastPrice > prevNasdaqPrice ? 'price-flash-up' : 'price-flash-down');
+                    }
+                    prevNasdaqPrice = lastPrice;
+                    priceEl.textContent = `$${lastPrice.toFixed(2)}`;
+
+                    if (yahooPrevClose) {
+                        const change = lastPrice - yahooPrevClose;
+                        const pct = (change / yahooPrevClose) * 100;
+                        const sign = change >= 0 ? '+' : '';
+                        const cls = change >= 0 ? 'up' : 'down';
+                        document.getElementById('nasdaq-meta').innerHTML =
+                            `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
+                            `<span class="prev-close">Prev Close: $${yahooPrevClose.toFixed(2)}</span>`;
+                    }
+                }
                 extEl2.innerHTML = '';
             }
 
