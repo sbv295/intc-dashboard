@@ -825,7 +825,6 @@
                 nasdaqPrevClose = meta.regularMarketPrice || meta.previousClose;
             }
             const lastPrice = meta.regularMarketPrice;
-            const extEl = document.getElementById('nasdaq-extended');
 
             // We'll determine the true regular session close from candle data later
             // Store lastPrice temporarily; will be corrected after candle parsing
@@ -886,7 +885,7 @@
             // Also determine the stable main price from candle data
             const extEl2 = document.getElementById('nasdaq-extended');
             const priceEl = document.getElementById('nasdaq-price');
-            const lastPrice = window._yahooLastPrice;
+            const mainLastPrice = window._yahooLastPrice;
             const yahooPrevClose = window._yahooPrevClose;
 
             // Get regular session close from candle data
@@ -903,7 +902,7 @@
 
             if (ms.status === 'postmarket' || ms.status === 'closed') {
                 // Big price = regular close (stable), small = post-market price
-                const mainPrice = regularCloseFromCandles || lastPrice;
+                const mainPrice = regularCloseFromCandles || mainLastPrice;
 
                 if (prevNasdaqPrice !== null && mainPrice !== prevNasdaqPrice) {
                     priceEl.classList.remove('price-flash-up', 'price-flash-down');
@@ -949,7 +948,7 @@
                 }
             } else if (ms.status === 'premarket') {
                 // Big price = previous close (stable), small = pre-market price
-                const mainPrice = yahooPrevClose || lastPrice;
+                const mainPrice = yahooPrevClose || mainLastPrice;
 
                 if (prevNasdaqPrice !== null && mainPrice !== prevNasdaqPrice) {
                     priceEl.classList.remove('price-flash-up', 'price-flash-down');
@@ -989,17 +988,17 @@
                 }
             } else {
                 // Market open — show live price from meta
-                if (lastPrice) {
-                    if (prevNasdaqPrice !== null && lastPrice !== prevNasdaqPrice) {
+                if (mainLastPrice) {
+                    if (prevNasdaqPrice !== null && mainLastPrice !== prevNasdaqPrice) {
                         priceEl.classList.remove('price-flash-up', 'price-flash-down');
                         void priceEl.offsetWidth;
-                        priceEl.classList.add(lastPrice > prevNasdaqPrice ? 'price-flash-up' : 'price-flash-down');
+                        priceEl.classList.add(mainLastPrice > prevNasdaqPrice ? 'price-flash-up' : 'price-flash-down');
                     }
-                    prevNasdaqPrice = lastPrice;
-                    priceEl.textContent = `$${lastPrice.toFixed(2)}`;
+                    prevNasdaqPrice = mainLastPrice;
+                    priceEl.textContent = `$${mainLastPrice.toFixed(2)}`;
 
                     if (yahooPrevClose) {
-                        const change = lastPrice - yahooPrevClose;
+                        const change = mainLastPrice - yahooPrevClose;
                         const pct = (change / yahooPrevClose) * 100;
                         const sign = change >= 0 ? '+' : '';
                         const cls = change >= 0 ? 'up' : 'down';
