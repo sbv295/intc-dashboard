@@ -1083,11 +1083,35 @@
     }
 
     function updateYahooPrice(data) {
-        // Don't update price when market is fully closed
         const ms = getMarketStatus();
-        if (ms.status === 'closed') return;
-
         const price = data.price;
+
+        // During pre/post market, update the small extended price only
+        if (ms.status === 'closed') {
+            prevYahooPrice = price;
+            return;
+        }
+
+        if (ms.status === 'premarket' || ms.status === 'postmarket') {
+            // Update the extended sub-price line, not the big price
+            const extEl = document.getElementById('nasdaq-extended');
+            const refPrice = nasdaqPrevClose; // last regular close
+            const label = ms.status === 'premarket' ? 'Pre-Market' : 'Post-Market';
+            if (refPrice) {
+                const extChange = price - refPrice;
+                const extPct = (extChange / refPrice) * 100;
+                const extSign = extChange >= 0 ? '+' : '';
+                const extCls = extChange >= 0 ? 'up' : 'down';
+                extEl.innerHTML =
+                    `<span class="ext-label">${label}:</span> ` +
+                    `<span class="ext-value">$${price.toFixed(2)}</span> ` +
+                    `<span class="ext-change ${extCls}">${extSign}${extChange.toFixed(2)} (${extSign}${extPct.toFixed(2)}%)</span>`;
+            }
+            prevYahooPrice = price;
+            return;
+        }
+
+        // Regular market hours — update the big price
         const priceEl = document.getElementById('nasdaq-price');
 
         if (prevYahooPrice !== null && price !== prevYahooPrice) {
