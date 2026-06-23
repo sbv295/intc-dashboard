@@ -304,9 +304,38 @@
             .source-label { font-size: 0.7rem; }
             .price-meta { font-size: 0.75rem; }
         }
+
+        .nav-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+        }
+        .nav-tabs a {
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 8px 8px 0 0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-bottom: none;
+            transition: all 0.2s;
+        }
+        .nav-tabs a.active {
+            color: var(--text);
+            background: var(--bg);
+            border-color: var(--text-dim);
+        }
+        .nav-tabs a:hover:not(.active) { color: var(--text); }
     </style>
 </head>
 <body>
+    <div class="nav-tabs">
+        <a href="index.html" class="active">INTC Dashboard</a>
+        <a href="watchlist.html">Watchlist</a>
+    </div>
+
     <!-- Header -->
     <div class="header">
         <div>

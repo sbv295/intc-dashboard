@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist — Stock Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/protobufjs@7.2.6/dist/protobuf.min.js"></script>
+    <style>
+        :root {
+            --bg: #0f0f14;
+            --surface: #1a1a24;
+            --surface2: #22222e;
+            --border: #2a2a3a;
+            --text: #e8e8f0;
+            --text-dim: #888899;
+            --green: #00c853;
+            --red: #ff1744;
+            --amber: #ffc107;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 16px;
+        }
+
+        /* ─── Navigation ─────────────────────────────────────── */
+        .nav-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+        }
+        .nav-tabs a {
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 8px 8px 0 0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-bottom: none;
+            transition: all 0.2s;
+        }
+        .nav-tabs a.active {
+            color: var(--text);
+            background: var(--bg);
+            border-color: var(--text-dim);
+        }
+        .nav-tabs a:hover:not(.active) { color: var(--text); }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        .header h1 { font-size: 1.3rem; font-weight: 700; }
+        .header .time-display {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            text-align: right;
+            line-height: 1.6;
+        }
+
+        /* ─── Stock Grid ─────────────────────────────────────── */
+        .stock-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+        }
+
+        @media (max-width: 640px) {
+            .stock-grid { grid-template-columns: 1fr; }
+        }
+
+        .stock-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px 16px;
+            transition: border-color 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stock-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: var(--card-accent, var(--border));
+        }
+
+        .stock-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .stock-logo {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+
+        .stock-name {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .stock-ticker {
+            font-size: 0.7rem;
+            color: var(--card-accent, var(--text-dim));
+            font-weight: 700;
+            margin-left: auto;
+        }
+
+        .stock-prices {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .price-block {
+            text-align: center;
+        }
+
+        .price-block-label {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+            margin-bottom: 2px;
+        }
+
+        .price-block-value {
+            font-size: 1.4rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .price-block-change {
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .price-block-change.up { color: var(--green); }
+        .price-block-change.down { color: var(--red); }
+
+        .stock-meta {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            margin-top: 6px;
+            padding-top: 6px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .stock-extended {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            margin-top: 4px;
+            text-align: center;
+        }
+        .stock-extended .ext-label {
+            font-weight: 600;
+            color: var(--amber);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .stock-extended .ext-value { font-weight: 700; color: var(--text); }
+        .stock-extended .ext-change { font-weight: 600; }
+        .stock-extended .ext-change.up { color: var(--green); }
+        .stock-extended .ext-change.down { color: var(--red); }
+
+        .price-flash-up { animation: flashGreen 1s ease-out; }
+        .price-flash-down { animation: flashRed 1s ease-out; }
+
+        @keyframes flashGreen {
+            0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); }
+            100% { color: var(--text); text-shadow: none; }
+        }
+        @keyframes flashRed {
+            0% { color: var(--red); text-shadow: 0 0 12px rgba(255,23,68,0.5); }
+            100% { color: var(--text); text-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-tabs">
+        <a href="index.html">INTC Dashboard</a>
+        <a href="watchlist.html" class="active">Watchlist</a>
+    </div>
+
+    <div class="header">
+        <h1>Watchlist</h1>
+        <div class="time-display" id="time-display">--</div>
+    </div>
+
+    <div class="stock-grid" id="stock-grid"></div>
+
+    <script>
+    // ─── Stock Configuration ────────────────────────────────────────────────
+    const STOCKS = [
+        { ticker: 'INTC', name: 'Intel', hl: 'xyz:INTC', color: '#0071C5', logo: 'logos/INTC.svg' },
+        { ticker: 'AMD', name: 'AMD', hl: 'xyz:AMD', color: '#ED1C24', logo: 'logos/AMD.svg' },
+        { ticker: 'NVDA', name: 'NVIDIA', hl: 'xyz:NVDA', color: '#76B900', logo: 'logos/NVDA.svg' },
+        { ticker: 'SNDK', name: 'SanDisk', hl: 'xyz:SNDK', color: '#2D4691', logo: 'logos/SNDK.svg' },
+        { ticker: 'MU', name: 'Micron', hl: 'xyz:MU', color: '#104076', logo: 'logos/MU.svg' },
+        { ticker: 'AVGO', name: 'Broadcom', hl: 'xyz:AVGO', color: '#CC092F', logo: 'logos/AVGO.svg' },
+        { ticker: 'SPCX', name: 'SpaceX', hl: 'xyz:SPCX', color: '#005288', logo: 'logos/SPCX.svg' },
+        { ticker: 'MRVL', name: 'Marvell', hl: 'xyz:MRVL', color: '#C41230', logo: 'logos/MRVL.svg' },
+        { ticker: 'ARM', name: 'ARM', hl: 'xyz:ARM', color: '#0090BF', logo: 'logos/ARM.svg' },
+        { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg' },
+    ];
+
+    // State per stock
+    const state = {};
+    STOCKS.forEach(s => {
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, prevNasdaq: null, prevHl: null };
+    });
+
+    // ─── Yahoo Finance API ──────────────────────────────────────────────────
+    const YAHOO_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart/';
+    let proxyMode = 'unknown';
+
+    async function yahooFetch(url) {
+        if (proxyMode === 'vercel') return await fetchViaVercel(url);
+        if (proxyMode === 'allorigins') return await fetchViaAllorigins(url);
+        if (proxyMode === 'direct') { const r = await fetch(url); return r.json(); }
+
+        try { const d = await fetchViaVercel(url); proxyMode = 'vercel'; return d; } catch(e) {}
+        try { const r = await fetch(url); if (r.ok) { proxyMode = 'direct'; return r.json(); } } catch(e) {}
+        try { const d = await fetchViaAllorigins(url); proxyMode = 'allorigins'; return d; } catch(e) {}
+        throw new Error('All sources failed');
+    }
+
+    async function fetchViaVercel(url) {
+        const params = new URL(url).searchParams;
+        const ticker = url.match(/chart\/([A-Z]+)/)?.[1] || 'INTC';
+        const apiUrl = '/api/yahoo?' + params.toString() + '&symbol=' + ticker;
+        const resp = await fetch(apiUrl);
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        return resp.json();
+    }
+
+    async function fetchViaAllorigins(url) {
+        const resp = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(url));
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        return resp.json();
+    }
+
+    // ─── Time & Market Status ───────────────────────────────────────────────
+    function formatDualTime(date) {
+        const ist = date.toLocaleString('en-US', { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }) + ' IST';
+        const et = date.toLocaleString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }) + ' ET';
+        return ist + '<br>' + et;
+    }
+
+    function getMarketStatus() {
+        const now = new Date();
+        const etStr = now.toLocaleString('en-US', { timeZone: 'America/New_York', hour12: false });
+        const etDate = new Date(etStr);
+        const h = etDate.getHours(), m = etDate.getMinutes();
+        const mins = h * 60 + m;
+        const day = etDate.getDay();
+        if (day === 0 || day === 6) return 'closed';
+        if (mins >= 240 && mins < 570) return 'premarket';
+        if (mins >= 570 && mins < 960) return 'market';
+        if (mins >= 960 && mins < 1200) return 'postmarket';
+        return 'closed';
+    }
+
+    // ─── Render Cards ───────────────────────────────────────────────────────
+    function renderGrid() {
+        const grid = document.getElementById('stock-grid');
+        grid.innerHTML = STOCKS.map(s => `
+            <div class="stock-card" id="card-${s.ticker}" style="--card-accent: ${s.color}">
+                <div class="stock-header">
+                    <img class="stock-logo" src="${s.logo}" alt="${s.name}">
+                    <span class="stock-name">${s.name}</span>
+                    <span class="stock-ticker">${s.ticker}</span>
+                </div>
+                <div class="stock-prices">
+                    <div class="price-block">
+                        <div class="price-block-label">NASDAQ</div>
+                        <div class="price-block-value" id="nasdaq-${s.ticker}">—</div>
+                        <div class="price-block-change" id="nasdaq-chg-${s.ticker}"></div>
+                    </div>
+                    <div class="price-block">
+                        <div class="price-block-label">Hyperliquid</div>
+                        <div class="price-block-value" id="hl-${s.ticker}">—</div>
+                        <div class="price-block-change" id="hl-chg-${s.ticker}"></div>
+                    </div>
+                </div>
+                <div class="stock-extended" id="ext-${s.ticker}"></div>
+                <div class="stock-meta" id="meta-${s.ticker}"></div>
+            </div>
+        `).join('');
+    }
+
+    // ─── Fetch NASDAQ Data ──────────────────────────────────────────────────
+    async function fetchNasdaqForStock(stock) {
+        try {
+            const url = `${YAHOO_BASE}${stock.ticker}?interval=5m&range=1d&includePrePost=true`;
+            const json = await yahooFetch(url);
+            const result = json.chart.result[0];
+            const meta = result.meta;
+            const timestamps = result.timestamp || [];
+            const quote = result.indicators.quote[0];
+
+            const ms = getMarketStatus();
+            const prevClose = meta.previousClose;
+            const regPrice = meta.regularMarketPrice;
+
+            state[stock.ticker].prevClose = regPrice || prevClose;
+
+            // Get trading periods from today's data
+            const todayTP = meta.tradingPeriods;
+            const tp = (todayTP && todayTP.regular && todayTP.regular[0] && todayTP.regular[0][0])
+                ? { pre: todayTP.pre[0][0], regular: todayTP.regular[0][0], post: todayTP.post[0][0] }
+                : meta.currentTradingPeriod;
+
+            // Get regular close from candles
+            let regularClose = null;
+            if (tp) {
+                for (let i = timestamps.length - 1; i >= 0; i--) {
+                    const t = timestamps[i], c = quote.close[i];
+                    if (c != null && t >= tp.regular.start && t < tp.post.start) { regularClose = c; break; }
+                }
+            }
+
+            // Determine display price
+            let displayPrice, extPrice = null, extLabel = null, refPrice = null;
+            if (ms === 'postmarket' || ms === 'closed') {
+                displayPrice = regularClose || regPrice;
+                refPrice = displayPrice;
+                if (tp) {
+                    for (let i = timestamps.length - 1; i >= 0; i--) {
+                        const t = timestamps[i], c = quote.close[i];
+                        if (c != null && t >= tp.post.start && t < tp.post.end) { extPrice = c; break; }
+                    }
+                }
+                extLabel = 'Post';
+            } else if (ms === 'premarket') {
+                displayPrice = regularClose || regPrice;
+                refPrice = displayPrice;
+                if (tp) {
+                    for (let i = timestamps.length - 1; i >= 0; i--) {
+                        const t = timestamps[i], c = quote.close[i];
+                        if (c != null && t >= tp.pre.start && t < tp.regular.start) { extPrice = c; break; }
+                    }
+                }
+                extLabel = 'Pre';
+            } else {
+                displayPrice = regPrice;
+            }
+
+            // Update NASDAQ price
+            const priceEl = document.getElementById(`nasdaq-${stock.ticker}`);
+            if (displayPrice) {
+                const prev = state[stock.ticker].prevNasdaq;
+                if (prev !== null && displayPrice !== prev) {
+                    priceEl.classList.remove('price-flash-up', 'price-flash-down');
+                    void priceEl.offsetWidth;
+                    priceEl.classList.add(displayPrice > prev ? 'price-flash-up' : 'price-flash-down');
+                }
+                state[stock.ticker].prevNasdaq = displayPrice;
+                priceEl.textContent = `$${displayPrice.toFixed(2)}`;
+
+                // Change vs previous close
+                const chgEl = document.getElementById(`nasdaq-chg-${stock.ticker}`);
+                if (prevClose) {
+                    const chg = displayPrice - prevClose;
+                    const pct = (chg / prevClose) * 100;
+                    const sign = chg >= 0 ? '+' : '';
+                    chgEl.textContent = `${sign}${pct.toFixed(2)}%`;
+                    chgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
+                }
+            }
+
+            // Extended price
+            const extEl = document.getElementById(`ext-${stock.ticker}`);
+            if (extPrice && refPrice) {
+                const extChg = extPrice - refPrice;
+                const extPct = (extChg / refPrice) * 100;
+                const extSign = extChg >= 0 ? '+' : '';
+                const extCls = extChg >= 0 ? 'up' : 'down';
+                extEl.innerHTML = `<span class="ext-label">${extLabel}:</span> <span class="ext-value">$${extPrice.toFixed(2)}</span> <span class="ext-change ${extCls}">${extSign}${extPct.toFixed(2)}%</span>`;
+            } else {
+                extEl.innerHTML = '';
+            }
+
+            // Meta line
+            document.getElementById(`meta-${stock.ticker}`).textContent = prevClose ? `Prev Close: $${prevClose.toFixed(2)}` : '';
+
+        } catch (e) {
+            // Silent fail
+        }
+    }
+
+    async function fetchAllNasdaq() {
+        // Stagger requests slightly to avoid rate limiting
+        for (const stock of STOCKS) {
+            await fetchNasdaqForStock(stock);
+            await new Promise(r => setTimeout(r, 200));
+        }
+    }
+
+    // ─── Yahoo WebSocket (live prices) ──────────────────────────────────────
+    const YahooProto = `
+        syntax = "proto3";
+        message PricingData {
+            string id = 1;
+            float price = 2;
+            int64 time = 3;
+            string exchange = 4;
+            string quoteType = 5;
+            float changePercent = 8;
+            float dayVolume = 9;
+            float dayHigh = 10;
+            float dayLow = 11;
+            float change = 12;
+            float previousClose = 15;
+            string marketHours = 20;
+        }
+    `;
+    let yahooRoot, YahooPricingData, yahooWs;
+
+    function initYahooProto() {
+        yahooRoot = protobuf.parse(YahooProto).root;
+        YahooPricingData = yahooRoot.lookupType('PricingData');
+    }
+
+    function connectYahooWs() {
+        if (yahooWs && yahooWs.readyState === WebSocket.OPEN) return;
+        yahooWs = new WebSocket('wss://streamer.finance.yahoo.com/');
+        yahooWs.onopen = () => {
+            const tickers = STOCKS.map(s => s.ticker);
+            yahooWs.send(JSON.stringify({ subscribe: tickers }));
+        };
+        yahooWs.onmessage = (event) => {
+            try {
+                const bytes = Uint8Array.from(atob(event.data), c => c.charCodeAt(0));
+                const decoded = YahooPricingData.decode(bytes);
+                if (decoded.price && decoded.price > 0 && decoded.id) {
+                    updateYahooPrice(decoded.id, decoded.price);
+                }
+            } catch (e) {}
+        };
+        yahooWs.onclose = () => setTimeout(connectYahooWs, 5000);
+        yahooWs.onerror = () => yahooWs.close();
+    }
+
+    function updateYahooPrice(ticker, price) {
+        const ms = getMarketStatus();
+        if (ms === 'closed') return;
+
+        const st = state[ticker];
+        if (!st) return;
+
+        if (ms === 'premarket' || ms === 'postmarket') {
+            // Update extended price
+            const extEl = document.getElementById(`ext-${ticker}`);
+            const refPrice = st.prevClose;
+            const label = ms === 'premarket' ? 'Pre' : 'Post';
+            if (refPrice && extEl) {
+                const chg = price - refPrice;
+                const pct = (chg / refPrice) * 100;
+                const sign = chg >= 0 ? '+' : '';
+                const cls = chg >= 0 ? 'up' : 'down';
+                extEl.innerHTML = `<span class="ext-label">${label}:</span> <span class="ext-value">$${price.toFixed(2)}</span> <span class="ext-change ${cls}">${sign}${pct.toFixed(2)}%</span>`;
+            }
+            return;
+        }
+
+        // Regular market — update NASDAQ price
+        const priceEl = document.getElementById(`nasdaq-${ticker}`);
+        if (!priceEl) return;
+        const prev = st.prevNasdaq;
+        if (prev !== null && price !== prev) {
+            priceEl.classList.remove('price-flash-up', 'price-flash-down');
+            void priceEl.offsetWidth;
+            priceEl.classList.add(price > prev ? 'price-flash-up' : 'price-flash-down');
+        }
+        st.prevNasdaq = price;
+        priceEl.textContent = `$${price.toFixed(2)}`;
+
+        const chgEl = document.getElementById(`nasdaq-chg-${ticker}`);
+        const prevClose = st.prevClose;
+        if (prevClose && chgEl) {
+            const chg = price - prevClose;
+            const pct = (chg / prevClose) * 100;
+            const sign = chg >= 0 ? '+' : '';
+            chgEl.textContent = `${sign}${pct.toFixed(2)}%`;
+            chgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
+        }
+    }
+
+    // ─── Hyperliquid WebSocket ──────────────────────────────────────────────
+    let hlWs;
+
+    function connectHlWs() {
+        if (hlWs && hlWs.readyState === WebSocket.OPEN) return;
+        hlWs = new WebSocket('wss://api.hyperliquid.xyz/ws');
+        hlWs.onopen = () => {
+            STOCKS.forEach(s => {
+                hlWs.send(JSON.stringify({
+                    method: 'subscribe',
+                    subscription: { type: 'l2Book', coin: s.hl }
+                }));
+            });
+        };
+        hlWs.onmessage = (event) => {
+            try {
+                const msg = JSON.parse(event.data);
+                if (msg.channel === 'l2Book' && msg.data) {
+                    const coin = msg.data.coin;
+                    const stock = STOCKS.find(s => s.hl === coin);
+                    if (!stock) return;
+                    const levels = msg.data.levels;
+                    if (levels && levels[0] && levels[1] && levels[0].length && levels[1].length) {
+                        const bid = parseFloat(levels[0][0].px);
+                        const ask = parseFloat(levels[1][0].px);
+                        const mid = (bid + ask) / 2;
+                        updateHlPrice(stock.ticker, mid);
+                    }
+                }
+            } catch (e) {}
+        };
+        hlWs.onclose = () => setTimeout(connectHlWs, 3000);
+        hlWs.onerror = () => hlWs.close();
+    }
+
+    function updateHlPrice(ticker, price) {
+        const priceEl = document.getElementById(`hl-${ticker}`);
+        if (!priceEl) return;
+
+        const st = state[ticker];
+        const prev = st.prevHl;
+        if (prev !== null && price !== prev) {
+            priceEl.classList.remove('price-flash-up', 'price-flash-down');
+            void priceEl.offsetWidth;
+            priceEl.classList.add(price > prev ? 'price-flash-up' : 'price-flash-down');
+        }
+        st.prevHl = price;
+        priceEl.textContent = `$${price.toFixed(2)}`;
+
+        const chgEl = document.getElementById(`hl-chg-${ticker}`);
+        const prevClose = st.prevClose;
+        if (prevClose && chgEl) {
+            const chg = price - prevClose;
+            const pct = (chg / prevClose) * 100;
+            const sign = chg >= 0 ? '+' : '';
+            chgEl.textContent = `${sign}${pct.toFixed(2)}%`;
+            chgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
+        }
+    }
+
+    // ─── Init ───────────────────────────────────────────────────────────────
+    function init() {
+        renderGrid();
+        initYahooProto();
+        fetchAllNasdaq();
+        connectYahooWs();
+        connectHlWs();
+
+        // Time update
+        setInterval(() => {
+            document.getElementById('time-display').innerHTML = formatDualTime(new Date());
+        }, 1000);
+        document.getElementById('time-display').innerHTML = formatDualTime(new Date());
+
+        // Refresh NASDAQ data every 60s
+        setInterval(fetchAllNasdaq, 60000);
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
