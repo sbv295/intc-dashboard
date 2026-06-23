@@ -518,7 +518,7 @@
 
             // Volume (from chart meta)
             const vol = meta.regularMarketVolume;
-            if (vol && ms === 'market') {
+            if (vol) {
                 state[stock.ticker].volume = vol;
                 displayVolume(stock.ticker, vol);
             }
@@ -804,8 +804,6 @@
         document.querySelectorAll('.stock-extended').forEach(el => {
             el.classList.toggle('ext-dimmed', extDim);
         });
-        // Volume: only shown during active market
-        if (ms !== 'market') hideAllVolumes();
     }
 
     document.addEventListener('DOMContentLoaded', init);
