@@ -516,11 +516,17 @@
                 extEl.innerHTML = '';
             }
 
-            // Volume (from chart meta)
-            const vol = meta.regularMarketVolume;
-            if (vol) {
-                state[stock.ticker].volume = vol;
-                displayVolume(stock.ticker, vol);
+            // Volume: sum regular-session candle volumes
+            if (tp && quote.volume) {
+                let totalVol = 0;
+                for (let i = 0; i < timestamps.length; i++) {
+                    const t = timestamps[i], v = quote.volume[i];
+                    if (v && t >= tp.regular.start && t < tp.post.start) totalVol += v;
+                }
+                if (totalVol > 0) {
+                    state[stock.ticker].volume = totalVol;
+                    displayVolume(stock.ticker, totalVol);
+                }
             }
 
         } catch (e) {
@@ -570,10 +576,6 @@
                 const decoded = YahooPricingData.decode(bytes);
                 if (decoded.price && decoded.price > 0 && decoded.id) {
                     updateYahooPrice(decoded.id, decoded.price);
-                }
-                if (decoded.dayVolume && decoded.dayVolume > 0 && decoded.id) {
-                    state[decoded.id] && (state[decoded.id].volume = decoded.dayVolume);
-                    displayVolume(decoded.id, decoded.dayVolume);
                 }
             } catch (e) {}
         };
