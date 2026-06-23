@@ -216,9 +216,9 @@
         { ticker: 'INTC', name: 'Intel', hl: 'xyz:INTC', color: '#0071C5', logo: 'logos/INTC.svg' },
         { ticker: 'AMD', name: 'AMD', hl: 'xyz:AMD', color: '#7AB648', logo: 'logos/AMD.svg' },
         { ticker: 'NVDA', name: 'NVIDIA', hl: 'xyz:NVDA', color: '#76B900', logo: 'logos/NVDA.svg' },
-        { ticker: 'TSM', name: 'TSMC', hl: null, color: '#C4161C', logo: 'logos/TSM.svg' },
-        { ticker: '005930.KS', name: 'Samsung', hl: null, color: '#1428A0', logo: 'logos/SAMSUNG.svg', currency: 'KRW' },
-        { ticker: '000660.KS', name: 'SK Hynix', hl: null, color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW' },
+        { ticker: 'TSM', name: 'TSMC', hl: 'TSM-UDC', color: '#C4161C', logo: 'logos/TSM.svg' },
+        { ticker: '005930.KS', name: 'Samsung', hl: 'SAMSUNG-UDC', color: '#1428A0', logo: 'logos/SAMSUNG.svg', currency: 'KRW' },
+        { ticker: '000660.KS', name: 'SK Hynix', hl: 'SKHYNIX-UDC', color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW' },
         { ticker: 'SNDK', name: 'SanDisk', hl: 'xyz:SNDK', color: '#2D4691', logo: 'logos/SNDK.svg' },
         { ticker: 'MU', name: 'Micron', hl: 'xyz:MU', color: '#104076', logo: 'logos/MU.svg' },
         { ticker: 'AVGO', name: 'Broadcom', hl: 'xyz:AVGO', color: '#CC092F', logo: 'logos/AVGO.svg' },
@@ -228,9 +228,26 @@
         { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg' },
     ];
 
+    let krwToUsd = null;
+
+    async function fetchKrwRate() {
+        try {
+            const url = `${YAHOO_BASE}USDKRW=X?interval=1d&range=1d`;
+            const json = await yahooFetch(url);
+            const rate = json.chart.result[0].meta.regularMarketPrice;
+            if (rate > 0) krwToUsd = 1 / rate;
+        } catch(e) {}
+    }
+
     function fmtPrice(stock, price) {
+        if (stock.currency === 'KRW' && krwToUsd) return '$' + (price * krwToUsd).toFixed(2);
         if (stock.currency === 'KRW') return '₩' + Math.round(price).toLocaleString();
         return '$' + price.toFixed(2);
+    }
+
+    function toUsd(stock, price) {
+        if (stock.currency === 'KRW' && krwToUsd) return price * krwToUsd;
+        return price;
     }
 
     function stockExchange(stock) {
@@ -306,16 +323,16 @@
                     <span class="stock-ticker">${s.ticker}</span>
                 </div>
                 <div class="stock-prices">
-                    <div class="price-block" ${!s.hl ? 'style="grid-column: 1 / -1"' : ''}>
+                    <div class="price-block">
                         <div class="price-block-label">${stockExchange(s)}</div>
                         <div class="price-block-value" id="nasdaq-${s.ticker}">—</div>
                         <div class="price-block-change" id="nasdaq-chg-${s.ticker}"></div>
                     </div>
-                    ${s.hl ? `<div class="price-block">
+                    <div class="price-block">
                         <div class="price-block-label">Hyperliquid</div>
                         <div class="price-block-value" id="hl-${s.ticker}">—</div>
                         <div class="price-block-change" id="hl-chg-${s.ticker}"></div>
-                    </div>` : ''}
+                    </div>
                 </div>
                 <div class="stock-extended" id="ext-${s.ticker}"></div>
                 <div class="stock-meta" id="meta-${s.ticker}"></div>
@@ -530,7 +547,7 @@
         if (hlWs && hlWs.readyState === WebSocket.OPEN) return;
         hlWs = new WebSocket('wss://api.hyperliquid.xyz/ws');
         hlWs.onopen = () => {
-            STOCKS.filter(s => s.hl).forEach(s => {
+            STOCKS.forEach(s => {
                 hlWs.send(JSON.stringify({
                     method: 'subscribe',
                     subscription: { type: 'l2Book', coin: s.hl }
@@ -563,6 +580,7 @@
         if (!priceEl) return;
 
         const st = state[ticker];
+        const stock = STOCKS.find(s => s.ticker === ticker);
         const prev = st.prevHl;
         if (prev !== null && price !== prev) {
             priceEl.classList.remove('price-flash-up', 'price-flash-down');
@@ -575,8 +593,9 @@
         const chgEl = document.getElementById(`hl-chg-${ticker}`);
         const prevClose = st.prevClose;
         if (prevClose && chgEl) {
-            const chg = price - prevClose;
-            const pct = (chg / prevClose) * 100;
+            const prevUsd = stock ? toUsd(stock, prevClose) : prevClose;
+            const chg = price - prevUsd;
+            const pct = (chg / prevUsd) * 100;
             const sign = chg >= 0 ? '+' : '';
             chgEl.textContent = `${sign}${pct.toFixed(2)}%`;
             chgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
@@ -608,9 +627,12 @@
     function displayMarketCap(ticker, mcap) {
         const el = document.getElementById(`mcap-${ticker}`);
         if (!el) return;
-        if (mcap >= 1e12) el.textContent = `Mkt Cap: $${(mcap/1e12).toFixed(1)}T`;
-        else if (mcap >= 1e9) el.textContent = `Mkt Cap: $${(mcap/1e9).toFixed(1)}B`;
-        else el.textContent = `Mkt Cap: $${(mcap/1e6).toFixed(0)}M`;
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        let mcapUsd = mcap;
+        if (stock && stock.currency === 'KRW' && krwToUsd) mcapUsd = mcap * krwToUsd;
+        if (mcapUsd >= 1e12) el.textContent = `Mkt Cap: $${(mcapUsd/1e12).toFixed(1)}T`;
+        else if (mcapUsd >= 1e9) el.textContent = `Mkt Cap: $${(mcapUsd/1e9).toFixed(1)}B`;
+        else el.textContent = `Mkt Cap: $${(mcapUsd/1e6).toFixed(0)}M`;
     }
 
     function updateMarketCap(ticker) {
@@ -628,6 +650,7 @@
         initYahooProto();
         connectYahooWs();
         connectHlWs();
+        await fetchKrwRate();
         fetchAllNasdaq().then(() => fetchAllShares());
 
         // Time update
