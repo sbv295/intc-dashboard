@@ -817,9 +817,9 @@
         const mcap = price * INTC_SHARES;
         const mcapEl = document.getElementById('nasdaq-mcap');
         if (mcap >= 1e12) {
-            mcapEl.textContent = 'Market Cap: $' + (mcap / 1e12).toFixed(2) + 'T';
+            mcapEl.textContent = 'Market Cap: $' + (mcap / 1e12).toFixed(1) + 'T';
         } else {
-            mcapEl.textContent = 'Market Cap: $' + (mcap / 1e9).toFixed(2) + 'B';
+            mcapEl.textContent = 'Market Cap: $' + (mcap / 1e9).toFixed(1) + 'B';
         }
     }
 
