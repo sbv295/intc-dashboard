@@ -101,13 +101,24 @@
         }
 
         .stock-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 14px 16px;
-            transition: border-color 0.3s;
+            background:
+                radial-gradient(ellipse at 15% 10%, color-mix(in srgb, var(--card-accent) 10%, transparent) 0%, transparent 60%),
+                radial-gradient(ellipse at 85% 90%, color-mix(in srgb, var(--card-accent) 5%, transparent) 0%, transparent 50%),
+                var(--surface);
+            border: 1px solid color-mix(in srgb, var(--card-accent) 18%, var(--border));
+            border-radius: 14px;
+            padding: 18px 20px 16px;
+            transition: transform 0.25s ease, box-shadow 0.35s ease, border-color 0.35s ease;
             position: relative;
             overflow: hidden;
+        }
+
+        .stock-card:hover {
+            transform: translateY(-3px);
+            border-color: color-mix(in srgb, var(--card-accent) 45%, var(--border));
+            box-shadow:
+                0 8px 32px -8px color-mix(in srgb, var(--card-accent) 25%, transparent),
+                0 2px 8px rgba(0,0,0,0.3);
         }
 
         .stock-card::before {
@@ -115,36 +126,65 @@
             position: absolute;
             top: 0; left: 0; right: 0;
             height: 3px;
-            background: var(--card-accent, var(--border));
+            background: linear-gradient(90deg,
+                color-mix(in srgb, var(--card-accent) 80%, white) 0%,
+                var(--card-accent) 40%,
+                transparent 100%);
+        }
+
+        .stock-card::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: shimmer 4s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { left: -60%; opacity: 0; }
+            50% { left: 100%; opacity: 1; }
         }
 
         .stock-header {
             display: flex;
             align-items: center;
-            gap: 8px;
-            margin-bottom: 8px;
+            gap: 10px;
+            margin-bottom: 12px;
         }
 
         .stock-logo {
-            width: 28px;
-            height: 28px;
-            border-radius: 6px;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
             object-fit: cover;
+            filter: drop-shadow(0 0 6px color-mix(in srgb, var(--card-accent) 50%, transparent));
+            transition: filter 0.3s ease;
+        }
+
+        .stock-card:hover .stock-logo {
+            filter: drop-shadow(0 0 10px color-mix(in srgb, var(--card-accent) 70%, transparent));
         }
 
         .stock-name {
-            font-size: 0.75rem;
-            color: var(--text-dim);
+            font-size: 0.78rem;
+            color: var(--text);
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 600;
+            letter-spacing: 1.5px;
+            font-weight: 700;
         }
 
         .stock-ticker {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             color: var(--card-accent, var(--text-dim));
-            font-weight: 700;
+            font-weight: 800;
             margin-left: auto;
+            background: color-mix(in srgb, var(--card-accent) 12%, transparent);
+            padding: 3px 8px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+            border: 1px solid color-mix(in srgb, var(--card-accent) 25%, transparent);
         }
 
         .stock-prices {
@@ -166,15 +206,18 @@
         }
 
         .price-block-value {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: 800;
             line-height: 1.2;
+            font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', monospace;
+            letter-spacing: -0.5px;
         }
 
         .price-block-change {
             font-size: 0.7rem;
             font-weight: 600;
-            margin-top: 2px;
+            margin-top: 3px;
+            font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', monospace;
         }
 
         .price-block-change.up { color: var(--green); }
@@ -194,13 +237,14 @@
         }
 
         .stock-meta {
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             color: var(--text-dim);
-            margin-top: 6px;
-            padding-top: 6px;
-            border-top: 1px solid var(--border);
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
             display: flex;
             justify-content: center;
+            font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', monospace;
         }
         .stock-meta.has-volume {
             justify-content: space-between;
@@ -211,8 +255,9 @@
         .stock-extended {
             font-size: 1.05rem;
             color: var(--text-dim);
-            margin-top: 4px;
+            margin-top: 6px;
             text-align: center;
+            font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', monospace;
         }
         .stock-extended .ext-label {
             font-weight: 600;
