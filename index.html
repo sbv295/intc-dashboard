@@ -932,6 +932,10 @@
     }
 
     function updateYahooPrice(data) {
+        // Don't update price when market is fully closed
+        const ms = getMarketStatus();
+        if (ms.status === 'closed') return;
+
         const price = data.price;
         const priceEl = document.getElementById('nasdaq-price');
 
