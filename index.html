@@ -384,7 +384,7 @@
     let prevYahooPrice = null;
     let prevHlPrice = null;
     let nasdaqPrevClose = null;
-    const INTC_SHARES = 5.026e9; // shares outstanding (update quarterly)
+    let INTC_SHARES = 5.026e9; // fallback, fetched on init
     let hlWs = null;
     let yahooWs = null;
     let hlReconnectTimer = null;
@@ -455,6 +455,19 @@
         const resp = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(url));
         if (!resp.ok) throw new Error(`Allorigins HTTP ${resp.status}`);
         return resp.json();
+    }
+
+    async function fetchSharesOutstanding() {
+        try {
+            const url = 'https://query1.finance.yahoo.com/v10/finance/quoteSummary/INTC?modules=defaultKeyStatistics';
+            const data = await yahooFetch(url);
+            const shares = data?.quoteSummary?.result?.[0]?.defaultKeyStatistics?.sharesOutstanding?.raw;
+            if (shares && shares > 0) {
+                INTC_SHARES = shares;
+            }
+        } catch (e) {
+            // Fallback value remains
+        }
     }
 
     // Interval → period mapping
@@ -1259,6 +1272,7 @@
     // ─── Init ───────────────────────────────────────────────────────────────
     function init() {
         initYahooProto();
+        fetchSharesOutstanding();
         // Auto-select tab based on market status
         const ms = getMarketStatus();
         if (ms.status === 'closed') {

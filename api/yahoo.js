@@ -1,13 +1,20 @@
 export default async function handler(req, res) {
-  const { interval, range, period1, period2, includePrePost } = req.query;
+  const { interval, range, period1, period2, includePrePost, modules } = req.query;
 
-  let url = `https://query1.finance.yahoo.com/v8/finance/chart/INTC?interval=${interval || '5m'}`;
-  if (period1 && period2) {
-    url += `&period1=${period1}&period2=${period2}`;
+  let url;
+  if (modules) {
+    // quoteSummary endpoint
+    url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/INTC?modules=${modules}`;
   } else {
-    url += `&range=${range || '1d'}`;
+    // chart endpoint
+    url = `https://query1.finance.yahoo.com/v8/finance/chart/INTC?interval=${interval || '5m'}`;
+    if (period1 && period2) {
+      url += `&period1=${period1}&period2=${period2}`;
+    } else {
+      url += `&range=${range || '1d'}`;
+    }
+    if (includePrePost) url += '&includePrePost=true';
   }
-  if (includePrePost) url += '&includePrePost=true';
 
   try {
     const response = await fetch(url, {
