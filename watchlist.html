@@ -132,20 +132,7 @@
                 transparent 100%);
         }
 
-        .stock-card::after {
-            content: '';
-            position: absolute;
-            top: 0; left: -100%;
-            width: 60%;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            animation: shimmer 4s ease-in-out infinite;
-        }
 
-        @keyframes shimmer {
-            0%, 100% { left: -60%; opacity: 0; }
-            50% { left: 100%; opacity: 1; }
-        }
 
         .stock-header {
             display: flex;
@@ -159,12 +146,6 @@
             height: 32px;
             border-radius: 8px;
             object-fit: cover;
-            filter: drop-shadow(0 0 6px color-mix(in srgb, var(--card-accent) 50%, transparent));
-            transition: filter 0.3s ease;
-        }
-
-        .stock-card:hover .stock-logo {
-            filter: drop-shadow(0 0 10px color-mix(in srgb, var(--card-accent) 70%, transparent));
         }
 
         .stock-name {
@@ -209,15 +190,12 @@
             font-size: 1.5rem;
             font-weight: 800;
             line-height: 1.2;
-            font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', monospace;
-            letter-spacing: -0.5px;
         }
 
         .price-block-change {
             font-size: 0.7rem;
             font-weight: 600;
             margin-top: 3px;
-            font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', monospace;
         }
 
         .price-block-change.up { color: var(--green); }
@@ -244,7 +222,6 @@
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
             display: flex;
             justify-content: center;
-            font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', monospace;
         }
         .stock-meta.has-volume {
             justify-content: space-between;
@@ -257,7 +234,6 @@
             color: var(--text-dim);
             margin-top: 6px;
             text-align: center;
-            font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', monospace;
         }
         .stock-extended .ext-label {
             font-weight: 600;
@@ -310,11 +286,11 @@
         { ticker: 'SNDK', name: 'SanDisk', hl: 'xyz:SNDK', color: '#2D4691', logo: 'logos/SNDK.svg' },
         { ticker: 'MU', name: 'Micron', hl: 'xyz:MU', color: '#104076', logo: 'logos/MU.svg' },
         { ticker: 'AVGO', name: 'Broadcom', hl: 'xyz:AVGO', color: '#CC092F', logo: 'logos/AVGO.svg' },
-        { ticker: 'SPCX', name: 'SpaceX', hl: 'xyz:SPCX', color: '#005288', logo: 'logos/SPCX.svg' },
+        { ticker: 'SPCX', name: 'SpaceX', hl: 'xyz:SPCX', color: '#4DA8DA', logo: 'logos/SPCX.svg' },
         { ticker: 'MRVL', name: 'Marvell', hl: 'xyz:MRVL', color: '#FFFFFF', logo: 'logos/MRVL.svg' },
         { ticker: 'ARM', name: 'ARM', hl: 'xyz:ARM', color: '#0090BF', logo: 'logos/ARM.svg' },
         { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg' },
-        { ticker: '005930.KS', name: 'Samsung', hl: null, color: '#1428A0', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
+        { ticker: '005930.KS', name: 'Samsung', hl: null, color: '#4A6CF7', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
         { ticker: '000660.KS', name: 'SK Hynix', hl: null, color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
     ];
 
