@@ -411,6 +411,7 @@
     let chartRange = '1d';
     let chart = null;
     let mainSeries = null;
+    let volumeSeries = null;
     let prevNasdaqPrice = null;
     let prevYahooPrice = null;
     let prevHlPrice = null;
@@ -641,6 +642,20 @@
             chart.removeSeries(mainSeries);
             mainSeries = null;
         }
+        if (volumeSeries) {
+            chart.removeSeries(volumeSeries);
+            volumeSeries = null;
+        }
+
+        // Volume histogram (behind price series)
+        volumeSeries = chart.addHistogramSeries({
+            priceFormat: { type: 'volume' },
+            priceScaleId: 'volume',
+        });
+        chart.priceScale('volume').applyOptions({
+            scaleMargins: { top: 0.8, bottom: 0 },
+            drawTicks: false,
+        });
 
         const color = currentTab === 'nasdaq' ? '#00bcd4' : '#00e676';
 
@@ -711,6 +726,19 @@
         } else {
             const lineData = data.map(d => ({ time: d.time, value: d.close }));
             mainSeries.setData(lineData);
+        }
+        // Volume bars
+        if (volumeSeries) {
+            const volData = data
+                .filter(d => d.volume != null && d.volume > 0)
+                .map(d => ({
+                    time: d.time,
+                    value: d.volume,
+                    color: d.close >= d.open
+                        ? 'rgba(0,200,83,0.25)'
+                        : 'rgba(255,23,68,0.25)',
+                }));
+            volumeSeries.setData(volData);
         }
         if (shouldFitContent) { applyVisibleRange(); shouldFitContent = false; }
     }

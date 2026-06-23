@@ -429,7 +429,13 @@
             const prevClose = meta.previousClose;
             const regPrice = meta.regularMarketPrice;
 
-            state[stock.ticker].prevClose = regPrice || prevClose;
+            // During market hours: previousClose is yesterday's close (correct)
+            // During pre/post/closed: regularMarketPrice is last session's close
+            if (ms === 'market') {
+                state[stock.ticker].prevClose = prevClose;
+            } else {
+                state[stock.ticker].prevClose = regPrice || prevClose;
+            }
 
             // Get trading periods from today's data
             const todayTP = meta.tradingPeriods;
