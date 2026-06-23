@@ -177,6 +177,8 @@
         .extended-price .ext-change.up { color: var(--green); }
         .extended-price .ext-change.down { color: var(--red); }
 
+        .dim-element { opacity: 0.3; transition: opacity 0.5s; }
+
         .market-cap {
             font-size: 0.8rem;
             color: var(--text-dim);
@@ -1334,6 +1336,15 @@
             badge.textContent = ms.label;
             badge.className = `status-badge badge-${ms.status}`;
             document.getElementById('nasdaq-card').className = `card card-nasdaq ${ms.status}${currentTab === 'nasdaq' ? ' focused' : ''}`;
+            // Dim elements based on market status
+            const nasDim = ms.status !== 'market';
+            const extDim = ms.status === 'closed' || ms.status === 'market';
+            const hlDim = ms.status !== 'closed';
+            document.getElementById('nasdaq-price').classList.toggle('dim-element', nasDim);
+            document.getElementById('nasdaq-meta').classList.toggle('dim-element', nasDim);
+            document.getElementById('nasdaq-extended').classList.toggle('dim-element', extDim);
+            document.getElementById('hl-price').classList.toggle('dim-element', hlDim);
+            document.getElementById('hl-meta').classList.toggle('dim-element', hlDim);
         }, 1000);
     }
 
