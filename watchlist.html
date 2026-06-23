@@ -68,10 +68,23 @@
         }
 
         /* ─── Stock Grid ─────────────────────────────────────── */
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-dim);
+            margin: 20px 0 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border);
+        }
+        .section-label:first-of-type { margin-top: 0; }
+
         .stock-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 12px;
+            margin-bottom: 8px;
         }
 
         @media (max-width: 640px) {
@@ -208,7 +221,11 @@
         <div class="time-display" id="time-display">--</div>
     </div>
 
-    <div class="stock-grid" id="stock-grid"></div>
+    <div class="section-label">US Market</div>
+    <div class="stock-grid" id="stock-grid-us"></div>
+
+    <div class="section-label">Korean Market (KRX)</div>
+    <div class="stock-grid" id="stock-grid-kr"></div>
 
     <script>
     // ─── Stock Configuration ────────────────────────────────────────────────
@@ -217,8 +234,6 @@
         { ticker: 'AMD', name: 'AMD', hl: 'xyz:AMD', color: '#7AB648', logo: 'logos/AMD.svg' },
         { ticker: 'NVDA', name: 'NVIDIA', hl: 'xyz:NVDA', color: '#76B900', logo: 'logos/NVDA.svg' },
         { ticker: 'TSM', name: 'TSMC', hl: 'xyz:TSM', color: '#C4161C', logo: 'logos/TSM.svg' },
-        { ticker: '005930.KS', name: 'Samsung', hl: null, color: '#1428A0', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
-        { ticker: '000660.KS', name: 'SK Hynix', hl: null, color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
         { ticker: 'SNDK', name: 'SanDisk', hl: 'xyz:SNDK', color: '#2D4691', logo: 'logos/SNDK.svg' },
         { ticker: 'MU', name: 'Micron', hl: 'xyz:MU', color: '#104076', logo: 'logos/MU.svg' },
         { ticker: 'AVGO', name: 'Broadcom', hl: 'xyz:AVGO', color: '#CC092F', logo: 'logos/AVGO.svg' },
@@ -226,6 +241,8 @@
         { ticker: 'MRVL', name: 'Marvell', hl: 'xyz:MRVL', color: '#FFFFFF', logo: 'logos/MRVL.svg' },
         { ticker: 'ARM', name: 'ARM', hl: 'xyz:ARM', color: '#0090BF', logo: 'logos/ARM.svg' },
         { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg' },
+        { ticker: '005930.KS', name: 'Samsung', hl: null, color: '#1428A0', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
+        { ticker: '000660.KS', name: 'SK Hynix', hl: null, color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
     ];
 
     function sid(s) { return (s.displayTicker || s.ticker).replace(/[^A-Za-z0-9]/g, '_'); }
@@ -315,11 +332,9 @@
     }
 
     // ─── Render Cards ───────────────────────────────────────────────────────
-    function renderGrid() {
-        const grid = document.getElementById('stock-grid');
-        grid.innerHTML = STOCKS.map(s => {
-            const id = sid(s);
-            return `
+    function renderCard(s) {
+        const id = sid(s);
+        return `
             <div class="stock-card" id="card-${id}" style="--card-accent: ${s.color}">
                 <div class="stock-header">
                     <img class="stock-logo" src="${s.logo}" alt="${s.name}">
@@ -342,7 +357,14 @@
                 <div class="stock-meta" id="meta-${id}"></div>
                 <div class="stock-meta" id="mcap-${id}"></div>
             </div>
-        `}).join('');
+        `;
+    }
+
+    function renderGrid() {
+        const usStocks = STOCKS.filter(s => !s.currency);
+        const krStocks = STOCKS.filter(s => s.currency === 'KRW');
+        document.getElementById('stock-grid-us').innerHTML = usStocks.map(renderCard).join('');
+        document.getElementById('stock-grid-kr').innerHTML = krStocks.map(renderCard).join('');
     }
 
     // ─── Fetch NASDAQ Data ──────────────────────────────────────────────────
