@@ -177,6 +177,12 @@
         .extended-price .ext-change.up { color: var(--green); }
         .extended-price .ext-change.down { color: var(--red); }
 
+        .market-cap {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            margin-top: 4px;
+        }
+
         .price-meta {
             font-size: 0.85rem;
             color: var(--text-dim);
@@ -316,6 +322,7 @@
             <div class="big-price" id="nasdaq-price">—</div>
             <div class="price-meta" id="nasdaq-meta"></div>
             <div class="extended-price" id="nasdaq-extended"></div>
+            <div class="market-cap" id="nasdaq-mcap"></div>
             <div class="session-details" id="nasdaq-sessions"></div>
         </div>
         <div class="card card-hl" id="hl-card">
@@ -377,6 +384,7 @@
     let prevYahooPrice = null;
     let prevHlPrice = null;
     let nasdaqPrevClose = null;
+    const INTC_SHARES = 5.026e9; // shares outstanding (update quarterly)
     let hlWs = null;
     let yahooWs = null;
     let hlReconnectTimer = null;
@@ -792,6 +800,16 @@
         return vol.toString();
     }
 
+    function updateMarketCap(price) {
+        const mcap = price * INTC_SHARES;
+        const mcapEl = document.getElementById('nasdaq-mcap');
+        if (mcap >= 1e12) {
+            mcapEl.textContent = 'Market Cap: $' + (mcap / 1e12).toFixed(2) + 'T';
+        } else {
+            mcapEl.textContent = 'Market Cap: $' + (mcap / 1e9).toFixed(2) + 'B';
+        }
+    }
+
     async function fetchNasdaqData() {
         try {
             // Fetch intraday data (5m interval, 1d range) for session breakdown
@@ -946,6 +964,7 @@
                 } else {
                     extEl2.innerHTML = '';
                 }
+                updateMarketCap(postLastPrice || mainPrice);
             } else if (ms.status === 'premarket') {
                 // Big price = last regular close (stable), small = pre-market price
                 // During premarket, regularMarketPrice = last session's close (correct prev close)
@@ -992,6 +1011,7 @@
                 } else {
                     extEl2.innerHTML = '';
                 }
+                updateMarketCap(preLastPrice || mainPrice);
             } else {
                 // Market open — show live price from meta
                 if (mainLastPrice) {
@@ -1014,6 +1034,7 @@
                     }
                 }
                 extEl2.innerHTML = '';
+                updateMarketCap(mainLastPrice);
             }
 
             // Cache intraday data for chart reuse
@@ -1107,6 +1128,7 @@
                     `<span class="ext-value">$${price.toFixed(2)}</span> ` +
                     `<span class="ext-change ${extCls}">${extSign}${extChange.toFixed(2)} (${extSign}${extPct.toFixed(2)}%)</span>`;
             }
+            updateMarketCap(price);
             prevYahooPrice = price;
             return;
         }
@@ -1121,6 +1143,7 @@
         }
         prevYahooPrice = price;
         priceEl.textContent = `$${price.toFixed(2)}`;
+        updateMarketCap(price);
 
         const prevClose = nasdaqPrevClose;
         if (prevClose) {
