@@ -876,7 +876,15 @@
             }
 
             // Session breakdown from intraday candles
-            const tp = meta.currentTradingPeriod;
+            // Use tradingPeriods (today's actual periods) instead of currentTradingPeriod (which may be tomorrow's)
+            const todayTP = meta.tradingPeriods;
+            const tp = (todayTP && todayTP.regular && todayTP.regular[0] && todayTP.regular[0][0])
+                ? {
+                    pre: todayTP.pre[0][0],
+                    regular: todayTP.regular[0][0],
+                    post: todayTP.post[0][0],
+                }
+                : meta.currentTradingPeriod;
             let preHigh = -Infinity, preLow = Infinity, preVol = 0;
             let regHigh = -Infinity, regLow = Infinity, regVol = 0;
             let postHigh = -Infinity, postLow = Infinity, postVol = 0;
