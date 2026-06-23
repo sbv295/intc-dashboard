@@ -604,10 +604,10 @@
     }
 
     // ─── Init ───────────────────────────────────────────────────────────────
-    function init() {
+    async function init() {
         renderGrid();
         initYahooProto();
-        fetchAllNasdaq();
+        await fetchAllNasdaq();
         fetchAllShares();
         connectYahooWs();
         connectHlWs();
