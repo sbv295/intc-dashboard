@@ -154,6 +154,29 @@
         .change.down { color: var(--red); }
         .prev-close { font-size: 0.8rem; color: var(--text-dim); }
 
+        .extended-price {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin-top: 6px;
+            line-height: 1.4;
+        }
+        .extended-price .ext-label {
+            font-weight: 600;
+            color: var(--amber);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .extended-price .ext-value {
+            font-weight: 700;
+            color: var(--text);
+        }
+        .extended-price .ext-change {
+            font-weight: 600;
+        }
+        .extended-price .ext-change.up { color: var(--green); }
+        .extended-price .ext-change.down { color: var(--red); }
+
         .price-meta {
             font-size: 0.85rem;
             color: var(--text-dim);
@@ -292,12 +315,13 @@
             <div class="source-label">NASDAQ: INTC (Live) <span class="status-badge badge-closed" id="market-badge">Loading...</span></div>
             <div class="big-price" id="nasdaq-price">—</div>
             <div class="price-meta" id="nasdaq-meta"></div>
+            <div class="extended-price" id="nasdaq-extended"></div>
             <div class="session-details" id="nasdaq-sessions"></div>
         </div>
         <div class="card card-hl" id="hl-card">
             <div class="source-label">Hyperliquid 24/7 (xyz:INTC perp)</div>
             <div class="big-price" id="hl-price">—</div>
-            <div class="change" id="hl-change"></div>
+            <div class="price-meta" id="hl-meta"></div>
             <div class="session-details" id="hl-details"></div>
         </div>
     </div>
@@ -801,19 +825,41 @@
                 nasdaqPrevClose = meta.regularMarketPrice || meta.previousClose;
             }
             const lastPrice = meta.regularMarketPrice;
+            const extEl = document.getElementById('nasdaq-extended');
+
             if (lastPrice) {
                 const priceEl = document.getElementById('nasdaq-price');
-                if (prevNasdaqPrice !== null && lastPrice !== prevNasdaqPrice) {
+
+                // Determine main vs extended price based on market status
+                let mainPrice = lastPrice;
+                let extPrice = null;
+                let extLabel = null;
+                let refPrice = null;
+
+                if (ms.status === 'postmarket' || ms.status === 'closed') {
+                    // Main price = regular close, extended = post-market last price
+                    mainPrice = lastPrice; // regularMarketPrice is regular close
+                    // Post-market price will be extracted from candles below
+                    extLabel = 'Post-Market';
+                    refPrice = lastPrice;
+                } else if (ms.status === 'premarket') {
+                    // Main price = previous close, extended = pre-market last price
+                    mainPrice = meta.previousClose || lastPrice;
+                    extLabel = 'Pre-Market';
+                    refPrice = meta.previousClose;
+                }
+
+                if (prevNasdaqPrice !== null && mainPrice !== prevNasdaqPrice) {
                     priceEl.classList.remove('price-flash-up', 'price-flash-down');
                     void priceEl.offsetWidth;
-                    priceEl.classList.add(lastPrice > prevNasdaqPrice ? 'price-flash-up' : 'price-flash-down');
+                    priceEl.classList.add(mainPrice > prevNasdaqPrice ? 'price-flash-up' : 'price-flash-down');
                 }
-                prevNasdaqPrice = lastPrice;
-                priceEl.textContent = `$${lastPrice.toFixed(2)}`;
+                prevNasdaqPrice = mainPrice;
+                priceEl.textContent = `$${mainPrice.toFixed(2)}`;
 
                 // Change + prev close
                 if (meta.previousClose) {
-                    const change = lastPrice - meta.previousClose;
+                    const change = mainPrice - meta.previousClose;
                     const pct = (change / meta.previousClose) * 100;
                     const sign = change >= 0 ? '+' : '';
                     const cls = change >= 0 ? 'up' : 'down';
@@ -821,6 +867,12 @@
                         `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
                         `<span class="prev-close">Prev Close: $${meta.previousClose.toFixed(2)}</span>`;
                 }
+
+                // Extended price will be set after parsing candles (need post/pre last price)
+                // Store for later
+                window._extLabel = extLabel;
+                window._extRefPrice = refPrice;
+                window._msStatus = ms.status;
             }
 
             // Session breakdown from intraday candles
@@ -864,6 +916,60 @@
             if (hasReg) html += `<b>Regular:</b> H $${regHigh.toFixed(2)} / L $${regLow.toFixed(2)} · Vol: ${formatVol(regVol)}<br>`;
             if (hasPost) html += `<b>Post:</b> H $${postHigh.toFixed(2)} / L $${postLow.toFixed(2)} · Vol: ${formatVol(postVol)}`;
             document.getElementById('nasdaq-sessions').innerHTML = html;
+
+            // Extended price display (post/pre market last traded price)
+            const extEl2 = document.getElementById('nasdaq-extended');
+            if (window._msStatus === 'postmarket' || window._msStatus === 'closed') {
+                // Get last post-market candle close
+                let postLastPrice = null;
+                if (tp) {
+                    for (let i = timestamps.length - 1; i >= 0; i--) {
+                        const t = timestamps[i], c = quote.close[i];
+                        if (c != null && t >= tp.post.start && t < tp.post.end) {
+                            postLastPrice = c;
+                            break;
+                        }
+                    }
+                }
+                if (postLastPrice && window._extRefPrice) {
+                    const extChange = postLastPrice - window._extRefPrice;
+                    const extPct = (extChange / window._extRefPrice) * 100;
+                    const extSign = extChange >= 0 ? '+' : '';
+                    const extCls = extChange >= 0 ? 'up' : 'down';
+                    extEl2.innerHTML =
+                        `<span class="ext-label">${window._extLabel}:</span> ` +
+                        `<span class="ext-value">$${postLastPrice.toFixed(2)}</span> ` +
+                        `<span class="ext-change ${extCls}">${extSign}${extChange.toFixed(2)} (${extSign}${extPct.toFixed(2)}%)</span>`;
+                } else {
+                    extEl2.innerHTML = '';
+                }
+            } else if (window._msStatus === 'premarket') {
+                // Get last pre-market candle close
+                let preLastPrice = null;
+                if (tp) {
+                    for (let i = timestamps.length - 1; i >= 0; i--) {
+                        const t = timestamps[i], c = quote.close[i];
+                        if (c != null && t >= tp.pre.start && t < tp.regular.start) {
+                            preLastPrice = c;
+                            break;
+                        }
+                    }
+                }
+                if (preLastPrice && window._extRefPrice) {
+                    const extChange = preLastPrice - window._extRefPrice;
+                    const extPct = (extChange / window._extRefPrice) * 100;
+                    const extSign = extChange >= 0 ? '+' : '';
+                    const extCls = extChange >= 0 ? 'up' : 'down';
+                    extEl2.innerHTML =
+                        `<span class="ext-label">${window._extLabel}:</span> ` +
+                        `<span class="ext-value">$${preLastPrice.toFixed(2)}</span> ` +
+                        `<span class="ext-change ${extCls}">${extSign}${extChange.toFixed(2)} (${extSign}${extPct.toFixed(2)}%)</span>`;
+                } else {
+                    extEl2.innerHTML = '';
+                }
+            } else {
+                extEl2.innerHTML = '';
+            }
 
             // Cache intraday data for chart reuse
             if (chartData.length) nasdaqIntradayCache = chartData;
@@ -1025,17 +1131,14 @@
         prevHlPrice = price;
         priceEl.textContent = `$${price.toFixed(2)}`;
 
-        const changeEl = document.getElementById('hl-change');
-        const ms = getMarketStatus();
-        if (nasdaqPrevClose && ms.status === 'closed') {
+        if (nasdaqPrevClose) {
             const change = price - nasdaqPrevClose;
             const pct = (change / nasdaqPrevClose) * 100;
             const sign = change >= 0 ? '+' : '';
-            changeEl.textContent = `${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%) vs NASDAQ close`;
-            changeEl.className = `change ${change >= 0 ? 'up' : 'down'}`;
-        } else {
-            changeEl.textContent = '';
-            changeEl.className = 'change';
+            const cls = change >= 0 ? 'up' : 'down';
+            document.getElementById('hl-meta').innerHTML =
+                `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
+                `<span class="prev-close">Prev Close: $${nasdaqPrevClose.toFixed(2)}</span>`;
         }
     }
 
