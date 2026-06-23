@@ -287,7 +287,7 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null };
     });
 
     // ─── Yahoo Finance API ──────────────────────────────────────────────────
@@ -550,6 +550,8 @@
                 const cls = chg >= 0 ? 'up' : 'down';
                 extEl.innerHTML = `<span class="ext-label">${label}:</span> <span class="ext-value">${fmtPrice(stock, price)}</span> <span class="ext-change ${cls}">${sign}${pct.toFixed(2)}%</span>`;
             }
+            st.extPrice = price;
+            updateMarketCap(ticker);
             return;
         }
 
@@ -563,6 +565,7 @@
             priceEl.classList.add(price > prev ? 'price-flash-up' : 'price-flash-down');
         }
         st.prevNasdaq = price;
+        st.extPrice = null;
         priceEl.textContent = fmtPrice(stock, price);
         updateMarketCap(ticker);
 
@@ -677,7 +680,7 @@
 
     function updateMarketCap(ticker) {
         const st = state[ticker];
-        const price = st.prevNasdaq || st.nasdaqPrice;
+        const price = st.extPrice || st.prevNasdaq || st.nasdaqPrice;
         if (!st.shares || !price) return;
         const mcap = price * st.shares;
         st.mcap = mcap;
