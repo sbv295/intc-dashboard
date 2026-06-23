@@ -414,11 +414,7 @@
     }
 
     async function fetchAllNasdaq() {
-        // Stagger requests slightly to avoid rate limiting
-        for (const stock of STOCKS) {
-            await fetchNasdaqForStock(stock);
-            await new Promise(r => setTimeout(r, 200));
-        }
+        await Promise.allSettled(STOCKS.map(s => fetchNasdaqForStock(s)));
     }
 
     // ─── Yahoo WebSocket (live prices) ──────────────────────────────────────
@@ -574,7 +570,7 @@
 
     // ─── Fetch Shares Outstanding ────────────────────────────────────────────
     async function fetchAllShares() {
-        for (const stock of STOCKS) {
+        await Promise.allSettled(STOCKS.map(async (stock) => {
             try {
                 const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics`;
                 const json = await yahooFetch(url);
@@ -585,8 +581,7 @@
                     updateMarketCap(stock.ticker);
                 }
             } catch(e) {}
-            await new Promise(r => setTimeout(r, 300));
-        }
+        }));
     }
 
     function updateMarketCap(ticker) {
@@ -607,10 +602,9 @@
     async function init() {
         renderGrid();
         initYahooProto();
-        await fetchAllNasdaq();
-        fetchAllShares();
         connectYahooWs();
         connectHlWs();
+        fetchAllNasdaq().then(() => fetchAllShares());
 
         // Time update
         setInterval(() => {
