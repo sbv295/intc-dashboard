@@ -216,9 +216,9 @@
         { ticker: 'INTC', name: 'Intel', hl: 'xyz:INTC', color: '#0071C5', logo: 'logos/INTC.svg' },
         { ticker: 'AMD', name: 'AMD', hl: 'xyz:AMD', color: '#7AB648', logo: 'logos/AMD.svg' },
         { ticker: 'NVDA', name: 'NVIDIA', hl: 'xyz:NVDA', color: '#76B900', logo: 'logos/NVDA.svg' },
-        { ticker: 'TSM', name: 'TSMC', hl: 'TSM-UDC', color: '#C4161C', logo: 'logos/TSM.svg' },
-        { ticker: '005930.KS', name: 'Samsung', hl: 'SAMSUNG-UDC', color: '#1428A0', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
-        { ticker: '000660.KS', name: 'SK Hynix', hl: 'SKHYNIX-UDC', color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
+        { ticker: 'TSM', name: 'TSMC', hl: 'xyz:TSM', color: '#C4161C', logo: 'logos/TSM.svg' },
+        { ticker: '005930.KS', name: 'Samsung', hl: null, color: '#1428A0', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
+        { ticker: '000660.KS', name: 'SK Hynix', hl: null, color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
         { ticker: 'SNDK', name: 'SanDisk', hl: 'xyz:SNDK', color: '#2D4691', logo: 'logos/SNDK.svg' },
         { ticker: 'MU', name: 'Micron', hl: 'xyz:MU', color: '#104076', logo: 'logos/MU.svg' },
         { ticker: 'AVGO', name: 'Broadcom', hl: 'xyz:AVGO', color: '#CC092F', logo: 'logos/AVGO.svg' },
@@ -327,16 +327,16 @@
                     <span class="stock-ticker">${s.displayTicker || s.ticker}</span>
                 </div>
                 <div class="stock-prices">
-                    <div class="price-block">
+                    <div class="price-block" ${!s.hl ? 'style="grid-column: 1 / -1"' : ''}>
                         <div class="price-block-label">${stockExchange(s)}</div>
                         <div class="price-block-value" id="nasdaq-${id}">—</div>
                         <div class="price-block-change" id="nasdaq-chg-${id}"></div>
                     </div>
-                    <div class="price-block">
+                    ${s.hl ? `<div class="price-block">
                         <div class="price-block-label">Hyperliquid</div>
                         <div class="price-block-value" id="hl-${id}">—</div>
                         <div class="price-block-change" id="hl-chg-${id}"></div>
-                    </div>
+                    </div>` : ''}
                 </div>
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"></div>
@@ -552,7 +552,7 @@
         if (hlWs && hlWs.readyState === WebSocket.OPEN) return;
         hlWs = new WebSocket('wss://api.hyperliquid.xyz/ws');
         hlWs.onopen = () => {
-            STOCKS.forEach(s => {
+            STOCKS.filter(s => s.hl).forEach(s => {
                 hlWs.send(JSON.stringify({
                     method: 'subscribe',
                     subscription: { type: 'l2Book', coin: s.hl }
