@@ -457,7 +457,7 @@
                     const chg = displayPrice - prevClose;
                     const pct = (chg / prevClose) * 100;
                     const sign = chg >= 0 ? '+' : '';
-                    chgEl.innerHTML = `<span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span> <span class="prev-ref">· ${fmtPrice(stock, prevClose)}</span>`;
+                    chgEl.innerHTML = `<span class="prev-ref">${fmtPrice(stock, prevClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
                     chgEl.className = `price-block-change`;
                 }
             }
@@ -577,7 +577,7 @@
             const chg = price - prevClose;
             const pct = (chg / prevClose) * 100;
             const sign = chg >= 0 ? '+' : '';
-            chgEl.innerHTML = `<span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span> <span class="prev-ref">· ${fmtPrice(stock, prevClose)}</span>`;
+            chgEl.innerHTML = `<span class="prev-ref">${fmtPrice(stock, prevClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
             chgEl.className = `price-block-change`;
         }
     }
