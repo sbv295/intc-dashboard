@@ -79,6 +79,15 @@
             border-bottom: 1px solid var(--border);
         }
         .section-label:first-of-type { margin-top: 0; }
+        .section-hours {
+            font-size: 0.65rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: var(--text-dim);
+            opacity: 0.7;
+            margin-left: 8px;
+            text-transform: none;
+        }
 
         .stock-grid {
             display: grid;
@@ -234,10 +243,10 @@
         <div class="time-display" id="time-display">--</div>
     </div>
 
-    <div class="section-label">US Market</div>
+    <div class="section-label">US Market <span class="section-hours">Pre 5:30–19:00 · Market 19:00–01:30 · Post 01:30–05:30 IST</span></div>
     <div class="stock-grid" id="stock-grid-us"></div>
 
-    <div class="section-label">Korean Market (KRX)</div>
+    <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 05:30–11:00 IST</span></div>
     <div class="stock-grid" id="stock-grid-kr"></div>
 
     <script>
@@ -325,8 +334,8 @@
 
     // ─── Time & Market Status ───────────────────────────────────────────────
     function formatDualTime(date) {
-        const ist = date.toLocaleString('en-US', { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }) + ' IST';
-        const et = date.toLocaleString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }) + ' ET';
+        const ist = date.toLocaleString('en-US', { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: '2-digit', hour12: true }) + ' IST';
+        const et = date.toLocaleString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit', hour12: true }) + ' ET';
         return ist + '<br>' + et;
     }
 
@@ -702,7 +711,7 @@
         setInterval(() => {
             document.getElementById('time-display').innerHTML = formatDualTime(new Date());
             updateHlDimState();
-        }, 1000);
+        }, 60000);
         document.getElementById('time-display').innerHTML = formatDualTime(new Date());
         updateHlDimState();
 
