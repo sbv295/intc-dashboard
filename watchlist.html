@@ -170,6 +170,9 @@
 
         .price-block-change.up { color: var(--green); }
         .price-block-change.down { color: var(--red); }
+        .price-block-change .up { color: var(--green); }
+        .price-block-change .down { color: var(--red); }
+        .price-block-change .prev-ref { color: var(--text-dim); font-weight: 400; }
 
         .price-block.hl-dimmed {
             opacity: 0.3;
@@ -364,7 +367,6 @@
                     </div>` : ''}
                 </div>
                 <div class="stock-extended" id="ext-${id}"></div>
-                <div class="stock-meta" id="meta-${id}"></div>
                 <div class="stock-meta" id="mcap-${id}"></div>
             </div>
         `;
@@ -455,8 +457,8 @@
                     const chg = displayPrice - prevClose;
                     const pct = (chg / prevClose) * 100;
                     const sign = chg >= 0 ? '+' : '';
-                    chgEl.textContent = `${sign}${pct.toFixed(2)}%`;
-                    chgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
+                    chgEl.innerHTML = `<span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span> <span class="prev-ref">· ${fmtPrice(stock, prevClose)}</span>`;
+                    chgEl.className = `price-block-change`;
                 }
             }
 
@@ -473,7 +475,7 @@
             }
 
             // Meta line
-            document.getElementById(`meta-${_sid}`).textContent = prevClose ? `Prev Close: ${fmtPrice(stock, prevClose)}` : '';
+            // (prev close is now shown inline with % change)
 
         } catch (e) {
             // Silent fail
@@ -575,8 +577,8 @@
             const chg = price - prevClose;
             const pct = (chg / prevClose) * 100;
             const sign = chg >= 0 ? '+' : '';
-            chgEl.textContent = `${sign}${pct.toFixed(2)}%`;
-            chgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
+            chgEl.innerHTML = `<span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span> <span class="prev-ref">· ${fmtPrice(stock, prevClose)}</span>`;
+            chgEl.className = `price-block-change`;
         }
     }
 
