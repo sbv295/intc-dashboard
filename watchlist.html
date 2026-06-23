@@ -228,7 +228,7 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, prevNasdaq: null, prevHl: null };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null };
     });
 
     // ─── Yahoo Finance API ──────────────────────────────────────────────────
@@ -306,6 +306,7 @@
                 </div>
                 <div class="stock-extended" id="ext-${s.ticker}"></div>
                 <div class="stock-meta" id="meta-${s.ticker}"></div>
+                <div class="stock-meta" id="mcap-${s.ticker}"></div>
             </div>
         `).join('');
     }
@@ -377,7 +378,9 @@
                     priceEl.classList.add(displayPrice > prev ? 'price-flash-up' : 'price-flash-down');
                 }
                 state[stock.ticker].prevNasdaq = displayPrice;
+                state[stock.ticker].nasdaqPrice = displayPrice;
                 priceEl.textContent = `$${displayPrice.toFixed(2)}`;
+                updateMarketCap(stock.ticker);
 
                 // Change vs previous close
                 const chgEl = document.getElementById(`nasdaq-chg-${stock.ticker}`);
@@ -496,6 +499,7 @@
         }
         st.prevNasdaq = price;
         priceEl.textContent = `$${price.toFixed(2)}`;
+        updateMarketCap(ticker);
 
         const chgEl = document.getElementById(`nasdaq-chg-${ticker}`);
         const prevClose = st.prevClose;
@@ -568,11 +572,46 @@
         }
     }
 
+    // ─── Fetch Shares Outstanding ────────────────────────────────────────────
+    async function fetchAllShares() {
+        for (const stock of STOCKS) {
+            try {
+                const url = `${YAHOO_BASE}${stock.ticker}?modules=defaultKeyStatistics&symbol=${stock.ticker}`;
+                const apiUrl = '/api/yahoo?modules=defaultKeyStatistics&symbol=' + stock.ticker;
+                const resp = await fetch(apiUrl);
+                if (!resp.ok) continue;
+                const json = await resp.json();
+                const stats = json.quoteSummary?.result?.[0]?.defaultKeyStatistics;
+                const shares = stats?.sharesOutstanding?.raw;
+                if (shares) {
+                    state[stock.ticker].shares = shares;
+                    updateMarketCap(stock.ticker);
+                }
+            } catch(e) {}
+            await new Promise(r => setTimeout(r, 300));
+        }
+    }
+
+    function updateMarketCap(ticker) {
+        const st = state[ticker];
+        const price = st.prevNasdaq || st.nasdaqPrice;
+        if (!st.shares || !price) return;
+        const mcap = price * st.shares;
+        st.mcap = mcap;
+        const el = document.getElementById(`mcap-${ticker}`);
+        if (el) {
+            if (mcap >= 1e12) el.textContent = `Mkt Cap: $${(mcap/1e12).toFixed(1)}T`;
+            else if (mcap >= 1e9) el.textContent = `Mkt Cap: $${(mcap/1e9).toFixed(1)}B`;
+            else el.textContent = `Mkt Cap: $${(mcap/1e6).toFixed(0)}M`;
+        }
+    }
+
     // ─── Init ───────────────────────────────────────────────────────────────
     function init() {
         renderGrid();
         initYahooProto();
         fetchAllNasdaq();
+        fetchAllShares();
         connectYahooWs();
         connectHlWs();
 
