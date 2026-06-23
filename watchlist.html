@@ -171,6 +171,10 @@
         .price-block-change.up { color: var(--green); }
         .price-block-change.down { color: var(--red); }
 
+        .price-block.hl-dimmed {
+            opacity: 0.3;
+        }
+
         .stock-meta {
             font-size: 0.7rem;
             color: var(--text-dim);
@@ -347,7 +351,7 @@
                         <div class="price-block-value" id="nasdaq-${id}">—</div>
                         <div class="price-block-change" id="nasdaq-chg-${id}"></div>
                     </div>
-                    ${s.hl ? `<div class="price-block">
+                    ${s.hl ? `<div class="price-block hl-block" data-ticker="${sid(s)}">
                         <div class="price-block-label">Hyperliquid</div>
                         <div class="price-block-value" id="hl-${id}">—</div>
                         <div class="price-block-change" id="hl-chg-${id}"></div>
@@ -686,11 +690,21 @@
         // Time update
         setInterval(() => {
             document.getElementById('time-display').innerHTML = formatDualTime(new Date());
+            updateHlDimState();
         }, 1000);
         document.getElementById('time-display').innerHTML = formatDualTime(new Date());
+        updateHlDimState();
 
         // Refresh NASDAQ data every 60s
         setInterval(fetchAllNasdaq, 60000);
+    }
+
+    function updateHlDimState() {
+        const ms = getMarketStatus();
+        const shouldDim = (ms !== 'closed');
+        document.querySelectorAll('.hl-block').forEach(el => {
+            el.classList.toggle('hl-dimmed', shouldDim);
+        });
     }
 
     document.addEventListener('DOMContentLoaded', init);
