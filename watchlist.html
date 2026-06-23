@@ -572,16 +572,30 @@
     async function fetchAllShares() {
         await Promise.allSettled(STOCKS.map(async (stock) => {
             try {
-                const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics`;
+                const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail`;
                 const json = await yahooFetch(url);
-                const stats = json.quoteSummary?.result?.[0]?.defaultKeyStatistics;
-                const shares = stats?.sharesOutstanding?.raw;
-                if (shares) {
-                    state[stock.ticker].shares = shares;
-                    updateMarketCap(stock.ticker);
+                const result = json.quoteSummary?.result?.[0];
+                const mcapRaw = result?.summaryDetail?.marketCap?.raw;
+                if (mcapRaw) {
+                    state[stock.ticker].mcap = mcapRaw;
+                    displayMarketCap(stock.ticker, mcapRaw);
+                } else {
+                    const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
+                    if (shares) {
+                        state[stock.ticker].shares = shares;
+                        updateMarketCap(stock.ticker);
+                    }
                 }
             } catch(e) {}
         }));
+    }
+
+    function displayMarketCap(ticker, mcap) {
+        const el = document.getElementById(`mcap-${ticker}`);
+        if (!el) return;
+        if (mcap >= 1e12) el.textContent = `Mkt Cap: $${(mcap/1e12).toFixed(1)}T`;
+        else if (mcap >= 1e9) el.textContent = `Mkt Cap: $${(mcap/1e9).toFixed(1)}B`;
+        else el.textContent = `Mkt Cap: $${(mcap/1e6).toFixed(0)}M`;
     }
 
     function updateMarketCap(ticker) {
@@ -590,12 +604,7 @@
         if (!st.shares || !price) return;
         const mcap = price * st.shares;
         st.mcap = mcap;
-        const el = document.getElementById(`mcap-${ticker}`);
-        if (el) {
-            if (mcap >= 1e12) el.textContent = `Mkt Cap: $${(mcap/1e12).toFixed(1)}T`;
-            else if (mcap >= 1e9) el.textContent = `Mkt Cap: $${(mcap/1e9).toFixed(1)}B`;
-            else el.textContent = `Mkt Cap: $${(mcap/1e6).toFixed(0)}M`;
-        }
+        displayMarketCap(ticker, mcap);
     }
 
     // ─── Init ───────────────────────────────────────────────────────────────
