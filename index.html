@@ -295,7 +295,7 @@
 
         #volume-container {
             width: 100%;
-            height: 100px;
+            height: 150px;
             border-radius: 0 0 8px 8px;
             overflow: hidden;
             border-top: 1px solid var(--border);
@@ -303,7 +303,7 @@
 
         @media (max-width: 768px) {
             #chart-container { height: 220px; }
-            #volume-container { height: 70px; }
+            #volume-container { height: 100px; }
             body { padding: 8px; }
             .header h1 { font-size: 1.1rem; }
             .header h1 img { height: 1.5em; }
@@ -637,15 +637,16 @@
             layout: {
                 background: { type: 'solid', color: '#1a1a24' },
                 textColor: '#888899',
+                fontSize: 11,
             },
             grid: {
                 vertLines: { color: '#2a2a3a' },
-                horzLines: { color: '#1e1e2a' },
+                horzLines: { color: '#222230' },
             },
             crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
             rightPriceScale: {
                 borderColor: '#2a2a3a',
-                scaleMargins: { top: 0.1, bottom: 0 },
+                scaleMargins: { top: 0.05, bottom: 0 },
             },
             timeScale: {
                 borderColor: '#2a2a3a',
@@ -722,7 +723,11 @@
 
         // Volume histogram in sub-chart
         volumeSeries = volChart.addHistogramSeries({
-            priceFormat: { type: 'volume' },
+            priceFormat: {
+                type: 'volume',
+            },
+            priceLineVisible: false,
+            lastValueVisible: true,
         });
 
         const color = currentTab === 'nasdaq' ? '#00bcd4' : '#00e676';
@@ -803,8 +808,8 @@
                     time: d.time,
                     value: d.volume,
                     color: d.close >= d.open
-                        ? 'rgba(0,200,83,0.25)'
-                        : 'rgba(255,23,68,0.25)',
+                        ? 'rgba(0,200,83,0.55)'
+                        : 'rgba(255,23,68,0.55)',
                 }));
             volumeSeries.setData(volData);
         }
