@@ -276,8 +276,12 @@
             font-size: 0.8rem;
             font-weight: 700;
         }
-        .mcap-summary-change.up { color: var(--green); }
-        .mcap-summary-change.down { color: var(--red); }
+        .mcap-summary-change .up { color: var(--green); }
+        .mcap-summary-change .down { color: var(--red); }
+        .mcap-prev-ref {
+            color: var(--text-dim);
+            font-weight: 400;
+        }
 
         @keyframes flashGreen {
             0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); }
@@ -863,8 +867,8 @@
         if (totalPrev > 0) {
             const pctChg = ((totalCurrent - totalPrev) / totalPrev) * 100;
             const sign = pctChg >= 0 ? '+' : '';
-            chgEl.textContent = `${sign}${pctChg.toFixed(2)}%`;
-            chgEl.className = `mcap-summary-change ${pctChg >= 0 ? 'up' : 'down'}`;
+            chgEl.innerHTML = `<span class="mcap-prev-ref">${formatLargeCurrency(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
+            chgEl.className = `mcap-summary-change`;
         }
     }
 
