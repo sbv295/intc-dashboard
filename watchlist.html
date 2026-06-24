@@ -371,7 +371,7 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, previousSessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null };
     });
 
     // ─── Yahoo Finance API ──────────────────────────────────────────────────
@@ -485,10 +485,6 @@
             const ms = getMarketStatus();
             const prevClose = meta.previousClose;
             const regPrice = meta.regularMarketPrice;
-
-            // previousSessionClose: always yesterday's close (meta.previousClose)
-            // Used for total market cap % change calculation
-            state[stock.ticker].previousSessionClose = prevClose;
 
             // During market hours: previousClose is yesterday's close (correct)
             // During pre/post/closed: regularMarketPrice is last session's close
@@ -846,9 +842,10 @@
             if (!st.shares) continue;
             const price = st.extPrice || st.prevNasdaq || st.nasdaqPrice;
             if (!price) continue;
-            // Use previousSessionClose (always meta.previousClose = yesterday's close)
-            // This ensures % change reflects full movement since last session close
-            const prevPrice = st.previousSessionClose;
+            // Use prevClose which follows the per-card logic:
+            // market hours: meta.previousClose (yesterday's close)
+            // pre/post/closed: regularMarketPrice (last completed session close)
+            const prevPrice = st.prevClose;
             if (!prevPrice) continue;
             hasAny = true;
             let mcapCurrent = price * st.shares;
