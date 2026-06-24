@@ -380,6 +380,18 @@
         return 'closed';
     }
 
+    function getKrxMarketStatus() {
+        const now = new Date();
+        const kstStr = now.toLocaleString('en-US', { timeZone: 'Asia/Seoul', hour12: false });
+        const kstDate = new Date(kstStr);
+        const h = kstDate.getHours(), m = kstDate.getMinutes();
+        const mins = h * 60 + m;
+        const day = kstDate.getDay();
+        if (day === 0 || day === 6) return 'closed';
+        if (mins >= 540 && mins < 930) return 'market'; // 9:00 AM - 3:30 PM KST
+        return 'closed';
+    }
+
     // ─── Render Cards ───────────────────────────────────────────────────────
     function renderCard(s) {
         const id = sid(s);
@@ -787,24 +799,45 @@
 
         // Refresh NASDAQ data every 60s
         setInterval(fetchAllNasdaq, 60000);
+
+        // Refresh KRX stocks more frequently (every 15s) during KRX hours
+        setInterval(() => {
+            if (getKrxMarketStatus() === 'market') {
+                STOCKS.filter(s => s.currency === 'KRW').forEach(s => fetchNasdaqForStock(s));
+            }
+        }, 15000);
     }
 
     function updateHlDimState() {
-        const ms = getMarketStatus();
+        const usMs = getMarketStatus();
+        const krMs = getKrxMarketStatus();
+
         // HL: dim during market/pre/post, bright when closed
-        const hlDim = (ms !== 'closed');
+        const hlDim = (usMs !== 'closed');
         document.querySelectorAll('.hl-block').forEach(el => {
             el.classList.toggle('hl-dimmed', hlDim);
         });
-        // NASDAQ main price: dim during pre/post/closed, bright during market
-        const nasDim = (ms !== 'market');
-        document.querySelectorAll('.nasdaq-block').forEach(el => {
-            el.classList.toggle('nasdaq-dimmed', nasDim);
-        });
-        // Extended price: bright during pre/post, dim during closed/market
-        const extDim = (ms === 'closed' || ms === 'market');
-        document.querySelectorAll('.stock-extended').forEach(el => {
-            el.classList.toggle('ext-dimmed', extDim);
+
+        // Per-card dimming based on exchange
+        STOCKS.forEach(s => {
+            const _sid = sid(s);
+            const card = document.getElementById(`card-${_sid}`);
+            if (!card) return;
+            const nasBl = card.querySelector('.nasdaq-block');
+            const extEl = document.getElementById(`ext-${_sid}`);
+
+            if (s.currency === 'KRW') {
+                // KRX stocks: bright during KRX market hours
+                const dim = (krMs !== 'market');
+                if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', dim);
+                if (extEl) extEl.classList.toggle('ext-dimmed', true); // no extended hours for KRX
+            } else {
+                // US stocks
+                const nasDim = (usMs !== 'market');
+                if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', nasDim);
+                const extDim = (usMs === 'closed' || usMs === 'market');
+                if (extEl) extEl.classList.toggle('ext-dimmed', extDim);
+            }
         });
     }
 
