@@ -867,7 +867,7 @@
         if (totalPrev > 0) {
             const pctChg = ((totalCurrent - totalPrev) / totalPrev) * 100;
             const sign = pctChg >= 0 ? '+' : '';
-            chgEl.innerHTML = `<span class="mcap-prev-ref">${formatLargeCurrency(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
+            chgEl.innerHTML = `<span class="mcap-prev-ref">Prev Close: ${formatLargeCurrency(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
             chgEl.className = `mcap-summary-change`;
         }
     }
