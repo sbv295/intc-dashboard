@@ -249,6 +249,36 @@
         .price-flash-up { animation: flashGreen 1s ease-out; }
         .price-flash-down { animation: flashRed 1s ease-out; }
 
+        /* ─── Total Market Cap Bar ────────────────────────── */
+        .mcap-summary {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 18px;
+            margin-bottom: 12px;
+        }
+        .mcap-summary-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+        }
+        .mcap-summary-value {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--text);
+        }
+        .mcap-summary-change {
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .mcap-summary-change.up { color: var(--green); }
+        .mcap-summary-change.down { color: var(--red); }
+
         @keyframes flashGreen {
             0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); }
             100% { color: var(--text); text-shadow: none; }
@@ -271,9 +301,19 @@
     </div>
 
     <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span></div>
+    <div class="mcap-summary" id="mcap-summary-us">
+        <span class="mcap-summary-label">Watchlist Mkt Cap</span>
+        <span class="mcap-summary-value" id="mcap-total-us">—</span>
+        <span class="mcap-summary-change" id="mcap-chg-us"></span>
+    </div>
     <div class="stock-grid" id="stock-grid-us"></div>
 
     <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span></div>
+    <div class="mcap-summary" id="mcap-summary-kr">
+        <span class="mcap-summary-label">Watchlist Mkt Cap</span>
+        <span class="mcap-summary-value" id="mcap-total-kr">—</span>
+        <span class="mcap-summary-change" id="mcap-chg-kr"></span>
+    </div>
     <div class="stock-grid" id="stock-grid-kr"></div>
 
     <script>
@@ -326,7 +366,7 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, previousSessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null };
     });
 
     // ─── Yahoo Finance API ──────────────────────────────────────────────────
@@ -440,6 +480,10 @@
             const ms = getMarketStatus();
             const prevClose = meta.previousClose;
             const regPrice = meta.regularMarketPrice;
+
+            // previousSessionClose: always yesterday's close (meta.previousClose)
+            // Used for total market cap % change calculation
+            state[stock.ticker].previousSessionClose = prevClose;
 
             // During market hours: previousClose is yesterday's close (correct)
             // During pre/post/closed: regularMarketPrice is last session's close
@@ -778,6 +822,56 @@
         const mcap = price * st.shares;
         st.mcap = mcap;
         displayMarketCap(ticker, mcap);
+        updateTotalMarketCap();
+    }
+
+    // ─── Total Market Cap Aggregation ────────────────────────────────────────
+    function updateTotalMarketCap() {
+        const usStocks = STOCKS.filter(s => !s.currency);
+        const krStocks = STOCKS.filter(s => s.currency === 'KRW');
+        computeSectionMcap(usStocks, 'us');
+        computeSectionMcap(krStocks, 'kr');
+    }
+
+    function computeSectionMcap(stocks, section) {
+        let totalCurrent = 0, totalPrev = 0;
+        let hasAny = false;
+        for (const stock of stocks) {
+            const st = state[stock.ticker];
+            if (!st.shares) continue;
+            const price = st.extPrice || st.prevNasdaq || st.nasdaqPrice;
+            if (!price) continue;
+            // Use previousSessionClose (always meta.previousClose = yesterday's close)
+            // This ensures % change reflects full movement since last session close
+            const prevPrice = st.previousSessionClose;
+            if (!prevPrice) continue;
+            hasAny = true;
+            let mcapCurrent = price * st.shares;
+            let mcapPrev = prevPrice * st.shares;
+            if (stock.currency === 'KRW' && krwToUsd) {
+                mcapCurrent *= krwToUsd;
+                mcapPrev *= krwToUsd;
+            }
+            totalCurrent += mcapCurrent;
+            totalPrev += mcapPrev;
+        }
+        if (!hasAny) return;
+        const valEl = document.getElementById(`mcap-total-${section}`);
+        const chgEl = document.getElementById(`mcap-chg-${section}`);
+        if (!valEl || !chgEl) return;
+        valEl.textContent = formatLargeCurrency(totalCurrent);
+        if (totalPrev > 0) {
+            const pctChg = ((totalCurrent - totalPrev) / totalPrev) * 100;
+            const sign = pctChg >= 0 ? '+' : '';
+            chgEl.textContent = `${sign}${pctChg.toFixed(2)}%`;
+            chgEl.className = `mcap-summary-change ${pctChg >= 0 ? 'up' : 'down'}`;
+        }
+    }
+
+    function formatLargeCurrency(val) {
+        if (val >= 1e12) return `$${(val / 1e12).toFixed(2)}T`;
+        if (val >= 1e9) return `$${(val / 1e9).toFixed(1)}B`;
+        return `$${(val / 1e6).toFixed(0)}M`;
     }
 
     // ─── Init ───────────────────────────────────────────────────────────────
