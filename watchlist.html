@@ -371,7 +371,7 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null };
     });
 
     // ─── Yahoo Finance API ──────────────────────────────────────────────────
@@ -486,13 +486,10 @@
             const prevClose = meta.previousClose;
             const regPrice = meta.regularMarketPrice;
 
-            // During market hours: previousClose is yesterday's close (correct)
-            // During pre/post/closed: regularMarketPrice is last session's close
-            if (ms === 'market') {
-                state[stock.ticker].prevClose = prevClose;
-            } else {
-                state[stock.ticker].prevClose = regPrice || prevClose;
-            }
+            // prevClose: always yesterday's official close from chart API (static, reliable)
+            // sessionClose: today's regular session close (reference for extended price changes)
+            state[stock.ticker].prevClose = prevClose;
+            state[stock.ticker].sessionClose = regPrice || prevClose;
 
             // Get trading periods from today's data
             const todayTP = meta.tradingPeriods;
@@ -510,9 +507,11 @@
             }
 
             // Determine display price
+            // Use meta.regularMarketPrice as the official close (includes closing auction)
+            // Candle data is only a fallback since the last 5-min bar misses the closing cross
             let displayPrice, extPrice = null, extLabel = null, refPrice = null;
             if (ms === 'postmarket' || ms === 'closed') {
-                displayPrice = regularClose || regPrice;
+                displayPrice = regPrice || regularClose;
                 refPrice = displayPrice;
                 if (tp) {
                     for (let i = timestamps.length - 1; i >= 0; i--) {
@@ -522,7 +521,7 @@
                 }
                 extLabel = 'Post';
             } else if (ms === 'premarket') {
-                displayPrice = regularClose || regPrice;
+                displayPrice = regPrice || regularClose;
                 refPrice = displayPrice;
                 if (tp) {
                     for (let i = timestamps.length - 1; i >= 0; i--) {
@@ -652,7 +651,8 @@
 
         if (ms === 'premarket' || ms === 'postmarket') {
             const extEl = document.getElementById(`ext-${_sid}`);
-            const refPrice = st.prevClose;
+            // Use sessionClose (today's regular close) as reference for extended price change
+            const refPrice = st.sessionClose;
             const label = ms === 'premarket' ? 'Pre' : 'Post';
             if (refPrice && extEl) {
                 const chg = price - refPrice;
@@ -681,6 +681,7 @@
         updateMarketCap(ticker);
 
         const chgEl = document.getElementById(`nasdaq-chg-${_sid}`);
+        // Always use prevClose (yesterday's close from chart API) for main change display
         const prevClose = st.prevClose;
         if (prevClose && chgEl) {
             const chg = price - prevClose;
@@ -842,9 +843,7 @@
             if (!st.shares) continue;
             const price = st.extPrice || st.prevNasdaq || st.nasdaqPrice;
             if (!price) continue;
-            // Use prevClose which follows the per-card logic:
-            // market hours: meta.previousClose (yesterday's close)
-            // pre/post/closed: regularMarketPrice (last completed session close)
+            // prevClose = yesterday's official close from chart API (always consistent)
             const prevPrice = st.prevClose;
             if (!prevPrice) continue;
             hasAny = true;

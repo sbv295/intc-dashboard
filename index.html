@@ -990,8 +990,7 @@
             }
             const lastPrice = meta.regularMarketPrice;
 
-            // We'll determine the true regular session close from candle data later
-            // Store lastPrice temporarily; will be corrected after candle parsing
+            // Store official close from meta (includes closing auction — more accurate than candle data)
             window._yahooLastPrice = lastPrice;
             window._yahooPrevClose = meta.previousClose;
 
@@ -1065,8 +1064,8 @@
             }
 
             if (ms.status === 'postmarket' || ms.status === 'closed') {
-                // Big price = regular close (stable), small = post-market price
-                const mainPrice = regularCloseFromCandles || mainLastPrice;
+                // Big price = official close from meta (includes closing auction), small = post-market price
+                const mainPrice = mainLastPrice || regularCloseFromCandles;
 
                 if (prevNasdaqPrice !== null && mainPrice !== prevNasdaqPrice) {
                     priceEl.classList.remove('price-flash-up', 'price-flash-down');
@@ -1112,9 +1111,9 @@
                 }
                 updateMarketCap(postLastPrice || mainPrice);
             } else if (ms.status === 'premarket') {
-                // Big price = last regular close (stable), small = pre-market price
+                // Big price = official close from meta (includes closing auction), small = pre-market price
                 // During premarket, regularMarketPrice = last session's close (correct prev close)
-                const mainPrice = regularCloseFromCandles || mainLastPrice;
+                const mainPrice = mainLastPrice || regularCloseFromCandles;
 
                 if (prevNasdaqPrice !== null && mainPrice !== prevNasdaqPrice) {
                     priceEl.classList.remove('price-flash-up', 'price-flash-down');
