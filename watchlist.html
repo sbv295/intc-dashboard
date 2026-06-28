@@ -482,7 +482,8 @@
             const timestamps = result.timestamp || [];
             const quote = result.indicators.quote[0];
 
-            const ms = getMarketStatus();
+            // Use exchange-appropriate market status
+            const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
             const prevClose = meta.previousClose;
             const regPrice = meta.regularMarketPrice;
 
@@ -509,8 +510,12 @@
             // Determine display price
             // Use meta.regularMarketPrice as the official close (includes closing auction)
             // Candle data is only a fallback since the last 5-min bar misses the closing cross
+            // KRX has no pre/post market — only 'market' or 'closed'
             let displayPrice, extPrice = null, extLabel = null, refPrice = null;
-            if (ms === 'postmarket' || ms === 'closed') {
+            if (stock.currency === 'KRW') {
+                // Korean stocks: no extended hours
+                displayPrice = regPrice || regularClose;
+            } else if (ms === 'postmarket' || ms === 'closed') {
                 displayPrice = regPrice || regularClose;
                 refPrice = displayPrice;
                 if (tp) {
@@ -640,15 +645,18 @@
     }
 
     function updateYahooPrice(ticker, price) {
-        const ms = getMarketStatus();
-        if (ms === 'closed') return;
-
         const st = state[ticker];
         if (!st) return;
         const stock = STOCKS.find(s => s.ticker === ticker);
         if (!stock) return;
+
+        // Use exchange-appropriate market status
+        const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
+        if (ms === 'closed') return;
+
         const _sid = sid(stock);
 
+        // KRX has no pre/post market — only update during regular hours
         if (ms === 'premarket' || ms === 'postmarket') {
             const extEl = document.getElementById(`ext-${_sid}`);
             // Use sessionClose (today's regular close) as reference for extended price change
