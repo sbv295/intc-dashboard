@@ -745,11 +745,14 @@
         priceEl.textContent = `$${price.toFixed(2)}`;
 
         const chgEl = document.getElementById(`hl-chg-${_sid}`);
-        const prevClose = st.prevClose;
-        if (prevClose && chgEl) {
-            const prevUsd = stock ? toUsd(stock, prevClose) : prevClose;
-            const chg = price - prevUsd;
-            const pct = (chg / prevUsd) * 100;
+        // During market hours: HL references yesterday's close (same as NASDAQ)
+        // After close: HL references today's session close (that day is done)
+        const ms = getMarketStatus();
+        const refClose = (ms === 'market') ? st.prevClose : (st.sessionClose || st.prevClose);
+        if (refClose && chgEl) {
+            const refUsd = stock ? toUsd(stock, refClose) : refClose;
+            const chg = price - refUsd;
+            const pct = (chg / refUsd) * 100;
             const sign = chg >= 0 ? '+' : '';
             chgEl.textContent = `${sign}${pct.toFixed(2)}%`;
             chgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
