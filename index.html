@@ -700,7 +700,7 @@
         });
         chart.priceScale('volume').applyOptions({
             scaleMargins: { top: 0.82, bottom: 0 },
-            drawTicks: false,
+            ticksVisible: false,
             borderVisible: false,
         });
 
@@ -1131,6 +1131,8 @@
                     post: todayTP.post[0][0],
                 }
                 : meta.currentTradingPeriod;
+            // Update global tradingPeriods so renderChartData can use it (especially via cache path)
+            if (tp) tradingPeriods = tp;
             let preHigh = -Infinity, preLow = Infinity, preVol = 0;
             let regHigh = -Infinity, regLow = Infinity, regVol = 0;
             let postHigh = -Infinity, postLow = Infinity, postVol = 0;
