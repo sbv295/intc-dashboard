@@ -551,6 +551,8 @@
                 }
                 state[stock.ticker].prevNasdaq = displayPrice;
                 state[stock.ticker].nasdaqPrice = displayPrice;
+                // Sync extPrice from chart API data so stale websocket values don't persist
+                state[stock.ticker].extPrice = extPrice || null;
                 priceEl.textContent = fmtPrice(stock, displayPrice);
                 updateMarketCap(stock.ticker);
 
@@ -848,31 +850,31 @@
 
     function computeSectionMcap(stocks, section) {
         let totalCurrent = 0, totalPrev = 0;
-        let hasAny = false;
+        let hasAnyCurrent = false, hasAnyPrev = false;
         for (const stock of stocks) {
             const st = state[stock.ticker];
             if (!st.shares) continue;
             const price = st.extPrice || st.prevNasdaq || st.nasdaqPrice;
             if (!price) continue;
-            // prevClose = yesterday's official close from chart API (always consistent)
-            const prevPrice = st.prevClose;
-            if (!prevPrice) continue;
-            hasAny = true;
+            hasAnyCurrent = true;
             let mcapCurrent = price * st.shares;
-            let mcapPrev = prevPrice * st.shares;
-            if (stock.currency === 'KRW' && krwToUsd) {
-                mcapCurrent *= krwToUsd;
-                mcapPrev *= krwToUsd;
-            }
+            if (stock.currency === 'KRW' && krwToUsd) mcapCurrent *= krwToUsd;
             totalCurrent += mcapCurrent;
-            totalPrev += mcapPrev;
+            // prevClose is optional — don't skip a stock from totals just because prevClose is missing
+            const prevPrice = st.prevClose;
+            if (prevPrice) {
+                hasAnyPrev = true;
+                let mcapPrev = prevPrice * st.shares;
+                if (stock.currency === 'KRW' && krwToUsd) mcapPrev *= krwToUsd;
+                totalPrev += mcapPrev;
+            }
         }
-        if (!hasAny) return;
+        if (!hasAnyCurrent) return;
         const valEl = document.getElementById(`mcap-total-${section}`);
         const chgEl = document.getElementById(`mcap-chg-${section}`);
         if (!valEl || !chgEl) return;
         valEl.textContent = formatLargeCurrency(totalCurrent);
-        if (totalPrev > 0) {
+        if (hasAnyPrev && totalPrev > 0) {
             const pctChg = ((totalCurrent - totalPrev) / totalPrev) * 100;
             const sign = pctChg >= 0 ? '+' : '';
             chgEl.innerHTML = `<span class="mcap-prev-ref">Prev Close: ${formatLargeCurrency(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
