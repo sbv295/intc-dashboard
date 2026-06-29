@@ -489,14 +489,15 @@
 
             // sessionClose: most recent regular session close (reference for extended price changes)
             state[stock.ticker].sessionClose = regPrice || prevClose;
-            // When market is closed (weekends, overnight before premarket), Yahoo's range=1d
-            // returns the last trading day's data, so meta.previousClose points to the session
-            // BEFORE that (2 trading days ago). Use regularMarketPrice (= last session close)
-            // as prevClose in that case so the total mkt cap reference is correct.
-            if (ms === 'closed') {
-                state[stock.ticker].prevClose = regPrice || prevClose;
-            } else {
+            // Outside regular market hours (premarket, closed), Yahoo's range=1d may return
+            // the previous trading day's data, so meta.previousClose points to the session
+            // BEFORE that (2 trading days ago on a Monday). Use regularMarketPrice
+            // (= most recent session close) as prevClose in those cases.
+            // During market and postmarket, meta.previousClose is correct (= yesterday's close).
+            if (ms === 'market' || ms === 'postmarket') {
                 state[stock.ticker].prevClose = prevClose;
+            } else {
+                state[stock.ticker].prevClose = regPrice || prevClose;
             }
 
             // Get trading periods from today's data
@@ -568,13 +569,14 @@
                 priceEl.textContent = fmtPrice(stock, displayPrice);
                 updateMarketCap(stock.ticker);
 
-                // Change vs previous close
+                // Change vs previous close (use corrected prevClose from state)
                 const chgEl = document.getElementById(`nasdaq-chg-${_sid}`);
-                if (prevClose) {
-                    const chg = displayPrice - prevClose;
-                    const pct = (chg / prevClose) * 100;
+                const refClose = state[stock.ticker].prevClose;
+                if (refClose) {
+                    const chg = displayPrice - refClose;
+                    const pct = (chg / refClose) * 100;
                     const sign = chg >= 0 ? '+' : '';
-                    chgEl.innerHTML = `<span class="prev-ref">${fmtPrice(stock, prevClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
+                    chgEl.innerHTML = `<span class="prev-ref">${fmtPrice(stock, refClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
                     chgEl.className = `price-block-change`;
                 }
             }
