@@ -424,7 +424,7 @@
         <div id="chart-container"></div>
         <div class="chart-legend" id="chart-legend">
             <div class="chart-legend-item"><span class="chart-legend-swatch" style="background:#00bcd4"></span> Regular Hours</div>
-            <div class="chart-legend-item"><span class="chart-legend-swatch" style="background:#7c4dff"></span> Pre/Post Market</div>
+            <div class="chart-legend-item"><span class="chart-legend-swatch" style="background:#00bcd488"></span> Pre/Post Market</div>
             <div class="chart-legend-item"><span class="chart-legend-swatch" style="background:rgba(0,200,83,0.3); height:10px; width:10px; border-radius:2px"></span> Volume</div>
         </div>
     </div>
@@ -576,16 +576,16 @@
     // Colors for session types
     const CHART_COLORS = {
         regular: '#00bcd4',
-        extended: '#7c4dff',  // purple for pre/post market
+        extended: '#00bcd488',  // dimmer cyan for pre/post market line
         hlLine: '#00e676',
         volUp: 'rgba(0,200,83,0.3)',
         volDown: 'rgba(255,23,68,0.3)',
-        volExtUp: 'rgba(124,77,255,0.25)',
-        volExtDown: 'rgba(124,77,255,0.15)',
+        volExtUp: 'rgba(0,200,83,0.15)',
+        volExtDown: 'rgba(255,23,68,0.15)',
         candleUp: '#00c853',
         candleDown: '#ff1744',
-        candleExtUp: '#7c4dff',
-        candleExtDown: '#b388ff',
+        candleExtUp: '#00c85388',   // muted green for ext hours up
+        candleExtDown: '#ff174488', // muted red for ext hours down
     };
 
     function getChartTZ() {
