@@ -988,7 +988,7 @@
             const athEl = document.getElementById(`ath-${_sid}`);
             if (!athEl) return;
 
-            const fmtDate = (ts) => new Date(ts * 1000).toLocaleDateString('en-US', { month: 'short', year: '2-digit' });
+            const fmtDate = (ts) => new Date(ts * 1000).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
             const fmtATHPrice = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
             athEl.innerHTML =
                 `<span class="ath-label">ATH Close:</span> <span class="ath-value">${fmtATHPrice(athClose)}</span> (${fmtDate(athCloseDate)}) · ` +

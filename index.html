@@ -566,7 +566,7 @@
 
             const athEl = document.getElementById('nasdaq-ath');
             if (athEl && athClose > 0) {
-                const fmtDate = (ts) => new Date(ts * 1000).toLocaleDateString('en-US', { month: 'short', year: '2-digit' });
+                const fmtDate = (ts) => new Date(ts * 1000).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
                 athEl.innerHTML =
                     `<b>ATH Close:</b> <span class="ath-value">$${athClose.toFixed(2)}</span> (${fmtDate(athCloseDate)})<br>` +
                     `<b>ATH Trade:</b> <span class="ath-value">$${athHigh.toFixed(2)}</span> (${fmtDate(athHighDate)})`;
