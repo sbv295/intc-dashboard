@@ -988,20 +988,11 @@
             const athEl = document.getElementById(`ath-${_sid}`);
             if (!athEl) return;
 
-            const currentPrice = state[stock.ticker].extPrice || state[stock.ticker].nasdaqPrice;
-            let pctFromClose = '', pctFromHigh = '';
-            if (currentPrice) {
-                const pctC = ((currentPrice - athClose) / athClose) * 100;
-                pctFromClose = ` <span class="ath-pct">(${pctC.toFixed(1)}%)</span>`;
-                const pctH = ((currentPrice - athHigh) / athHigh) * 100;
-                pctFromHigh = ` <span class="ath-pct">(${pctH.toFixed(1)}%)</span>`;
-            }
-
-            const fmtDate = (ts) => new Date(ts * 1000).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+            const fmtDate = (ts) => new Date(ts * 1000).toLocaleDateString('en-US', { month: 'short', year: '2-digit' });
             const fmtATHPrice = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
             athEl.innerHTML =
-                `<span class="ath-label">ATH Close:</span> <span class="ath-value">${fmtATHPrice(athClose)}</span> (${fmtDate(athCloseDate)})${pctFromClose} · ` +
-                `<span class="ath-label">ATH Trade:</span> <span class="ath-value">${fmtATHPrice(athHigh)}</span> (${fmtDate(athHighDate)})${pctFromHigh}`;
+                `<span class="ath-label">ATH Close:</span> <span class="ath-value">${fmtATHPrice(athClose)}</span> (${fmtDate(athCloseDate)}) · ` +
+                `<span class="ath-label">ATH Trade:</span> <span class="ath-value">${fmtATHPrice(athHigh)}</span> (${fmtDate(athHighDate)})`;
         } catch (e) {}
     }
 
