@@ -558,15 +558,20 @@
             let athCloseDate = null, athHighDate = null;
             const timestamps = result.timestamp || [];
 
-            for (let i = 0; i < timestamps.length; i++) {
-                const c = quote.close[i], h = quote.high[i];
+            // Exclude last data point for close (today's 'close' is just current price, not official close)
+            const closeLimit = timestamps.length > 1 ? timestamps.length - 1 : timestamps.length;
+            for (let i = 0; i < closeLimit; i++) {
+                const c = quote.close[i];
                 if (c != null && c > athClose) { athClose = c; athCloseDate = timestamps[i]; }
+            }
+            for (let i = 0; i < timestamps.length; i++) {
+                const h = quote.high[i];
                 if (h != null && h > athHigh) { athHigh = h; athHighDate = timestamps[i]; }
             }
 
             const athEl = document.getElementById('nasdaq-ath');
             if (athEl && athClose > 0) {
-                const fmtDate = (ts) => { const d = new Date(ts * 1000); return `${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getDate().toString().padStart(2,'0')}/${d.getFullYear()}`; };
+                const fmtDate = (ts) => { const d = new Date(ts * 1000); const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`; };
                 athEl.innerHTML =
                     `<b>ATH Close:</b> <span class="ath-value">$${athClose.toFixed(2)}</span> (${fmtDate(athCloseDate)})<br>` +
                     `<b>ATH Trade:</b> <span class="ath-value">$${athHigh.toFixed(2)}</span> (${fmtDate(athHighDate)})`;

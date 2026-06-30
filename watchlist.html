@@ -976,9 +976,14 @@
             let athClose = -Infinity, athHigh = -Infinity;
             let athCloseDate = null, athHighDate = null;
 
-            for (let i = 0; i < timestamps.length; i++) {
-                const c = quote.close[i], h = quote.high[i];
+            // Exclude last data point for close (today's 'close' is just current price, not official close)
+            const closeLimit = timestamps.length > 1 ? timestamps.length - 1 : timestamps.length;
+            for (let i = 0; i < closeLimit; i++) {
+                const c = quote.close[i];
                 if (c != null && c > athClose) { athClose = c; athCloseDate = timestamps[i]; }
+            }
+            for (let i = 0; i < timestamps.length; i++) {
+                const h = quote.high[i];
                 if (h != null && h > athHigh) { athHigh = h; athHighDate = timestamps[i]; }
             }
 
@@ -988,7 +993,7 @@
             const athEl = document.getElementById(`ath-${_sid}`);
             if (!athEl) return;
 
-            const fmtDate = (ts) => { const d = new Date(ts * 1000); return `${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getDate().toString().padStart(2,'0')}/${d.getFullYear()}`; };
+            const fmtDate = (ts) => { const d = new Date(ts * 1000); const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`; };
             const fmtATHPrice = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
             athEl.innerHTML =
                 `<span class="ath-label">ATH Close:</span> <span class="ath-value">${fmtATHPrice(athClose)}</span> (${fmtDate(athCloseDate)})<br>` +
