@@ -210,6 +210,19 @@
         }
         .session-details b { color: var(--text); }
 
+        .ath-info {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
+            text-align: left;
+            line-height: 2;
+        }
+        .ath-info b { color: var(--text); }
+        .ath-info .ath-value { color: var(--amber); font-weight: 700; }
+        .ath-info .ath-pct { font-weight: 600; }
+
         /* ─── Chart Section ───────────────────────────────────── */
         .chart-section {
             background: var(--surface);
@@ -376,6 +389,7 @@
             <div class="extended-price" id="nasdaq-extended"></div>
             <div class="market-cap" id="nasdaq-mcap"></div>
             <div class="session-details" id="nasdaq-sessions"></div>
+            <div class="ath-info" id="nasdaq-ath"></div>
         </div>
         <div class="card card-hl" id="hl-card">
             <div class="source-label">Hyperliquid 24/7 (xyz:INTC perp)</div>
@@ -529,6 +543,44 @@
             }
         } catch (e) {
             // Fallback value remains
+        }
+    }
+
+    // ─── ATH (All Time High) ────────────────────────────────────────────────
+    async function fetchATH() {
+        try {
+            const url = `${YAHOO_BASE}?interval=1mo&range=max`;
+            const json = await yahooFetch(url);
+            const result = json.chart.result[0];
+            const quote = result.indicators.quote[0];
+
+            let athClose = -Infinity, athHigh = -Infinity;
+            let athCloseDate = null, athHighDate = null;
+            const timestamps = result.timestamp || [];
+
+            for (let i = 0; i < timestamps.length; i++) {
+                const c = quote.close[i], h = quote.high[i];
+                if (c != null && c > athClose) { athClose = c; athCloseDate = timestamps[i]; }
+                if (h != null && h > athHigh) { athHigh = h; athHighDate = timestamps[i]; }
+            }
+
+            const athEl = document.getElementById('nasdaq-ath');
+            if (athEl && athClose > 0) {
+                const currentPrice = prevYahooPrice || prevNasdaqPrice || window._yahooLastPrice;
+                let pctFromAthClose = '', pctFromAthHigh = '';
+                if (currentPrice) {
+                    const pctC = ((currentPrice - athClose) / athClose) * 100;
+                    pctFromAthClose = ` <span class="ath-pct" style="color:var(--red)">(${pctC.toFixed(1)}%)</span>`;
+                    const pctH = ((currentPrice - athHigh) / athHigh) * 100;
+                    pctFromAthHigh = ` <span class="ath-pct" style="color:var(--red)">(${pctH.toFixed(1)}%)</span>`;
+                }
+                const fmtDate = (ts) => new Date(ts * 1000).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+                athEl.innerHTML =
+                    `<b>ATH Close:</b> <span class="ath-value">$${athClose.toFixed(2)}</span> (${fmtDate(athCloseDate)})${pctFromAthClose}<br>` +
+                    `<b>ATH Trade:</b> <span class="ath-value">$${athHigh.toFixed(2)}</span> (${fmtDate(athHighDate)})${pctFromAthHigh}`;
+            }
+        } catch (e) {
+            console.error('ATH fetch error:', e);
         }
     }
 
@@ -1596,6 +1648,7 @@
     function init() {
         initYahooProto();
         fetchSharesOutstanding();
+        fetchATH();
         // Auto-select tab based on market status
         const ms = getMarketStatus();
         if (ms.status === 'closed') {

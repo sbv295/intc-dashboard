@@ -314,6 +314,31 @@
             font-weight: 400;
         }
 
+        .stock-ath {
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            margin-top: 6px;
+            padding-top: 6px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            text-align: center;
+            letter-spacing: 0.3px;
+            line-height: 1.8;
+        }
+        .stock-ath .ath-label {
+            font-weight: 700;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .stock-ath .ath-value {
+            color: var(--amber);
+            font-weight: 700;
+        }
+        .stock-ath .ath-pct {
+            font-weight: 600;
+            color: var(--red);
+        }
+
         @keyframes flashGreen {
             0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); }
             100% { color: var(--text); text-shadow: none; }
@@ -490,6 +515,7 @@
                     </div>` : ''}
                 </div>
                 <div class="stock-ohl${s.currency === 'KRW' ? ' ohl-no-bottom' : ''}" id="ohl-${id}"></div>
+                <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
             </div>
@@ -938,6 +964,51 @@
         return `$${(val / 1e6).toFixed(0)}M`;
     }
 
+    // ─── ATH (All Time High) ────────────────────────────────────────────────
+    async function fetchATHForStock(stock) {
+        try {
+            const url = `${YAHOO_BASE}${stock.ticker}?interval=1mo&range=max`;
+            const json = await yahooFetch(url);
+            const result = json.chart.result[0];
+            const quote = result.indicators.quote[0];
+            const timestamps = result.timestamp || [];
+
+            let athClose = -Infinity, athHigh = -Infinity;
+            let athCloseDate = null, athHighDate = null;
+
+            for (let i = 0; i < timestamps.length; i++) {
+                const c = quote.close[i], h = quote.high[i];
+                if (c != null && c > athClose) { athClose = c; athCloseDate = timestamps[i]; }
+                if (h != null && h > athHigh) { athHigh = h; athHighDate = timestamps[i]; }
+            }
+
+            if (athClose <= 0) return;
+
+            const _sid = sid(stock);
+            const athEl = document.getElementById(`ath-${_sid}`);
+            if (!athEl) return;
+
+            const currentPrice = state[stock.ticker].extPrice || state[stock.ticker].nasdaqPrice;
+            let pctFromClose = '', pctFromHigh = '';
+            if (currentPrice) {
+                const pctC = ((currentPrice - athClose) / athClose) * 100;
+                pctFromClose = ` <span class="ath-pct">(${pctC.toFixed(1)}%)</span>`;
+                const pctH = ((currentPrice - athHigh) / athHigh) * 100;
+                pctFromHigh = ` <span class="ath-pct">(${pctH.toFixed(1)}%)</span>`;
+            }
+
+            const fmtDate = (ts) => new Date(ts * 1000).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+            const fmtATHPrice = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
+            athEl.innerHTML =
+                `<span class="ath-label">ATH Close:</span> <span class="ath-value">${fmtATHPrice(athClose)}</span> (${fmtDate(athCloseDate)})${pctFromClose} · ` +
+                `<span class="ath-label">ATH Trade:</span> <span class="ath-value">${fmtATHPrice(athHigh)}</span> (${fmtDate(athHighDate)})${pctFromHigh}`;
+        } catch (e) {}
+    }
+
+    async function fetchAllATH() {
+        await Promise.allSettled(STOCKS.map(s => fetchATHForStock(s)));
+    }
+
     // ─── Init ───────────────────────────────────────────────────────────────
     async function init() {
         renderGrid();
@@ -945,7 +1016,10 @@
         connectYahooWs();
         connectHlWs();
         await fetchKrwRate();
-        fetchAllNasdaq().then(() => fetchAllShares());
+        fetchAllNasdaq().then(() => {
+            fetchAllShares();
+            fetchAllATH();
+        });
 
         // Time update
         setInterval(() => {
