@@ -549,7 +549,7 @@
     // ─── ATH (All Time High) ────────────────────────────────────────────────
     async function fetchATH() {
         try {
-            const url = `${YAHOO_BASE}?interval=1d&range=max`;
+            const url = `${YAHOO_BASE}?interval=1wk&range=max`;
             const json = await yahooFetch(url);
             const result = json.chart.result[0];
             const quote = result.indicators.quote[0];
