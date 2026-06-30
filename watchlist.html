@@ -964,17 +964,17 @@
         return `$${(val / 1e6).toFixed(0)}M`;
     }
 
-    // ─── ATH (All Time High) ────────────────────────────────────────────────
+    // ─── 52-Week High ───────────────────────────────────────────────────────
     async function fetchATHForStock(stock) {
         try {
-            const url = `${YAHOO_BASE}${stock.ticker}?interval=1wk&range=max`;
+            const url = `${YAHOO_BASE}${stock.ticker}?interval=1d&range=1y`;
             const json = await yahooFetch(url);
             const result = json.chart.result[0];
             const quote = result.indicators.quote[0];
             const timestamps = result.timestamp || [];
 
-            let athClose = -Infinity, athHigh = -Infinity;
-            let athCloseDate = null, athHighDate = null;
+            let highClose = -Infinity, highTrade = -Infinity;
+            let highCloseDate = null, highTradeDate = null;
 
             // Exclude today's data point for close if market is still open (close is just live price)
             const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
@@ -982,24 +982,24 @@
             const closeLimit = (marketOpen && timestamps.length > 1) ? timestamps.length - 1 : timestamps.length;
             for (let i = 0; i < closeLimit; i++) {
                 const c = quote.close[i];
-                if (c != null && c > athClose) { athClose = c; athCloseDate = timestamps[i]; }
+                if (c != null && c > highClose) { highClose = c; highCloseDate = timestamps[i]; }
             }
             for (let i = 0; i < timestamps.length; i++) {
                 const h = quote.high[i];
-                if (h != null && h > athHigh) { athHigh = h; athHighDate = timestamps[i]; }
+                if (h != null && h > highTrade) { highTrade = h; highTradeDate = timestamps[i]; }
             }
 
-            if (athClose <= 0) return;
+            if (highClose <= 0) return;
 
             const _sid = sid(stock);
             const athEl = document.getElementById(`ath-${_sid}`);
             if (!athEl) return;
 
             const fmtDate = (ts) => { const d = new Date(ts * 1000); const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`; };
-            const fmtATHPrice = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
+            const fmtPrice = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
             athEl.innerHTML =
-                `<span class="ath-label">ATH Close:</span> <span class="ath-value">${fmtATHPrice(athClose)}</span> (${fmtDate(athCloseDate)})<br>` +
-                `<span class="ath-label">ATH Trade:</span> <span class="ath-value">${fmtATHPrice(athHigh)}</span> (${fmtDate(athHighDate)})`;
+                `<span class="ath-label">52W High Close:</span> <span class="ath-value">${fmtPrice(highClose)}</span> (${fmtDate(highCloseDate)})<br>` +
+                `<span class="ath-label">52W High Trade:</span> <span class="ath-value">${fmtPrice(highTrade)}</span> (${fmtDate(highTradeDate)})`;
         } catch (e) {}
     }
 
