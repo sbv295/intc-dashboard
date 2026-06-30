@@ -262,6 +262,9 @@
         .stock-ohl.ohl-dimmed .ohl-value {
             opacity: 0.3;
         }
+        .stock-ohl.ohl-no-bottom {
+            border-bottom: none;
+        }
         .stock-ohl .ohl-label {
             font-weight: 600;
             color: var(--text-dim);
@@ -486,7 +489,7 @@
                         <div class="price-block-change" id="hl-chg-${id}"></div>
                     </div>` : ''}
                 </div>
-                <div class="stock-ohl" id="ohl-${id}"></div>
+                <div class="stock-ohl${s.currency === 'KRW' ? ' ohl-no-bottom' : ''}" id="ohl-${id}"></div>
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
             </div>
