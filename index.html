@@ -1174,9 +1174,9 @@
                 : meta.currentTradingPeriod;
             // Update global tradingPeriods so renderChartData can use it (especially via cache path)
             if (tp) tradingPeriods = tp;
-            let preHigh = -Infinity, preLow = Infinity, preVol = 0;
-            let regHigh = -Infinity, regLow = Infinity, regVol = 0;
-            let postHigh = -Infinity, postLow = Infinity, postVol = 0;
+            let preHigh = -Infinity, preLow = Infinity, preVol = 0, preOpen = null;
+            let regHigh = -Infinity, regLow = Infinity, regVol = 0, regOpen = null;
+            let postHigh = -Infinity, postLow = Infinity, postVol = 0, postOpen = null;
             let hasPre = false, hasReg = false, hasPost = false;
 
             // Also build chart data cache from this response
@@ -1192,16 +1192,19 @@
 
                 if (tp && t >= tp.pre.start && t < tp.regular.start) {
                     hasPre = true;
+                    if (preOpen === null && o != null) preOpen = o;
                     preHigh = Math.max(preHigh, h);
                     preLow = Math.min(preLow, l);
                     preVol += v || 0;
                 } else if (tp && t >= tp.regular.start && t < tp.post.start) {
                     hasReg = true;
+                    if (regOpen === null && o != null) regOpen = o;
                     regHigh = Math.max(regHigh, h);
                     regLow = Math.min(regLow, l);
                     regVol += v || 0;
                 } else if (tp && t >= tp.post.start && t < tp.post.end) {
                     hasPost = true;
+                    if (postOpen === null && o != null) postOpen = o;
                     postHigh = Math.max(postHigh, h);
                     postLow = Math.min(postLow, l);
                     postVol += v || 0;
@@ -1209,9 +1212,9 @@
             }
 
             let html = '';
-            if (hasPre) html += `<b>Pre:</b> H $${preHigh.toFixed(2)} / L $${preLow.toFixed(2)} · Vol: ${formatVol(preVol)}<br>`;
-            if (hasReg) html += `<b>Regular:</b> H $${regHigh.toFixed(2)} / L $${regLow.toFixed(2)} · Vol: ${formatVol(regVol)}<br>`;
-            if (hasPost) html += `<b>Post:</b> H $${postHigh.toFixed(2)} / L $${postLow.toFixed(2)} · Vol: ${formatVol(postVol)}`;
+            if (hasPre) html += `<b>Pre:</b> O $${preOpen?.toFixed(2) || '—'} / H $${preHigh.toFixed(2)} / L $${preLow.toFixed(2)} · Vol: ${formatVol(preVol)}<br>`;
+            if (hasReg) html += `<b>Regular:</b> O $${regOpen?.toFixed(2) || '—'} / H $${regHigh.toFixed(2)} / L $${regLow.toFixed(2)} · Vol: ${formatVol(regVol)}<br>`;
+            if (hasPost) html += `<b>Post:</b> O $${postOpen?.toFixed(2) || '—'} / H $${postHigh.toFixed(2)} / L $${postLow.toFixed(2)} · Vol: ${formatVol(postVol)}`;
             document.getElementById('nasdaq-sessions').innerHTML = html;
 
             // Extended price display (post/pre market last traded price)

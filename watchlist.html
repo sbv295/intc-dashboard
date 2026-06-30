@@ -247,6 +247,25 @@
         .stock-extended .ext-change.up { color: var(--green); }
         .stock-extended .ext-change.down { color: var(--red); }
 
+        .stock-ohl {
+            font-size: 0.68rem;
+            color: var(--text-dim);
+            margin-top: 8px;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+        .stock-ohl .ohl-label {
+            font-weight: 600;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 4px;
+        }
+        .stock-ohl .ohl-value {
+            color: var(--text);
+            font-weight: 600;
+        }
+
         .price-flash-up { animation: flashGreen 1s ease-out; }
         .price-flash-down { animation: flashRed 1s ease-out; }
 
@@ -459,6 +478,7 @@
                         <div class="price-block-change" id="hl-chg-${id}"></div>
                     </div>` : ''}
                 </div>
+                <div class="stock-ohl" id="ohl-${id}"></div>
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
             </div>
@@ -586,16 +606,28 @@
                 extEl.innerHTML = '';
             }
 
-            // Volume: sum regular-session candle volumes
+            // Volume & OHL: compute from regular-session candles
             if (tp && quote.volume) {
                 let totalVol = 0;
+                let regOpen = null, regHigh = -Infinity, regLow = Infinity;
                 for (let i = 0; i < timestamps.length; i++) {
                     const t = timestamps[i], v = quote.volume[i];
-                    if (v && t >= tp.regular.start && t < tp.post.start) totalVol += v;
+                    const o = quote.open[i], h = quote.high[i], l = quote.low[i];
+                    if (t >= tp.regular.start && t < tp.post.start) {
+                        if (v) totalVol += v;
+                        if (regOpen === null && o != null) regOpen = o;
+                        if (h != null) regHigh = Math.max(regHigh, h);
+                        if (l != null) regLow = Math.min(regLow, l);
+                    }
                 }
                 if (totalVol > 0) {
                     state[stock.ticker].volume = totalVol;
                     displayVolume(stock.ticker, totalVol);
+                }
+                // Display OHL
+                const ohlEl = document.getElementById(`ohl-${_sid}`);
+                if (ohlEl && regOpen !== null && regHigh !== -Infinity) {
+                    ohlEl.innerHTML = `<span class="ohl-label">O</span><span class="ohl-value">${fmtPrice(stock, regOpen)}</span> · <span class="ohl-label">H</span><span class="ohl-value">${fmtPrice(stock, regHigh)}</span> · <span class="ohl-label">L</span><span class="ohl-value">${fmtPrice(stock, regLow)}</span>`;
                 }
             }
 
