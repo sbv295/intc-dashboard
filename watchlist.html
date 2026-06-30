@@ -489,16 +489,9 @@
 
             // sessionClose: most recent regular session close (reference for extended price changes)
             state[stock.ticker].sessionClose = regPrice || prevClose;
-            // Outside regular market hours (premarket, closed), Yahoo's range=1d may return
-            // the previous trading day's data, so meta.previousClose points to the session
-            // BEFORE that (2 trading days ago on a Monday). Use regularMarketPrice
-            // (= most recent session close) as prevClose in those cases.
-            // During market and postmarket, meta.previousClose is correct (= yesterday's close).
-            if (ms === 'market' || ms === 'postmarket') {
-                state[stock.ticker].prevClose = prevClose;
-            } else {
-                state[stock.ticker].prevClose = regPrice || prevClose;
-            }
+            // prevClose: always meta.previousClose — the official "previous close" per Yahoo
+            // This gives the day's % change on cards and in the total market cap.
+            state[stock.ticker].prevClose = prevClose;
 
             // Get trading periods from today's data
             const todayTP = meta.tradingPeriods;
