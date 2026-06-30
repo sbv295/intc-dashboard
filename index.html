@@ -558,8 +558,10 @@
             let athCloseDate = null, athHighDate = null;
             const timestamps = result.timestamp || [];
 
-            // Exclude last data point for close (today's 'close' is just current price, not official close)
-            const closeLimit = timestamps.length > 1 ? timestamps.length - 1 : timestamps.length;
+            // Exclude today's data point for close if market is still open (close is just live price)
+            const ms = getMarketStatus();
+            const marketOpen = (ms.status === 'market' || ms.status === 'premarket');
+            const closeLimit = (marketOpen && timestamps.length > 1) ? timestamps.length - 1 : timestamps.length;
             for (let i = 0; i < closeLimit; i++) {
                 const c = quote.close[i];
                 if (c != null && c > athClose) { athClose = c; athCloseDate = timestamps[i]; }
