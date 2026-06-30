@@ -258,6 +258,10 @@
             text-align: center;
             letter-spacing: 0.3px;
         }
+        .stock-ohl.ohl-dimmed .ohl-label,
+        .stock-ohl.ohl-dimmed .ohl-value {
+            opacity: 0.3;
+        }
         .stock-ohl .ohl-label {
             font-weight: 600;
             color: var(--text-dim);
@@ -982,12 +986,16 @@
                 const dim = (krMs !== 'market');
                 if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', dim);
                 if (extEl) extEl.classList.toggle('ext-dimmed', true); // no extended hours for KRX
+                const ohlEl = document.getElementById(`ohl-${_sid}`);
+                if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', dim);
             } else {
                 // US stocks
                 const nasDim = (usMs !== 'market');
                 if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', nasDim);
                 const extDim = (usMs === 'closed' || usMs === 'market');
                 if (extEl) extEl.classList.toggle('ext-dimmed', extDim);
+                const ohlEl = document.getElementById(`ohl-${_sid}`);
+                if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', nasDim);
             }
         });
     }
