@@ -319,15 +319,33 @@
             background: rgba(255,255,255,0.04);
             border: 1px solid var(--border);
             transition: opacity 0.3s;
+            display: none;
         }
         .casino-badge:hover {
             opacity: 1;
         }
 
-        @media (max-width: 640px) {
-            .casino-badge {
-                height: 3.5em;
-            }
+        .casino-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 500px;
+            background: url('logos/casino.png') center top / contain no-repeat;
+            opacity: 0.12;
+            pointer-events: none;
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
+            z-index: 0;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .nav-tabs, .header, .section-label, .mcap-summary, .stock-grid {
+            position: relative;
+            z-index: 1;
         }
 
         .mcap-prev-ref {
@@ -370,6 +388,7 @@
     </style>
 </head>
 <body>
+    <div class="casino-bg"></div>
     <div class="nav-tabs">
         <a href="index.html">INTC Dashboard</a>
         <a href="watchlist.html" class="active">Watchlist</a>
