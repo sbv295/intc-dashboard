@@ -564,7 +564,7 @@
     // ─── Sentiment Indicator ────────────────────────────────────────────────
     const SENTIMENT_BULL_THRESHOLD = 1.0;
     const SENTIMENT_BEAR_THRESHOLD = -1.0;
-    const SENTIMENT_HYSTERESIS = 0.25;
+    const SENTIMENT_HYSTERESIS = 0.1;
 
     function computeSentiment(pctChange, currentSentiment) {
         if (currentSentiment === 'bull') {
