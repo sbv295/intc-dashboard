@@ -57,15 +57,30 @@
         .header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            margin-bottom: 16px;
+            justify-content: center;
+            flex-direction: column;
+            padding: 60px 16px 40px;
+            margin-bottom: 0;
         }
-        .header h1 { font-size: 1.3rem; font-weight: 700; }
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-align: center;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+        }
         .header .time-display {
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             color: var(--text-dim);
-            text-align: right;
+            text-align: center;
             line-height: 1.6;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 640px) {
+            .header h1 { font-size: 2rem; letter-spacing: 3px; }
+            .header { padding: 40px 12px 28px; }
         }
 
         /* ─── Stock Grid ─────────────────────────────────────── */
@@ -330,12 +345,12 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 500px;
+            height: 550px;
             background: url('logos/Casino_desktop.jpg') center top / cover no-repeat;
-            opacity: 0.2;
+            opacity: 0.35;
             pointer-events: none;
-            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
-            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
             z-index: 0;
         }
 
@@ -395,7 +410,6 @@
 </head>
 <body>
     <div class="casino-bg"></div>
-    <div style="height: 120px;"></div>
     <div class="nav-tabs">
         <a href="index.html">INTC Dashboard</a>
         <a href="watchlist.html" class="active">Watchlist</a>
