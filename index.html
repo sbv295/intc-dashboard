@@ -73,6 +73,20 @@
         .badge-premarket, .badge-postmarket { background: #3a351b; color: var(--amber); }
         .badge-closed { background: #2a2a2a; color: #888; }
 
+        /* ─── Earnings Countdown ──────────────────────────────── */
+        .earnings-countdown {
+            background: linear-gradient(135deg, #1a4d7a 0%, #0f3a5a 100%);
+            border: 1px solid #2a5f8f;
+            border-radius: 10px;
+            padding: 12px 20px;
+            margin-bottom: 16px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #e0f2fe;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
         /* ─── Price Cards ─────────────────────────────────────── */
         .cards {
             display: grid;
@@ -380,6 +394,9 @@
         <div class="time-display" id="time-display">--</div>
     </div>
 
+    <!-- Earnings Countdown -->
+    <div class="earnings-countdown" id="earnings-countdown"></div>
+
     <!-- Price Cards -->
     <div class="cards">
         <div class="card card-nasdaq closed" id="nasdaq-card">
@@ -633,6 +650,42 @@
         if (mins >= 570 && mins < 960) return { status: 'market', label: 'Market Open' };
         if (mins >= 960 && mins < 1200) return { status: 'postmarket', label: 'Post-Market' };
         return { status: 'closed', label: 'Closed' };
+    }
+
+    function updateEarningsCountdown() {
+        const el = document.getElementById('earnings-countdown');
+        if (!el) return;
+
+        // July 23, 2026, 4:00 PM ET (market close)
+        const earningsDate = new Date('2026-07-23T20:00:00Z'); // 4 PM ET = 8 PM UTC
+        const now = new Date();
+
+        const diff = earningsDate - now;
+        if (diff <= 0) {
+            el.innerHTML = '📊 INTC Earnings: LIVE NOW (July 23 Market Close)';
+            el.style.background = 'linear-gradient(135deg, #7a1a1a 0%, #5a0f0f 100%)';
+            el.style.borderColor = '#8f2a2a';
+            el.style.color = '#ffe0e0';
+            return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+        let countdownText = '📊 INTC Earnings on July 23 at Market Close (4:00 PM ET): ';
+        if (days > 0) {
+            countdownText += `${days}d ${hours}h ${minutes}m remaining`;
+        } else if (hours > 0) {
+            countdownText += `${hours}h ${minutes}m remaining`;
+        } else {
+            countdownText += `${minutes}m remaining`;
+        }
+
+        el.innerHTML = countdownText;
+        el.style.background = 'linear-gradient(135deg, #1a4d7a 0%, #0f3a5a 100%)';
+        el.style.borderColor = '#2a5f8f';
+        el.style.color = '#e0f2fe';
     }
 
     // ─── Chart Setup ────────────────────────────────────────────────────────
@@ -1672,6 +1725,7 @@
         fetchHlStats();
         connectHlWebSocket();
         connectYahooWebSocket();
+        updateEarningsCountdown();
 
         // Poll NASDAQ data every 30s (API rate-friendly, WS handles live price)
         setInterval(fetchNasdaqData, 30000);
@@ -1682,6 +1736,7 @@
         // Update time display every second
         setInterval(() => {
             document.getElementById('time-display').innerHTML = formatDualTime(new Date());
+            updateEarningsCountdown();
             // Update market status badge
             const ms = getMarketStatus();
             const badge = document.getElementById('market-badge');
