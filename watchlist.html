@@ -85,16 +85,11 @@
         }
 
         @media (max-width: 640px) {
-            .nav-title { font-size: 1.8rem; letter-spacing: 3px; padding: 20px 0 35px; }
+            .nav-title { font-size: 1.8rem; letter-spacing: 3px; padding: 10px 0 8px; }
             .time-fixed {
-                position: absolute;
-                top: auto;
-                right: auto;
-                left: 0;
-                right: 0;
-                top: 90px;
+                position: static;
                 text-align: center;
-                margin: 0;
+                margin: 0 0 24px;
                 display: block;
                 background: none;
                 backdrop-filter: none;
@@ -430,13 +425,13 @@
 </head>
 <body>
     <div class="casino-bg"></div>
-    <div class="time-fixed" id="time-display">--</div>
     <div class="nav-tabs">
         <a href="index.html">INTC Dashboard</a>
         <a href="watchlist.html" class="active">Watchlist</a>
     </div>
 
     <div class="nav-title">Watchlist</div>
+    <div class="time-fixed" id="time-display">--</div>
 
     <div class="header">
         <h1>Watchlist</h1>
