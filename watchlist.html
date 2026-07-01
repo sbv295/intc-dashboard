@@ -823,7 +823,8 @@
                     const sign = chg >= 0 ? '+' : '';
                     chgEl.innerHTML = `<span class="prev-ref">${fmtPrice(stock, refClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
                     chgEl.className = `price-block-change`;
-                    updateSentiment(stock.ticker, pct);
+                    // Only update sentiment during regular market hours from this path
+                    if (ms === 'market') updateSentiment(stock.ticker, pct);
                 }
                 if (stock.currency === 'KRW') {
                     const krwEl = document.getElementById(`krw-${_sid}`);
@@ -849,6 +850,8 @@
                 const extSign = extChg >= 0 ? '+' : '';
                 const extCls = extChg >= 0 ? 'up' : 'down';
                 extEl.innerHTML = `<span class="ext-label">${extLabel}:</span> <span class="ext-value">${fmtPrice(stock, extPrice)}</span> <span class="ext-change ${extCls}">${extSign}${extPct.toFixed(2)}%</span>`;
+                // During pre/post market, sentiment reflects extended price movement
+                updateSentiment(stock.ticker, extPct);
             } else {
                 extEl.innerHTML = '';
             }
@@ -977,11 +980,8 @@
                 const sign = chg >= 0 ? '+' : '';
                 const cls = chg >= 0 ? 'up' : 'down';
                 extEl.innerHTML = `<span class="ext-label">${label}:</span> <span class="ext-value">${fmtPrice(stock, price)}</span> <span class="ext-change ${cls}">${sign}${pct.toFixed(2)}%</span>`;
-            }
-            // Sentiment always tracks % change vs prevClose (day's movement)
-            if (st.prevClose) {
-                const sentPct = ((price - st.prevClose) / st.prevClose) * 100;
-                updateSentiment(ticker, sentPct);
+                // Sentiment reflects extended price movement during pre/post
+                updateSentiment(ticker, pct);
             }
             st.extPrice = price;
             updateMarketCap(ticker);
