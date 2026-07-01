@@ -32,8 +32,9 @@
         /* ─── Navigation ─────────────────────────────────────── */
         .nav-tabs {
             display: flex;
+            align-items: center;
             gap: 4px;
-            margin-bottom: 16px;
+            margin-bottom: 0;
         }
         .nav-tabs a {
             text-decoration: none;
@@ -54,23 +55,16 @@
         }
         .nav-tabs a:hover:not(.active) { color: var(--text); }
 
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 20px 16px 30px;
-            margin-bottom: 0;
-        }
-        .header h1 {
-            font-size: 3rem;
+        .nav-title {
+            font-size: 2.4rem;
             font-weight: 800;
             letter-spacing: 4px;
             text-transform: uppercase;
-            text-align: center;
             text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+            margin-left: 20px;
         }
-        .header .time-display {
+
+        .time-fixed {
             position: fixed;
             top: 12px;
             right: 16px;
@@ -79,12 +73,18 @@
             text-align: right;
             line-height: 1.6;
             z-index: 10;
+            background: rgba(15,15,20,0.7);
+            padding: 4px 10px;
+            border-radius: 6px;
+            backdrop-filter: blur(6px);
+        }
+
+        .header {
+            display: none;
         }
 
         @media (max-width: 640px) {
-            .header h1 { font-size: 2rem; letter-spacing: 3px; }
-            .header { padding: 16px 12px 20px; }
-            .header .time-display { font-size: 0.65rem; }
+            .nav-title { font-size: 1.6rem; letter-spacing: 3px; margin-left: 12px; }
         }
 
         /* ─── Stock Grid ─────────────────────────────────────── */
@@ -349,12 +349,12 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 550px;
+            height: 420px;
             background: url('logos/Casino_desktop.jpg') center bottom / cover no-repeat;
             opacity: 0.35;
             pointer-events: none;
-            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
-            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 60%, rgba(0,0,0,0) 100%);
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 60%, rgba(0,0,0,0) 100%);
             z-index: 0;
         }
 
@@ -414,14 +414,16 @@
 </head>
 <body>
     <div class="casino-bg"></div>
+    <div class="time-fixed" id="time-display">--</div>
     <div class="nav-tabs">
         <a href="index.html">INTC Dashboard</a>
         <a href="watchlist.html" class="active">Watchlist</a>
+        <span class="nav-title">Watchlist</span>
     </div>
 
     <div class="header">
         <h1>Watchlist</h1>
-        <div class="time-display" id="time-display">--</div>
+        <div class="time-display" id="time-display-legacy">--</div>
     </div>
 
     <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span></div>
