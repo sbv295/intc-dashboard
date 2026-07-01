@@ -32,7 +32,6 @@
         /* ─── Navigation ─────────────────────────────────────── */
         .nav-tabs {
             display: flex;
-            align-items: center;
             gap: 4px;
             margin-bottom: 0;
         }
@@ -76,6 +75,7 @@
 
         @media (max-width: 640px) {
             .nav-title { font-size: 1.8rem; letter-spacing: 3px; padding: 10px 0 100px; }
+            body { padding: 8px; }
         }
 
         /* ─── Stock Grid ─────────────────────────────────────── */
@@ -437,7 +437,8 @@
     <div class="nav-tabs">
         <a href="index.html">INTC Dashboard</a>
         <a href="watchlist.html" class="active">Watchlist</a>
-        <div class="time-fixed" id="time-display">--</div>
+    </div>
+    <div class="time-fixed" id="time-display">--</div>
     </div>
 
     <div class="nav-title">Watchlist</div>
