@@ -439,6 +439,31 @@
             margin: 4px 0;
         }
 
+        /* ─── Sentiment Indicator ─────────────────────────── */
+        .stock-sentiment {
+            text-align: center;
+            margin-top: 8px;
+            padding: 8px 0;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            padding: 0;
+            margin: 0;
+            transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+        }
+        .stock-sentiment.visible {
+            max-height: 120px;
+            opacity: 1;
+            padding: 8px 0;
+            margin-top: 8px;
+        }
+        .stock-sentiment img {
+            height: 60px;
+            border-radius: 6px;
+            transition: opacity 0.3s ease;
+        }
+
         @keyframes flashGreen {
             0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); }
             100% { color: var(--text); text-shadow: none; }
@@ -532,8 +557,69 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null, sentiment: 'neutral' };
     });
+
+    // ─── Sentiment Indicator ────────────────────────────────────────────────
+    const SENTIMENT_BULL_THRESHOLD = 1.5;
+    const SENTIMENT_BEAR_THRESHOLD = -1.5;
+    const SENTIMENT_HYSTERESIS = 0.25;
+
+    function computeSentiment(pctChange, currentSentiment) {
+        if (currentSentiment === 'bull') {
+            if (pctChange < SENTIMENT_BULL_THRESHOLD - SENTIMENT_HYSTERESIS) {
+                if (pctChange < SENTIMENT_BEAR_THRESHOLD - SENTIMENT_HYSTERESIS) return 'bear';
+                return 'neutral';
+            }
+            return 'bull';
+        } else if (currentSentiment === 'bear') {
+            if (pctChange > SENTIMENT_BEAR_THRESHOLD + SENTIMENT_HYSTERESIS) {
+                if (pctChange > SENTIMENT_BULL_THRESHOLD + SENTIMENT_HYSTERESIS) return 'bull';
+                return 'neutral';
+            }
+            return 'bear';
+        } else {
+            // neutral
+            if (pctChange > SENTIMENT_BULL_THRESHOLD + SENTIMENT_HYSTERESIS) return 'bull';
+            if (pctChange < SENTIMENT_BEAR_THRESHOLD - SENTIMENT_HYSTERESIS) return 'bear';
+            return 'neutral';
+        }
+    }
+
+    const SENTIMENT_IMAGES = {
+        bull: 'logos/bull.png',
+        bear: 'logos/bear.png',
+        neutral: 'logos/bull_vs_bear.png'
+    };
+
+    function updateSentiment(ticker, pctChange) {
+        const st = state[ticker];
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        if (!stock) return;
+        const newSentiment = computeSentiment(pctChange, st.sentiment);
+        const _sid = sid(stock);
+        const el = document.getElementById(`sentiment-${_sid}`);
+        if (!el) return;
+        if (newSentiment !== st.sentiment) {
+            st.sentiment = newSentiment;
+            const img = el.querySelector('img');
+            if (img) img.src = SENTIMENT_IMAGES[newSentiment];
+        }
+    }
+
+    function updateSentimentVisibility() {
+        const usMs = getMarketStatus();
+        const krMs = getKrxMarketStatus();
+        STOCKS.forEach(s => {
+            const _sid = sid(s);
+            const el = document.getElementById(`sentiment-${_sid}`);
+            if (!el) return;
+            const ms = s.currency === 'KRW' ? krMs : usMs;
+            // Show during market, premarket, postmarket; hide when closed
+            const show = (ms !== 'closed');
+            el.classList.toggle('visible', show);
+        });
+    }
 
     // ─── Yahoo Finance API ──────────────────────────────────────────────────
     const YAHOO_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart/';
@@ -624,6 +710,7 @@
                         <div class="price-block-change" id="krw-chg-${id}"></div>
                     </div>` : ''}
                 </div>
+                <div class="stock-sentiment" id="sentiment-${id}"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
                 <div class="stock-ohl" id="ohl-${id}"></div>
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-ath" id="ath-${id}"></div>
@@ -736,9 +823,8 @@
                     const sign = chg >= 0 ? '+' : '';
                     chgEl.innerHTML = `<span class="prev-ref">${fmtPrice(stock, refClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
                     chgEl.className = `price-block-change`;
+                    updateSentiment(stock.ticker, pct);
                 }
-
-                // Korean stocks: also update KRW block with native currency price
                 if (stock.currency === 'KRW') {
                     const krwEl = document.getElementById(`krw-${_sid}`);
                     const krwChgEl = document.getElementById(`krw-chg-${_sid}`);
@@ -891,6 +977,7 @@
                 const sign = chg >= 0 ? '+' : '';
                 const cls = chg >= 0 ? 'up' : 'down';
                 extEl.innerHTML = `<span class="ext-label">${label}:</span> <span class="ext-value">${fmtPrice(stock, price)}</span> <span class="ext-change ${cls}">${sign}${pct.toFixed(2)}%</span>`;
+                updateSentiment(ticker, pct);
             }
             st.extPrice = price;
             updateMarketCap(ticker);
@@ -920,9 +1007,8 @@
             const sign = chg >= 0 ? '+' : '';
             chgEl.innerHTML = `<span class="prev-ref">${fmtPrice(stock, prevClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
             chgEl.className = `price-block-change`;
+            updateSentiment(ticker, pct);
         }
-
-        // Korean stocks: also update KRW block
         if (stock.currency === 'KRW') {
             const krwEl = document.getElementById(`krw-${_sid}`);
             const krwChgEl = document.getElementById(`krw-chg-${_sid}`);
@@ -1212,9 +1298,11 @@
         setInterval(() => {
             updateETClock();
             updateHlDimState();
+            updateSentimentVisibility();
         }, 60000);
         updateETClock();
         updateHlDimState();
+        updateSentimentVisibility();
 
         // Refresh NASDAQ data every 60s
         setInterval(fetchAllNasdaq, 60000);

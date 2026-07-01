@@ -407,6 +407,7 @@
             <div class="market-cap" id="nasdaq-mcap"></div>
             <div class="session-details" id="nasdaq-sessions"></div>
             <div class="ath-info" id="nasdaq-ath"></div>
+            <div class="nasdaq-sentiment" id="nasdaq-sentiment"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
         </div>
         <div class="card card-hl" id="hl-card">
             <div class="source-label">Hyperliquid 24/7 (xyz:INTC perp)</div>
@@ -650,6 +651,59 @@
         if (mins >= 570 && mins < 960) return { status: 'market', label: 'Market Open' };
         if (mins >= 960 && mins < 1200) return { status: 'postmarket', label: 'Post-Market' };
         return { status: 'closed', label: 'Closed' };
+    }
+
+    // ─── Sentiment Indicator ────────────────────────────────────────────────
+    const SENTIMENT_BULL_THRESHOLD = 1.5;
+    const SENTIMENT_BEAR_THRESHOLD = -1.5;
+    const SENTIMENT_HYSTERESIS = 0.25;
+    let intcSentiment = 'neutral';
+
+    function computeSentiment(pctChange, currentSentiment) {
+        if (currentSentiment === 'bull') {
+            if (pctChange < SENTIMENT_BULL_THRESHOLD - SENTIMENT_HYSTERESIS) {
+                if (pctChange < SENTIMENT_BEAR_THRESHOLD - SENTIMENT_HYSTERESIS) return 'bear';
+                return 'neutral';
+            }
+            return 'bull';
+        } else if (currentSentiment === 'bear') {
+            if (pctChange > SENTIMENT_BEAR_THRESHOLD + SENTIMENT_HYSTERESIS) {
+                if (pctChange > SENTIMENT_BULL_THRESHOLD + SENTIMENT_HYSTERESIS) return 'bull';
+                return 'neutral';
+            }
+            return 'bear';
+        } else {
+            if (pctChange > SENTIMENT_BULL_THRESHOLD + SENTIMENT_HYSTERESIS) return 'bull';
+            if (pctChange < SENTIMENT_BEAR_THRESHOLD - SENTIMENT_HYSTERESIS) return 'bear';
+            return 'neutral';
+        }
+    }
+
+    const SENTIMENT_IMAGES = {
+        bull: 'logos/bull.png',
+        bear: 'logos/bear.png',
+        neutral: 'logos/bull_vs_bear.png'
+    };
+
+    function updateIntcSentiment(pctChange) {
+        const newSentiment = computeSentiment(pctChange, intcSentiment);
+        if (newSentiment !== intcSentiment) {
+            intcSentiment = newSentiment;
+            const el = document.getElementById('nasdaq-sentiment');
+            if (el) {
+                const img = el.querySelector('img');
+                if (img) img.src = SENTIMENT_IMAGES[newSentiment];
+            }
+        }
+    }
+
+    function updateSentimentVisibility() {
+        const ms = getMarketStatus();
+        const el = document.getElementById('nasdaq-sentiment');
+        if (el) {
+            const show = (ms.status !== 'closed');
+            el.classList.toggle('visible', show);
+        }
     }
 
     function updateEarningsCountdown() {
@@ -1369,6 +1423,7 @@
                     document.getElementById('nasdaq-meta').innerHTML =
                         `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
                         `<span class="prev-close">Prev Close: $${yahooPrevClose.toFixed(2)}</span>`;
+                    updateIntcSentiment(pct);
                 }
 
                 // Post-market price (from last post candle)
@@ -1416,6 +1471,7 @@
                     document.getElementById('nasdaq-meta').innerHTML =
                         `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
                         `<span class="prev-close">Prev Close: $${yahooPrevClose.toFixed(2)}</span>`;
+                    updateIntcSentiment(pct);
                 }
 
                 // Pre-market price (from last pre candle)
@@ -1461,6 +1517,7 @@
                         document.getElementById('nasdaq-meta').innerHTML =
                             `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
                             `<span class="prev-close">Prev Close: $${yahooPrevClose.toFixed(2)}</span>`;
+                        updateIntcSentiment(pct);
                     }
                 }
                 extEl2.innerHTML = '';
@@ -1602,6 +1659,7 @@
             document.getElementById('nasdaq-meta').innerHTML =
                 `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
                 `<span class="prev-close">Prev Close: $${prevClose.toFixed(2)}</span>`;
+            updateIntcSentiment(pct);
         }
 
         // Real-time chart update from WS tick
@@ -1726,6 +1784,7 @@
         connectHlWebSocket();
         connectYahooWebSocket();
         updateEarningsCountdown();
+        updateSentimentVisibility();
 
         // Poll NASDAQ data every 30s (API rate-friendly, WS handles live price)
         setInterval(fetchNasdaqData, 30000);
@@ -1752,6 +1811,7 @@
             document.getElementById('nasdaq-extended').classList.toggle('dim-element', extDim);
             document.getElementById('hl-price').classList.toggle('dim-element', hlDim);
             document.getElementById('hl-meta').classList.toggle('dim-element', hlDim);
+            updateSentimentVisibility();
         }, 1000);
     }
 
