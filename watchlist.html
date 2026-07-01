@@ -309,6 +309,21 @@
         }
         .mcap-summary-change .up { color: var(--green); }
         .mcap-summary-change .down { color: var(--red); }
+
+        .casino-badge {
+            height: 2.8em;
+            margin-left: auto;
+            opacity: 0.6;
+            border-radius: 6px;
+            padding: 4px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border);
+            transition: opacity 0.3s;
+        }
+        .casino-badge:hover {
+            opacity: 1;
+        }
+
         .mcap-prev-ref {
             color: var(--text-dim);
             font-weight: 400;
@@ -359,11 +374,12 @@
         <div class="time-display" id="time-display">--</div>
     </div>
 
-    <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span> <img src="logos/casino.png" alt="casino" style="height:8em;vertical-align:middle;margin-left:12px"></div>
+    <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span></div>
     <div class="mcap-summary" id="mcap-summary-us">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
         <span class="mcap-summary-value" id="mcap-total-us">—</span>
         <span class="mcap-summary-change" id="mcap-chg-us"></span>
+        <img src="logos/casino.png" alt="casino" class="casino-badge">
     </div>
     <div class="stock-grid" id="stock-grid-us"></div>
 
