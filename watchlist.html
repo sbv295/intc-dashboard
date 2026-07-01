@@ -65,6 +65,7 @@
             padding: 0 0 180px;
             margin-top: -40px;
             opacity: 1;
+            pointer-events: none;
         }
 
         .time-fixed {
@@ -252,6 +253,9 @@
         .price-block.nasdaq-dimmed {
             opacity: 0.3;
         }
+        .price-block.krw-dimmed {
+            opacity: 0.3;
+        }
         .stock-extended.ext-dimmed {
             opacity: 0.3;
         }
@@ -274,8 +278,12 @@
         .stock-extended {
             font-size: 1.05rem;
             color: var(--text-dim);
-            margin-top: 6px;
+            margin-top: 8px;
             text-align: center;
+            min-height: 0;
+        }
+        .stock-extended:empty {
+            display: none;
         }
         .stock-extended .ext-label {
             font-weight: 600;
@@ -299,12 +307,12 @@
             text-align: center;
             letter-spacing: 0.3px;
         }
+        .stock-ohl:empty {
+            display: none;
+        }
         .stock-ohl.ohl-dimmed .ohl-label,
         .stock-ohl.ohl-dimmed .ohl-value {
             opacity: 0.3;
-        }
-        .stock-ohl.ohl-no-bottom {
-            border-bottom: none;
         }
         .stock-ohl .ohl-label {
             font-weight: 600;
@@ -406,7 +414,9 @@
             color: var(--text-dim);
             margin-top: 6px;
             padding-top: 6px;
+            padding-bottom: 6px;
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            border-bottom: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
             text-align: center;
             letter-spacing: 0.3px;
             line-height: 1.8;
@@ -594,8 +604,8 @@
                     <span class="stock-ticker">${s.displayTicker || s.ticker}</span>
                 </div>
                 <div class="stock-prices">
-                    <div class="price-block nasdaq-block" ${!s.hl ? 'style="grid-column: 1 / -1"' : ''}>
-                        <div class="price-block-label">${stockExchange(s)}</div>
+                    <div class="price-block nasdaq-block" ${!s.hl && !s.currency ? 'style="grid-column: 1 / -1"' : ''}>
+                        <div class="price-block-label">${s.currency === 'KRW' ? 'USD' : stockExchange(s)}</div>
                         <div class="price-block-value" id="nasdaq-${id}">—</div>
                         <div class="price-block-change" id="nasdaq-chg-${id}"></div>
                     </div>
@@ -604,10 +614,15 @@
                         <div class="price-block-value" id="hl-${id}">—</div>
                         <div class="price-block-change" id="hl-chg-${id}"></div>
                     </div>` : ''}
+                    ${s.currency === 'KRW' ? `<div class="price-block krw-block">
+                        <div class="price-block-label">KRW</div>
+                        <div class="price-block-value" id="krw-${id}">—</div>
+                        <div class="price-block-change" id="krw-chg-${id}"></div>
+                    </div>` : ''}
                 </div>
-                <div class="stock-ohl${s.currency === 'KRW' ? ' ohl-no-bottom' : ''}" id="ohl-${id}"></div>
-                <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-extended" id="ext-${id}"></div>
+                <div class="stock-ohl" id="ohl-${id}"></div>
+                <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
             </div>
         `;
@@ -719,6 +734,22 @@
                     const sign = chg >= 0 ? '+' : '';
                     chgEl.innerHTML = `<span class="prev-ref">${fmtPrice(stock, refClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
                     chgEl.className = `price-block-change`;
+                }
+
+                // Korean stocks: also update KRW block with native currency price
+                if (stock.currency === 'KRW') {
+                    const krwEl = document.getElementById(`krw-${_sid}`);
+                    const krwChgEl = document.getElementById(`krw-chg-${_sid}`);
+                    if (krwEl) {
+                        krwEl.textContent = '₩' + Math.round(displayPrice).toLocaleString();
+                    }
+                    if (krwChgEl && refClose) {
+                        const chg = displayPrice - refClose;
+                        const pct = (chg / refClose) * 100;
+                        const sign = chg >= 0 ? '+' : '';
+                        krwChgEl.innerHTML = `<span class="prev-ref">₩${Math.round(refClose).toLocaleString()}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
+                        krwChgEl.className = `price-block-change`;
+                    }
                 }
             }
 
@@ -867,6 +898,22 @@
             chgEl.innerHTML = `<span class="prev-ref">${fmtPrice(stock, prevClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
             chgEl.className = `price-block-change`;
         }
+
+        // Korean stocks: also update KRW block
+        if (stock.currency === 'KRW') {
+            const krwEl = document.getElementById(`krw-${_sid}`);
+            const krwChgEl = document.getElementById(`krw-chg-${_sid}`);
+            if (krwEl) {
+                krwEl.textContent = '₩' + Math.round(price).toLocaleString();
+            }
+            if (krwChgEl && prevClose) {
+                const chg = price - prevClose;
+                const pct = (chg / prevClose) * 100;
+                const sign = chg >= 0 ? '+' : '';
+                krwChgEl.innerHTML = `<span class="prev-ref">₩${Math.round(prevClose).toLocaleString()}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
+                krwChgEl.className = `price-block-change`;
+            }
+        }
     }
 
     // ─── Hyperliquid WebSocket ──────────────────────────────────────────────
@@ -999,7 +1046,15 @@
 
     function updateMarketCap(ticker) {
         const st = state[ticker];
-        const price = st.extPrice || st.prevNasdaq || st.nasdaqPrice;
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        // Market cap tracks only regular session price (not extended)
+        const ms = stock && stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
+        let price;
+        if (ms === 'market') {
+            price = st.prevNasdaq || st.nasdaqPrice;
+        } else {
+            price = st.sessionClose || st.prevNasdaq || st.nasdaqPrice;
+        }
         if (!st.shares || !price) return;
         const mcap = price * st.shares;
         st.mcap = mcap;
@@ -1021,14 +1076,19 @@
         for (const stock of stocks) {
             const st = state[stock.ticker];
             if (!st.shares) continue;
-            const price = st.extPrice || st.prevNasdaq || st.nasdaqPrice;
-            if (!price) continue;
-            // When market is open, reference = yesterday's close (prevClose)
-            // When market is closed/post/pre, reference = latest session close (sessionClose)
-            // This ensures % change reflects only active movement, not stale previous-day change
+            // Market cap tracks only open market movement (not pre/post)
             const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
-            const prevPrice = (ms === 'market') ? st.prevClose : (st.sessionClose || st.prevClose);
-            if (!prevPrice) continue;
+            let price, prevPrice;
+            if (ms === 'market') {
+                // During market: current live price vs previous day's close
+                price = st.prevNasdaq || st.nasdaqPrice;
+                prevPrice = st.prevClose;
+            } else {
+                // Pre/post/closed: today's session close vs previous day's close
+                price = st.sessionClose || st.prevNasdaq || st.nasdaqPrice;
+                prevPrice = st.prevClose;
+            }
+            if (!price || !prevPrice) continue;
             hasAny = true;
             let mcapCurrent = price * st.shares;
             let mcapPrev = prevPrice * st.shares;
@@ -1069,6 +1129,8 @@
 
             let highClose = -Infinity, highTrade = -Infinity;
             let highCloseDate = null, highTradeDate = null;
+            let lowClose = Infinity, lowTrade = Infinity;
+            let lowCloseDate = null, lowTradeDate = null;
 
             // Exclude today's data point for close if market is still open (close is just live price)
             const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
@@ -1077,10 +1139,13 @@
             for (let i = 0; i < closeLimit; i++) {
                 const c = quote.close[i];
                 if (c != null && c > highClose) { highClose = c; highCloseDate = timestamps[i]; }
+                if (c != null && c < lowClose) { lowClose = c; lowCloseDate = timestamps[i]; }
             }
             for (let i = 0; i < timestamps.length; i++) {
                 const h = quote.high[i];
+                const l = quote.low[i];
                 if (h != null && h > highTrade) { highTrade = h; highTradeDate = timestamps[i]; }
+                if (l != null && l < lowTrade) { lowTrade = l; lowTradeDate = timestamps[i]; }
             }
 
             if (highClose <= 0) return;
@@ -1090,10 +1155,12 @@
             if (!athEl) return;
 
             const fmtDate = (ts) => { const d = new Date(ts * 1000); const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`; };
-            const fmtPrice = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
+            const fmtP = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
             athEl.innerHTML =
-                `<span class="ath-label">52W High Close:</span> <span class="ath-value">${fmtPrice(highClose)}</span> (${fmtDate(highCloseDate)})<br>` +
-                `<span class="ath-label">52W High Trade:</span> <span class="ath-value">${fmtPrice(highTrade)}</span> (${fmtDate(highTradeDate)})`;
+                `<span class="ath-label">52W High Close:</span> <span class="ath-value">${fmtP(highClose)}</span> (${fmtDate(highCloseDate)})<br>` +
+                `<span class="ath-label">52W High Trade:</span> <span class="ath-value">${fmtP(highTrade)}</span> (${fmtDate(highTradeDate)})<br>` +
+                `<span class="ath-label">52W Low Close:</span> <span class="ath-value">${fmtP(lowClose)}</span> (${fmtDate(lowCloseDate)})<br>` +
+                `<span class="ath-label">52W Low Trade:</span> <span class="ath-value">${fmtP(lowTrade)}</span> (${fmtDate(lowTradeDate)})`;
         } catch (e) {}
     }
 
@@ -1158,6 +1225,8 @@
                 // KRX stocks: bright during KRX market hours
                 const dim = (krMs !== 'market');
                 if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', dim);
+                const krwBl = card.querySelector('.krw-block');
+                if (krwBl) krwBl.classList.toggle('krw-dimmed', dim);
                 if (extEl) extEl.classList.toggle('ext-dimmed', true); // no extended hours for KRX
                 const ohlEl = document.getElementById(`ohl-${_sid}`);
                 if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', dim);
