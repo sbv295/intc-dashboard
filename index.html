@@ -742,7 +742,7 @@
 
         const diff = earningsDate - now;
         if (diff <= 0) {
-            el.innerHTML = 'INTC Earnings: LIVE NOW (July 23, 4:00 PM ET / July 24, 1:30 AM IST)';
+            el.innerHTML = 'INTC Earnings: LIVE NOW (July 24, 1:30 AM IST)';
             el.style.background = 'linear-gradient(135deg, #7a1a1a 0%, #5a0f0f 100%)';
             el.style.borderColor = '#8f2a2a';
             el.style.color = '#ffe0e0';
@@ -753,7 +753,7 @@
         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-        let countdownText = 'INTC Earnings on July 23, 4:00 PM ET / July 24, 1:30 AM IST: ';
+        let countdownText = 'INTC Earnings on July 24, 1:30 AM IST: ';
         if (days > 0) {
             countdownText += `${days}d ${hours}h ${minutes}m remaining`;
         } else if (hours > 0) {
