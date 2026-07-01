@@ -616,8 +616,8 @@
             const el = document.getElementById(`sentiment-${_sid}`);
             if (!el) return;
             const ms = s.currency === 'KRW' ? krMs : usMs;
-            // Show during market, premarket, postmarket; hide when closed
-            const show = (ms !== 'closed');
+            // Show only during regular market hours
+            const show = (ms === 'market');
             el.classList.toggle('visible', show);
         });
     }

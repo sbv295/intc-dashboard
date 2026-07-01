@@ -727,7 +727,7 @@
         const ms = getMarketStatus();
         const el = document.getElementById('nasdaq-sentiment');
         if (el) {
-            const show = (ms.status !== 'closed');
+            const show = (ms.status === 'market');
             el.classList.toggle('visible', show);
         }
     }
