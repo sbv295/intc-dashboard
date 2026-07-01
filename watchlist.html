@@ -638,7 +638,7 @@
     // ─── Fetch NASDAQ Data ──────────────────────────────────────────────────
     async function fetchNasdaqForStock(stock) {
         try {
-            const url = `${YAHOO_BASE}${stock.ticker}?interval=5m&range=1d&includePrePost=true`;
+            const url = `${YAHOO_BASE}${stock.ticker}?interval=5m&range=2d&includePrePost=true`;
             const json = await yahooFetch(url);
             const result = json.chart.result[0];
             const meta = result.meta;
@@ -766,9 +766,12 @@
             }
 
             // Volume & OHL: compute from regular-session candles
+            // With range=2d, we have up to 2 days of data. Use the most recent regular session.
             if (tp && quote.volume) {
                 let totalVol = 0;
                 let regOpen = null, regHigh = -Infinity, regLow = Infinity;
+
+                // Try today's regular session first
                 for (let i = 0; i < timestamps.length; i++) {
                     const t = timestamps[i], v = quote.volume[i];
                     const o = quote.open[i], h = quote.high[i], l = quote.low[i];
@@ -779,6 +782,24 @@
                         if (l != null) regLow = Math.min(regLow, l);
                     }
                 }
+
+                // If no regular session data for today (pre-market or closed before open),
+                // fall back to previous day's regular session from the 2d range
+                if (regOpen === null && timestamps.length > 0) {
+                    // Previous day's candles are before today's pre-market start
+                    const prevDayEnd = tp.pre ? tp.pre.start : tp.regular.start;
+                    for (let i = 0; i < timestamps.length; i++) {
+                        const t = timestamps[i], v = quote.volume[i];
+                        const o = quote.open[i], h = quote.high[i], l = quote.low[i];
+                        if (t < prevDayEnd && o != null) {
+                            if (v) totalVol += v;
+                            if (regOpen === null) regOpen = o;
+                            if (h != null) regHigh = Math.max(regHigh, h);
+                            if (l != null) regLow = Math.min(regLow, l);
+                        }
+                    }
+                }
+
                 if (totalVol > 0) {
                     state[stock.ticker].volume = totalVol;
                     displayVolume(stock.ticker, totalVol);
