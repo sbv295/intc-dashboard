@@ -977,7 +977,11 @@
                 const sign = chg >= 0 ? '+' : '';
                 const cls = chg >= 0 ? 'up' : 'down';
                 extEl.innerHTML = `<span class="ext-label">${label}:</span> <span class="ext-value">${fmtPrice(stock, price)}</span> <span class="ext-change ${cls}">${sign}${pct.toFixed(2)}%</span>`;
-                updateSentiment(ticker, pct);
+            }
+            // Sentiment always tracks % change vs prevClose (day's movement)
+            if (st.prevClose) {
+                const sentPct = ((price - st.prevClose) / st.prevClose) * 100;
+                updateSentiment(ticker, sentPct);
             }
             st.extPrice = price;
             updateMarketCap(ticker);
