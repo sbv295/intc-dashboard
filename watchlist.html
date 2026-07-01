@@ -433,6 +433,11 @@
             font-weight: 600;
             color: var(--red);
         }
+        .stock-ath .ath-divider {
+            border: none;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            margin: 4px 0;
+        }
 
         @keyframes flashGreen {
             0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); }
@@ -1178,7 +1183,8 @@
             const fmtP = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
             athEl.innerHTML =
                 `<span class="ath-label">52W High Close:</span> <span class="ath-value">${fmtP(highClose)}</span> (${fmtDate(highCloseDate)})<br>` +
-                `<span class="ath-label">52W High Trade:</span> <span class="ath-value">${fmtP(highTrade)}</span> (${fmtDate(highTradeDate)})<br>` +
+                `<span class="ath-label">52W High Trade:</span> <span class="ath-value">${fmtP(highTrade)}</span> (${fmtDate(highTradeDate)})` +
+                `<hr class="ath-divider">` +
                 `<span class="ath-label">52W Low Close:</span> <span class="ath-value">${fmtP(lowClose)}</span> (${fmtDate(lowCloseDate)})<br>` +
                 `<span class="ath-label">52W Low Trade:</span> <span class="ath-value">${fmtP(lowTrade)}</span> (${fmtDate(lowTradeDate)})`;
         } catch (e) {}
