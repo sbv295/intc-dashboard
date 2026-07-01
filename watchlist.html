@@ -1023,8 +1023,11 @@
             if (!st.shares) continue;
             const price = st.extPrice || st.prevNasdaq || st.nasdaqPrice;
             if (!price) continue;
-            // prevClose = yesterday's official close from chart API (always consistent)
-            const prevPrice = st.prevClose;
+            // When market is open, reference = yesterday's close (prevClose)
+            // When market is closed/post/pre, reference = latest session close (sessionClose)
+            // This ensures % change reflects only active movement, not stale previous-day change
+            const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
+            const prevPrice = (ms === 'market') ? st.prevClose : (st.sessionClose || st.prevClose);
             if (!prevPrice) continue;
             hasAny = true;
             let mcapCurrent = price * st.shares;
@@ -1044,7 +1047,7 @@
         if (totalPrev > 0) {
             const pctChg = ((totalCurrent - totalPrev) / totalPrev) * 100;
             const sign = pctChg >= 0 ? '+' : '';
-            chgEl.innerHTML = `<span class="mcap-prev-ref">Prev Close: ${formatLargeCurrency(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
+            chgEl.innerHTML = `<span class="mcap-prev-ref">Last Close: ${formatLargeCurrency(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
             chgEl.className = `mcap-summary-change`;
         }
     }
