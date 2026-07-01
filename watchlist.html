@@ -695,7 +695,7 @@
         return `
             <div class="stock-card" id="card-${id}" style="--card-accent: ${s.color}">
                 <div class="stock-header">
-                    <img class="stock-logo" src="${s.logo}" alt="${s.name}">
+                    <img class="stock-logo" src="${s.logo}" alt="${s.name}"${s.ticker === 'MBLY' ? ' style="background:#fff;padding:2px;"' : ''}>
                     <span class="stock-name">${s.name}</span>
                     <span class="stock-ticker">${s.displayTicker || s.ticker}</span>
                 </div>
