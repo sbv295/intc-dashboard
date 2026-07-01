@@ -660,11 +660,9 @@
             // This gives the day's % change on cards and in the total market cap.
             state[stock.ticker].prevClose = prevClose;
 
-            // Get trading periods from today's data
-            const todayTP = meta.tradingPeriods;
-            const tp = (todayTP && todayTP.regular && todayTP.regular[0] && todayTP.regular[0][0])
-                ? { pre: todayTP.pre[0][0], regular: todayTP.regular[0][0], post: todayTP.post[0][0] }
-                : meta.currentTradingPeriod;
+            // Get trading periods — always use currentTradingPeriod for today's boundaries
+            // (with range=2d, meta.tradingPeriods[0] is the first day, not today)
+            const tp = meta.currentTradingPeriod;
 
             // Get regular close from candles
             let regularClose = null;
