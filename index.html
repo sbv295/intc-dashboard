@@ -1449,7 +1449,6 @@
                     document.getElementById('nasdaq-meta').innerHTML =
                         `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
                         `<span class="prev-close">Prev Close: $${yahooPrevClose.toFixed(2)}</span>`;
-                    updateIntcSentiment(pct);
                 }
 
                 // Post-market price (from last post candle)
@@ -1472,6 +1471,7 @@
                         `<span class="ext-label">Post-Market:</span> ` +
                         `<span class="ext-value">$${postLastPrice.toFixed(2)}</span> ` +
                         `<span class="ext-change ${extCls}">${extSign}${extChange.toFixed(2)} (${extSign}${extPct.toFixed(2)}%)</span>`;
+                    updateIntcSentiment(extPct);
                 } else {
                     extEl2.innerHTML = '';
                 }
@@ -1497,7 +1497,6 @@
                     document.getElementById('nasdaq-meta').innerHTML =
                         `<span class="change ${cls}">${sign}${change.toFixed(2)} (${sign}${pct.toFixed(2)}%)</span>` +
                         `<span class="prev-close">Prev Close: $${yahooPrevClose.toFixed(2)}</span>`;
-                    updateIntcSentiment(pct);
                 }
 
                 // Pre-market price (from last pre candle)
@@ -1520,6 +1519,7 @@
                         `<span class="ext-label">Pre-Market:</span> ` +
                         `<span class="ext-value">$${preLastPrice.toFixed(2)}</span> ` +
                         `<span class="ext-change ${extCls}">${extSign}${extChange.toFixed(2)} (${extSign}${extPct.toFixed(2)}%)</span>`;
+                    updateIntcSentiment(extPct);
                 } else {
                     extEl2.innerHTML = '';
                 }
