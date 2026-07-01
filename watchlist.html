@@ -59,7 +59,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            padding: 60px 16px 40px;
+            padding: 20px 16px 30px;
             margin-bottom: 0;
         }
         .header h1 {
@@ -71,16 +71,20 @@
             text-shadow: 0 2px 20px rgba(0,0,0,0.5);
         }
         .header .time-display {
-            font-size: 0.85rem;
+            position: fixed;
+            top: 12px;
+            right: 16px;
+            font-size: 0.75rem;
             color: var(--text-dim);
-            text-align: center;
+            text-align: right;
             line-height: 1.6;
-            margin-top: 12px;
+            z-index: 10;
         }
 
         @media (max-width: 640px) {
             .header h1 { font-size: 2rem; letter-spacing: 3px; }
-            .header { padding: 40px 12px 28px; }
+            .header { padding: 16px 12px 20px; }
+            .header .time-display { font-size: 0.65rem; }
         }
 
         /* ─── Stock Grid ─────────────────────────────────────── */
@@ -346,7 +350,7 @@
             left: 0;
             right: 0;
             height: 550px;
-            background: url('logos/Casino_desktop.jpg') center top / cover no-repeat;
+            background: url('logos/Casino_desktop.jpg') center bottom / cover no-repeat;
             opacity: 0.35;
             pointer-events: none;
             -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
