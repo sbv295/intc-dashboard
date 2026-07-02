@@ -445,6 +445,16 @@
             margin: 4px 0;
         }
 
+        .stock-52w {
+            font-size: 0.68rem;
+            color: var(--text-dim);
+            text-align: center;
+            margin-top: 4px;
+            letter-spacing: 0.3px;
+        }
+        .stock-52w .w52-hi { color: var(--green); font-weight: 600; }
+        .stock-52w .w52-lo { color: var(--red); font-weight: 600; }
+
         /* ─── Sentiment Indicator ─────────────────────────── */
         .stock-sentiment {
             text-align: center;
@@ -723,6 +733,7 @@
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
+                <div class="stock-52w" id="w52-${id}"></div>
             </div>
         `;
     }
@@ -862,6 +873,16 @@
                 updateSentiment(stock.ticker, extPct);
             } else {
                 extEl.innerHTML = '';
+            }
+
+            // 52-week range comparison
+            const w52El = document.getElementById(`w52-${_sid}`);
+            if (w52El && meta.fiftyTwoWeekHigh && meta.fiftyTwoWeekLow && displayPrice) {
+                const hi = meta.fiftyTwoWeekHigh, lo = meta.fiftyTwoWeekLow;
+                const fromHi = ((displayPrice - hi) / hi) * 100;
+                const fromLo = ((displayPrice - lo) / lo) * 100;
+                const fp = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
+                w52El.innerHTML = `52W: ${fp(lo)} — ${fp(hi)} | <span class="w52-lo">${fromHi.toFixed(1)}%</span> from High, <span class="w52-hi">+${fromLo.toFixed(1)}%</span> from Low`;
             }
 
             // Volume & OHL: compute from regular-session candles
