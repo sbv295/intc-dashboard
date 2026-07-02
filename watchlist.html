@@ -129,8 +129,13 @@
             margin-bottom: 8px;
         }
 
+        #stock-grid-kr {
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        }
+
         @media (max-width: 640px) {
             .stock-grid { grid-template-columns: 1fr; }
+            #stock-grid-kr { grid-template-columns: 1fr; }
             .section-label {
                 flex-direction: row;
                 flex-wrap: nowrap;
