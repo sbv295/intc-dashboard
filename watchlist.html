@@ -369,6 +369,82 @@
         .mcap-summary-change .up { color: var(--green); }
         .mcap-summary-change .down { color: var(--red); }
 
+        /* ─── INTC vs AMD Battle Bar ─────────────────────────── */
+        .battle-bar {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 18px 14px;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+        .battle-bar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+        .battle-bar-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-dim);
+        }
+        .battle-bar-verdict {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: var(--text-dim);
+        }
+        .battle-bar-verdict.intc { color: #3a9bde; }
+        .battle-bar-verdict.amd { color: #7AB648; }
+        .battle-bar-track {
+            position: relative;
+            display: flex;
+            height: 16px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+        }
+        .battle-bar-fill-intc {
+            width: 50%;
+            background: linear-gradient(90deg, #004d85, #3a9bde);
+            height: 100%;
+            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .battle-bar-fill-amd {
+            width: 50%;
+            background: linear-gradient(90deg, #7AB648, #4c7a1f);
+            height: 100%;
+            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .battle-bar-center {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(255,255,255,0.6);
+            transform: translateX(-1px);
+            z-index: 2;
+            pointer-events: none;
+        }
+        .battle-bar-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .battle-label-intc { color: #3a9bde; }
+        .battle-label-amd { color: #7AB648; }
+        .battle-diff {
+            font-weight: 800;
+            color: var(--text);
+        }
+
         .casino-badge {
             height: 8em;
             margin-left: auto;
@@ -502,6 +578,23 @@
         <div class="time-display" id="time-display-legacy">--</div>
     </div>
 
+    <div class="battle-bar" id="battle-bar">
+        <div class="battle-bar-header">
+            <span class="battle-bar-title">INTC vs AMD · Change %</span>
+            <span class="battle-bar-verdict" id="battle-verdict">—</span>
+        </div>
+        <div class="battle-bar-track">
+            <div class="battle-bar-fill-intc" id="battle-fill-intc"></div>
+            <div class="battle-bar-fill-amd" id="battle-fill-amd"></div>
+            <div class="battle-bar-center"></div>
+        </div>
+        <div class="battle-bar-labels">
+            <span class="battle-label-intc">INTC <span id="battle-pct-intc">—</span></span>
+            <span class="battle-diff" id="battle-diff">—</span>
+            <span class="battle-label-amd">AMD <span id="battle-pct-amd">—</span></span>
+        </div>
+    </div>
+
     <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><span class="section-et" id="et-clock"></span></div>
     <div class="mcap-summary" id="mcap-summary-us">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
@@ -570,7 +663,7 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null, sentiment: 'neutral' };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null, sentiment: 'neutral', currentPct: null };
     });
 
     // ─── Sentiment Indicator ────────────────────────────────────────────────
@@ -609,6 +702,8 @@
         const st = state[ticker];
         const stock = STOCKS.find(s => s.ticker === ticker);
         if (!stock) return;
+        st.currentPct = pctChange;
+        if (ticker === 'INTC' || ticker === 'AMD') updateBattleBar();
         const newSentiment = computeSentiment(pctChange, st.sentiment);
         const _sid = sid(stock);
         const el = document.getElementById(`sentiment-${_sid}`);
@@ -617,6 +712,47 @@
             st.sentiment = newSentiment;
             const img = el.querySelector('img');
             if (img) img.src = SENTIMENT_IMAGES[newSentiment];
+        }
+    }
+
+    // ─── INTC vs AMD Battle Bar ─────────────────────────────────────────────
+    // Metric: INTC change% − AMD change%. Positive => Intel favor, negative => AMD favor.
+    const BATTLE_CAP = 5; // pp difference at which the bar is fully saturated to one side
+
+    function updateBattleBar() {
+        const intcPct = state['INTC'] ? state['INTC'].currentPct : null;
+        const amdPct = state['AMD'] ? state['AMD'].currentPct : null;
+        if (intcPct == null || amdPct == null) return;
+
+        const diff = intcPct - amdPct;
+        const clamped = Math.max(-BATTLE_CAP, Math.min(BATTLE_CAP, diff));
+        const intcWidth = 50 + (clamped / BATTLE_CAP) * 50;
+
+        const fillIntc = document.getElementById('battle-fill-intc');
+        const fillAmd = document.getElementById('battle-fill-amd');
+        if (fillIntc) fillIntc.style.width = intcWidth + '%';
+        if (fillAmd) fillAmd.style.width = (100 - intcWidth) + '%';
+
+        const pctIntcEl = document.getElementById('battle-pct-intc');
+        const pctAmdEl = document.getElementById('battle-pct-amd');
+        if (pctIntcEl) pctIntcEl.textContent = (intcPct >= 0 ? '+' : '') + intcPct.toFixed(2) + '%';
+        if (pctAmdEl) pctAmdEl.textContent = (amdPct >= 0 ? '+' : '') + amdPct.toFixed(2) + '%';
+
+        const diffEl = document.getElementById('battle-diff');
+        if (diffEl) diffEl.textContent = (diff >= 0 ? '+' : '') + diff.toFixed(2) + 'pp';
+
+        const verdictEl = document.getElementById('battle-verdict');
+        if (verdictEl) {
+            if (Math.abs(diff) < 0.05) {
+                verdictEl.textContent = 'Even';
+                verdictEl.className = 'battle-bar-verdict';
+            } else if (diff > 0) {
+                verdictEl.textContent = `INTC favor (+${diff.toFixed(2)}pp)`;
+                verdictEl.className = 'battle-bar-verdict intc';
+            } else {
+                verdictEl.textContent = `AMD favor (+${(-diff).toFixed(2)}pp)`;
+                verdictEl.className = 'battle-bar-verdict amd';
+            }
         }
     }
 
