@@ -378,6 +378,20 @@
             margin-bottom: 12px;
             position: relative;
             z-index: 1;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            padding: 0;
+            margin: 0;
+            border: none;
+            transition: max-height 0.5s ease, opacity 0.4s ease, padding 0.4s ease, margin 0.4s ease, border 0.4s ease;
+        }
+        .battle-bar.visible {
+            max-height: 400px;
+            opacity: 1;
+            padding: 12px 18px 14px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border);
         }
         .battle-bar-header {
             display: flex;
@@ -902,9 +916,9 @@
     function updateBattleChartVisibility() {
         const ms = getMarketStatus();
         const wrap = document.getElementById('battle-chart-wrap');
-        if (!wrap) return;
-        const show = (ms === 'market');
-        wrap.classList.toggle('visible', show);
+        const bar = document.getElementById('battle-bar');
+        if (wrap) wrap.classList.toggle('visible', ms === 'market');
+        if (bar) bar.classList.toggle('visible', ms === 'market');
     }
 
     function updateSentimentVisibility() {
