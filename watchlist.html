@@ -1109,16 +1109,19 @@
                 const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail`;
                 const json = await yahooFetch(url);
                 const result = json.quoteSummary?.result?.[0];
+                const mcapRaw = result?.summaryDetail?.marketCap?.raw;
                 const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
-                if (shares) {
+                if (mcapRaw && state[stock.ticker].nasdaqPrice) {
+                    // Derive shares from Yahoo's own market cap for accuracy
+                    state[stock.ticker].shares = mcapRaw / state[stock.ticker].nasdaqPrice;
+                    state[stock.ticker].mcap = mcapRaw;
+                    displayMarketCap(stock.ticker, mcapRaw);
+                } else if (shares) {
                     state[stock.ticker].shares = shares;
                     updateMarketCap(stock.ticker);
-                } else {
-                    const mcapRaw = result?.summaryDetail?.marketCap?.raw;
-                    if (mcapRaw) {
-                        state[stock.ticker].mcap = mcapRaw;
-                        displayMarketCap(stock.ticker, mcapRaw);
-                    }
+                } else if (mcapRaw) {
+                    state[stock.ticker].mcap = mcapRaw;
+                    displayMarketCap(stock.ticker, mcapRaw);
                 }
             } catch(e) {}
         }));
