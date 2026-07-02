@@ -740,7 +740,7 @@
         if (pctAmdEl) pctAmdEl.textContent = (amdPct >= 0 ? '+' : '') + amdPct.toFixed(2) + '%';
 
         const diffEl = document.getElementById('battle-diff');
-        if (diffEl) diffEl.textContent = (diff >= 0 ? '+' : '') + diff.toFixed(2) + 'pp';
+        if (diffEl) diffEl.textContent = (diff >= 0 ? '+' : '') + diff.toFixed(2) + '%';
 
         const verdictEl = document.getElementById('battle-verdict');
         if (verdictEl) {
@@ -748,10 +748,10 @@
                 verdictEl.textContent = 'Even';
                 verdictEl.className = 'battle-bar-verdict';
             } else if (diff > 0) {
-                verdictEl.textContent = `INTC favor (+${diff.toFixed(2)}pp)`;
+                verdictEl.textContent = `INTC favor (+${diff.toFixed(2)}%)`;
                 verdictEl.className = 'battle-bar-verdict intc';
             } else {
-                verdictEl.textContent = `AMD favor (+${(-diff).toFixed(2)}pp)`;
+                verdictEl.textContent = `AMD favor (+${(-diff).toFixed(2)}%)`;
                 verdictEl.className = 'battle-bar-verdict amd';
             }
         }
