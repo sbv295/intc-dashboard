@@ -1112,10 +1112,9 @@
                 const mcapRaw = result?.summaryDetail?.marketCap?.raw;
                 const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
                 if (mcapRaw && state[stock.ticker].nasdaqPrice) {
-                    // Derive shares from Yahoo's own market cap for accuracy
+                    // Derive shares from Yahoo's market cap for accuracy, then use live price
                     state[stock.ticker].shares = mcapRaw / state[stock.ticker].nasdaqPrice;
-                    state[stock.ticker].mcap = mcapRaw;
-                    displayMarketCap(stock.ticker, mcapRaw);
+                    updateMarketCap(stock.ticker);
                 } else if (shares) {
                     state[stock.ticker].shares = shares;
                     updateMarketCap(stock.ticker);
