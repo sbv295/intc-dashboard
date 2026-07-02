@@ -445,6 +445,30 @@
             color: var(--text);
         }
 
+        .battle-chart-wrap {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border);
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.5s ease, opacity 0.4s ease, margin-top 0.4s ease, padding-top 0.4s ease;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        .battle-chart-wrap.visible {
+            max-height: 200px;
+            opacity: 1;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+        .battle-chart-canvas {
+            width: 100%;
+            height: 100px;
+            display: block;
+            border-radius: 6px;
+        }
+
         .casino-badge {
             height: 8em;
             margin-left: auto;
@@ -601,6 +625,9 @@
             <span class="battle-diff" id="battle-diff">—</span>
             <span class="battle-label-amd">AMD <span id="battle-pct-amd">—</span></span>
         </div>
+        <div class="battle-chart-wrap" id="battle-chart-wrap">
+            <canvas class="battle-chart-canvas" id="battle-chart"></canvas>
+        </div>
     </div>
 
     <div class="stock-grid" id="stock-grid-us"></div>
@@ -755,11 +782,136 @@
                 verdictEl.className = 'battle-bar-verdict amd';
             }
         }
+
+        // Record data point for time-series chart
+        recordBattleDataPoint(diff);
+    }
+
+    // ─── Battle Chart (INTC−AMD diff over time) ────────────────────────────
+    const battleChartData = []; // [{t: minutesSinceMarketOpen, diff: number}]
+    let battleChartLastSession = null;
+
+    function recordBattleDataPoint(diff) {
+        const ms = getMarketStatus();
+        if (ms !== 'market' && ms !== 'premarket' && ms !== 'postmarket') return;
+
+        // Reset data if new session
+        const today = new Date().toDateString();
+        if (battleChartLastSession !== today) {
+            battleChartData.length = 0;
+            battleChartLastSession = today;
+        }
+
+        const now = new Date();
+        const etStr = now.toLocaleString('en-US', { timeZone: 'America/New_York', hour12: false });
+        const etDate = new Date(etStr);
+        const mins = etDate.getHours() * 60 + etDate.getMinutes();
+
+        // Avoid duplicate timestamps (only record if at least 30s apart from last)
+        if (battleChartData.length > 0) {
+            const last = battleChartData[battleChartData.length - 1];
+            if (Math.abs(mins - last.t) < 0.5) {
+                last.diff = diff; // update in place
+                drawBattleChart();
+                return;
+            }
+        }
+        battleChartData.push({ t: mins, diff });
+        drawBattleChart();
+    }
+
+    function drawBattleChart() {
+        const canvas = document.getElementById('battle-chart');
+        if (!canvas || battleChartData.length < 2) return;
+        const ctx = canvas.getContext('2d');
+        const dpr = window.devicePixelRatio || 1;
+        const rect = canvas.getBoundingClientRect();
+        canvas.width = rect.width * dpr;
+        canvas.height = rect.height * dpr;
+        ctx.scale(dpr, dpr);
+        const W = rect.width, H = rect.height;
+
+        ctx.clearRect(0, 0, W, H);
+
+        // Determine Y scale (symmetric around 0)
+        const maxAbs = Math.max(1, ...battleChartData.map(d => Math.abs(d.diff)));
+        const yScale = (H / 2) / (maxAbs * 1.15);
+        const zeroY = H / 2;
+
+        // X: map from first to last data point
+        const tMin = battleChartData[0].t;
+        const tMax = battleChartData[battleChartData.length - 1].t;
+        const tRange = Math.max(tMax - tMin, 1);
+
+        function x(t) { return ((t - tMin) / tRange) * W; }
+        function y(diff) { return zeroY - diff * yScale; }
+
+        // Draw zero line
+        ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+        ctx.lineWidth = 1;
+        ctx.setLineDash([4, 4]);
+        ctx.beginPath();
+        ctx.moveTo(0, zeroY);
+        ctx.lineTo(W, zeroY);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        // Draw filled area (blue above zero, green below)
+        for (let i = 0; i < battleChartData.length - 1; i++) {
+            const d0 = battleChartData[i], d1 = battleChartData[i + 1];
+            const x0 = x(d0.t), x1 = x(d1.t);
+            const y0 = y(d0.diff), y1 = y(d1.diff);
+
+            ctx.beginPath();
+            ctx.moveTo(x0, zeroY);
+            ctx.lineTo(x0, y0);
+            ctx.lineTo(x1, y1);
+            ctx.lineTo(x1, zeroY);
+            ctx.closePath();
+
+            // Average diff for this segment determines color
+            const avgDiff = (d0.diff + d1.diff) / 2;
+            if (avgDiff >= 0) {
+                ctx.fillStyle = 'rgba(58, 155, 222, 0.25)';
+            } else {
+                ctx.fillStyle = 'rgba(122, 182, 72, 0.25)';
+            }
+            ctx.fill();
+        }
+
+        // Draw the line
+        ctx.beginPath();
+        ctx.moveTo(x(battleChartData[0].t), y(battleChartData[0].diff));
+        for (let i = 1; i < battleChartData.length; i++) {
+            ctx.lineTo(x(battleChartData[i].t), y(battleChartData[i].diff));
+        }
+        ctx.strokeStyle = 'rgba(232, 232, 240, 0.7)';
+        ctx.lineWidth = 1.5;
+        ctx.lineJoin = 'round';
+        ctx.stroke();
+
+        // Y-axis labels
+        ctx.font = '9px -apple-system, sans-serif';
+        ctx.fillStyle = 'rgba(136, 136, 153, 0.8)';
+        ctx.textAlign = 'left';
+        ctx.fillText('0', 2, zeroY - 3);
+        const topVal = (maxAbs * 1.15).toFixed(1);
+        ctx.fillText('+' + topVal + '%', 2, 10);
+        ctx.fillText('-' + topVal + '%', 2, H - 3);
+    }
+
+    function updateBattleChartVisibility() {
+        const ms = getMarketStatus();
+        const wrap = document.getElementById('battle-chart-wrap');
+        if (!wrap) return;
+        const show = (ms === 'market' || ms === 'premarket' || ms === 'postmarket');
+        wrap.classList.toggle('visible', show);
     }
 
     function updateSentimentVisibility() {
         const usMs = getMarketStatus();
         const krMs = getKrxMarketStatus();
+        updateBattleChartVisibility();
         STOCKS.forEach(s => {
             const _sid = sid(s);
             const el = document.getElementById(`sentiment-${_sid}`);
