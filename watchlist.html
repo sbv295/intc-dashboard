@@ -863,7 +863,12 @@
             }
 
             // Volume & OHL: compute from regular-session candles
-            // With range=2d, we have up to 2 days of data. Use the most recent regular session.
+            // Use meta.regularMarketVolume for official volume (candle sums can differ)
+            const metaVolume = meta.regularMarketVolume;
+            if (metaVolume) {
+                state[stock.ticker].volume = metaVolume;
+                displayVolume(stock.ticker, metaVolume);
+            }
             if (tp && quote.volume) {
                 let totalVol = 0;
                 let regOpen = null, regHigh = -Infinity, regLow = Infinity;
@@ -897,7 +902,7 @@
                     }
                 }
 
-                if (totalVol > 0) {
+                if (!metaVolume && totalVol > 0) {
                     state[stock.ticker].volume = totalVol;
                     displayVolume(stock.ticker, totalVol);
                 }
