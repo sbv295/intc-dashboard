@@ -1158,7 +1158,7 @@
         const _sid = stock ? sid(stock) : ticker;
         const el = document.getElementById(`avgvol-${_sid}`);
         if (!el) return;
-        el.textContent = `Avg: ${formatVolume(avgVol)}`;
+        el.textContent = `Avg Vol: ${formatVolume(avgVol)}`;
     }
 
     function hideAllVolumes() {
