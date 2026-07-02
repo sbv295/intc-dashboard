@@ -276,7 +276,9 @@
             justify-content: space-between;
         }
         .stock-meta .meta-vol { display: none; }
+        .stock-meta .meta-avgvol { display: none; }
         .stock-meta.has-volume .meta-vol { display: inline; }
+        .stock-meta.has-volume .meta-avgvol { display: inline; }
 
         .stock-extended {
             font-size: 1.05rem;
@@ -720,7 +722,7 @@
                 <div class="stock-ohl" id="ohl-${id}"></div>
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-ath" id="ath-${id}"></div>
-                <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
+                <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
             </div>
         `;
     }
@@ -1127,6 +1129,9 @@
                     state[stock.ticker].mcap = mcapRaw;
                     displayMarketCap(stock.ticker, mcapRaw);
                 }
+                // Average volume
+                const avgVol = result?.summaryDetail?.averageVolume?.raw;
+                if (avgVol) displayAvgVolume(stock.ticker, avgVol);
             } catch(e) {}
         }));
     }
@@ -1146,6 +1151,14 @@
         if (!el || !metaEl) return;
         el.textContent = `Vol: ${formatVolume(vol)}`;
         metaEl.classList.add('has-volume');
+    }
+
+    function displayAvgVolume(ticker, avgVol) {
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        const _sid = stock ? sid(stock) : ticker;
+        const el = document.getElementById(`avgvol-${_sid}`);
+        if (!el) return;
+        el.textContent = `Avg: ${formatVolume(avgVol)}`;
     }
 
     function hideAllVolumes() {
