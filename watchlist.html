@@ -1118,12 +1118,12 @@
                 const result = json.quoteSummary?.result?.[0];
                 const mcapRaw = result?.summaryDetail?.marketCap?.raw;
                 const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
-                if (mcapRaw && state[stock.ticker].nasdaqPrice) {
-                    // Derive shares from Yahoo's market cap for accuracy, then use live price
-                    state[stock.ticker].shares = mcapRaw / state[stock.ticker].nasdaqPrice;
-                    updateMarketCap(stock.ticker);
-                } else if (shares) {
+                if (shares) {
                     state[stock.ticker].shares = shares;
+                    updateMarketCap(stock.ticker);
+                } else if (mcapRaw && state[stock.ticker].nasdaqPrice) {
+                    // Fallback: derive shares from Yahoo's market cap when sharesOutstanding unavailable
+                    state[stock.ticker].shares = mcapRaw / state[stock.ticker].nasdaqPrice;
                     updateMarketCap(stock.ticker);
                 } else if (mcapRaw) {
                     state[stock.ticker].mcap = mcapRaw;
