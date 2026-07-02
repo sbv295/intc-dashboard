@@ -445,16 +445,6 @@
             margin: 4px 0;
         }
 
-        .stock-52w {
-            font-size: 0.68rem;
-            color: var(--text-dim);
-            text-align: center;
-            margin-top: 4px;
-            letter-spacing: 0.3px;
-        }
-        .stock-52w .w52-hi { color: var(--green); font-weight: 600; }
-        .stock-52w .w52-lo { color: var(--red); font-weight: 600; }
-
         /* ─── Sentiment Indicator ─────────────────────────── */
         .stock-sentiment {
             text-align: center;
@@ -733,7 +723,6 @@
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
-                <div class="stock-52w" id="w52-${id}"></div>
             </div>
         `;
     }
@@ -873,16 +862,6 @@
                 updateSentiment(stock.ticker, extPct);
             } else {
                 extEl.innerHTML = '';
-            }
-
-            // 52-week range comparison
-            const w52El = document.getElementById(`w52-${_sid}`);
-            if (w52El && meta.fiftyTwoWeekHigh && meta.fiftyTwoWeekLow && displayPrice) {
-                const hi = meta.fiftyTwoWeekHigh, lo = meta.fiftyTwoWeekLow;
-                const fromHi = ((displayPrice - hi) / hi) * 100;
-                const fromLo = ((displayPrice - lo) / lo) * 100;
-                const fp = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
-                w52El.innerHTML = `52W: ${fp(lo)} — ${fp(hi)} | <span class="w52-lo">${fromHi.toFixed(1)}%</span> from High, <span class="w52-hi">+${fromLo.toFixed(1)}%</span> from Low`;
             }
 
             // Volume & OHL: compute from regular-session candles
@@ -1316,11 +1295,16 @@
 
             const fmtDate = (ts) => { const d = new Date(ts * 1000); const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`; };
             const fmtP = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
+            const curPrice = state[stock.ticker].nasdaqPrice;
+            const pctFromHigh = curPrice ? ((curPrice - highClose) / highClose * 100).toFixed(1) : null;
+            const pctFromLow = curPrice ? ((curPrice - lowClose) / lowClose * 100).toFixed(1) : null;
+            const highPctHtml = pctFromHigh !== null ? ` <span class="ath-pct ${pctFromHigh >= 0 ? 'up' : 'down'}">(${pctFromHigh >= 0 ? '+' : ''}${pctFromHigh}%)</span>` : '';
+            const lowPctHtml = pctFromLow !== null ? ` <span class="ath-pct ${pctFromLow >= 0 ? 'up' : 'down'}">(+${pctFromLow}%)</span>` : '';
             athEl.innerHTML =
-                `<span class="ath-label">52W High Close:</span> <span class="ath-value">${fmtP(highClose)}</span> (${fmtDate(highCloseDate)})<br>` +
+                `<span class="ath-label">52W High Close:</span> <span class="ath-value">${fmtP(highClose)}</span> (${fmtDate(highCloseDate)})${highPctHtml}<br>` +
                 `<span class="ath-label">52W High Trade:</span> <span class="ath-value">${fmtP(highTrade)}</span> (${fmtDate(highTradeDate)})` +
                 `<hr class="ath-divider">` +
-                `<span class="ath-label">52W Low Close:</span> <span class="ath-value">${fmtP(lowClose)}</span> (${fmtDate(lowCloseDate)})<br>` +
+                `<span class="ath-label">52W Low Close:</span> <span class="ath-value">${fmtP(lowClose)}</span> (${fmtDate(lowCloseDate)})${lowPctHtml}<br>` +
                 `<span class="ath-label">52W Low Trade:</span> <span class="ath-value">${fmtP(lowTrade)}</span> (${fmtDate(lowTradeDate)})`;
         } catch (e) {}
     }
