@@ -235,7 +235,7 @@
         }
         .ath-info b { color: var(--text); }
         .ath-info .ath-value { color: var(--text); font-weight: 600; }
-        .ath-info .ath-pct { font-weight: 600; }
+        .ath-info .ath-pct { font-weight: 600; color: var(--text-dim); }
 
         /* ─── Sentiment Indicator ─────────────────────────────── */
         .nasdaq-sentiment {
@@ -477,6 +477,7 @@
             <div class="price-meta" id="nasdaq-meta"></div>
             <div class="extended-price" id="nasdaq-extended"></div>
             <div class="market-cap" id="nasdaq-mcap"></div>
+            <div class="market-cap" id="nasdaq-vol"></div>
             <div class="session-details" id="nasdaq-sessions"></div>
             <div class="ath-info" id="nasdaq-ath"></div>
             <div class="nasdaq-sentiment" id="nasdaq-sentiment"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
@@ -625,11 +626,22 @@
 
     async function fetchSharesOutstanding() {
         try {
-            const url = 'https://query1.finance.yahoo.com/v10/finance/quoteSummary/INTC?modules=defaultKeyStatistics';
+            const url = 'https://query1.finance.yahoo.com/v10/finance/quoteSummary/INTC?modules=defaultKeyStatistics,summaryDetail';
             const data = await yahooFetch(url);
-            const shares = data?.quoteSummary?.result?.[0]?.defaultKeyStatistics?.sharesOutstanding?.raw;
+            const result = data?.quoteSummary?.result?.[0];
+            const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
             if (shares && shares > 0) {
                 INTC_SHARES = shares;
+            }
+            // Display Vol + Avg Vol
+            const avgVol = result?.summaryDetail?.averageVolume?.raw;
+            if (avgVol) {
+                const volEl = document.getElementById('nasdaq-vol');
+                if (volEl) {
+                    const existing = volEl.textContent;
+                    const volPart = existing.startsWith('Vol:') ? existing.split('·')[0].trim() : '';
+                    volEl.textContent = volPart ? `${volPart} · Avg Vol: ${formatVol(avgVol)}` : `Avg Vol: ${formatVol(avgVol)}`;
+                }
             }
         } catch (e) {
             // Fallback value remains
@@ -669,12 +681,18 @@
             const athEl = document.getElementById('nasdaq-ath');
             if (athEl && highClose > 0) {
                 const fmtDate = (ts) => { const d = new Date(ts * 1000); const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`; };
+                const curPrice = prevNasdaqPrice || window._yahooLastPrice;
+                const pctHtml = (ref) => {
+                    if (!curPrice || !ref) return '';
+                    const pct = ((curPrice - ref) / ref * 100).toFixed(1);
+                    return ` <span class="ath-pct">(${Number(pct) >= 0 ? '+' : ''}${pct}%)</span>`;
+                };
                 athEl.innerHTML =
-                    `<b>52W High Close:</b> <span class="ath-value">$${highClose.toFixed(2)}</span> (${fmtDate(highCloseDate)})<br>` +
-                    `<b>52W High Trade:</b> <span class="ath-value">$${highTrade.toFixed(2)}</span> (${fmtDate(highTradeDate)})` +
+                    `<b>52W High Close:</b> <span class="ath-value">$${highClose.toFixed(2)}</span> (${fmtDate(highCloseDate)})${pctHtml(highClose)}<br>` +
+                    `<b>52W High Trade:</b> <span class="ath-value">$${highTrade.toFixed(2)}</span> (${fmtDate(highTradeDate)})${pctHtml(highTrade)}` +
                     `<hr style="border:none;border-top:1px solid var(--border);margin:4px 0;">` +
-                    `<b>52W Low Close:</b> <span class="ath-value">$${lowClose.toFixed(2)}</span> (${fmtDate(lowCloseDate)})<br>` +
-                    `<b>52W Low Trade:</b> <span class="ath-value">$${lowTrade.toFixed(2)}</span> (${fmtDate(lowTradeDate)})`;
+                    `<b>52W Low Close:</b> <span class="ath-value">$${lowClose.toFixed(2)}</span> (${fmtDate(lowCloseDate)})${pctHtml(lowClose)}<br>` +
+                    `<b>52W Low Trade:</b> <span class="ath-value">$${lowTrade.toFixed(2)}</span> (${fmtDate(lowTradeDate)})${pctHtml(lowTrade)}`;
             }
         } catch (e) {
             console.error('52W fetch error:', e);
@@ -1399,6 +1417,16 @@
             // Store official close from meta (includes closing auction — more accurate than candle data)
             window._yahooLastPrice = lastPrice;
             window._yahooPrevClose = meta.previousClose;
+
+            // Update volume from meta
+            if (meta.regularMarketVolume) {
+                const volEl = document.getElementById('nasdaq-vol');
+                if (volEl) {
+                    const existing = volEl.textContent;
+                    const avgPart = existing.includes('Avg Vol') ? existing.substring(existing.indexOf('·')) : '';
+                    volEl.textContent = `Vol: ${formatVol(meta.regularMarketVolume)}${avgPart ? ' ' + avgPart : ''}`;
+                }
+            }
 
             // Session breakdown from intraday candles
             // Use tradingPeriods (today's actual periods) instead of currentTradingPeriod (which may be tomorrow's)
