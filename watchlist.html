@@ -105,6 +105,23 @@
             gap: 8px;
         }
         .section-label:first-of-type { margin-top: 0; }
+
+        .holiday-banner {
+            display: none;
+            text-align: center;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: var(--amber);
+            background: rgba(255,193,7,0.06);
+            border: 1px solid rgba(255,193,7,0.18);
+            border-radius: 8px;
+            padding: 8px 16px;
+            margin-bottom: 10px;
+        }
+        .holiday-banner:empty { display: none; }
+        .holiday-banner.visible { display: block; }
+
         .section-et {
             font-size: 0.65rem;
             font-weight: 400;
@@ -603,6 +620,7 @@
     </div>
 
     <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><span class="section-et" id="et-clock"></span></div>
+    <div class="holiday-banner" id="holiday-banner"></div>
     <div class="mcap-summary" id="mcap-summary-us">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
         <span class="mcap-summary-value" id="mcap-total-us">—</span>
@@ -840,16 +858,25 @@
     }
 
     // US market holidays (NYSE/NASDAQ full closures)
-    const US_MARKET_HOLIDAYS = new Set([
+    const US_MARKET_HOLIDAYS = new Map([
         // 2025
-        '2025-01-01','2025-01-20','2025-02-17','2025-04-18','2025-05-26',
-        '2025-06-19','2025-07-04','2025-09-01','2025-11-27','2025-12-25',
+        ['2025-01-01','New Year\'s Day'],['2025-01-20','Martin Luther King Jr. Day'],
+        ['2025-02-17','Presidents\' Day'],['2025-04-18','Good Friday'],
+        ['2025-05-26','Memorial Day'],['2025-06-19','Juneteenth'],
+        ['2025-07-04','Independence Day'],['2025-09-01','Labor Day'],
+        ['2025-11-27','Thanksgiving'],['2025-12-25','Christmas'],
         // 2026
-        '2026-01-01','2026-01-19','2026-02-16','2026-04-03','2026-05-25',
-        '2026-06-19','2026-07-03','2026-09-07','2026-11-26','2026-12-25',
+        ['2026-01-01','New Year\'s Day'],['2026-01-19','Martin Luther King Jr. Day'],
+        ['2026-02-16','Presidents\' Day'],['2026-04-03','Good Friday'],
+        ['2026-05-25','Memorial Day'],['2026-06-19','Juneteenth'],
+        ['2026-07-03','Independence Day'],['2026-09-07','Labor Day'],
+        ['2026-11-26','Thanksgiving'],['2026-12-25','Christmas'],
         // 2027
-        '2027-01-01','2027-01-18','2027-02-15','2027-03-26','2027-05-31',
-        '2027-06-18','2027-07-05','2027-09-06','2027-11-25','2027-12-24',
+        ['2027-01-01','New Year\'s Day'],['2027-01-18','Martin Luther King Jr. Day'],
+        ['2027-02-15','Presidents\' Day'],['2027-03-26','Good Friday'],
+        ['2027-05-31','Memorial Day'],['2027-06-18','Juneteenth'],
+        ['2027-07-05','Independence Day'],['2027-09-06','Labor Day'],
+        ['2027-11-25','Thanksgiving'],['2027-12-24','Christmas'],
     ]);
 
     function getMarketStatus() {
@@ -1541,6 +1568,7 @@
         }, 60000);
         updateETClock();
         updateHlDimState();
+        updateHolidayBanner();
         updateSentimentVisibility();
 
         // Refresh NASDAQ data every 60s
@@ -1552,6 +1580,29 @@
                 STOCKS.filter(s => s.currency === 'KRW').forEach(s => fetchNasdaqForStock(s));
             }
         }, 15000);
+    }
+
+    function getHolidayName() {
+        const now = new Date();
+        const etStr = now.toLocaleString('en-US', { timeZone: 'America/New_York', hour12: false });
+        const etDate = new Date(etStr);
+        const yyyy = etDate.getFullYear();
+        const mm = String(etDate.getMonth() + 1).padStart(2, '0');
+        const dd = String(etDate.getDate()).padStart(2, '0');
+        return US_MARKET_HOLIDAYS.get(`${yyyy}-${mm}-${dd}`) || null;
+    }
+
+    function updateHolidayBanner() {
+        const el = document.getElementById('holiday-banner');
+        if (!el) return;
+        const name = getHolidayName();
+        if (name) {
+            el.textContent = `🇺🇸 Market Closed — ${name}`;
+            el.classList.add('visible');
+        } else {
+            el.textContent = '';
+            el.classList.remove('visible');
+        }
     }
 
     function updateHlDimState() {
