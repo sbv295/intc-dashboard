@@ -122,16 +122,10 @@
         .holiday-banner:empty { display: none; }
         .holiday-banner.visible { display: block; }
         .holiday-flag {
-            display: inline-block;
-            font-size: 0.6rem;
-            font-weight: 800;
-            letter-spacing: 0.5px;
-            background: rgba(255,193,7,0.18);
-            border: 1px solid rgba(255,193,7,0.35);
-            border-radius: 4px;
-            padding: 1px 5px;
+            height: 14px;
             margin-right: 6px;
             vertical-align: middle;
+            border-radius: 2px;
         }
 
         .section-et {
@@ -1662,7 +1656,7 @@
         if (el) {
             const name = getHolidayName();
             if (name) {
-                el.innerHTML = `<span class="holiday-flag">US</span> Market Closed \u2014 ${name}`;
+                el.innerHTML = `<img class="holiday-flag" src="logos/flag_us.png" alt="US"> Market Closed \u2014 ${name}`;
                 el.classList.add('visible');
             } else {
                 el.innerHTML = '';
@@ -1674,7 +1668,7 @@
         if (krEl) {
             const krName = getKrxHolidayName();
             if (krName) {
-                krEl.innerHTML = `<span class="holiday-flag">KR</span> Market Closed \u2014 ${krName}`;
+                krEl.innerHTML = `<img class="holiday-flag" src="logos/flag_kr.png" alt="KR"> Market Closed \u2014 ${krName}`;
                 krEl.classList.add('visible');
             } else {
                 krEl.innerHTML = '';
