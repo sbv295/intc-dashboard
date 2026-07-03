@@ -648,6 +648,7 @@
     <div class="stock-grid" id="stock-grid-us"></div>
 
     <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span></div>
+    <div class="holiday-banner" id="holiday-banner-kr"></div>
     <div class="mcap-summary" id="mcap-summary-kr">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
         <span class="mcap-summary-value" id="mcap-total-kr">—</span>
@@ -898,6 +899,42 @@
         return 'closed';
     }
 
+    // KRX market holidays (Korea Exchange full closures)
+    const KRX_MARKET_HOLIDAYS = new Map([
+        // 2025
+        ['2025-01-01','New Year\'s Day'],
+        ['2025-01-28','Seollal Holiday'],['2025-01-29','Seollal'],['2025-01-30','Seollal Holiday'],
+        ['2025-03-03','March 1st Movement Day Holiday'],
+        ['2025-05-01','Labor Day'],['2025-05-05','Children\'s Day / Buddha\'s Birthday'],['2025-05-06','Substitute Holiday'],
+        ['2025-06-06','Memorial Day'],
+        ['2025-07-17','Constitution Day'],
+        ['2025-08-15','Liberation Day'],
+        ['2025-10-03','National Foundation Day'],
+        ['2025-10-06','Chuseok'],['2025-10-07','Chuseok Holiday'],['2025-10-08','Substitute Holiday'],
+        ['2025-10-09','Hangeul Day'],
+        ['2025-12-25','Christmas'],['2025-12-31','Year-End Closure'],
+        // 2026
+        ['2026-01-01','New Year\'s Day'],
+        ['2026-02-16','Seollal Holiday'],['2026-02-17','Seollal'],['2026-02-18','Seollal Holiday'],
+        ['2026-03-02','March 1st Movement Day Holiday'],
+        ['2026-05-01','Labor Day'],['2026-05-05','Children\'s Day'],['2026-05-25','Buddha\'s Birthday Holiday'],
+        ['2026-07-17','Constitution Day'],
+        ['2026-08-17','Liberation Day Holiday'],
+        ['2026-09-24','Chuseok Holiday'],['2026-09-25','Chuseok'],
+        ['2026-10-05','National Foundation Day Holiday'],['2026-10-09','Hangeul Day'],
+        ['2026-12-25','Christmas'],['2026-12-31','Year-End Closure'],
+        // 2027
+        ['2027-01-01','New Year\'s Day'],
+        ['2027-02-08','Seollal Holiday'],['2027-02-09','Seollal Holiday'],
+        ['2027-03-01','March 1st Movement Day'],
+        ['2027-05-05','Children\'s Day'],['2027-05-13','Buddha\'s Birthday'],
+        ['2027-06-07','Memorial Day Holiday'],
+        ['2027-08-16','Liberation Day Holiday'],
+        ['2027-09-14','Chuseok Holiday'],['2027-09-15','Chuseok'],['2027-09-16','Chuseok Holiday'],
+        ['2027-10-04','National Foundation Day Holiday'],['2027-10-11','Hangeul Day Holiday'],
+        ['2027-12-27','Christmas Holiday'],['2027-12-31','Year-End Closure'],
+    ]);
+
     function getKrxMarketStatus() {
         const now = new Date();
         const kstStr = now.toLocaleString('en-US', { timeZone: 'Asia/Seoul', hour12: false });
@@ -906,6 +943,11 @@
         const mins = h * 60 + m;
         const day = kstDate.getDay();
         if (day === 0 || day === 6) return 'closed';
+        // Check KRX holidays
+        const yyyy = kstDate.getFullYear();
+        const mm = String(kstDate.getMonth() + 1).padStart(2, '0');
+        const dd = String(kstDate.getDate()).padStart(2, '0');
+        if (KRX_MARKET_HOLIDAYS.has(`${yyyy}-${mm}-${dd}`)) return 'closed';
         if (mins >= 540 && mins < 930) return 'market'; // 9:00 AM - 3:30 PM KST
         return 'closed';
     }
@@ -1592,16 +1634,40 @@
         return US_MARKET_HOLIDAYS.get(`${yyyy}-${mm}-${dd}`) || null;
     }
 
+    function getKrxHolidayName() {
+        const now = new Date();
+        const kstStr = now.toLocaleString('en-US', { timeZone: 'Asia/Seoul', hour12: false });
+        const kstDate = new Date(kstStr);
+        const yyyy = kstDate.getFullYear();
+        const mm = String(kstDate.getMonth() + 1).padStart(2, '0');
+        const dd = String(kstDate.getDate()).padStart(2, '0');
+        return KRX_MARKET_HOLIDAYS.get(`${yyyy}-${mm}-${dd}`) || null;
+    }
+
     function updateHolidayBanner() {
+        // US banner
         const el = document.getElementById('holiday-banner');
-        if (!el) return;
-        const name = getHolidayName();
-        if (name) {
-            el.textContent = `🇺🇸 Market Closed — ${name}`;
-            el.classList.add('visible');
-        } else {
-            el.textContent = '';
-            el.classList.remove('visible');
+        if (el) {
+            const name = getHolidayName();
+            if (name) {
+                el.textContent = `🇺🇸 Market Closed — ${name}`;
+                el.classList.add('visible');
+            } else {
+                el.textContent = '';
+                el.classList.remove('visible');
+            }
+        }
+        // KRX banner
+        const krEl = document.getElementById('holiday-banner-kr');
+        if (krEl) {
+            const krName = getKrxHolidayName();
+            if (krName) {
+                krEl.textContent = `🇰🇷 Market Closed — ${krName}`;
+                krEl.classList.add('visible');
+            } else {
+                krEl.textContent = '';
+                krEl.classList.remove('visible');
+            }
         }
     }
 
