@@ -220,6 +220,16 @@
             border: 1px solid color-mix(in srgb, var(--card-accent) 25%, transparent);
         }
 
+        .ceo-icon {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1.5px solid color-mix(in srgb, var(--card-accent) 40%, var(--border));
+            margin-left: 6px;
+            flex-shrink: 0;
+        }
+
         .stock-prices {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -630,18 +640,18 @@
     <script>
     // ─── Stock Configuration ────────────────────────────────────────────────
     const STOCKS = [
-        { ticker: 'INTC', name: 'Intel', hl: 'xyz:INTC', color: '#0071C5', logo: 'logos/INTC.svg' },
-        { ticker: 'AMD', name: 'AMD', hl: 'xyz:AMD', color: '#7AB648', logo: 'logos/AMD.svg' },
-        { ticker: 'NVDA', name: 'NVIDIA', hl: 'xyz:NVDA', color: '#76B900', logo: 'logos/NVDA.svg' },
-        { ticker: 'TSM', name: 'TSMC', hl: 'xyz:TSM', color: '#C4161C', logo: 'logos/TSM.svg', exchange: 'NYSE' },
-        { ticker: 'SNDK', name: 'SanDisk', hl: 'xyz:SNDK', color: '#2D4691', logo: 'logos/SNDK.svg' },
-        { ticker: 'MU', name: 'Micron', hl: 'xyz:MU', color: '#104076', logo: 'logos/MU.svg' },
-        { ticker: 'AVGO', name: 'Broadcom', hl: 'xyz:AVGO', color: '#CC092F', logo: 'logos/AVGO.svg' },
-        { ticker: 'SPCX', name: 'SpaceX', hl: 'xyz:SPCX', color: '#4DA8DA', logo: 'logos/SPCX.svg' },
-        { ticker: 'MRVL', name: 'Marvell', hl: 'xyz:MRVL', color: '#FFFFFF', logo: 'logos/MRVL.svg' },
-        { ticker: 'ARM', name: 'ARM', hl: 'xyz:ARM', color: '#0090BF', logo: 'logos/ARM.svg' },
-        { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg' },
-        { ticker: 'MBLY', name: 'Mobileye', hl: null, color: '#1B2CC1', logo: 'logos/MBLY.png' },
+        { ticker: 'INTC', name: 'Intel', hl: 'xyz:INTC', color: '#0071C5', logo: 'logos/INTC.svg', ceo: 'logos/ceo_cartoon/intel_ceo.png' },
+        { ticker: 'AMD', name: 'AMD', hl: 'xyz:AMD', color: '#7AB648', logo: 'logos/AMD.svg', ceo: 'logos/ceo_cartoon/amd_ceo.png' },
+        { ticker: 'NVDA', name: 'NVIDIA', hl: 'xyz:NVDA', color: '#76B900', logo: 'logos/NVDA.svg', ceo: 'logos/ceo_cartoon/nvidia_ceo.png' },
+        { ticker: 'TSM', name: 'TSMC', hl: 'xyz:TSM', color: '#C4161C', logo: 'logos/TSM.svg', exchange: 'NYSE', ceo: 'logos/ceo_cartoon/tsmc_ceo.png' },
+        { ticker: 'SNDK', name: 'SanDisk', hl: 'xyz:SNDK', color: '#2D4691', logo: 'logos/SNDK.svg', ceo: 'logos/ceo_cartoon/sandisk_ceo.png' },
+        { ticker: 'MU', name: 'Micron', hl: 'xyz:MU', color: '#104076', logo: 'logos/MU.svg', ceo: 'logos/ceo_cartoon/micron_ceo.png' },
+        { ticker: 'AVGO', name: 'Broadcom', hl: 'xyz:AVGO', color: '#CC092F', logo: 'logos/AVGO.svg', ceo: 'logos/ceo_cartoon/broadcomm_ceo.png' },
+        { ticker: 'SPCX', name: 'SpaceX', hl: 'xyz:SPCX', color: '#4DA8DA', logo: 'logos/SPCX.svg', ceo: 'logos/ceo_cartoon/spacex_ceo.png' },
+        { ticker: 'MRVL', name: 'Marvell', hl: 'xyz:MRVL', color: '#FFFFFF', logo: 'logos/MRVL.svg', ceo: 'logos/ceo_cartoon/marvell_ceo.png' },
+        { ticker: 'ARM', name: 'ARM', hl: 'xyz:ARM', color: '#0090BF', logo: 'logos/ARM.svg', ceo: 'logos/ceo_cartoon/arm_ceo.png' },
+        { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg', ceo: 'logos/ceo_cartoon/qualcomm_ceo.png' },
+        { ticker: 'MBLY', name: 'Mobileye', hl: null, color: '#1B2CC1', logo: 'logos/MBLY.png', ceo: 'logos/ceo_cartoon/mobileye_ceo.png' },
         { ticker: '005930.KS', name: 'Samsung', hl: null, color: '#4A6CF7', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
         { ticker: '000660.KS', name: 'SK Hynix', hl: null, color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
     ];
@@ -864,6 +874,7 @@
                     <img class="stock-logo" src="${s.logo}" alt="${s.name}"${s.ticker === 'MBLY' ? ' style="background:#fff;padding:2px;"' : ''}>
                     <span class="stock-name">${s.name}</span>
                     <span class="stock-ticker">${s.displayTicker || s.ticker}</span>
+                    ${s.ceo ? `<img class="ceo-icon" src="${s.ceo}" alt="CEO">` : ''}
                 </div>
                 <div class="stock-prices">
                     <div class="price-block nasdaq-block" ${!s.currency && s.hl !== null && !s.hl ? 'style="grid-column: 1 / -1"' : ''}>
