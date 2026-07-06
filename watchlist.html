@@ -653,42 +653,39 @@
         /* ─── Collapse/Expand ─────────────────────────────── */
         .collapse-toggle {
             position: absolute;
-            top: 8px;
-            right: 10px;
-            background: none;
-            border: none;
+            top: 10px;
+            right: 12px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
             color: var(--text-dim);
             cursor: pointer;
-            font-size: 0.55rem;
-            padding: 3px 5px;
-            border-radius: 4px;
-            opacity: 0;
-            transition: opacity 0.2s;
-            line-height: 1;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-size: 0.8rem;
+            font-weight: 700;
+            line-height: 18px;
+            text-align: center;
             z-index: 2;
+            transition: color 0.2s, border-color 0.2s;
         }
-        .stock-card:hover .collapse-toggle { opacity: 0.6; }
-        .collapse-toggle:hover { opacity: 1 !important; }
-        .stock-card.collapsed .collapse-toggle { opacity: 0.5; }
-        .collapse-toggle .chevron {
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-        .stock-card.collapsed .collapse-toggle .chevron {
-            transform: rotate(-90deg);
-        }
+        .collapse-toggle:hover { color: var(--text); border-color: var(--text-dim); }
 
         .section-collapse-btn {
-            background: none;
-            border: none;
+            background: var(--surface2);
+            border: 1px solid var(--border);
             color: var(--text-dim);
             cursor: pointer;
-            font-size: 0.75rem;
-            padding: 2px 6px;
-            opacity: 0.5;
-            transition: opacity 0.2s;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            font-size: 0.8rem;
+            font-weight: 700;
+            line-height: 18px;
+            text-align: center;
+            transition: color 0.2s, border-color 0.2s;
         }
-        .section-collapse-btn:hover { opacity: 1; }
+        .section-collapse-btn:hover { color: var(--text); border-color: var(--text-dim); }
 
         .stock-card.collapsed .stock-sentiment,
         .stock-card.collapsed .stock-ohl,
@@ -726,7 +723,7 @@
         <div class="time-display" id="time-display-legacy">--</div>
     </div>
 
-    <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><button class="section-collapse-btn" id="collapse-btn-us" onclick="toggleAllCards('us')">▼</button><span class="section-et" id="et-clock"></span></div>
+    <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><button class="section-collapse-btn" id="collapse-btn-us" onclick="toggleAllCards('us')">−</button><span class="section-et" id="et-clock"></span></div>
     <div class="holiday-banner" id="holiday-banner"></div>
     <div class="mcap-summary" id="mcap-summary-us">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
@@ -754,7 +751,7 @@
 
     <div class="stock-grid" id="stock-grid-us"></div>
 
-    <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span><button class="section-collapse-btn" id="collapse-btn-kr" onclick="toggleAllCards('kr')">▼</button></div>
+    <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span><button class="section-collapse-btn" id="collapse-btn-kr" onclick="toggleAllCards('kr')">−</button></div>
     <div class="holiday-banner" id="holiday-banner-kr"></div>
     <div class="mcap-summary" id="mcap-summary-kr">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
@@ -1071,7 +1068,7 @@
                     <span class="stock-ticker">${s.displayTicker || s.ticker}</span>
                     ${s.ceo ? `<img class="ceo-icon" src="${s.ceo}" alt="CEO">` : ''}
                 </div>
-                <button class="collapse-toggle" onclick="toggleCard(this)"><span class="chevron">▼</span></button>
+                <button class="collapse-toggle" onclick="toggleCard(this)">−</button>
                 <div class="stock-prices">
                     <div class="price-block nasdaq-block" ${!s.currency && s.hl !== null && !s.hl ? 'style="grid-column: 1 / -1"' : ''}>
                         <div class="price-block-label">${s.currency === 'KRW' ? 'USD' : stockExchange(s)}</div>
@@ -1854,7 +1851,8 @@
     // ─── Collapse/Expand ────────────────────────────────────────────────
     function toggleCard(btn) {
         const card = btn.closest('.stock-card');
-        card.classList.toggle('collapsed');
+        const collapsed = card.classList.toggle('collapsed');
+        btn.textContent = collapsed ? '+' : '−';
     }
 
     function toggleAllCards(section) {
@@ -1862,9 +1860,13 @@
         const grid = document.getElementById(gridId);
         const cards = grid.querySelectorAll('.stock-card');
         const allCollapsed = [...cards].every(c => c.classList.contains('collapsed'));
-        cards.forEach(c => c.classList.toggle('collapsed', !allCollapsed));
+        cards.forEach(c => {
+            c.classList.toggle('collapsed', !allCollapsed);
+            const btn = c.querySelector('.collapse-toggle');
+            if (btn) btn.textContent = allCollapsed ? '−' : '+';
+        });
         const colBtn = document.getElementById(`collapse-btn-${section}`);
-        if (colBtn) colBtn.textContent = allCollapsed ? '▼' : '▶';
+        if (colBtn) colBtn.textContent = allCollapsed ? '−' : '+';
     }
 
     document.addEventListener('DOMContentLoaded', init);
