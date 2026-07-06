@@ -656,7 +656,7 @@
             top: 3px;
             right: 3px;
             background: var(--surface2);
-            border: 2px solid var(--text-dim);
+            border: 2px solid var(--text);
             color: var(--text);
             cursor: pointer;
             width: 28px;
@@ -667,14 +667,14 @@
             line-height: 24px;
             text-align: center;
             z-index: 2;
-            transition: border-color 0.2s, background 0.2s;
+            transition: background 0.2s;
             display: none;
         }
-        .collapse-toggle:hover { background: var(--border); border-color: var(--text); }
+        .collapse-toggle:hover { background: var(--border); }
 
         .section-collapse-btn {
             background: var(--surface2);
-            border: 2px solid var(--text-dim);
+            border: 2px solid var(--text);
             color: var(--text);
             cursor: pointer;
             width: 26px;
@@ -684,10 +684,10 @@
             font-weight: 700;
             line-height: 22px;
             text-align: center;
-            transition: border-color 0.2s, background 0.2s;
+            transition: background 0.2s;
             display: none;
         }
-        .section-collapse-btn:hover { background: var(--border); border-color: var(--text); }
+        .section-collapse-btn:hover { background: var(--border); }
 
         @media (max-width: 640px) {
             .collapse-toggle { display: block; }
