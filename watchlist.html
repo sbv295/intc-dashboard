@@ -575,12 +575,15 @@
 
         /* ─── Earnings Date Badge ────────────────────────── */
         .stock-earnings-date {
-            font-size: 0.56rem;
+            position: absolute;
+            top: 7px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            font-size: 0.55rem;
             font-weight: 600;
             letter-spacing: 0.8px;
             color: var(--text-dim);
-            text-align: center;
-            margin-bottom: 6px;
         }
         .stock-earnings-date:empty { display: none; }
         .stock-earnings-date .ed-label {
