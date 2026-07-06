@@ -711,9 +711,8 @@
         .stock-card.collapsed .stock-earnings-date {
             display: none !important;
         }
-        .stock-card.collapsed .stock-extended.ext-dimmed {
-            display: none;
-        }
+        .stock-extended-mirror { display: none; }
+        .stock-card.collapsed .stock-extended-mirror:not(:empty) { display: block; }
 
         @keyframes flashGreen {
             0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); }
@@ -1108,10 +1107,11 @@
                 <div class="stock-sentiment" id="sentiment-${id}"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
                 <div class="stock-ohl" id="ohl-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
+                <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-fundamentals" id="fundamentals-${id}"></div>
                 </div></div>
-                <div class="stock-extended" id="ext-${id}"></div>
+                <div class="stock-extended stock-extended-mirror" id="ext-mirror-${id}"></div>
             </div>
         `;
     }
@@ -1262,6 +1262,11 @@
             } else {
                 extEl.innerHTML = '';
             }
+            // Sync mirror for collapsed view (only during active pre/post)
+            const extMirrorEl = document.getElementById(`ext-mirror-${_sid}`);
+            if (extMirrorEl) {
+                extMirrorEl.innerHTML = (extPrice && refPrice && (ms === 'premarket' || ms === 'postmarket')) ? extEl.innerHTML : '';
+            }
 
             // Volume & OHL: compute from regular-session candles
             // Use meta.regularMarketVolume for official volume (candle sums can differ)
@@ -1395,6 +1400,9 @@
                 // Sentiment reflects extended price movement during pre/post
                 updateSentiment(ticker, pct);
             }
+            // Sync mirror for collapsed view
+            const extMirrorWs = document.getElementById(`ext-mirror-${_sid}`);
+            if (extMirrorWs && extEl) extMirrorWs.innerHTML = extEl.innerHTML;
             st.extPrice = price;
             updateMarketCap(ticker);
             return;
@@ -1862,6 +1870,10 @@
                 if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', nasDim);
                 const extDim = (usMs === 'closed' || usMs === 'market');
                 if (extEl) extEl.classList.toggle('ext-dimmed', extDim);
+                if (extDim) {
+                    const extMirrorEl = document.getElementById(`ext-mirror-${_sid}`);
+                    if (extMirrorEl) extMirrorEl.innerHTML = '';
+                }
                 const ohlEl = document.getElementById(`ohl-${_sid}`);
                 if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', nasDim);
             }
