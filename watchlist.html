@@ -694,12 +694,16 @@
             .section-collapse-btn { display: inline-block; }
         }
 
-        .stock-card.collapsed .stock-sentiment,
-        .stock-card.collapsed .stock-ohl,
-        .stock-card.collapsed .stock-meta,
-        .stock-card.collapsed .stock-extended,
-        .stock-card.collapsed .stock-ath,
-        .stock-card.collapsed .stock-fundamentals,
+        .stock-collapse-body {
+            overflow: hidden;
+            max-height: 600px;
+            opacity: 1;
+            transition: max-height 0.38s ease, opacity 0.28s ease;
+        }
+        .stock-card.collapsed .stock-collapse-body {
+            max-height: 0;
+            opacity: 0;
+        }
         .stock-card.collapsed .stock-earnings-date {
             display: none !important;
         }
@@ -1093,12 +1097,14 @@
                         <div class="price-block-change" id="krw-chg-${id}"></div>
                     </div>` : ''}
                 </div>
+                <div class="stock-collapse-body">
                 <div class="stock-sentiment" id="sentiment-${id}"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
                 <div class="stock-ohl" id="ohl-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-fundamentals" id="fundamentals-${id}"></div>
+                </div>
             </div>
         `;
     }
