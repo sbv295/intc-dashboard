@@ -1866,14 +1866,16 @@
         const gridId = section === 'kr' ? 'stock-grid-kr' : 'stock-grid-us';
         const grid = document.getElementById(gridId);
         const cards = grid.querySelectorAll('.stock-card');
-        const allCollapsed = [...cards].every(c => c.classList.contains('collapsed'));
-        cards.forEach(c => {
-            c.classList.toggle('collapsed', !allCollapsed);
-            const btn = c.querySelector('.collapse-toggle');
-            if (btn) btn.textContent = allCollapsed ? '−' : '+';
-        });
         const colBtn = document.getElementById(`collapse-btn-${section}`);
-        if (colBtn) colBtn.textContent = allCollapsed ? '−' : '+';
+        // Use the section button's own label as source of truth:
+        // '−' means currently expanded → action is collapse; '+' means collapsed → action is expand
+        const shouldCollapse = colBtn ? colBtn.textContent.trim() === '−' : true;
+        cards.forEach(c => {
+            c.classList.toggle('collapsed', shouldCollapse);
+            const btn = c.querySelector('.collapse-toggle');
+            if (btn) btn.textContent = shouldCollapse ? '+' : '−';
+        });
+        if (colBtn) colBtn.textContent = shouldCollapse ? '+' : '−';
     }
 
     document.addEventListener('DOMContentLoaded', init);
