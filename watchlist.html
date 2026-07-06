@@ -653,10 +653,10 @@
         /* ─── Collapse/Expand ─────────────────────────────── */
         .collapse-toggle {
             position: absolute;
-            top: 6px;
-            right: 6px;
+            top: 3px;
+            right: 3px;
             background: var(--surface2);
-            border: 1px solid var(--border);
+            border: 2px solid var(--text-dim);
             color: var(--text);
             cursor: pointer;
             width: 28px;
@@ -664,17 +664,17 @@
             border-radius: 50%;
             font-size: 1.1rem;
             font-weight: 700;
-            line-height: 26px;
+            line-height: 24px;
             text-align: center;
             z-index: 2;
-            transition: color 0.2s, border-color 0.2s, background 0.2s;
+            transition: border-color 0.2s, background 0.2s;
             display: none;
         }
-        .collapse-toggle:hover { background: var(--border); }
+        .collapse-toggle:hover { background: var(--border); border-color: var(--text); }
 
         .section-collapse-btn {
             background: var(--surface2);
-            border: 1px solid var(--border);
+            border: 2px solid var(--text-dim);
             color: var(--text);
             cursor: pointer;
             width: 26px;
@@ -682,12 +682,12 @@
             border-radius: 50%;
             font-size: 1.0rem;
             font-weight: 700;
-            line-height: 24px;
+            line-height: 22px;
             text-align: center;
-            transition: color 0.2s, border-color 0.2s, background 0.2s;
+            transition: border-color 0.2s, background 0.2s;
             display: none;
         }
-        .section-collapse-btn:hover { background: var(--border); }
+        .section-collapse-btn:hover { background: var(--border); border-color: var(--text); }
 
         @media (max-width: 640px) {
             .collapse-toggle { display: block; }
