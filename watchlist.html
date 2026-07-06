@@ -576,6 +576,43 @@
             margin: 4px 0;
         }
 
+        /* ─── Card Collapse Toggle ─────────────────────────── */
+        .card-toggle {
+            background: none;
+            border: none;
+            color: var(--text-dim);
+            cursor: pointer;
+            padding: 2px 5px;
+            font-size: 0.8rem;
+            line-height: 1;
+            border-radius: 4px;
+            flex-shrink: 0;
+            transition: color 0.2s, transform 0.25s ease;
+        }
+        .card-toggle:hover { color: var(--text); }
+        .stock-card.collapsed .card-toggle { transform: rotate(-90deg); }
+        .stock-card.collapsed .stock-ohl,
+        .stock-card.collapsed .stock-meta,
+        .stock-card.collapsed .stock-extended,
+        .stock-card.collapsed .stock-ath,
+        .stock-card.collapsed .stock-fundamentals,
+        .stock-card.collapsed .stock-sentiment { display: none !important; }
+        .section-collapse-btn {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            cursor: pointer;
+            padding: 3px 10px;
+            font-size: 0.62rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: color 0.2s, border-color 0.2s;
+            white-space: nowrap;
+        }
+        .section-collapse-btn:hover { color: var(--text); border-color: var(--text-dim); }
+
         /* ─── Earnings Date Badge ────────────────────────── */
         .stock-earnings-date {
             position: absolute;
@@ -676,7 +713,7 @@
         <div class="time-display" id="time-display-legacy">--</div>
     </div>
 
-    <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><span class="section-et" id="et-clock"></span></div>
+    <div class="section-label">US Market <button class="section-collapse-btn" id="collapse-btn-us" onclick="toggleSection('us')">▴ Collapse All</button><span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><span class="section-et" id="et-clock"></span></div>
     <div class="holiday-banner" id="holiday-banner"></div>
     <div class="mcap-summary" id="mcap-summary-us">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
@@ -704,7 +741,7 @@
 
     <div class="stock-grid" id="stock-grid-us"></div>
 
-    <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span></div>
+    <div class="section-label">Korean Market (KRX) <button class="section-collapse-btn" id="collapse-btn-kr" onclick="toggleSection('kr')">▴ Collapse All</button><span class="section-hours">Market 5:30 AM – 12:00 PM IST</span></div>
     <div class="holiday-banner" id="holiday-banner-kr"></div>
     <div class="mcap-summary" id="mcap-summary-kr">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
@@ -1020,6 +1057,7 @@
                     <span class="stock-name">${s.name}</span>
                     <span class="stock-ticker">${s.displayTicker || s.ticker}</span>
                     ${s.ceo ? `<img class="ceo-icon" src="${s.ceo}" alt="CEO">` : ''}
+                    <button class="card-toggle" onclick="toggleCard('${id}')" aria-label="Collapse">&#9662;</button>
                 </div>
                 <div class="stock-prices">
                     <div class="price-block nasdaq-block" ${!s.currency && s.hl !== null && !s.hl ? 'style="grid-column: 1 / -1"' : ''}>
@@ -1798,6 +1836,31 @@
                 if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', nasDim);
             }
         });
+    }
+
+    function toggleCard(id) {
+        const card = document.getElementById(`card-${id}`);
+        if (!card) return;
+        card.classList.toggle('collapsed');
+        // Keep section button text in sync
+        const grid = card.closest('.stock-grid');
+        if (grid) {
+            const section = grid.id.replace('stock-grid-', '');
+            const cards = [...grid.querySelectorAll('.stock-card')];
+            const anyExpanded = cards.some(c => !c.classList.contains('collapsed'));
+            const btn = document.getElementById(`collapse-btn-${section}`);
+            if (btn) btn.textContent = anyExpanded ? '▴ Collapse All' : '▾ Expand All';
+        }
+    }
+
+    function toggleSection(section) {
+        const grid = document.getElementById(`stock-grid-${section}`);
+        if (!grid) return;
+        const cards = [...grid.querySelectorAll('.stock-card')];
+        const anyExpanded = cards.some(c => !c.classList.contains('collapsed'));
+        cards.forEach(c => c.classList.toggle('collapsed', anyExpanded));
+        const btn = document.getElementById(`collapse-btn-${section}`);
+        if (btn) btn.textContent = anyExpanded ? '▾ Expand All' : '▴ Collapse All';
     }
 
     document.addEventListener('DOMContentLoaded', init);
