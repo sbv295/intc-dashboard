@@ -279,7 +279,7 @@
         }
 
         .price-block-change {
-            font-size: 0.88rem;
+            font-size: 1.0rem;
             font-weight: 600;
             margin-top: 3px;
         }
@@ -301,6 +301,7 @@
         }
         .stock-extended.ext-dimmed {
             opacity: 0.3;
+            font-size: 0.72rem;
         }
 
         .stock-meta {
@@ -320,11 +321,12 @@
         .stock-meta.has-volume .meta-avgvol { display: inline; }
 
         .stock-extended {
-            font-size: 0.85rem;
+            font-size: 0.92rem;
             color: var(--text-dim);
             margin-top: 8px;
             text-align: center;
             min-height: 0;
+            transition: font-size 0.35s ease, opacity 0.35s ease;
         }
         .stock-extended:empty {
             display: none;
@@ -597,14 +599,14 @@
 
         /* ─── Fundamentals (PE + Analyst Target) ────────── */
         .stock-fundamentals {
-            font-size: 0.58rem;
+            font-size: 0.65rem;
             color: var(--text-dim);
             margin-top: 6px;
             padding-top: 6px;
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
             text-align: center;
             letter-spacing: 0.3px;
-            line-height: 1.7;
+            line-height: 1.3;
         }
         .stock-fundamentals:empty { display: none; }
         .stock-fundamentals .fund-label {
@@ -1037,9 +1039,9 @@
                 </div>
                 <div class="stock-sentiment" id="sentiment-${id}"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
                 <div class="stock-ohl" id="ohl-${id}"></div>
+                <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-ath" id="ath-${id}"></div>
-                <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
                 <div class="stock-fundamentals" id="fundamentals-${id}"></div>
             </div>
         `;
