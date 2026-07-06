@@ -653,39 +653,46 @@
         /* ─── Collapse/Expand ─────────────────────────────── */
         .collapse-toggle {
             position: absolute;
-            top: 10px;
-            right: 12px;
+            top: 6px;
+            right: 6px;
             background: var(--surface2);
             border: 1px solid var(--border);
-            color: var(--text-dim);
+            color: var(--text);
             cursor: pointer;
-            width: 20px;
-            height: 20px;
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
-            font-size: 0.8rem;
+            font-size: 1.1rem;
             font-weight: 700;
-            line-height: 18px;
+            line-height: 26px;
             text-align: center;
             z-index: 2;
-            transition: color 0.2s, border-color 0.2s;
+            transition: color 0.2s, border-color 0.2s, background 0.2s;
+            display: none;
         }
-        .collapse-toggle:hover { color: var(--text); border-color: var(--text-dim); }
+        .collapse-toggle:hover { background: var(--border); }
 
         .section-collapse-btn {
             background: var(--surface2);
             border: 1px solid var(--border);
-            color: var(--text-dim);
+            color: var(--text);
             cursor: pointer;
-            width: 20px;
-            height: 20px;
+            width: 26px;
+            height: 26px;
             border-radius: 50%;
-            font-size: 0.8rem;
+            font-size: 1.0rem;
             font-weight: 700;
-            line-height: 18px;
+            line-height: 24px;
             text-align: center;
-            transition: color 0.2s, border-color 0.2s;
+            transition: color 0.2s, border-color 0.2s, background 0.2s;
+            display: none;
         }
-        .section-collapse-btn:hover { color: var(--text); border-color: var(--text-dim); }
+        .section-collapse-btn:hover { background: var(--border); }
+
+        @media (max-width: 640px) {
+            .collapse-toggle { display: block; }
+            .section-collapse-btn { display: inline-block; }
+        }
 
         .stock-card.collapsed .stock-sentiment,
         .stock-card.collapsed .stock-ohl,
