@@ -579,7 +579,7 @@
             font-weight: 600;
             letter-spacing: 0.8px;
             color: var(--text-dim);
-            text-align: right;
+            text-align: center;
             margin-bottom: 6px;
         }
         .stock-earnings-date:empty { display: none; }
@@ -588,7 +588,7 @@
             opacity: 0.65;
         }
         .stock-earnings-date .ed-value {
-            color: var(--amber);
+            color: var(--text);
             font-weight: 700;
             margin-left: 4px;
         }
@@ -616,11 +616,8 @@
         }
         .stock-fundamentals .fund-target {
             font-weight: 700;
-            color: color-mix(in srgb, var(--card-accent, var(--green)) 90%, white);
+            color: var(--text);
         }
-        .stock-fundamentals .fund-pct { font-weight: 600; }
-        .stock-fundamentals .fund-pct.up { color: var(--green); }
-        .stock-fundamentals .fund-pct.down { color: var(--red); }
 
         /* ─── Sentiment Indicator ─────────────────────────── */
         .stock-sentiment {
@@ -1472,10 +1469,9 @@
                     const upcoming = earningsDates.filter(d => d.raw > now - 86400);
                     if (upcoming.length > 0) {
                         const d = new Date(upcoming[0].raw * 1000);
-                        const dd = String(d.getDate()).padStart(2, '0');
-                        const mm = String(d.getMonth() + 1).padStart(2, '0');
+                        const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                         const yy = String(d.getFullYear()).slice(2);
-                        earningsEl.innerHTML = `<span class="ed-label">Earnings</span><span class="ed-value">${dd}/${mm}/${yy}</span>`;
+                        earningsEl.innerHTML = `<span class="ed-label">Earnings</span><span class="ed-value">${d.getDate()} ${MONTHS[d.getMonth()]} ${yy}</span>`;
                     }
                 }
 
@@ -1489,13 +1485,7 @@
                     if (trailingPE != null && isFinite(trailingPE)) parts.push(`<span class="fund-label">PE(TTM)</span> <span class="fund-value">${trailingPE.toFixed(1)}</span>`);
                     if (forwardPE  != null && isFinite(forwardPE))  parts.push(`<span class="fund-label">PE(Fwd)</span> <span class="fund-value">${forwardPE.toFixed(1)}</span>`);
                     if (targetPrice != null) {
-                        const curPrice = state[stock.ticker].nasdaqPrice;
-                        let upsideHtml = '';
-                        if (curPrice) {
-                            const pct = ((targetPrice - curPrice) / curPrice * 100);
-                            upsideHtml = ` <span class="fund-pct ${pct >= 0 ? 'up' : 'down'}">(${pct >= 0 ? '+' : ''}${pct.toFixed(1)}%)</span>`;
-                        }
-                        parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice(stock, targetPrice)}</span>${upsideHtml}`);
+                        parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice(stock, targetPrice)}</span>`);
                     }
                     if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' · ');
                 }
