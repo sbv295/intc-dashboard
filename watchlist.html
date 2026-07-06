@@ -711,6 +711,9 @@
         .stock-card.collapsed .stock-earnings-date {
             display: none !important;
         }
+        .stock-card.collapsed .stock-extended.ext-dimmed {
+            display: none;
+        }
 
         @keyframes flashGreen {
             0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); }
@@ -1105,10 +1108,10 @@
                 <div class="stock-sentiment" id="sentiment-${id}"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
                 <div class="stock-ohl" id="ohl-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
-                <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-fundamentals" id="fundamentals-${id}"></div>
                 </div></div>
+                <div class="stock-extended" id="ext-${id}"></div>
             </div>
         `;
     }
