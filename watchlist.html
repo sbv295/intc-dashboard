@@ -738,7 +738,7 @@
         <div class="time-display" id="time-display-legacy">--</div>
     </div>
 
-    <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><button class="section-collapse-btn" id="collapse-btn-us" onclick="toggleAllCards('us')">+</button><span class="section-et" id="et-clock"></span></div>
+    <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><button class="section-collapse-btn" id="collapse-btn-us" onclick="toggleAllCards('us')">−</button><span class="section-et" id="et-clock"></span></div>
     <div class="holiday-banner" id="holiday-banner"></div>
     <div class="mcap-summary" id="mcap-summary-us">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
@@ -766,7 +766,7 @@
 
     <div class="stock-grid" id="stock-grid-us"></div>
 
-    <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span><button class="section-collapse-btn" id="collapse-btn-kr" onclick="toggleAllCards('kr')">+</button></div>
+    <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span><button class="section-collapse-btn" id="collapse-btn-kr" onclick="toggleAllCards('kr')">−</button></div>
     <div class="holiday-banner" id="holiday-banner-kr"></div>
     <div class="mcap-summary" id="mcap-summary-kr">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
@@ -1075,7 +1075,7 @@
     function renderCard(s) {
         const id = sid(s);
         return `
-            <div class="stock-card collapsed" id="card-${id}" style="--card-accent: ${s.color}">
+            <div class="stock-card" id="card-${id}" style="--card-accent: ${s.color}">
                 <div class="stock-earnings-date" id="earningsdate-${id}"></div>
                 <div class="stock-header">
                     <img class="stock-logo" src="${s.logo}" alt="${s.name}"${s.ticker === 'MBLY' ? ' style="background:#fff;padding:2px;"' : ''}>
@@ -1083,7 +1083,7 @@
                     <span class="stock-ticker">${s.displayTicker || s.ticker}</span>
                     ${s.ceo ? `<img class="ceo-icon" src="${s.ceo}" alt="CEO">` : ''}
                 </div>
-                <button class="collapse-toggle" onclick="toggleCard(this)">+</button>
+                <button class="collapse-toggle" onclick="toggleCard(this)">−</button>
                 <div class="stock-prices">
                     <div class="price-block nasdaq-block" ${!s.currency && s.hl !== null && !s.hl ? 'style="grid-column: 1 / -1"' : ''}>
                         <div class="price-block-label">${s.currency === 'KRW' ? 'USD' : stockExchange(s)}</div>
@@ -1753,6 +1753,20 @@
     // ─── Init ───────────────────────────────────────────────────────────────
     async function init() {
         renderGrid();
+
+        // Default to collapsed on mobile
+        if (window.innerWidth <= 640) {
+            document.querySelectorAll('.stock-card').forEach(c => {
+                c.classList.add('collapsed');
+                const btn = c.querySelector('.collapse-toggle');
+                if (btn) btn.textContent = '+';
+            });
+            ['us', 'kr'].forEach(s => {
+                const btn = document.getElementById(`collapse-btn-${s}`);
+                if (btn) btn.textContent = '+';
+            });
+        }
+
         initYahooProto();
         connectYahooWs();
         connectHlWs();
