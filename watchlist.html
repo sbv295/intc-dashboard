@@ -1730,7 +1730,7 @@
             if (!athEl) return;
 
             const fmtDate = (ts) => { const d = new Date(ts * 1000); const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`; };
-            const fmtP = (p) => stock.currency === 'KRW' ? '₩' + Math.round(p).toLocaleString() : '$' + p.toFixed(2);
+            const fmtP = (p) => fmtPrice(stock, p);
             const curPrice = state[stock.ticker].nasdaqPrice;
             const pctFromHigh = curPrice ? ((curPrice - highClose) / highClose * 100).toFixed(1) : null;
             const pctFromHighTrade = curPrice ? ((curPrice - highTrade) / highTrade * 100).toFixed(1) : null;
