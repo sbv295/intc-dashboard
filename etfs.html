@@ -451,8 +451,8 @@
     // ─── ETF Configuration ──────────────────────────────────────────────────
     // Add more ETFs here as needed
     const STOCKS = [
-        { ticker: 'SOXL', name: 'Direxion Semi Bull 3X', color: '#FF7043', exchange: 'NYSE Arca', category: '3× Bull' },
-        { ticker: 'DRAM', name: 'Roundhill Memory ETF', color: '#5C6BC0', exchange: 'NYSE Arca', category: 'Memory Chips' },
+        { ticker: 'SOXL', name: 'Direxion Semi Bull 3X', color: '#FF7043', exchange: 'NYSE Arca', category: '3× Bull', logo: 'logos/SOXL.png' },
+        { ticker: 'DRAM', name: 'Roundhill Memory ETF', color: '#5C6BC0', exchange: 'Cboe BZX', category: 'Memory Chips', logo: 'logos/DRAM.png' },
     ];
 
     function sid(s) { return s.ticker.replace(/[^A-Za-z0-9]/g, '_'); }
@@ -539,7 +539,7 @@
         return `
             <div class="stock-card" id="card-${id}" style="--card-accent: ${s.color}">
                 <div class="stock-header">
-                    <div class="etf-logo-placeholder">${s.ticker}</div>
+                    ${s.logo ? `<img class="stock-logo" src="${s.logo}" alt="${s.name}" style="background:#fff;padding:3px;">` : `<div class="etf-logo-placeholder">${s.ticker}</div>`}
                     <span class="stock-name">${s.name}</span>
                     ${s.category ? `<span class="etf-category">${s.category}</span>` : ''}
                     <span class="stock-ticker">${s.ticker}</span>
