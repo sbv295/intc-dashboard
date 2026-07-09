@@ -438,7 +438,7 @@
 
     <div class="nav-title">ETFs</div>
 
-    <div class="section-label">Leveraged ETFs <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><button class="section-collapse-btn" id="collapse-btn-etf" onclick="toggleAllCards('etf')">−</button><span class="section-et" id="et-clock"></span></div>
+    <div class="section-label">ETFs <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><button class="section-collapse-btn" id="collapse-btn-etf" onclick="toggleAllCards('etf')">−</button><span class="section-et" id="et-clock"></span></div>
     <div class="holiday-banner" id="holiday-banner"></div>
     <div class="mcap-summary" id="mcap-summary-etf">
         <span class="mcap-summary-label">Watchlist AUM</span>
@@ -452,6 +452,7 @@
     // Add more ETFs here as needed
     const STOCKS = [
         { ticker: 'SOXL', name: 'Direxion Semi Bull 3X', color: '#FF7043', exchange: 'NYSE Arca', category: '3× Bull' },
+        { ticker: 'DRAM', name: 'VanEck Memory Chip ETF', color: '#5C6BC0', exchange: 'NASDAQ', category: 'Memory Chips' },
     ];
 
     function sid(s) { return s.ticker.replace(/[^A-Za-z0-9]/g, '_'); }
