@@ -458,7 +458,7 @@
 
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, shares: null, mcap: null, extPrice: null, volume: null, currentPct: null };
+        state[s.ticker] = { nasdaqPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, shares: null, mcap: null, extPrice: null, volume: null, currentPct: null, totalAssets: null };
     });
 
     // ─── Yahoo Finance API ──────────────────────────────────────────────────
@@ -810,28 +810,37 @@
                 const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,financialData`;
                 const json = await yahooFetch(url);
                 const result = json.quoteSummary?.result?.[0];
-                const mcapRaw = result?.summaryDetail?.marketCap?.raw;
+
+                // totalAssets = Yahoo Finance "Net Assets" — the standard AUM metric for ETFs
+                const totalAssets = result?.summaryDetail?.totalAssets?.raw;
                 const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
+                const mcapRaw  = result?.summaryDetail?.marketCap?.raw;
+
+                // Display static AUM in the card
+                if (totalAssets) {
+                    state[stock.ticker].totalAssets = totalAssets;
+                    displayAUM(stock.ticker, totalAssets);
+                }
+
+                // Shares — needed for live-price-tracking in the summary bar
                 if (shares) {
                     state[stock.ticker].shares = shares;
+                    updateMarketCap(stock.ticker);
+                } else if (totalAssets && state[stock.ticker].prevClose) {
+                    // Derive shares from Net Assets ÷ prev close (most accurate fallback for ETFs)
+                    state[stock.ticker].shares = totalAssets / state[stock.ticker].prevClose;
                     updateMarketCap(stock.ticker);
                 } else if (mcapRaw && state[stock.ticker].nasdaqPrice) {
                     state[stock.ticker].shares = mcapRaw / state[stock.ticker].nasdaqPrice;
                     updateMarketCap(stock.ticker);
-                } else if (mcapRaw) {
-                    state[stock.ticker].mcap = mcapRaw;
-                    displayMarketCap(stock.ticker, mcapRaw);
                 }
 
                 const avgVol = result?.summaryDetail?.averageVolume?.raw;
                 if (avgVol) displayAvgVolume(stock.ticker, avgVol);
 
                 const _sid = sid(stock);
-                // Expense ratio (annualReportExpenseRatio) for ETFs
+                // Expense ratio for ETFs
                 const expenseRatio = result?.defaultKeyStatistics?.annualReportExpenseRatio?.raw;
-                // 52W high/low from summaryDetail
-                const fiftyTwoWeekLow  = result?.summaryDetail?.fiftyTwoWeekLow?.raw;
-                const fiftyTwoWeekHigh = result?.summaryDetail?.fiftyTwoWeekHigh?.raw;
 
                 const fundamentalsEl = document.getElementById(`fundamentals-${_sid}`);
                 if (fundamentalsEl) {
@@ -925,14 +934,29 @@
         el.textContent = `Avg Vol: ${formatVolume(avgVol)}`;
     }
 
+    // displayAUM: shows Yahoo Finance's official "Net Assets" (totalAssets) for the ETF.
+    // This is the canonical AUM figure — total value of all assets the ETF holds.
+    function displayAUM(ticker, aum) {
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        const _sid = stock ? sid(stock) : ticker;
+        const el = document.getElementById(`mcap-${_sid}`);
+        if (!el) return;
+        if (aum >= 1e12) el.textContent = `Net Assets: $${(aum/1e12).toFixed(2)}T`;
+        else if (aum >= 1e9) el.textContent = `Net Assets: $${(aum/1e9).toFixed(1)}B`;
+        else el.textContent = `Net Assets: $${(aum/1e6).toFixed(0)}M`;
+    }
+
+    // displayMarketCap: fallback used only when totalAssets is unavailable.
     function displayMarketCap(ticker, mcap) {
         const stock = STOCKS.find(s => s.ticker === ticker);
         const _sid = stock ? sid(stock) : ticker;
         const el = document.getElementById(`mcap-${_sid}`);
         if (!el) return;
-        if (mcap >= 1e12) el.textContent = `AUM: $${(mcap/1e12).toFixed(1)}T`;
-        else if (mcap >= 1e9) el.textContent = `AUM: $${(mcap/1e9).toFixed(1)}B`;
-        else el.textContent = `AUM: $${(mcap/1e6).toFixed(0)}M`;
+        // Don't overwrite if displayAUM already populated this element
+        if (state[ticker]?.totalAssets) return;
+        if (mcap >= 1e12) el.textContent = `Net Assets: $${(mcap/1e12).toFixed(2)}T`;
+        else if (mcap >= 1e9) el.textContent = `Net Assets: $${(mcap/1e9).toFixed(1)}B`;
+        else el.textContent = `Net Assets: $${(mcap/1e6).toFixed(0)}M`;
     }
 
     function updateMarketCap(ticker) {
