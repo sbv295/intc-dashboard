@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETFs — Stock Dashboard</title>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="be0b9ce8-f4bc-4d6f-94fe-b0bcce0b7518"></script>
+    <script src="https://cdn.jsdelivr.net/npm/protobufjs@7.2.6/dist/protobuf.min.js"></script>
+    <style>
+        :root {
+            --bg: #0f0f14;
+            --surface: #1a1a24;
+            --surface2: #22222e;
+            --border: #2a2a3a;
+            --text: #e8e8f0;
+            --text-dim: #888899;
+            --green: #00c853;
+            --red: #ff1744;
+            --amber: #ffc107;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { overflow-x: hidden; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 16px;
+        }
+
+        /* ─── Navigation ─────────────────────────────────────── */
+        .nav-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 0;
+        }
+        .nav-tabs a {
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 8px 8px 0 0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-bottom: none;
+            transition: all 0.2s;
+        }
+        .nav-tabs a.active {
+            color: var(--text);
+            background: var(--bg);
+            border-color: var(--text-dim);
+        }
+        .nav-tabs a:hover:not(.active) { color: var(--text); }
+
+        .nav-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-align: center;
+            padding: 24px 0 16px;
+            pointer-events: none;
+        }
+
+        @media (max-width: 640px) {
+            .nav-title { font-size: 1.4rem; letter-spacing: 3px; padding: 14px 0 12px; }
+            body { padding: 8px; overflow-x: hidden; }
+        }
+
+        /* ─── Section Labels ─────────────────────────────────── */
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-dim);
+            margin: 20px 0 10px;
+            padding: 8px 14px;
+            border-bottom: 1px solid var(--border);
+            background: rgba(15,15,20,0.75);
+            border-radius: 6px 6px 0 0;
+            backdrop-filter: blur(6px);
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            position: relative;
+            z-index: 1;
+        }
+        .section-label:first-of-type { margin-top: 0; }
+
+        .section-et {
+            font-size: 0.65rem;
+            font-weight: 400;
+            color: var(--text-dim);
+            margin-left: auto;
+            letter-spacing: 0.5px;
+        }
+        .section-hours {
+            font-size: 0.65rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: var(--text-dim);
+            opacity: 0.7;
+            margin-left: 8px;
+            text-transform: none;
+        }
+
+        .holiday-banner {
+            display: none;
+            text-align: center;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: var(--amber);
+            background: rgba(255,193,7,0.06);
+            border: 1px solid rgba(255,193,7,0.18);
+            border-radius: 8px;
+            padding: 8px 16px;
+            margin-bottom: 10px;
+        }
+        .holiday-banner.visible { display: block; }
+        .holiday-flag { height: 14px; margin-right: 6px; vertical-align: middle; border-radius: 2px; }
+
+        @media (max-width: 640px) {
+            .section-label { flex-wrap: nowrap; padding: 6px 10px; gap: 6px; font-size: 0.7rem; }
+            .section-hours { display: none; }
+            .section-et { margin-left: auto; font-size: 0.6rem; }
+        }
+
+        /* ─── Market Cap Summary ─────────────────────────────── */
+        .mcap-summary {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 18px;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+        .mcap-summary-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+        }
+        .mcap-summary-value {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--text);
+        }
+        .mcap-summary-change { font-size: 0.8rem; font-weight: 700; }
+        .mcap-summary-change .up { color: var(--green); }
+        .mcap-summary-change .down { color: var(--red); }
+        .mcap-prev-ref { color: var(--text-dim); font-weight: 400; }
+
+        /* ─── Stock Grid & Cards ─────────────────────────────── */
+        .stock-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+        @media (max-width: 640px) { .stock-grid { grid-template-columns: 1fr; } }
+
+        .stock-card {
+            background:
+                radial-gradient(ellipse at 15% 10%, color-mix(in srgb, var(--card-accent) 10%, transparent) 0%, transparent 60%),
+                radial-gradient(ellipse at 85% 90%, color-mix(in srgb, var(--card-accent) 5%, transparent) 0%, transparent 50%),
+                var(--surface);
+            border: 1px solid color-mix(in srgb, var(--card-accent) 18%, var(--border));
+            border-radius: 14px;
+            padding: 18px 20px 16px;
+            transition: transform 0.25s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .stock-card:hover {
+            transform: translateY(-3px);
+            border-color: color-mix(in srgb, var(--card-accent) 45%, var(--border));
+            box-shadow: 0 8px 32px -8px color-mix(in srgb, var(--card-accent) 25%, transparent), 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .stock-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg,
+                color-mix(in srgb, var(--card-accent) 80%, white) 0%,
+                var(--card-accent) 40%,
+                transparent 100%);
+        }
+
+        .stock-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        /* ETF logo placeholder — colored circle with ticker text */
+        .etf-logo-placeholder {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: color-mix(in srgb, var(--card-accent) 25%, var(--surface2));
+            border: 1px solid color-mix(in srgb, var(--card-accent) 40%, transparent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.5rem;
+            font-weight: 800;
+            color: var(--card-accent);
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+        }
+
+        .stock-name {
+            font-size: 0.78rem;
+            color: var(--text);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+
+        .stock-ticker {
+            font-size: 0.65rem;
+            color: var(--card-accent, var(--text-dim));
+            font-weight: 800;
+            margin-left: auto;
+            background: color-mix(in srgb, var(--card-accent) 12%, transparent);
+            padding: 3px 8px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+            border: 1px solid color-mix(in srgb, var(--card-accent) 25%, transparent);
+        }
+
+        /* ETF category badge (e.g., "3× Bull") */
+        .etf-category {
+            font-size: 0.58rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: var(--card-accent);
+            background: color-mix(in srgb, var(--card-accent) 10%, transparent);
+            border: 1px solid color-mix(in srgb, var(--card-accent) 25%, transparent);
+            padding: 2px 7px;
+            border-radius: 4px;
+        }
+
+        .stock-prices {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+
+        .price-block { text-align: center; }
+        .price-block-label {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+            margin-bottom: 2px;
+        }
+        .price-block-value {
+            font-size: 1.7rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        .price-block-change {
+            font-size: 1.0rem;
+            font-weight: 600;
+            margin-top: 3px;
+        }
+        .price-block-change .up { color: var(--green); }
+        .price-block-change .down { color: var(--red); }
+        .price-block-change .prev-ref { color: var(--text-dim); font-weight: 400; }
+        .price-block-change.up { color: var(--green); }
+        .price-block-change.down { color: var(--red); }
+
+        .price-block.nasdaq-dimmed { opacity: 0.3; }
+
+        .stock-extended {
+            font-size: 0.92rem;
+            color: var(--text-dim);
+            margin-top: 8px;
+            text-align: center;
+            min-height: 0;
+            transition: font-size 0.35s ease, opacity 0.35s ease;
+        }
+        .stock-extended:empty { display: none; }
+        .stock-extended .ext-label { font-weight: 600; color: var(--amber); letter-spacing: 0.5px; }
+        .stock-extended .ext-value { font-weight: 700; color: var(--text); }
+        .stock-extended .ext-change { font-weight: 600; }
+        .stock-extended .ext-change.up { color: var(--green); }
+        .stock-extended .ext-change.down { color: var(--red); }
+        .stock-extended.ext-dimmed { opacity: 0.3; font-size: 0.72rem; }
+
+        .stock-meta {
+            font-size: 0.68rem;
+            color: var(--text-dim);
+            margin-top: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            display: flex;
+            justify-content: center;
+        }
+        .stock-meta.has-volume { justify-content: space-between; }
+        .stock-meta .meta-vol { display: none; }
+        .stock-meta .meta-avgvol { display: none; }
+        .stock-meta.has-volume .meta-vol { display: inline; }
+        .stock-meta.has-volume .meta-avgvol { display: inline; }
+
+        .stock-ohl {
+            font-size: 0.68rem;
+            color: var(--text-dim);
+            margin-top: 8px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            border-bottom: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            text-align: center;
+        }
+        .stock-ohl:empty { display: none; }
+        .stock-ohl.ohl-dimmed .ohl-label,
+        .stock-ohl.ohl-dimmed .ohl-value { opacity: 0.3; }
+        .stock-ohl .ohl-label { font-weight: 600; color: var(--text-dim); text-transform: uppercase; margin-right: 4px; }
+        .stock-ohl .ohl-value { color: var(--text); font-weight: 600; }
+
+        .stock-ath {
+            font-size: 0.58rem;
+            color: var(--text-dim);
+            margin-top: 6px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            text-align: center;
+            letter-spacing: 0.3px;
+            line-height: 1.8;
+        }
+        .stock-ath .ath-label { font-weight: 700; color: var(--text-dim); letter-spacing: 0.5px; }
+        .stock-ath .ath-value { color: var(--text); font-weight: 600; }
+        .stock-ath .ath-pct { font-weight: 600; color: var(--text-dim); }
+        .stock-ath .ath-divider { border: none; border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border)); margin: 4px 0; }
+
+        .stock-fundamentals {
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            margin-top: 6px;
+            padding-top: 6px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            text-align: center;
+            line-height: 1.3;
+        }
+        .stock-fundamentals:empty { display: none; }
+        .stock-fundamentals .fund-label { font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+        .stock-fundamentals .fund-value { color: var(--text); font-weight: 600; }
+
+        /* ─── Collapse/Expand ────────────────────────────────── */
+        .collapse-toggle {
+            position: absolute;
+            top: 3px; right: 3px;
+            background: var(--surface2);
+            border: 1.5px solid var(--text);
+            color: var(--text);
+            cursor: pointer;
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            z-index: 2;
+            transition: background 0.2s;
+            display: none;
+        }
+        .collapse-toggle:hover { background: var(--border); }
+
+        .section-collapse-btn {
+            background: var(--surface2);
+            border: 1.5px solid var(--text);
+            color: var(--text);
+            cursor: pointer;
+            width: 26px; height: 26px;
+            border-radius: 50%;
+            font-size: 1.0rem;
+            font-weight: 700;
+            line-height: 22px;
+            text-align: center;
+            transition: background 0.2s;
+            display: none;
+        }
+        .section-collapse-btn:hover { background: var(--border); }
+
+        @media (max-width: 640px) {
+            .collapse-toggle { display: block; }
+            .section-collapse-btn { display: inline-block; }
+        }
+
+        .stock-collapse-body {
+            display: grid;
+            grid-template-rows: 1fr;
+            transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .stock-collapse-inner { overflow: hidden; min-height: 0; }
+        .stock-card.collapsed .stock-collapse-body { grid-template-rows: 0fr; }
+        .stock-extended-mirror { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.22s ease 0.08s, opacity 0.18s ease 0.1s; }
+        .stock-card.collapsed .stock-extended-mirror:not(:empty) { max-height: 60px; opacity: 1; }
+
+        .price-flash-up { animation: flashGreen 1s ease-out; }
+        .price-flash-down { animation: flashRed 1s ease-out; }
+
+        @keyframes flashGreen {
+            0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); }
+            100% { color: var(--text); text-shadow: none; }
+        }
+        @keyframes flashRed {
+            0% { color: var(--red); text-shadow: 0 0 12px rgba(255,23,68,0.5); }
+            100% { color: var(--text); text-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-tabs">
+        <a href="index.html">INTC Dashboard</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="etfs.html" class="active">ETFs</a>
+    </div>
+
+    <div class="nav-title">ETFs</div>
+
+    <div class="section-label">Leveraged ETFs <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><button class="section-collapse-btn" id="collapse-btn-etf" onclick="toggleAllCards('etf')">−</button><span class="section-et" id="et-clock"></span></div>
+    <div class="holiday-banner" id="holiday-banner"></div>
+    <div class="mcap-summary" id="mcap-summary-etf">
+        <span class="mcap-summary-label">Watchlist AUM</span>
+        <span class="mcap-summary-value" id="mcap-total-etf">—</span>
+        <span class="mcap-summary-change" id="mcap-chg-etf"></span>
+    </div>
+    <div class="stock-grid" id="stock-grid-etf"></div>
+
+    <script>
+    // ─── ETF Configuration ──────────────────────────────────────────────────
+    // Add more ETFs here as needed
+    const STOCKS = [
+        { ticker: 'SOXL', name: 'Direxion Semi Bull 3X', color: '#FF7043', exchange: 'NYSE Arca', category: '3× Bull' },
+    ];
+
+    function sid(s) { return s.ticker.replace(/[^A-Za-z0-9]/g, '_'); }
+
+    const state = {};
+    STOCKS.forEach(s => {
+        state[s.ticker] = { nasdaqPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, shares: null, mcap: null, extPrice: null, volume: null, currentPct: null };
+    });
+
+    // ─── Yahoo Finance API ──────────────────────────────────────────────────
+    const YAHOO_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart/';
+    let proxyMode = 'unknown';
+
+    async function yahooFetch(url) {
+        if (proxyMode === 'vercel') return await fetchViaVercel(url);
+        if (proxyMode === 'allorigins') return await fetchViaAllorigins(url);
+        if (proxyMode === 'direct') { const r = await fetch(url); return r.json(); }
+
+        try { const d = await fetchViaVercel(url); proxyMode = 'vercel'; return d; } catch(e) {}
+        try { const r = await fetch(url); if (r.ok) { proxyMode = 'direct'; return r.json(); } } catch(e) {}
+        try { const d = await fetchViaAllorigins(url); proxyMode = 'allorigins'; return d; } catch(e) {}
+        throw new Error('All sources failed');
+    }
+
+    async function fetchViaVercel(url) {
+        const params = new URL(url).searchParams;
+        const ticker = url.match(/(?:chart|quoteSummary)\/([A-Z0-9.=^]+)/i)?.[1] || 'SOXL';
+        const apiUrl = '/api/yahoo?' + params.toString() + '&symbol=' + encodeURIComponent(ticker);
+        const resp = await fetch(apiUrl);
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        return resp.json();
+    }
+
+    async function fetchViaAllorigins(url) {
+        const resp = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(url));
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        return resp.json();
+    }
+
+    // ─── Time & Market Status ───────────────────────────────────────────────
+    function formatDualTime(date) {
+        return date.toLocaleString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit', hour12: true }) + ' ET';
+    }
+
+    const US_MARKET_HOLIDAYS = new Map([
+        ['2025-01-01','New Year\'s Day'],['2025-01-20','Martin Luther King Jr. Day'],
+        ['2025-02-17','Presidents\' Day'],['2025-04-18','Good Friday'],
+        ['2025-05-26','Memorial Day'],['2025-06-19','Juneteenth'],
+        ['2025-07-04','Independence Day'],['2025-09-01','Labor Day'],
+        ['2025-11-27','Thanksgiving'],['2025-12-25','Christmas'],
+        ['2026-01-01','New Year\'s Day'],['2026-01-19','Martin Luther King Jr. Day'],
+        ['2026-02-16','Presidents\' Day'],['2026-04-03','Good Friday'],
+        ['2026-05-25','Memorial Day'],['2026-06-19','Juneteenth'],
+        ['2026-07-03','Independence Day'],['2026-09-07','Labor Day'],
+        ['2026-11-26','Thanksgiving'],['2026-12-25','Christmas'],
+        ['2027-01-01','New Year\'s Day'],['2027-01-18','Martin Luther King Jr. Day'],
+        ['2027-02-15','Presidents\' Day'],['2027-03-26','Good Friday'],
+        ['2027-05-31','Memorial Day'],['2027-06-18','Juneteenth'],
+        ['2027-07-05','Independence Day'],['2027-09-06','Labor Day'],
+        ['2027-11-25','Thanksgiving'],['2027-12-24','Christmas'],
+    ]);
+
+    function getMarketStatus() {
+        const now = new Date();
+        const etStr = now.toLocaleString('en-US', { timeZone: 'America/New_York', hour12: false });
+        const etDate = new Date(etStr);
+        const h = etDate.getHours(), m = etDate.getMinutes();
+        const mins = h * 60 + m;
+        const day = etDate.getDay();
+        if (day === 0 || day === 6) return 'closed';
+        const yyyy = etDate.getFullYear();
+        const mm = String(etDate.getMonth() + 1).padStart(2, '0');
+        const dd = String(etDate.getDate()).padStart(2, '0');
+        if (US_MARKET_HOLIDAYS.has(`${yyyy}-${mm}-${dd}`)) return 'closed';
+        if (mins >= 240 && mins < 570) return 'premarket';
+        if (mins >= 570 && mins < 960) return 'market';
+        if (mins >= 960 && mins < 1200) return 'postmarket';
+        return 'closed';
+    }
+
+    // ─── Render Cards ───────────────────────────────────────────────────────
+    function renderCard(s) {
+        const id = sid(s);
+        return `
+            <div class="stock-card" id="card-${id}" style="--card-accent: ${s.color}">
+                <div class="stock-header">
+                    <div class="etf-logo-placeholder">${s.ticker}</div>
+                    <span class="stock-name">${s.name}</span>
+                    ${s.category ? `<span class="etf-category">${s.category}</span>` : ''}
+                    <span class="stock-ticker">${s.ticker}</span>
+                </div>
+                <button class="collapse-toggle" onclick="toggleCard(this)">−</button>
+                <div class="stock-prices">
+                    <div class="price-block nasdaq-block">
+                        <div class="price-block-label">${s.exchange || 'NYSE Arca'}</div>
+                        <div class="price-block-value" id="nasdaq-${id}">—</div>
+                        <div class="price-block-change" id="nasdaq-chg-${id}"></div>
+                    </div>
+                </div>
+                <div class="stock-collapse-body"><div class="stock-collapse-inner">
+                <div class="stock-ohl" id="ohl-${id}"></div>
+                <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
+                <div class="stock-extended" id="ext-${id}"></div>
+                <div class="stock-ath" id="ath-${id}"></div>
+                <div class="stock-fundamentals" id="fundamentals-${id}"></div>
+                </div></div>
+                <div class="stock-extended stock-extended-mirror" id="ext-mirror-${id}"></div>
+            </div>
+        `;
+    }
+
+    function renderGrid() {
+        document.getElementById('stock-grid-etf').innerHTML = STOCKS.map(renderCard).join('');
+    }
+
+    // ─── Fetch NASDAQ Data ──────────────────────────────────────────────────
+    async function fetchNasdaqForStock(stock) {
+        try {
+            const url = `${YAHOO_BASE}${stock.ticker}?interval=5m&range=2d&includePrePost=true`;
+            const json = await yahooFetch(url);
+            const result = json.chart.result[0];
+            const meta = result.meta;
+            const timestamps = result.timestamp || [];
+            const quote = result.indicators.quote[0];
+
+            const ms = getMarketStatus();
+            const prevClose = meta.previousClose;
+            const regPrice = meta.regularMarketPrice;
+
+            state[stock.ticker].sessionClose = regPrice || prevClose;
+            state[stock.ticker].prevClose = prevClose;
+
+            const todayTP = meta.tradingPeriods;
+            const dayIdx = (todayTP && todayTP.regular) ? todayTP.regular.length - 1 : -1;
+            const tp = (dayIdx >= 0 && todayTP.regular[dayIdx] && todayTP.regular[dayIdx][0])
+                ? { pre: todayTP.pre[dayIdx][0], regular: todayTP.regular[dayIdx][0], post: todayTP.post[dayIdx][0] }
+                : meta.currentTradingPeriod;
+
+            let regularClose = null;
+            if (tp) {
+                for (let i = timestamps.length - 1; i >= 0; i--) {
+                    const t = timestamps[i], c = quote.close[i];
+                    if (c != null && t >= tp.regular.start && t < tp.post.start) { regularClose = c; break; }
+                }
+            }
+
+            let displayPrice, extPrice = null, extLabel = null, refPrice = null;
+            if (ms === 'postmarket' || ms === 'closed') {
+                displayPrice = regPrice || regularClose;
+                refPrice = displayPrice;
+                if (tp) {
+                    for (let i = timestamps.length - 1; i >= 0; i--) {
+                        const t = timestamps[i], c = quote.close[i];
+                        if (c != null && t >= tp.post.start && t < tp.post.end) { extPrice = c; break; }
+                    }
+                }
+                extLabel = 'Post';
+            } else if (ms === 'premarket') {
+                displayPrice = regPrice || regularClose;
+                refPrice = displayPrice;
+                if (tp) {
+                    for (let i = timestamps.length - 1; i >= 0; i--) {
+                        const t = timestamps[i], c = quote.close[i];
+                        if (c != null && t >= tp.pre.start && t < tp.regular.start) { extPrice = c; break; }
+                    }
+                }
+                extLabel = 'Pre';
+            } else {
+                displayPrice = regPrice;
+            }
+
+            if (extPrice) state[stock.ticker].extPrice = extPrice;
+            else if (ms === 'market') state[stock.ticker].extPrice = null;
+
+            const _sid = sid(stock);
+            const priceEl = document.getElementById(`nasdaq-${_sid}`);
+            if (displayPrice) {
+                const prev = state[stock.ticker].prevNasdaq;
+                if (prev !== null && displayPrice !== prev) {
+                    priceEl.classList.remove('price-flash-up', 'price-flash-down');
+                    void priceEl.offsetWidth;
+                    priceEl.classList.add(displayPrice > prev ? 'price-flash-up' : 'price-flash-down');
+                }
+                state[stock.ticker].prevNasdaq = displayPrice;
+                state[stock.ticker].nasdaqPrice = displayPrice;
+                priceEl.textContent = '$' + displayPrice.toFixed(2);
+                updateMarketCap(stock.ticker);
+
+                const chgEl = document.getElementById(`nasdaq-chg-${_sid}`);
+                const refClose = state[stock.ticker].prevClose;
+                if (refClose) {
+                    const chg = displayPrice - refClose;
+                    const pct = (chg / refClose) * 100;
+                    const sign = chg >= 0 ? '+' : '';
+                    chgEl.innerHTML = `<span class="prev-ref">$${refClose.toFixed(2)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
+                    chgEl.className = 'price-block-change';
+                }
+            }
+
+            // Extended price
+            const extEl = document.getElementById(`ext-${_sid}`);
+            if (extPrice && refPrice) {
+                const extChg = extPrice - refPrice;
+                const extPct = (extChg / refPrice) * 100;
+                const extSign = extChg >= 0 ? '+' : '';
+                const extCls = extChg >= 0 ? 'up' : 'down';
+                extEl.innerHTML = `<span class="ext-label">${extLabel}:</span> <span class="ext-value">$${extPrice.toFixed(2)}</span> <span class="ext-change ${extCls}">${extSign}${extPct.toFixed(2)}%</span>`;
+            } else {
+                extEl.innerHTML = '';
+            }
+            const extMirrorEl = document.getElementById(`ext-mirror-${_sid}`);
+            if (extMirrorEl) {
+                extMirrorEl.innerHTML = (extPrice && refPrice && (ms === 'premarket' || ms === 'postmarket')) ? extEl.innerHTML : '';
+            }
+
+            // Volume & OHL
+            const metaVolume = meta.regularMarketVolume;
+            if (metaVolume) { state[stock.ticker].volume = metaVolume; displayVolume(stock.ticker, metaVolume); }
+            if (tp && quote.volume) {
+                let totalVol = 0;
+                let regOpen = null, regHigh = -Infinity, regLow = Infinity;
+                for (let i = 0; i < timestamps.length; i++) {
+                    const t = timestamps[i], v = quote.volume[i];
+                    const o = quote.open[i], h = quote.high[i], l = quote.low[i];
+                    if (t >= tp.regular.start && t < tp.post.start) {
+                        if (v) totalVol += v;
+                        if (regOpen === null && o != null) regOpen = o;
+                        if (h != null) regHigh = Math.max(regHigh, h);
+                        if (l != null) regLow = Math.min(regLow, l);
+                    }
+                }
+                if (regOpen === null && timestamps.length > 0) {
+                    const prevDayEnd = tp.pre ? tp.pre.start : tp.regular.start;
+                    for (let i = 0; i < timestamps.length; i++) {
+                        const t = timestamps[i], v = quote.volume[i];
+                        const o = quote.open[i], h = quote.high[i], l = quote.low[i];
+                        if (t < prevDayEnd && o != null) {
+                            if (v) totalVol += v;
+                            if (regOpen === null) regOpen = o;
+                            if (h != null) regHigh = Math.max(regHigh, h);
+                            if (l != null) regLow = Math.min(regLow, l);
+                        }
+                    }
+                }
+                if (!metaVolume && totalVol > 0) { state[stock.ticker].volume = totalVol; displayVolume(stock.ticker, totalVol); }
+                const ohlEl = document.getElementById(`ohl-${_sid}`);
+                if (ohlEl && regOpen !== null && regHigh !== -Infinity) {
+                    ohlEl.innerHTML = `<span class="ohl-label">O</span><span class="ohl-value">$${regOpen.toFixed(2)}</span> · <span class="ohl-label">H</span><span class="ohl-value">$${regHigh.toFixed(2)}</span> · <span class="ohl-label">L</span><span class="ohl-value">$${regLow.toFixed(2)}</span>`;
+                }
+            }
+        } catch (e) {}
+    }
+
+    // ─── Yahoo WebSocket (live prices) ──────────────────────────────────────
+    const YahooProto = `
+        syntax = "proto3";
+        message PricingData {
+            string id = 1;
+            float price = 2;
+            int64 time = 3;
+            string exchange = 4;
+            string quoteType = 5;
+            float changePercent = 8;
+            float dayVolume = 9;
+            float dayHigh = 10;
+            float dayLow = 11;
+            float change = 12;
+            float previousClose = 15;
+            string marketHours = 20;
+        }
+    `;
+    let yahooRoot, YahooPricingData, yahooWs;
+
+    function initYahooProto() {
+        yahooRoot = protobuf.parse(YahooProto).root;
+        YahooPricingData = yahooRoot.lookupType('PricingData');
+    }
+
+    function connectYahooWs() {
+        if (yahooWs && yahooWs.readyState === WebSocket.OPEN) return;
+        yahooWs = new WebSocket('wss://streamer.finance.yahoo.com/');
+        yahooWs.onopen = () => {
+            yahooWs.send(JSON.stringify({ subscribe: STOCKS.map(s => s.ticker) }));
+        };
+        yahooWs.onmessage = (event) => {
+            try {
+                const bytes = Uint8Array.from(atob(event.data), c => c.charCodeAt(0));
+                const decoded = YahooPricingData.decode(bytes);
+                if (decoded.price && decoded.price > 0 && decoded.id) {
+                    updateYahooPrice(decoded.id, decoded.price);
+                }
+            } catch (e) {}
+        };
+        yahooWs.onclose = () => setTimeout(connectYahooWs, 5000);
+        yahooWs.onerror = () => yahooWs.close();
+    }
+
+    function updateYahooPrice(ticker, price) {
+        const st = state[ticker];
+        if (!st) return;
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        if (!stock) return;
+
+        const ms = getMarketStatus();
+        if (ms === 'closed') return;
+
+        const _sid = sid(stock);
+
+        if (ms === 'premarket' || ms === 'postmarket') {
+            const extEl = document.getElementById(`ext-${_sid}`);
+            const refPrice = st.sessionClose;
+            const label = ms === 'premarket' ? 'Pre' : 'Post';
+            if (refPrice && extEl) {
+                const chg = price - refPrice;
+                const pct = (chg / refPrice) * 100;
+                const sign = chg >= 0 ? '+' : '';
+                const cls = chg >= 0 ? 'up' : 'down';
+                extEl.innerHTML = `<span class="ext-label">${label}:</span> <span class="ext-value">$${price.toFixed(2)}</span> <span class="ext-change ${cls}">${sign}${pct.toFixed(2)}%</span>`;
+            }
+            const extMirrorWs = document.getElementById(`ext-mirror-${_sid}`);
+            if (extMirrorWs && extEl) extMirrorWs.innerHTML = extEl.innerHTML;
+            st.extPrice = price;
+            updateMarketCap(ticker);
+            return;
+        }
+
+        // Regular market hours
+        const priceEl = document.getElementById(`nasdaq-${_sid}`);
+        if (!priceEl) return;
+        const prev = st.prevNasdaq;
+        if (prev !== null && price !== prev) {
+            priceEl.classList.remove('price-flash-up', 'price-flash-down');
+            void priceEl.offsetWidth;
+            priceEl.classList.add(price > prev ? 'price-flash-up' : 'price-flash-down');
+        }
+        st.prevNasdaq = price;
+        st.extPrice = null;
+        priceEl.textContent = '$' + price.toFixed(2);
+        updateMarketCap(ticker);
+
+        const chgEl = document.getElementById(`nasdaq-chg-${_sid}`);
+        const prevClose = st.prevClose;
+        if (prevClose && chgEl) {
+            const chg = price - prevClose;
+            const pct = (chg / prevClose) * 100;
+            const sign = chg >= 0 ? '+' : '';
+            chgEl.innerHTML = `<span class="prev-ref">$${prevClose.toFixed(2)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
+            chgEl.className = 'price-block-change';
+        }
+    }
+
+    // ─── Fetch Shares / AUM ─────────────────────────────────────────────────
+    async function fetchAllShares() {
+        await Promise.allSettled(STOCKS.map(async (stock) => {
+            try {
+                const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,financialData`;
+                const json = await yahooFetch(url);
+                const result = json.quoteSummary?.result?.[0];
+                const mcapRaw = result?.summaryDetail?.marketCap?.raw;
+                const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
+                if (shares) {
+                    state[stock.ticker].shares = shares;
+                    updateMarketCap(stock.ticker);
+                } else if (mcapRaw && state[stock.ticker].nasdaqPrice) {
+                    state[stock.ticker].shares = mcapRaw / state[stock.ticker].nasdaqPrice;
+                    updateMarketCap(stock.ticker);
+                } else if (mcapRaw) {
+                    state[stock.ticker].mcap = mcapRaw;
+                    displayMarketCap(stock.ticker, mcapRaw);
+                }
+
+                const avgVol = result?.summaryDetail?.averageVolume?.raw;
+                if (avgVol) displayAvgVolume(stock.ticker, avgVol);
+
+                const _sid = sid(stock);
+                // Expense ratio (annualReportExpenseRatio) for ETFs
+                const expenseRatio = result?.defaultKeyStatistics?.annualReportExpenseRatio?.raw;
+                // 52W high/low from summaryDetail
+                const fiftyTwoWeekLow  = result?.summaryDetail?.fiftyTwoWeekLow?.raw;
+                const fiftyTwoWeekHigh = result?.summaryDetail?.fiftyTwoWeekHigh?.raw;
+
+                const fundamentalsEl = document.getElementById(`fundamentals-${_sid}`);
+                if (fundamentalsEl) {
+                    const parts = [];
+                    if (expenseRatio != null) parts.push(`<span class="fund-label">Expense Ratio</span> <span class="fund-value">${(expenseRatio * 100).toFixed(2)}%</span>`);
+                    if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' · ');
+                }
+            } catch(e) {}
+        }));
+    }
+
+    // ─── 52-Week High / Low ─────────────────────────────────────────────────
+    async function fetchATHForStock(stock) {
+        try {
+            const url = `${YAHOO_BASE}${stock.ticker}?interval=1d&range=1y`;
+            const json = await yahooFetch(url);
+            const result = json.chart.result[0];
+            const quote = result.indicators.quote[0];
+            const timestamps = result.timestamp || [];
+
+            const ms = getMarketStatus();
+            const marketOpen = (ms === 'market' || ms === 'premarket');
+            const closeLimit = (marketOpen && timestamps.length > 1) ? timestamps.length - 1 : timestamps.length;
+
+            let highClose = -Infinity, highTrade = -Infinity;
+            let highCloseDate = null, highTradeDate = null;
+            let lowClose = Infinity, lowTrade = Infinity;
+            let lowCloseDate = null, lowTradeDate = null;
+
+            for (let i = 0; i < closeLimit; i++) {
+                const c = quote.close[i];
+                if (c != null && c > highClose) { highClose = c; highCloseDate = timestamps[i]; }
+                if (c != null && c < lowClose) { lowClose = c; lowCloseDate = timestamps[i]; }
+            }
+            for (let i = 0; i < timestamps.length; i++) {
+                const h = quote.high[i], l = quote.low[i];
+                if (h != null && h > highTrade) { highTrade = h; highTradeDate = timestamps[i]; }
+                if (l != null && l < lowTrade) { lowTrade = l; lowTradeDate = timestamps[i]; }
+            }
+
+            if (highClose <= 0) return;
+
+            const _sid = sid(stock);
+            const athEl = document.getElementById(`ath-${_sid}`);
+            if (!athEl) return;
+
+            const fmtDate = (ts) => {
+                const d = new Date(ts * 1000);
+                const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
+            };
+            const curPrice = state[stock.ticker].nasdaqPrice;
+            const pctFromHigh = curPrice ? ((curPrice - highClose) / highClose * 100).toFixed(1) : null;
+            const pctFromHighTrade = curPrice ? ((curPrice - highTrade) / highTrade * 100).toFixed(1) : null;
+            const pctFromLow = curPrice ? ((curPrice - lowClose) / lowClose * 100).toFixed(1) : null;
+            const pctFromLowTrade = curPrice ? ((curPrice - lowTrade) / lowTrade * 100).toFixed(1) : null;
+            const pctHtml = (pct) => pct !== null ? ` <span class="ath-pct">(${Number(pct) >= 0 ? '+' : ''}${pct}%)</span>` : '';
+
+            athEl.innerHTML =
+                `<span class="ath-label">52W High Close:</span> <span class="ath-value">$${highClose.toFixed(2)}</span> (${fmtDate(highCloseDate)})${pctHtml(pctFromHigh)}<br>` +
+                `<span class="ath-label">52W High Trade:</span> <span class="ath-value">$${highTrade.toFixed(2)}</span> (${fmtDate(highTradeDate)})${pctHtml(pctFromHighTrade)}` +
+                `<hr class="ath-divider">` +
+                `<span class="ath-label">52W Low Close:</span> <span class="ath-value">$${lowClose.toFixed(2)}</span> (${fmtDate(lowCloseDate)})${pctHtml(pctFromLow)}<br>` +
+                `<span class="ath-label">52W Low Trade:</span> <span class="ath-value">$${lowTrade.toFixed(2)}</span> (${fmtDate(lowTradeDate)})${pctHtml(pctFromLowTrade)}`;
+        } catch (e) {}
+    }
+
+    // ─── Market Cap / AUM ───────────────────────────────────────────────────
+    function formatVolume(v) {
+        if (v >= 1e9) return `${(v/1e9).toFixed(1)}B`;
+        if (v >= 1e6) return `${(v/1e6).toFixed(1)}M`;
+        if (v >= 1e3) return `${(v/1e3).toFixed(0)}K`;
+        return v.toFixed(0);
+    }
+
+    function displayVolume(ticker, vol) {
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        const _sid = stock ? sid(stock) : ticker;
+        const el = document.getElementById(`vol-${_sid}`);
+        const metaEl = document.getElementById(`meta-${_sid}`);
+        if (!el || !metaEl) return;
+        el.textContent = `Vol: ${formatVolume(vol)}`;
+        metaEl.classList.add('has-volume');
+    }
+
+    function displayAvgVolume(ticker, avgVol) {
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        const _sid = stock ? sid(stock) : ticker;
+        const el = document.getElementById(`avgvol-${_sid}`);
+        if (!el) return;
+        el.textContent = `Avg Vol: ${formatVolume(avgVol)}`;
+    }
+
+    function displayMarketCap(ticker, mcap) {
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        const _sid = stock ? sid(stock) : ticker;
+        const el = document.getElementById(`mcap-${_sid}`);
+        if (!el) return;
+        if (mcap >= 1e12) el.textContent = `AUM: $${(mcap/1e12).toFixed(1)}T`;
+        else if (mcap >= 1e9) el.textContent = `AUM: $${(mcap/1e9).toFixed(1)}B`;
+        else el.textContent = `AUM: $${(mcap/1e6).toFixed(0)}M`;
+    }
+
+    function updateMarketCap(ticker) {
+        const st = state[ticker];
+        const ms = getMarketStatus();
+        let price;
+        if (ms === 'market') price = st.prevNasdaq || st.nasdaqPrice;
+        else price = st.sessionClose || st.prevNasdaq || st.nasdaqPrice;
+        if (!st.shares || !price) return;
+        const mcap = price * st.shares;
+        st.mcap = mcap;
+        displayMarketCap(ticker, mcap);
+        updateTotalAUM();
+    }
+
+    function updateTotalAUM() {
+        let totalCurrent = 0, totalPrev = 0, hasAny = false;
+        for (const stock of STOCKS) {
+            const st = state[stock.ticker];
+            if (!st.shares) continue;
+            const ms = getMarketStatus();
+            let price, prevPrice;
+            if (ms === 'market') {
+                price = st.prevNasdaq || st.nasdaqPrice;
+                prevPrice = st.prevClose;
+            } else {
+                price = st.sessionClose || st.prevNasdaq || st.nasdaqPrice;
+                prevPrice = st.prevClose;
+            }
+            if (!price || !prevPrice) continue;
+            hasAny = true;
+            totalCurrent += price * st.shares;
+            totalPrev += prevPrice * st.shares;
+        }
+        if (!hasAny) return;
+        const valEl = document.getElementById('mcap-total-etf');
+        const chgEl = document.getElementById('mcap-chg-etf');
+        if (!valEl || !chgEl) return;
+        valEl.textContent = formatLargeCurrency(totalCurrent);
+        if (totalPrev > 0) {
+            const pctChg = ((totalCurrent - totalPrev) / totalPrev) * 100;
+            const sign = pctChg >= 0 ? '+' : '';
+            chgEl.innerHTML = `<span class="mcap-prev-ref">Last Close: ${formatLargeCurrency(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
+            chgEl.className = 'mcap-summary-change';
+        }
+    }
+
+    function formatLargeCurrency(val) {
+        if (val >= 1e12) return `$${(val / 1e12).toFixed(2)}T`;
+        if (val >= 1e9) return `$${(val / 1e9).toFixed(1)}B`;
+        return `$${(val / 1e6).toFixed(0)}M`;
+    }
+
+    // ─── Dim state (pre/post/market) ─────────────────────────────────────────
+    function updateDimState() {
+        const ms = getMarketStatus();
+        STOCKS.forEach(s => {
+            const _sid = sid(s);
+            const card = document.getElementById(`card-${_sid}`);
+            if (!card) return;
+            const nasBl = card.querySelector('.nasdaq-block');
+            const extEl = document.getElementById(`ext-${_sid}`);
+            const nasDim = (ms !== 'market');
+            if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', nasDim);
+            const extDim = (ms === 'closed' || ms === 'market');
+            if (extEl) extEl.classList.toggle('ext-dimmed', extDim);
+            if (extDim) {
+                const extMirrorEl = document.getElementById(`ext-mirror-${_sid}`);
+                if (extMirrorEl) extMirrorEl.innerHTML = '';
+            }
+            const ohlEl = document.getElementById(`ohl-${_sid}`);
+            if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', nasDim);
+        });
+    }
+
+    // ─── Holiday Banner ──────────────────────────────────────────────────────
+    function updateHolidayBanner() {
+        const now = new Date();
+        const etStr = now.toLocaleString('en-US', { timeZone: 'America/New_York', hour12: false });
+        const etDate = new Date(etStr);
+        const yyyy = etDate.getFullYear();
+        const mm = String(etDate.getMonth() + 1).padStart(2, '0');
+        const dd = String(etDate.getDate()).padStart(2, '0');
+        const name = US_MARKET_HOLIDAYS.get(`${yyyy}-${mm}-${dd}`) || null;
+        const el = document.getElementById('holiday-banner');
+        if (el) {
+            if (name) {
+                el.innerHTML = `<img class="holiday-flag" src="logos/flag_us.png" alt="US"> Market Closed — ${name}`;
+                el.classList.add('visible');
+            } else {
+                el.innerHTML = '';
+                el.classList.remove('visible');
+            }
+        }
+    }
+
+    // ─── Collapse/Expand ────────────────────────────────────────────────────
+    function toggleCard(btn) {
+        const card = btn.closest('.stock-card');
+        const collapsed = card.classList.toggle('collapsed');
+        btn.textContent = collapsed ? '+' : '−';
+    }
+
+    function toggleAllCards(section) {
+        const grid = document.getElementById('stock-grid-etf');
+        const cards = grid.querySelectorAll('.stock-card');
+        const colBtn = document.getElementById(`collapse-btn-${section}`);
+        const shouldCollapse = colBtn ? colBtn.textContent.trim() === '−' : true;
+        cards.forEach(c => {
+            c.classList.toggle('collapsed', shouldCollapse);
+            const btn = c.querySelector('.collapse-toggle');
+            if (btn) btn.textContent = shouldCollapse ? '+' : '−';
+        });
+        if (colBtn) colBtn.textContent = shouldCollapse ? '+' : '−';
+    }
+
+    // ─── Init ────────────────────────────────────────────────────────────────
+    async function init() {
+        renderGrid();
+
+        if (window.innerWidth <= 640) {
+            document.querySelectorAll('.stock-card').forEach(c => {
+                c.classList.add('collapsed');
+                const btn = c.querySelector('.collapse-toggle');
+                if (btn) btn.textContent = '+';
+            });
+            const colBtn = document.getElementById('collapse-btn-etf');
+            if (colBtn) colBtn.textContent = '+';
+        }
+
+        initYahooProto();
+        connectYahooWs();
+
+        await Promise.allSettled(STOCKS.map(s => fetchNasdaqForStock(s)));
+        fetchAllShares();
+        await Promise.allSettled(STOCKS.map(s => fetchATHForStock(s)));
+
+        function updateETClock() {
+            const el = document.getElementById('et-clock');
+            if (el) el.textContent = formatDualTime(new Date());
+        }
+        setInterval(() => {
+            updateETClock();
+            updateDimState();
+        }, 60000);
+        updateETClock();
+        updateDimState();
+        updateHolidayBanner();
+
+        setInterval(() => Promise.allSettled(STOCKS.map(s => fetchNasdaqForStock(s))), 60000);
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
