@@ -278,18 +278,6 @@
             border: 1px solid color-mix(in srgb, var(--card-accent) 25%, transparent);
         }
 
-        /* ETF category badge (e.g., "3× Bull") */
-        .etf-category {
-            font-size: 0.58rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            color: var(--card-accent);
-            background: color-mix(in srgb, var(--card-accent) 10%, transparent);
-            border: 1px solid color-mix(in srgb, var(--card-accent) 25%, transparent);
-            padding: 2px 7px;
-            border-radius: 4px;
-        }
-
         .stock-prices {
             display: grid;
             grid-template-columns: 1fr;
@@ -485,8 +473,8 @@
     // ─── ETF Configuration ──────────────────────────────────────────────────
     // Add more ETFs here as needed
     const STOCKS = [
-        { ticker: 'SOXL', name: 'Direxion Semi Bull 3X', color: '#FF7043', exchange: 'NYSE Arca', category: '3× Bull', logo: 'logos/SOXL.png' },
-        { ticker: 'DRAM', name: 'Roundhill Memory ETF', color: '#5C6BC0', exchange: 'Cboe BZX', category: 'Memory Chips', logo: 'logos/DRAM.png' },
+        { ticker: 'SOXL', name: 'Direxion Semi Bull 3X', color: '#FF7043', exchange: 'NYSE Arca', logo: 'logos/SOXL.png' },
+        { ticker: 'DRAM', name: 'Roundhill Memory ETF', color: '#5C6BC0', exchange: 'Cboe BZX', logo: 'logos/DRAM.png' },
     ];
 
     function sid(s) { return s.ticker.replace(/[^A-Za-z0-9]/g, '_'); }
@@ -575,7 +563,6 @@
                 <div class="stock-header">
                     ${s.logo ? `<img class="stock-logo" src="${s.logo}" alt="${s.name}" style="background:#fff;padding:3px;">` : `<div class="etf-logo-placeholder">${s.ticker}</div>`}
                     <span class="stock-name">${s.name}</span>
-                    ${s.category ? `<span class="etf-category">${s.category}</span>` : ''}
                     <span class="stock-ticker">${s.ticker}</span>
                 </div>
                 <button class="collapse-toggle" onclick="toggleCard(this)">−</button>
