@@ -1479,7 +1479,10 @@
     function connectHlWs() {
         if (hlWs && hlWs.readyState === WebSocket.OPEN) return;
         hlWs = new WebSocket('wss://api.hyperliquid.xyz/ws');
+        let subscribed = [];
         hlWs.onopen = () => {
+            subscribed = STOCKS.filter(s => s.hl).map(s => s.hl);
+            console.log('HL Subscribe:', subscribed);
             STOCKS.filter(s => s.hl).forEach(s => {
                 hlWs.send(JSON.stringify({
                     method: 'subscribe',
@@ -1487,17 +1490,19 @@
                 }));
             });
         };
+        let msgCount = 0;
         hlWs.onmessage = (event) => {
             try {
                 const msg = JSON.parse(event.data);
+                msgCount++;
+                // Log first 3 HL messages to see structure
+                if (msgCount <= 3) console.log('HL msg', msgCount, ':', msg.channel, msg.data?.coin);
                 if (msg.channel === 'l2Book' && msg.data) {
                     const coin = msg.data.coin;
                     const stock = STOCKS.find(s => s.hl === coin);
                     if (!stock) {
                         // Debug: log unmatched coins to understand the format
-                        if (coin && (coin.includes('SAMSUNG') || coin.includes('SKHYNIX'))) {
-                            console.log('Unmatched Korean stock coin:', coin, 'Looking for:', STOCKS.filter(s => s.currency === 'KRW').map(s => s.hl));
-                        }
+                        console.log('HL coin not found:', coin, 'subscribed:', subscribed);
                         return;
                     }
                     const levels = msg.data.levels;
