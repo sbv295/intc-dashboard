@@ -598,6 +598,36 @@
             font-weight: 700;
             margin-left: 4px;
         }
+        .stock-earnings-date .ed-countdown {
+            display: block;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-top: 1px;
+        }
+        /* Highlighted golden panel when earnings are within a week */
+        .stock-earnings-date.soon {
+            top: 5px;
+            background: linear-gradient(135deg, #ffd54a, var(--amber));
+            color: #241900;
+            padding: 4px 12px 5px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(255,193,7,0.5);
+            animation: earningsPulse 2.2s ease-in-out infinite;
+            z-index: 1;
+        }
+        .stock-earnings-date.soon .ed-label,
+        .stock-earnings-date.soon .ed-value {
+            color: #241900;
+        }
+        .stock-earnings-date.soon .ed-countdown {
+            color: #3a2600;
+            opacity: 0.9;
+        }
+        @keyframes earningsPulse {
+            0%, 100% { box-shadow: 0 2px 10px rgba(255,193,7,0.5); }
+            50% { box-shadow: 0 2px 16px rgba(255,193,7,0.85); }
+        }
 
         /* ─── Fundamentals (PE + Analyst Target) ────────── */
         .stock-fundamentals {
@@ -707,8 +737,15 @@
         .stock-card.collapsed .stock-collapse-body {
             grid-template-rows: 0fr;
         }
-        .stock-card.collapsed .stock-earnings-date {
+        .stock-card.collapsed .stock-earnings-date:not(.soon) {
             display: none !important;
+        }
+        .stock-card.collapsed .stock-earnings-date.soon {
+            display: block !important;
+            position: static;
+            transform: none;
+            width: fit-content;
+            margin: 0 auto 8px;
         }
         .stock-extended-mirror { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.22s ease 0.08s, opacity 0.18s ease 0.1s; }
         .stock-card.collapsed .stock-extended-mirror:not(:empty) { max-height: 60px; opacity: 1; }
@@ -798,6 +835,39 @@
     ];
 
     function sid(s) { return (s.displayTicker || s.ticker).replace(/[^A-Za-z0-9]/g, '_'); }
+
+    // ─── Earnings Countdown ──────────────────────────────────────────────────
+    const EARNINGS_SOON_WINDOW = 7 * 86400; // 1 week in seconds
+
+    function formatEarningsCountdown(sec) {
+        const days = Math.floor(sec / 86400);
+        const hrs = Math.floor((sec % 86400) / 3600);
+        const mins = Math.floor((sec % 3600) / 60);
+        if (days > 0) return `${days}d ${hrs}h`;
+        if (hrs > 0) return `${hrs}h ${mins}m`;
+        return `${mins}m`;
+    }
+
+    function updateEarningsCountdowns() {
+        const now = Date.now() / 1000;
+        document.querySelectorAll('.stock-earnings-date[data-earnings-raw]').forEach(el => {
+            const raw = parseFloat(el.dataset.earningsRaw);
+            const diff = raw - now;
+            const soon = diff > 0 && diff <= EARNINGS_SOON_WINDOW;
+            el.classList.toggle('soon', soon);
+            let countdownEl = el.querySelector('.ed-countdown');
+            if (soon) {
+                if (!countdownEl) {
+                    countdownEl = document.createElement('span');
+                    countdownEl.className = 'ed-countdown';
+                    el.appendChild(countdownEl);
+                }
+                countdownEl.textContent = formatEarningsCountdown(diff);
+            } else if (countdownEl) {
+                countdownEl.remove();
+            }
+        });
+    }
 
     let krwToUsd = null;
 
@@ -1560,6 +1630,8 @@
                             const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
                             const yy = String(d.getFullYear()).slice(2);
                             earningsEl.innerHTML = `<span class="ed-label">Earnings</span><span class="ed-value">${d.getDate()} ${MONTHS[d.getMonth()]} ${yy}</span>`;
+                            earningsEl.dataset.earningsRaw = upcoming[0].raw;
+                            updateEarningsCountdowns();
                         }
                     }
 
@@ -1799,11 +1871,13 @@
             updateETClock();
             updateHlDimState();
             updateSentimentVisibility();
+            updateEarningsCountdowns();
         }, 60000);
         updateETClock();
         updateHlDimState();
         updateHolidayBanner();
         updateSentimentVisibility();
+        updateEarningsCountdowns();
 
         // Refresh NASDAQ data every 60s
         setInterval(fetchAllNasdaq, 60000);
