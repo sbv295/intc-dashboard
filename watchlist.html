@@ -260,6 +260,10 @@
             gap: 8px;
         }
 
+        .stock-prices:has(.nasdaq-block + .hl-block) {
+            grid-template-columns: 1fr 1fr;
+        }
+
         .stock-prices:has(.nasdaq-block + .hl-block + .krw-block) {
             grid-template-columns: 1fr 1fr 1fr;
         }
@@ -1319,6 +1323,23 @@
                 const ohlEl = document.getElementById(`ohl-${_sid}`);
                 if (ohlEl && regOpen !== null && regHigh !== -Infinity) {
                     ohlEl.innerHTML = `<span class="ohl-label">O</span><span class="ohl-value">${fmtPrice(stock, regOpen)}</span> · <span class="ohl-label">H</span><span class="ohl-value">${fmtPrice(stock, regHigh)}</span> · <span class="ohl-label">L</span><span class="ohl-value">${fmtPrice(stock, regLow)}</span>`;
+                }
+            }
+
+            // For Korean stocks with Hyperliquid: show USD-converted price as fallback in HL column
+            if (stock.currency === 'KRW' && stock.hl && displayPrice && krwToUsd) {
+                const hlEl = document.getElementById(`hl-${_sid}`);
+                const hlChgEl = document.getElementById(`hl-chg-${_sid}`);
+                if (hlEl && hlEl.textContent === '—') {
+                    const usdPrice = displayPrice * krwToUsd;
+                    hlEl.textContent = `$${usdPrice.toFixed(2)}`;
+                    if (hlChgEl && prevClose) {
+                        const chg = usdPrice - (prevClose * krwToUsd);
+                        const pct = (chg / (prevClose * krwToUsd)) * 100;
+                        const sign = chg >= 0 ? '+' : '';
+                        hlChgEl.textContent = `${sign}${pct.toFixed(2)}%`;
+                        hlChgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
+                    }
                 }
             }
 
