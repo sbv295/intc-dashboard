@@ -1472,7 +1472,13 @@
                 if (msg.channel === 'l2Book' && msg.data) {
                     const coin = msg.data.coin;
                     const stock = STOCKS.find(s => s.hl === coin);
-                    if (!stock) return;
+                    if (!stock) {
+                        // Debug: log unmatched coins to understand the format
+                        if (coin && (coin.includes('SAMSUNG') || coin.includes('SKHYNIX'))) {
+                            console.log('Unmatched Korean stock coin:', coin, 'Looking for:', STOCKS.filter(s => s.currency === 'KRW').map(s => s.hl));
+                        }
+                        return;
+                    }
                     const levels = msg.data.levels;
                     if (levels && levels[0] && levels[1] && levels[0].length && levels[1].length) {
                         const bid = parseFloat(levels[0][0].px);
@@ -1481,7 +1487,7 @@
                         updateHlPrice(stock.ticker, mid);
                     }
                 }
-            } catch (e) {}
+            } catch (e) { console.error('WebSocket parse error:', e); }
         };
         hlWs.onclose = () => setTimeout(connectHlWs, 3000);
         hlWs.onerror = () => hlWs.close();
