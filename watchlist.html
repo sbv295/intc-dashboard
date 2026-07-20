@@ -599,34 +599,15 @@
             margin-left: 4px;
         }
         .stock-earnings-date .ed-countdown {
-            display: block;
-            font-size: 0.6rem;
+            font-size: 0.68rem;
             font-weight: 700;
-            letter-spacing: 0.5px;
-            margin-top: 1px;
+            margin-left: 4px;
         }
-        /* Highlighted golden panel when earnings are within a week */
-        .stock-earnings-date.soon {
-            top: 5px;
-            background: linear-gradient(135deg, #ffd54a, var(--amber));
-            color: #241900;
-            padding: 4px 12px 5px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(255,193,7,0.5);
-            animation: earningsPulse 2.2s ease-in-out infinite;
-            z-index: 1;
-        }
+        /* Golden text when earnings are within a week — same line, no extra space */
         .stock-earnings-date.soon .ed-label,
-        .stock-earnings-date.soon .ed-value {
-            color: #241900;
-        }
+        .stock-earnings-date.soon .ed-value,
         .stock-earnings-date.soon .ed-countdown {
-            color: #3a2600;
-            opacity: 0.9;
-        }
-        @keyframes earningsPulse {
-            0%, 100% { box-shadow: 0 2px 10px rgba(255,193,7,0.5); }
-            50% { box-shadow: 0 2px 16px rgba(255,193,7,0.85); }
+            color: var(--amber);
         }
 
         /* ─── Fundamentals (PE + Analyst Target) ────────── */
@@ -742,10 +723,6 @@
         }
         .stock-card.collapsed .stock-earnings-date.soon {
             display: block !important;
-            position: static;
-            transform: none;
-            width: fit-content;
-            margin: 0 auto 8px;
         }
         .stock-extended-mirror { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.22s ease 0.08s, opacity 0.18s ease 0.1s; }
         .stock-card.collapsed .stock-extended-mirror:not(:empty) { max-height: 60px; opacity: 1; }
@@ -862,7 +839,7 @@
                     countdownEl.className = 'ed-countdown';
                     el.appendChild(countdownEl);
                 }
-                countdownEl.textContent = formatEarningsCountdown(diff);
+                countdownEl.textContent = `(${formatEarningsCountdown(diff)})`;
             } else if (countdownEl) {
                 countdownEl.remove();
             }
