@@ -153,7 +153,7 @@
         }
 
         #stock-grid-kr {
-            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
         }
 
         @media (max-width: 640px) {
@@ -258,6 +258,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 8px;
+        }
+
+        .stock-prices:has(.nasdaq-block + .hl-block + .krw-block) {
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
         .price-block {
@@ -791,8 +795,8 @@
         { ticker: 'ARM', name: 'ARM', hl: 'xyz:ARM', color: '#0090BF', logo: 'logos/ARM.svg', ceo: 'logos/ceo_cartoon/arm_ceo.png' },
         { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg', ceo: 'logos/ceo_cartoon/qualcomm_ceo.png' },
         { ticker: 'MBLY', name: 'Mobileye', hl: null, color: '#1B2CC1', logo: 'logos/MBLY.png', ceo: 'logos/ceo_cartoon/mobileye_ceo.png' },
-        { ticker: '005930.KS', name: 'Samsung', hl: null, color: '#4A6CF7', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
-        { ticker: '000660.KS', name: 'SK Hynix', hl: null, color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
+        { ticker: '005930.KS', name: 'Samsung', hl: 'xyz:SAMSUNG', color: '#4A6CF7', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
+        { ticker: '000660.KS', name: 'SK Hynix', hl: 'xyz:SKHYNIX', color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
     ];
 
     function sid(s) { return (s.displayTicker || s.ticker).replace(/[^A-Za-z0-9]/g, '_'); }
@@ -1091,12 +1095,12 @@
                         <div class="price-block-value" id="nasdaq-${id}">—</div>
                         <div class="price-block-change" id="nasdaq-chg-${id}"></div>
                     </div>
-                    ${!s.currency ? `<div class="price-block hl-block" data-ticker="${sid(s)}">
+                    ${(s.hl) ? `<div class="price-block hl-block" data-ticker="${sid(s)}">
                         <div class="price-block-label">Hyperliquid</div>
-                        <div class="price-block-value" id="hl-${id}">${s.hl ? '—' : 'N/A'}</div>
+                        <div class="price-block-value" id="hl-${id}">—</div>
                         <div class="price-block-change" id="hl-chg-${id}"></div>
                     </div>` : ''}
-                    ${s.currency === 'KRW' ? `<div class="price-block krw-block">
+                    ${s.currency === 'KRW' && !s.hl ? `<div class="price-block krw-block">
                         <div class="price-block-label">KRW</div>
                         <div class="price-block-value" id="krw-${id}">—</div>
                         <div class="price-block-change" id="krw-chg-${id}"></div>
