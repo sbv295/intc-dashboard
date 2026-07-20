@@ -820,7 +820,7 @@
         const days = Math.floor(sec / 86400);
         const hrs = Math.floor((sec % 86400) / 3600);
         const mins = Math.floor((sec % 3600) / 60);
-        if (days > 0) return `${days}d ${hrs}h`;
+        if (days > 0) return `${days}d ${hrs}h ${mins}m`;
         if (hrs > 0) return `${hrs}h ${mins}m`;
         return `${mins}m`;
     }
