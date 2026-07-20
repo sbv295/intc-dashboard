@@ -817,7 +817,7 @@
     }
 
     function stockExchange(stock) {
-        if (stock.currency === 'KRW') return 'KRX';
+        if (stock.ticker.endsWith('.KS') || stock.ticker.endsWith('.KQ')) return 'KRX';
         return stock.exchange || 'NASDAQ';
     }
 
