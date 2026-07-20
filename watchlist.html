@@ -1094,11 +1094,11 @@
                 </div>
                 <button class="collapse-toggle" onclick="toggleCard(this)">−</button>
                 <div class="stock-prices">
-                    <div class="price-block nasdaq-block" ${!s.currency && s.hl !== null && !s.hl ? 'style="grid-column: 1 / -1"' : ''}>
-                        <div class="price-block-label">${s.currency === 'KRW' ? 'KRX' : stockExchange(s)}</div>
+                    ${s.currency !== 'KRW' ? `<div class="price-block nasdaq-block" ${!s.currency && s.hl !== null && !s.hl ? 'style="grid-column: 1 / -1"' : ''}>
+                        <div class="price-block-label">${stockExchange(s)}</div>
                         <div class="price-block-value" id="nasdaq-${id}">—</div>
                         <div class="price-block-change" id="nasdaq-chg-${id}"></div>
-                    </div>
+                    </div>` : ''}
                     ${(s.hl) ? `<div class="price-block hl-block" data-ticker="${sid(s)}">
                         <div class="price-block-label">Hyperliquid</div>
                         <div class="price-block-value" id="hl-${id}">—</div>
