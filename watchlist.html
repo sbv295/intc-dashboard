@@ -1478,11 +1478,13 @@
 
     function connectHlWs() {
         if (hlWs && hlWs.readyState === WebSocket.OPEN) return;
+        console.log('HL: Attempting WebSocket connection...');
         hlWs = new WebSocket('wss://api.hyperliquid.xyz/ws');
         let subscribed = [];
         hlWs.onopen = () => {
+            console.log('HL: Connected to WebSocket');
             subscribed = STOCKS.filter(s => s.hl).map(s => s.hl);
-            console.log('HL Subscribe:', subscribed);
+            console.log('HL: Subscribing to coins:', subscribed);
             STOCKS.filter(s => s.hl).forEach(s => {
                 hlWs.send(JSON.stringify({
                     method: 'subscribe',
@@ -1491,18 +1493,21 @@
             });
         };
         let msgCount = 0;
+        let msgTypes = {};
         hlWs.onmessage = (event) => {
             try {
                 const msg = JSON.parse(event.data);
                 msgCount++;
-                // Log first 3 HL messages to see structure
-                if (msgCount <= 3) console.log('HL msg', msgCount, ':', msg.channel, msg.data?.coin);
+                if (msg.channel) msgTypes[msg.channel] = (msgTypes[msg.channel] || 0) + 1;
+                // Log summary after first 5 messages
+                if (msgCount === 5) {
+                    console.log('HL: First 5 msgs, types:', msgTypes);
+                }
                 if (msg.channel === 'l2Book' && msg.data) {
                     const coin = msg.data.coin;
                     const stock = STOCKS.find(s => s.hl === coin);
                     if (!stock) {
-                        // Debug: log unmatched coins to understand the format
-                        console.log('HL coin not found:', coin, 'subscribed:', subscribed);
+                        console.log('HL: Unmatched coin:', coin);
                         return;
                     }
                     const levels = msg.data.levels;
@@ -1513,10 +1518,16 @@
                         updateHlPrice(stock.ticker, mid);
                     }
                 }
-            } catch (e) { console.error('WebSocket parse error:', e); }
+            } catch (e) { console.error('HL: Parse error:', e.message); }
         };
-        hlWs.onclose = () => setTimeout(connectHlWs, 3000);
-        hlWs.onerror = () => hlWs.close();
+        hlWs.onclose = () => {
+            console.log('HL: WebSocket closed, reconnecting in 3s');
+            setTimeout(connectHlWs, 3000);
+        };
+        hlWs.onerror = (err) => {
+            console.error('HL: WebSocket error:', err);
+            hlWs.close();
+        };
     }
 
     function updateHlPrice(ticker, price) {
