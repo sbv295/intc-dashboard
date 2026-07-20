@@ -260,14 +260,6 @@
             gap: 8px;
         }
 
-        .stock-prices:has(.nasdaq-block + .hl-block) {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .stock-prices:has(.nasdaq-block + .hl-block + .krw-block) {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
         .price-block {
             text-align: center;
         }
@@ -302,9 +294,6 @@
             opacity: 0.3;
         }
         .price-block.nasdaq-dimmed {
-            opacity: 0.3;
-        }
-        .price-block.krw-dimmed {
             opacity: 0.3;
         }
         .stock-extended.ext-dimmed {
@@ -799,8 +788,8 @@
         { ticker: 'ARM', name: 'ARM', hl: 'xyz:ARM', color: '#0090BF', logo: 'logos/ARM.svg', ceo: 'logos/ceo_cartoon/arm_ceo.png' },
         { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg', ceo: 'logos/ceo_cartoon/qualcomm_ceo.png' },
         { ticker: 'MBLY', name: 'Mobileye', hl: null, color: '#1B2CC1', logo: 'logos/MBLY.png', ceo: 'logos/ceo_cartoon/mobileye_ceo.png' },
-        { ticker: '005930.KS', name: 'Samsung', hl: 'xyz:SMSN', color: '#4A6CF7', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
-        { ticker: '000660.KS', name: 'SK Hynix', color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
+        { ticker: '005930.KS', name: 'Samsung', hl: 'xyz:SMSN', color: '#4A6CF7', logo: 'logos/SAMSUNG.svg', displayTicker: 'SMSN' },
+        { ticker: '000660.KS', name: 'SK Hynix', color: '#E4002B', logo: 'logos/SKHYNIX.svg', displayTicker: 'SKHY' },
     ];
 
     function sid(s) { return (s.displayTicker || s.ticker).replace(/[^A-Za-z0-9]/g, '_'); }
@@ -1094,11 +1083,11 @@
                 </div>
                 <button class="collapse-toggle" onclick="toggleCard(this)">−</button>
                 <div class="stock-prices">
-                    ${s.currency !== 'KRW' ? `<div class="price-block nasdaq-block" ${!s.currency && s.hl !== null && !s.hl ? 'style="grid-column: 1 / -1"' : ''}>
-                        <div class="price-block-label">${stockExchange(s)}</div>
+                    <div class="price-block nasdaq-block" ${!s.currency && s.hl !== null && !s.hl ? 'style="grid-column: 1 / -1"' : ''}>
+                        <div class="price-block-label">${s.currency === 'KRW' ? 'KRX' : stockExchange(s)}</div>
                         <div class="price-block-value" id="nasdaq-${id}">—</div>
                         <div class="price-block-change" id="nasdaq-chg-${id}"></div>
-                    </div>` : ''}
+                    </div>
                     ${(s.hl) ? `<div class="price-block hl-block" data-ticker="${sid(s)}">
                         <div class="price-block-label">Hyperliquid</div>
                         <div class="price-block-value" id="hl-${id}">—</div>
@@ -1240,20 +1229,7 @@
                     // Only update sentiment during regular market hours from this path
                     if (ms === 'market') updateSentiment(stock.ticker, pct);
                 }
-                if (stock.currency === 'KRW') {
-                    const krwEl = document.getElementById(`krw-${_sid}`);
-                    const krwChgEl = document.getElementById(`krw-chg-${_sid}`);
-                    if (krwEl) {
-                        krwEl.textContent = '₩' + Math.round(displayPrice).toLocaleString();
-                    }
-                    if (krwChgEl && refClose) {
-                        const chg = displayPrice - refClose;
-                        const pct = (chg / refClose) * 100;
-                        const sign = chg >= 0 ? '+' : '';
-                        krwChgEl.innerHTML = `<span class="prev-ref">₩${Math.round(refClose).toLocaleString()}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
-                        krwChgEl.className = `price-block-change`;
-                    }
-                }
+
             }
 
             // Extended price
@@ -1442,20 +1418,7 @@
             chgEl.className = `price-block-change`;
             updateSentiment(ticker, pct);
         }
-        if (stock.currency === 'KRW') {
-            const krwEl = document.getElementById(`krw-${_sid}`);
-            const krwChgEl = document.getElementById(`krw-chg-${_sid}`);
-            if (krwEl) {
-                krwEl.textContent = '₩' + Math.round(price).toLocaleString();
-            }
-            if (krwChgEl && prevClose) {
-                const chg = price - prevClose;
-                const pct = (chg / prevClose) * 100;
-                const sign = chg >= 0 ? '+' : '';
-                krwChgEl.innerHTML = `<span class="prev-ref">₩${Math.round(prevClose).toLocaleString()}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
-                krwChgEl.className = `price-block-change`;
-            }
-        }
+
     }
 
     // ─── Hyperliquid WebSocket ──────────────────────────────────────────────
@@ -1555,22 +1518,7 @@
             chgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
         }
 
-        // For Korean stocks, also update the KRW column
-        if (stock.currency === 'KRW' && krwToUsd) {
-            const krwPrice = price / krwToUsd;
-            const krwEl = document.getElementById(`krw-${_sid}`);
-            if (krwEl) {
-                krwEl.textContent = '₩' + Math.round(krwPrice).toLocaleString();
-            }
-            const krwChgEl = document.getElementById(`krw-chg-${_sid}`);
-            if (krwChgEl && refClose) {
-                const chg = krwPrice - refClose;
-                const pct = (chg / refClose) * 100;
-                const sign = chg >= 0 ? '+' : '';
-                krwChgEl.innerHTML = `<span class="prev-ref">₩${Math.round(refClose).toLocaleString()}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
-                krwChgEl.className = `price-block-change`;
-            }
-        }
+
     }
 
     // ─── Fetch Shares Outstanding ────────────────────────────────────────────
@@ -1829,7 +1777,6 @@
         initYahooProto();
         connectYahooWs();
         connectHlWs();
-        await fetchKrwRate();
         fetchAllNasdaq().then(() => {
             fetchAllShares();
             fetchAllATH();
@@ -1926,28 +1873,17 @@
             const nasBl = card.querySelector('.nasdaq-block');
             const extEl = document.getElementById(`ext-${_sid}`);
 
-            if (s.currency === 'KRW') {
-                // KRX stocks: bright during KRX market hours
-                const dim = (krMs !== 'market');
-                if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', dim);
-                const krwBl = card.querySelector('.krw-block');
-                if (krwBl) krwBl.classList.toggle('krw-dimmed', dim);
-                if (extEl) extEl.classList.toggle('ext-dimmed', true); // no extended hours for KRX
-                const ohlEl = document.getElementById(`ohl-${_sid}`);
-                if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', dim);
-            } else {
-                // US stocks
-                const nasDim = (usMs !== 'market');
-                if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', nasDim);
-                const extDim = (usMs === 'closed' || usMs === 'market');
-                if (extEl) extEl.classList.toggle('ext-dimmed', extDim);
-                if (extDim) {
-                    const extMirrorEl = document.getElementById(`ext-mirror-${_sid}`);
-                    if (extMirrorEl) extMirrorEl.innerHTML = '';
-                }
-                const ohlEl = document.getElementById(`ohl-${_sid}`);
-                if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', nasDim);
+            // US stocks and Korean stocks use US market hours
+            const nasDim = (usMs !== 'market');
+            if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', nasDim);
+            const extDim = (usMs === 'closed' || usMs === 'market');
+            if (extEl) extEl.classList.toggle('ext-dimmed', extDim);
+            if (extDim) {
+                const extMirrorEl = document.getElementById(`ext-mirror-${_sid}`);
+                if (extMirrorEl) extMirrorEl.innerHTML = '';
             }
+            const ohlEl = document.getElementById(`ohl-${_sid}`);
+            if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', nasDim);
         });
     }
 
