@@ -1519,62 +1519,70 @@
     // ─── Fetch Shares Outstanding ────────────────────────────────────────────
     async function fetchAllShares() {
         await Promise.allSettled(STOCKS.map(async (stock) => {
-            try {
-                const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,calendarEvents,financialData`;
-                const json = await yahooFetch(url);
-                const result = json.quoteSummary?.result?.[0];
-                // Yahoo sometimes omits marketCap/sharesOutstanding for a ticker (returns {}).
-                // nonDilutedMarketCap is a more reliable fallback in that case.
-                const mcapRaw = result?.summaryDetail?.marketCap?.raw || result?.summaryDetail?.nonDilutedMarketCap?.raw;
-                const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
-                if (shares) {
-                    state[stock.ticker].shares = shares;
-                    updateMarketCap(stock.ticker);
-                } else if (mcapRaw && state[stock.ticker].nasdaqPrice) {
-                    // Fallback: derive shares from Yahoo's market cap when sharesOutstanding unavailable
-                    state[stock.ticker].shares = mcapRaw / state[stock.ticker].nasdaqPrice;
-                    updateMarketCap(stock.ticker);
-                } else if (mcapRaw) {
-                    state[stock.ticker].mcap = mcapRaw;
-                    displayMarketCap(stock.ticker, mcapRaw);
-                }
-                // Average volume
-                const avgVol = result?.summaryDetail?.averageVolume?.raw;
-                if (avgVol) displayAvgVolume(stock.ticker, avgVol);
-
-                const _sid = sid(stock);
-
-                // Earnings date — show next upcoming date in DD/MM/YY
-                const earningsDates = result?.calendarEvents?.earnings?.earningsDate;
-                const earningsEl = document.getElementById(`earningsdate-${_sid}`);
-                if (earningsEl && earningsDates && earningsDates.length > 0) {
-                    const now = Date.now() / 1000;
-                    const upcoming = earningsDates.filter(d => d.raw > now - 86400);
-                    if (upcoming.length > 0) {
-                        const d = new Date(upcoming[0].raw * 1000);
-                        const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-                        const yy = String(d.getFullYear()).slice(2);
-                        earningsEl.innerHTML = `<span class="ed-label">Earnings</span><span class="ed-value">${d.getDate()} ${MONTHS[d.getMonth()]} ${yy}</span>`;
+            // Retry once on failure — parallel proxy requests occasionally get rate-limited,
+            // which would otherwise silently exclude a stock from the market cap total.
+            for (let attempt = 0; attempt < 2; attempt++) {
+                try {
+                    const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,calendarEvents,financialData`;
+                    const json = await yahooFetch(url);
+                    const result = json.quoteSummary?.result?.[0];
+                    // Yahoo sometimes omits marketCap/sharesOutstanding for a ticker (returns {}).
+                    // nonDilutedMarketCap is a more reliable fallback in that case.
+                    const mcapRaw = result?.summaryDetail?.marketCap?.raw || result?.summaryDetail?.nonDilutedMarketCap?.raw;
+                    const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
+                    if (shares) {
+                        state[stock.ticker].shares = shares;
+                        updateMarketCap(stock.ticker);
+                    } else if (mcapRaw && state[stock.ticker].nasdaqPrice) {
+                        // Fallback: derive shares from Yahoo's market cap when sharesOutstanding unavailable
+                        state[stock.ticker].shares = mcapRaw / state[stock.ticker].nasdaqPrice;
+                        updateMarketCap(stock.ticker);
+                    } else if (mcapRaw) {
+                        state[stock.ticker].mcap = mcapRaw;
+                        displayMarketCap(stock.ticker, mcapRaw);
                     }
-                }
+                    // Average volume
+                    const avgVol = result?.summaryDetail?.averageVolume?.raw;
+                    if (avgVol) displayAvgVolume(stock.ticker, avgVol);
 
-                // Fundamentals: PE (TTM), PE (Fwd), Analyst Mean Target
-                const trailingPE = result?.summaryDetail?.trailingPE?.raw;
-                const forwardPE  = result?.summaryDetail?.forwardPE?.raw;
-                const targetPrice = result?.financialData?.targetMeanPrice?.raw;
-                const fundamentalsEl = document.getElementById(`fundamentals-${_sid}`);
-                if (fundamentalsEl) {
-                    const parts = [];
-                    if (trailingPE != null && isFinite(trailingPE)) parts.push(`<span class="fund-label">PE(TTM)</span> <span class="fund-value">${trailingPE.toFixed(1)}</span>`);
-                    if (forwardPE  != null && isFinite(forwardPE))  parts.push(`<span class="fund-label">PE(Fwd)</span> <span class="fund-value">${forwardPE.toFixed(1)}</span>`);
-                    if (targetPrice != null) {
-                        parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice(stock, targetPrice)}</span>`);
+                    const _sid = sid(stock);
+
+                    // Earnings date — show next upcoming date in DD/MM/YY
+                    const earningsDates = result?.calendarEvents?.earnings?.earningsDate;
+                    const earningsEl = document.getElementById(`earningsdate-${_sid}`);
+                    if (earningsEl && earningsDates && earningsDates.length > 0) {
+                        const now = Date.now() / 1000;
+                        const upcoming = earningsDates.filter(d => d.raw > now - 86400);
+                        if (upcoming.length > 0) {
+                            const d = new Date(upcoming[0].raw * 1000);
+                            const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+                            const yy = String(d.getFullYear()).slice(2);
+                            earningsEl.innerHTML = `<span class="ed-label">Earnings</span><span class="ed-value">${d.getDate()} ${MONTHS[d.getMonth()]} ${yy}</span>`;
+                        }
                     }
-                    if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' · ');
+
+                    // Fundamentals: PE (TTM), PE (Fwd), Analyst Mean Target
+                    const trailingPE = result?.summaryDetail?.trailingPE?.raw;
+                    const forwardPE  = result?.summaryDetail?.forwardPE?.raw;
+                    const targetPrice = result?.financialData?.targetMeanPrice?.raw;
+                    const fundamentalsEl = document.getElementById(`fundamentals-${_sid}`);
+                    if (fundamentalsEl) {
+                        const parts = [];
+                        if (trailingPE != null && isFinite(trailingPE)) parts.push(`<span class="fund-label">PE(TTM)</span> <span class="fund-value">${trailingPE.toFixed(1)}</span>`);
+                        if (forwardPE  != null && isFinite(forwardPE))  parts.push(`<span class="fund-label">PE(Fwd)</span> <span class="fund-value">${forwardPE.toFixed(1)}</span>`);
+                        if (targetPrice != null) {
+                            parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice(stock, targetPrice)}</span>`);
+                        }
+                        if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' · ');
+                    }
+                    break; // success — no retry needed
+                } catch(e) {
+                    if (attempt === 0) await new Promise(r => setTimeout(r, 1500));
                 }
-            } catch(e) {}
+            }
         }));
     }
+
 
     function formatVolume(v) {
         if (v >= 1e9) return `${(v/1e9).toFixed(1)}B`;
