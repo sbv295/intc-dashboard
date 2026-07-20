@@ -1481,10 +1481,12 @@
         console.log('HL: Attempting WebSocket connection...');
         hlWs = new WebSocket('wss://api.hyperliquid.xyz/ws');
         let subscribed = [];
+        let reconnectCount = 0;
         hlWs.onopen = () => {
             console.log('HL: Connected to WebSocket');
             subscribed = STOCKS.filter(s => s.hl).map(s => s.hl);
             console.log('HL: Subscribing to coins:', subscribed);
+            reconnectCount = 0;
             STOCKS.filter(s => s.hl).forEach(s => {
                 hlWs.send(JSON.stringify({
                     method: 'subscribe',
@@ -1521,8 +1523,10 @@
             } catch (e) { console.error('HL: Parse error:', e.message); }
         };
         hlWs.onclose = () => {
-            console.log('HL: WebSocket closed, reconnecting in 3s');
-            setTimeout(connectHlWs, 3000);
+            reconnectCount++;
+            const delay = Math.min(3000 * reconnectCount, 30000); // Exponential backoff, max 30s
+            console.log(`HL: WebSocket closed (attempt ${reconnectCount}), reconnecting in ${delay}ms`);
+            setTimeout(connectHlWs, delay);
         };
         hlWs.onerror = (err) => {
             console.error('HL: WebSocket error:', err);
@@ -1536,6 +1540,11 @@
         const _sid = sid(stock);
         const priceEl = document.getElementById(`hl-${_sid}`);
         if (!priceEl) return;
+
+        // Debug: Log Korean stock price updates
+        if (stock.currency === 'KRW') {
+            console.log(`HL: Got price for ${stock.name} (${stock.hl}): $${price.toFixed(2)}`);
+        }
 
         const st = state[ticker];
         const prev = st.prevHl;
