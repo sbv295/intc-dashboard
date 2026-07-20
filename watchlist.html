@@ -1523,7 +1523,9 @@
                 const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,calendarEvents,financialData`;
                 const json = await yahooFetch(url);
                 const result = json.quoteSummary?.result?.[0];
-                const mcapRaw = result?.summaryDetail?.marketCap?.raw;
+                // Yahoo sometimes omits marketCap/sharesOutstanding for a ticker (returns {}).
+                // nonDilutedMarketCap is a more reliable fallback in that case.
+                const mcapRaw = result?.summaryDetail?.marketCap?.raw || result?.summaryDetail?.nonDilutedMarketCap?.raw;
                 const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
                 if (shares) {
                     state[stock.ticker].shares = shares;
