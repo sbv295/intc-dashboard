@@ -260,6 +260,10 @@
             gap: 8px;
         }
 
+        .stock-prices:has(.nasdaq-block + .hl-block) {
+            grid-template-columns: 1fr 1fr;
+        }
+
         .price-block {
             text-align: center;
         }
@@ -788,8 +792,8 @@
         { ticker: 'ARM', name: 'ARM', hl: 'xyz:ARM', color: '#0090BF', logo: 'logos/ARM.svg', ceo: 'logos/ceo_cartoon/arm_ceo.png' },
         { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg', ceo: 'logos/ceo_cartoon/qualcomm_ceo.png' },
         { ticker: 'MBLY', name: 'Mobileye', hl: null, color: '#1B2CC1', logo: 'logos/MBLY.png', ceo: 'logos/ceo_cartoon/mobileye_ceo.png' },
-        { ticker: '005930.KS', name: 'Samsung', hl: 'xyz:SMSN', color: '#4A6CF7', logo: 'logos/SAMSUNG.svg', displayTicker: 'SMSN' },
-        { ticker: '000660.KS', name: 'SK Hynix', color: '#E4002B', logo: 'logos/SKHYNIX.svg', displayTicker: 'SKHY' },
+        { ticker: '005930.KS', name: 'Samsung', hl: 'xyz:SMSN', color: '#4A6CF7', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
+        { ticker: '000660.KS', name: 'SK Hynix', color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
     ];
 
     function sid(s) { return (s.displayTicker || s.ticker).replace(/[^A-Za-z0-9]/g, '_'); }
@@ -817,7 +821,7 @@
     }
 
     function stockExchange(stock) {
-        if (stock.ticker.endsWith('.KS') || stock.ticker.endsWith('.KQ')) return 'KRX';
+        if (stock.currency === 'KRW') return 'KRX';
         return stock.exchange || 'NASDAQ';
     }
 
@@ -1093,11 +1097,6 @@
                         <div class="price-block-value" id="hl-${id}">—</div>
                         <div class="price-block-change" id="hl-chg-${id}"></div>
                     </div>` : ''}
-                    ${s.currency === 'KRW' ? `<div class="price-block krw-block">
-                        <div class="price-block-label">KRW</div>
-                        <div class="price-block-value" id="krw-${id}">—</div>
-                        <div class="price-block-change" id="krw-chg-${id}"></div>
-                    </div>` : ''}
                 </div>
                 <div class="stock-collapse-body"><div class="stock-collapse-inner">
                 <div class="stock-sentiment" id="sentiment-${id}"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
@@ -1229,7 +1228,6 @@
                     // Only update sentiment during regular market hours from this path
                     if (ms === 'market') updateSentiment(stock.ticker, pct);
                 }
-
             }
 
             // Extended price
@@ -1418,7 +1416,6 @@
             chgEl.className = `price-block-change`;
             updateSentiment(ticker, pct);
         }
-
     }
 
     // ─── Hyperliquid WebSocket ──────────────────────────────────────────────
@@ -1517,8 +1514,6 @@
             chgEl.textContent = `${sign}${pct.toFixed(2)}%`;
             chgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
         }
-
-
     }
 
     // ─── Fetch Shares Outstanding ────────────────────────────────────────────
@@ -1777,6 +1772,7 @@
         initYahooProto();
         connectYahooWs();
         connectHlWs();
+        await fetchKrwRate();
         fetchAllNasdaq().then(() => {
             fetchAllShares();
             fetchAllATH();
@@ -1873,17 +1869,26 @@
             const nasBl = card.querySelector('.nasdaq-block');
             const extEl = document.getElementById(`ext-${_sid}`);
 
-            // US stocks and Korean stocks use US market hours
-            const nasDim = (usMs !== 'market');
-            if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', nasDim);
-            const extDim = (usMs === 'closed' || usMs === 'market');
-            if (extEl) extEl.classList.toggle('ext-dimmed', extDim);
-            if (extDim) {
-                const extMirrorEl = document.getElementById(`ext-mirror-${_sid}`);
-                if (extMirrorEl) extMirrorEl.innerHTML = '';
+            if (s.currency === 'KRW') {
+                // KRX stocks: bright during KRX market hours
+                const dim = (krMs !== 'market');
+                if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', dim);
+                if (extEl) extEl.classList.toggle('ext-dimmed', true); // no extended hours for KRX
+                const ohlEl = document.getElementById(`ohl-${_sid}`);
+                if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', dim);
+            } else {
+                // US stocks
+                const nasDim = (usMs !== 'market');
+                if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', nasDim);
+                const extDim = (usMs === 'closed' || usMs === 'market');
+                if (extEl) extEl.classList.toggle('ext-dimmed', extDim);
+                if (extDim) {
+                    const extMirrorEl = document.getElementById(`ext-mirror-${_sid}`);
+                    if (extMirrorEl) extMirrorEl.innerHTML = '';
+                }
+                const ohlEl = document.getElementById(`ohl-${_sid}`);
+                if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', nasDim);
             }
-            const ohlEl = document.getElementById(`ohl-${_sid}`);
-            if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', nasDim);
         });
     }
 
