@@ -1502,9 +1502,10 @@
         priceEl.textContent = `$${price.toFixed(2)}`;
 
         const chgEl = document.getElementById(`hl-chg-${_sid}`);
-        // During market hours: HL references yesterday's close (same as NASDAQ)
+        // For Korean stocks: use KRX market status; for US stocks: use US market status
+        // During market hours: HL references yesterday's close (same as NASDAQ/KRX)
         // After close: HL references today's session close (that day is done)
-        const ms = getMarketStatus();
+        const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
         const refClose = (ms === 'market') ? st.prevClose : (st.sessionClose || st.prevClose);
         if (refClose && chgEl) {
             const refUsd = stock ? toUsd(stock, refClose) : refClose;
