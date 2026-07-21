@@ -858,9 +858,12 @@
     }
 
     function fmtPrice(stock, price) {
-        if (stock.currency === 'KRW' && krwToUsd) return '$' + (price * krwToUsd).toFixed(2);
+        if (stock.currency === 'KRW' && krwToUsd) {
+            const usd = price * krwToUsd;
+            return '$' + usd.toFixed(Math.abs(usd) > 1000 ? 1 : 2);
+        }
         if (stock.currency === 'KRW') return '₩' + Math.round(price).toLocaleString();
-        return '$' + price.toFixed(2);
+        return '$' + price.toFixed(Math.abs(price) > 1000 ? 1 : 2);
     }
 
     function fmtPrice1(stock, price) {
@@ -1540,9 +1543,11 @@
         const priceEl = document.getElementById(`hl-${_sid}`);
         if (!priceEl) return;
 
+        const hlDecimals = Math.abs(price) > 1000 ? 1 : 2;
+
         // Debug: Log Korean stock price updates
         if (stock.currency === 'KRW') {
-            console.log(`HL: Got price for ${stock.name} (${stock.hl}): $${price.toFixed(2)}`);
+            console.log(`HL: Got price for ${stock.name} (${stock.hl}): $${price.toFixed(hlDecimals)}`);
         }
 
         const st = state[ticker];
@@ -1553,7 +1558,7 @@
             priceEl.classList.add(price > prev ? 'price-flash-up' : 'price-flash-down');
         }
         st.prevHl = price;
-        priceEl.textContent = `$${price.toFixed(2)}`;
+        priceEl.textContent = `$${price.toFixed(hlDecimals)}`;
 
         const chgEl = document.getElementById(`hl-chg-${_sid}`);
         // For Korean stocks: use KRX market status; for US stocks: use US market status
