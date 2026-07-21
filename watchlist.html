@@ -612,7 +612,7 @@
 
         /* ─── Fundamentals (PE + Analyst Target) ────────── */
         .stock-fundamentals {
-            font-size: 0.65rem;
+            font-size: 0.55rem;
             color: var(--text-dim);
             margin-top: 6px;
             padding-top: 6px;
@@ -861,6 +861,12 @@
         if (stock.currency === 'KRW' && krwToUsd) return '$' + (price * krwToUsd).toFixed(2);
         if (stock.currency === 'KRW') return '₩' + Math.round(price).toLocaleString();
         return '$' + price.toFixed(2);
+    }
+
+    function fmtPrice1(stock, price) {
+        if (stock.currency === 'KRW' && krwToUsd) return '$' + (price * krwToUsd).toFixed(1);
+        if (stock.currency === 'KRW') return '₩' + Math.round(price).toLocaleString();
+        return '$' + price.toFixed(1);
     }
 
     function toUsd(stock, price) {
@@ -1622,7 +1628,7 @@
                         if (trailingPE != null && isFinite(trailingPE)) parts.push(`<span class="fund-label">PE(TTM)</span> <span class="fund-value">${trailingPE.toFixed(1)}</span>`);
                         if (forwardPE  != null && isFinite(forwardPE))  parts.push(`<span class="fund-label">PE(Fwd)</span> <span class="fund-value">${forwardPE.toFixed(1)}</span>`);
                         if (targetPrice != null) {
-                            parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice(stock, targetPrice)}</span>`);
+                            parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice1(stock, targetPrice)}</span>`);
                         }
                         if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' · ');
                     }
