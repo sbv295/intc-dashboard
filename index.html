@@ -521,20 +521,14 @@
 
         .chart-glow-dot {
             position: absolute;
-            width: 9px;
-            height: 9px;
-            margin: -4.5px 0 0 -4.5px;
+            width: 8px;
+            height: 8px;
+            margin: -4px 0 0 -4px;
             border-radius: 50%;
             background: currentColor;
             pointer-events: none;
-            box-shadow: 0 0 6px 2px currentColor, 0 0 16px 6px currentColor;
-            animation: chartGlowPulse 1.8s ease-in-out infinite;
             z-index: 5;
             display: none;
-        }
-        @keyframes chartGlowPulse {
-            0%, 100% { opacity: 0.6; transform: scale(0.85); }
-            50% { opacity: 1; transform: scale(1.25); }
         }
 
         .market-only-chip:disabled {
@@ -1256,7 +1250,8 @@
     function updateLastPointGlow() {
         const dot = document.getElementById('chart-glow-dot');
         if (!dot) return;
-        if (!chart || !mainSeries || !lastPointInfo) { dot.style.display = 'none'; return; }
+        // Live marker only makes sense on the line chart — candles already show the latest bar.
+        if (!chart || !mainSeries || !lastPointInfo || chartType !== 'line') { dot.style.display = 'none'; return; }
         const x = chart.timeScale().timeToCoordinate(lastPointInfo.time);
         const y = mainSeries.priceToCoordinate(lastPointInfo.value);
         if (x == null || y == null) { dot.style.display = 'none'; return; }
@@ -1745,8 +1740,22 @@
         document.querySelectorAll('#chart-type-group button').forEach(btn => {
             btn.classList.toggle('active', btn.textContent.toLowerCase() === type);
         });
+
+        const newInterval = getRangeInterval(chartRange, type);
+        const intervalChanged = newInterval !== chartInterval;
+        chartInterval = newInterval;
+        if (intervalChanged) updateChartTimeOptions();
+
         addSeries();
         loadChartData();
+    }
+
+    // Auto-pick a sensible candle/point interval for a given range. Candles on the
+    // 1D range use a coarser 5m bar size (1m is too granular for individual candles).
+    function getRangeInterval(range, type) {
+        if (range === '1d' && type === 'candles') return '5m';
+        const rangeDefaults = { '1d': '1m', '1mo': '15m', '1y': '1d', '5y': '1d', 'max': '1wk' };
+        return rangeDefaults[range] || '1m';
     }
 
     function setChartRange(range) {
@@ -1758,9 +1767,20 @@
                             btn.textContent === '5Y' ? '5y' : 'max';
             btn.classList.toggle('active', btnRange === range);
         });
+
+        // "Market Hrs" view only applies to the 1D range — disable it otherwise
+        const marketOnlyBtn = document.getElementById('btn-market-only');
+        if (marketOnlyBtn) {
+            marketOnlyBtn.disabled = range !== '1d';
+            if (range !== '1d' && marketOnlyView) {
+                marketOnlyView = false;
+                marketOnlyBtn.classList.remove('active');
+                updateChartInteractivity();
+            }
+        }
+
         // Auto-pick a sensible interval for the selected range
-        const rangeDefaults = { '1d': '1m', '1mo': '15m', '1y': '1d', '5y': '1d', 'max': '1wk' };
-        const newInterval = rangeDefaults[range] || '1m';
+        const newInterval = getRangeInterval(range, chartType);
         const intervalChanged = newInterval !== chartInterval;
         chartInterval = newInterval;
         updateChartTimeOptions();
