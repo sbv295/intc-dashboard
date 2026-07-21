@@ -119,18 +119,42 @@
             align-items: center;
             gap: 10px;
             margin-bottom: 16px;
+            flex-wrap: wrap;
         }
-        .intc-logo { height: 28px; vertical-align: middle; }
-        .intc-card-name { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.5px; }
-        .intc-card-name .intc-full-name { color: var(--text-dim); font-weight: 500; }
-        .intc-card-header .status-badge { margin-left: auto; }
-        .intc-time {
-            font-size: 0.65rem;
-            color: var(--text-dim);
-            text-align: center;
-            margin: -6px 0 16px;
-            letter-spacing: 0.3px;
+        .intc-logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            object-fit: cover;
         }
+        .stock-name {
+            font-size: 0.85rem;
+            color: var(--text);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+        .stock-ticker {
+            font-size: 0.68rem;
+            color: var(--card-accent, var(--text-dim));
+            font-weight: 800;
+            margin-left: auto;
+            background: color-mix(in srgb, var(--card-accent) 12%, transparent);
+            padding: 3px 8px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+            border: 1px solid color-mix(in srgb, var(--card-accent) 25%, transparent);
+        }
+        .ceo-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid color-mix(in srgb, var(--card-accent) 70%, white);
+            box-shadow: 0 0 8px color-mix(in srgb, var(--card-accent) 40%, transparent);
+            flex-shrink: 0;
+        }
+        .intc-card-header .status-badge { margin-left: 0; }
 
         .price-blocks {
             display: grid;
@@ -506,8 +530,15 @@
 
         .nav-tabs {
             display: flex;
-            gap: 4px;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
             margin-bottom: 0;
+            flex-wrap: wrap;
+        }
+        .nav-tabs-links {
+            display: flex;
+            gap: 4px;
         }
         .nav-tabs a {
             text-decoration: none;
@@ -528,31 +559,22 @@
         }
         .nav-tabs a:hover:not(.active) { color: var(--text); }
 
-        /* ─── Hero Title ──────────────────────────────────────── */
-        .nav-title {
-            font-size: 2.8rem;
-            font-weight: 800;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            color: #ffffff;
-            text-shadow: 0 2px 20px rgba(0,0,0,1), 0 0 40px rgba(0,0,0,0.8), 0 0 80px rgba(0,0,0,0.5);
-            text-align: center;
-            padding: 24px 0 0;
-            margin: 0;
-            pointer-events: none;
-        }
         .intc-time {
-            margin: 6px 0 0;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.8);
+            text-align: right;
+            line-height: 1.5;
+            text-shadow: 0 1px 8px rgba(0,0,0,0.9), 0 0 16px rgba(0,0,0,0.6);
+            padding-right: 4px;
         }
         .intc-spacer {
-            height: 110px;
+            height: 130px;
             pointer-events: none;
         }
 
         @media (max-width: 640px) {
-            .nav-title { font-size: 1.5rem; letter-spacing: 3px; padding: 70px 0 0; }
-            .intc-time { margin-top: 4px; }
-            .intc-spacer { height: 50px; }
+            .intc-time { font-size: 0.6rem; }
+            .intc-spacer { height: 70px; }
             body { padding: 8px; overflow-x: hidden; }
         }
 
@@ -574,7 +596,7 @@
             z-index: 0;
         }
 
-        .nav-tabs, .nav-title, .intc-spacer, .intc-card, .chart-section {
+        .nav-tabs, .intc-spacer, .intc-card, .chart-section {
             position: relative;
             z-index: 1;
         }
@@ -595,13 +617,13 @@
 <body>
     <div class="intc-bg"></div>
     <div class="nav-tabs">
-        <a href="index.html" class="active">INTC</a>
-        <a href="watchlist.html">Watchlist</a>
-        <a href="etfs.html">ETFs</a>
+        <div class="nav-tabs-links">
+            <a href="index.html" class="active">INTC</a>
+            <a href="watchlist.html">Watchlist</a>
+            <a href="etfs.html">ETFs</a>
+        </div>
+        <div class="intc-time" id="time-display">--</div>
     </div>
-
-    <div class="nav-title">INTC</div>
-    <div class="intc-time" id="time-display">--</div>
 
     <div class="intc-spacer"></div>
 
@@ -610,7 +632,9 @@
         <div class="earnings-countdown" id="earnings-countdown"></div>
         <div class="intc-card-header">
             <img class="intc-logo" src="Intel_logo.png" alt="Intel">
-            <span class="intc-card-name">INTC <span class="intc-full-name">— Intel Corporation</span></span>
+            <span class="stock-name">Intel</span>
+            <span class="stock-ticker">INTC</span>
+            <img class="ceo-icon" src="logos/ceo_cartoon/intel_ceo.png" alt="Intel CEO">
             <span class="status-badge badge-closed" id="market-badge">Loading...</span>
         </div>
 
