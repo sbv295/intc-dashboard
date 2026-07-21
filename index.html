@@ -185,14 +185,14 @@
             font-weight: 700;
         }
         .price-block .big-price {
-            font-size: 2.3rem;
+            font-size: 2.7rem;
             font-weight: 800;
             line-height: 1.1;
             margin: 2px 0;
             transition: color 0.3s;
         }
         @media (max-width: 640px) {
-            .price-block .big-price { font-size: 1.55rem; }
+            .price-block .big-price { font-size: 2.05rem; }
         }
 
         .price-flash-up { animation: flashGreen 1.2s ease-out; }
@@ -302,6 +302,32 @@
         .ath-info b { color: var(--text); }
         .ath-info .ath-value { color: var(--text); font-weight: 600; }
         .ath-info .ath-pct { font-weight: 600; color: var(--text-dim); }
+
+        /* ─── Fundamentals (PE + Analyst Target) ────────── */
+        .stock-fundamentals {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 14%, var(--border));
+            text-align: center;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .stock-fundamentals:empty { display: none; }
+        .stock-fundamentals .fund-label {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .stock-fundamentals .fund-value {
+            color: var(--text);
+            font-weight: 600;
+        }
+        .stock-fundamentals .fund-target {
+            font-weight: 700;
+            color: var(--text);
+        }
 
         /* ─── Sentiment Indicator ─────────────────────────────── */
         .nasdaq-sentiment {
@@ -659,6 +685,7 @@
         </div>
         <div class="session-details" id="nasdaq-sessions"></div>
         <div class="ath-info" id="nasdaq-ath"></div>
+        <div class="stock-fundamentals" id="intc-fundamentals"></div>
         <div class="nasdaq-sentiment" id="nasdaq-sentiment"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
     </div>
 
@@ -722,6 +749,7 @@
     let prevHlPrice = null;
     let nasdaqPrevClose = null;
     let INTC_SHARES = 5.026e9; // fallback, fetched on init
+    let earningsTimestampSec = new Date('2026-07-23T20:00:00Z').getTime() / 1000; // fallback, refined on fetch
     let hlWs = null;
     let yahooWs = null;
     let hlReconnectTimer = null;
@@ -797,7 +825,7 @@
 
     async function fetchSharesOutstanding() {
         try {
-            const url = 'https://query1.finance.yahoo.com/v10/finance/quoteSummary/INTC?modules=defaultKeyStatistics,summaryDetail';
+            const url = 'https://query1.finance.yahoo.com/v10/finance/quoteSummary/INTC?modules=defaultKeyStatistics,summaryDetail,calendarEvents,financialData';
             const data = await yahooFetch(url);
             const result = data?.quoteSummary?.result?.[0];
             const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
@@ -813,6 +841,30 @@
                     const volPart = existing.startsWith('Vol:') ? existing.split('·')[0].trim() : '';
                     volEl.textContent = volPart ? `${volPart} · Avg Vol: ${formatVol(avgVol)}` : `Avg Vol: ${formatVol(avgVol)}`;
                 }
+            }
+
+            // Next earnings date (drives the earnings countdown badge)
+            const earningsDates = result?.calendarEvents?.earnings?.earningsDate;
+            if (earningsDates && earningsDates.length > 0) {
+                const now = Date.now() / 1000;
+                const upcoming = earningsDates.filter(d => d.raw > now - 86400);
+                if (upcoming.length > 0) {
+                    earningsTimestampSec = upcoming[0].raw;
+                    updateEarningsCountdown();
+                }
+            }
+
+            // Fundamentals: PE (TTM), PE (Fwd), Analyst Mean Target
+            const trailingPE = result?.summaryDetail?.trailingPE?.raw;
+            const forwardPE = result?.summaryDetail?.forwardPE?.raw;
+            const targetPrice = result?.financialData?.targetMeanPrice?.raw;
+            const fundamentalsEl = document.getElementById('intc-fundamentals');
+            if (fundamentalsEl) {
+                const parts = [];
+                if (trailingPE != null && isFinite(trailingPE)) parts.push(`<span class="fund-label">PE(TTM)</span> <span class="fund-value">${trailingPE.toFixed(1)}</span>`);
+                if (forwardPE != null && isFinite(forwardPE)) parts.push(`<span class="fund-label">PE(Fwd)</span> <span class="fund-value">${forwardPE.toFixed(1)}</span>`);
+                if (targetPrice != null) parts.push(`<span class="fund-label">Analyst Target</span> <span class="fund-target">$${targetPrice.toFixed(2)}</span>`);
+                if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' &nbsp;·&nbsp; ');
             }
         } catch (e) {
             // Fallback value remains
@@ -999,8 +1051,7 @@
         const el = document.getElementById('earnings-countdown');
         if (!el) return;
 
-        // July 23, 2026, 4:00 PM ET (market close) = 1:30 AM IST next day
-        const earningsDate = new Date('2026-07-23T20:00:00Z'); // 4 PM ET = 8 PM UTC = 1:30 AM IST (July 24)
+        const earningsDate = new Date(earningsTimestampSec * 1000);
         const now = new Date();
 
         const diff = earningsDate - now;
@@ -1010,11 +1061,14 @@
             return;
         }
 
+        const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        const dateLabel = `${months[earningsDate.getMonth()]} ${earningsDate.getDate()}`;
+
         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-        let countdownText = 'Earnings in ';
+        let countdownText = `Earnings ${dateLabel} · in `;
         if (days > 0) {
             countdownText += `${days}d ${hours}h`;
         } else if (hours > 0) {
