@@ -70,6 +70,11 @@
             text-overflow: ellipsis;
         }
         .earnings-countdown:empty { display: none; }
+        .earnings-countdown.soon {
+            background: color-mix(in srgb, var(--amber) 18%, var(--surface2));
+            border-color: color-mix(in srgb, var(--amber) 50%, var(--border));
+            color: var(--amber);
+        }
         .earnings-countdown.live {
             background: color-mix(in srgb, var(--red) 22%, var(--surface2));
             border-color: color-mix(in srgb, var(--red) 55%, var(--border));
@@ -116,10 +121,20 @@
 
         .intc-card-header {
             display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        .intc-header-top {
+            display: flex;
             align-items: center;
             gap: 10px;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
+        }
+        .intc-header-top .status-badge { margin-left: auto; }
+        .intc-header-bottom {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         .intc-logo {
             width: 32px;
@@ -138,7 +153,6 @@
             font-size: 0.68rem;
             color: var(--card-accent, var(--text-dim));
             font-weight: 800;
-            margin-left: auto;
             background: color-mix(in srgb, var(--card-accent) 12%, transparent);
             padding: 3px 8px;
             border-radius: 4px;
@@ -154,7 +168,6 @@
             box-shadow: 0 0 8px color-mix(in srgb, var(--card-accent) 40%, transparent);
             flex-shrink: 0;
         }
-        .intc-card-header .status-badge { margin-left: 0; }
 
         .price-blocks {
             display: grid;
@@ -246,17 +259,23 @@
 
         .card-meta-row {
             display: flex;
-            justify-content: center;
-            gap: 14px;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
             flex-wrap: wrap;
             margin-top: 12px;
             padding-top: 10px;
+            padding-bottom: 10px;
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 14%, var(--border));
+            border-bottom: 1px solid color-mix(in srgb, var(--card-accent) 14%, var(--border));
         }
+        .card-meta-row:has(> :only-child) { justify-content: center; }
         .market-cap {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: var(--text-dim);
+            letter-spacing: 0.2px;
         }
+        .market-cap:empty { display: none; }
 
         .price-meta {
             font-size: 0.85rem;
@@ -274,9 +293,7 @@
         .session-details {
             font-size: 0.72rem;
             color: var(--text-dim);
-            margin-top: 8px;
-            padding-top: 8px;
-            border-top: 1px solid color-mix(in srgb, var(--card-accent) 14%, var(--border));
+            margin-top: 10px;
             line-height: 1.9;
             text-align: center;
         }
@@ -499,6 +516,30 @@
             max-height: 560px;
             border-radius: 8px;
             overflow: hidden;
+            position: relative;
+        }
+
+        .chart-glow-dot {
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            margin: -4.5px 0 0 -4.5px;
+            border-radius: 50%;
+            background: currentColor;
+            pointer-events: none;
+            box-shadow: 0 0 6px 2px currentColor, 0 0 16px 6px currentColor;
+            animation: chartGlowPulse 1.8s ease-in-out infinite;
+            z-index: 5;
+            display: none;
+        }
+        @keyframes chartGlowPulse {
+            0%, 100% { opacity: 0.6; transform: scale(0.85); }
+            50% { opacity: 1; transform: scale(1.25); }
+        }
+
+        .market-only-chip:disabled {
+            opacity: 0.35;
+            cursor: not-allowed;
         }
 
         .chart-legend {
@@ -657,11 +698,15 @@
     <div class="intc-card closed" id="intc-card">
         <div class="earnings-countdown" id="earnings-countdown"></div>
         <div class="intc-card-header">
-            <img class="intc-logo" src="Intel_logo.png" alt="Intel">
-            <span class="stock-name">Intel</span>
-            <span class="stock-ticker">INTC</span>
-            <img class="ceo-icon" src="logos/ceo_cartoon/intel_ceo.png" alt="Intel CEO">
-            <span class="status-badge badge-closed" id="market-badge">Loading...</span>
+            <div class="intc-header-top">
+                <img class="intc-logo" src="Intel_logo.png" alt="Intel">
+                <span class="stock-name">Intel</span>
+                <span class="status-badge badge-closed" id="market-badge">Loading...</span>
+            </div>
+            <div class="intc-header-bottom">
+                <span class="stock-ticker">INTC</span>
+                <img class="ceo-icon" src="logos/ceo_cartoon/intel_ceo.png" alt="Intel CEO">
+            </div>
         </div>
 
         <div class="price-blocks">
@@ -680,8 +725,9 @@
         </div>
 
         <div class="card-meta-row">
-            <div class="market-cap" id="nasdaq-mcap"></div>
             <div class="market-cap" id="nasdaq-vol"></div>
+            <div class="market-cap" id="nasdaq-avgvol"></div>
+            <div class="market-cap" id="nasdaq-mcap"></div>
         </div>
         <div class="session-details" id="nasdaq-sessions"></div>
         <div class="ath-info" id="nasdaq-ath"></div>
@@ -832,15 +878,11 @@
             if (shares && shares > 0) {
                 INTC_SHARES = shares;
             }
-            // Display Vol + Avg Vol
+            // Display Avg Vol
             const avgVol = result?.summaryDetail?.averageVolume?.raw;
             if (avgVol) {
-                const volEl = document.getElementById('nasdaq-vol');
-                if (volEl) {
-                    const existing = volEl.textContent;
-                    const volPart = existing.startsWith('Vol:') ? existing.split('·')[0].trim() : '';
-                    volEl.textContent = volPart ? `${volPart} · Avg Vol: ${formatVol(avgVol)}` : `Avg Vol: ${formatVol(avgVol)}`;
-                }
+                const avgVolEl = document.getElementById('nasdaq-avgvol');
+                if (avgVolEl) avgVolEl.textContent = `Avg Vol: ${formatVol(avgVol)}`;
             }
 
             // Next earnings date (drives the earnings countdown badge)
@@ -1702,11 +1744,7 @@
             // Update volume from meta
             if (meta.regularMarketVolume) {
                 const volEl = document.getElementById('nasdaq-vol');
-                if (volEl) {
-                    const existing = volEl.textContent;
-                    const avgPart = existing.includes('Avg Vol') ? existing.substring(existing.indexOf('·')) : '';
-                    volEl.textContent = `Vol: ${formatVol(meta.regularMarketVolume)}${avgPart ? ' ' + avgPart : ''}`;
-                }
+                if (volEl) volEl.textContent = `Vol: ${formatVol(meta.regularMarketVolume)}`;
             }
 
             // Session breakdown from intraday candles
