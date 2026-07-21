@@ -125,13 +125,11 @@
             gap: 8px;
             margin-bottom: 16px;
         }
-        .intc-header-top {
+        .intc-status-row {
             display: flex;
-            align-items: center;
-            gap: 10px;
+            justify-content: center;
         }
-        .intc-header-top .status-badge { margin-left: auto; }
-        .intc-header-bottom {
+        .stock-header {
             display: flex;
             align-items: center;
             gap: 10px;
@@ -153,6 +151,7 @@
             font-size: 0.68rem;
             color: var(--card-accent, var(--text-dim));
             font-weight: 800;
+            margin-left: auto;
             background: color-mix(in srgb, var(--card-accent) 12%, transparent);
             padding: 3px 8px;
             border-radius: 4px;
@@ -160,8 +159,8 @@
             border: 1px solid color-mix(in srgb, var(--card-accent) 25%, transparent);
         }
         .ceo-icon {
-            width: 34px;
-            height: 34px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid color-mix(in srgb, var(--card-accent) 70%, white);
@@ -257,6 +256,29 @@
 
         .dim-element { opacity: 0.3; transition: opacity 0.5s; }
 
+        .stock-ohl {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            margin-top: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 14%, var(--border));
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+        .stock-ohl:empty { display: none; }
+        .stock-ohl .ohl-label {
+            font-weight: 600;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 4px;
+        }
+        .stock-ohl .ohl-value {
+            color: var(--text);
+            font-weight: 600;
+        }
+
         .card-meta-row {
             display: flex;
             justify-content: space-between;
@@ -344,6 +366,38 @@
         .stock-fundamentals .fund-target {
             font-weight: 700;
             color: var(--text);
+        }
+        .stock-fundamentals .fund-rec,
+        .stock-risk .fund-rec {
+            font-weight: 700;
+        }
+        .stock-fundamentals .fund-rec.buy,
+        .stock-risk .fund-rec.buy { color: var(--green); }
+        .stock-fundamentals .fund-rec.hold,
+        .stock-risk .fund-rec.hold { color: var(--amber); }
+        .stock-fundamentals .fund-rec.sell,
+        .stock-risk .fund-rec.sell { color: var(--red); }
+
+        /* ─── Risk & Rating (Beta + P/B + Analyst Rec) ──── */
+        .stock-risk {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 14%, var(--border));
+            text-align: center;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .stock-risk:empty { display: none; }
+        .stock-risk .fund-label {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .stock-risk .fund-value {
+            color: var(--text);
+            font-weight: 600;
         }
 
         /* ─── Sentiment Indicator ─────────────────────────────── */
@@ -692,12 +746,12 @@
     <div class="intc-card closed" id="intc-card">
         <div class="earnings-countdown" id="earnings-countdown"></div>
         <div class="intc-card-header">
-            <div class="intc-header-top">
-                <img class="intc-logo" src="Intel_logo.png" alt="Intel">
-                <span class="stock-name">Intel</span>
+            <div class="intc-status-row">
                 <span class="status-badge badge-closed" id="market-badge">Loading...</span>
             </div>
-            <div class="intc-header-bottom">
+            <div class="stock-header">
+                <img class="intc-logo" src="Intel_logo.png" alt="Intel">
+                <span class="stock-name">Intel</span>
                 <span class="stock-ticker">INTC</span>
                 <img class="ceo-icon" src="logos/ceo_cartoon/intel_ceo.png" alt="Intel CEO">
             </div>
@@ -718,6 +772,8 @@
             </div>
         </div>
 
+        <div class="nasdaq-sentiment" id="nasdaq-sentiment"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
+        <div class="stock-ohl" id="nasdaq-ohl"></div>
         <div class="card-meta-row">
             <div class="market-cap" id="nasdaq-vol"></div>
             <div class="market-cap" id="nasdaq-avgvol"></div>
@@ -726,7 +782,7 @@
         <div class="session-details" id="nasdaq-sessions"></div>
         <div class="ath-info" id="nasdaq-ath"></div>
         <div class="stock-fundamentals" id="intc-fundamentals"></div>
-        <div class="nasdaq-sentiment" id="nasdaq-sentiment"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
+        <div class="stock-risk" id="intc-risk"></div>
     </div>
 
     <!-- Chart Section -->
@@ -901,6 +957,28 @@
                 if (forwardPE != null && isFinite(forwardPE)) parts.push(`<span class="fund-label">PE(Fwd)</span> <span class="fund-value">${forwardPE.toFixed(1)}</span>`);
                 if (targetPrice != null) parts.push(`<span class="fund-label">Analyst Target</span> <span class="fund-target">$${targetPrice.toFixed(2)}</span>`);
                 if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' &nbsp;·&nbsp; ');
+            }
+
+            // Risk & Rating: Beta, P/B, Analyst Rec
+            const beta = result?.defaultKeyStatistics?.beta?.raw ?? result?.summaryDetail?.beta?.raw;
+            const priceToBook = result?.defaultKeyStatistics?.priceToBook?.raw;
+            const recKey = result?.financialData?.recommendationKey;
+            const riskEl = document.getElementById('intc-risk');
+            if (riskEl) {
+                const riskParts = [];
+                if (beta != null && isFinite(beta)) riskParts.push(`<span class="fund-label" style="text-transform:none">β</span> <span class="fund-value">${beta.toFixed(2)}</span>`);
+                if (priceToBook != null && isFinite(priceToBook)) riskParts.push(`<span class="fund-label">P/B</span> <span class="fund-value">${priceToBook.toFixed(1)}</span>`);
+                if (recKey && recKey !== 'none') {
+                    const recMap = {
+                        strong_buy: ['Strong Buy', 'buy'], buy: ['Buy', 'buy'],
+                        hold: ['Hold', 'hold'],
+                        sell: ['Sell', 'sell'], strong_sell: ['Strong Sell', 'sell'],
+                        underperform: ['Sell', 'sell'], outperform: ['Buy', 'buy']
+                    };
+                    const [label, cls] = recMap[recKey] || [null, null];
+                    if (label) riskParts.push(`<span class="fund-label">Rec</span> <span class="fund-rec ${cls}">${label}</span>`);
+                }
+                if (riskParts.length > 0) riskEl.innerHTML = riskParts.join(' &nbsp;·&nbsp; ');
             }
         } catch (e) {
             // Fallback value remains
@@ -1107,7 +1185,7 @@
 
         let countdownText = `Earnings ${dateLabel} · in `;
         if (days > 0) {
-            countdownText += `${days}d ${hours}h`;
+            countdownText += `${days}d ${hours}h ${minutes}m`;
         } else if (hours > 0) {
             countdownText += `${hours}h ${minutes}m`;
         } else {
@@ -1914,6 +1992,14 @@
             if (hasReg) html += `<b>Regular:</b> O $${regOpen?.toFixed(2) || '—'} / H $${regHigh.toFixed(2)} / L $${regLow.toFixed(2)} · Vol: ${formatVol(regVol)}<br>`;
             if (hasPost) html += `<b>Post:</b> O $${postOpen?.toFixed(2) || '—'} / H $${postHigh.toFixed(2)} / L $${postLow.toFixed(2)} · Vol: ${formatVol(postVol)}`;
             document.getElementById('nasdaq-sessions').innerHTML = html;
+
+            // Compact regular-session OHL row (matches Watchlist's stock-ohl)
+            const ohlEl = document.getElementById('nasdaq-ohl');
+            if (ohlEl) {
+                ohlEl.innerHTML = hasReg
+                    ? `<span class="ohl-label">O</span><span class="ohl-value">$${regOpen?.toFixed(2) ?? '—'}</span> · <span class="ohl-label">H</span><span class="ohl-value">$${regHigh.toFixed(2)}</span> · <span class="ohl-label">L</span><span class="ohl-value">$${regLow.toFixed(2)}</span>`
+                    : '';
+            }
 
             // Extended price display (post/pre market last traded price)
             // Also determine the stable main price from candle data
