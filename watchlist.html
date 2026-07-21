@@ -334,6 +334,13 @@
         .stock-extended:empty {
             display: none;
         }
+        /* When pre/post-market text is hidden (regular market hours), avoid a
+           redundant double border between .stock-meta's bottom border and
+           .stock-ath's top border sitting right next to each other. */
+        .stock-extended:empty + .stock-ath {
+            border-top: none;
+            padding-top: 0;
+        }
         .stock-extended .ext-label {
             font-weight: 600;
             color: var(--amber);
