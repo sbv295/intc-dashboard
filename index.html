@@ -1100,6 +1100,7 @@
         if (diff <= 0) {
             el.innerHTML = '🔴 Earnings LIVE NOW';
             el.classList.add('live');
+            el.classList.remove('soon');
             return;
         }
 
@@ -1121,23 +1122,39 @@
 
         el.innerHTML = countdownText;
         el.classList.remove('live');
+        // Match Watchlist's "soon" highlight when earnings are within a week
+        const EARNINGS_SOON_WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
+        el.classList.toggle('soon', diff <= EARNINGS_SOON_WINDOW_MS);
     }
 
     // ─── Chart Setup ────────────────────────────────────────────────────────
     // Colors for session types
     const CHART_COLORS = {
-        regular: '#ff5252',
-        extended: '#6b7a8a',  // grayish for pre/post market line
-        hlLine: '#00e676',
+        up: '#00c853',        // price trending up (green)
+        down: '#ff1744',      // price trending down (red)
+        extended: '#6b7a8a',  // grayish for pre/post market (line + candles)
         volUp: 'rgba(0,200,83,0.3)',
         volDown: 'rgba(255,23,68,0.3)',
-        volExtUp: 'rgba(0,200,83,0.15)',
-        volExtDown: 'rgba(255,23,68,0.15)',
+        volExtUp: 'rgba(107,122,138,0.25)',
+        volExtDown: 'rgba(107,122,138,0.25)',
         candleUp: '#00c853',
         candleDown: '#ff1744',
-        candleExtUp: '#00c85388',   // muted green for ext hours up
-        candleExtDown: '#ff174488', // muted red for ext hours down
+        candleExt: '#6b7a8a', // flat gray for pre/post market candles
     };
+
+    // Reference price for coloring a series green/red: previous close for
+    // intraday (1D) views, otherwise the first point of the loaded range.
+    function getTrendReference(data) {
+        if (chartRange === '1d' && nasdaqPrevClose) return nasdaqPrevClose;
+        if (!data || !data.length) return null;
+        const first = data[0];
+        return first.close != null ? first.close : first.value;
+    }
+
+    function getTrendColor(lastValue, refValue) {
+        if (refValue == null || lastValue == null) return CHART_COLORS.up;
+        return lastValue >= refValue ? CHART_COLORS.up : CHART_COLORS.down;
+    }
 
     function getChartTZ() {
         return chartTimezone === 'IST' ? 'Asia/Kolkata' : 'America/New_York';
@@ -1205,6 +1222,8 @@
                 timeVisible: chartRange === '1d' || chartRange === '5d',
                 secondsVisible: false,
                 tickMarkFormatter: getTickFormatter(),
+                shiftVisibleRangeOnNewBar: false,
+                rightBarStaysOnScroll: false,
             },
             localization: {
                 timeFormatter: getCrosshairFormatter(),
@@ -1213,10 +1232,48 @@
 
         const ro = new ResizeObserver(() => {
             chart.applyOptions({ width: container.clientWidth, height: container.clientHeight });
+            updateLastPointGlow();
         });
         ro.observe(container);
 
+        chart.timeScale().subscribeVisibleTimeRangeChange(updateLastPointGlow);
+
+        let glowDot = document.getElementById('chart-glow-dot');
+        if (!glowDot) {
+            glowDot = document.createElement('div');
+            glowDot.className = 'chart-glow-dot';
+            glowDot.id = 'chart-glow-dot';
+        }
+        container.appendChild(glowDot);
+
         addSeries();
+        updateChartInteractivity();
+    }
+
+    // ─── Last-point live marker (glowing dot) ──────────────────────────────
+    let lastPointInfo = null; // { time, value, color }
+
+    function updateLastPointGlow() {
+        const dot = document.getElementById('chart-glow-dot');
+        if (!dot) return;
+        if (!chart || !mainSeries || !lastPointInfo) { dot.style.display = 'none'; return; }
+        const x = chart.timeScale().timeToCoordinate(lastPointInfo.time);
+        const y = mainSeries.priceToCoordinate(lastPointInfo.value);
+        if (x == null || y == null) { dot.style.display = 'none'; return; }
+        dot.style.display = 'block';
+        dot.style.left = x + 'px';
+        dot.style.top = y + 'px';
+        dot.style.color = lastPointInfo.color;
+    }
+
+    // Lock/unlock horizontal pan & zoom — locked while "Market Hrs" is active on the NASDAQ tab
+    function updateChartInteractivity() {
+        if (!chart) return;
+        const locked = marketOnlyView && currentTab === 'nasdaq';
+        chart.applyOptions({
+            handleScroll: !locked,
+            handleScale: !locked,
+        });
     }
 
     function updateChartTimeOptions() {
@@ -1255,10 +1312,8 @@
             borderVisible: false,
         });
 
-        const color = currentTab === 'nasdaq' ? CHART_COLORS.regular : CHART_COLORS.hlLine;
-
         if (chartType === 'line') {
-            mainSeries = chart.addLineSeries({ color: color, lineWidth: 2 });
+            mainSeries = chart.addLineSeries({ color: CHART_COLORS.up, lineWidth: 2 });
         } else if (chartType === 'candles') {
             mainSeries = chart.addCandlestickSeries({
                 upColor: CHART_COLORS.candleUp, downColor: CHART_COLORS.candleDown,
@@ -1266,6 +1321,7 @@
                 wickUpColor: CHART_COLORS.candleUp, wickDownColor: CHART_COLORS.candleDown,
             });
         }
+        lastPointInfo = null;
     }
 
     // Determine if a timestamp is in extended hours based on trading periods
@@ -1388,49 +1444,36 @@
         // Determine trading periods for session coloring
         const tp = tradingPeriods;
         const expectedInterval = getExpectedIntervalSec(chartInterval);
+        const trendRef = getTrendReference(data);
+        const lastPoint = data[data.length - 1];
+        const trendColor = getTrendColor(lastPoint.close, trendRef);
 
         if (chartType === 'candles') {
-            // Color candles differently for extended vs regular hours
-            const coloredData = data.map((d, i) => {
+            // Color candles differently for extended vs regular hours;
+            // regular-hours candles keep the series' default up/down coloring.
+            const coloredData = data.map((d) => {
                 const ext = isExtendedHours(d.time, tp);
-                const up = d.close >= d.open;
                 if (ext) {
                     return {
                         ...d,
-                        color: up ? CHART_COLORS.candleExtUp : CHART_COLORS.candleExtDown,
-                        borderColor: up ? CHART_COLORS.candleExtUp : CHART_COLORS.candleExtDown,
-                        wickColor: up ? CHART_COLORS.candleExtUp : CHART_COLORS.candleExtDown,
+                        color: CHART_COLORS.candleExt,
+                        borderColor: CHART_COLORS.candleExt,
+                        wickColor: CHART_COLORS.candleExt,
                     };
                 }
                 return d; // regular hours use series defaults
             });
             mainSeries.setData(coloredData);
         } else {
-            // Line chart: color each segment based on session type
-            // Use lineStyle to dim gap-crossing segments
-            const lineData = [];
-            for (let i = 0; i < data.length; i++) {
-                const d = data[i];
+            // Line chart: gray during pre/post market, green/red (trend) during regular hours
+            const lineData = data.map((d) => {
                 const ext = isExtendedHours(d.time, tp);
-                const prevTime = i > 0 ? data[i - 1].time : null;
-                const hasGap = isInGap(d.time, prevTime, expectedInterval);
-
-                const point = {
+                return {
                     time: d.time,
                     value: d.close,
-                    color: ext ? CHART_COLORS.extended : CHART_COLORS.regular,
+                    color: ext ? CHART_COLORS.extended : trendColor,
                 };
-
-                // If there's a gap before this point, insert a "break" by using
-                // lineStyle: dashed for the connecting segment (lightweight-charts
-                // doesn't support true breaks, but we can show a visual marker)
-                if (hasGap && i > 0) {
-                    // Add a marker at the gap point to show session boundary
-                    point.color = ext ? CHART_COLORS.extended : CHART_COLORS.regular;
-                }
-
-                lineData.push(point);
-            }
+            });
             mainSeries.setData(lineData);
 
             // Add markers at session boundaries (where gaps occur)
@@ -1476,13 +1519,25 @@
             legend.style.display = hasExtended ? 'flex' : 'none';
         }
 
-        if (shouldFitContent) { applyVisibleRange(); shouldFitContent = false; }
+        // Highlight the latest point (live price) with a glowing marker
+        const lastExt = isExtendedHours(lastPoint.time, tp);
+        lastPointInfo = { time: lastPoint.time, value: lastPoint.close, color: lastExt ? CHART_COLORS.extended : trendColor };
+        updateLastPointGlow();
+
+        if (shouldFitContent) {
+            applyVisibleRange();
+            shouldFitContent = false;
+        } else if (marketOnlyView && currentTab === 'nasdaq') {
+            // Re-assert the fixed session range on every refresh — lightweight-charts
+            // otherwise nudges the view back toward "now" as new bars stream in.
+            applyMarketOnlyRange();
+        }
     }
 
     function applyVisibleRange() {
         if (!chartDataCache.length) { chart.timeScale().fitContent(); return; }
 
-        if (marketOnlyView) {
+        if (marketOnlyView && currentTab === 'nasdaq') {
             applyMarketOnlyRange();
             return;
         }
@@ -1510,6 +1565,7 @@
         marketOnlyView = !marketOnlyView;
         document.getElementById('btn-market-only').classList.toggle('active', marketOnlyView);
         applyVisibleRange();
+        updateChartInteractivity();
     }
 
     function applyMarketOnlyRange() {
@@ -1531,23 +1587,45 @@
             regEnd = tp.regular.end || (tp.post ? tp.post.start : tp.regular.start + 23400);
         }
 
-        if (regStart && regEnd) {
-            chart.timeScale().setVisibleRange({ from: regStart, to: regEnd });
-        } else {
-            chart.timeScale().fitContent();
-        }
+        if (!regStart || !regEnd) { chart.timeScale().fitContent(); return; }
+
+        // setVisibleRange() clamps to the actual loaded data — it can't show empty
+        // space beyond the last bar. Use a logical range instead, which supports
+        // indices past the end of the data, so the full scheduled session (including
+        // time not yet reached) is always shown, not just up to "now".
+        const data = chartDataCache;
+        let startIdx = data.findIndex(d => d.time >= regStart);
+        if (startIdx === -1) startIdx = 0;
+        const lastBarTime = data[data.length - 1].time;
+        const expectedInterval = getExpectedIntervalSec(chartInterval);
+        const futureBars = Math.max(0, (regEnd - lastBarTime) / expectedInterval);
+        const endLogical = (data.length - 1) + futureBars;
+
+        chart.timeScale().setVisibleLogicalRange({ from: startIdx - 0.5, to: endLogical + 0.5 });
     }
+
+    // Hyperliquid interval strings differ slightly from our own (e.g. weekly is "1w" not "1wk")
+    const HL_INTERVAL_MAP = { '1wk': '1w', '60m': '1h' };
+    // How far back to fetch HL candles for each selected range
+    const HL_RANGE_MS = {
+        '1d': 86400000,
+        '1mo': 30 * 86400000,
+        '1y': 365 * 86400000,
+        '5y': 5 * 365 * 86400000,
+        'max': 5 * 365 * 86400000,
+    };
 
     async function loadHlChart() {
         try {
-            const hlInterval = chartInterval === '60m' || chartInterval === '1h' ? '1h' : chartInterval;
+            const hlInterval = HL_INTERVAL_MAP[chartInterval] || chartInterval;
             const now = Date.now();
+            const lookback = HL_RANGE_MS[chartRange] || 86400000;
             const resp = await fetch('https://api.hyperliquid.xyz/info', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     type: 'candleSnapshot',
-                    req: { coin: 'xyz:INTC', interval: hlInterval, startTime: now - 86400000, endTime: now }
+                    req: { coin: 'xyz:INTC', interval: hlInterval, startTime: now - lookback, endTime: now }
                 })
             });
             const candles = await resp.json();
@@ -1556,6 +1634,12 @@
             // Hide legend for HL (no extended hours concept)
             const legend = document.getElementById('chart-legend');
             if (legend) legend.style.display = 'none';
+
+            const lastClose = parseFloat(candles[candles.length - 1].c);
+            const trendRef = chartRange === '1d' && nasdaqPrevClose
+                ? nasdaqPrevClose
+                : parseFloat(candles[0].o);
+            const trendColor = getTrendColor(lastClose, trendRef);
 
             if (chartType === 'candles') {
                 const ohlc = candles.map(c => ({
@@ -1570,6 +1654,7 @@
                     value: parseFloat(c.c),
                 }));
                 mainSeries.setData(lineData);
+                mainSeries.applyOptions({ color: trendColor });
             }
             // HL candles include volume — render it
             if (volumeSeries) {
@@ -1583,6 +1668,11 @@
                     }));
                 volumeSeries.setData(volData);
             }
+
+            const lastTime = Math.floor(parseInt(candles[candles.length - 1].t) / 1000);
+            lastPointInfo = { time: lastTime, value: lastClose, color: trendColor };
+            updateLastPointGlow();
+
             if (shouldFitContent) { chart.timeScale().fitContent(); shouldFitContent = false; }
         } catch (e) {
             console.error('Failed to load HL chart:', e);
@@ -1596,9 +1686,12 @@
         document.querySelectorAll('.chart-tabs button').forEach((btn, i) => {
             btn.classList.toggle('active', (i === 0 && tab === 'nasdaq') || (i === 1 && tab === 'hl'));
         });
+        const marketOnlyBtn = document.getElementById('btn-market-only');
+        if (marketOnlyBtn) marketOnlyBtn.disabled = (tab === 'hl');
         updateCardFocus();
         addSeries();
         loadChartData();
+        updateChartInteractivity();
     }
 
     function updateCardFocus() {
@@ -2046,13 +2139,15 @@
                 if (chartType === 'candles') {
                     mainSeries.update({
                         ...last,
-                        color: CHART_COLORS.candleExtUp,
-                        borderColor: CHART_COLORS.candleExtUp,
-                        wickColor: CHART_COLORS.candleExtUp,
+                        color: CHART_COLORS.candleExt,
+                        borderColor: CHART_COLORS.candleExt,
+                        wickColor: CHART_COLORS.candleExt,
                     });
                 } else {
                     mainSeries.update({ time: last.time, value: price, color: CHART_COLORS.extended });
                 }
+                lastPointInfo = { time: last.time, value: price, color: CHART_COLORS.extended };
+                updateLastPointGlow();
             }
             return;
         }
@@ -2087,11 +2182,17 @@
             last.close = price;
             if (price > last.high) last.high = price;
             if (price < last.low) last.low = price;
+            const trendColor = getTrendColor(price, getTrendReference(chartDataCache));
             if (chartType === 'candles') {
                 mainSeries.update(last);
             } else {
-                mainSeries.update({ time: last.time, value: price });
+                mainSeries.update({ time: last.time, value: price, color: trendColor });
             }
+            lastPointInfo = { time: last.time, value: price, color: trendColor };
+            updateLastPointGlow();
+            // Re-assert the fixed session range — lightweight-charts otherwise
+            // auto-scrolls to follow the newest bar on every real-time update.
+            if (marketOnlyView) applyMarketOnlyRange();
             // Keep intraday cache in sync
             if (nasdaqIntradayCache && nasdaqIntradayCache.length) {
                 const lastCached = nasdaqIntradayCache[nasdaqIntradayCache.length - 1];
@@ -2193,6 +2294,13 @@
         } else {
             currentTab = 'nasdaq';
         }
+        // Default the chart to "Market Hrs" while NASDAQ is actively trading
+        const marketOnlyBtn = document.getElementById('btn-market-only');
+        if (ms.status === 'market') {
+            marketOnlyView = true;
+            if (marketOnlyBtn) marketOnlyBtn.classList.add('active');
+        }
+        if (marketOnlyBtn) marketOnlyBtn.disabled = (currentTab === 'hl');
         document.querySelectorAll('.chart-tabs button').forEach((btn, i) => {
             btn.classList.toggle('active', (i === 0 && currentTab === 'nasdaq') || (i === 1 && currentTab === 'hl'));
         });
