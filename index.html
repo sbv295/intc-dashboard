@@ -32,32 +32,7 @@
         }
 
         .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .header h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .header h1 img {
-            height: 2.5em;
-            vertical-align: middle;
-        }
-
-        .header .time-display {
-            font-size: 0.85rem;
-            color: var(--text-dim);
-            text-align: right;
-            line-height: 1.6;
+            display: none;
         }
 
         .status-badge {
@@ -73,81 +48,127 @@
         .badge-premarket, .badge-postmarket { background: #3a351b; color: var(--amber); }
         .badge-closed { background: #2a2a2a; color: #888; }
 
-        /* ─── Earnings Countdown ──────────────────────────────── */
+        /* ─── Earnings Badge ──────────────────────────────────── */
         .earnings-countdown {
-            background: linear-gradient(135deg, #1a4d7a 0%, #0f3a5a 100%);
-            border: 1px solid #2a5f8f;
-            border-radius: 10px;
-            padding: 12px 20px;
-            margin-bottom: 16px;
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            background: color-mix(in srgb, var(--card-accent) 16%, var(--surface2));
+            border: 1px solid color-mix(in srgb, var(--card-accent) 40%, var(--border));
+            border-radius: 20px;
+            padding: 4px 14px;
             text-align: center;
-            font-size: 0.9rem;
-            color: #e0f2fe;
+            font-size: 0.7rem;
+            color: var(--text-dim);
             font-weight: 600;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.4px;
+            z-index: 2;
+            max-width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .earnings-countdown:empty { display: none; }
+        .earnings-countdown.live {
+            background: color-mix(in srgb, var(--red) 22%, var(--surface2));
+            border-color: color-mix(in srgb, var(--red) 55%, var(--border));
+            color: #ffd9d9;
         }
 
-        /* ─── Price Cards ─────────────────────────────────────── */
-        .cards {
+        @media (max-width: 640px) {
+            .earnings-countdown { font-size: 0.6rem; padding: 3px 10px; top: 6px; }
+        }
+
+        /* ─── INTC Card ───────────────────────────────────────── */
+        .intc-card {
+            --card-accent: #0071C5;
+            background:
+                radial-gradient(ellipse at 15% 10%, color-mix(in srgb, var(--card-accent) 12%, transparent) 0%, transparent 60%),
+                radial-gradient(ellipse at 85% 90%, color-mix(in srgb, var(--card-accent) 6%, transparent) 0%, transparent 50%),
+                var(--surface);
+            border: 1px solid color-mix(in srgb, var(--card-accent) 20%, var(--border));
+            border-radius: 14px;
+            padding: 34px 20px 16px;
+            margin-bottom: 16px;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.35s ease, box-shadow 0.35s ease;
+        }
+        .intc-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg,
+                color-mix(in srgb, var(--card-accent) 80%, white) 0%,
+                var(--card-accent) 40%,
+                transparent 100%);
+        }
+        .intc-card.market {
+            border-color: color-mix(in srgb, var(--green) 35%, var(--border));
+            box-shadow: 0 0 20px -4px rgba(0,200,83,0.15);
+        }
+        .intc-card.premarket, .intc-card.postmarket {
+            border-color: color-mix(in srgb, var(--amber) 35%, var(--border));
+            box-shadow: 0 0 16px -4px rgba(255,193,7,0.12);
+        }
+
+        .intc-card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .intc-logo { height: 28px; vertical-align: middle; }
+        .intc-card-name { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.5px; }
+        .intc-card-name .intc-full-name { color: var(--text-dim); font-weight: 500; }
+        .intc-card-header .status-badge { margin-left: auto; }
+        .intc-time {
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            text-align: center;
+            margin: -6px 0 16px;
+            letter-spacing: 0.3px;
+        }
+
+        .price-blocks {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            margin-bottom: 16px;
+            gap: 12px;
         }
-
-        @media (max-width: 900px) {
-            .cards { grid-template-columns: 1fr; }
-            .big-price { font-size: 3rem !important; }
-            .card.focused { order: -1; }
-        }
-
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 20px 24px;
+        .price-block {
             text-align: center;
-            transition: all 0.4s ease;
+            transition: opacity 0.4s ease, background 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            padding: 8px 4px;
         }
-
-        .card.focused {
-            transform: scale(1.02);
-            border-width: 2px;
+        .price-block.nasdaq-block { background: color-mix(in srgb, var(--card-accent) 5%, transparent); }
+        .price-block.hl-block { background: color-mix(in srgb, #00e676 5%, transparent); }
+        .price-block.focused {
+            box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--card-accent) 30%, transparent);
         }
-        .card:not(.focused) {
-            opacity: 0.5;
-            transform: scale(0.97);
-            filter: brightness(0.8);
+        .price-block.hl-block.focused {
+            box-shadow: inset 0 0 0 1px rgba(0,230,118,0.35);
         }
-
-        .card-nasdaq.market { border-color: var(--green); box-shadow: 0 0 12px rgba(0,200,83,0.1); }
-        .card-nasdaq.premarket, .card-nasdaq.postmarket { border-color: var(--amber); box-shadow: 0 0 8px rgba(255,193,7,0.1); }
-        .card-nasdaq.closed { border-color: var(--border); }
-
-        .card-hl {
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            border-color: #0f3460;
-        }
-
-        .source-label {
-            font-size: 0.8rem;
+        .price-block:not(.focused) { opacity: 0.72; }
+        .price-block .source-label {
+            font-size: 0.65rem;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             color: var(--text-dim);
-            margin-bottom: 8px;
-            font-weight: 600;
+            margin-bottom: 4px;
+            font-weight: 700;
         }
-        .source-label .status-badge {
-            margin-left: 8px;
-            vertical-align: middle;
-        }
-
-        .big-price {
-            font-size: 4rem;
+        .price-block .big-price {
+            font-size: 2.3rem;
             font-weight: 800;
             line-height: 1.1;
-            margin: 4px 0;
+            margin: 2px 0;
             transition: color 0.3s;
+        }
+        @media (max-width: 640px) {
+            .price-block .big-price { font-size: 1.55rem; }
         }
 
         .price-flash-up { animation: flashGreen 1.2s ease-out; }
@@ -164,21 +185,26 @@
             100% { color: var(--text); text-shadow: none; }
         }
 
-        .change { font-size: 1.1rem; font-weight: 600; margin: 4px 0; }
+        .change { font-size: 1rem; font-weight: 600; margin: 0; }
         .change.up { color: var(--green); }
         .change.down { color: var(--red); }
-        .prev-close { font-size: 0.8rem; color: var(--text-dim); }
+        .prev-close { font-size: 0.75rem; color: var(--text-dim); margin: 0; }
+        @media (max-width: 640px) {
+            .change { font-size: 0.72rem; }
+            .prev-close { font-size: 0.6rem; }
+        }
 
         .extended-price {
-            font-size: 1.05rem;
+            font-size: 0.85rem;
             color: var(--text-dim);
             margin-top: 6px;
             line-height: 1.4;
         }
+        @media (max-width: 640px) { .extended-price { font-size: 0.66rem; } }
         .extended-price .ext-label {
             font-weight: 600;
             color: var(--amber);
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -194,44 +220,60 @@
 
         .dim-element { opacity: 0.3; transition: opacity 0.5s; }
 
+        .card-meta-row {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+            padding-top: 10px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 14%, var(--border));
+        }
         .market-cap {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--text-dim);
-            margin-top: 4px;
         }
 
         .price-meta {
             font-size: 0.85rem;
             color: var(--text-dim);
-            margin: 6px 0 0;
+            margin: 4px 0 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 8px;
             flex-wrap: wrap;
         }
         .price-meta .change { margin: 0; }
         .price-meta .prev-close { margin: 0; }
 
         .session-details {
-            font-size: 0.75rem;
-            color: var(--text-dim);
-            margin-top: 10px;
-            padding-top: 8px;
-            border-top: 1px solid var(--border);
-            line-height: 2;
-            text-align: center;
-        }
-        .session-details b { color: var(--text); }
-
-        .ath-info {
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             color: var(--text-dim);
             margin-top: 8px;
             padding-top: 8px;
-            border-top: 1px solid var(--border);
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 14%, var(--border));
+            line-height: 1.9;
             text-align: center;
-            line-height: 2;
+        }
+        .session-details:empty { display: none; }
+        .session-details b { color: var(--text); }
+        .session-details.hl-mini {
+            margin-top: 6px;
+            padding-top: 6px;
+            border-top: 1px solid rgba(0,230,118,0.15);
+            font-size: 0.62rem;
+            line-height: 1.5;
+        }
+
+        .ath-info {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 14%, var(--border));
+            text-align: center;
+            line-height: 1.9;
         }
         .ath-info b { color: var(--text); }
         .ath-info .ath-value { color: var(--text); font-weight: 600; }
@@ -240,9 +282,6 @@
         /* ─── Sentiment Indicator ─────────────────────────────── */
         .nasdaq-sentiment {
             text-align: center;
-            margin-top: 10px;
-            padding: 8px 0;
-            border-top: 1px solid var(--border);
             overflow: hidden;
             max-height: 0;
             opacity: 0;
@@ -253,12 +292,12 @@
         .nasdaq-sentiment.visible {
             max-height: 250px;
             opacity: 1;
-            padding: 0;
-            margin-top: 6px;
-            margin-bottom: -12px;
+            padding-top: 8px;
+            margin-top: 8px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 14%, var(--border));
         }
         .nasdaq-sentiment img {
-            height: 90px;
+            height: 78px;
             border-radius: 6px;
             transition: opacity 0.3s ease;
         }
@@ -272,19 +311,12 @@
             margin-bottom: 16px;
         }
 
-        .chart-controls {
+        .chart-top-row {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-bottom: 12px;
-            flex-wrap: wrap;
-        }
-
-        .chart-controls label {
-            font-size: 0.75rem;
-            color: var(--text-dim);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 10px;
         }
 
         .btn-group {
@@ -305,6 +337,7 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s;
+            flex: 1;
         }
 
         .btn-group button.active {
@@ -319,7 +352,6 @@
         .chart-tabs {
             display: flex;
             gap: 2px;
-            margin-bottom: 12px;
         }
 
         .chart-tabs button {
@@ -340,9 +372,81 @@
             border-bottom-color: var(--surface);
         }
 
+        .chart-top-actions {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            position: relative;
+        }
+        .icon-btn {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            font-size: 1rem;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        .icon-btn:hover, .icon-btn.active { color: var(--text); border-color: var(--text-dim); }
+
+        .chart-settings-panel {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px;
+            gap: 10px;
+            flex-direction: column;
+            z-index: 20;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            min-width: 170px;
+        }
+        .chart-settings-panel.open { display: flex; }
+        .chart-settings-panel label {
+            display: block;
+            font-size: 0.65rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .range-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .range-row .btn-group { flex: 1; min-width: 200px; }
+        .market-only-chip {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            padding: 7px 12px;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+        .market-only-chip.active { background: var(--surface2); color: var(--text); border-color: var(--cyan); }
+
         #chart-container {
             width: 100%;
-            height: 450px;
+            height: 50vh;
+            min-height: 380px;
+            max-height: 560px;
             border-radius: 8px;
             overflow: hidden;
         }
@@ -367,24 +471,43 @@
             border-radius: 2px;
         }
 
-        @media (max-width: 768px) {
-            #chart-container { height: 320px; }
-            body { padding: 8px; }
-            .header h1 { font-size: 1.1rem; }
-            .header h1 img { height: 1.5em; }
-            .card { padding: 14px 16px; }
-            .big-price { font-size: 2.5rem !important; }
-            .chart-controls { gap: 6px; }
-            .chart-controls label { font-size: 0.65rem; }
-            .btn-group button { padding: 4px 8px; font-size: 0.65rem; }
-            .source-label { font-size: 0.7rem; }
-            .price-meta { font-size: 0.75rem; }
+        /* ─── Fullscreen Chart ────────────────────────────────── */
+        .chart-section.fullscreen {
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            margin: 0;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100dvh;
         }
+        .chart-section.fullscreen #chart-container {
+            flex: 1 1 auto;
+            height: auto;
+            min-height: 0;
+            max-height: none;
+        }
+        body.chart-fullscreen-active { overflow: hidden; }
+
+        @media (max-width: 768px) {
+            #chart-container { height: 58vh; min-height: 320px; max-height: none; }
+            body { padding: 8px; }
+            .intc-card { padding: 30px 14px 14px; }
+            .chart-tabs button { padding: 7px 14px; font-size: 0.72rem; }
+            .icon-btn { width: 28px; height: 28px; font-size: 0.9rem; }
+            .btn-group button { padding: 6px 8px; font-size: 0.68rem; }
+            .market-only-chip { padding: 6px 8px; font-size: 0.62rem; }
+            .source-label { font-size: 0.62rem; }
+            .price-meta { font-size: 0.72rem; }
+        }
+
+
 
         .nav-tabs {
             display: flex;
             gap: 4px;
-            margin-bottom: 16px;
+            margin-bottom: 0;
         }
         .nav-tabs a {
             text-decoration: none;
@@ -405,6 +528,34 @@
         }
         .nav-tabs a:hover:not(.active) { color: var(--text); }
 
+        /* ─── Hero Title ──────────────────────────────────────── */
+        .nav-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0 2px 20px rgba(0,0,0,1), 0 0 40px rgba(0,0,0,0.8), 0 0 80px rgba(0,0,0,0.5);
+            text-align: center;
+            padding: 24px 0 0;
+            margin: 0;
+            pointer-events: none;
+        }
+        .intc-time {
+            margin: 6px 0 0;
+        }
+        .intc-spacer {
+            height: 110px;
+            pointer-events: none;
+        }
+
+        @media (max-width: 640px) {
+            .nav-title { font-size: 1.5rem; letter-spacing: 3px; padding: 70px 0 0; }
+            .intc-time { margin-top: 4px; }
+            .intc-spacer { height: 50px; }
+            body { padding: 8px; overflow-x: hidden; }
+        }
+
         /* ─── Background Theme Image ─────────────────────────── */
         html { overflow-x: hidden; }
         body { position: relative; }
@@ -423,12 +574,7 @@
             z-index: 0;
         }
 
-        .intc-spacer {
-            height: 200px;
-            pointer-events: none;
-        }
-
-        .nav-tabs, .intc-spacer, .header, .cards, .chart-section, .earnings-countdown {
+        .nav-tabs, .nav-title, .intc-spacer, .intc-card, .chart-section {
             position: relative;
             z-index: 1;
         }
@@ -442,9 +588,6 @@
                 height: 320px;
                 opacity: 0.8;
             }
-            .intc-spacer {
-                height: 140px;
-            }
             body { overflow-x: hidden; }
         }
     </style>
@@ -457,53 +600,73 @@
         <a href="etfs.html">ETFs</a>
     </div>
 
+    <div class="nav-title">INTC</div>
+    <div class="intc-time" id="time-display">--</div>
+
     <div class="intc-spacer"></div>
 
-    <!-- Header -->
-    <div class="header">
-        <div>
-            <h1><img src="Intel_logo.png" alt="Intel">INTC — Intel Corporation</h1>
+    <!-- Price Card -->
+    <div class="intc-card closed" id="intc-card">
+        <div class="earnings-countdown" id="earnings-countdown"></div>
+        <div class="intc-card-header">
+            <img class="intc-logo" src="Intel_logo.png" alt="Intel">
+            <span class="intc-card-name">INTC <span class="intc-full-name">— Intel Corporation</span></span>
+            <span class="status-badge badge-closed" id="market-badge">Loading...</span>
         </div>
-        <div class="time-display" id="time-display">--</div>
-    </div>
 
-    <!-- Earnings Countdown -->
-    <div class="earnings-countdown" id="earnings-countdown"></div>
+        <div class="price-blocks">
+            <div class="price-block nasdaq-block card-nasdaq closed focused" id="nasdaq-card">
+                <div class="source-label">NASDAQ · Live</div>
+                <div class="big-price" id="nasdaq-price">—</div>
+                <div class="price-meta" id="nasdaq-meta"></div>
+                <div class="extended-price" id="nasdaq-extended"></div>
+            </div>
+            <div class="price-block hl-block card-hl" id="hl-card">
+                <div class="source-label">Hyperliquid · 24/7</div>
+                <div class="big-price" id="hl-price">—</div>
+                <div class="price-meta" id="hl-meta"></div>
+                <div class="session-details hl-mini" id="hl-details"></div>
+            </div>
+        </div>
 
-    <!-- Price Cards -->
-    <div class="cards">
-        <div class="card card-nasdaq closed" id="nasdaq-card">
-            <div class="source-label">NASDAQ: INTC (Live) <span class="status-badge badge-closed" id="market-badge">Loading...</span></div>
-            <div class="big-price" id="nasdaq-price">—</div>
-            <div class="price-meta" id="nasdaq-meta"></div>
-            <div class="extended-price" id="nasdaq-extended"></div>
+        <div class="card-meta-row">
             <div class="market-cap" id="nasdaq-mcap"></div>
             <div class="market-cap" id="nasdaq-vol"></div>
-            <div class="session-details" id="nasdaq-sessions"></div>
-            <div class="ath-info" id="nasdaq-ath"></div>
-            <div class="nasdaq-sentiment" id="nasdaq-sentiment"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
         </div>
-        <div class="card card-hl" id="hl-card">
-            <div class="source-label">Hyperliquid 24/7 (xyz:INTC perp)</div>
-            <div class="big-price" id="hl-price">—</div>
-            <div class="price-meta" id="hl-meta"></div>
-            <div class="session-details" id="hl-details"></div>
-        </div>
+        <div class="session-details" id="nasdaq-sessions"></div>
+        <div class="ath-info" id="nasdaq-ath"></div>
+        <div class="nasdaq-sentiment" id="nasdaq-sentiment"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
     </div>
 
     <!-- Chart Section -->
-    <div class="chart-section">
-        <div class="chart-tabs">
-            <button class="active" onclick="switchTab('nasdaq')">NASDAQ</button>
-            <button onclick="switchTab('hl')">Hyperliquid</button>
-        </div>
-        <div class="chart-controls">
-            <label>Type:</label>
-            <div class="btn-group" id="chart-type-group">
-                <button class="active" onclick="setChartType('line')">Line</button>
-                <button onclick="setChartType('candles')">Candles</button>
+    <div class="chart-section" id="chart-section">
+        <div class="chart-top-row">
+            <div class="chart-tabs">
+                <button class="active" onclick="switchTab('nasdaq')">NASDAQ</button>
+                <button onclick="switchTab('hl')">Hyperliquid</button>
             </div>
-            <label>Range:</label>
+            <div class="chart-top-actions">
+                <button class="icon-btn" id="chart-settings-btn" onclick="toggleChartSettings()" title="Chart settings" aria-label="Chart settings">⚙</button>
+                <div class="chart-settings-panel" id="chart-settings-panel">
+                    <div>
+                        <label>Type</label>
+                        <div class="btn-group" id="chart-type-group">
+                            <button class="active" onclick="setChartType('line')">Line</button>
+                            <button onclick="setChartType('candles')">Candles</button>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Timezone</label>
+                        <div class="btn-group" id="tz-group">
+                            <button class="active" onclick="setChartTimezone('IST')">IST</button>
+                            <button onclick="setChartTimezone('ET')">ET</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn" id="chart-expand-btn" onclick="toggleChartFullscreen()" title="Expand chart" aria-label="Expand chart">⤢</button>
+            </div>
+        </div>
+        <div class="range-row">
             <div class="btn-group" id="range-group">
                 <button class="active" onclick="setChartRange('1d')">1D</button>
                 <button onclick="setChartRange('1mo')">1M</button>
@@ -511,24 +674,7 @@
                 <button onclick="setChartRange('5y')">5Y</button>
                 <button onclick="setChartRange('max')">All</button>
             </div>
-            <label>Interval:</label>
-            <div class="btn-group" id="interval-group">
-                <button onclick="setChartInterval('1m')">1m</button>
-                <button class="active" onclick="setChartInterval('5m')">5m</button>
-                <button onclick="setChartInterval('15m')">15m</button>
-                <button onclick="setChartInterval('30m')">30m</button>
-                <button onclick="setChartInterval('1h')">1h</button>
-                <button onclick="setChartInterval('1d')">1d</button>
-                <button onclick="setChartInterval('1wk')">1wk</button>
-            </div>
-            <label>Timezone:</label>
-            <div class="btn-group" id="tz-group">
-                <button class="active" onclick="setChartTimezone('IST')">IST</button>
-                <button onclick="setChartTimezone('ET')">ET</button>
-            </div>
-            <div class="btn-group" id="fit-group">
-                <button id="btn-market-only" onclick="toggleMarketOnly()">Market Only</button>
-            </div>
+            <button class="market-only-chip" id="btn-market-only" onclick="toggleMarketOnly()">Market Hrs</button>
         </div>
         <div id="chart-container"></div>
         <div class="chart-legend" id="chart-legend">
@@ -542,7 +688,7 @@
     // ─── State ──────────────────────────────────────────────────────────────
     let currentTab = 'nasdaq';
     let chartType = 'line';
-    let chartInterval = '5m';
+    let chartInterval = '1m';
     let chartRange = '1d';
     let chart = null;
     let mainSeries = null;
@@ -835,10 +981,8 @@
 
         const diff = earningsDate - now;
         if (diff <= 0) {
-            el.innerHTML = 'INTC Earnings: LIVE NOW (July 24, 1:30 AM IST)';
-            el.style.background = 'linear-gradient(135deg, #7a1a1a 0%, #5a0f0f 100%)';
-            el.style.borderColor = '#8f2a2a';
-            el.style.color = '#ffe0e0';
+            el.innerHTML = '🔴 Earnings LIVE NOW';
+            el.classList.add('live');
             return;
         }
 
@@ -846,19 +990,17 @@
         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-        let countdownText = 'INTC Earnings on July 24, 1:30 AM IST: ';
+        let countdownText = 'Earnings in ';
         if (days > 0) {
-            countdownText += `${days}d ${hours}h ${minutes}m remaining`;
+            countdownText += `${days}d ${hours}h`;
         } else if (hours > 0) {
-            countdownText += `${hours}h ${minutes}m remaining`;
+            countdownText += `${hours}h ${minutes}m`;
         } else {
-            countdownText += `${minutes}m remaining`;
+            countdownText += `${minutes}m`;
         }
 
         el.innerHTML = countdownText;
-        el.style.background = 'linear-gradient(135deg, #1a4d7a 0%, #0f3a5a 100%)';
-        el.style.borderColor = '#2a5f8f';
-        el.style.color = '#e0f2fe';
+        el.classList.remove('live');
     }
 
     // ─── Chart Setup ────────────────────────────────────────────────────────
@@ -950,7 +1092,7 @@
         });
 
         const ro = new ResizeObserver(() => {
-            chart.applyOptions({ width: container.clientWidth });
+            chart.applyOptions({ width: container.clientWidth, height: container.clientHeight });
         });
         ro.observe(container);
 
@@ -1067,8 +1209,8 @@
 
     async function loadNasdaqChart() {
         try {
-            // For default 5m/1d, reuse data from fetchNasdaqData if available
-            if (chartInterval === '5m' && nasdaqIntradayCache) {
+            // For default 1m/1d, reuse data from fetchNasdaqData if available
+            if (chartInterval === '1m' && nasdaqIntradayCache) {
                 renderChartData(nasdaqIntradayCache);
                 return;
             }
@@ -1346,6 +1488,44 @@
         hc.classList.toggle('focused', currentTab === 'hl');
     }
 
+    // ─── Chart Settings Popover & Fullscreen ────────────────────────────────
+    function toggleChartSettings(forceState) {
+        const panel = document.getElementById('chart-settings-panel');
+        const btn = document.getElementById('chart-settings-btn');
+        const open = forceState !== undefined ? forceState : !panel.classList.contains('open');
+        panel.classList.toggle('open', open);
+        btn.classList.toggle('active', open);
+    }
+
+    document.addEventListener('click', (e) => {
+        const panel = document.getElementById('chart-settings-panel');
+        const btn = document.getElementById('chart-settings-btn');
+        if (!panel || !panel.classList.contains('open')) return;
+        if (!panel.contains(e.target) && e.target !== btn) toggleChartSettings(false);
+    });
+
+    let isChartFullscreen = false;
+    function toggleChartFullscreen() {
+        isChartFullscreen = !isChartFullscreen;
+        const section = document.getElementById('chart-section');
+        section.classList.toggle('fullscreen', isChartFullscreen);
+        document.body.classList.toggle('chart-fullscreen-active', isChartFullscreen);
+        const btn = document.getElementById('chart-expand-btn');
+        btn.textContent = isChartFullscreen ? '⤡' : '⤢';
+        btn.setAttribute('aria-label', isChartFullscreen ? 'Exit fullscreen' : 'Expand chart');
+        toggleChartSettings(false);
+        requestAnimationFrame(() => {
+            if (!chart) return;
+            const container = document.getElementById('chart-container');
+            chart.applyOptions({ width: container.clientWidth, height: container.clientHeight });
+            if (marketOnlyView) applyMarketOnlyRange(); else applyVisibleRange();
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isChartFullscreen) toggleChartFullscreen();
+    });
+
     function setChartType(type) {
         chartType = type;
         shouldFitContent = true;
@@ -1353,15 +1533,6 @@
             btn.classList.toggle('active', btn.textContent.toLowerCase() === type);
         });
         addSeries();
-        loadChartData();
-    }
-
-    function setChartInterval(interval) {
-        chartInterval = interval;
-        shouldFitContent = true;
-        document.querySelectorAll('#interval-group button').forEach(btn => {
-            btn.classList.toggle('active', btn.textContent === interval);
-        });
         loadChartData();
     }
 
@@ -1374,13 +1545,11 @@
                             btn.textContent === '5Y' ? '5y' : 'max';
             btn.classList.toggle('active', btnRange === range);
         });
-        const rangeDefaults = { '1d': '5m', '1mo': '15m', '1y': '1d', '5y': '1d', 'max': '1wk' };
-        const newInterval = rangeDefaults[range] || '5m';
+        // Auto-pick a sensible interval for the selected range
+        const rangeDefaults = { '1d': '1m', '1mo': '15m', '1y': '1d', '5y': '1d', 'max': '1wk' };
+        const newInterval = rangeDefaults[range] || '1m';
         const intervalChanged = newInterval !== chartInterval;
         chartInterval = newInterval;
-        document.querySelectorAll('#interval-group button').forEach(btn => {
-            btn.classList.toggle('active', btn.textContent === chartInterval);
-        });
         updateChartTimeOptions();
 
         if (intervalChanged) {
@@ -1411,8 +1580,8 @@
 
     async function fetchNasdaqData() {
         try {
-            // Fetch intraday data (5m interval, 1d range) for session breakdown
-            const url = `${YAHOO_BASE}?interval=5m&range=1d&includePrePost=true`;
+            // Fetch intraday data (1m interval, 1d range) for session breakdown
+            const url = `${YAHOO_BASE}?interval=1m&range=1d&includePrePost=true`;
             const json = await yahooFetch(url);
             const result = json.chart.result[0];
             const meta = result.meta;
@@ -1431,7 +1600,12 @@
 
             // NASDAQ card styling
             const nasdaqCard = document.getElementById('nasdaq-card');
-            nasdaqCard.className = `card card-nasdaq ${ms.status}${currentTab === 'nasdaq' ? ' focused' : ''}`;
+            nasdaqCard.classList.remove('market', 'premarket', 'postmarket', 'closed');
+            nasdaqCard.classList.add(ms.status);
+            nasdaqCard.classList.toggle('focused', currentTab === 'nasdaq');
+            const intcCardEl = document.getElementById('intc-card');
+            intcCardEl.classList.remove('market', 'premarket', 'postmarket', 'closed');
+            intcCardEl.classList.add(ms.status);
 
             // Price from meta (most recent)
             // During pre/post/closed: regularMarketPrice = last session close (our prev close)
@@ -1930,7 +2104,13 @@
             const badge = document.getElementById('market-badge');
             badge.textContent = ms.label;
             badge.className = `status-badge badge-${ms.status}`;
-            document.getElementById('nasdaq-card').className = `card card-nasdaq ${ms.status}${currentTab === 'nasdaq' ? ' focused' : ''}`;
+            const nasdaqCardEl = document.getElementById('nasdaq-card');
+            nasdaqCardEl.classList.remove('market', 'premarket', 'postmarket', 'closed');
+            nasdaqCardEl.classList.add(ms.status);
+            nasdaqCardEl.classList.toggle('focused', currentTab === 'nasdaq');
+            const intcCardEl2 = document.getElementById('intc-card');
+            intcCardEl2.classList.remove('market', 'premarket', 'postmarket', 'closed');
+            intcCardEl2.classList.add(ms.status);
             // Dim elements based on market status
             const nasDim = ms.status !== 'market';
             const extDim = ms.status === 'closed' || ms.status === 'market';
