@@ -693,16 +693,16 @@
             transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease, margin 0.3s ease;
         }
         .stock-sentiment.visible {
-            max-height: 200px;
+            max-height: 150px;
             opacity: 1;
-            padding: 0;
+            padding: 4px 0 0;
             margin-top: 6px;
-            margin-bottom: -12px;
+            margin-bottom: 4px;
         }
-        .stock-sentiment img {
-            height: 75px;
-            border-radius: 6px;
-            transition: opacity 0.3s ease;
+        .stock-sentiment canvas {
+            display: block;
+            width: 100%;
+            height: 100px;
         }
 
         /* ─── Collapse/Expand ─────────────────────────────── */
@@ -953,56 +953,58 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null, sentiment: 'neutral', currentPct: null };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null, currentPct: null, chartSeries: null, chartRange: null };
     });
 
-    // ─── Sentiment Indicator ────────────────────────────────────────────────
-    const SENTIMENT_BULL_THRESHOLD = 1.0;
-    const SENTIMENT_BEAR_THRESHOLD = -1.0;
-    const SENTIMENT_HYSTERESIS = 0.1;
-
-    function computeSentiment(pctChange, currentSentiment) {
-        if (currentSentiment === 'bull') {
-            if (pctChange < SENTIMENT_BULL_THRESHOLD - SENTIMENT_HYSTERESIS) {
-                if (pctChange < SENTIMENT_BEAR_THRESHOLD - SENTIMENT_HYSTERESIS) return 'bear';
-                return 'neutral';
-            }
-            return 'bull';
-        } else if (currentSentiment === 'bear') {
-            if (pctChange > SENTIMENT_BEAR_THRESHOLD + SENTIMENT_HYSTERESIS) {
-                if (pctChange > SENTIMENT_BULL_THRESHOLD + SENTIMENT_HYSTERESIS) return 'bull';
-                return 'neutral';
-            }
-            return 'bear';
-        } else {
-            // neutral
-            if (pctChange > SENTIMENT_BULL_THRESHOLD + SENTIMENT_HYSTERESIS) return 'bull';
-            if (pctChange < SENTIMENT_BEAR_THRESHOLD - SENTIMENT_HYSTERESIS) return 'bear';
-            return 'neutral';
-        }
-    }
-
-    const SENTIMENT_IMAGES = {
-        bull: 'logos/bull.png',
-        bear: 'logos/bear.png',
-        neutral: 'logos/bull_vs_bear.png'
-    };
-
+    // ─── Live Performance Mini-Chart ────────────────────────────────────────
     function updateSentiment(ticker, pctChange) {
         const st = state[ticker];
         const stock = STOCKS.find(s => s.ticker === ticker);
         if (!stock) return;
         st.currentPct = pctChange;
         if (ticker === 'INTC' || ticker === 'AMD') updateBattleBar();
-        const newSentiment = computeSentiment(pctChange, st.sentiment);
-        const _sid = sid(stock);
-        const el = document.getElementById(`sentiment-${_sid}`);
-        if (!el) return;
-        if (newSentiment !== st.sentiment) {
-            st.sentiment = newSentiment;
-            const img = el.querySelector('img');
-            if (img) img.src = SENTIMENT_IMAGES[newSentiment];
-        }
+        drawSentimentChart(ticker);
+    }
+
+    function drawSentimentChart(ticker) {
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        if (!stock) return;
+        const st = state[ticker];
+        const series = st.chartSeries, range = st.chartRange;
+        if (!series || series.length < 2 || !range) return;
+        const canvas = document.getElementById(`chart-${sid(stock)}`);
+        if (!canvas) return;
+        const rectW = canvas.clientWidth, rectH = canvas.clientHeight;
+        if (!rectW || !rectH) return;
+        const dpr = window.devicePixelRatio || 1;
+        if (canvas.width !== rectW * dpr) canvas.width = rectW * dpr;
+        if (canvas.height !== rectH * dpr) canvas.height = rectH * dpr;
+        const ctx = canvas.getContext('2d');
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.clearRect(0, 0, rectW, rectH);
+
+        const pad = 4;
+        let minP = Infinity, maxP = -Infinity;
+        series.forEach(p => { if (p.c < minP) minP = p.c; if (p.c > maxP) maxP = p.c; });
+        if (minP === maxP) { minP -= 1; maxP += 1; }
+        const vPad = (maxP - minP) * 0.1;
+        minP -= vPad; maxP += vPad;
+
+        const span = Math.max(1, range.end - range.start);
+        const xScale = t => pad + (Math.min(Math.max(t, range.start), range.end) - range.start) / span * (rectW - pad * 2);
+        const yScale = c => rectH - pad - (c - minP) / (maxP - minP) * (rectH - pad * 2);
+
+        ctx.beginPath();
+        series.forEach((p, i) => {
+            const x = xScale(p.t), y = yScale(p.c);
+            if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+        });
+        const negative = (st.currentPct != null) ? st.currentPct < 0 : series[series.length - 1].c < series[0].c;
+        ctx.strokeStyle = negative ? '#ff1744' : '#00c853';
+        ctx.lineWidth = 1.75;
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        ctx.stroke();
     }
 
     // ─── INTC vs AMD Battle Bar ─────────────────────────────────────────────
@@ -1065,6 +1067,7 @@
             // Show only during regular market hours
             const show = (ms === 'market');
             el.classList.toggle('visible', show);
+            if (show) drawSentimentChart(s.ticker);
         });
     }
 
@@ -1224,7 +1227,7 @@
                     </div>` : ''}
                 </div>
                 <div class="stock-collapse-body"><div class="stock-collapse-inner">
-                <div class="stock-sentiment" id="sentiment-${id}"><img src="logos/bull_vs_bear.png" alt="sentiment"></div>
+                <div class="stock-sentiment" id="sentiment-${id}"><canvas class="sentiment-chart" id="chart-${id}"></canvas></div>
                 <div class="stock-ohl" id="ohl-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
                 <div class="stock-extended" id="ext-${id}"></div>
@@ -1285,6 +1288,20 @@
                 for (let i = timestamps.length - 1; i >= 0; i--) {
                     const t = timestamps[i], c = quote.close[i];
                     if (c != null && t >= tp.regular.start && t < tp.post.start) { regularClose = c; break; }
+                }
+            }
+
+            // Build today's regular-hours series for the live mini performance chart.
+            // X-axis is locked to the full regular session window (tp.regular.start..end).
+            if (tp && tp.regular) {
+                const series = [];
+                for (let i = 0; i < timestamps.length; i++) {
+                    const t = timestamps[i], c = quote.close[i];
+                    if (c != null && t >= tp.regular.start && t <= tp.regular.end) series.push({ t, c });
+                }
+                if (series.length) {
+                    state[stock.ticker].chartSeries = series;
+                    state[stock.ticker].chartRange = { start: tp.regular.start, end: tp.regular.end };
                 }
             }
 
@@ -1530,6 +1547,15 @@
         st.extPrice = null;
         priceEl.textContent = fmtPrice(stock, price);
         updateMarketCap(ticker);
+
+        // Append live tick to the mini performance chart (regular market hours only)
+        if (st.chartRange) {
+            const nowSec = Math.floor(Date.now() / 1000);
+            if (nowSec >= st.chartRange.start && nowSec <= st.chartRange.end) {
+                if (!st.chartSeries) st.chartSeries = [];
+                st.chartSeries.push({ t: nowSec, c: price });
+            }
+        }
 
         const chgEl = document.getElementById(`nasdaq-chg-${_sid}`);
         // Always use prevClose (yesterday's close from chart API) for main change display
