@@ -414,10 +414,12 @@
         .mcap-summary-change .up { color: var(--green); }
         .mcap-summary-change .down { color: var(--red); }
         .fx-rate-badge {
-            margin-left: auto;
-            font-size: 0.75rem;
-            font-weight: 700;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
             color: var(--text-dim);
+            opacity: 0.85;
+            text-transform: none;
             white-space: nowrap;
         }
         .fx-rate-badge .fx-rate-value {
@@ -797,13 +799,12 @@
         <div class="time-display" id="time-display-legacy">--</div>
     </div>
 
-    <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><button class="section-collapse-btn" id="collapse-btn-us" onclick="toggleAllCards('us')">−</button><span class="section-et" id="et-clock"></span></div>
+    <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><button class="section-collapse-btn" id="collapse-btn-us" onclick="toggleAllCards('us')">−</button><span class="fx-rate-badge" id="fx-rate-usdinr">1 USD = <span class="fx-rate-value">—</span> INR</span><span class="section-et" id="et-clock"></span></div>
     <div class="holiday-banner" id="holiday-banner"></div>
     <div class="mcap-summary" id="mcap-summary-us">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
         <span class="mcap-summary-value" id="mcap-total-us">—</span>
         <span class="mcap-summary-change" id="mcap-chg-us"></span>
-        <span class="fx-rate-badge" id="fx-rate-usdinr">1 USD = <span class="fx-rate-value">—</span> INR</span>
         <img src="logos/casino.png" alt="casino" class="casino-badge">
     </div>
 
