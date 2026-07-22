@@ -826,7 +826,7 @@
 
     <div class="stock-grid" id="stock-grid-us"></div>
 
-    <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span><button class="section-collapse-btn" id="collapse-btn-kr" onclick="toggleAllCards('kr')">−</button></div>
+    <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span><button class="section-collapse-btn" id="collapse-btn-kr" onclick="toggleAllCards('kr')">−</button><span class="fx-rate-badge" id="fx-rate-usdkrw">1 USD = <span class="fx-rate-value">—</span> KRW</span></div>
     <div class="holiday-banner" id="holiday-banner-kr"></div>
     <div class="mcap-summary" id="mcap-summary-kr">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
@@ -898,7 +898,14 @@
             const url = `${YAHOO_BASE}USDKRW=X?interval=1d&range=1d`;
             const json = await yahooFetch(url);
             const rate = json.chart.result[0].meta.regularMarketPrice;
-            if (rate > 0) krwToUsd = 1 / rate;
+            if (rate > 0) {
+                krwToUsd = 1 / rate;
+                const el = document.getElementById('fx-rate-usdkrw');
+                if (el) {
+                    const valEl = el.querySelector('.fx-rate-value');
+                    if (valEl) valEl.textContent = Math.round(rate).toLocaleString();
+                }
+            }
         } catch(e) {}
     }
 
@@ -1929,6 +1936,7 @@
         connectYahooWs();
         connectHlWs();
         await fetchKrwRate();
+        setInterval(fetchKrwRate, 60000);
         fetchUsdInrRate();
         setInterval(fetchUsdInrRate, 60000);
         fetchAllNasdaq().then(() => {
