@@ -693,11 +693,13 @@
             transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease, margin 0.3s ease;
         }
         .stock-sentiment.visible {
-            max-height: 150px;
+            max-height: 170px;
             opacity: 1;
-            padding: 4px 0 0;
+            padding: 6px;
             margin-top: 6px;
             margin-bottom: 4px;
+            background: rgba(0,0,0,0.18);
+            border-radius: 10px;
         }
         .stock-sentiment canvas {
             display: block;
@@ -983,28 +985,65 @@
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
         ctx.clearRect(0, 0, rectW, rectH);
 
-        const pad = 4;
+        const padT = 6, padB = 4, padX = 2;
         let minP = Infinity, maxP = -Infinity;
         series.forEach(p => { if (p.c < minP) minP = p.c; if (p.c > maxP) maxP = p.c; });
         if (minP === maxP) { minP -= 1; maxP += 1; }
-        const vPad = (maxP - minP) * 0.1;
+        const vPad = (maxP - minP) * 0.15;
         minP -= vPad; maxP += vPad;
 
         const span = Math.max(1, range.end - range.start);
-        const xScale = t => pad + (Math.min(Math.max(t, range.start), range.end) - range.start) / span * (rectW - pad * 2);
-        const yScale = c => rectH - pad - (c - minP) / (maxP - minP) * (rectH - pad * 2);
+        const xScale = t => padX + (Math.min(Math.max(t, range.start), range.end) - range.start) / span * (rectW - padX * 2);
+        const yScale = c => padT + (1 - (c - minP) / (maxP - minP)) * (rectH - padT - padB);
 
-        ctx.beginPath();
-        series.forEach((p, i) => {
-            const x = xScale(p.t), y = yScale(p.c);
-            if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
-        });
         const negative = (st.currentPct != null) ? st.currentPct < 0 : series[series.length - 1].c < series[0].c;
-        ctx.strokeStyle = negative ? '#ff1744' : '#00c853';
+        const color = negative ? '#ff1744' : '#00c853';
+
+        // Subtle horizontal grid lines, echoing index.html's chart grid styling
+        ctx.strokeStyle = 'rgba(255,255,255,0.07)';
+        ctx.lineWidth = 1;
+        for (let i = 1; i < 3; i++) {
+            const gy = Math.round(padT + (rectH - padT - padB) * (i / 3)) + 0.5;
+            ctx.beginPath();
+            ctx.moveTo(0, gy);
+            ctx.lineTo(rectW, gy);
+            ctx.stroke();
+        }
+
+        const points = series.map(p => ({ x: xScale(p.t), y: yScale(p.c) }));
+        const baseline = rectH - padB;
+
+        // Area fill: gradient fading from the trend color down to transparent
+        const gradient = ctx.createLinearGradient(0, padT, 0, baseline);
+        gradient.addColorStop(0, color + '4d'); // ~30% opacity
+        gradient.addColorStop(1, color + '00'); // transparent
+        ctx.beginPath();
+        ctx.moveTo(points[0].x, baseline);
+        points.forEach(pt => ctx.lineTo(pt.x, pt.y));
+        ctx.lineTo(points[points.length - 1].x, baseline);
+        ctx.closePath();
+        ctx.fillStyle = gradient;
+        ctx.fill();
+
+        // Stroke the performance line on top of the fill
+        ctx.beginPath();
+        points.forEach((pt, i) => { if (i === 0) ctx.moveTo(pt.x, pt.y); else ctx.lineTo(pt.x, pt.y); });
+        ctx.strokeStyle = color;
         ctx.lineWidth = 1.75;
         ctx.lineJoin = 'round';
         ctx.lineCap = 'round';
         ctx.stroke();
+
+        // Glowing live marker at the most recent point
+        const last = points[points.length - 1];
+        ctx.save();
+        ctx.shadowColor = color;
+        ctx.shadowBlur = 6;
+        ctx.beginPath();
+        ctx.arc(last.x, last.y, 2.5, 0, Math.PI * 2);
+        ctx.fillStyle = color;
+        ctx.fill();
+        ctx.restore();
     }
 
     // ─── INTC vs AMD Battle Bar ─────────────────────────────────────────────
