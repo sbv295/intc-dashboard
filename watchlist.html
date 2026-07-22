@@ -1065,6 +1065,16 @@
             ctx.lineTo(rectW, pcy);
             ctx.stroke();
             ctx.restore();
+
+            ctx.save();
+            ctx.font = axisFont;
+            ctx.fillStyle = 'rgba(255,255,255,0.55)';
+            ctx.textAlign = 'right';
+            ctx.textBaseline = 'middle';
+            const pcLabel = `Prev Close ${fmtPrice(stock, prevClose)}`;
+            const labelY = (pcy - padT < 9) ? pcy + 9 : pcy - 7;
+            ctx.fillText(pcLabel, rectW - padR, labelY);
+            ctx.restore();
         }
 
         const points = series.map(p => ({ x: xScale(p.t), y: yScale(p.c) }));
