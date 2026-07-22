@@ -1009,8 +1009,10 @@
         ctx.clearRect(0, 0, rectW, rectH);
 
         const padT = 8, padB = 6, padR = 4;
+        const prevClose = st.prevClose;
         let minP = Infinity, maxP = -Infinity;
         series.forEach(p => { if (p.c < minP) minP = p.c; if (p.c > maxP) maxP = p.c; });
+        if (prevClose != null) { if (prevClose < minP) minP = prevClose; if (prevClose > maxP) maxP = prevClose; }
         if (minP === maxP) { minP -= 1; maxP += 1; }
         const vPad = (maxP - minP) * 0.15;
         minP -= vPad; maxP += vPad;
@@ -1050,6 +1052,20 @@
             const clampedY = Math.min(rectH - 7, Math.max(7, gy));
             ctx.fillText(tickLabels[i], 2, clampedY);
         });
+
+        // Dotted reference line at the previous close, so intraday moves are easy to gauge
+        if (prevClose != null) {
+            const pcy = Math.round(yScale(prevClose)) + 0.5;
+            ctx.save();
+            ctx.setLineDash([3, 3]);
+            ctx.strokeStyle = 'rgba(255,255,255,0.4)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(padL, pcy);
+            ctx.lineTo(rectW, pcy);
+            ctx.stroke();
+            ctx.restore();
+        }
 
         const points = series.map(p => ({ x: xScale(p.t), y: yScale(p.c) }));
         const baseline = rectH - padB;
