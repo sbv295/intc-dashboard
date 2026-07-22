@@ -1307,7 +1307,7 @@
     // ─── Fetch NASDAQ Data ──────────────────────────────────────────────────
     async function fetchNasdaqForStock(stock) {
         try {
-            const url = `${YAHOO_BASE}${stock.ticker}?interval=5m&range=2d&includePrePost=true`;
+            const url = `${YAHOO_BASE}${stock.ticker}?interval=1m&range=2d&includePrePost=true`;
             const json = await yahooFetch(url);
             const result = json.chart.result[0];
             const meta = result.meta;
@@ -1364,7 +1364,7 @@
 
             // Determine display price
             // Use meta.regularMarketPrice as the official close (includes closing auction)
-            // Candle data is only a fallback since the last 5-min bar misses the closing cross
+            // Candle data is only a fallback since the last 1-min bar misses the closing cross
             // KRX has no pre/post market — only 'market' or 'closed'
             let displayPrice, extPrice = null, extLabel = null, refPrice = null;
             if (stock.currency === 'KRW') {
