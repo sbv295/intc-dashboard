@@ -633,6 +633,18 @@
             #chart-container { height: 58vh; min-height: 320px; max-height: none; }
             body { padding: 8px; }
             .intc-card { padding: 30px 14px 14px; }
+            .chart-section:not(.fullscreen) {
+                padding: 12px 4px;
+                margin-left: -8px;
+                margin-right: -8px;
+                border-radius: 0;
+                border-left: none;
+                border-right: none;
+            }
+            .chart-section:not(.fullscreen) .chart-top-row,
+            .chart-section:not(.fullscreen) .range-row {
+                padding: 0 8px;
+            }
             .chart-tabs button { padding: 7px 14px; font-size: 0.72rem; }
             .icon-btn { width: 28px; height: 28px; font-size: 0.9rem; }
             .btn-group button { padding: 6px 8px; font-size: 0.68rem; }
