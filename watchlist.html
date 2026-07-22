@@ -413,6 +413,17 @@
         }
         .mcap-summary-change .up { color: var(--green); }
         .mcap-summary-change .down { color: var(--red); }
+        .fx-rate-badge {
+            margin-left: auto;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-dim);
+            white-space: nowrap;
+        }
+        .fx-rate-badge .fx-rate-value {
+            color: var(--text);
+            font-weight: 800;
+        }
 
         /* ─── INTC vs AMD Battle Bar ─────────────────────────── */
         .battle-bar {
@@ -792,6 +803,7 @@
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
         <span class="mcap-summary-value" id="mcap-total-us">—</span>
         <span class="mcap-summary-change" id="mcap-chg-us"></span>
+        <span class="fx-rate-badge" id="fx-rate-usdinr">1 USD = <span class="fx-rate-value">—</span> INR</span>
         <img src="logos/casino.png" alt="casino" class="casino-badge">
     </div>
 
@@ -879,6 +891,7 @@
     }
 
     let krwToUsd = null;
+    let usdToInr = null;
 
     async function fetchKrwRate() {
         try {
@@ -886,6 +899,22 @@
             const json = await yahooFetch(url);
             const rate = json.chart.result[0].meta.regularMarketPrice;
             if (rate > 0) krwToUsd = 1 / rate;
+        } catch(e) {}
+    }
+
+    async function fetchUsdInrRate() {
+        try {
+            const url = `${YAHOO_BASE}USDINR=X?interval=1d&range=1d`;
+            const json = await yahooFetch(url);
+            const rate = json.chart.result[0].meta.regularMarketPrice;
+            if (rate > 0) {
+                usdToInr = rate;
+                const el = document.getElementById('fx-rate-usdinr');
+                if (el) {
+                    const valEl = el.querySelector('.fx-rate-value');
+                    if (valEl) valEl.textContent = usdToInr.toFixed(2);
+                }
+            }
         } catch(e) {}
     }
 
@@ -1900,6 +1929,8 @@
         connectYahooWs();
         connectHlWs();
         await fetchKrwRate();
+        fetchUsdInrRate();
+        setInterval(fetchUsdInrRate, 60000);
         fetchAllNasdaq().then(() => {
             fetchAllShares();
             fetchAllATH();
