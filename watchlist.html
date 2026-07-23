@@ -1040,7 +1040,11 @@
         const vPad = (maxP - minP) * 0.15;
         minP -= vPad; maxP += vPad;
 
-        const negative = (st.currentPct != null) ? st.currentPct < 0 : series[series.length - 1].c < series[0].c;
+        // Color is derived from the chart's own last plotted point vs. the previous close,
+        // so it always matches exactly what's drawn (st.currentPct can momentarily disagree,
+        // e.g. when the official closing-auction price differs from the last 1-min candle).
+        const lastClose = series[series.length - 1].c;
+        const negative = (prevClose != null) ? lastClose < prevClose : lastClose < series[0].c;
         const color = negative ? '#ff1744' : '#00c853';
 
         // Reserve space on the left for Y-axis price labels (high / mid / low), whole numbers only
