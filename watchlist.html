@@ -1162,16 +1162,15 @@
     }
 
     function updateSentimentVisibility() {
-        const usMs = getMarketStatus();
-        const krMs = getKrxMarketStatus();
         updateBattleBarVisibility();
         STOCKS.forEach(s => {
             const _sid = sid(s);
             const el = document.getElementById(`sentiment-${_sid}`);
             if (!el) return;
-            const ms = s.currency === 'KRW' ? krMs : usMs;
-            // Show only during regular market hours
-            const show = (ms === 'market');
+            // Once a session's data has loaded, keep the chart showing (frozen on the last
+            // session) through pre/post market and closed hours — it only refreshes itself
+            // when the next trading day's data arrives via fetchNasdaqForStock.
+            const show = !!state[s.ticker].chartSeries;
             el.classList.toggle('visible', show);
             if (show) drawSentimentChart(s.ticker);
         });
@@ -1549,7 +1548,14 @@
                 }
             }
 
-
+            // Refresh the mini chart immediately so a new trading day's data appears as soon
+            // as it arrives, even outside regular market hours (chart otherwise stays frozen
+            // on the last completed session).
+            if (state[stock.ticker].chartSeries) {
+                const sentimentEl = document.getElementById(`sentiment-${_sid}`);
+                if (sentimentEl) sentimentEl.classList.add('visible');
+                drawSentimentChart(stock.ticker);
+            }
 
         } catch (e) {
             // Silent fail
