@@ -1177,10 +1177,8 @@
             ctx.restore();
 
             if (tooltipEl) {
-                const tz = stock.currency === 'KRW' ? 'Asia/Seoul' : 'America/New_York';
-                const tzLabel = stock.currency === 'KRW' ? 'KST' : 'ET';
-                const timeStr = new Date(sp.t * 1000).toLocaleString('en-US', { timeZone: tz, hour: 'numeric', minute: '2-digit', hour12: true });
-                tooltipEl.innerHTML = `<div class="chart-tooltip-price">${fmtPrice(stock, sp.c)}</div><div class="chart-tooltip-time">${timeStr} ${tzLabel}</div>`;
+                const timeStr = new Date(sp.t * 1000).toLocaleString('en-US', { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: '2-digit', hour12: true });
+                tooltipEl.innerHTML = `<div class="chart-tooltip-price">${fmtPrice(stock, sp.c)}</div><div class="chart-tooltip-time">${timeStr} IST</div>`;
                 tooltipEl.style.display = 'block';
                 const tw = tooltipEl.offsetWidth;
                 // Keep the callout pinned near the top of the chart; only its horizontal
@@ -1188,7 +1186,7 @@
                 let tx = canvas.offsetLeft + pt.x + 8;
                 if (tx + tw > canvas.offsetLeft + rectW) tx = canvas.offsetLeft + pt.x - tw - 8;
                 if (tx < canvas.offsetLeft) tx = canvas.offsetLeft;
-                const ty = canvas.offsetTop + padT + 2;
+                const ty = canvas.offsetTop + 1;
                 tooltipEl.style.left = tx + 'px';
                 tooltipEl.style.top = ty + 'px';
             }
