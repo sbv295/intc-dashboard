@@ -1178,11 +1178,13 @@
                 const timeStr = new Date(sp.t * 1000).toLocaleString('en-US', { timeZone: tz, hour: 'numeric', minute: '2-digit', hour12: true });
                 tooltipEl.innerHTML = `<div class="chart-tooltip-price">${fmtPrice(stock, sp.c)}</div><div class="chart-tooltip-time">${timeStr} ${tzLabel}</div>`;
                 tooltipEl.style.display = 'block';
-                const tw = tooltipEl.offsetWidth, th = tooltipEl.offsetHeight;
+                const tw = tooltipEl.offsetWidth;
+                // Keep the callout pinned near the top of the chart; only its horizontal
+                // position follows the cursor, so it never bounces up/down with price.
                 let tx = canvas.offsetLeft + pt.x + 8;
                 if (tx + tw > canvas.offsetLeft + rectW) tx = canvas.offsetLeft + pt.x - tw - 8;
-                let ty = canvas.offsetTop + pt.y - th - 8;
-                if (ty < canvas.offsetTop) ty = canvas.offsetTop + pt.y + 8;
+                if (tx < canvas.offsetLeft) tx = canvas.offsetLeft;
+                const ty = canvas.offsetTop + padT + 2;
                 tooltipEl.style.left = tx + 'px';
                 tooltipEl.style.top = ty + 'px';
             }
