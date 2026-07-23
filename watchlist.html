@@ -575,7 +575,7 @@
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
             text-align: center;
             letter-spacing: 0.3px;
-            line-height: 1.35;
+            white-space: nowrap;
             cursor: help;
         }
         .stock-ath .ath-label {
@@ -590,10 +590,6 @@
         .stock-ath .ath-pct {
             font-weight: 600;
             color: var(--text-dim);
-        }
-        .stock-ath .ath-intraday {
-            opacity: 0.7;
-            font-weight: 500;
         }
 
         /* ─── Earnings Date Badge ────────────────────────── */
@@ -2145,8 +2141,7 @@
             const pctFromLowTrade = curPrice ? ((curPrice - lowTrade) / lowTrade * 100).toFixed(1) : null;
             const pctHtml = (pct) => pct !== null ? ` <span class="ath-pct">(${Number(pct) >= 0 ? '+' : ''}${pct}%)</span>` : '';
             athEl.innerHTML =
-                `<span class="ath-label">52W High:</span> <span class="ath-value">${fmtP(highClose)}</span>${pctHtml(pctFromHigh)} <span class="ath-intraday">(${fmtP(highTrade)} intraday)</span><br>` +
-                `<span class="ath-label">52W Low:</span> <span class="ath-value">${fmtP(lowClose)}</span>${pctHtml(pctFromLow)} <span class="ath-intraday">(${fmtP(lowTrade)} intraday)</span>`;
+                `<span class="ath-label">52W:</span> <span class="ath-value">${fmtP(lowClose)}</span>${pctHtml(pctFromLow)} – <span class="ath-value">${fmtP(highClose)}</span>${pctHtml(pctFromHigh)}`;
             athEl.title =
                 `52W High Close: ${fmtP(highClose)} on ${fmtDate(highCloseDate)}\n` +
                 `52W High Trade: ${fmtP(highTrade)} on ${fmtDate(highTradeDate)}\n` +
