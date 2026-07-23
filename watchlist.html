@@ -625,20 +625,8 @@
             color: var(--amber);
         }
 
-        /* ─── Fundamentals (PE + Analyst Target) ────────── */
+        /* ─── Fundamentals (PE + Target + Beta + P/B + Rec) ─ */
         .stock-fundamentals {
-            font-size: 0.55rem;
-            color: var(--text-dim);
-            margin-top: 4px;
-            padding-top: 8px;
-            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
-            text-align: center;
-            letter-spacing: 0.3px;
-            line-height: 1.2;
-        }
-        .stock-fundamentals:empty { display: none; }
-        /* ─── Risk & Rating (Beta + P/B + Analyst Rec) ──── */
-        .stock-risk {
             font-size: 0.55rem;
             color: var(--text-dim);
             margin-top: 4px;
@@ -648,15 +636,13 @@
             letter-spacing: 0.3px;
             line-height: 1.2;
         }
-        .stock-risk:empty { display: none; }
-        .stock-fundamentals .fund-label,
-        .stock-risk .fund-label {
+        .stock-fundamentals:empty { display: none; }
+        .stock-fundamentals .fund-label {
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-        .stock-fundamentals .fund-value,
-        .stock-risk .fund-value {
+        .stock-fundamentals .fund-value {
             color: var(--text);
             font-weight: 600;
         }
@@ -664,16 +650,12 @@
             font-weight: 700;
             color: var(--text);
         }
-        .stock-fundamentals .fund-rec,
-        .stock-risk .fund-rec {
+        .stock-fundamentals .fund-rec {
             font-weight: 700;
         }
-        .stock-fundamentals .fund-rec.buy,
-        .stock-risk .fund-rec.buy { color: var(--green); }
-        .stock-fundamentals .fund-rec.hold,
-        .stock-risk .fund-rec.hold { color: var(--amber); }
-        .stock-fundamentals .fund-rec.sell,
-        .stock-risk .fund-rec.sell { color: var(--red); }
+        .stock-fundamentals .fund-rec.buy { color: var(--green); }
+        .stock-fundamentals .fund-rec.hold { color: var(--amber); }
+        .stock-fundamentals .fund-rec.sell { color: var(--red); }
 
         /* ─── Sentiment Indicator ─────────────────────────── */
         .stock-sentiment {
@@ -784,7 +766,7 @@
         @media (max-width: 640px) {
             .collapse-toggle { display: block; }
             .section-collapse-btn { display: inline-block; }
-            .stock-fundamentals, .stock-risk { font-size: 0.72rem; }
+            .stock-fundamentals { font-size: 0.72rem; }
         }
 
         .stock-collapse-body {
@@ -1438,7 +1420,6 @@
                 <div class="stock-extended" id="ext-${id}"></div>
                 <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-fundamentals" id="fundamentals-${id}"></div>
-                <div class="stock-risk" id="risk-${id}"></div>
                 </div></div>
                 <div class="stock-extended stock-extended-mirror" id="ext-mirror-${id}"></div>
             </div>
@@ -1935,37 +1916,30 @@
                     const forwardPE  = result?.summaryDetail?.forwardPE?.raw;
                     const targetPrice = result?.financialData?.targetMeanPrice?.raw;
                     const fundamentalsEl = document.getElementById(`fundamentals-${_sid}`);
-                    if (fundamentalsEl) {
-                        const parts = [];
-                        if (trailingPE != null && isFinite(trailingPE)) parts.push(`<span class="fund-label">PE(TTM)</span> <span class="fund-value">${trailingPE.toFixed(1)}</span>`);
-                        if (forwardPE  != null && isFinite(forwardPE))  parts.push(`<span class="fund-label">PE(Fwd)</span> <span class="fund-value">${forwardPE.toFixed(1)}</span>`);
-                        if (targetPrice != null) {
-                            parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice1(stock, targetPrice)}</span>`);
-                        }
-                        if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' · ');
+                    const parts = [];
+                    if (trailingPE != null && isFinite(trailingPE)) parts.push(`<span class="fund-label">PE(TTM)</span> <span class="fund-value">${trailingPE.toFixed(1)}</span>`);
+                    if (forwardPE  != null && isFinite(forwardPE))  parts.push(`<span class="fund-label">PE(Fwd)</span> <span class="fund-value">${forwardPE.toFixed(1)}</span>`);
+                    if (targetPrice != null) {
+                        parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice1(stock, targetPrice)}</span>`);
                     }
 
                     // Risk & Rating: Beta, P/B, Analyst Rec
                     const beta = result?.defaultKeyStatistics?.beta?.raw ?? result?.summaryDetail?.beta?.raw;
                     const priceToBook = result?.defaultKeyStatistics?.priceToBook?.raw;
                     const recKey = result?.financialData?.recommendationKey;
-                    const riskEl = document.getElementById(`risk-${_sid}`);
-                    if (riskEl) {
-                        const riskParts = [];
-                        if (beta != null && isFinite(beta)) riskParts.push(`<span class="fund-label" style="text-transform:none">β</span> <span class="fund-value">${beta.toFixed(2)}</span>`);
-                        if (priceToBook != null && isFinite(priceToBook)) riskParts.push(`<span class="fund-label">P/B</span> <span class="fund-value">${priceToBook.toFixed(1)}</span>`);
-                        if (recKey && recKey !== 'none') {
-                            const recMap = {
-                                strong_buy: ['Strong Buy', 'buy'], buy: ['Buy', 'buy'],
-                                hold: ['Hold', 'hold'],
-                                sell: ['Sell', 'sell'], strong_sell: ['Strong Sell', 'sell'],
-                                underperform: ['Sell', 'sell'], outperform: ['Buy', 'buy']
-                            };
-                            const [label, cls] = recMap[recKey] || [null, null];
-                            if (label) riskParts.push(`<span class="fund-label">Rec</span> <span class="fund-rec ${cls}">${label}</span>`);
-                        }
-                        if (riskParts.length > 0) riskEl.innerHTML = riskParts.join(' · ');
+                    if (beta != null && isFinite(beta)) parts.push(`<span class="fund-label" style="text-transform:none">\u03b2</span> <span class="fund-value">${beta.toFixed(2)}</span>`);
+                    if (priceToBook != null && isFinite(priceToBook)) parts.push(`<span class="fund-label">P/B</span> <span class="fund-value">${priceToBook.toFixed(1)}</span>`);
+                    if (recKey && recKey !== 'none') {
+                        const recMap = {
+                            strong_buy: ['Strong Buy', 'buy'], buy: ['Buy', 'buy'],
+                            hold: ['Hold', 'hold'],
+                            sell: ['Sell', 'sell'], strong_sell: ['Strong Sell', 'sell'],
+                            underperform: ['Sell', 'sell'], outperform: ['Buy', 'buy']
+                        };
+                        const [label, cls] = recMap[recKey] || [null, null];
+                        if (label) parts.push(`<span class="fund-label">Rec</span> <span class="fund-rec ${cls}">${label}</span>`);
                     }
+                    if (fundamentalsEl && parts.length > 0) fundamentalsEl.innerHTML = parts.join(' · ');
                     break; // success — no retry needed
                 } catch(e) {
                     if (attempt === 0) await new Promise(r => setTimeout(r, 1500));
