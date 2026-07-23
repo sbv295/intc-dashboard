@@ -642,6 +642,9 @@
             border-top: none;
             display: none;
         }
+        .stock-earnings-panel .eq-row + .eq-row {
+            margin-top: 5px;
+        }
         .stock-earnings-panel .eq-label {
             font-weight: 700;
             text-transform: uppercase;
@@ -2038,19 +2041,20 @@
                         const calEarn = result?.calendarEvents?.earnings;
                         const nextEpsEst = calEarn?.earningsAverage?.raw;
                         const nextRevEst = calEarn?.revenueAverage?.raw;
+                        const nextQLabel = (lastEps ? nextFiscalQuarterLabel(lastEps.date) : null) || 'Next Q';
                         const row2 = [];
                         if (nextEpsEst != null || nextRevEst != null) {
                             const bits = [];
-                            if (nextEpsEst != null) bits.push(`EPS ${fmtPrice(stock, nextEpsEst)}`);
-                            if (nextRevEst != null) bits.push(`Rev ${formatCompactRevenue(stock, nextRevEst)}`);
-                            row2.push(`<span class="eq-label">Next Q Est:</span> <span class="eq-value">${bits.join(', ')}</span>`);
+                            if (nextEpsEst != null) bits.push(`<span class="eq-label">EPS</span> <span class="eq-value">${fmtPrice(stock, nextEpsEst)}</span>`);
+                            if (nextRevEst != null) bits.push(`<span class="eq-label">Rev</span> <span class="eq-value">${formatCompactRevenue(stock, nextRevEst)}</span>`);
+                            row2.push(`<span class="eq-label">${nextQLabel} Est:</span> ${bits.join(' · ')}`);
                         }
                         if (yRevVal != null) row2.push(`<span class="eq-label">${yRevLabel}:</span> <span class="eq-value">${formatCompactRevenue(stock, yRevVal)}</span>`);
 
                         const lines = [];
-                        if (row1.length) lines.push(row1.join(', '));
-                        if (row2.length) lines.push(row2.join(', '));
-                        earningsPanelEl.innerHTML = lines.join('<br>');
+                        if (row1.length) lines.push(row1.join(' · '));
+                        if (row2.length) lines.push(row2.join(' · '));
+                        earningsPanelEl.innerHTML = lines.map(l => `<div class="eq-row">${l}</div>`).join('');
                     }
                     break; // success — no retry needed
                 } catch(e) {
@@ -2187,6 +2191,17 @@
         const m = /^(\d)Q(\d{4})$/.exec(String(dateStr));
         if (!m) return String(dateStr);
         return `Q${m[1]}'${m[2].slice(2)}`;
+    }
+
+    // Given the most recently reported fiscal quarter string (e.g. "2Q2026"), returns the label
+    // for the following quarter (e.g. "Q3'26"), rolling over into the next fiscal year after Q4.
+    function nextFiscalQuarterLabel(dateStr) {
+        const m = /^(\d)Q(\d{4})$/.exec(String(dateStr));
+        if (!m) return null;
+        let q = parseInt(m[1], 10) + 1;
+        let y = parseInt(m[2], 10);
+        if (q > 4) { q = 1; y += 1; }
+        return `Q${q}'${String(y).slice(2)}`;
     }
 
     // Converts a plain "YYYY-MM-DD" date (from the fundamentals-timeseries fallback) into a "Q#'YY" label
