@@ -569,13 +569,14 @@
         .stock-ath {
             font-size: 0.58rem;
             color: var(--text-dim);
-            margin-top: 6px;
-            padding-top: 6px;
-            padding-bottom: 6px;
+            margin-top: 4px;
+            padding-top: 4px;
+            padding-bottom: 4px;
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
             text-align: center;
             letter-spacing: 0.3px;
-            line-height: 1.8;
+            line-height: 1.35;
+            cursor: help;
         }
         .stock-ath .ath-label {
             font-weight: 700;
@@ -590,10 +591,9 @@
             font-weight: 600;
             color: var(--text-dim);
         }
-        .stock-ath .ath-divider {
-            border: none;
-            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
-            margin: 4px 0;
+        .stock-ath .ath-intraday {
+            opacity: 0.7;
+            font-weight: 500;
         }
 
         /* ─── Earnings Date Badge ────────────────────────── */
@@ -2145,11 +2145,13 @@
             const pctFromLowTrade = curPrice ? ((curPrice - lowTrade) / lowTrade * 100).toFixed(1) : null;
             const pctHtml = (pct) => pct !== null ? ` <span class="ath-pct">(${Number(pct) >= 0 ? '+' : ''}${pct}%)</span>` : '';
             athEl.innerHTML =
-                `<span class="ath-label">52W High Close:</span> <span class="ath-value">${fmtP(highClose)}</span> (${fmtDate(highCloseDate)})${pctHtml(pctFromHigh)}<br>` +
-                `<span class="ath-label">52W High Trade:</span> <span class="ath-value">${fmtP(highTrade)}</span> (${fmtDate(highTradeDate)})${pctHtml(pctFromHighTrade)}` +
-                `<hr class="ath-divider">` +
-                `<span class="ath-label">52W Low Close:</span> <span class="ath-value">${fmtP(lowClose)}</span> (${fmtDate(lowCloseDate)})${pctHtml(pctFromLow)}<br>` +
-                `<span class="ath-label">52W Low Trade:</span> <span class="ath-value">${fmtP(lowTrade)}</span> (${fmtDate(lowTradeDate)})${pctHtml(pctFromLowTrade)}`;
+                `<span class="ath-label">52W High:</span> <span class="ath-value">${fmtP(highClose)}</span>${pctHtml(pctFromHigh)} <span class="ath-intraday">(${fmtP(highTrade)} intraday)</span><br>` +
+                `<span class="ath-label">52W Low:</span> <span class="ath-value">${fmtP(lowClose)}</span>${pctHtml(pctFromLow)} <span class="ath-intraday">(${fmtP(lowTrade)} intraday)</span>`;
+            athEl.title =
+                `52W High Close: ${fmtP(highClose)} on ${fmtDate(highCloseDate)}\n` +
+                `52W High Trade: ${fmtP(highTrade)} on ${fmtDate(highTradeDate)}\n` +
+                `52W Low Close: ${fmtP(lowClose)} on ${fmtDate(lowCloseDate)}\n` +
+                `52W Low Trade: ${fmtP(lowTrade)} on ${fmtDate(lowTradeDate)}`;
         } catch (e) {}
     }
 
