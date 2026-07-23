@@ -1102,14 +1102,21 @@
         ctx.stroke();
 
         // Position the DOM glow-dot at the most recent point; its pulse is animated in CSS
-        // so it keeps glowing dynamically between chart redraws.
+        // so it keeps glowing dynamically between chart redraws. Only show it while the
+        // market is actually open — once closed, the chart freezes and the "live" marker
+        // should disappear rather than keep pulsing over stale data.
         const last = points[points.length - 1];
         const glowEl = document.getElementById(`glow-${sid(stock)}`);
         if (glowEl) {
-            glowEl.style.left = (canvas.offsetLeft + last.x) + 'px';
-            glowEl.style.top = (canvas.offsetTop + last.y) + 'px';
-            glowEl.style.color = color;
-            glowEl.style.display = 'block';
+            const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
+            if (ms === 'market') {
+                glowEl.style.left = (canvas.offsetLeft + last.x) + 'px';
+                glowEl.style.top = (canvas.offsetTop + last.y) + 'px';
+                glowEl.style.color = color;
+                glowEl.style.display = 'block';
+            } else {
+                glowEl.style.display = 'none';
+            }
         }
     }
 
