@@ -1322,7 +1322,7 @@
 
     async function fetchViaVercel(url) {
         const params = new URL(url).searchParams;
-        const ticker = url.match(/(?:chart|quoteSummary|timeseries)\/([A-Z0-9.=]+)/i)?.[1] || 'INTC';
+        const ticker = url.match(/finance\/(?:chart|quoteSummary|timeseries)\/([A-Z0-9.=]+)/i)?.[1] || 'INTC';
         const apiUrl = '/api/yahoo?' + params.toString() + '&symbol=' + encodeURIComponent(ticker);
         const resp = await fetch(apiUrl);
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
