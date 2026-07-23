@@ -631,7 +631,7 @@
             color: var(--text-dim);
             text-align: center;
             letter-spacing: 0.3px;
-            line-height: 1.6;
+            line-height: 1.2;
             margin-top: 4px;
             padding-top: 6px;
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
@@ -1920,7 +1920,7 @@
             // which would otherwise silently exclude a stock from the market cap total.
             for (let attempt = 0; attempt < 2; attempt++) {
                 try {
-                    const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,calendarEvents,financialData,earnings,earningsHistory`;
+                    const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,calendarEvents,financialData,earnings`;
                     const json = await yahooFetch(url);
                     const result = json.quoteSummary?.result?.[0];
                     // Yahoo sometimes omits marketCap/sharesOutstanding for a ticker (returns {}).
@@ -1997,30 +1997,30 @@
                         if (riskParts.length > 0) riskEl.innerHTML = riskParts.join(' · ');
                     }
 
-                    // Earnings history panel: last quarter revenue, last FY revenue, last quarter EPS + surprise%
+                    // Earnings history panel: latest quarter revenue + EPS (with surprise%), latest FY revenue — single line
                     const earningsPanelEl = document.getElementById(`earningspanel-${_sid}`);
                     if (earningsPanelEl) {
                         const finChart = result?.earnings?.financialsChart;
                         const qRev = finChart?.quarterly?.length ? finChart.quarterly[finChart.quarterly.length - 1] : null;
                         const yRev = finChart?.yearly?.length ? finChart.yearly[finChart.yearly.length - 1] : null;
-                        const epsHistory = (result?.earningsHistory?.history || []).filter(h => h?.epsActual?.raw != null);
-                        const lastEps = epsHistory.length ? epsHistory[epsHistory.length - 1] : null;
+                        const epsQuarters = (result?.earnings?.earningsChart?.quarterly || []).filter(q => q?.actual?.raw != null);
+                        const lastEps = epsQuarters.length ? epsQuarters[epsQuarters.length - 1] : null;
 
                         const panelParts = [];
                         if (qRev?.revenue?.raw != null) {
-                            panelParts.push(`<span class="eq-label">Last Q Revenue:</span> <span class="eq-value">${formatLargeCurrency(qRev.revenue.raw)}</span>`);
+                            panelParts.push(`<span class="eq-label">${fiscalQuarterLabel(qRev.date)} Rev:</span> <span class="eq-value">${formatCompactRevenue(stock, qRev.revenue.raw)}</span>`);
                         }
-                        if (yRev?.revenue?.raw != null) {
-                            panelParts.push(`<span class="eq-label">Last FY Revenue:</span> <span class="eq-value">${formatLargeCurrency(yRev.revenue.raw)}</span>`);
-                        }
-                        if (lastEps?.epsActual?.raw != null) {
-                            const surprise = lastEps.surprisePercent?.raw != null ? lastEps.surprisePercent.raw * 100 : null;
-                            const surpriseTxt = surprise != null
+                        if (lastEps?.actual?.raw != null) {
+                            const surprise = parseFloat(lastEps.surprisePct);
+                            const surpriseTxt = !isNaN(surprise)
                                 ? ` <span class="${surprise >= 0 ? 'eq-pos' : 'eq-neg'}">(${surprise >= 0 ? '+' : ''}${surprise.toFixed(1)}%)</span>`
                                 : '';
-                            panelParts.push(`<span class="eq-label">Last Q EPS:</span> <span class="eq-value">$${lastEps.epsActual.raw.toFixed(2)}</span>${surpriseTxt}`);
+                            panelParts.push(`<span class="eq-label">${fiscalQuarterLabel(lastEps.date)} EPS:</span> <span class="eq-value">${fmtPrice(stock, lastEps.actual.raw)}</span>${surpriseTxt}`);
                         }
-                        earningsPanelEl.innerHTML = panelParts.join('<br>');
+                        if (yRev?.revenue?.raw != null) {
+                            panelParts.push(`<span class="eq-label">FY'${String(yRev.date).slice(-2)}:</span> <span class="eq-value">${formatCompactRevenue(stock, yRev.revenue.raw)}</span>`);
+                        }
+                        earningsPanelEl.innerHTML = panelParts.join(', ');
                     }
                     break; // success — no retry needed
                 } catch(e) {
@@ -2150,6 +2150,26 @@
         if (val >= 1e12) return `$${(val / 1e12).toFixed(2)}T`;
         if (val >= 1e9) return `$${(val / 1e9).toFixed(1)}B`;
         return `$${(val / 1e6).toFixed(0)}M`;
+    }
+
+    // Converts a Yahoo fiscal quarter string like "2Q2026" into a compact "Q2'26" label.
+    function fiscalQuarterLabel(dateStr) {
+        const m = /^(\d)Q(\d{4})$/.exec(String(dateStr));
+        if (!m) return String(dateStr);
+        return `Q${m[1]}'${m[2].slice(2)}`;
+    }
+
+    // Compact large-number currency formatter that respects the stock's native currency (KRW → USD when a live rate is available).
+    function formatCompactRevenue(stock, val) {
+        let v = val, symbol = '$';
+        if (stock.currency === 'KRW') {
+            if (krwToUsd) { v = val * krwToUsd; } else { symbol = '₩'; }
+        }
+        const abs = Math.abs(v);
+        if (abs >= 1e12) return `${symbol}${(v / 1e12).toFixed(2)}T`;
+        if (abs >= 1e9) return `${symbol}${(v / 1e9).toFixed(1)}B`;
+        if (abs >= 1e6) return `${symbol}${(v / 1e6).toFixed(0)}M`;
+        return `${symbol}${Math.round(v).toLocaleString()}`;
     }
 
     // ─── 52-Week High ───────────────────────────────────────────────────────
