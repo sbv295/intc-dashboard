@@ -2141,7 +2141,7 @@
             const pctFromLowTrade = curPrice ? ((curPrice - lowTrade) / lowTrade * 100).toFixed(1) : null;
             const pctHtml = (pct) => pct !== null ? ` <span class="ath-pct">(${Number(pct) >= 0 ? '+' : ''}${pct}%)</span>` : '';
             athEl.innerHTML =
-                `<span class="ath-label">52W:</span> <span class="ath-value">${fmtP(lowClose)}</span>${pctHtml(pctFromLow)} – <span class="ath-value">${fmtP(highClose)}</span>${pctHtml(pctFromHigh)}`;
+                `<span class="ath-label">52W:</span> <span class="ath-value">${fmtP(lowTrade)}</span>${pctHtml(pctFromLowTrade)} – <span class="ath-value">${fmtP(highTrade)}</span>${pctHtml(pctFromHighTrade)}`;
             athEl.title =
                 `52W High Close: ${fmtP(highClose)} on ${fmtDate(highCloseDate)}\n` +
                 `52W High Trade: ${fmtP(highTrade)} on ${fmtDate(highTradeDate)}\n` +
