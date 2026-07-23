@@ -1486,8 +1486,8 @@
                 const extSign = extChg >= 0 ? '+' : '';
                 const extCls = extChg >= 0 ? 'up' : 'down';
                 extEl.innerHTML = `<span class="ext-label">${extLabel}:</span> <span class="ext-value">${fmtPrice(stock, extPrice)}</span> <span class="ext-change ${extCls}">${extSign}${extPct.toFixed(2)}%</span>`;
-                // During pre/post market, sentiment reflects extended price movement
-                updateSentiment(stock.ticker, extPct);
+                // Note: the mini chart only ever plots regular-hours data and freezes once the
+                // session ends, so it must NOT be recolored by pre/post-market movement here.
             } else {
                 extEl.innerHTML = '';
             }
@@ -1635,8 +1635,8 @@
                 const sign = chg >= 0 ? '+' : '';
                 const cls = chg >= 0 ? 'up' : 'down';
                 extEl.innerHTML = `<span class="ext-label">${label}:</span> <span class="ext-value">${fmtPrice(stock, price)}</span> <span class="ext-change ${cls}">${sign}${pct.toFixed(2)}%</span>`;
-                // Sentiment reflects extended price movement during pre/post
-                updateSentiment(ticker, pct);
+                // Note: the mini chart only plots regular-hours data and freezes once the session
+                // ends, so it must NOT be recolored by pre/post-market movement here.
             }
             // Sync mirror for collapsed view
             const extMirrorWs = document.getElementById(`ext-mirror-${_sid}`);
