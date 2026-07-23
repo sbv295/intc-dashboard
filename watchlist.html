@@ -722,6 +722,29 @@
             0%, 100% { box-shadow: 0 0 3px 1px currentColor; opacity: 0.85; }
             50% { box-shadow: 0 0 11px 4px currentColor; opacity: 1; }
         }
+        .stock-sentiment canvas { cursor: crosshair; }
+        .chart-tooltip {
+            position: absolute;
+            display: none;
+            pointer-events: none;
+            z-index: 6;
+            background: rgba(15,15,20,0.92);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 5px;
+            padding: 4px 7px;
+            font-size: 0.68rem;
+            line-height: 1.3;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        .chart-tooltip-price {
+            font-weight: 700;
+            color: var(--text);
+        }
+        .chart-tooltip-time {
+            color: var(--text-dim);
+            font-size: 0.62rem;
+        }
 
         /* ─── Collapse/Expand ─────────────────────────────── */
         .collapse-toggle {
@@ -991,7 +1014,7 @@
         drawSentimentChart(ticker);
     }
 
-    function drawSentimentChart(ticker) {
+    function drawSentimentChart(ticker, hoverX) {
         const stock = STOCKS.find(s => s.ticker === ticker);
         if (!stock) return;
         const st = state[ticker];
@@ -1109,7 +1132,7 @@
         const glowEl = document.getElementById(`glow-${sid(stock)}`);
         if (glowEl) {
             const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
-            if (ms === 'market') {
+            if (ms === 'market' && hoverX == null) {
                 glowEl.style.left = (canvas.offsetLeft + last.x) + 'px';
                 glowEl.style.top = (canvas.offsetTop + last.y) + 'px';
                 glowEl.style.color = color;
@@ -1118,6 +1141,74 @@
                 glowEl.style.display = 'none';
             }
         }
+
+        // Cursor callout: crosshair + tooltip showing the price/time under the pointer
+        const tooltipEl = document.getElementById(`tooltip-${sid(stock)}`);
+        if (hoverX != null) {
+            let idx = 0, bestDist = Infinity;
+            for (let i = 0; i < points.length; i++) {
+                const d = Math.abs(points[i].x - hoverX);
+                if (d < bestDist) { bestDist = d; idx = i; }
+            }
+            const pt = points[idx], sp = series[idx];
+
+            ctx.save();
+            ctx.setLineDash([2, 2]);
+            ctx.strokeStyle = 'rgba(255,255,255,0.4)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(pt.x, padT);
+            ctx.lineTo(pt.x, rectH - padB);
+            ctx.stroke();
+            ctx.restore();
+
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(pt.x, pt.y, 3, 0, Math.PI * 2);
+            ctx.fillStyle = '#fff';
+            ctx.fill();
+            ctx.lineWidth = 1.5;
+            ctx.strokeStyle = color;
+            ctx.stroke();
+            ctx.restore();
+
+            if (tooltipEl) {
+                const tz = stock.currency === 'KRW' ? 'Asia/Seoul' : 'America/New_York';
+                const tzLabel = stock.currency === 'KRW' ? 'KST' : 'ET';
+                const timeStr = new Date(sp.t * 1000).toLocaleString('en-US', { timeZone: tz, hour: 'numeric', minute: '2-digit', hour12: true });
+                tooltipEl.innerHTML = `<div class="chart-tooltip-price">${fmtPrice(stock, sp.c)}</div><div class="chart-tooltip-time">${timeStr} ${tzLabel}</div>`;
+                tooltipEl.style.display = 'block';
+                const tw = tooltipEl.offsetWidth, th = tooltipEl.offsetHeight;
+                let tx = canvas.offsetLeft + pt.x + 8;
+                if (tx + tw > canvas.offsetLeft + rectW) tx = canvas.offsetLeft + pt.x - tw - 8;
+                let ty = canvas.offsetTop + pt.y - th - 8;
+                if (ty < canvas.offsetTop) ty = canvas.offsetTop + pt.y + 8;
+                tooltipEl.style.left = tx + 'px';
+                tooltipEl.style.top = ty + 'px';
+            }
+        } else if (tooltipEl) {
+            tooltipEl.style.display = 'none';
+        }
+    }
+
+    // Wire up mouse/touch hover so the mini charts show a Google-Finance-style cursor
+    // callout (crosshair + price/time tooltip). Canvases are created once by renderGrid(),
+    // so listeners only need to be attached a single time.
+    function attachChartHoverHandlers() {
+        STOCKS.forEach(s => {
+            const canvas = document.getElementById(`chart-${sid(s)}`);
+            if (!canvas || canvas._hoverAttached) return;
+            canvas._hoverAttached = true;
+            const move = (clientX) => {
+                const rect = canvas.getBoundingClientRect();
+                drawSentimentChart(s.ticker, clientX - rect.left);
+            };
+            canvas.addEventListener('mousemove', (e) => move(e.clientX));
+            canvas.addEventListener('mouseleave', () => drawSentimentChart(s.ticker));
+            canvas.addEventListener('touchstart', (e) => { if (e.touches[0]) move(e.touches[0].clientX); }, { passive: true });
+            canvas.addEventListener('touchmove', (e) => { if (e.touches[0]) move(e.touches[0].clientX); }, { passive: true });
+            canvas.addEventListener('touchend', () => drawSentimentChart(s.ticker));
+        });
     }
 
     // ─── INTC vs AMD Battle Bar ─────────────────────────────────────────────
@@ -1339,7 +1430,7 @@
                     </div>` : ''}
                 </div>
                 <div class="stock-collapse-body"><div class="stock-collapse-inner">
-                <div class="stock-sentiment" id="sentiment-${id}"><canvas class="sentiment-chart" id="chart-${id}"></canvas><div class="chart-glow-dot" id="glow-${id}"></div></div>
+                <div class="stock-sentiment" id="sentiment-${id}"><canvas class="sentiment-chart" id="chart-${id}"></canvas><div class="chart-glow-dot" id="glow-${id}"></div><div class="chart-tooltip" id="tooltip-${id}"></div></div>
                 <div class="stock-ohl" id="ohl-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
                 <div class="stock-extended" id="ext-${id}"></div>
@@ -2063,6 +2154,7 @@
     // ─── Init ───────────────────────────────────────────────────────────────
     async function init() {
         renderGrid();
+        attachChartHoverHandlers();
 
         // Default to collapsed on mobile
         if (window.innerWidth <= 640) {
