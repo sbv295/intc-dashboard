@@ -2214,7 +2214,7 @@
     // (observed for AMD, MU) — uses the fundamentals-timeseries endpoint instead (same data yfinance uses).
     async function fetchRevenueTimeseries(stock) {
         try {
-            const url = `https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/${stock.ticker}?type=quarterlyTotalRevenue,annualTotalRevenue&symbol=${stock.ticker}`;
+            const url = `https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/${stock.ticker}?type=quarterlyTotalRevenue,annualTotalRevenue`;
             const json = await yahooFetch(url);
             const results = json?.timeseries?.result || [];
             const qSeries = (results.find(r => r?.meta?.type?.[0] === 'quarterlyTotalRevenue')?.quarterlyTotalRevenue || []).filter(Boolean);
