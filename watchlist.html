@@ -805,8 +805,8 @@
         .stock-card.collapsed .stock-earnings-date.soon {
             display: block !important;
         }
-        .stock-extended-mirror { max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.22s ease 0.08s, opacity 0.18s ease 0.1s; }
-        .stock-card.collapsed .stock-extended-mirror:not(:empty) { max-height: 60px; opacity: 1; }
+        .stock-extended-mirror { max-height: 0; overflow: hidden; opacity: 0; margin-top: 0; transition: max-height 0.22s ease 0.08s, opacity 0.18s ease 0.1s, margin-top 0.22s ease 0.08s; }
+        .stock-card.collapsed .stock-extended-mirror:not(:empty) { max-height: 60px; opacity: 1; margin-top: 8px; }
 
         @keyframes flashGreen {
             0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); }
