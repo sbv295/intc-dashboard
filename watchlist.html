@@ -603,7 +603,6 @@
             font-weight: 600;
             letter-spacing: 0.8px;
             color: var(--text-dim);
-            cursor: pointer;
         }
         .stock-earnings-date:empty { display: none; }
         .stock-earnings-date .ed-label {
@@ -626,26 +625,22 @@
             color: var(--amber);
         }
 
-        /* ─── Earnings History Panel (click-to-expand) ──── */
+        /* ─── Earnings History Panel (last Q/FY revenue, last Q EPS) ─ */
         .stock-earnings-panel {
-            max-height: 0;
-            overflow: hidden;
-            opacity: 0;
             font-size: 0.55rem;
             color: var(--text-dim);
             text-align: center;
             letter-spacing: 0.3px;
             line-height: 1.6;
-            margin-top: 0;
-            padding-top: 0;
-            transition: max-height 0.3s ease, opacity 0.25s ease, margin-top 0.3s ease, padding-top 0.3s ease;
-        }
-        .stock-card.earnings-expanded .stock-earnings-panel:not(:empty) {
-            max-height: 160px;
-            opacity: 1;
             margin-top: 4px;
             padding-top: 6px;
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+        }
+        .stock-earnings-panel:empty {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+            display: none;
         }
         .stock-earnings-panel .eq-label {
             font-weight: 700;
@@ -1445,7 +1440,7 @@
         const id = sid(s);
         return `
             <div class="stock-card" id="card-${id}" style="--card-accent: ${s.color}">
-                <div class="stock-earnings-date" id="earningsdate-${id}" onclick="toggleEarningsPanel(this)"></div>
+                <div class="stock-earnings-date" id="earningsdate-${id}"></div>
                 <div class="stock-header">
                     <img class="stock-logo" src="${s.logo}" alt="${s.name}"${s.ticker === 'MBLY' ? ' style="background:#fff;padding:2px;"' : ''}>
                     <span class="stock-name">${s.name}</span>
@@ -2365,11 +2360,6 @@
         const card = btn.closest('.stock-card');
         const collapsed = card.classList.toggle('collapsed');
         btn.textContent = collapsed ? '+' : '−';
-    }
-
-    function toggleEarningsPanel(el) {
-        const card = el.closest('.stock-card');
-        if (card) card.classList.toggle('earnings-expanded');
     }
 
     function toggleAllCards(section) {
