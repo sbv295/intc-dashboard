@@ -603,6 +603,7 @@
             font-weight: 600;
             letter-spacing: 0.8px;
             color: var(--text-dim);
+            cursor: pointer;
         }
         .stock-earnings-date:empty { display: none; }
         .stock-earnings-date .ed-label {
@@ -624,6 +625,39 @@
         .stock-earnings-date.soon .ed-countdown {
             color: var(--amber);
         }
+
+        /* ─── Earnings History Panel (click-to-expand) ──── */
+        .stock-earnings-panel {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            font-size: 0.55rem;
+            color: var(--text-dim);
+            text-align: center;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+            margin-top: 0;
+            padding-top: 0;
+            transition: max-height 0.3s ease, opacity 0.25s ease, margin-top 0.3s ease, padding-top 0.3s ease;
+        }
+        .stock-card.earnings-expanded .stock-earnings-panel:not(:empty) {
+            max-height: 160px;
+            opacity: 1;
+            margin-top: 4px;
+            padding-top: 6px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+        }
+        .stock-earnings-panel .eq-label {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .stock-earnings-panel .eq-value {
+            color: var(--text);
+            font-weight: 600;
+        }
+        .stock-earnings-panel .eq-pos { color: var(--green); }
+        .stock-earnings-panel .eq-neg { color: var(--red); }
 
         /* ─── Fundamentals (PE + Analyst Target) ────────── */
         .stock-fundamentals {
@@ -1411,7 +1445,7 @@
         const id = sid(s);
         return `
             <div class="stock-card" id="card-${id}" style="--card-accent: ${s.color}">
-                <div class="stock-earnings-date" id="earningsdate-${id}"></div>
+                <div class="stock-earnings-date" id="earningsdate-${id}" onclick="toggleEarningsPanel(this)"></div>
                 <div class="stock-header">
                     <img class="stock-logo" src="${s.logo}" alt="${s.name}"${s.ticker === 'MBLY' ? ' style="background:#fff;padding:2px;"' : ''}>
                     <span class="stock-name">${s.name}</span>
@@ -1439,6 +1473,7 @@
                 <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-fundamentals" id="fundamentals-${id}"></div>
                 <div class="stock-risk" id="risk-${id}"></div>
+                <div class="stock-earnings-panel" id="earningspanel-${id}"></div>
                 </div></div>
                 <div class="stock-extended stock-extended-mirror" id="ext-mirror-${id}"></div>
             </div>
@@ -1890,7 +1925,7 @@
             // which would otherwise silently exclude a stock from the market cap total.
             for (let attempt = 0; attempt < 2; attempt++) {
                 try {
-                    const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,calendarEvents,financialData`;
+                    const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,calendarEvents,financialData,earnings,earningsHistory`;
                     const json = await yahooFetch(url);
                     const result = json.quoteSummary?.result?.[0];
                     // Yahoo sometimes omits marketCap/sharesOutstanding for a ticker (returns {}).
@@ -1965,6 +2000,32 @@
                             if (label) riskParts.push(`<span class="fund-label">Rec</span> <span class="fund-rec ${cls}">${label}</span>`);
                         }
                         if (riskParts.length > 0) riskEl.innerHTML = riskParts.join(' · ');
+                    }
+
+                    // Earnings history panel: last quarter revenue, last FY revenue, last quarter EPS + surprise%
+                    const earningsPanelEl = document.getElementById(`earningspanel-${_sid}`);
+                    if (earningsPanelEl) {
+                        const finChart = result?.earnings?.financialsChart;
+                        const qRev = finChart?.quarterly?.length ? finChart.quarterly[finChart.quarterly.length - 1] : null;
+                        const yRev = finChart?.yearly?.length ? finChart.yearly[finChart.yearly.length - 1] : null;
+                        const epsHistory = (result?.earningsHistory?.history || []).filter(h => h?.epsActual?.raw != null);
+                        const lastEps = epsHistory.length ? epsHistory[epsHistory.length - 1] : null;
+
+                        const panelParts = [];
+                        if (qRev?.revenue?.raw != null) {
+                            panelParts.push(`<span class="eq-label">Last Q Revenue:</span> <span class="eq-value">${formatLargeCurrency(qRev.revenue.raw)}</span>`);
+                        }
+                        if (yRev?.revenue?.raw != null) {
+                            panelParts.push(`<span class="eq-label">Last FY Revenue:</span> <span class="eq-value">${formatLargeCurrency(yRev.revenue.raw)}</span>`);
+                        }
+                        if (lastEps?.epsActual?.raw != null) {
+                            const surprise = lastEps.surprisePercent?.raw != null ? lastEps.surprisePercent.raw * 100 : null;
+                            const surpriseTxt = surprise != null
+                                ? ` <span class="${surprise >= 0 ? 'eq-pos' : 'eq-neg'}">(${surprise >= 0 ? '+' : ''}${surprise.toFixed(1)}%)</span>`
+                                : '';
+                            panelParts.push(`<span class="eq-label">Last Q EPS:</span> <span class="eq-value">$${lastEps.epsActual.raw.toFixed(2)}</span>${surpriseTxt}`);
+                        }
+                        earningsPanelEl.innerHTML = panelParts.join('<br>');
                     }
                     break; // success — no retry needed
                 } catch(e) {
@@ -2304,6 +2365,11 @@
         const card = btn.closest('.stock-card');
         const collapsed = card.classList.toggle('collapsed');
         btn.textContent = collapsed ? '+' : '−';
+    }
+
+    function toggleEarningsPanel(el) {
+        const card = el.closest('.stock-card');
+        if (card) card.classList.toggle('earnings-expanded');
     }
 
     function toggleAllCards(section) {
