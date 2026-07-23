@@ -32,7 +32,7 @@ async function getCrumb() {
 }
 
 export default async function handler(req, res) {
-  const { interval, range, period1, period2, includePrePost, modules, symbol } = req.query;
+  const { interval, range, period1, period2, includePrePost, modules, type, symbol } = req.query;
   const ticker = symbol || 'INTC';
 
   let url;
@@ -42,6 +42,15 @@ export default async function handler(req, res) {
     // quoteSummary endpoint — needs crumb
     const { crumb, cookie } = await getCrumb();
     url = `https://query2.finance.yahoo.com/v10/finance/quoteSummary/${ticker}?modules=${modules}&crumb=${encodeURIComponent(crumb)}`;
+    extraHeaders['Cookie'] = cookie;
+  } else if (type) {
+    // fundamentals-timeseries endpoint (revenue/EPS history fallback when quoteSummary's
+    // financialsChart is empty for a ticker) — needs crumb
+    const { crumb, cookie } = await getCrumb();
+    const now = Math.floor(Date.now() / 1000);
+    const p1 = period1 || (now - 400 * 24 * 3600);
+    const p2 = period2 || now;
+    url = `https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/${ticker}?symbol=${ticker}&type=${type}&period1=${p1}&period2=${p2}&crumb=${encodeURIComponent(crumb)}`;
     extraHeaders['Cookie'] = cookie;
   } else {
     // chart endpoint — no crumb needed

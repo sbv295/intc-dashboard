@@ -631,7 +631,7 @@
             color: var(--text-dim);
             text-align: center;
             letter-spacing: 0.3px;
-            line-height: 1.2;
+            line-height: 1.4;
             margin-top: 4px;
             padding-top: 6px;
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
@@ -1322,7 +1322,7 @@
 
     async function fetchViaVercel(url) {
         const params = new URL(url).searchParams;
-        const ticker = url.match(/(?:chart|quoteSummary)\/([A-Z0-9.=]+)/i)?.[1] || 'INTC';
+        const ticker = url.match(/(?:chart|quoteSummary|timeseries)\/([A-Z0-9.=]+)/i)?.[1] || 'INTC';
         const apiUrl = '/api/yahoo?' + params.toString() + '&symbol=' + encodeURIComponent(ticker);
         const resp = await fetch(apiUrl);
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
@@ -1997,30 +1997,60 @@
                         if (riskParts.length > 0) riskEl.innerHTML = riskParts.join(' · ');
                     }
 
-                    // Earnings history panel: latest quarter revenue + EPS (with surprise%), latest FY revenue — single line
+                    // Earnings history panel — two lines:
+                    // Row 1: latest reported quarter revenue + EPS (with surprise%)
+                    // Row 2: next quarter forecast (analyst estimate) + last FY revenue
                     const earningsPanelEl = document.getElementById(`earningspanel-${_sid}`);
                     if (earningsPanelEl) {
                         const finChart = result?.earnings?.financialsChart;
                         const qRev = finChart?.quarterly?.length ? finChart.quarterly[finChart.quarterly.length - 1] : null;
                         const yRev = finChart?.yearly?.length ? finChart.yearly[finChart.yearly.length - 1] : null;
+
+                        let qRevVal = qRev?.revenue?.raw ?? null;
+                        let qRevLabel = qRev ? fiscalQuarterLabel(qRev.date) : null;
+                        let yRevVal = yRev?.revenue?.raw ?? null;
+                        let yRevLabel = yRev ? `FY'${String(yRev.date).slice(-2)}` : null;
+
+                        // Yahoo's quoteSummary financialsChart comes back empty for some tickers (e.g. AMD, MU) —
+                        // fall back to the fundamentals-timeseries endpoint in that case.
+                        if (qRevVal == null && yRevVal == null) {
+                            const fallback = await fetchRevenueTimeseries(stock);
+                            if (fallback) {
+                                if (fallback.qRevVal != null) { qRevVal = fallback.qRevVal; qRevLabel = quarterLabelFromDate(fallback.qRevDate); }
+                                if (fallback.yRevVal != null) { yRevVal = fallback.yRevVal; yRevLabel = `FY'${fallback.yRevDate.slice(2, 4)}`; }
+                            }
+                        }
+
                         const epsQuarters = (result?.earnings?.earningsChart?.quarterly || []).filter(q => q?.actual?.raw != null);
                         const lastEps = epsQuarters.length ? epsQuarters[epsQuarters.length - 1] : null;
 
-                        const panelParts = [];
-                        if (qRev?.revenue?.raw != null) {
-                            panelParts.push(`<span class="eq-label">${fiscalQuarterLabel(qRev.date)} Rev:</span> <span class="eq-value">${formatCompactRevenue(stock, qRev.revenue.raw)}</span>`);
-                        }
+                        const row1 = [];
+                        if (qRevVal != null) row1.push(`<span class="eq-label">${qRevLabel} Rev:</span> <span class="eq-value">${formatCompactRevenue(stock, qRevVal)}</span>`);
                         if (lastEps?.actual?.raw != null) {
                             const surprise = parseFloat(lastEps.surprisePct);
                             const surpriseTxt = !isNaN(surprise)
                                 ? ` <span class="${surprise >= 0 ? 'eq-pos' : 'eq-neg'}">(${surprise >= 0 ? '+' : ''}${surprise.toFixed(1)}%)</span>`
                                 : '';
-                            panelParts.push(`<span class="eq-label">${fiscalQuarterLabel(lastEps.date)} EPS:</span> <span class="eq-value">${fmtPrice(stock, lastEps.actual.raw)}</span>${surpriseTxt}`);
+                            row1.push(`<span class="eq-label">${fiscalQuarterLabel(lastEps.date)} EPS:</span> <span class="eq-value">${fmtPrice(stock, lastEps.actual.raw)}</span>${surpriseTxt}`);
                         }
-                        if (yRev?.revenue?.raw != null) {
-                            panelParts.push(`<span class="eq-label">FY'${String(yRev.date).slice(-2)}:</span> <span class="eq-value">${formatCompactRevenue(stock, yRev.revenue.raw)}</span>`);
+
+                        // Next quarter forecast — analyst consensus for the upcoming reporting quarter
+                        const calEarn = result?.calendarEvents?.earnings;
+                        const nextEpsEst = calEarn?.earningsAverage?.raw;
+                        const nextRevEst = calEarn?.revenueAverage?.raw;
+                        const row2 = [];
+                        if (nextEpsEst != null || nextRevEst != null) {
+                            const bits = [];
+                            if (nextEpsEst != null) bits.push(`EPS ${fmtPrice(stock, nextEpsEst)}`);
+                            if (nextRevEst != null) bits.push(`Rev ${formatCompactRevenue(stock, nextRevEst)}`);
+                            row2.push(`<span class="eq-label">Next Q Est:</span> <span class="eq-value">${bits.join(', ')}</span>`);
                         }
-                        earningsPanelEl.innerHTML = panelParts.join(', ');
+                        if (yRevVal != null) row2.push(`<span class="eq-label">${yRevLabel}:</span> <span class="eq-value">${formatCompactRevenue(stock, yRevVal)}</span>`);
+
+                        const lines = [];
+                        if (row1.length) lines.push(row1.join(', '));
+                        if (row2.length) lines.push(row2.join(', '));
+                        earningsPanelEl.innerHTML = lines.join('<br>');
                     }
                     break; // success — no retry needed
                 } catch(e) {
@@ -2159,6 +2189,14 @@
         return `Q${m[1]}'${m[2].slice(2)}`;
     }
 
+    // Converts a plain "YYYY-MM-DD" date (from the fundamentals-timeseries fallback) into a "Q#'YY" label
+    // based on calendar quarter (used only when the fiscal-quarter-labeled data isn't available).
+    function quarterLabelFromDate(dateStr) {
+        const [y, m] = String(dateStr).split('-').map(Number);
+        if (!y || !m) return String(dateStr);
+        return `Q${Math.ceil(m / 3)}'${String(y).slice(2)}`;
+    }
+
     // Compact large-number currency formatter that respects the stock's native currency (KRW → USD when a live rate is available).
     function formatCompactRevenue(stock, val) {
         let v = val, symbol = '$';
@@ -2170,6 +2208,28 @@
         if (abs >= 1e9) return `${symbol}${(v / 1e9).toFixed(1)}B`;
         if (abs >= 1e6) return `${symbol}${(v / 1e6).toFixed(0)}M`;
         return `${symbol}${Math.round(v).toLocaleString()}`;
+    }
+
+    // Fallback revenue source for tickers where quoteSummary's earnings.financialsChart is empty
+    // (observed for AMD, MU) — uses the fundamentals-timeseries endpoint instead (same data yfinance uses).
+    async function fetchRevenueTimeseries(stock) {
+        try {
+            const url = `https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/${stock.ticker}?type=quarterlyTotalRevenue,annualTotalRevenue&symbol=${stock.ticker}`;
+            const json = await yahooFetch(url);
+            const results = json?.timeseries?.result || [];
+            const qSeries = (results.find(r => r?.meta?.type?.[0] === 'quarterlyTotalRevenue')?.quarterlyTotalRevenue || []).filter(Boolean);
+            const aSeries = (results.find(r => r?.meta?.type?.[0] === 'annualTotalRevenue')?.annualTotalRevenue || []).filter(Boolean);
+            const lastQ = qSeries[qSeries.length - 1];
+            const lastA = aSeries[aSeries.length - 1];
+            return {
+                qRevVal: lastQ?.reportedValue?.raw ?? null,
+                qRevDate: lastQ?.asOfDate ?? null,
+                yRevVal: lastA?.reportedValue?.raw ?? null,
+                yRevDate: lastA?.asOfDate ?? null,
+            };
+        } catch (e) {
+            return null;
+        }
     }
 
     // ─── 52-Week High ───────────────────────────────────────────────────────
