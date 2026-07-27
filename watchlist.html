@@ -875,6 +875,11 @@
         <span class="mcap-summary-change" id="mcap-chg-us"></span>
         <img src="logos/casino.png" alt="casino" class="casino-badge">
     </div>
+    <div class="mcap-summary" id="index-summary-us">
+        <span class="mcap-summary-label">NASDAQ 100</span>
+        <span class="mcap-summary-value" id="ndx-value">—</span>
+        <span class="mcap-summary-change" id="ndx-chg"></span>
+    </div>
 
     <div class="battle-bar" id="battle-bar">
         <div class="battle-bar-header">
@@ -990,6 +995,25 @@
                     const valEl = el.querySelector('.fx-rate-value');
                     if (valEl) valEl.textContent = usdToInr.toFixed(2);
                 }
+            }
+        } catch(e) {}
+    }
+
+    // ─── NASDAQ 100 Index (overall US market movement) ─────────────────────
+    async function fetchNasdaq100Index() {
+        try {
+            const url = `${YAHOO_BASE}%5ENDX?interval=1m&range=2d&includePrePost=true`;
+            const json = await yahooFetch(url);
+            const meta = json.chart.result[0].meta;
+            const price = meta.regularMarketPrice;
+            const prevClose = meta.chartPreviousClose || meta.previousClose;
+            if (price == null) return;
+            const valEl = document.getElementById('ndx-value');
+            if (valEl) valEl.textContent = price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            const chgEl = document.getElementById('ndx-chg');
+            if (chgEl && prevClose) {
+                const pct = (price - prevClose) / prevClose * 100;
+                chgEl.innerHTML = `<span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
             }
         } catch(e) {}
     }
@@ -2330,6 +2354,8 @@
         setInterval(fetchKrwRate, 60000);
         fetchUsdInrRate();
         setInterval(fetchUsdInrRate, 60000);
+        fetchNasdaq100Index();
+        setInterval(fetchNasdaq100Index, 60000);
         fetchAllNasdaq().then(() => {
             fetchAllShares();
             fetchAllATH();
