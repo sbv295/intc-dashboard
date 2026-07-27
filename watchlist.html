@@ -413,6 +413,13 @@
         }
         .mcap-summary-change .up { color: var(--green); }
         .mcap-summary-change .down { color: var(--red); }
+        .mcap-summary-ext {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+        }
+        .mcap-summary-ext .up { color: var(--green); font-weight: 700; }
+        .mcap-summary-ext .down { color: var(--red); font-weight: 700; }
+        .mcap-summary-ext:empty { display: none; }
         .fx-rate-badge {
             font-size: 0.85rem;
             font-weight: 700;
@@ -879,6 +886,7 @@
         <span class="mcap-summary-label">NASDAQ 100</span>
         <span class="mcap-summary-value" id="ndx-value">—</span>
         <span class="mcap-summary-change" id="ndx-chg"></span>
+        <span class="mcap-summary-ext" id="ndx-ext"></span>
     </div>
 
     <div class="battle-bar" id="battle-bar">
@@ -1014,6 +1022,50 @@
             if (chgEl && prevClose) {
                 const pct = (price - prevClose) / prevClose * 100;
                 chgEl.innerHTML = `<span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
+            }
+        } catch(e) {}
+        // Indices have no extended-hours data of their own — use QQQ (the standard NASDAQ-100
+        // tracking ETF) as a pre/post-market movement proxy, clearly labeled as such.
+        await fetchNasdaq100ExtendedProxy();
+    }
+
+    async function fetchNasdaq100ExtendedProxy() {
+        const extEl = document.getElementById('ndx-ext');
+        if (!extEl) return;
+        const ms = getMarketStatus();
+        if (ms !== 'premarket' && ms !== 'postmarket') { extEl.innerHTML = ''; return; }
+        try {
+            const url = `${YAHOO_BASE}QQQ?interval=1m&range=2d&includePrePost=true`;
+            const json = await yahooFetch(url);
+            const result = json.chart.result[0];
+            const meta = result.meta;
+            const quote = result.indicators.quote[0];
+            const timestamps = result.timestamp || [];
+            const tp = meta.currentTradingPeriod;
+            let refPrice = null, extPrice = null, label = null;
+            if (ms === 'postmarket' && tp) {
+                for (let i = timestamps.length - 1; i >= 0; i--) {
+                    const t = timestamps[i], c = quote.close[i];
+                    if (c != null && t >= tp.regular.start && t < tp.regular.end) { refPrice = c; break; }
+                }
+                for (let i = timestamps.length - 1; i >= 0; i--) {
+                    const t = timestamps[i], c = quote.close[i];
+                    if (c != null && t >= tp.post.start) { extPrice = c; break; }
+                }
+                label = 'Post';
+            } else if (ms === 'premarket' && tp) {
+                refPrice = meta.previousClose || meta.chartPreviousClose;
+                for (let i = timestamps.length - 1; i >= 0; i--) {
+                    const t = timestamps[i], c = quote.close[i];
+                    if (c != null && t >= tp.pre.start && t < tp.regular.start) { extPrice = c; break; }
+                }
+                label = 'Pre';
+            }
+            if (extPrice != null && refPrice) {
+                const pct = (extPrice - refPrice) / refPrice * 100;
+                extEl.innerHTML = `<span class="ext-label">${label} (QQQ):</span> <span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
+            } else {
+                extEl.innerHTML = '';
             }
         } catch(e) {}
     }
