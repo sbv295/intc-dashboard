@@ -1056,7 +1056,11 @@
                 }
                 label = 'Post';
             } else if (ms === 'premarket' && tp) {
-                refPrice = meta.previousClose || meta.chartPreviousClose;
+                // meta.previousClose refers to the close two sessions back (stale once
+                // regularMarketPrice already reflects yesterday's completed close) — use
+                // regularMarketPrice itself as "yesterday's close" reference, same convention
+                // used for individual stock cards' pre-market change.
+                refPrice = meta.regularMarketPrice;
                 for (let i = timestamps.length - 1; i >= 0; i--) {
                     const t = timestamps[i], c = quote.close[i];
                     if (c != null && t >= tp.pre.start && t < tp.regular.start) { extPrice = c; break; }
