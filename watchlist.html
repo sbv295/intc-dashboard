@@ -1014,7 +1014,9 @@
             const json = await yahooFetch(url);
             const meta = json.chart.result[0].meta;
             const price = meta.regularMarketPrice;
-            const prevClose = meta.chartPreviousClose || meta.previousClose;
+            // Use meta.previousClose — the official "previous close" per Yahoo (same convention
+            // used for stock cards). meta.chartPreviousClose can be stale/off by more than a day.
+            const prevClose = meta.previousClose || meta.chartPreviousClose;
             if (price == null) return;
             const valEl = document.getElementById('ndx-value');
             if (valEl) valEl.textContent = price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
