@@ -2048,7 +2048,7 @@
                     // Fundamentals: PE (TTM), PE (Fwd), Analyst Mean Target
                     const trailingPE = result?.summaryDetail?.trailingPE?.raw;
                     const forwardPE  = result?.summaryDetail?.forwardPE?.raw;
-                    const pegRatio   = result?.defaultKeyStatistics?.trailingPegRatio?.raw ?? result?.defaultKeyStatistics?.pegRatio?.raw;
+                    const pegRatio   = result?.defaultKeyStatistics?.pegRatio?.raw; // forward-looking 5yr-expected PEG (not trailing)
                     const targetPrice = result?.financialData?.targetMeanPrice?.raw;
                     const fundamentalsEl = document.getElementById(`fundamentals-${_sid}`);
                     if (fundamentalsEl) {
