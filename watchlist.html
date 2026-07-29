@@ -1782,7 +1782,7 @@
                         if (refClosePct == null || v == null) return '';
                         const pct = ((v - refClosePct) / refClosePct) * 100;
                         const sign = pct >= 0 ? '+' : '';
-                        return ` <span class="ohl-pct ${pct >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
+                        return ` <span class="ohl-pct ${pct >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(1)}%</span>`;
                     };
                     ohlEl.innerHTML = `<span class="ohl-label">O</span><span class="ohl-value">${fmtPrice(stock, regOpen)}</span>${ohlPct(regOpen)} · <span class="ohl-label">H</span><span class="ohl-value">${fmtPrice(stock, regHigh)}</span>${ohlPct(regHigh)} · <span class="ohl-label">L</span><span class="ohl-value">${fmtPrice(stock, regLow)}</span>${ohlPct(regLow)}`;
                 }
