@@ -352,18 +352,31 @@
         .stock-extended .ext-change.down { color: var(--red); }
 
         .stock-ohl {
-            font-size: 0.68rem;
+            font-size: 0.64rem;
             color: var(--text-dim);
             margin-top: 8px;
             padding-top: 8px;
             padding-bottom: 8px;
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
             border-bottom: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
-            text-align: center;
-            letter-spacing: 0.3px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            column-gap: 8px;
+            row-gap: 2px;
+            letter-spacing: 0.2px;
         }
         .stock-ohl:empty {
             display: none;
+        }
+        .stock-ohl .ohl-group {
+            white-space: nowrap;
+        }
+        .stock-ohl .ohl-group:not(:last-child)::after {
+            content: '·';
+            margin-left: 6px;
+            color: var(--text-dim);
         }
         .stock-ohl.ohl-dimmed .ohl-label,
         .stock-ohl.ohl-dimmed .ohl-value {
@@ -374,7 +387,7 @@
             color: var(--text-dim);
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-right: 4px;
+            margin-right: 3px;
         }
         .stock-ohl .ohl-value {
             color: var(--text) !important;
@@ -382,7 +395,7 @@
         }
         .stock-ohl .ohl-pct {
             font-weight: 600;
-            margin-right: 2px;
+            margin-left: 3px;
         }
         .stock-ohl .ohl-pct.up { color: var(--green); }
         .stock-ohl .ohl-pct.down { color: var(--red); }
@@ -1782,9 +1795,10 @@
                         if (refClosePct == null || v == null) return '';
                         const pct = ((v - refClosePct) / refClosePct) * 100;
                         const sign = pct >= 0 ? '+' : '';
-                        return ` <span class="ohl-pct ${pct >= 0 ? 'up' : 'down'}">(${sign}${pct.toFixed(1)}%)</span>`;
+                        return `<span class="ohl-pct ${pct >= 0 ? 'up' : 'down'}">(${sign}${pct.toFixed(1)}%)</span>`;
                     };
-                    ohlEl.innerHTML = `<span class="ohl-label">O</span><span class="ohl-value">${fmtPrice(stock, regOpen)}</span>${ohlPct(regOpen)} · <span class="ohl-label">H</span><span class="ohl-value">${fmtPrice(stock, regHigh)}</span>${ohlPct(regHigh)} · <span class="ohl-label">L</span><span class="ohl-value">${fmtPrice(stock, regLow)}</span>${ohlPct(regLow)}`;
+                    const ohlGroup = (label, v) => `<span class="ohl-group"><span class="ohl-label">${label}</span><span class="ohl-value">${fmtPrice(stock, v)}</span>${ohlPct(v)}</span>`;
+                    ohlEl.innerHTML = ohlGroup('O', regOpen) + ohlGroup('H', regHigh) + ohlGroup('L', regLow);
                 }
             }
 
