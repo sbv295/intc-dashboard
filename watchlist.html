@@ -1785,18 +1785,21 @@
                 }
 
                 // If no regular session data for today (pre-market or closed before open),
-                // fall back to previous day's regular session from the 2d range
-                if (regOpen === null && timestamps.length > 0) {
-                    // Previous day's candles are before today's pre-market start
-                    const prevDayEnd = tp.pre ? tp.pre.start : tp.regular.start;
-                    for (let i = 0; i < timestamps.length; i++) {
-                        const t = timestamps[i], v = quote.volume[i];
-                        const o = quote.open[i], h = quote.high[i], l = quote.low[i];
-                        if (t < prevDayEnd && o != null) {
-                            if (v) totalVol += v;
-                            if (regOpen === null) regOpen = o;
-                            if (h != null) regHigh = Math.max(regHigh, h);
-                            if (l != null) regLow = Math.min(regLow, l);
+                // fall back to the previous day's regular session — bounded to just its
+                // regular-hours window, not "everything before today's pre-market", which
+                // previously leaked in the prior day's pre/post-market bars and skewed H/L.
+                if (regOpen === null && timestamps.length > 0 && dayIdx > 0) {
+                    const prevReg = todayTP.regular[dayIdx - 1] && todayTP.regular[dayIdx - 1][0];
+                    if (prevReg) {
+                        for (let i = 0; i < timestamps.length; i++) {
+                            const t = timestamps[i], v = quote.volume[i];
+                            const o = quote.open[i], h = quote.high[i], l = quote.low[i];
+                            if (t >= prevReg.start && t < prevReg.end) {
+                                if (v) totalVol += v;
+                                if (regOpen === null && o != null) regOpen = o;
+                                if (h != null) regHigh = Math.max(regHigh, h);
+                                if (l != null) regLow = Math.min(regLow, l);
+                            }
                         }
                     }
                 }
