@@ -2045,7 +2045,7 @@
                         }
                     }
 
-                    // Fundamentals: PE (TTM), PE (Fwd), PEG, Analyst Mean Target
+                    // Fundamentals: PE (TTM), PE (Fwd), Analyst Mean Target
                     const trailingPE = result?.summaryDetail?.trailingPE?.raw;
                     const forwardPE  = result?.summaryDetail?.forwardPE?.raw;
                     const pegRatio   = result?.defaultKeyStatistics?.trailingPegRatio?.raw ?? result?.defaultKeyStatistics?.pegRatio?.raw;
@@ -2055,14 +2055,13 @@
                         const parts = [];
                         if (trailingPE != null && isFinite(trailingPE)) parts.push(`<span class="fund-label">PE(TTM)</span> <span class="fund-value">${trailingPE.toFixed(1)}</span>`);
                         if (forwardPE  != null && isFinite(forwardPE))  parts.push(`<span class="fund-label">PE(Fwd)</span> <span class="fund-value">${forwardPE.toFixed(1)}</span>`);
-                        if (pegRatio   != null && isFinite(pegRatio))   parts.push(`<span class="fund-label">PEG</span> <span class="fund-value">${pegRatio.toFixed(2)}</span>`);
                         if (targetPrice != null) {
                             parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice1(stock, targetPrice)}</span>`);
                         }
                         if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' · ');
                     }
 
-                    // Risk & Rating: Beta, P/B, Analyst Rec
+                    // Risk & Rating: Beta, PEG, P/B, Analyst Rec
                     const beta = result?.defaultKeyStatistics?.beta?.raw ?? result?.summaryDetail?.beta?.raw;
                     const priceToBook = result?.defaultKeyStatistics?.priceToBook?.raw;
                     const recKey = result?.financialData?.recommendationKey;
@@ -2070,6 +2069,7 @@
                     if (riskEl) {
                         const riskParts = [];
                         if (beta != null && isFinite(beta)) riskParts.push(`<span class="fund-label" style="text-transform:none">β</span> <span class="fund-value">${beta.toFixed(2)}</span>`);
+                        if (pegRatio != null && isFinite(pegRatio)) riskParts.push(`<span class="fund-label">PEG</span> <span class="fund-value">${pegRatio.toFixed(2)}</span>`);
                         if (priceToBook != null && isFinite(priceToBook)) riskParts.push(`<span class="fund-label">P/B</span> <span class="fund-value">${priceToBook.toFixed(1)}</span>`);
                         if (recKey && recKey !== 'none') {
                             const recMap = {
