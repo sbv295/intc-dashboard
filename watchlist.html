@@ -1154,7 +1154,7 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null, currentPct: null, chartSeries: null, chartRange: null };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null, currentPct: null, chartSeries: null, chartRange: null, hoverX: null };
     });
 
     // ─── Live Performance Mini-Chart ────────────────────────────────────────
@@ -1171,6 +1171,15 @@
         const stock = STOCKS.find(s => s.ticker === ticker);
         if (!stock) return;
         const st = state[ticker];
+        // Preserve an active hover across data-driven redraws (live ticks, periodic fetch),
+        // so the callout doesn't disappear/snap back just because new data arrived. Pass
+        // hoverX explicitly (a number while hovering, or null on mouseleave/touchend) to
+        // update the stored position; omit it entirely to redraw using whatever was stored.
+        if (hoverX === undefined) {
+            hoverX = st.hoverX;
+        } else {
+            st.hoverX = hoverX;
+        }
         const series = st.chartSeries, range = st.chartRange;
         if (!series || series.length < 2 || !range) return;
         const canvas = document.getElementById(`chart-${sid(stock)}`);
@@ -1369,10 +1378,10 @@
                 drawSentimentChart(s.ticker, clientX - rect.left);
             };
             canvas.addEventListener('mousemove', (e) => move(e.clientX));
-            canvas.addEventListener('mouseleave', () => drawSentimentChart(s.ticker));
+            canvas.addEventListener('mouseleave', () => drawSentimentChart(s.ticker, null));
             canvas.addEventListener('touchstart', (e) => { if (e.touches[0]) move(e.touches[0].clientX); }, { passive: true });
             canvas.addEventListener('touchmove', (e) => { if (e.touches[0]) move(e.touches[0].clientX); }, { passive: true });
-            canvas.addEventListener('touchend', () => drawSentimentChart(s.ticker));
+            canvas.addEventListener('touchend', () => drawSentimentChart(s.ticker, null));
         });
     }
 
