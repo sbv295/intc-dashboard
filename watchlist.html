@@ -2045,15 +2045,17 @@
                         }
                     }
 
-                    // Fundamentals: PE (TTM), PE (Fwd), Analyst Mean Target
+                    // Fundamentals: PE (TTM), PE (Fwd), PEG, Analyst Mean Target
                     const trailingPE = result?.summaryDetail?.trailingPE?.raw;
                     const forwardPE  = result?.summaryDetail?.forwardPE?.raw;
+                    const pegRatio   = result?.defaultKeyStatistics?.trailingPegRatio?.raw ?? result?.defaultKeyStatistics?.pegRatio?.raw;
                     const targetPrice = result?.financialData?.targetMeanPrice?.raw;
                     const fundamentalsEl = document.getElementById(`fundamentals-${_sid}`);
                     if (fundamentalsEl) {
                         const parts = [];
                         if (trailingPE != null && isFinite(trailingPE)) parts.push(`<span class="fund-label">PE(TTM)</span> <span class="fund-value">${trailingPE.toFixed(1)}</span>`);
                         if (forwardPE  != null && isFinite(forwardPE))  parts.push(`<span class="fund-label">PE(Fwd)</span> <span class="fund-value">${forwardPE.toFixed(1)}</span>`);
+                        if (pegRatio   != null && isFinite(pegRatio))   parts.push(`<span class="fund-label">PEG</span> <span class="fund-value">${pegRatio.toFixed(2)}</span>`);
                         if (targetPrice != null) {
                             parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice1(stock, targetPrice)}</span>`);
                         }
