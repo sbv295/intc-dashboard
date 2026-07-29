@@ -1123,6 +1123,24 @@
         return '$' + Math.round(price).toLocaleString();
     }
 
+    // Shrinks the OHL row's font-size just enough for its three groups to fit on one
+    // line — needed since longer (3-4 digit) prices can otherwise wrap awkwardly.
+    function fitOhlRow(el) {
+        el.style.fontSize = '';
+        const groups = el.querySelectorAll('.ohl-group');
+        if (groups.length < 2) return;
+        const baseSize = parseFloat(getComputedStyle(el).fontSize);
+        let size = baseSize;
+        const minSize = baseSize * 0.7;
+        let guard = 0;
+        while (guard++ < 12) {
+            const tops = new Set(Array.from(groups).map(g => Math.round(g.getBoundingClientRect().top)));
+            if (tops.size <= 1 || size <= minSize) break;
+            size -= 0.5;
+            el.style.fontSize = size + 'px';
+        }
+    }
+
     function toUsd(stock, price) {
         if (stock.currency === 'KRW' && krwToUsd) return price * krwToUsd;
         return price;
@@ -1799,6 +1817,7 @@
                     };
                     const ohlGroup = (label, v) => `<span class="ohl-group"><span class="ohl-label">${label}</span><span class="ohl-value">${fmtPrice(stock, v)}</span>${ohlPct(v)}</span>`;
                     ohlEl.innerHTML = ohlGroup('O', regOpen) + ohlGroup('H', regHigh) + ohlGroup('L', regLow);
+                    fitOhlRow(ohlEl);
                 }
             }
 
