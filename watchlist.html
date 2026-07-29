@@ -383,9 +383,8 @@
         .stock-ohl .ohl-pct {
             font-weight: 600;
             margin-right: 2px;
+            color: var(--text-dim);
         }
-        .stock-ohl .ohl-pct.up { color: var(--green); }
-        .stock-ohl .ohl-pct.down { color: var(--red); }
 
         .price-flash-up { animation: flashGreen 1s ease-out; }
         .price-flash-down { animation: flashRed 1s ease-out; }
@@ -1782,7 +1781,7 @@
                         if (refClosePct == null || v == null) return '';
                         const pct = ((v - refClosePct) / refClosePct) * 100;
                         const sign = pct >= 0 ? '+' : '';
-                        return ` <span class="ohl-pct ${pct >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(1)}%</span>`;
+                        return ` <span class="ohl-pct">(${sign}${pct.toFixed(1)}%)</span>`;
                     };
                     ohlEl.innerHTML = `<span class="ohl-label">O</span><span class="ohl-value">${fmtPrice(stock, regOpen)}</span>${ohlPct(regOpen)} · <span class="ohl-label">H</span><span class="ohl-value">${fmtPrice(stock, regHigh)}</span>${ohlPct(regHigh)} · <span class="ohl-label">L</span><span class="ohl-value">${fmtPrice(stock, regLow)}</span>${ohlPct(regLow)}`;
                 }
