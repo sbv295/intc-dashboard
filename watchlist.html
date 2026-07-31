@@ -887,7 +887,6 @@
     <div class="nav-tabs">
         <a href="watchlist.html" class="active">Semicon</a>
         <a href="it.html">IT</a>
-        <a href="etfs.html">ETFs</a>
     </div>
     <div class="time-fixed" id="time-display">--</div>
     </div>
@@ -942,7 +941,22 @@
     </div>
     <div class="stock-grid" id="stock-grid-kr"></div>
 
+    <iframe id="etf-frame" src="etfs.html" title="ETFs" style="width:100%;border:0;display:block;overflow:hidden;" scrolling="no"></iframe>
+
     <script>
+    // ─── ETF Section (embedded etfs.html, auto-sized to its content) ────────
+    (function() {
+        const frame = document.getElementById('etf-frame');
+        function resize() {
+            const doc = frame.contentDocument;
+            if (doc && doc.body) frame.style.height = doc.body.scrollHeight + 'px';
+        }
+        frame.addEventListener('load', () => {
+            resize();
+            new ResizeObserver(resize).observe(frame.contentDocument.body);
+        });
+    })();
+
     // ─── Stock Configuration ────────────────────────────────────────────────
     const STOCKS = [
         { ticker: 'INTC', name: 'Intel', hl: 'xyz:INTC', color: '#0071C5', logo: 'logos/INTC.svg', ceo: 'logos/ceo_cartoon/intel_ceo.png' },
