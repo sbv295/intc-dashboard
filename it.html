@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semicon — Stock Dashboard</title>
+    <title>IT — Stock Dashboard</title>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="be0b9ce8-f4bc-4d6f-94fe-b0bcce0b7518"></script>
     <script src="https://cdn.jsdelivr.net/npm/protobufjs@7.2.6/dist/protobuf.min.js"></script>
     <style>
@@ -220,7 +220,9 @@
             width: 32px;
             height: 32px;
             border-radius: 8px;
-            object-fit: cover;
+            object-fit: contain;
+            background: #fff;
+            padding: 3px;
         }
 
         .stock-name {
@@ -563,7 +565,7 @@
             left: -16px;
             right: -16px;
             height: 380px;
-            background: url('logos/Casino_desktop.jpg') center center / 100% auto no-repeat;
+            background: none;
             opacity: 0.7;
             pointer-events: none;
             -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
@@ -573,7 +575,7 @@
 
         @media (max-width: 640px) {
             .casino-bg {
-                background-image: url('logos/Casino_mobile.jpg');
+                background-image: none;
                 height: 280px;
             }
         }
@@ -885,17 +887,17 @@
 <body>
     <div class="casino-bg"></div>
     <div class="nav-tabs">
-        <a href="watchlist.html" class="active">Semicon</a>
-        <a href="it.html">IT</a>
+        <a href="watchlist.html">Semicon</a>
+        <a href="it.html" class="active">IT</a>
         <a href="etfs.html">ETFs</a>
     </div>
     <div class="time-fixed" id="time-display">--</div>
     </div>
 
-    <div class="nav-title">Semicon</div>
+    <div class="nav-title">IT</div>
 
     <div class="header">
-        <h1>Semicon</h1>
+        <h1>IT</h1>
         <div class="time-display" id="time-display-legacy">--</div>
     </div>
 
@@ -914,52 +916,25 @@
         <span class="mcap-summary-ext" id="ndx-ext"></span>
     </div>
 
-    <div class="battle-bar" id="battle-bar">
-        <div class="battle-bar-header">
-            <span class="battle-bar-title">INTC vs AMD · Change %</span>
-            <span class="battle-bar-verdict" id="battle-verdict">—</span>
-        </div>
-        <div class="battle-bar-track">
-            <div class="battle-bar-fill-intc" id="battle-fill-intc"></div>
-            <div class="battle-bar-fill-amd" id="battle-fill-amd"></div>
-            <div class="battle-bar-center"></div>
-        </div>
-        <div class="battle-bar-labels">
-            <span class="battle-label-intc">INTC <span id="battle-pct-intc">—</span></span>
-            <span class="battle-diff" id="battle-diff">—</span>
-            <span class="battle-label-amd">AMD <span id="battle-pct-amd">—</span></span>
-        </div>
-    </div>
-
     <div class="stock-grid" id="stock-grid-us"></div>
 
-    <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span><button class="section-collapse-btn" id="collapse-btn-kr" onclick="toggleAllCards('kr')">−</button><span class="fx-rate-badge" id="fx-rate-usdkrw">$1 = ₩<span class="fx-rate-value">—</span></span></div>
-    <div class="holiday-banner" id="holiday-banner-kr"></div>
-    <div class="mcap-summary" id="mcap-summary-kr">
+    <div class="section-label" style="display:none">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span><button class="section-collapse-btn" id="collapse-btn-kr" onclick="toggleAllCards('kr')">−</button><span class="fx-rate-badge" id="fx-rate-usdkrw">$1 = ₩<span class="fx-rate-value">—</span></span></div>
+    <div class="holiday-banner" id="holiday-banner-kr" style="display:none"></div>
+    <div class="mcap-summary" id="mcap-summary-kr" style="display:none">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
         <span class="mcap-summary-value" id="mcap-total-kr">—</span>
         <span class="mcap-summary-change" id="mcap-chg-kr"></span>
     </div>
-    <div class="stock-grid" id="stock-grid-kr"></div>
+    <div class="stock-grid" id="stock-grid-kr" style="display:none"></div>
 
     <script>
     // ─── Stock Configuration ────────────────────────────────────────────────
     const STOCKS = [
-        { ticker: 'INTC', name: 'Intel', hl: 'xyz:INTC', color: '#0071C5', logo: 'logos/INTC.svg', ceo: 'logos/ceo_cartoon/intel_ceo.png' },
-        { ticker: 'AMD', name: 'AMD', hl: 'xyz:AMD', color: '#7AB648', logo: 'logos/AMD.svg', ceo: 'logos/ceo_cartoon/amd_ceo.png' },
-        { ticker: 'NVDA', name: 'NVIDIA', hl: 'xyz:NVDA', color: '#76B900', logo: 'logos/NVDA.svg', ceo: 'logos/ceo_cartoon/nvidia_ceo.png' },
-        { ticker: 'TSM', name: 'TSMC', hl: 'xyz:TSM', color: '#C4161C', logo: 'logos/TSM.svg', exchange: 'NYSE', ceo: 'logos/ceo_cartoon/tsmc_ceo.png' },
-        { ticker: 'SNDK', name: 'SanDisk', hl: 'xyz:SNDK', color: '#2D4691', logo: 'logos/SNDK.svg', ceo: 'logos/ceo_cartoon/sandisk_ceo.png' },
-        { ticker: 'MU', name: 'Micron', hl: 'xyz:MU', color: '#104076', logo: 'logos/MU.svg', ceo: 'logos/ceo_cartoon/micron_ceo.png' },
-        { ticker: 'AVGO', name: 'Broadcom', hl: 'xyz:AVGO', color: '#CC092F', logo: 'logos/AVGO.svg', ceo: 'logos/ceo_cartoon/broadcomm_ceo.png' },
-        { ticker: 'SPCX', name: 'SpaceX', hl: 'xyz:SPCX', color: '#4DA8DA', logo: 'logos/SPCX.svg', ceo: 'logos/ceo_cartoon/spacex_ceo.png' },
-        { ticker: 'MRVL', name: 'Marvell', hl: 'xyz:MRVL', color: '#FFFFFF', logo: 'logos/MRVL.svg', ceo: 'logos/ceo_cartoon/marvell_ceo.png' },
-        { ticker: 'ARM', name: 'ARM', hl: 'xyz:ARM', color: '#0090BF', logo: 'logos/ARM.svg', ceo: 'logos/ceo_cartoon/arm_ceo.png' },
-        { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg', ceo: 'logos/ceo_cartoon/qualcomm_ceo.png' },
-        { ticker: 'SKHY', name: 'SK Hynix ADR', hl: 'xyz:SKHY', color: '#E4002B', logo: 'logos/SKHYNIX.svg', displayTicker: 'SKHY.US' },
-        { ticker: 'MBLY', name: 'Mobileye', hl: null, color: '#1B2CC1', logo: 'logos/MBLY.png', ceo: 'logos/ceo_cartoon/mobileye_ceo.png' },
-        { ticker: '005930.KS', name: 'Samsung', hl: 'xyz:SMSN', color: '#4A6CF7', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
-        { ticker: '000660.KS', name: 'SK Hynix', hl: 'xyz:SKHX', color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
+        { ticker: 'AAPL', name: 'Apple', hl: 'xyz:AAPLUSD', color: '#A2AAAD', logo: 'logos/AAPL.png' },
+        { ticker: 'MSFT', name: 'Microsoft', hl: 'xyz:MSFTUSD', color: '#00A4EF', logo: 'logos/MSFT.png' },
+        { ticker: 'GOOGL', name: 'Google', hl: 'xyz:GOOGLUSD', color: '#4285F4', logo: 'logos/GOOGL.png' },
+        { ticker: 'AMZN', name: 'Amazon', hl: 'xyz:AMZNUSD', color: '#FF9900', logo: 'logos/AMZN.png' },
+        { ticker: 'META', name: 'Meta', hl: 'xyz:METAUSD', color: '#0668E1', logo: 'logos/META.png' },
     ];
 
     function sid(s) { return (s.displayTicker || s.ticker).replace(/[^A-Za-z0-9]/g, '_'); }
