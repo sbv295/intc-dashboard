@@ -1279,11 +1279,35 @@
             state[stock.ticker].sessionClose = regPrice || prevClose;
             state[stock.ticker].prevClose = prevClose;
 
-            const todayTP = meta.tradingPeriods;
-            const dayIdx = (todayTP && todayTP.regular) ? todayTP.regular.length - 1 : -1;
-            const tp = (dayIdx >= 0 && todayTP.regular[dayIdx] && todayTP.regular[dayIdx][0])
-                ? { regular: todayTP.regular[dayIdx][0] }
-                : meta.currentTradingPeriod;
+            // NSE/BSE returns meta.tradingPeriods as a flat array of daily {start,end}
+            // session windows (unlike the US/KRX {pre,regular,post} object-of-arrays shape),
+            // and meta.currentTradingPeriod can point at the *next* (not yet open) session
+            // while the market is closed. Pick whichever candidate window actually contains
+            // the most recent candle with data — that's always the correct "today" session.
+            const rawTP = meta.tradingPeriods;
+            const tpCandidates = [];
+            if (Array.isArray(rawTP)) {
+                rawTP.forEach(entry => {
+                    const e = Array.isArray(entry) ? entry[0] : entry;
+                    if (e && e.start != null && e.end != null) tpCandidates.push({ start: e.start, end: e.end });
+                });
+            }
+            if (meta.currentTradingPeriod && meta.currentTradingPeriod.regular) {
+                tpCandidates.push(meta.currentTradingPeriod.regular);
+            }
+            let lastValidTs = null;
+            for (let i = timestamps.length - 1; i >= 0; i--) {
+                if (quote.close[i] != null) { lastValidTs = timestamps[i]; break; }
+            }
+            let regularWindow = (lastValidTs != null)
+                ? tpCandidates.find(c => lastValidTs >= c.start && lastValidTs <= c.end)
+                : null;
+            if (!regularWindow) {
+                const nowSec = Date.now() / 1000;
+                const started = tpCandidates.filter(c => c.start <= nowSec).sort((a, b) => b.start - a.start);
+                regularWindow = started[0] || tpCandidates[tpCandidates.length - 1] || null;
+            }
+            const tp = regularWindow ? { regular: regularWindow } : null;
 
             let regularClose = null;
             if (tp) {
@@ -1349,22 +1373,6 @@
                         if (regOpen === null && o != null) regOpen = o;
                         if (h != null) regHigh = Math.max(regHigh, h);
                         if (l != null) regLow = Math.min(regLow, l);
-                    }
-                }
-
-                if (regOpen === null && timestamps.length > 0 && dayIdx > 0) {
-                    const prevReg = todayTP.regular[dayIdx - 1] && todayTP.regular[dayIdx - 1][0];
-                    if (prevReg) {
-                        for (let i = 0; i < timestamps.length; i++) {
-                            const t = timestamps[i], v = quote.volume[i];
-                            const o = quote.open[i], h = quote.high[i], l = quote.low[i];
-                            if (t >= prevReg.start && t <= prevReg.end) {
-                                if (v) totalVol += v;
-                                if (regOpen === null && o != null) regOpen = o;
-                                if (h != null) regHigh = Math.max(regHigh, h);
-                                if (l != null) regLow = Math.min(regLow, l);
-                            }
-                        }
                     }
                 }
 
