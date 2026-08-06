@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semicon — Stock Dashboard</title>
+    <title>Indian Market — Stock Dashboard</title>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="be0b9ce8-f4bc-4d6f-94fe-b0bcce0b7518"></script>
     <script src="https://cdn.jsdelivr.net/npm/protobufjs@7.2.6/dist/protobuf.min.js"></script>
     <style>
@@ -152,13 +152,8 @@
             margin-bottom: 8px;
         }
 
-        #stock-grid-kr {
-            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-        }
-
         @media (max-width: 640px) {
             .stock-grid { grid-template-columns: 1fr; }
-            #stock-grid-kr { grid-template-columns: 1fr; }
             .section-label {
                 flex-direction: row;
                 flex-wrap: nowrap;
@@ -220,7 +215,9 @@
             width: 32px;
             height: 32px;
             border-radius: 8px;
-            object-fit: cover;
+            object-fit: contain;
+            background: #fff;
+            padding: 3px;
         }
 
         .stock-name {
@@ -243,25 +240,10 @@
             border: 1px solid color-mix(in srgb, var(--card-accent) 25%, transparent);
         }
 
-        .ceo-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid color-mix(in srgb, var(--card-accent) 70%, white);
-            box-shadow: 0 0 8px color-mix(in srgb, var(--card-accent) 40%, transparent);
-            margin-left: 2px;
-            flex-shrink: 0;
-        }
-
         .stock-prices {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 8px;
-        }
-
-        .stock-prices:has(.nasdaq-block + .hl-block) {
-            grid-template-columns: 1fr 1fr;
         }
 
         .price-block {
@@ -294,9 +276,6 @@
         .price-block-change .down { color: var(--red); }
         .price-block-change .prev-ref { color: var(--text-dim); font-weight: 400; }
 
-        .price-block.hl-dimmed {
-            opacity: 0.3;
-        }
         .price-block.nasdaq-dimmed {
             opacity: 0.3;
         }
@@ -334,9 +313,6 @@
         .stock-extended:empty {
             display: none;
         }
-        /* When pre/post-market text is hidden (regular market hours), avoid a
-           redundant double border between .stock-meta's bottom border and
-           .stock-ath's top border sitting right next to each other. */
         .stock-extended:empty + .stock-ath {
             border-top: none;
             padding-top: 0;
@@ -439,123 +415,6 @@
         .mcap-summary-ext .up { color: var(--green); font-weight: 700; }
         .mcap-summary-ext .down { color: var(--red); font-weight: 700; }
         .mcap-summary-ext:empty { display: none; }
-        .fx-rate-badge {
-            font-size: 0.85rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            color: var(--text);
-            text-transform: none;
-            white-space: nowrap;
-        }
-        .fx-rate-badge .fx-rate-value {
-            color: var(--text);
-            font-weight: 700;
-        }
-
-        /* ─── INTC vs AMD Battle Bar ─────────────────────────── */
-        .battle-bar {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 12px 18px 14px;
-            margin-bottom: 12px;
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
-            max-height: 0;
-            opacity: 0;
-            padding: 0;
-            margin: 0;
-            border: none;
-            transition: max-height 0.5s ease, opacity 0.4s ease, padding 0.4s ease, margin 0.4s ease, border 0.4s ease;
-        }
-        .battle-bar.visible {
-            max-height: 400px;
-            opacity: 1;
-            padding: 12px 18px 14px;
-            margin-bottom: 12px;
-            border: 1px solid var(--border);
-        }
-        .battle-bar-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 8px;
-        }
-        .battle-bar-title {
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--text-dim);
-        }
-        .battle-bar-verdict {
-            font-size: 0.85rem;
-            font-weight: 800;
-            color: var(--text-dim);
-        }
-        .battle-bar-verdict.intc { color: #3a9bde; }
-        .battle-bar-verdict.amd { color: #7AB648; }
-        .battle-bar-track {
-            position: relative;
-            display: flex;
-            height: 16px;
-            border-radius: 8px;
-            overflow: hidden;
-            background: var(--surface2);
-            border: 1px solid var(--border);
-        }
-        .battle-bar-fill-intc {
-            width: 50%;
-            background: linear-gradient(90deg, #004d85, #3a9bde);
-            height: 100%;
-            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .battle-bar-fill-amd {
-            width: 50%;
-            background: linear-gradient(90deg, #7AB648, #4c7a1f);
-            height: 100%;
-            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .battle-bar-center {
-            position: absolute;
-            left: 50%;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: rgba(255,255,255,0.6);
-            transform: translateX(-1px);
-            z-index: 2;
-            pointer-events: none;
-        }
-        .battle-bar-labels {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 8px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-        .battle-label-intc { color: #3a9bde; }
-        .battle-label-amd { color: #7AB648; }
-        .battle-diff {
-            font-weight: 800;
-            color: var(--text);
-        }
-
-        .casino-badge {
-            height: 8em;
-            margin-left: auto;
-            opacity: 0.9;
-            border-radius: 6px;
-            padding: 4px;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid var(--border);
-            transition: opacity 0.3s;
-            display: none;
-        }
-        .casino-badge:hover {
-            opacity: 1;
-        }
 
         .casino-bg {
             position: absolute;
@@ -563,7 +422,7 @@
             left: -16px;
             right: -16px;
             height: 380px;
-            background: url('logos/Casino_desktop.jpg') center center / 100% auto no-repeat;
+            background: url('logos/Indian_market_desktop.png') center center / 100% auto no-repeat;
             opacity: 0.7;
             pointer-events: none;
             -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
@@ -573,7 +432,7 @@
 
         @media (max-width: 640px) {
             .casino-bg {
-                background-image: url('logos/Casino_mobile.jpg');
+                background-image: url('logos/Indian_market_mobile.png');
                 height: 280px;
             }
         }
@@ -644,7 +503,6 @@
             font-weight: 700;
             margin-left: 4px;
         }
-        /* Golden text when earnings are within a week — same line, no extra space */
         .stock-earnings-date.soon .ed-label,
         .stock-earnings-date.soon .ed-value,
         .stock-earnings-date.soon .ed-countdown {
@@ -885,96 +743,51 @@
 <body>
     <div class="casino-bg"></div>
     <div class="nav-tabs">
-        <a href="watchlist.html" class="active">Semicon</a>
+        <a href="watchlist.html">Semicon</a>
         <a href="it.html">IT</a>
-        <a href="india.html">Indian</a>
+        <a href="india.html" class="active">Indian</a>
     </div>
     <div class="time-fixed" id="time-display">--</div>
     </div>
 
-    <div class="nav-title">Semicon</div>
+    <div class="nav-title">Indian Market</div>
 
     <div class="header">
-        <h1>Semicon</h1>
+        <h1>Indian Market</h1>
         <div class="time-display" id="time-display-legacy">--</div>
     </div>
 
-    <div class="section-label">US Market <span class="section-hours">Pre 1:30 PM – 7:00 PM · Market 7:00 PM – 1:30 AM · Post 1:30 AM – 5:30 AM IST</span><button class="section-collapse-btn" id="collapse-btn-us" onclick="toggleAllCards('us')">−</button><span class="fx-rate-badge" id="fx-rate-usdinr">$1 = ₹<span class="fx-rate-value">—</span></span><span class="section-et" id="et-clock"></span></div>
-    <div class="holiday-banner" id="holiday-banner"></div>
-    <div class="mcap-summary" id="mcap-summary-us">
+    <div class="section-label">Indian Market <span class="section-hours">Market 9:15 AM – 3:30 PM IST</span><button class="section-collapse-btn" id="collapse-btn-in" onclick="toggleAllCards()">−</button></div>
+    <div class="holiday-banner" id="holiday-banner-in"></div>
+    <div class="mcap-summary" id="mcap-summary-in">
         <span class="mcap-summary-label">Watchlist Mkt Cap</span>
-        <span class="mcap-summary-value" id="mcap-total-us">—</span>
-        <span class="mcap-summary-change" id="mcap-chg-us"></span>
-        <img src="logos/casino.png" alt="casino" class="casino-badge">
+        <span class="mcap-summary-value" id="mcap-total-in">—</span>
+        <span class="mcap-summary-change" id="mcap-chg-in"></span>
     </div>
-    <div class="mcap-summary" id="index-summary-us">
-        <span class="mcap-summary-label">NASDAQ 100</span>
-        <span class="mcap-summary-value" id="ndx-value">—</span>
-        <span class="mcap-summary-change" id="ndx-chg"></span>
-        <span class="mcap-summary-ext" id="ndx-ext"></span>
+    <div class="mcap-summary" id="index-summary-nifty">
+        <span class="mcap-summary-label">NIFTY 50</span>
+        <span class="mcap-summary-value" id="nifty-value">—</span>
+        <span class="mcap-summary-change" id="nifty-chg"></span>
     </div>
-
-    <div class="battle-bar" id="battle-bar">
-        <div class="battle-bar-header">
-            <span class="battle-bar-title">INTC vs AMD · Change %</span>
-            <span class="battle-bar-verdict" id="battle-verdict">—</span>
-        </div>
-        <div class="battle-bar-track">
-            <div class="battle-bar-fill-intc" id="battle-fill-intc"></div>
-            <div class="battle-bar-fill-amd" id="battle-fill-amd"></div>
-            <div class="battle-bar-center"></div>
-        </div>
-        <div class="battle-bar-labels">
-            <span class="battle-label-intc">INTC <span id="battle-pct-intc">—</span></span>
-            <span class="battle-diff" id="battle-diff">—</span>
-            <span class="battle-label-amd">AMD <span id="battle-pct-amd">—</span></span>
-        </div>
+    <div class="mcap-summary" id="index-summary-sensex">
+        <span class="mcap-summary-label">SENSEX</span>
+        <span class="mcap-summary-value" id="sensex-value">—</span>
+        <span class="mcap-summary-change" id="sensex-chg"></span>
     </div>
 
-    <div class="stock-grid" id="stock-grid-us"></div>
-
-    <div class="section-label">Korean Market (KRX) <span class="section-hours">Market 5:30 AM – 12:00 PM IST</span><button class="section-collapse-btn" id="collapse-btn-kr" onclick="toggleAllCards('kr')">−</button><span class="fx-rate-badge" id="fx-rate-usdkrw">$1 = ₩<span class="fx-rate-value">—</span></span></div>
-    <div class="holiday-banner" id="holiday-banner-kr"></div>
-    <div class="mcap-summary" id="mcap-summary-kr">
-        <span class="mcap-summary-label">Watchlist Mkt Cap</span>
-        <span class="mcap-summary-value" id="mcap-total-kr">—</span>
-        <span class="mcap-summary-change" id="mcap-chg-kr"></span>
-    </div>
-    <div class="stock-grid" id="stock-grid-kr"></div>
-
-    <iframe id="etf-frame" src="etfs.html" title="ETFs" style="width:100%;border:0;display:block;overflow:hidden;" scrolling="no"></iframe>
+    <div class="stock-grid" id="stock-grid-in"></div>
 
     <script>
-    // ─── ETF Section (embedded etfs.html, auto-sized to its content) ────────
-    (function() {
-        const frame = document.getElementById('etf-frame');
-        function resize() {
-            const doc = frame.contentDocument;
-            if (doc && doc.body) frame.style.height = doc.body.scrollHeight + 'px';
-        }
-        frame.addEventListener('load', () => {
-            resize();
-            new ResizeObserver(resize).observe(frame.contentDocument.body);
-        });
-    })();
-
     // ─── Stock Configuration ────────────────────────────────────────────────
     const STOCKS = [
-        { ticker: 'INTC', name: 'Intel', hl: 'xyz:INTC', color: '#0071C5', logo: 'logos/INTC.svg', ceo: 'logos/ceo_cartoon/intel_ceo.png' },
-        { ticker: 'AMD', name: 'AMD', hl: 'xyz:AMD', color: '#7AB648', logo: 'logos/AMD.svg', ceo: 'logos/ceo_cartoon/amd_ceo.png' },
-        { ticker: 'NVDA', name: 'NVIDIA', hl: 'xyz:NVDA', color: '#76B900', logo: 'logos/NVDA.svg', ceo: 'logos/ceo_cartoon/nvidia_ceo.png' },
-        { ticker: 'TSM', name: 'TSMC', hl: 'xyz:TSM', color: '#C4161C', logo: 'logos/TSM.svg', exchange: 'NYSE', ceo: 'logos/ceo_cartoon/tsmc_ceo.png' },
-        { ticker: 'SNDK', name: 'SanDisk', hl: 'xyz:SNDK', color: '#2D4691', logo: 'logos/SNDK.svg', ceo: 'logos/ceo_cartoon/sandisk_ceo.png' },
-        { ticker: 'MU', name: 'Micron', hl: 'xyz:MU', color: '#104076', logo: 'logos/MU.svg', ceo: 'logos/ceo_cartoon/micron_ceo.png' },
-        { ticker: 'AVGO', name: 'Broadcom', hl: 'xyz:AVGO', color: '#CC092F', logo: 'logos/AVGO.svg', ceo: 'logos/ceo_cartoon/broadcomm_ceo.png' },
-        { ticker: 'SPCX', name: 'SpaceX', hl: 'xyz:SPCX', color: '#4DA8DA', logo: 'logos/SPCX.svg', ceo: 'logos/ceo_cartoon/spacex_ceo.png' },
-        { ticker: 'MRVL', name: 'Marvell', hl: 'xyz:MRVL', color: '#FFFFFF', logo: 'logos/MRVL.svg', ceo: 'logos/ceo_cartoon/marvell_ceo.png' },
-        { ticker: 'ARM', name: 'ARM', hl: 'xyz:ARM', color: '#0090BF', logo: 'logos/ARM.svg', ceo: 'logos/ceo_cartoon/arm_ceo.png' },
-        { ticker: 'QCOM', name: 'Qualcomm', hl: 'xyz:QCOM', color: '#3253DC', logo: 'logos/QCOM.svg', ceo: 'logos/ceo_cartoon/qualcomm_ceo.png' },
-        { ticker: 'SKHY', name: 'SK Hynix ADR', hl: 'xyz:SKHY', color: '#E4002B', logo: 'logos/SKHYNIX.svg', displayTicker: 'SKHY.US' },
-        { ticker: 'MBLY', name: 'Mobileye', hl: null, color: '#1B2CC1', logo: 'logos/MBLY.png', ceo: 'logos/ceo_cartoon/mobileye_ceo.png' },
-        { ticker: '005930.KS', name: 'Samsung', hl: 'xyz:SMSN', color: '#4A6CF7', logo: 'logos/SAMSUNG.svg', currency: 'KRW', displayTicker: 'SMSN' },
-        { ticker: '000660.KS', name: 'SK Hynix', hl: 'xyz:SKHX', color: '#E4002B', logo: 'logos/SKHYNIX.svg', currency: 'KRW', displayTicker: 'SKHY' },
+        { ticker: 'HDFCBANK.NS', name: 'HDFC Bank', color: '#004C8F', logo: 'logos/HDFCBANK.png', displayTicker: 'HDFCBANK' },
+        { ticker: 'ICICIBANK.NS', name: 'ICICI Bank', color: '#F58220', logo: 'logos/ICICIBANK.png', displayTicker: 'ICICIBANK' },
+        { ticker: 'DEEPAKFERT.NS', name: 'Deepak Fertilisers', color: '#2E7D32', logo: 'logos/DEEPAKFERT.svg', displayTicker: 'DEEPAKFERT' },
+        { ticker: 'AARTIIND.NS', name: 'Aarti Industries', color: '#0277BD', logo: 'logos/AARTIIND.svg', displayTicker: 'AARTIIND' },
+        { ticker: 'TCS.NS', name: 'TCS', color: '#0070C0', logo: 'logos/TCS.png', displayTicker: 'TCS' },
+        { ticker: 'INFY.NS', name: 'Infosys', color: '#007CC3', logo: 'logos/INFY.png', displayTicker: 'INFY' },
+        { ticker: 'RELIANCE.NS', name: 'Reliance Industries', color: '#A91E22', logo: 'logos/RELIANCE.svg', displayTicker: 'RELIANCE' },
+        { ticker: 'ASIANPAINT.NS', name: 'Asian Paints', color: '#ED1C24', logo: 'logos/ASIANPAINT.png', displayTicker: 'ASIANPAINT' },
     ];
 
     function sid(s) { return (s.displayTicker || s.ticker).replace(/[^A-Za-z0-9]/g, '_'); }
@@ -1012,130 +825,55 @@
         });
     }
 
-    let krwToUsd = null;
-    let usdToInr = null;
-
-    async function fetchKrwRate() {
+    // ─── NIFTY 50 / SENSEX Indices (overall Indian market movement) ────────
+    async function fetchNiftyIndex() {
         try {
-            const url = `${YAHOO_BASE}USDKRW=X?interval=1d&range=1d`;
-            const json = await yahooFetch(url);
-            const rate = json.chart.result[0].meta.regularMarketPrice;
-            if (rate > 0) {
-                krwToUsd = 1 / rate;
-                const el = document.getElementById('fx-rate-usdkrw');
-                if (el) {
-                    const valEl = el.querySelector('.fx-rate-value');
-                    if (valEl) valEl.textContent = Math.round(rate).toLocaleString();
-                }
-            }
-        } catch(e) {}
-    }
-
-    async function fetchUsdInrRate() {
-        try {
-            const url = `${YAHOO_BASE}USDINR=X?interval=1d&range=1d`;
-            const json = await yahooFetch(url);
-            const rate = json.chart.result[0].meta.regularMarketPrice;
-            if (rate > 0) {
-                usdToInr = rate;
-                const el = document.getElementById('fx-rate-usdinr');
-                if (el) {
-                    const valEl = el.querySelector('.fx-rate-value');
-                    if (valEl) valEl.textContent = usdToInr.toFixed(2);
-                }
-            }
-        } catch(e) {}
-    }
-
-    // ─── NASDAQ 100 Index (overall US market movement) ─────────────────────
-    async function fetchNasdaq100Index() {
-        try {
-            const url = `${YAHOO_BASE}%5ENDX?interval=1m&range=2d&includePrePost=true`;
+            const url = `${YAHOO_BASE}%5ENSEI?interval=1m&range=2d`;
             const json = await yahooFetch(url);
             const meta = json.chart.result[0].meta;
             const price = meta.regularMarketPrice;
-            // Use meta.previousClose — the official "previous close" per Yahoo (same convention
-            // used for stock cards). meta.chartPreviousClose can be stale/off by more than a day.
             const prevClose = meta.previousClose || meta.chartPreviousClose;
             if (price == null) return;
-            const valEl = document.getElementById('ndx-value');
+            const valEl = document.getElementById('nifty-value');
             if (valEl) valEl.textContent = price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-            const chgEl = document.getElementById('ndx-chg');
+            const chgEl = document.getElementById('nifty-chg');
             if (chgEl && prevClose) {
                 const pct = (price - prevClose) / prevClose * 100;
                 chgEl.innerHTML = `<span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
             }
         } catch(e) {}
-        // Indices have no extended-hours data of their own — use QQQ (the standard NASDAQ-100
-        // tracking ETF) as a pre/post-market movement proxy, clearly labeled as such.
-        await fetchNasdaq100ExtendedProxy();
     }
 
-    async function fetchNasdaq100ExtendedProxy() {
-        const extEl = document.getElementById('ndx-ext');
-        if (!extEl) return;
-        const ms = getMarketStatus();
-        if (ms !== 'premarket' && ms !== 'postmarket') { extEl.innerHTML = ''; return; }
+    async function fetchSensexIndex() {
         try {
-            const url = `${YAHOO_BASE}QQQ?interval=1m&range=2d&includePrePost=true`;
+            const url = `${YAHOO_BASE}%5EBSESN?interval=1m&range=2d`;
             const json = await yahooFetch(url);
-            const result = json.chart.result[0];
-            const meta = result.meta;
-            const quote = result.indicators.quote[0];
-            const timestamps = result.timestamp || [];
-            const tp = meta.currentTradingPeriod;
-            let refPrice = null, extPrice = null, label = null;
-            if (ms === 'postmarket' && tp) {
-                for (let i = timestamps.length - 1; i >= 0; i--) {
-                    const t = timestamps[i], c = quote.close[i];
-                    if (c != null && t >= tp.regular.start && t < tp.regular.end) { refPrice = c; break; }
-                }
-                for (let i = timestamps.length - 1; i >= 0; i--) {
-                    const t = timestamps[i], c = quote.close[i];
-                    if (c != null && t >= tp.post.start) { extPrice = c; break; }
-                }
-                label = 'Post';
-            } else if (ms === 'premarket' && tp) {
-                // meta.previousClose refers to the close two sessions back (stale once
-                // regularMarketPrice already reflects yesterday's completed close) — use
-                // regularMarketPrice itself as "yesterday's close" reference, same convention
-                // used for individual stock cards' pre-market change.
-                refPrice = meta.regularMarketPrice;
-                for (let i = timestamps.length - 1; i >= 0; i--) {
-                    const t = timestamps[i], c = quote.close[i];
-                    if (c != null && t >= tp.pre.start && t < tp.regular.start) { extPrice = c; break; }
-                }
-                label = 'Pre';
-            }
-            if (extPrice != null && refPrice) {
-                const pct = (extPrice - refPrice) / refPrice * 100;
-                extEl.innerHTML = `<span class="ext-label">${label} (QQQ):</span> <span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
-            } else {
-                extEl.innerHTML = '';
+            const meta = json.chart.result[0].meta;
+            const price = meta.regularMarketPrice;
+            const prevClose = meta.previousClose || meta.chartPreviousClose;
+            if (price == null) return;
+            const valEl = document.getElementById('sensex-value');
+            if (valEl) valEl.textContent = price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            const chgEl = document.getElementById('sensex-chg');
+            if (chgEl && prevClose) {
+                const pct = (price - prevClose) / prevClose * 100;
+                chgEl.innerHTML = `<span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
             }
         } catch(e) {}
     }
 
+    // ─── Price Formatting (₹ only — no USD conversion) ─────────────────────
     function fmtPrice(stock, price) {
-        if (stock.currency === 'KRW' && krwToUsd) {
-            const usd = price * krwToUsd;
-            return '$' + usd.toFixed(Math.abs(usd) > 1000 ? 1 : 2);
-        }
-        if (stock.currency === 'KRW') return '₩' + Math.round(price).toLocaleString();
-        return '$' + price.toFixed(Math.abs(price) > 1000 ? 1 : 2);
+        return '₹' + price.toFixed(Math.abs(price) > 1000 ? 1 : 2);
     }
 
     function fmtPrice1(stock, price) {
-        if (stock.currency === 'KRW' && krwToUsd) return '$' + (price * krwToUsd).toFixed(1);
-        if (stock.currency === 'KRW') return '₩' + Math.round(price).toLocaleString();
-        return '$' + price.toFixed(1);
+        return '₹' + price.toFixed(1);
     }
 
     // Whole-number price label, used for the mini chart's Y-axis markers
     function fmtAxisPrice(stock, price) {
-        if (stock.currency === 'KRW' && krwToUsd) return '$' + Math.round(price * krwToUsd).toLocaleString();
-        if (stock.currency === 'KRW') return '₩' + Math.round(price).toLocaleString();
-        return '$' + Math.round(price).toLocaleString();
+        return '₹' + Math.round(price).toLocaleString();
     }
 
     // Shrinks the OHL row's font-size just enough for its three groups to fit on one
@@ -1156,20 +894,14 @@
         }
     }
 
-    function toUsd(stock, price) {
-        if (stock.currency === 'KRW' && krwToUsd) return price * krwToUsd;
-        return price;
-    }
-
     function stockExchange(stock) {
-        if (stock.currency === 'KRW') return 'KRX';
-        return stock.exchange || 'NASDAQ';
+        return stock.exchange || 'NSE';
     }
 
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null, currentPct: null, chartSeries: null, chartRange: null, hoverX: null };
+        state[s.ticker] = { price: null, prevClose: null, sessionClose: null, prevPrice: null, shares: null, mcap: null, volume: null, currentPct: null, chartSeries: null, chartRange: null, hoverX: null };
     });
 
     // ─── Live Performance Mini-Chart ────────────────────────────────────────
@@ -1178,7 +910,6 @@
         const stock = STOCKS.find(s => s.ticker === ticker);
         if (!stock) return;
         st.currentPct = pctChange;
-        if (ticker === 'INTC' || ticker === 'AMD') updateBattleBar();
         drawSentimentChart(ticker);
     }
 
@@ -1186,10 +917,6 @@
         const stock = STOCKS.find(s => s.ticker === ticker);
         if (!stock) return;
         const st = state[ticker];
-        // Preserve an active hover across data-driven redraws (live ticks, periodic fetch),
-        // so the callout doesn't disappear/snap back just because new data arrived. Pass
-        // hoverX explicitly (a number while hovering, or null on mouseleave/touchend) to
-        // update the stored position; omit it entirely to redraw using whatever was stored.
         if (hoverX === undefined) {
             hoverX = st.hoverX;
         } else {
@@ -1217,14 +944,10 @@
         const vPad = (maxP - minP) * 0.15;
         minP -= vPad; maxP += vPad;
 
-        // Color is derived from the chart's own last plotted point vs. the previous close,
-        // so it always matches exactly what's drawn (st.currentPct can momentarily disagree,
-        // e.g. when the official closing-auction price differs from the last 1-min candle).
         const lastClose = series[series.length - 1].c;
         const negative = (prevClose != null) ? lastClose < prevClose : lastClose < series[0].c;
         const color = negative ? '#ff1744' : '#00c853';
 
-        // Reserve space on the left for Y-axis price labels (high / mid / low), whole numbers only
         const tickValues = [maxP, (minP + maxP) / 2, minP];
         const axisFont = '9px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
         ctx.font = axisFont;
@@ -1241,7 +964,6 @@
         const xScale = t => padL + (Math.min(Math.max(t, range.start), range.end) - range.start) / span * plotW;
         const yScale = c => padT + (1 - (c - minP) / (maxP - minP)) * (rectH - padT - padB);
 
-        // Subtle horizontal grid lines with price labels, echoing index.html's chart grid/price scale
         ctx.strokeStyle = 'rgba(255,255,255,0.07)';
         ctx.lineWidth = 1;
         ctx.fillStyle = 'rgba(255,255,255,0.45)';
@@ -1257,7 +979,6 @@
             ctx.fillText(tickLabels[i], 2, clampedY);
         });
 
-        // Dotted reference line at the previous close, so intraday moves are easy to gauge
         if (prevClose != null) {
             const pcy = Math.round(yScale(prevClose)) + 0.5;
             ctx.save();
@@ -1284,10 +1005,9 @@
         const points = series.map(p => ({ x: xScale(p.t), y: yScale(p.c) }));
         const baseline = rectH - padB;
 
-        // Area fill: gradient fading from the trend color down to transparent
         const gradient = ctx.createLinearGradient(0, padT, 0, baseline);
-        gradient.addColorStop(0, color + '4d'); // ~30% opacity
-        gradient.addColorStop(1, color + '00'); // transparent
+        gradient.addColorStop(0, color + '4d');
+        gradient.addColorStop(1, color + '00');
         ctx.beginPath();
         ctx.moveTo(points[0].x, baseline);
         points.forEach(pt => ctx.lineTo(pt.x, pt.y));
@@ -1296,7 +1016,6 @@
         ctx.fillStyle = gradient;
         ctx.fill();
 
-        // Stroke the performance line on top of the fill
         ctx.beginPath();
         points.forEach((pt, i) => { if (i === 0) ctx.moveTo(pt.x, pt.y); else ctx.lineTo(pt.x, pt.y); });
         ctx.strokeStyle = color;
@@ -1305,14 +1024,10 @@
         ctx.lineCap = 'round';
         ctx.stroke();
 
-        // Position the DOM glow-dot at the most recent point; its pulse is animated in CSS
-        // so it keeps glowing dynamically between chart redraws. Only show it while the
-        // market is actually open — once closed, the chart freezes and the "live" marker
-        // should disappear rather than keep pulsing over stale data.
         const last = points[points.length - 1];
         const glowEl = document.getElementById(`glow-${sid(stock)}`);
         if (glowEl) {
-            const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
+            const ms = getIndiaMarketStatus();
             if (ms === 'market' && hoverX == null) {
                 glowEl.style.left = (canvas.offsetLeft + last.x) + 'px';
                 glowEl.style.top = (canvas.offsetTop + last.y) + 'px';
@@ -1323,7 +1038,6 @@
             }
         }
 
-        // Cursor callout: crosshair + tooltip showing the price/time under the pointer
         const tooltipEl = document.getElementById(`tooltip-${sid(stock)}`);
         if (hoverX != null) {
             let idx = 0, bestDist = Infinity;
@@ -1364,13 +1078,9 @@
                 tooltipEl.innerHTML = `<div class="chart-tooltip-price">${fmtPrice(stock, sp.c)}${pctHtml}</div><div class="chart-tooltip-time">${timeStr} IST</div>`;
                 tooltipEl.style.display = 'block';
                 const tw = tooltipEl.offsetWidth;
-                // Keep the callout pinned near the top of the chart; only its horizontal
-                // position follows the cursor, so it never bounces up/down with price.
                 let tx = canvas.offsetLeft + pt.x + 8;
                 if (tx + tw > canvas.offsetLeft + rectW) tx = canvas.offsetLeft + pt.x - tw - 8;
                 if (tx < canvas.offsetLeft) tx = canvas.offsetLeft;
-                // Anchor near the very top of the panel itself (not the canvas, which sits
-                // inset by the panel's own padding) so there's minimal gap above the callout.
                 const ty = 2;
                 tooltipEl.style.left = tx + 'px';
                 tooltipEl.style.top = ty + 'px';
@@ -1380,9 +1090,6 @@
         }
     }
 
-    // Wire up mouse/touch hover so the mini charts show a Google-Finance-style cursor
-    // callout (crosshair + price/time tooltip). Canvases are created once by renderGrid(),
-    // so listeners only need to be attached a single time.
     function attachChartHoverHandlers() {
         STOCKS.forEach(s => {
             const canvas = document.getElementById(`chart-${sid(s)}`);
@@ -1400,63 +1107,11 @@
         });
     }
 
-    // ─── INTC vs AMD Battle Bar ─────────────────────────────────────────────
-    // Metric: INTC change% − AMD change%. Positive => Intel favor, negative => AMD favor.
-    const BATTLE_CAP = 5; // pp difference at which the bar is fully saturated to one side
-
-    function updateBattleBar() {
-        const intcPct = state['INTC'] ? state['INTC'].currentPct : null;
-        const amdPct = state['AMD'] ? state['AMD'].currentPct : null;
-        if (intcPct == null || amdPct == null) return;
-
-        const diff = intcPct - amdPct;
-        const clamped = Math.max(-BATTLE_CAP, Math.min(BATTLE_CAP, diff));
-        const intcWidth = 50 + (clamped / BATTLE_CAP) * 50;
-
-        const fillIntc = document.getElementById('battle-fill-intc');
-        const fillAmd = document.getElementById('battle-fill-amd');
-        if (fillIntc) fillIntc.style.width = intcWidth + '%';
-        if (fillAmd) fillAmd.style.width = (100 - intcWidth) + '%';
-
-        const pctIntcEl = document.getElementById('battle-pct-intc');
-        const pctAmdEl = document.getElementById('battle-pct-amd');
-        if (pctIntcEl) pctIntcEl.textContent = (intcPct >= 0 ? '+' : '') + intcPct.toFixed(2) + '%';
-        if (pctAmdEl) pctAmdEl.textContent = (amdPct >= 0 ? '+' : '') + amdPct.toFixed(2) + '%';
-
-        const diffEl = document.getElementById('battle-diff');
-        if (diffEl) diffEl.textContent = (diff >= 0 ? '+' : '') + diff.toFixed(2) + '%';
-
-        const verdictEl = document.getElementById('battle-verdict');
-        if (verdictEl) {
-            if (Math.abs(diff) < 0.05) {
-                verdictEl.textContent = 'Even';
-                verdictEl.className = 'battle-bar-verdict';
-            } else if (diff > 0) {
-                verdictEl.textContent = `INTC favor (+${diff.toFixed(2)}%)`;
-                verdictEl.className = 'battle-bar-verdict intc';
-            } else {
-                verdictEl.textContent = `AMD favor (+${(-diff).toFixed(2)}%)`;
-                verdictEl.className = 'battle-bar-verdict amd';
-            }
-        }
-
-    }
-
-    function updateBattleBarVisibility() {
-        const ms = getMarketStatus();
-        const bar = document.getElementById('battle-bar');
-        if (bar) bar.classList.toggle('visible', ms === 'market');
-    }
-
     function updateSentimentVisibility() {
-        updateBattleBarVisibility();
         STOCKS.forEach(s => {
             const _sid = sid(s);
             const el = document.getElementById(`sentiment-${_sid}`);
             if (!el) return;
-            // Once a session's data has loaded, keep the chart showing (frozen on the last
-            // session) through pre/post market and closed hours — it only refreshes itself
-            // when the next trading day's data arrives via fetchNasdaqForStock.
             const show = !!state[s.ticker].chartSeries;
             el.classList.toggle('visible', show);
             if (show) drawSentimentChart(s.ticker);
@@ -1480,7 +1135,7 @@
 
     async function fetchViaVercel(url) {
         const params = new URL(url).searchParams;
-        const ticker = url.match(/finance\/(?:chart|quoteSummary|timeseries)\/([A-Z0-9.=%^]+)/i)?.[1] || 'INTC';
+        const ticker = url.match(/finance\/(?:chart|quoteSummary|timeseries)\/([A-Z0-9.=%^]+)/i)?.[1] || 'RELIANCE.NS';
         const apiUrl = '/api/yahoo?' + params.toString() + '&symbol=' + encodeURIComponent(ticker);
         const resp = await fetch(apiUrl);
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
@@ -1493,104 +1148,69 @@
         return resp.json();
     }
 
-    // ─── Time & Market Status ───────────────────────────────────────────────
-    function formatDualTime(date) {
-        const et = date.toLocaleString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit', hour12: true }) + ' ET';
-        return et;
-    }
-
-    // US market holidays (NYSE/NASDAQ full closures)
-    const US_MARKET_HOLIDAYS = new Map([
+    // ─── Time & Market Status (NSE/BSE — no pre/post market) ────────────────
+    // NSE trading holidays. 2025 dates are confirmed against NSE's published calendar;
+    // 2026-27 fixed-date holidays (Republic-independent civic dates) are confident, but
+    // lunar-calendar festivals (Holi, Eid, Ganesh Chaturthi, Dussehra, Diwali, Gurpurab,
+    // Mahashivratri) are best-effort estimates — verify against NSE's official calendar
+    // once published each year and update this list.
+    const INDIA_MARKET_HOLIDAYS = new Map([
         // 2025
-        ['2025-01-01','New Year\'s Day'],['2025-01-20','Martin Luther King Jr. Day'],
-        ['2025-02-17','Presidents\' Day'],['2025-04-18','Good Friday'],
-        ['2025-05-26','Memorial Day'],['2025-06-19','Juneteenth'],
-        ['2025-07-04','Independence Day'],['2025-09-01','Labor Day'],
-        ['2025-11-27','Thanksgiving'],['2025-12-25','Christmas'],
-        // 2026
-        ['2026-01-01','New Year\'s Day'],['2026-01-19','Martin Luther King Jr. Day'],
-        ['2026-02-16','Presidents\' Day'],['2026-04-03','Good Friday'],
-        ['2026-05-25','Memorial Day'],['2026-06-19','Juneteenth'],
-        ['2026-07-03','Independence Day'],['2026-09-07','Labor Day'],
-        ['2026-11-26','Thanksgiving'],['2026-12-25','Christmas'],
-        // 2027
-        ['2027-01-01','New Year\'s Day'],['2027-01-18','Martin Luther King Jr. Day'],
-        ['2027-02-15','Presidents\' Day'],['2027-03-26','Good Friday'],
-        ['2027-05-31','Memorial Day'],['2027-06-18','Juneteenth'],
-        ['2027-07-05','Independence Day'],['2027-09-06','Labor Day'],
-        ['2027-11-25','Thanksgiving'],['2027-12-24','Christmas'],
+        ['2025-02-26','Mahashivratri'],['2025-03-14','Holi'],
+        ['2025-03-31','Id-Ul-Fitr'],['2025-04-10','Shri Mahavir Jayanti'],
+        ['2025-04-14','Dr. Baba Saheb Ambedkar Jayanti'],['2025-04-18','Good Friday'],
+        ['2025-05-01','Maharashtra Day'],['2025-08-15','Independence Day'],
+        ['2025-08-27','Ganesh Chaturthi'],['2025-10-02','Gandhi Jayanti / Dussehra'],
+        ['2025-10-21','Diwali Laxmi Pujan'],['2025-10-22','Diwali-Balipratipada'],
+        ['2025-11-05','Gurunanak Jayanti'],['2025-12-25','Christmas'],
+        // 2026 (fixed-date holidays confirmed; lunar festivals are estimated)
+        ['2026-02-15','Mahashivratri (est.)'],['2026-03-04','Holi (est.)'],
+        ['2026-03-20','Id-Ul-Fitr (est.)'],['2026-04-14','Dr. Baba Saheb Ambedkar Jayanti'],
+        ['2026-04-03','Good Friday'],['2026-05-01','Maharashtra Day'],
+        ['2026-08-15','Independence Day'],['2026-09-14','Ganesh Chaturthi (est.)'],
+        ['2026-10-02','Gandhi Jayanti'],['2026-10-20','Dussehra (est.)'],
+        ['2026-11-08','Diwali (est.)'],['2026-11-24','Gurunanak Jayanti (est.)'],
+        ['2026-12-25','Christmas'],
     ]);
 
-    function getMarketStatus() {
+    function getIndiaMarketStatus() {
         const now = new Date();
-        const etStr = now.toLocaleString('en-US', { timeZone: 'America/New_York', hour12: false });
-        const etDate = new Date(etStr);
-        const h = etDate.getHours(), m = etDate.getMinutes();
+        const istStr = now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata', hour12: false });
+        const istDate = new Date(istStr);
+        const h = istDate.getHours(), m = istDate.getMinutes();
         const mins = h * 60 + m;
-        const day = etDate.getDay();
+        const day = istDate.getDay();
         if (day === 0 || day === 6) return 'closed';
-        // Check US market holidays
-        const yyyy = etDate.getFullYear();
-        const mm = String(etDate.getMonth() + 1).padStart(2, '0');
-        const dd = String(etDate.getDate()).padStart(2, '0');
-        if (US_MARKET_HOLIDAYS.has(`${yyyy}-${mm}-${dd}`)) return 'closed';
-        if (mins >= 240 && mins < 570) return 'premarket';
-        if (mins >= 570 && mins < 960) return 'market';
-        if (mins >= 960 && mins < 1200) return 'postmarket';
+        const yyyy = istDate.getFullYear();
+        const mm = String(istDate.getMonth() + 1).padStart(2, '0');
+        const dd = String(istDate.getDate()).padStart(2, '0');
+        if (INDIA_MARKET_HOLIDAYS.has(`${yyyy}-${mm}-${dd}`)) return 'closed';
+        if (mins >= 555 && mins < 930) return 'market'; // 9:15 AM - 3:30 PM IST
         return 'closed';
     }
 
-    // KRX market holidays (Korea Exchange full closures)
-    const KRX_MARKET_HOLIDAYS = new Map([
-        // 2025
-        ['2025-01-01','New Year\'s Day'],
-        ['2025-01-28','Seollal Holiday'],['2025-01-29','Seollal'],['2025-01-30','Seollal Holiday'],
-        ['2025-03-03','March 1st Movement Day Holiday'],
-        ['2025-05-01','Labor Day'],['2025-05-05','Children\'s Day / Buddha\'s Birthday'],['2025-05-06','Substitute Holiday'],
-        ['2025-06-06','Memorial Day'],
-        ['2025-07-17','Constitution Day'],
-        ['2025-08-15','Liberation Day'],
-        ['2025-10-03','National Foundation Day'],
-        ['2025-10-06','Chuseok'],['2025-10-07','Chuseok Holiday'],['2025-10-08','Substitute Holiday'],
-        ['2025-10-09','Hangeul Day'],
-        ['2025-12-25','Christmas'],['2025-12-31','Year-End Closure'],
-        // 2026
-        ['2026-01-01','New Year\'s Day'],
-        ['2026-02-16','Seollal Holiday'],['2026-02-17','Seollal'],['2026-02-18','Seollal Holiday'],
-        ['2026-03-02','March 1st Movement Day Holiday'],
-        ['2026-05-01','Labor Day'],['2026-05-05','Children\'s Day'],['2026-05-25','Buddha\'s Birthday Holiday'],
-        ['2026-07-17','Constitution Day'],
-        ['2026-08-17','Liberation Day Holiday'],
-        ['2026-09-24','Chuseok Holiday'],['2026-09-25','Chuseok'],
-        ['2026-10-05','National Foundation Day Holiday'],['2026-10-09','Hangeul Day'],
-        ['2026-12-25','Christmas'],['2026-12-31','Year-End Closure'],
-        // 2027
-        ['2027-01-01','New Year\'s Day'],
-        ['2027-02-08','Seollal Holiday'],['2027-02-09','Seollal Holiday'],
-        ['2027-03-01','March 1st Movement Day'],
-        ['2027-05-05','Children\'s Day'],['2027-05-13','Buddha\'s Birthday'],
-        ['2027-06-07','Memorial Day Holiday'],
-        ['2027-08-16','Liberation Day Holiday'],
-        ['2027-09-14','Chuseok Holiday'],['2027-09-15','Chuseok'],['2027-09-16','Chuseok Holiday'],
-        ['2027-10-04','National Foundation Day Holiday'],['2027-10-11','Hangeul Day Holiday'],
-        ['2027-12-27','Christmas Holiday'],['2027-12-31','Year-End Closure'],
-    ]);
-
-    function getKrxMarketStatus() {
+    function getIndiaHolidayName() {
         const now = new Date();
-        const kstStr = now.toLocaleString('en-US', { timeZone: 'Asia/Seoul', hour12: false });
-        const kstDate = new Date(kstStr);
-        const h = kstDate.getHours(), m = kstDate.getMinutes();
-        const mins = h * 60 + m;
-        const day = kstDate.getDay();
-        if (day === 0 || day === 6) return 'closed';
-        // Check KRX holidays
-        const yyyy = kstDate.getFullYear();
-        const mm = String(kstDate.getMonth() + 1).padStart(2, '0');
-        const dd = String(kstDate.getDate()).padStart(2, '0');
-        if (KRX_MARKET_HOLIDAYS.has(`${yyyy}-${mm}-${dd}`)) return 'closed';
-        if (mins >= 540 && mins < 930) return 'market'; // 9:00 AM - 3:30 PM KST
-        return 'closed';
+        const istStr = now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata', hour12: false });
+        const istDate = new Date(istStr);
+        const yyyy = istDate.getFullYear();
+        const mm = String(istDate.getMonth() + 1).padStart(2, '0');
+        const dd = String(istDate.getDate()).padStart(2, '0');
+        return INDIA_MARKET_HOLIDAYS.get(`${yyyy}-${mm}-${dd}`) || null;
+    }
+
+    function updateHolidayBanner() {
+        const el = document.getElementById('holiday-banner-in');
+        if (el) {
+            const name = getIndiaHolidayName();
+            if (name) {
+                el.innerHTML = `<img class="holiday-flag" src="logos/flag_in.png" alt="IN"> Market Closed \u2014 ${name}`;
+                el.classList.add('visible');
+            } else {
+                el.innerHTML = '';
+                el.classList.remove('visible');
+            }
+        }
     }
 
     // ─── Render Cards ───────────────────────────────────────────────────────
@@ -1600,23 +1220,17 @@
             <div class="stock-card" id="card-${id}" style="--card-accent: ${s.color}">
                 <div class="stock-earnings-date" id="earningsdate-${id}"></div>
                 <div class="stock-header">
-                    <img class="stock-logo" src="${s.logo}" alt="${s.name}"${s.ticker === 'MBLY' ? ' style="background:#fff;padding:2px;"' : ''}>
+                    <img class="stock-logo" src="${s.logo}" alt="${s.name}">
                     <span class="stock-name">${s.name}</span>
                     <span class="stock-ticker">${s.displayTicker || s.ticker}</span>
-                    ${s.ceo ? `<img class="ceo-icon" src="${s.ceo}" alt="CEO">` : ''}
                 </div>
                 <button class="collapse-toggle" onclick="toggleCard(this)">−</button>
                 <div class="stock-prices">
-                    <div class="price-block nasdaq-block" ${!s.currency && !s.hl ? 'style="grid-column: 1 / -1"' : ''}>
-                        <div class="price-block-label">${s.currency === 'KRW' ? 'KRX' : stockExchange(s)}</div>
+                    <div class="price-block nasdaq-block" style="grid-column: 1 / -1">
+                        <div class="price-block-label">${stockExchange(s)}</div>
                         <div class="price-block-value" id="nasdaq-${id}">—</div>
                         <div class="price-block-change" id="nasdaq-chg-${id}"></div>
                     </div>
-                    ${(s.hl) ? `<div class="price-block hl-block" data-ticker="${sid(s)}">
-                        <div class="price-block-label">Hyperliquid</div>
-                        <div class="price-block-value" id="hl-${id}">—</div>
-                        <div class="price-block-change" id="hl-chg-${id}"></div>
-                    </div>` : ''}
                 </div>
                 <div class="stock-collapse-body"><div class="stock-collapse-inner">
                 <div class="stock-sentiment" id="sentiment-${id}"><canvas class="sentiment-chart" id="chart-${id}"></canvas><div class="chart-glow-dot" id="glow-${id}"></div><div class="chart-tooltip" id="tooltip-${id}"></div></div>
@@ -1634,58 +1248,40 @@
     }
 
     function renderGrid() {
-        const usStocks = STOCKS.filter(s => !s.currency);
-        const krStocks = STOCKS.filter(s => s.currency === 'KRW');
-        document.getElementById('stock-grid-us').innerHTML = usStocks.map(renderCard).join('');
-        document.getElementById('stock-grid-kr').innerHTML = krStocks.map(renderCard).join('');
+        document.getElementById('stock-grid-in').innerHTML = STOCKS.map(renderCard).join('');
     }
 
-    // ─── Fetch NASDAQ Data ──────────────────────────────────────────────────
-    async function fetchNasdaqForStock(stock) {
+    // ─── Fetch Stock Data ───────────────────────────────────────────────────
+    async function fetchIndiaStock(stock) {
         try {
-            const url = `${YAHOO_BASE}${stock.ticker}?interval=1m&range=2d&includePrePost=true`;
+            const url = `${YAHOO_BASE}${stock.ticker}?interval=1m&range=2d`;
             const json = await yahooFetch(url);
             const result = json.chart.result[0];
             const meta = result.meta;
             const timestamps = result.timestamp || [];
             const quote = result.indicators.quote[0];
 
-            // Use exchange-appropriate market status
-            const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
+            const ms = getIndiaMarketStatus();
             const prevClose = meta.previousClose;
             const regPrice = meta.regularMarketPrice;
 
-            // sessionClose: most recent regular session close (reference for extended price changes)
             state[stock.ticker].sessionClose = regPrice || prevClose;
-            // prevClose: always meta.previousClose — the official "previous close" per Yahoo
-            // This gives the day's % change on cards and in the total market cap.
             state[stock.ticker].prevClose = prevClose;
 
-            // Get trading periods — use tradingPeriods (most recent day in the 2d range) for
-            // today's actual boundaries. currentTradingPeriod flips to tomorrow's boundaries
-            // once we're past today's post-market close and before tomorrow's pre-market open,
-            // which would wrongly hide today's post-market data.
             const todayTP = meta.tradingPeriods;
             const dayIdx = (todayTP && todayTP.regular) ? todayTP.regular.length - 1 : -1;
             const tp = (dayIdx >= 0 && todayTP.regular[dayIdx] && todayTP.regular[dayIdx][0])
-                ? {
-                    pre: todayTP.pre[dayIdx][0],
-                    regular: todayTP.regular[dayIdx][0],
-                    post: todayTP.post[dayIdx][0],
-                }
+                ? { regular: todayTP.regular[dayIdx][0] }
                 : meta.currentTradingPeriod;
 
-            // Get regular close from candles
             let regularClose = null;
             if (tp) {
                 for (let i = timestamps.length - 1; i >= 0; i--) {
                     const t = timestamps[i], c = quote.close[i];
-                    if (c != null && t >= tp.regular.start && t < tp.post.start) { regularClose = c; break; }
+                    if (c != null && t >= tp.regular.start && t <= tp.regular.end) { regularClose = c; break; }
                 }
             }
 
-            // Build today's regular-hours series for the live mini performance chart.
-            // X-axis is locked to the full regular session window (tp.regular.start..end).
             if (tp && tp.regular) {
                 const series = [];
                 for (let i = 0; i < timestamps.length; i++) {
@@ -1698,61 +1294,22 @@
                 }
             }
 
-            // Determine display price
-            // Use meta.regularMarketPrice as the official close (includes closing auction)
-            // Candle data is only a fallback since the last 1-min bar misses the closing cross
-            // KRX has no pre/post market — only 'market' or 'closed'
-            let displayPrice, extPrice = null, extLabel = null, refPrice = null;
-            if (stock.currency === 'KRW') {
-                // Korean stocks: no extended hours
-                displayPrice = regPrice || regularClose;
-            } else if (ms === 'postmarket' || ms === 'closed') {
-                displayPrice = regPrice || regularClose;
-                refPrice = displayPrice;
-                if (tp) {
-                    for (let i = timestamps.length - 1; i >= 0; i--) {
-                        const t = timestamps[i], c = quote.close[i];
-                        if (c != null && t >= tp.post.start && t < tp.post.end) { extPrice = c; break; }
-                    }
-                }
-                extLabel = 'Post';
-            } else if (ms === 'premarket') {
-                displayPrice = regPrice || regularClose;
-                refPrice = displayPrice;
-                if (tp) {
-                    for (let i = timestamps.length - 1; i >= 0; i--) {
-                        const t = timestamps[i], c = quote.close[i];
-                        if (c != null && t >= tp.pre.start && t < tp.regular.start) { extPrice = c; break; }
-                    }
-                }
-                extLabel = 'Pre';
-            } else {
-                displayPrice = regPrice;
-            }
+            const displayPrice = regPrice || regularClose;
 
-            // Store extended price in state so total mkt cap reflects pre/post movement
-            if (extPrice) {
-                state[stock.ticker].extPrice = extPrice;
-            } else if (ms === 'market') {
-                state[stock.ticker].extPrice = null;
-            }
-
-            // Update NASDAQ price
             const _sid = sid(stock);
             const priceEl = document.getElementById(`nasdaq-${_sid}`);
             if (displayPrice) {
-                const prev = state[stock.ticker].prevNasdaq;
+                const prev = state[stock.ticker].prevPrice;
                 if (prev !== null && displayPrice !== prev) {
                     priceEl.classList.remove('price-flash-up', 'price-flash-down');
                     void priceEl.offsetWidth;
                     priceEl.classList.add(displayPrice > prev ? 'price-flash-up' : 'price-flash-down');
                 }
-                state[stock.ticker].prevNasdaq = displayPrice;
-                state[stock.ticker].nasdaqPrice = displayPrice;
+                state[stock.ticker].prevPrice = displayPrice;
+                state[stock.ticker].price = displayPrice;
                 priceEl.textContent = fmtPrice(stock, displayPrice);
                 updateMarketCap(stock.ticker);
 
-                // Change vs previous close (use corrected prevClose from state)
                 const chgEl = document.getElementById(`nasdaq-chg-${_sid}`);
                 const refClose = state[stock.ticker].prevClose;
                 if (refClose) {
@@ -1761,32 +1318,10 @@
                     const sign = chg >= 0 ? '+' : '';
                     chgEl.innerHTML = `<span class="prev-ref">${fmtPrice(stock, refClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
                     chgEl.className = `price-block-change`;
-                    // Only update sentiment during regular market hours from this path
                     if (ms === 'market') updateSentiment(stock.ticker, pct);
                 }
             }
 
-            // Extended price
-            const extEl = document.getElementById(`ext-${_sid}`);
-            if (extPrice && refPrice) {
-                const extChg = extPrice - refPrice;
-                const extPct = (extChg / refPrice) * 100;
-                const extSign = extChg >= 0 ? '+' : '';
-                const extCls = extChg >= 0 ? 'up' : 'down';
-                extEl.innerHTML = `<span class="ext-label">${extLabel}:</span> <span class="ext-value">${fmtPrice(stock, extPrice)}</span> <span class="ext-change ${extCls}">${extSign}${extPct.toFixed(2)}%</span>`;
-                // Note: the mini chart only ever plots regular-hours data and freezes once the
-                // session ends, so it must NOT be recolored by pre/post-market movement here.
-            } else {
-                extEl.innerHTML = '';
-            }
-            // Sync mirror for collapsed view (only during active pre/post)
-            const extMirrorEl = document.getElementById(`ext-mirror-${_sid}`);
-            if (extMirrorEl) {
-                extMirrorEl.innerHTML = (extPrice && refPrice && (ms === 'premarket' || ms === 'postmarket')) ? extEl.innerHTML : '';
-            }
-
-            // Volume & OHL: compute from regular-session candles
-            // Use meta.regularMarketVolume for official volume (candle sums can differ)
             const metaVolume = meta.regularMarketVolume;
             if (metaVolume) {
                 state[stock.ticker].volume = metaVolume;
@@ -1795,12 +1330,10 @@
             if (tp && quote.volume) {
                 let totalVol = 0;
                 let regOpen = null, regHigh = -Infinity, regLow = Infinity;
-
-                // Try today's regular session first
                 for (let i = 0; i < timestamps.length; i++) {
                     const t = timestamps[i], v = quote.volume[i];
                     const o = quote.open[i], h = quote.high[i], l = quote.low[i];
-                    if (t >= tp.regular.start && t < tp.post.start) {
+                    if (t >= tp.regular.start && t <= tp.regular.end) {
                         if (v) totalVol += v;
                         if (regOpen === null && o != null) regOpen = o;
                         if (h != null) regHigh = Math.max(regHigh, h);
@@ -1808,17 +1341,13 @@
                     }
                 }
 
-                // If no regular session data for today (pre-market or closed before open),
-                // fall back to the previous day's regular session — bounded to just its
-                // regular-hours window, not "everything before today's pre-market", which
-                // previously leaked in the prior day's pre/post-market bars and skewed H/L.
                 if (regOpen === null && timestamps.length > 0 && dayIdx > 0) {
                     const prevReg = todayTP.regular[dayIdx - 1] && todayTP.regular[dayIdx - 1][0];
                     if (prevReg) {
                         for (let i = 0; i < timestamps.length; i++) {
                             const t = timestamps[i], v = quote.volume[i];
                             const o = quote.open[i], h = quote.high[i], l = quote.low[i];
-                            if (t >= prevReg.start && t < prevReg.end) {
+                            if (t >= prevReg.start && t <= prevReg.end) {
                                 if (v) totalVol += v;
                                 if (regOpen === null && o != null) regOpen = o;
                                 if (h != null) regHigh = Math.max(regHigh, h);
@@ -1832,7 +1361,6 @@
                     state[stock.ticker].volume = totalVol;
                     displayVolume(stock.ticker, totalVol);
                 }
-                // Display OHL
                 const ohlEl = document.getElementById(`ohl-${_sid}`);
                 if (ohlEl && regOpen !== null && regHigh !== -Infinity) {
                     const refClosePct = state[stock.ticker].prevClose;
@@ -1848,9 +1376,6 @@
                 }
             }
 
-            // Refresh the mini chart immediately so a new trading day's data appears as soon
-            // as it arrives, even outside regular market hours (chart otherwise stays frozen
-            // on the last completed session).
             if (state[stock.ticker].chartSeries) {
                 const sentimentEl = document.getElementById(`sentiment-${_sid}`);
                 if (sentimentEl) sentimentEl.classList.add('visible');
@@ -1862,8 +1387,8 @@
         }
     }
 
-    async function fetchAllNasdaq() {
-        await Promise.allSettled(STOCKS.map(s => fetchNasdaqForStock(s)));
+    async function fetchAllIndia() {
+        await Promise.allSettled(STOCKS.map(s => fetchIndiaStock(s)));
     }
 
     // ─── Yahoo WebSocket (live prices) ──────────────────────────────────────
@@ -1917,50 +1442,22 @@
         const stock = STOCKS.find(s => s.ticker === ticker);
         if (!stock) return;
 
-        // Use exchange-appropriate market status
-        const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
+        const ms = getIndiaMarketStatus();
         if (ms === 'closed') return;
 
         const _sid = sid(stock);
-
-        // KRX has no pre/post market — only update during regular hours
-        if (ms === 'premarket' || ms === 'postmarket') {
-            const extEl = document.getElementById(`ext-${_sid}`);
-            // Use sessionClose (today's regular close) as reference for extended price change
-            const refPrice = st.sessionClose;
-            const label = ms === 'premarket' ? 'Pre' : 'Post';
-            if (refPrice && extEl) {
-                const chg = price - refPrice;
-                const pct = (chg / refPrice) * 100;
-                const sign = chg >= 0 ? '+' : '';
-                const cls = chg >= 0 ? 'up' : 'down';
-                extEl.innerHTML = `<span class="ext-label">${label}:</span> <span class="ext-value">${fmtPrice(stock, price)}</span> <span class="ext-change ${cls}">${sign}${pct.toFixed(2)}%</span>`;
-                // Note: the mini chart only plots regular-hours data and freezes once the session
-                // ends, so it must NOT be recolored by pre/post-market movement here.
-            }
-            // Sync mirror for collapsed view
-            const extMirrorWs = document.getElementById(`ext-mirror-${_sid}`);
-            if (extMirrorWs && extEl) extMirrorWs.innerHTML = extEl.innerHTML;
-            st.extPrice = price;
-            updateMarketCap(ticker);
-            return;
-        }
-
-        // Regular market — update NASDAQ price
         const priceEl = document.getElementById(`nasdaq-${_sid}`);
         if (!priceEl) return;
-        const prev = st.prevNasdaq;
+        const prev = st.prevPrice;
         if (prev !== null && price !== prev) {
             priceEl.classList.remove('price-flash-up', 'price-flash-down');
             void priceEl.offsetWidth;
             priceEl.classList.add(price > prev ? 'price-flash-up' : 'price-flash-down');
         }
-        st.prevNasdaq = price;
-        st.extPrice = null;
+        st.prevPrice = price;
         priceEl.textContent = fmtPrice(stock, price);
         updateMarketCap(ticker);
 
-        // Append live tick to the mini performance chart (regular market hours only)
         if (st.chartRange) {
             const nowSec = Math.floor(Date.now() / 1000);
             if (nowSec >= st.chartRange.start && nowSec <= st.chartRange.end) {
@@ -1970,7 +1467,6 @@
         }
 
         const chgEl = document.getElementById(`nasdaq-chg-${_sid}`);
-        // Always use prevClose (yesterday's close from chart API) for main change display
         const prevClose = st.prevClose;
         if (prevClose && chgEl) {
             const chg = price - prevClose;
@@ -1982,139 +1478,31 @@
         }
     }
 
-    // ─── Hyperliquid WebSocket ──────────────────────────────────────────────
-    let hlWs;
-
-    function connectHlWs() {
-        if (hlWs && hlWs.readyState === WebSocket.OPEN) return;
-        console.log('HL: Attempting WebSocket connection...');
-        hlWs = new WebSocket('wss://api.hyperliquid.xyz/ws');
-        let subscribed = [];
-        let reconnectCount = 0;
-        hlWs.onopen = () => {
-            console.log('HL: Connected to WebSocket');
-            subscribed = STOCKS.filter(s => s.hl).map(s => s.hl);
-            console.log('HL: Subscribing to coins:', subscribed);
-            reconnectCount = 0;
-            STOCKS.filter(s => s.hl).forEach(s => {
-                hlWs.send(JSON.stringify({
-                    method: 'subscribe',
-                    subscription: { type: 'l2Book', coin: s.hl }
-                }));
-            });
-        };
-        let msgCount = 0;
-        let msgTypes = {};
-        hlWs.onmessage = (event) => {
-            try {
-                const msg = JSON.parse(event.data);
-                msgCount++;
-                if (msg.channel) msgTypes[msg.channel] = (msgTypes[msg.channel] || 0) + 1;
-                // Log summary after first 5 messages
-                if (msgCount === 5) {
-                    console.log('HL: First 5 msgs, types:', msgTypes);
-                }
-                if (msg.channel === 'l2Book' && msg.data) {
-                    const coin = msg.data.coin;
-                    const stock = STOCKS.find(s => s.hl === coin);
-                    if (!stock) {
-                        console.log('HL: Unmatched coin:', coin);
-                        return;
-                    }
-                    const levels = msg.data.levels;
-                    if (levels && levels[0] && levels[1] && levels[0].length && levels[1].length) {
-                        const bid = parseFloat(levels[0][0].px);
-                        const ask = parseFloat(levels[1][0].px);
-                        const mid = (bid + ask) / 2;
-                        updateHlPrice(stock.ticker, mid);
-                    }
-                }
-            } catch (e) { console.error('HL: Parse error:', e.message); }
-        };
-        hlWs.onclose = () => {
-            reconnectCount++;
-            const delay = Math.min(3000 * reconnectCount, 30000); // Exponential backoff, max 30s
-            console.log(`HL: WebSocket closed (attempt ${reconnectCount}), reconnecting in ${delay}ms`);
-            setTimeout(connectHlWs, delay);
-        };
-        hlWs.onerror = (err) => {
-            console.error('HL: WebSocket error:', err);
-            hlWs.close();
-        };
-    }
-
-    function updateHlPrice(ticker, price) {
-        const stock = STOCKS.find(s => s.ticker === ticker);
-        if (!stock) return;
-        const _sid = sid(stock);
-        const priceEl = document.getElementById(`hl-${_sid}`);
-        if (!priceEl) return;
-
-        const hlDecimals = Math.abs(price) > 1000 ? 1 : 2;
-
-        // Debug: Log Korean stock price updates
-        if (stock.currency === 'KRW') {
-            console.log(`HL: Got price for ${stock.name} (${stock.hl}): $${price.toFixed(hlDecimals)}`);
-        }
-
-        const st = state[ticker];
-        const prev = st.prevHl;
-        if (prev !== null && price !== prev) {
-            priceEl.classList.remove('price-flash-up', 'price-flash-down');
-            void priceEl.offsetWidth;
-            priceEl.classList.add(price > prev ? 'price-flash-up' : 'price-flash-down');
-        }
-        st.prevHl = price;
-        priceEl.textContent = `$${price.toFixed(hlDecimals)}`;
-
-        const chgEl = document.getElementById(`hl-chg-${_sid}`);
-        // For Korean stocks: use KRX market status; for US stocks: use US market status
-        // During market hours: HL references yesterday's close (same as NASDAQ/KRX)
-        // After close: HL references today's session close (that day is done)
-        const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
-        const refClose = (ms === 'market') ? st.prevClose : (st.sessionClose || st.prevClose);
-        if (refClose && chgEl) {
-            const refUsd = stock ? toUsd(stock, refClose) : refClose;
-            const chg = price - refUsd;
-            const pct = (chg / refUsd) * 100;
-            const sign = chg >= 0 ? '+' : '';
-            chgEl.textContent = `${sign}${pct.toFixed(2)}%`;
-            chgEl.className = `price-block-change ${chg >= 0 ? 'up' : 'down'}`;
-        }
-    }
-
-    // ─── Fetch Shares Outstanding ────────────────────────────────────────────
+    // ─── Fetch Shares Outstanding / Fundamentals ────────────────────────────
     async function fetchAllShares() {
         await Promise.allSettled(STOCKS.map(async (stock) => {
-            // Retry once on failure — parallel proxy requests occasionally get rate-limited,
-            // which would otherwise silently exclude a stock from the market cap total.
             for (let attempt = 0; attempt < 2; attempt++) {
                 try {
                     const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,calendarEvents,financialData,earnings`;
                     const json = await yahooFetch(url);
                     const result = json.quoteSummary?.result?.[0];
-                    // Yahoo sometimes omits marketCap/sharesOutstanding for a ticker (returns {}).
-                    // nonDilutedMarketCap is a more reliable fallback in that case.
                     const mcapRaw = result?.summaryDetail?.marketCap?.raw || result?.summaryDetail?.nonDilutedMarketCap?.raw;
                     const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
                     if (shares) {
                         state[stock.ticker].shares = shares;
                         updateMarketCap(stock.ticker);
-                    } else if (mcapRaw && state[stock.ticker].nasdaqPrice) {
-                        // Fallback: derive shares from Yahoo's market cap when sharesOutstanding unavailable
-                        state[stock.ticker].shares = mcapRaw / state[stock.ticker].nasdaqPrice;
+                    } else if (mcapRaw && state[stock.ticker].price) {
+                        state[stock.ticker].shares = mcapRaw / state[stock.ticker].price;
                         updateMarketCap(stock.ticker);
                     } else if (mcapRaw) {
                         state[stock.ticker].mcap = mcapRaw;
                         displayMarketCap(stock.ticker, mcapRaw);
                     }
-                    // Average volume
                     const avgVol = result?.summaryDetail?.averageVolume?.raw;
                     if (avgVol) displayAvgVolume(stock.ticker, avgVol);
 
                     const _sid = sid(stock);
 
-                    // Earnings date — show next upcoming date in DD/MM/YY
                     const earningsDates = result?.calendarEvents?.earnings?.earningsDate;
                     const earningsEl = document.getElementById(`earningsdate-${_sid}`);
                     if (earningsEl && earningsDates && earningsDates.length > 0) {
@@ -2130,10 +1518,9 @@
                         }
                     }
 
-                    // Fundamentals: PE (TTM), PE (Fwd), Analyst Mean Target
                     const trailingPE = result?.summaryDetail?.trailingPE?.raw;
                     const forwardPE  = result?.summaryDetail?.forwardPE?.raw;
-                    const pegRatio   = result?.defaultKeyStatistics?.pegRatio?.raw; // forward-looking 5yr-expected PEG (not trailing)
+                    const pegRatio   = result?.defaultKeyStatistics?.pegRatio?.raw;
                     const targetPrice = result?.financialData?.targetMeanPrice?.raw;
                     const fundamentalsEl = document.getElementById(`fundamentals-${_sid}`);
                     if (fundamentalsEl) {
@@ -2146,7 +1533,6 @@
                         if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' · ');
                     }
 
-                    // Risk & Rating: Beta, PEG, P/B, Analyst Rec
                     const beta = result?.defaultKeyStatistics?.beta?.raw ?? result?.summaryDetail?.beta?.raw;
                     const priceToBook = result?.defaultKeyStatistics?.priceToBook?.raw;
                     const recKey = result?.financialData?.recommendationKey;
@@ -2169,9 +1555,6 @@
                         if (riskParts.length > 0) riskEl.innerHTML = riskParts.join(' · ');
                     }
 
-                    // Earnings history panel — two lines:
-                    // Row 1: latest reported quarter revenue + EPS (with surprise%)
-                    // Row 2: next quarter forecast (analyst estimate) + last FY revenue
                     const earningsPanelEl = document.getElementById(`earningspanel-${_sid}`);
                     if (earningsPanelEl) {
                         const finChart = result?.earnings?.financialsChart;
@@ -2183,8 +1566,6 @@
                         let yRevVal = yRev?.revenue?.raw ?? null;
                         let yRevLabel = yRev ? `FY'${String(yRev.date).slice(-2)}` : null;
 
-                        // Yahoo's quoteSummary financialsChart comes back empty for some tickers (e.g. AMD, MU) —
-                        // fall back to the fundamentals-timeseries endpoint in that case.
                         if (qRevVal == null && yRevVal == null) {
                             const fallback = await fetchRevenueTimeseries(stock);
                             if (fallback) {
@@ -2197,7 +1578,7 @@
                         const lastEps = epsQuarters.length ? epsQuarters[epsQuarters.length - 1] : null;
 
                         const row1 = [];
-                        if (qRevVal != null) row1.push(`<span class="eq-label">${qRevLabel} Rev:</span> <span class="eq-value">${formatCompactRevenue(stock, qRevVal)}</span>`);
+                        if (qRevVal != null) row1.push(`<span class="eq-label">${qRevLabel} Rev:</span> <span class="eq-value">${formatCompactRevenue(qRevVal)}</span>`);
                         if (lastEps?.actual?.raw != null) {
                             const surprise = parseFloat(lastEps.surprisePct);
                             const surpriseTxt = !isNaN(surprise)
@@ -2206,7 +1587,6 @@
                             row1.push(`<span class="eq-label">${fiscalQuarterLabel(lastEps.date)} EPS:</span> <span class="eq-value">${fmtPrice(stock, lastEps.actual.raw)}</span>${surpriseTxt}`);
                         }
 
-                        // Next quarter forecast — analyst consensus for the upcoming reporting quarter
                         const calEarn = result?.calendarEvents?.earnings;
                         const nextEpsEst = calEarn?.earningsAverage?.raw;
                         const nextRevEst = calEarn?.revenueAverage?.raw;
@@ -2215,24 +1595,23 @@
                         if (nextEpsEst != null || nextRevEst != null) {
                             const bits = [];
                             if (nextEpsEst != null) bits.push(`<span class="eq-label">EPS</span> <span class="eq-value">${fmtPrice(stock, nextEpsEst)}</span>`);
-                            if (nextRevEst != null) bits.push(`<span class="eq-label">Rev</span> <span class="eq-value">${formatCompactRevenue(stock, nextRevEst)}</span>`);
+                            if (nextRevEst != null) bits.push(`<span class="eq-label">Rev</span> <span class="eq-value">${formatCompactRevenue(nextRevEst)}</span>`);
                             row2.push(`<span class="eq-label">${nextQLabel} Est:</span> ${bits.join(' · ')}`);
                         }
-                        if (yRevVal != null) row2.push(`<span class="eq-label">${yRevLabel}:</span> <span class="eq-value">${formatCompactRevenue(stock, yRevVal)}</span>`);
+                        if (yRevVal != null) row2.push(`<span class="eq-label">${yRevLabel}:</span> <span class="eq-value">${formatCompactRevenue(yRevVal)}</span>`);
 
                         const lines = [];
                         if (row1.length) lines.push(row1.join(' · '));
                         if (row2.length) lines.push(row2.join(' · '));
                         earningsPanelEl.innerHTML = lines.map(l => `<div class="eq-row">${l}</div>`).join('');
                     }
-                    break; // success — no retry needed
+                    break;
                 } catch(e) {
                     if (attempt === 0) await new Promise(r => setTimeout(r, 1500));
                 }
             }
         }));
     }
-
 
     function formatVolume(v) {
         if (v >= 1e9) return `${(v/1e9).toFixed(1)}B`;
@@ -2259,14 +1638,11 @@
         el.textContent = `Avg Vol: ${formatVolume(avgVol)}`;
     }
 
-    function hideAllVolumes() {
-        STOCKS.forEach(s => {
-            const _sid = sid(s);
-            const el = document.getElementById(`vol-${_sid}`);
-            const metaEl = document.getElementById(`meta-${_sid}`);
-            if (el) el.textContent = '';
-            if (metaEl) metaEl.classList.remove('has-volume');
-        });
+    // Indian-convention currency formatter: ₹ Lakh Crore (≥1e12), ₹ Crore (≥1e7), else raw ₹.
+    function formatINR(val) {
+        if (val >= 1e12) return `₹${(val / 1e12).toFixed(2)}L Cr`;
+        if (val >= 1e7) return `₹${Math.round(val / 1e7).toLocaleString()} Cr`;
+        return `₹${Math.round(val).toLocaleString()}`;
     }
 
     function displayMarketCap(ticker, mcap) {
@@ -2274,23 +1650,17 @@
         const _sid = stock ? sid(stock) : ticker;
         const el = document.getElementById(`mcap-${_sid}`);
         if (!el) return;
-        let mcapUsd = mcap;
-        if (stock && stock.currency === 'KRW' && krwToUsd) mcapUsd = mcap * krwToUsd;
-        if (mcapUsd >= 1e12) el.textContent = `Mkt Cap: $${(mcapUsd/1e12).toFixed(1)}T`;
-        else if (mcapUsd >= 1e9) el.textContent = `Mkt Cap: $${(mcapUsd/1e9).toFixed(1)}B`;
-        else el.textContent = `Mkt Cap: $${(mcapUsd/1e6).toFixed(0)}M`;
+        el.textContent = `Mkt Cap: ${formatINR(mcap)}`;
     }
 
     function updateMarketCap(ticker) {
         const st = state[ticker];
-        const stock = STOCKS.find(s => s.ticker === ticker);
-        // Market cap tracks only regular session price (not extended)
-        const ms = stock && stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
+        const ms = getIndiaMarketStatus();
         let price;
         if (ms === 'market') {
-            price = st.prevNasdaq || st.nasdaqPrice;
+            price = st.prevPrice || st.price;
         } else {
-            price = st.sessionClose || st.prevNasdaq || st.nasdaqPrice;
+            price = st.sessionClose || st.prevPrice || st.price;
         }
         if (!st.shares || !price) return;
         const mcap = price * st.shares;
@@ -2301,69 +1671,44 @@
 
     // ─── Total Market Cap Aggregation ────────────────────────────────────────
     function updateTotalMarketCap() {
-        const usStocks = STOCKS.filter(s => !s.currency);
-        const krStocks = STOCKS.filter(s => s.currency === 'KRW');
-        computeSectionMcap(usStocks, 'us');
-        computeSectionMcap(krStocks, 'kr');
-    }
-
-    function computeSectionMcap(stocks, section) {
         let totalCurrent = 0, totalPrev = 0;
         let hasAny = false;
-        for (const stock of stocks) {
+        for (const stock of STOCKS) {
             const st = state[stock.ticker];
             if (!st.shares) continue;
-            // Market cap tracks only open market movement (not pre/post)
-            const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
+            const ms = getIndiaMarketStatus();
             let price, prevPrice;
             if (ms === 'market') {
-                // During market: current live price vs previous day's close
-                price = st.prevNasdaq || st.nasdaqPrice;
+                price = st.prevPrice || st.price;
                 prevPrice = st.prevClose;
             } else {
-                // Pre/post/closed: today's session close vs previous day's close
-                price = st.sessionClose || st.prevNasdaq || st.nasdaqPrice;
+                price = st.sessionClose || st.prevPrice || st.price;
                 prevPrice = st.prevClose;
             }
             if (!price || !prevPrice) continue;
             hasAny = true;
-            let mcapCurrent = price * st.shares;
-            let mcapPrev = prevPrice * st.shares;
-            if (stock.currency === 'KRW' && krwToUsd) {
-                mcapCurrent *= krwToUsd;
-                mcapPrev *= krwToUsd;
-            }
-            totalCurrent += mcapCurrent;
-            totalPrev += mcapPrev;
+            totalCurrent += price * st.shares;
+            totalPrev += prevPrice * st.shares;
         }
         if (!hasAny) return;
-        const valEl = document.getElementById(`mcap-total-${section}`);
-        const chgEl = document.getElementById(`mcap-chg-${section}`);
+        const valEl = document.getElementById('mcap-total-in');
+        const chgEl = document.getElementById('mcap-chg-in');
         if (!valEl || !chgEl) return;
-        valEl.textContent = formatLargeCurrency(totalCurrent);
+        valEl.textContent = formatINR(totalCurrent);
         if (totalPrev > 0) {
             const pctChg = ((totalCurrent - totalPrev) / totalPrev) * 100;
             const sign = pctChg >= 0 ? '+' : '';
-            chgEl.innerHTML = `<span class="mcap-prev-ref">Last Close: ${formatLargeCurrency(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
+            chgEl.innerHTML = `<span class="mcap-prev-ref">Last Close: ${formatINR(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
             chgEl.className = `mcap-summary-change`;
         }
     }
 
-    function formatLargeCurrency(val) {
-        if (val >= 1e12) return `$${(val / 1e12).toFixed(2)}T`;
-        if (val >= 1e9) return `$${(val / 1e9).toFixed(1)}B`;
-        return `$${(val / 1e6).toFixed(0)}M`;
-    }
-
-    // Converts a Yahoo fiscal quarter string like "2Q2026" into a compact "Q2'26" label.
     function fiscalQuarterLabel(dateStr) {
         const m = /^(\d)Q(\d{4})$/.exec(String(dateStr));
         if (!m) return String(dateStr);
         return `Q${m[1]}'${m[2].slice(2)}`;
     }
 
-    // Given the most recently reported fiscal quarter string (e.g. "2Q2026"), returns the label
-    // for the following quarter (e.g. "Q3'26"), rolling over into the next fiscal year after Q4.
     function nextFiscalQuarterLabel(dateStr) {
         const m = /^(\d)Q(\d{4})$/.exec(String(dateStr));
         if (!m) return null;
@@ -2373,29 +1718,16 @@
         return `Q${q}'${String(y).slice(2)}`;
     }
 
-    // Converts a plain "YYYY-MM-DD" date (from the fundamentals-timeseries fallback) into a "Q#'YY" label
-    // based on calendar quarter (used only when the fiscal-quarter-labeled data isn't available).
     function quarterLabelFromDate(dateStr) {
         const [y, m] = String(dateStr).split('-').map(Number);
         if (!y || !m) return String(dateStr);
         return `Q${Math.ceil(m / 3)}'${String(y).slice(2)}`;
     }
 
-    // Compact large-number currency formatter that respects the stock's native currency (KRW → USD when a live rate is available).
-    function formatCompactRevenue(stock, val) {
-        let v = val, symbol = '$';
-        if (stock.currency === 'KRW') {
-            if (krwToUsd) { v = val * krwToUsd; } else { symbol = '₩'; }
-        }
-        const abs = Math.abs(v);
-        if (abs >= 1e12) return `${symbol}${(v / 1e12).toFixed(2)}T`;
-        if (abs >= 1e9) return `${symbol}${(v / 1e9).toFixed(1)}B`;
-        if (abs >= 1e6) return `${symbol}${(v / 1e6).toFixed(0)}M`;
-        return `${symbol}${Math.round(v).toLocaleString()}`;
+    function formatCompactRevenue(val) {
+        return formatINR(val);
     }
 
-    // Fallback revenue source for tickers where quoteSummary's earnings.financialsChart is empty
-    // (observed for AMD, MU) — uses the fundamentals-timeseries endpoint instead (same data yfinance uses).
     async function fetchRevenueTimeseries(stock) {
         try {
             const url = `https://query2.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/${stock.ticker}?type=quarterlyTotalRevenue,annualTotalRevenue`;
@@ -2416,7 +1748,7 @@
         }
     }
 
-    // ─── 52-Week High ───────────────────────────────────────────────────────
+    // ─── 52-Week High/Low ────────────────────────────────────────────────────
     async function fetchATHForStock(stock) {
         try {
             const url = `${YAHOO_BASE}${stock.ticker}?interval=1d&range=1y`;
@@ -2430,9 +1762,8 @@
             let lowClose = Infinity, lowTrade = Infinity;
             let lowCloseDate = null, lowTradeDate = null;
 
-            // Exclude today's data point for close if market is still open (close is just live price)
-            const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
-            const marketOpen = (ms === 'market' || ms === 'premarket');
+            const ms = getIndiaMarketStatus();
+            const marketOpen = (ms === 'market');
             const closeLimit = (marketOpen && timestamps.length > 1) ? timestamps.length - 1 : timestamps.length;
             for (let i = 0; i < closeLimit; i++) {
                 const c = quote.close[i];
@@ -2454,10 +1785,8 @@
 
             const fmtDate = (ts) => { const d = new Date(ts * 1000); const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`; };
             const fmtP = (p) => fmtPrice(stock, p);
-            const curPrice = state[stock.ticker].nasdaqPrice;
-            const pctFromHigh = curPrice ? ((curPrice - highClose) / highClose * 100).toFixed(1) : null;
+            const curPrice = state[stock.ticker].price;
             const pctFromHighTrade = curPrice ? ((curPrice - highTrade) / highTrade * 100).toFixed(1) : null;
-            const pctFromLow = curPrice ? ((curPrice - lowClose) / lowClose * 100).toFixed(1) : null;
             const pctFromLowTrade = curPrice ? ((curPrice - lowTrade) / lowTrade * 100).toFixed(1) : null;
             const pctHtml = (pct) => pct !== null ? ` <span class="ath-pct">(${Number(pct) >= 0 ? '+' : ''}${pct}%)</span>` : '';
             athEl.innerHTML =
@@ -2479,145 +1808,52 @@
         renderGrid();
         attachChartHoverHandlers();
 
-        // Default to collapsed on mobile
         if (window.innerWidth <= 640) {
             document.querySelectorAll('.stock-card').forEach(c => {
                 c.classList.add('collapsed');
                 const btn = c.querySelector('.collapse-toggle');
                 if (btn) btn.textContent = '+';
             });
-            ['us', 'kr'].forEach(s => {
-                const btn = document.getElementById(`collapse-btn-${s}`);
-                if (btn) btn.textContent = '+';
-            });
+            const btn = document.getElementById('collapse-btn-in');
+            if (btn) btn.textContent = '+';
         }
 
         initYahooProto();
         connectYahooWs();
-        connectHlWs();
-        await fetchKrwRate();
-        setInterval(fetchKrwRate, 60000);
-        fetchUsdInrRate();
-        setInterval(fetchUsdInrRate, 60000);
-        fetchNasdaq100Index();
-        setInterval(fetchNasdaq100Index, 60000);
-        fetchAllNasdaq().then(() => {
+        fetchNiftyIndex();
+        setInterval(fetchNiftyIndex, 60000);
+        fetchSensexIndex();
+        setInterval(fetchSensexIndex, 60000);
+        fetchAllIndia().then(() => {
             fetchAllShares();
             fetchAllATH();
         });
 
-        // Time update
-        function updateETClock() {
-            const el = document.getElementById('et-clock');
-            if (el) el.textContent = formatDualTime(new Date());
-        }
         setInterval(() => {
-            updateETClock();
-            updateHlDimState();
+            updateDimState();
             updateSentimentVisibility();
             updateEarningsCountdowns();
         }, 60000);
-        updateETClock();
-        updateHlDimState();
+        updateDimState();
         updateHolidayBanner();
         updateSentimentVisibility();
         updateEarningsCountdowns();
 
-        // Refresh NASDAQ data every 60s
-        setInterval(fetchAllNasdaq, 60000);
-
-        // Refresh KRX stocks more frequently (every 15s) during KRX hours
-        setInterval(() => {
-            if (getKrxMarketStatus() === 'market') {
-                STOCKS.filter(s => s.currency === 'KRW').forEach(s => fetchNasdaqForStock(s));
-            }
-        }, 15000);
+        // Refresh every 30s (NSE has a single continuous session, no pre/post market)
+        setInterval(fetchAllIndia, 30000);
     }
 
-    function getHolidayName() {
-        const now = new Date();
-        const etStr = now.toLocaleString('en-US', { timeZone: 'America/New_York', hour12: false });
-        const etDate = new Date(etStr);
-        const yyyy = etDate.getFullYear();
-        const mm = String(etDate.getMonth() + 1).padStart(2, '0');
-        const dd = String(etDate.getDate()).padStart(2, '0');
-        return US_MARKET_HOLIDAYS.get(`${yyyy}-${mm}-${dd}`) || null;
-    }
-
-    function getKrxHolidayName() {
-        const now = new Date();
-        const kstStr = now.toLocaleString('en-US', { timeZone: 'Asia/Seoul', hour12: false });
-        const kstDate = new Date(kstStr);
-        const yyyy = kstDate.getFullYear();
-        const mm = String(kstDate.getMonth() + 1).padStart(2, '0');
-        const dd = String(kstDate.getDate()).padStart(2, '0');
-        return KRX_MARKET_HOLIDAYS.get(`${yyyy}-${mm}-${dd}`) || null;
-    }
-
-    function updateHolidayBanner() {
-        // US banner
-        const el = document.getElementById('holiday-banner');
-        if (el) {
-            const name = getHolidayName();
-            if (name) {
-                el.innerHTML = `<img class="holiday-flag" src="logos/flag_us.png" alt="US"> Market Closed \u2014 ${name}`;
-                el.classList.add('visible');
-            } else {
-                el.innerHTML = '';
-                el.classList.remove('visible');
-            }
-        }
-        // KRX banner
-        const krEl = document.getElementById('holiday-banner-kr');
-        if (krEl) {
-            const krName = getKrxHolidayName();
-            if (krName) {
-                krEl.innerHTML = `<img class="holiday-flag" src="logos/flag_kr.png" alt="KR"> Market Closed \u2014 ${krName}`;
-                krEl.classList.add('visible');
-            } else {
-                krEl.innerHTML = '';
-                krEl.classList.remove('visible');
-            }
-        }
-    }
-
-    function updateHlDimState() {
-        const usMs = getMarketStatus();
-        const krMs = getKrxMarketStatus();
-
-        // Per-card dimming based on exchange
+    function updateDimState() {
+        const ms = getIndiaMarketStatus();
         STOCKS.forEach(s => {
             const _sid = sid(s);
             const card = document.getElementById(`card-${_sid}`);
             if (!card) return;
             const nasBl = card.querySelector('.nasdaq-block');
-            const hlBl = card.querySelector('.hl-block');
-            const extEl = document.getElementById(`ext-${_sid}`);
-
-            if (s.currency === 'KRW') {
-                // KRX stocks: bright during KRX market hours
-                const dim = (krMs !== 'market');
-                if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', dim);
-                // Hyperliquid: dim during KRX market/pre/post, bright when KRX closed
-                if (hlBl) hlBl.classList.toggle('hl-dimmed', krMs !== 'closed');
-                if (extEl) extEl.classList.toggle('ext-dimmed', true); // no extended hours for KRX
-                const ohlEl = document.getElementById(`ohl-${_sid}`);
-                if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', dim);
-            } else {
-                // US stocks
-                const nasDim = (usMs !== 'market');
-                if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', nasDim);
-                // Hyperliquid: dim during US market/pre/post, bright when US closed
-                if (hlBl) hlBl.classList.toggle('hl-dimmed', usMs !== 'closed');
-                const extDim = (usMs === 'closed' || usMs === 'market');
-                if (extEl) extEl.classList.toggle('ext-dimmed', extDim);
-                if (extDim) {
-                    const extMirrorEl = document.getElementById(`ext-mirror-${_sid}`);
-                    if (extMirrorEl) extMirrorEl.innerHTML = '';
-                }
-                const ohlEl = document.getElementById(`ohl-${_sid}`);
-                if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', nasDim);
-            }
+            const dim = (ms !== 'market');
+            if (nasBl) nasBl.classList.toggle('nasdaq-dimmed', dim);
+            const ohlEl = document.getElementById(`ohl-${_sid}`);
+            if (ohlEl) ohlEl.classList.toggle('ohl-dimmed', dim);
         });
     }
 
@@ -2628,13 +1864,10 @@
         btn.textContent = collapsed ? '+' : '−';
     }
 
-    function toggleAllCards(section) {
-        const gridId = section === 'kr' ? 'stock-grid-kr' : 'stock-grid-us';
-        const grid = document.getElementById(gridId);
+    function toggleAllCards() {
+        const grid = document.getElementById('stock-grid-in');
         const cards = grid.querySelectorAll('.stock-card');
-        const colBtn = document.getElementById(`collapse-btn-${section}`);
-        // Use the section button's own label as source of truth:
-        // '−' means currently expanded → action is collapse; '+' means collapsed → action is expand
+        const colBtn = document.getElementById('collapse-btn-in');
         const shouldCollapse = colBtn ? colBtn.textContent.trim() === '−' : true;
         cards.forEach(c => {
             c.classList.toggle('collapsed', shouldCollapse);
