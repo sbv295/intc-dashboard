@@ -860,17 +860,35 @@
     }
 
     // ─── NIFTY 50 / SENSEX Indices (overall Indian market movement) ────────
-    async function fetchNiftyIndex() {
+    // Derives "previous close" from the actual daily OHLC series (skipping today's
+    // still-in-progress candle) instead of trusting meta.previousClose/chartPreviousClose
+    // alone — those can occasionally lag behind by more than a day right around session
+    // boundaries, silently showing change% against a stale multi-day-old close.
+    async function fetchIndexData(yahooSymbol, valueElId, chgElId) {
         try {
-            const url = `${YAHOO_BASE}%5ENSEI?interval=1m&range=2d`;
+            const url = `${YAHOO_BASE}${yahooSymbol}?interval=1d&range=5d`;
             const json = await yahooFetch(url);
-            const meta = json.chart.result[0].meta;
+            const result = json.chart.result[0];
+            const meta = result.meta;
             const price = meta.regularMarketPrice;
-            const prevClose = meta.previousClose || meta.chartPreviousClose;
             if (price == null) return;
-            const valEl = document.getElementById('nifty-value');
+
+            const timestamps = result.timestamp || [];
+            const closes = result.indicators.quote[0].close;
+            const nowIst = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Kolkata' });
+            let prevClose = null;
+            for (let i = closes.length - 1; i >= 0; i--) {
+                if (closes[i] == null) continue;
+                const dStr = new Date(timestamps[i] * 1000).toLocaleDateString('en-CA', { timeZone: 'Asia/Kolkata' });
+                if (dStr === nowIst) continue; // skip today's (possibly in-progress) candle
+                prevClose = closes[i];
+                break;
+            }
+            if (prevClose == null) prevClose = meta.previousClose || meta.chartPreviousClose;
+
+            const valEl = document.getElementById(valueElId);
             if (valEl) valEl.textContent = price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-            const chgEl = document.getElementById('nifty-chg');
+            const chgEl = document.getElementById(chgElId);
             if (chgEl && prevClose) {
                 const pct = (price - prevClose) / prevClose * 100;
                 chgEl.innerHTML = `<span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
@@ -878,23 +896,8 @@
         } catch(e) {}
     }
 
-    async function fetchSensexIndex() {
-        try {
-            const url = `${YAHOO_BASE}%5EBSESN?interval=1m&range=2d`;
-            const json = await yahooFetch(url);
-            const meta = json.chart.result[0].meta;
-            const price = meta.regularMarketPrice;
-            const prevClose = meta.previousClose || meta.chartPreviousClose;
-            if (price == null) return;
-            const valEl = document.getElementById('sensex-value');
-            if (valEl) valEl.textContent = price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-            const chgEl = document.getElementById('sensex-chg');
-            if (chgEl && prevClose) {
-                const pct = (price - prevClose) / prevClose * 100;
-                chgEl.innerHTML = `<span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
-            }
-        } catch(e) {}
-    }
+    async function fetchNiftyIndex() { await fetchIndexData('%5ENSEI', 'nifty-value', 'nifty-chg'); }
+    async function fetchSensexIndex() { await fetchIndexData('%5EBSESN', 'sensex-value', 'sensex-chg'); }
 
     // ─── Price Formatting (₹ only — no USD conversion) ─────────────────────
     function fmtPrice(stock, price) {
