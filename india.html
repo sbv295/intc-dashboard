@@ -419,6 +419,15 @@
         }
         .mcap-summary-change .up { color: var(--green); }
         .mcap-summary-change .down { color: var(--red); }
+        .index-divider {
+            width: 1px;
+            align-self: stretch;
+            background: var(--border);
+            margin: 2px 2px;
+        }
+        @media (max-width: 640px) {
+            .index-divider { display: none; }
+        }
         .mcap-summary-ext {
             font-size: 0.72rem;
             color: var(--text-dim);
@@ -775,12 +784,11 @@
         <span class="mcap-summary-value" id="mcap-total-in">—</span>
         <span class="mcap-summary-change" id="mcap-chg-in"></span>
     </div>
-    <div class="mcap-summary" id="index-summary-nifty">
+    <div class="mcap-summary" id="index-summary-in">
         <span class="mcap-summary-label">NIFTY 50</span>
         <span class="mcap-summary-value" id="nifty-value">—</span>
         <span class="mcap-summary-change" id="nifty-chg"></span>
-    </div>
-    <div class="mcap-summary" id="index-summary-sensex">
+        <span class="index-divider"></span>
         <span class="mcap-summary-label">SENSEX</span>
         <span class="mcap-summary-value" id="sensex-value">—</span>
         <span class="mcap-summary-change" id="sensex-chg"></span>
