@@ -346,6 +346,16 @@
             min-height: 0;
         }
         .stock-reason:empty { display: none; }
+        .mcap-summary-reason {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            font-style: italic;
+            text-align: center;
+            width: 100%;
+            flex-basis: 100%;
+            margin-top: 2px;
+        }
+        .mcap-summary-reason:empty { display: none; }
 
         .stock-extended {
             font-size: 0.92rem;
@@ -430,6 +440,7 @@
         /* ─── Total Market Cap Bar ────────────────────────── */
         .mcap-summary {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             gap: 12px;
             background: var(--surface);
@@ -709,6 +720,9 @@
 
         /* ─── Fundamentals (PE + Analyst Target) ────────── */
         .stock-fundamentals {
+            /* Temporarily disabled to free up card space for the price-movement reason line.
+               Data fetching/rendering logic is untouched — just re-enable this rule to bring it back. */
+            display: none !important;
             font-size: 0.55rem;
             color: var(--text-dim);
             margin-top: 4px;
@@ -930,12 +944,14 @@
         <span class="mcap-summary-value" id="mcap-total-us">—</span>
         <span class="mcap-summary-change" id="mcap-chg-us"></span>
         <img src="logos/casino.png" alt="casino" class="casino-badge">
+        <span class="mcap-summary-reason" id="mcap-reason-us"></span>
     </div>
     <div class="mcap-summary" id="index-summary-us">
         <span class="mcap-summary-label">NASDAQ 100</span>
         <span class="mcap-summary-value" id="ndx-value">—</span>
         <span class="mcap-summary-change" id="ndx-chg"></span>
         <span class="mcap-summary-ext" id="ndx-ext"></span>
+        <span class="mcap-summary-reason" id="index-reason"></span>
     </div>
 
     <div class="battle-bar" id="battle-bar">
@@ -1088,11 +1104,30 @@
             if (chgEl && prevClose) {
                 const pct = (price - prevClose) / prevClose * 100;
                 chgEl.innerHTML = `<span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
+                fetchIndexReason(pct, 'index-reason');
             }
         } catch(e) {}
         // Indices have no extended-hours data of their own — use QQQ (the standard NASDAQ-100
         // tracking ETF) as a pre/post-market movement proxy, clearly labeled as such.
         await fetchNasdaq100ExtendedProxy();
+    }
+
+    // "Why is the market moving" for index/aggregate UI spots (NASDAQ 100, watchlist mkt
+    // cap) — reuses api/groq.js's macro-only mode. Fetched once per element per page load.
+    const indexReasonFetched = {};
+    async function fetchIndexReason(pct, elId) {
+        if (indexReasonFetched[elId]) return;
+        indexReasonFetched[elId] = true;
+        const el = document.getElementById(elId);
+        if (!el) return;
+        try {
+            const resp = await fetch(`/api/groq?index=1&chgPct=${pct}`);
+            if (!resp.ok) return;
+            const data = await resp.json();
+            if (data.text) el.textContent = data.text;
+        } catch (e) {
+            // Silent fail — best-effort only
+        }
     }
 
     async function fetchNasdaq100ExtendedProxy() {
@@ -2393,6 +2428,7 @@
             const sign = pctChg >= 0 ? '+' : '';
             chgEl.innerHTML = `<span class="mcap-prev-ref">Last Close: ${formatLargeCurrency(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
             chgEl.className = `mcap-summary-change`;
+            if (section === 'us') fetchIndexReason(pctChg, 'mcap-reason-us');
         }
     }
 

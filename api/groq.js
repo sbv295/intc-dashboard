@@ -110,8 +110,28 @@ async function classifySentiment(apiKey, subject, articles) {
 
 async function generateSentence(apiKey, subject, direction, chgPct, articles) {
   const list = articles.map(a => `- [${a.pubDate}] ${a.title}\n  ${a.summary}`).join('\n');
-  const prompt = `Subject: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nWrite ONE concise sentence (max 20 words) explaining the move, based only on these article(s). Output ONLY that sentence, nothing else.`;
-  return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2 });
+  const prompt = `Context: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nWrite the SHORTEST possible phrase (max 12 words) giving ONLY the causal reason, based only on these article(s). Do NOT restate the company/index name or generic words like "stock", "shares", "up", "down", "rises", "falls" \u2014 the reader already sees the name and direction elsewhere on the page. Start directly with the reason (e.g. "$15B stock sale sparking dilution concerns", not "Down due to a $15B stock sale"). Output ONLY the phrase, nothing else.`;
+  return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2, max_tokens: 40 });
+}
+
+// Shared macro/sector-wide explanation via QQQ's own news feed. Used both as the
+// tier-2 fallback for individual tickers and as the primary (only) tier for
+// index-level UI spots (NASDAQ 100 line, watchlist market-cap line).
+async function macroExplain(apiKey, subject, direction, pct, cutoff) {
+  const macroNews = await fetchNews('QQQ', 10);
+  const macroRelevant = macroNews
+    .map(item => {
+      const c = item.content || {};
+      return { pubDate: c.pubDate, title: (c.title || '').trim(), summary: (c.summary || '').trim() };
+    })
+    .filter(a => a.pubDate && new Date(a.pubDate) >= cutoff && a.title)
+    .slice(0, 5);
+  if (!macroRelevant.length) return null;
+  const macroSentiments = await classifySentiment(apiKey, 'the broad US stock market', macroRelevant);
+  const macroMatching = macroRelevant.filter((_, i) => macroSentiments[i] === direction);
+  if (!macroMatching.length) return null;
+  const text = await generateSentence(apiKey, subject, direction, pct, macroMatching);
+  return { text, source: 'macro' };
 }
 
 // In-memory cache — survives across requests on the same warm serverless
@@ -142,8 +162,9 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { ticker, chgPct } = req.query;
-  if (!ticker || !STOCK_META[ticker]) {
+  const { ticker, chgPct, index } = req.query;
+  const isIndexMode = index === '1';
+  if (!isIndexMode && (!ticker || !STOCK_META[ticker])) {
     return res.status(400).json({ error: 'Unknown ticker' });
   }
   const pct = parseFloat(chgPct);
@@ -155,49 +176,41 @@ export default async function handler(req, res) {
   }
 
   const direction = pct > 0 ? 'UP' : 'DOWN';
-  const key = cacheKey(ticker, direction, pct);
+  const key = cacheKey(isIndexMode ? 'INDEX' : ticker, direction, pct);
   const cached = getCached(key);
   if (cached) return res.status(200).json({ ...cached, cached: true });
 
   const apiKey = process.env.GROQ_API_KEY;
   const cutoff = marketDaysCutoff(2);
-  const nameVariants = STOCK_META[ticker];
-  const subject = displayName(ticker);
 
   // Every branch below must resolve to a result — the dashboard should never
-  // show a blank line for a ticker just because an LLM call failed.
+  // show a blank line just because an LLM call failed.
   let result = null;
 
   try {
-    // Tier 1: stock-specific catalyst
-    const news = await fetchNews(ticker);
-    const relevant = filterRelevant(news, nameVariants, cutoff);
-    if (relevant.length) {
-      const sentiments = await classifySentiment(apiKey, subject, relevant);
-      const matching = relevant.filter((_, i) => sentiments[i] === direction);
-      if (matching.length) {
-        const text = await generateSentence(apiKey, `${subject} (${ticker})`, direction, pct, matching);
-        result = { text, source: 'stock' };
-      }
-    }
+    if (isIndexMode) {
+      // Index/market-wide requests (NASDAQ 100, watchlist mkt cap) go straight
+      // to the macro tier — there's no single "company" catalyst to look for.
+      result = await macroExplain(apiKey, 'the broad US market', direction, pct, cutoff);
+    } else {
+      const nameVariants = STOCK_META[ticker];
+      const subject = displayName(ticker);
 
-    // Tier 2: broad market / sector fallback via QQQ's own news feed
-    if (!result) {
-      const macroNews = await fetchNews('QQQ', 10);
-      const macroRelevant = macroNews
-        .map(item => {
-          const c = item.content || {};
-          return { pubDate: c.pubDate, title: (c.title || '').trim(), summary: (c.summary || '').trim() };
-        })
-        .filter(a => a.pubDate && new Date(a.pubDate) >= cutoff && a.title)
-        .slice(0, 5);
-      if (macroRelevant.length) {
-        const macroSentiments = await classifySentiment(apiKey, 'the broad US stock market', macroRelevant);
-        const macroMatching = macroRelevant.filter((_, i) => macroSentiments[i] === direction);
-        if (macroMatching.length) {
-          const text = await generateSentence(apiKey, `${subject} (${ticker}), likely tracking the broader market`, direction, pct, macroMatching);
-          result = { text, source: 'macro' };
+      // Tier 1: stock-specific catalyst
+      const news = await fetchNews(ticker);
+      const relevant = filterRelevant(news, nameVariants, cutoff);
+      if (relevant.length) {
+        const sentiments = await classifySentiment(apiKey, subject, relevant);
+        const matching = relevant.filter((_, i) => sentiments[i] === direction);
+        if (matching.length) {
+          const text = await generateSentence(apiKey, `${subject} (${ticker})`, direction, pct, matching);
+          result = { text, source: 'stock' };
         }
+      }
+
+      // Tier 2: broad market / sector fallback via QQQ's own news feed
+      if (!result) {
+        result = await macroExplain(apiKey, `${subject} (${ticker})`, direction, pct, cutoff);
       }
     }
   } catch (e) {
