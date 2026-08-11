@@ -34,23 +34,27 @@
     "updatedAt": "2026-08-11T06:28:57.327Z"
   },
   "SNDK": {
-    "text": "Jefferies downgraded Apple to Underperform and slashed price target to $263.66.",
-    "source": "stock",
+    "text": "Semiconductor sector profit-taking amid strong inflows into broader tech funds.",
+    "source": "macro",
     "articleIds": [
-      "0d7005de-affb-3cd1-bc11-e5ad6f9e63ce"
+      "d9ee0b71-eca1-3e14-9fc7-1ae9433fcf86",
+      "6cead002-01bf-3b2f-8d3f-c0385d7e97eb",
+      "e8602c43-b17a-31d7-ab95-2a81cb9493eb",
+      "c02915e3-e6fc-36ca-8394-89795338ebeb"
     ],
-    "updatedAt": "2026-08-11T06:28:58.100Z"
+    "updatedAt": "2026-08-11T06:35:52.515Z"
   },
   "MU": {
-    "text": "Artificial intelligence driven demand outpacing industry's ability to add manufacturing capacity.",
+    "text": "Tighter supply for high-bandwidth memory driven by artificial intelligence demand persists beyond 2027.",
     "source": "stock",
     "articleIds": [
       "03604bca-3561-32f9-96d5-8ac943d3b680",
+      "a187304c-8db4-3f16-a850-3c4198d1ad6a",
       "95a101d4-a40e-3ab3-9f32-49ac1a539958",
       "d09e24b0-7e26-3210-83c5-4afa678f154c",
       "5a6aca27-4154-3717-8793-799f5623bc4b"
     ],
-    "updatedAt": "2026-08-11T06:28:58.793Z"
+    "updatedAt": "2026-08-11T06:35:57.256Z"
   },
   "AVGO": {
     "text": "Faster vDefend deployment and enhanced security features fend off Nutanix and IBM competition.",
@@ -63,13 +67,14 @@
     "updatedAt": "2026-08-11T06:28:59.744Z"
   },
   "SPCX": {
-    "text": "AI-driven growth and strategic investments fueling significant gains.",
+    "text": "AI-driven growth and potential for hundreds of billions in gains.",
     "source": "stock",
     "articleIds": [
       "bdcd2f64-4914-40b0-9c6f-d2a96a1cd81b",
+      "4279cd68-1d82-3abd-a954-754a7a4583be",
       "785af49e-20fa-3f49-ac09-309de695bc6f"
     ],
-    "updatedAt": "2026-08-11T06:29:00.358Z"
+    "updatedAt": "2026-08-11T06:36:07.182Z"
   },
   "MRVL": {
     "text": "AI interconnect growth potential justifying its premium valuation.",
@@ -80,45 +85,61 @@
     "updatedAt": "2026-08-11T06:29:01.174Z"
   },
   "ARM": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T06:29:01.509Z"
+    "text": "Strong Q1 2026 results and embedded AI tools deal.",
+    "source": "stock",
+    "articleIds": [
+      "9326d252-f313-3e53-a5ef-ddf245593b09",
+      "f36f48fa-6b78-3999-a79b-2c572cbe8017"
+    ],
+    "updatedAt": "2026-08-11T06:36:16.534Z"
   },
   "QCOM": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T06:29:01.874Z"
+    "text": "Investors are drawn to its aggressive AI data-center build-out.",
+    "source": "macro",
+    "articleIds": [
+      "d24bc6f6-41a1-33f0-9a2f-5464d3e71c1e"
+    ],
+    "updatedAt": "2026-08-11T06:36:21.480Z"
   },
   "SKHY": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T06:29:02.198Z"
+    "text": "Closing in on Micron's margins in AI memory market.",
+    "source": "stock",
+    "articleIds": [
+      "d09e24b0-7e26-3210-83c5-4afa678f154c"
+    ],
+    "updatedAt": "2026-08-11T06:36:26.081Z"
   },
   "MBLY": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T06:29:02.713Z"
+    "text": "Investors are drawn to a Vanguard fund's outperformance in a year of stagnant growth.",
+    "source": "macro",
+    "articleIds": [
+      "d24bc6f6-41a1-33f0-9a2f-5464d3e71c1e"
+    ],
+    "updatedAt": "2026-08-11T06:36:30.868Z"
   },
   "005930.KS": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T06:29:03.127Z"
+    "text": "Government backing for its $576 billion chip push sparks investor optimism and renewed growth expectations.",
+    "source": "stock",
+    "articleIds": [
+      "abe1fcba-025c-37ea-8d76-1fb727b8e4ac",
+      "213c622b-0def-3618-ad40-1ad34261d975"
+    ],
+    "updatedAt": "2026-08-11T06:36:35.634Z"
   },
   "000660.KS": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T06:29:03.757Z"
+    "text": "Fears of being surpassed by Micron in AI memory market share.",
+    "source": "stock",
+    "articleIds": [
+      "d09e24b0-7e26-3210-83c5-4afa678f154c"
+    ],
+    "updatedAt": "2026-08-11T06:36:40.201Z"
   },
   "INDEX": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T06:29:04.182Z"
+    "text": "Historical momentum trends, shifting Federal Reserve rate expectations, and earnings beats.",
+    "source": "macro",
+    "articleIds": [
+      "46c26e57-9b95-3b85-9e2e-ad0864fad447"
+    ],
+    "updatedAt": "2026-08-11T06:36:44.833Z"
   }
 }
