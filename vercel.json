@@ -1,5 +1,6 @@
 {
   "rewrites": [
-    { "source": "/api/yahoo", "destination": "/api/yahoo" }
+    { "source": "/api/yahoo", "destination": "/api/yahoo" },
+    { "source": "/api/groq", "destination": "/api/groq" }
   ]
 }

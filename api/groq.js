@@ -1,0 +1,167 @@
+// Serverless proxy that turns today's price move + recent news into a 1-line
+// "why is this stock moving" explanation. Groq key stays server-side only
+// (process.env.GROQ_API_KEY, set in Vercel project settings — never in git).
+// Plain REST calls (no groq-sdk dependency) to match this repo's zero-npm-deps convention.
+const MODEL = 'llama-3.3-70b-versatile';
+
+async function groqChat(apiKey, messages, { temperature = 0.2, max_tokens = 60 } = {}) {
+  const resp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({ model: MODEL, messages, temperature, max_tokens }),
+  });
+  if (!resp.ok) throw new Error(`Groq API error: ${resp.status}`);
+  const data = await resp.json();
+  return data.choices[0].message.content.trim();
+}
+
+// Whitelisted tickers only — an arbitrary/public `ticker` query param must not
+// be able to burn API quota on unrelated symbols or prompt-inject via `company`.
+const STOCK_META = {
+  'INTC': ['INTC', 'Intel'],
+  'AMD': ['AMD'],
+  'NVDA': ['NVDA', 'Nvidia', 'NVIDIA'],
+  'TSM': ['TSM', 'TSMC'],
+  'SNDK': ['SNDK', 'SanDisk', 'Sandisk'],
+  'MU': ['MU', 'Micron'],
+  'AVGO': ['AVGO', 'Broadcom'],
+  'SPCX': ['SPCX', 'SpaceX'],
+  'MRVL': ['MRVL', 'Marvell'],
+  'ARM': ['ARM', 'Arm Holdings', 'Arm'],
+  'QCOM': ['QCOM', 'Qualcomm'],
+  'SKHY': ['SKHY', 'SK Hynix', 'SK hynix'],
+  'MBLY': ['MBLY', 'Mobileye'],
+  '005930.KS': ['Samsung'],
+  '000660.KS': ['SK Hynix', 'SK hynix'],
+};
+
+function displayName(ticker) {
+  const variants = STOCK_META[ticker];
+  return variants[variants.length > 1 ? 1 : 0];
+}
+
+function marketDaysCutoff(n) {
+  let cur = new Date();
+  let counted = 0;
+  while (counted < n) {
+    cur = new Date(cur.getTime() - 24 * 3600 * 1000);
+    if (cur.getUTCDay() >= 1 && cur.getUTCDay() <= 5) counted++;
+  }
+  cur.setUTCHours(0, 0, 0, 0);
+  return cur;
+}
+
+async function fetchNews(symbol, count = 10) {
+  const url = 'https://finance.yahoo.com/xhr/ncp?queryRef=latestNews&serviceKey=ncp_fin';
+  const resp = await fetch(url, {
+    method: 'POST',
+    headers: { 'User-Agent': 'Mozilla/5.0', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ serviceConfig: { snippetCount: count, s: [symbol] } }),
+  });
+  if (!resp.ok) return [];
+  const data = await resp.json();
+  const stream = data?.data?.tickerStream?.stream || [];
+  return stream.filter(a => !(a.ad && a.ad.length));
+}
+
+function filterRelevant(articles, nameVariants, cutoff) {
+  const relevant = [];
+  for (const item of articles) {
+    const c = item.content || {};
+    const title = (c.title || '').trim();
+    const summary = (c.summary || '').trim();
+    const pubDate = c.pubDate;
+    if (!pubDate) continue;
+    const pubDt = new Date(pubDate);
+    if (pubDt < cutoff) continue;
+    const titleMatch = nameVariants.some(v => new RegExp(`\\b${v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(title));
+    if (titleMatch) {
+      relevant.push({ pubDate, title, summary });
+      if (relevant.length === 5) break;
+    }
+  }
+  return relevant;
+}
+
+async function classifySentiment(apiKey, subject, articles) {
+  const list = articles.map((a, i) => `${i}. ${a.title}\n   ${a.summary}`).join('\n');
+  const prompt = `For ${subject}, classify whether each article below (if it were the ONLY news driving it today) would most likely make it go UP or DOWN. Respond with ONLY a JSON array of length ${articles.length}, each element "UP" or "DOWN", e.g. ["UP","DOWN"]. No other text.\n\n${list}`;
+  const content = await groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0 });
+  try {
+    return JSON.parse(content);
+  } catch {
+    return articles.map(() => null);
+  }
+}
+
+async function generateSentence(apiKey, subject, direction, chgPct, articles) {
+  const list = articles.map(a => `- [${a.pubDate}] ${a.title}\n  ${a.summary}`).join('\n');
+  const prompt = `Subject: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nWrite ONE concise sentence (max 20 words) explaining the move, based only on these article(s). Output ONLY that sentence, nothing else.`;
+  return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2 });
+}
+
+export default async function handler(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+
+  if (req.method !== 'GET') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  const { ticker, chgPct } = req.query;
+  if (!ticker || !STOCK_META[ticker]) {
+    return res.status(400).json({ error: 'Unknown ticker' });
+  }
+  const pct = parseFloat(chgPct);
+  if (Number.isNaN(pct)) {
+    return res.status(400).json({ error: 'Invalid chgPct' });
+  }
+  if (!process.env.GROQ_API_KEY) {
+    return res.status(500).json({ error: 'Server not configured' });
+  }
+
+  const apiKey = process.env.GROQ_API_KEY;
+  const cutoff = marketDaysCutoff(2);
+  const direction = pct > 0 ? 'UP' : 'DOWN';
+  const nameVariants = STOCK_META[ticker];
+  const subject = displayName(ticker);
+
+  try {
+    // Tier 1: stock-specific catalyst
+    const news = await fetchNews(ticker);
+    const relevant = filterRelevant(news, nameVariants, cutoff);
+    if (relevant.length) {
+      const sentiments = await classifySentiment(apiKey, subject, relevant);
+      const matching = relevant.filter((_, i) => sentiments[i] === direction);
+      if (matching.length) {
+        const text = await generateSentence(apiKey, `${subject} (${ticker})`, direction, pct, matching);
+        return res.status(200).json({ text, source: 'stock' });
+      }
+    }
+
+    // Tier 2: broad market / sector fallback via QQQ's own news feed
+    const macroNews = await fetchNews('QQQ', 10);
+    const macroRelevant = macroNews
+      .map(item => {
+        const c = item.content || {};
+        return { pubDate: c.pubDate, title: (c.title || '').trim(), summary: (c.summary || '').trim() };
+      })
+      .filter(a => a.pubDate && new Date(a.pubDate) >= cutoff && a.title)
+      .slice(0, 5);
+    if (macroRelevant.length) {
+      const macroSentiments = await classifySentiment(apiKey, 'the broad US stock market', macroRelevant);
+      const macroMatching = macroRelevant.filter((_, i) => macroSentiments[i] === direction);
+      if (macroMatching.length) {
+        const text = await generateSentence(apiKey, `${subject} (${ticker}), likely tracking the broader market`, direction, pct, macroMatching);
+        return res.status(200).json({ text, source: 'macro' });
+      }
+    }
+
+    // Tier 3: honest fallback
+    return res.status(200).json({ text: 'No plausible explanation for today\u2019s movement.', source: 'none' });
+  } catch (e) {
+    return res.status(500).json({ error: e.message });
+  }
+}

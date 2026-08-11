@@ -336,6 +336,17 @@
         .stock-meta.has-volume .meta-vol { display: inline; }
         .stock-meta.has-volume .meta-avgvol { display: inline; }
 
+        .stock-reason {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            font-style: italic;
+            text-align: center;
+            margin-top: 6px;
+            line-height: 1.35;
+            min-height: 0;
+        }
+        .stock-reason:empty { display: none; }
+
         .stock-extended {
             font-size: 0.92rem;
             color: var(--text-dim);
@@ -1631,6 +1642,7 @@
                         <div class="price-block-change" id="hl-chg-${id}"></div>
                     </div>` : ''}
                 </div>
+                <div class="stock-reason" id="reason-${id}"></div>
                 <div class="stock-collapse-body"><div class="stock-collapse-inner">
                 <div class="stock-sentiment" id="sentiment-${id}"><canvas class="sentiment-chart" id="chart-${id}"></canvas><div class="chart-glow-dot" id="glow-${id}"></div><div class="chart-tooltip" id="tooltip-${id}"></div></div>
                 <div class="stock-ohl" id="ohl-${id}"></div>
@@ -1776,6 +1788,11 @@
                     chgEl.className = `price-block-change`;
                     // Only update sentiment during regular market hours from this path
                     if (ms === 'market') updateSentiment(stock.ticker, pct);
+                    // "Why is it moving" — fetched once per page load, not on every 60s poll
+                    if (!state[stock.ticker].reasonFetched) {
+                        state[stock.ticker].reasonFetched = true;
+                        fetchStockReason(stock, pct);
+                    }
                 }
             }
 
@@ -1872,6 +1889,23 @@
 
         } catch (e) {
             // Silent fail
+        }
+    }
+
+    // "Why is it moving" — calls the Groq-backed serverless proxy (api/groq.js).
+    // Fails silently (element stays empty) if the endpoint isn't deployed/reachable,
+    // e.g. when testing locally via a plain static server instead of `vercel dev`.
+    async function fetchStockReason(stock, pct) {
+        const _sid = sid(stock);
+        const el = document.getElementById(`reason-${_sid}`);
+        if (!el) return;
+        try {
+            const resp = await fetch(`/api/groq?ticker=${encodeURIComponent(stock.ticker)}&chgPct=${pct}`);
+            if (!resp.ok) return;
+            const data = await resp.json();
+            if (data.text) el.textContent = data.text;
+        } catch (e) {
+            // Silent fail — feature is best-effort, never block the rest of the dashboard
         }
     }
 
