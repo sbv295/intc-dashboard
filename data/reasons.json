@@ -1,14 +1,14 @@
 {
   "INTC": {
-    "text": "$20 billion stock offering increase sparking dilution concerns and potential loss of investor value",
+    "text": "$20 billion public offering of 210.5 million shares priced at $95 each sparking dilution concerns",
     "source": "stock",
     "articleIds": [
       "1659384b-5f18-359d-9f24-21ea92dbd3ac",
+      "e62806fd-a00d-3aab-8add-7a66bf40ad2a",
       "5be42b1a-e260-3bc2-84ce-fd0ef123f9f2",
-      "8c95898e-f9d4-3640-96ab-35c4538ea298",
-      "16015d38-d758-3419-8588-7649d0539615"
+      "8c95898e-f9d4-3640-96ab-35c4538ea298"
     ],
-    "updatedAt": "2026-08-11T09:54:55.916Z"
+    "updatedAt": "2026-08-11T10:24:21.243Z"
   },
   "AMD": {
     "text": "Investors grew skeptical of AI spending.",
@@ -28,13 +28,12 @@
     "updatedAt": "2026-08-11T08:07:06.248Z"
   },
   "TSM": {
-    "text": "No specific information about TSMC is mentioned in the provided articles.",
-    "source": "macro",
+    "text": "Investors reassessing semiconductor equipment company's long-term prospects and growth trajectory.",
+    "source": "stock",
     "articleIds": [
-      "d9ee0b71-eca1-3e14-9fc7-1ae9433fcf86",
-      "c02915e3-e6fc-36ca-8394-89795338ebeb"
+      "fee16c14-79fb-3146-8343-68c186c42698"
     ],
-    "updatedAt": "2026-08-11T08:07:11.737Z"
+    "updatedAt": "2026-08-11T10:24:33.751Z"
   },
   "SNDK": {
     "text": "Analysts see substantial upside and a buying opportunity due to robust AI memory demand.",
@@ -49,13 +48,13 @@
     "updatedAt": "2026-08-11T07:05:17.887Z"
   },
   "MU": {
-    "text": "Reported Apple testing of Chinese memory chips introducing competitive variable.",
+    "text": "Memory-market supply constraints persist due to AI-driven demand outpacing manufacturing capacity.",
     "source": "stock",
     "articleIds": [
-      "c1bb7c56-9dcc-3c15-96ba-649cfcb91afd",
-      "95a101d4-a40e-3ab3-9f32-49ac1a539958"
+      "03604bca-3561-32f9-96d5-8ac943d3b680",
+      "a187304c-8db4-3f16-a850-3c4198d1ad6a"
     ],
-    "updatedAt": "2026-08-11T09:55:20.930Z"
+    "updatedAt": "2026-08-11T10:24:42.129Z"
   },
   "AVGO": {
     "text": "No specific causal reason mentioned for Broadcom's move.",
@@ -106,12 +105,13 @@
     "updatedAt": "2026-08-11T07:05:47.328Z"
   },
   "SKHY": {
-    "text": "Closing in on Micron's margins in AI memory market.",
+    "text": "Closing in on Micron in AI memory market share.",
     "source": "stock",
     "articleIds": [
+      "c1bb7c56-9dcc-3c15-96ba-649cfcb91afd",
       "d09e24b0-7e26-3210-83c5-4afa678f154c"
     ],
-    "updatedAt": "2026-08-11T06:36:26.081Z"
+    "updatedAt": "2026-08-11T10:25:07.005Z"
   },
   "MBLY": {
     "text": "Investors are drawn to a Vanguard fund's outperformance in a year of stagnant growth.",
