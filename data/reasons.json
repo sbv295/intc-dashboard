@@ -1,13 +1,11 @@
 {
   "INTC": {
-    "text": "$20 billion stock offering at $95 a share sparking dilution concerns",
+    "text": "Huge rally saving millions as it prepares to issue new common stock.",
     "source": "stock",
     "articleIds": [
-      "e62806fd-a00d-3aab-8add-7a66bf40ad2a",
-      "97511840-6984-3910-87eb-6225ee3c881b",
-      "1659384b-5f18-359d-9f24-21ea92dbd3ac"
+      "fe6e5f58-1604-448f-ab51-cce440c9e0ee"
     ],
-    "updatedAt": "2026-08-11T18:53:53.749Z"
+    "updatedAt": "2026-08-11T19:58:14.529Z"
   },
   "AMD": {
     "text": "Expected rapid growth in server CPU and data center businesses, driven by AI inference demand.",
@@ -19,20 +17,22 @@
     "updatedAt": "2026-08-11T18:53:58.733Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T18:54:03.349Z"
+    "updatedAt": "2026-08-11T19:58:24.400Z"
   },
   "TSM": {
-    "text": "Bernstein spotting a massive CPU opportunity and reignited tool demand from strong revenue.",
+    "text": "Strong revenue update and massive CPU opportunity sparking renewed demand and growth expectations",
     "source": "stock",
     "articleIds": [
+      "6a2e9cac-0e0b-3e66-92fc-b3a047ad9c4a",
+      "da27e2e0-805d-3eae-afea-25616ff04a1d",
       "14fc6f73-db3a-374a-9dc6-31ec308b3487",
       "96112bd3-e9e8-3459-a834-ba9b23ee34fd",
       "7da30c5c-0701-3fbe-8fac-b37f84f44eef"
     ],
-    "updatedAt": "2026-08-11T17:53:50.645Z"
+    "updatedAt": "2026-08-11T19:58:29.847Z"
   },
   "SNDK": {
     "text": "Elon Musk's comments on memory as AI's biggest bottleneck and positive analyst upgrades.",
@@ -47,13 +47,13 @@
     "updatedAt": "2026-08-11T18:54:13.312Z"
   },
   "MU": {
-    "text": "Concerns about the sustainability of sky-high margins in a typically cyclical business.",
+    "text": "Mizuho's optimistic outlook and potential long-term growth prospects sparking investor confidence.",
     "source": "stock",
     "articleIds": [
-      "94261b05-0288-3d65-a248-d76403e2cb46",
-      "849539ac-a528-3036-8858-8d810611f4f9"
+      "983dbaf4-22df-3cc7-85fe-e48e01f6c000",
+      "1b921880-2edc-30e3-a28d-112a641e22f0"
     ],
-    "updatedAt": "2026-08-11T18:54:18.238Z"
+    "updatedAt": "2026-08-11T19:58:40.022Z"
   },
   "AVGO": {
     "text": "Widening competitive gap in AI data-center build-out due to differing business strategies.",
@@ -65,39 +65,42 @@
     "updatedAt": "2026-08-11T17:54:06.227Z"
   },
   "SPCX": {
-    "text": "Missed earnings expectations from AST, a major competitor to Starlink.",
+    "text": "AST Earnings Missed Expectations with Revenue Below Consensus.",
     "source": "stock",
     "articleIds": [
       "9bfe79d2-4394-3526-81fd-cf3d125390ab",
-      "e68e96e3-9111-3ca5-83e3-ac60abae6791",
-      "1c9d4506-7c85-37e0-a401-eea926478b7d",
-      "ac580596-70ab-3cfe-9491-25632cecece2"
+      "e68e96e3-9111-3ca5-83e3-ac60abae6791"
     ],
-    "updatedAt": "2026-08-11T18:54:27.945Z"
+    "updatedAt": "2026-08-11T19:58:50.185Z"
   },
   "MRVL": {
-    "text": "Microsoft's AI silicon push and Maia 300 chip orders are driving Marvell's growth.",
+    "text": "Microsoft's AI chip push and expanded NVIDIA alliance are driving the gains.",
     "source": "stock",
     "articleIds": [
+      "79cd2636-6a01-36ea-84bf-a13646c56f02",
+      "6a2e9cac-0e0b-3e66-92fc-b3a047ad9c4a",
       "7e434cdb-004d-39bd-8f8d-02f9be9d9923",
       "7da30c5c-0701-3fbe-8fac-b37f84f44eef",
       "1655d1ca-f4cf-371e-96e3-e3ba52ed5603"
     ],
-    "updatedAt": "2026-08-11T17:54:16.038Z"
+    "updatedAt": "2026-08-11T19:58:56.049Z"
   },
   "ARM": {
-    "text": "Battling volatility and federal scrutiny.",
+    "text": "Accelerating AI adoption and growing demand for its chip architecture.",
     "source": "stock",
     "articleIds": [
-      "671ba221-8552-3ee2-9bbb-1411584c1117"
+      "b98bfe72-6f0f-348d-b7c0-2c31fa5a032b",
+      "9326d252-f313-3e53-a5ef-ddf245593b09",
+      "936d666e-2fce-37dc-a449-2e29add29196",
+      "f36f48fa-6b78-3999-a79b-2c572cbe8017"
     ],
-    "updatedAt": "2026-08-11T17:54:21.841Z"
+    "updatedAt": "2026-08-11T19:59:01.261Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T18:54:42.472Z"
+    "updatedAt": "2026-08-11T19:59:06.034Z"
   },
   "SKHY": {
     "text": "Resumption of China NAND plant operations after a 4-year pause.",
@@ -113,7 +116,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T18:54:51.883Z"
+    "updatedAt": "2026-08-11T19:59:15.653Z"
   },
   "005930.KS": {
     "text": "Strong early demand for new foldable phones and smartwatches with expanded AI tools.",
@@ -132,13 +135,12 @@
     "updatedAt": "2026-08-11T12:50:59.172Z"
   },
   "INDEX": {
-    "text": "Profit-taking in semiconductor funds after investors piled into QQQ.",
+    "text": "Profit-taking in semiconductor funds after a surge in QQQ investment.",
     "source": "macro",
     "articleIds": [
       "80e7c4e8-de09-3ee6-87c7-47c3ae9f1965",
-      "e8602c43-b17a-31d7-ab95-2a81cb9493eb",
-      "7a52ed18-2d93-33fd-ae07-1c1ce70d9dda"
+      "e8602c43-b17a-31d7-ab95-2a81cb9493eb"
     ],
-    "updatedAt": "2026-08-11T17:54:50.855Z"
+    "updatedAt": "2026-08-11T19:59:30.581Z"
   }
 }
