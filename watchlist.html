@@ -1109,40 +1109,34 @@
         // Indices have no extended-hours data of their own — use QQQ (the standard NASDAQ-100
         // tracking ETF) as a pre/post-market movement proxy, clearly labeled as such.
         await fetchNasdaq100ExtendedProxy();
-        // The "why is it moving" reason is generated from QQQ's own news+move (not ^NDX's) —
-        // ^NDX has no ETF-style news coverage of its own, so its move ends up explained by
-        // whatever single constituent's news happens to dominate QQQ's feed that day.
-        await fetchQqqReasonPct();
     }
 
-    async function fetchQqqReasonPct() {
+    // "Why is it moving" text is NOT fetched live per page visit — it's pre-computed by a
+    // scheduled GitHub Action (.github/workflows/refresh-reasons.yml, hourly) and written to
+    // data/reasons.json as a static file. This keeps it stable across refreshes (no random
+    // "No plausible explanation" flip-flopping from a fresh LLM call every visit) and avoids
+    // hitting Groq's rate limits from real visitor traffic. Loaded once here and applied to
+    // every stock card + the NASDAQ 100 / watchlist mkt cap lines.
+    let reasonsData = null;
+    async function loadReasonsData() {
         try {
-            const url = `${YAHOO_BASE}QQQ?interval=1m&range=2d&includePrePost=true`;
-            const json = await yahooFetch(url);
-            const meta = json.chart.result[0].meta;
-            const price = meta.regularMarketPrice;
-            const prevClose = meta.previousClose || meta.chartPreviousClose;
-            if (price == null || !prevClose) return;
-            const pct = (price - prevClose) / prevClose * 100;
-            fetchIndexReason(pct, 'index-reason');
-        } catch (e) {}
-    }
-
-    // "Why is the market moving" for index/aggregate UI spots (NASDAQ 100, watchlist mkt
-    // cap) — reuses api/groq.js's macro-only mode. Fetched once per element per page load.
-    const indexReasonFetched = {};
-    async function fetchIndexReason(pct, elId) {
-        if (indexReasonFetched[elId]) return;
-        indexReasonFetched[elId] = true;
-        const el = document.getElementById(elId);
-        if (!el) return;
-        try {
-            const resp = await fetch(`/api/groq?index=1&chgPct=${pct}`);
+            const resp = await fetch('data/reasons.json', { cache: 'no-store' });
             if (!resp.ok) return;
-            const data = await resp.json();
-            if (data.text) el.textContent = data.text;
+            reasonsData = await resp.json();
         } catch (e) {
-            // Silent fail — best-effort only
+            return;
+        }
+        STOCKS.forEach(s => {
+            const entry = reasonsData[s.ticker];
+            if (!entry) return;
+            const el = document.getElementById(`reason-${sid(s)}`);
+            if (el) el.textContent = entry.text;
+        });
+        if (reasonsData.INDEX) {
+            const indexEl = document.getElementById('index-reason');
+            if (indexEl) indexEl.textContent = reasonsData.INDEX.text;
+            const mcapEl = document.getElementById('mcap-reason-us');
+            if (mcapEl) mcapEl.textContent = reasonsData.INDEX.text;
         }
     }
 
@@ -1839,11 +1833,6 @@
                     chgEl.className = `price-block-change`;
                     // Only update sentiment during regular market hours from this path
                     if (ms === 'market') updateSentiment(stock.ticker, pct);
-                    // "Why is it moving" — fetched once per page load, not on every 60s poll
-                    if (!state[stock.ticker].reasonFetched) {
-                        state[stock.ticker].reasonFetched = true;
-                        fetchStockReason(stock, pct);
-                    }
                 }
             }
 
@@ -1940,23 +1929,6 @@
 
         } catch (e) {
             // Silent fail
-        }
-    }
-
-    // "Why is it moving" — calls the Groq-backed serverless proxy (api/groq.js).
-    // Fails silently (element stays empty) if the endpoint isn't deployed/reachable,
-    // e.g. when testing locally via a plain static server instead of `vercel dev`.
-    async function fetchStockReason(stock, pct) {
-        const _sid = sid(stock);
-        const el = document.getElementById(`reason-${_sid}`);
-        if (!el) return;
-        try {
-            const resp = await fetch(`/api/groq?ticker=${encodeURIComponent(stock.ticker)}&chgPct=${pct}`);
-            if (!resp.ok) return;
-            const data = await resp.json();
-            if (data.text) el.textContent = data.text;
-        } catch (e) {
-            // Silent fail — feature is best-effort, never block the rest of the dashboard
         }
     }
 
@@ -2444,7 +2416,6 @@
             const sign = pctChg >= 0 ? '+' : '';
             chgEl.innerHTML = `<span class="mcap-prev-ref">Last Close: ${formatLargeCurrency(totalPrev)}</span> <span class="${pctChg >= 0 ? 'up' : 'down'}">${sign}${pctChg.toFixed(2)}%</span>`;
             chgEl.className = `mcap-summary-change`;
-            if (section === 'us') fetchIndexReason(pctChg, 'mcap-reason-us');
         }
     }
 
@@ -2600,6 +2571,7 @@
         setInterval(fetchUsdInrRate, 60000);
         fetchNasdaq100Index();
         setInterval(fetchNasdaq100Index, 60000);
+        loadReasonsData();
         fetchAllNasdaq().then(() => {
             fetchAllShares();
             fetchAllATH();

@@ -1,0 +1,36 @@
+name: Refresh stock move reasons
+
+on:
+  schedule:
+    # Every hour. Keep this at 60min+ to stay well within Vercel's free-tier
+    # deployment-count limits (this job's commit triggers a redeploy each run).
+    - cron: '0 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run refresh script
+        run: node .github/scripts/refresh-reasons.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/reasons.json; then
+            echo "No change in reasons.json — skipping commit."
+          else
+            git add data/reasons.json
+            git commit -m "Auto-refresh stock move reasons"
+            git push
+          fi

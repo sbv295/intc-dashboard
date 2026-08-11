@@ -90,7 +90,7 @@ function filterRelevant(articles, nameVariants, cutoff) {
     if (pubDt < cutoff) continue;
     const titleMatch = nameVariants.some(v => new RegExp(`\\b${v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(title));
     if (titleMatch) {
-      relevant.push({ pubDate, title, summary });
+      relevant.push({ id: item.id, pubDate, title, summary });
       if (relevant.length === 5) break;
     }
   }
@@ -141,7 +141,7 @@ async function macroExplain(apiKey, subject, direction, pct, cutoff, { preferBro
   let macroRelevant = macroNews
     .map(item => {
       const c = item.content || {};
-      return { pubDate: c.pubDate, title: (c.title || '').trim(), summary: (c.summary || '').trim() };
+      return { id: item.id, pubDate: c.pubDate, title: (c.title || '').trim(), summary: (c.summary || '').trim() };
     })
     .filter(a => a.pubDate && new Date(a.pubDate) >= cutoff && a.title);
 
@@ -160,7 +160,7 @@ async function macroExplain(apiKey, subject, direction, pct, cutoff, { preferBro
   const macroMatching = macroRelevant.filter((_, i) => macroSentiments[i] === direction);
   if (!macroMatching.length) return null;
   const text = await generateSentence(apiKey, subject, direction, pct, macroMatching);
-  return { text, source: 'macro' };
+  return { text, source: 'macro', articleIds: macroMatching.map(a => a.id).filter(Boolean) };
 }
 
 // In-memory cache — survives across requests on the same warm serverless
@@ -235,7 +235,7 @@ export default async function handler(req, res) {
         const matching = relevant.filter((_, i) => sentiments[i] === direction);
         if (matching.length) {
           const text = await generateSentence(apiKey, `${subject} (${ticker})`, direction, pct, matching);
-          result = { text, source: 'stock' };
+          result = { text, source: 'stock', articleIds: matching.map(a => a.id).filter(Boolean) };
         }
       }
 
@@ -250,7 +250,7 @@ export default async function handler(req, res) {
 
   // Tier 3: honest fallback — always non-empty, so every card shows *something*.
   if (!result) {
-    result = { text: 'No plausible explanation for today\u2019s movement.', source: 'none' };
+    result = { text: 'No plausible explanation for today\u2019s movement.', source: 'none', articleIds: [] };
   }
 
   setCached(key, result);
