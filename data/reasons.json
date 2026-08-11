@@ -17,10 +17,10 @@
     "updatedAt": "2026-08-11T18:53:58.733Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T19:58:24.400Z"
+    "updatedAt": "2026-08-11T20:46:49.359Z"
   },
   "TSM": {
     "text": "Strong revenue update and massive CPU opportunity sparking renewed demand and growth expectations",
@@ -47,13 +47,15 @@
     "updatedAt": "2026-08-11T18:54:13.312Z"
   },
   "MU": {
-    "text": "Mizuho's optimistic outlook and potential long-term growth prospects sparking investor confidence.",
+    "text": "Memory prices keep rising despite concerns about future Chinese competition.",
     "source": "stock",
     "articleIds": [
+      "94261b05-0288-3d65-a248-d76403e2cb46",
       "983dbaf4-22df-3cc7-85fe-e48e01f6c000",
+      "61c5d946-bec9-3161-90bc-9d9c1bff1bc8",
       "1b921880-2edc-30e3-a28d-112a641e22f0"
     ],
-    "updatedAt": "2026-08-11T19:58:40.022Z"
+    "updatedAt": "2026-08-11T20:47:05.032Z"
   },
   "AVGO": {
     "text": "Widening competitive gap in AI data-center build-out due to differing business strategies.",
@@ -65,13 +67,14 @@
     "updatedAt": "2026-08-11T17:54:06.227Z"
   },
   "SPCX": {
-    "text": "AST Earnings Missed Expectations with Revenue Below Consensus.",
+    "text": "Struggling to hold its IPO price after a brief three-day price surge.",
     "source": "stock",
     "articleIds": [
-      "9bfe79d2-4394-3526-81fd-cf3d125390ab",
-      "e68e96e3-9111-3ca5-83e3-ac60abae6791"
+      "1c9d4506-7c85-37e0-a401-eea926478b7d",
+      "f10d00dc-15df-3a18-9465-9414211b4802",
+      "88069686-fb31-35fa-b6c9-0c1477a53816"
     ],
-    "updatedAt": "2026-08-11T19:58:50.185Z"
+    "updatedAt": "2026-08-11T20:47:15.714Z"
   },
   "MRVL": {
     "text": "Microsoft's AI chip push and expanded NVIDIA alliance are driving the gains.",
@@ -100,31 +103,31 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T19:59:06.034Z"
+    "updatedAt": "2026-08-11T20:47:30.894Z"
   },
   "SKHY": {
-    "text": "Resumption of China NAND plant operations after a 4-year pause.",
+    "text": "Revival of China NAND plant after 4-year pause sparks investor optimism.",
     "source": "stock",
     "articleIds": [
       "0dd9e658-9ecb-3845-9891-c170c5c87228",
-      "5a45c889-7f7e-3dfe-a01c-3e53e3ce321e",
-      "c1bb7c56-9dcc-3c15-96ba-649cfcb91afd"
+      "5a45c889-7f7e-3dfe-a01c-3e53e3ce321e"
     ],
-    "updatedAt": "2026-08-11T17:54:31.363Z"
+    "updatedAt": "2026-08-11T20:47:35.819Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T19:59:15.653Z"
+    "updatedAt": "2026-08-11T20:47:40.292Z"
   },
   "005930.KS": {
     "text": "Strong early demand for new foldable phones and smartwatches with expanded AI tools.",
     "source": "stock",
     "articleIds": [
-      "1202dfb7-3e78-34b4-84fb-de803b11bc0b"
+      "1202dfb7-3e78-34b4-84fb-de803b11bc0b",
+      "ae12a82b-c381-35dd-bb05-6b65819df950"
     ],
-    "updatedAt": "2026-08-11T18:54:56.770Z"
+    "updatedAt": "2026-08-11T20:47:45.209Z"
   },
   "000660.KS": {
     "text": "Selloff after IPO is seen as a buying opportunity due to a potential gap created.",
