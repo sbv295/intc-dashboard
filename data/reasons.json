@@ -1,34 +1,39 @@
 {
   "INTC": {
-    "text": "$15 billion and potentially expanded $20 billion offering sparking dilution concerns",
+    "text": "$15 billion stock sale sparking institutional interest despite initial retail investor skepticism.",
     "source": "stock",
     "articleIds": [
       "70338e64-27be-39b9-81d5-28c6ae92303a",
-      "e62806fd-a00d-3aab-8add-7a66bf40ad2a"
+      "e5fa4cb7-21ca-3da8-a343-ea53bb6d1ed3"
     ],
-    "updatedAt": "2026-08-11T12:49:50.177Z"
+    "updatedAt": "2026-08-11T14:16:05.612Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T12:49:54.891Z"
+    "updatedAt": "2026-08-11T14:16:10.761Z"
   },
   "NVDA": {
-    "text": "Critics warning of circular-financing concerns with new chip asset class plans.",
+    "text": "AI infrastructure deal and $500 billion financing push for artificial intelligence infrastructure partnership",
     "source": "stock",
     "articleIds": [
-      "01341e11-ae0a-3beb-bacd-7dccb2442a20"
+      "7e4c0320-b57d-341e-a6b4-432cc0e39ff5",
+      "8139e863-5e0d-3ced-9ad5-08fd995642ac",
+      "378c9bf7-25da-3369-b9ef-4896552e21ca"
     ],
-    "updatedAt": "2026-08-11T12:49:59.809Z"
+    "updatedAt": "2026-08-11T14:16:15.549Z"
   },
   "TSM": {
-    "text": "Revenue uncertainty in 2028-29 and geopolitical concerns sparking investor caution and uncertainty.",
+    "text": "$4.7 billion joint venture for next-generation image sensors with Sony sparking investment optimism",
     "source": "stock",
     "articleIds": [
-      "7d90f3e8-3e06-3d65-ad30-fc404bd4fdbb"
+      "56250a06-7cb4-3007-872f-ddf13895ed7c",
+      "0c8a9e2e-cb20-34e8-bb23-094ba4b16514",
+      "71eb4aec-6a88-30ac-a6db-7f57fa1a6e65",
+      "79572203-315b-3242-85ac-0f3cab5c220b"
     ],
-    "updatedAt": "2026-08-11T11:40:16.108Z"
+    "updatedAt": "2026-08-11T14:16:20.291Z"
   },
   "SNDK": {
     "text": "Analysts viewing recent pullback as a buying opportunity due to robust AI memory demand.",
@@ -54,62 +59,56 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T12:50:19.386Z"
+    "updatedAt": "2026-08-11T14:16:34.641Z"
   },
   "SPCX": {
-    "text": "AI-driven Cursor project potentially adding $2.5 billion to revenue in 2026.",
+    "text": "retail investors ending their 59-day buying spree after reclaiming IPO price",
     "source": "stock",
     "articleIds": [
-      "bdcd2f64-4914-40b0-9c6f-d2a96a1cd81b",
-      "88069686-fb31-35fa-b6c9-0c1477a53816",
-      "9c8a6beb-3c24-3bc1-8a12-d58d1193a0c2",
-      "70e99d36-b3b8-3dd4-8d5a-c0024adb997e"
+      "7f080ae2-46a9-4b2e-9299-053175eb5e8e"
     ],
-    "updatedAt": "2026-08-11T12:50:24.250Z"
+    "updatedAt": "2026-08-11T14:16:39.688Z"
   },
   "MRVL": {
-    "text": "Profit multiple sits below operating line due to non-operating income.",
+    "text": "AI interconnect growth expected to deliver earnings and justify premium valuation.",
     "source": "stock",
     "articleIds": [
-      "e41c413f-aeaf-317a-be44-dac7d138f0cd",
-      "a839167c-b0df-3ecc-8c09-50d7b84703be"
+      "128d423d-4793-3c16-9478-70d048230086"
     ],
-    "updatedAt": "2026-08-11T07:05:37.922Z"
+    "updatedAt": "2026-08-11T14:16:44.553Z"
   },
   "ARM": {
-    "text": "Federal scrutiny and volatility are causing ARM's revenue growth trajectory to battle volatility.",
+    "text": "Accelerating AI adoption and growing demand for its chip architecture.",
     "source": "stock",
     "articleIds": [
+      "b98bfe72-6f0f-348d-b7c0-2c31fa5a032b",
+      "9326d252-f313-3e53-a5ef-ddf245593b09",
       "936d666e-2fce-37dc-a449-2e29add29196",
-      "671ba221-8552-3ee2-9bbb-1411584c1117",
-      "286e9b4c-8d97-3c00-adea-ef4decf81a8a"
+      "f36f48fa-6b78-3999-a79b-2c572cbe8017"
     ],
-    "updatedAt": "2026-08-11T07:05:42.682Z"
+    "updatedAt": "2026-08-11T14:16:49.779Z"
   },
   "QCOM": {
-    "text": "Lower-than-expected Q4 revenue guidance of $9.7b to $10.5b.",
-    "source": "stock",
-    "articleIds": [
-      "fb3ea9f5-db1f-3e87-8929-08770f223665",
-      "2006930d-605e-3a01-b8bb-99dec5085132",
-      "b9fe635d-a7ec-3d6a-98a2-afee7f51f639"
-    ],
-    "updatedAt": "2026-08-11T07:05:47.328Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T14:16:54.388Z"
   },
   "SKHY": {
-    "text": "Closing in on Micron's margins in the AI memory market with a 58% share.",
+    "text": "Resumption of work at its Dalian China NAND plant after a 4-year pause.",
     "source": "stock",
     "articleIds": [
-      "c1bb7c56-9dcc-3c15-96ba-649cfcb91afd",
-      "d09e24b0-7e26-3210-83c5-4afa678f154c"
+      "0dd9e658-9ecb-3845-9891-c170c5c87228",
+      "5a45c889-7f7e-3dfe-a01c-3e53e3ce321e",
+      "c1bb7c56-9dcc-3c15-96ba-649cfcb91afd"
     ],
-    "updatedAt": "2026-08-11T10:45:47.291Z"
+    "updatedAt": "2026-08-11T14:16:59.090Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T12:50:49.373Z"
+    "updatedAt": "2026-08-11T14:17:03.357Z"
   },
   "005930.KS": {
     "text": "Strong record foldable preorders and improved AI memory production yield.",
@@ -129,14 +128,12 @@
     "updatedAt": "2026-08-11T12:50:59.172Z"
   },
   "INDEX": {
-    "text": "Profit-taking in semiconductor funds after a $37 billion influx into QQQ.",
+    "text": "Stalled US-Iran talks and shifting Federal Reserve rate expectations.",
     "source": "macro",
     "articleIds": [
-      "e8602c43-b17a-31d7-ab95-2a81cb9493eb",
-      "7a52ed18-2d93-33fd-ae07-1c1ce70d9dda",
-      "5bb63143-919d-3f53-b9f4-28c6f4f76284",
-      "cfc2c024-662b-34ee-896c-19b5be524ce5"
+      "36033e41-dd61-3043-a132-398cb4c41bdc",
+      "46c26e57-9b95-3b85-9e2e-ad0864fad447"
     ],
-    "updatedAt": "2026-08-11T07:06:10.960Z"
+    "updatedAt": "2026-08-11T14:17:18.229Z"
   }
 }
