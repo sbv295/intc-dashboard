@@ -116,12 +116,21 @@ async function generateSentence(apiKey, subject, direction, chgPct, articles) {
 
 // Signals that an article is about the broad market/macro conditions rather than
 // a single company — used to prefer genuinely market-wide drivers (Fed, inflation,
-// oil, rates, jobs data, broad indexes) over a single constituent's news for
-// index-level explanations (NASDAQ 100), where "explained by one company" reads poorly.
-const BROAD_MARKET_RE = /\b(Dow|S&P\s?500|Nasdaq(?:\s?100)?|Fed(?:eral Reserve)?|inflation|CPI|PPI|crude|oil price|Treasury|yields?|rate (?:cut|hike)|jobs report|unemployment|payrolls|GDP|tariffs?|recession|interest rates?|market[- ]wide|broad market|ETFs?)\b/i;
+// oil, rates, jobs data) over a single constituent's news for index-level
+// explanations (NASDAQ 100), where "explained by one company" reads poorly.
+// Deliberately excludes generic index names (Dow/S&P/Nasdaq) — those show up even
+// in single-company headlines just for context (e.g. "...weighing on the Nasdaq").
+const BROAD_MARKET_RE = /\b(Fed(?:eral Reserve)?|inflation|CPI|PPI|crude|oil price|Treasury|yields?|rate (?:cut|hike)|jobs report|unemployment|payrolls|GDP|tariffs?|recession|interest rates?|market[- ]wide|broad market|semiconductor ETFs?|sector ETFs?)\b/i;
 
 function isBroadMarket(article) {
   return BROAD_MARKET_RE.test(article.title) || BROAD_MARKET_RE.test(article.summary);
+}
+
+// Any of our watchlist companies' display names, for excluding single-company
+// headlines from the "broad market" bucket even when they mention Dow/Nasdaq in passing.
+const ALL_COMPANY_NAMES = [...new Set(Object.values(STOCK_META).flat())];
+function mentionsSingleCompany(article) {
+  return ALL_COMPANY_NAMES.some(name => new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(article.title));
 }
 
 // Shared macro/sector-wide explanation via QQQ's own news feed. Used both as the
@@ -137,10 +146,12 @@ async function macroExplain(apiKey, subject, direction, pct, cutoff, { preferBro
     .filter(a => a.pubDate && new Date(a.pubDate) >= cutoff && a.title);
 
   if (preferBroad) {
-    const broad = macroRelevant.filter(isBroadMarket);
-    // Only narrow to broad-market articles if there are enough to work with —
-    // otherwise fall through to the full mixed set rather than starving the model.
-    if (broad.length) macroRelevant = broad;
+    // Prefer articles that are BOTH macro-flavored AND not just riding a single
+    // company's headline; fall back progressively so we never end up empty-handed.
+    const cleanBroad = macroRelevant.filter(a => isBroadMarket(a) && !mentionsSingleCompany(a));
+    const anyBroad = macroRelevant.filter(isBroadMarket);
+    if (cleanBroad.length) macroRelevant = cleanBroad;
+    else if (anyBroad.length) macroRelevant = anyBroad;
   }
   macroRelevant = macroRelevant.slice(0, 5);
 
