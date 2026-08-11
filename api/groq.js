@@ -120,7 +120,7 @@ async function generateSentence(apiKey, subject, direction, chgPct, articles) {
 // explanations (NASDAQ 100), where "explained by one company" reads poorly.
 // Deliberately excludes generic index names (Dow/S&P/Nasdaq) — those show up even
 // in single-company headlines just for context (e.g. "...weighing on the Nasdaq").
-const BROAD_MARKET_RE = /\b(Fed(?:eral Reserve)?|inflation|CPI|PPI|crude|oil price|Treasury|yields?|rate (?:cut|hike)|jobs report|unemployment|payrolls|GDP|tariffs?|recession|interest rates?|market[- ]wide|broad market|semiconductor ETFs?|sector ETFs?)\b/i;
+const BROAD_MARKET_RE = /\b(Fed(?:eral Reserve)?|inflation|CPI|PPI|crude(?:\s?oil)?|oil prices?|Treasury|yields?|rate (?:cut|hike)|jobs report|unemployment|payrolls|GDP|tariffs?|recession|interest rates?|market[- ]wide|broad market|semiconductor ETFs?|sector ETFs?|equities|equity futures)\b/i;
 
 function isBroadMarket(article) {
   return BROAD_MARKET_RE.test(article.title) || BROAD_MARKET_RE.test(article.summary);
