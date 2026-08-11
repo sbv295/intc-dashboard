@@ -114,18 +114,36 @@ async function generateSentence(apiKey, subject, direction, chgPct, articles) {
   return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2, max_tokens: 55 });
 }
 
+// Signals that an article is about the broad market/macro conditions rather than
+// a single company — used to prefer genuinely market-wide drivers (Fed, inflation,
+// oil, rates, jobs data, broad indexes) over a single constituent's news for
+// index-level explanations (NASDAQ 100), where "explained by one company" reads poorly.
+const BROAD_MARKET_RE = /\b(Dow|S&P\s?500|Nasdaq(?:\s?100)?|Fed(?:eral Reserve)?|inflation|CPI|PPI|crude|oil price|Treasury|yields?|rate (?:cut|hike)|jobs report|unemployment|payrolls|GDP|tariffs?|recession|interest rates?|market[- ]wide|broad market|ETFs?)\b/i;
+
+function isBroadMarket(article) {
+  return BROAD_MARKET_RE.test(article.title) || BROAD_MARKET_RE.test(article.summary);
+}
+
 // Shared macro/sector-wide explanation via QQQ's own news feed. Used both as the
 // tier-2 fallback for individual tickers and as the primary (only) tier for
 // index-level UI spots (NASDAQ 100 line, watchlist market-cap line).
-async function macroExplain(apiKey, subject, direction, pct, cutoff) {
+async function macroExplain(apiKey, subject, direction, pct, cutoff, { preferBroad = false } = {}) {
   const macroNews = await fetchNews('QQQ', 10);
-  const macroRelevant = macroNews
+  let macroRelevant = macroNews
     .map(item => {
       const c = item.content || {};
       return { pubDate: c.pubDate, title: (c.title || '').trim(), summary: (c.summary || '').trim() };
     })
-    .filter(a => a.pubDate && new Date(a.pubDate) >= cutoff && a.title)
-    .slice(0, 5);
+    .filter(a => a.pubDate && new Date(a.pubDate) >= cutoff && a.title);
+
+  if (preferBroad) {
+    const broad = macroRelevant.filter(isBroadMarket);
+    // Only narrow to broad-market articles if there are enough to work with —
+    // otherwise fall through to the full mixed set rather than starving the model.
+    if (broad.length) macroRelevant = broad;
+  }
+  macroRelevant = macroRelevant.slice(0, 5);
+
   if (!macroRelevant.length) return null;
   const macroSentiments = await classifySentiment(apiKey, 'the broad US stock market', macroRelevant);
   const macroMatching = macroRelevant.filter((_, i) => macroSentiments[i] === direction);
@@ -191,7 +209,9 @@ export default async function handler(req, res) {
     if (isIndexMode) {
       // Index/market-wide requests (NASDAQ 100, watchlist mkt cap) go straight
       // to the macro tier — there's no single "company" catalyst to look for.
-      result = await macroExplain(apiKey, 'the broad US market', direction, pct, cutoff);
+      // preferBroad: favor genuinely market-wide drivers (Fed/inflation/oil/rates)
+      // over a single constituent's news, which reads poorly as an index-level reason.
+      result = await macroExplain(apiKey, 'the broad US market', direction, pct, cutoff, { preferBroad: true });
     } else {
       const nameVariants = STOCK_META[ticker];
       const subject = displayName(ticker);
