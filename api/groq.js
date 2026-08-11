@@ -254,9 +254,20 @@ export default async function handler(req, res) {
         }
       }
 
-      // Tier 2: broad market / sector fallback via QQQ's own news feed
+      // Tier 2: no company-specific catalyst found. Rather than forcing an LLM to
+      // manufacture a company-specific-sounding reason out of generic market news
+      // (this reliably produced either a leaked "I can't find anything" meta-comment
+      // or an unconvincing forced rationalization — e.g. attributing Mobileye's move
+      // to an unrelated Vanguard value-fund story), just show a short, honest,
+      // non-LLM label. No Groq call needed for this tier at all.
       if (!result) {
-        result = await macroExplain(apiKey, `${subject} (${ticker})`, direction, pct, cutoff);
+        result = {
+          text: direction === 'UP'
+            ? 'No company-specific news \u2014 tracking a broader market/sector rally.'
+            : 'No company-specific news \u2014 tracking a broader market/sector pullback.',
+          source: 'macro-generic',
+          articleIds: [],
+        };
       }
     }
   } catch (e) {
