@@ -1,25 +1,28 @@
 {
   "INTC": {
-    "text": "US government's decision not to participate in Intel's first stock sale since 1971 reportedly sparking concerns",
+    "text": "$20 billion stock offering at $95 a share sparking dilution concerns",
     "source": "stock",
     "articleIds": [
-      "be786c9a-0313-37b4-88d3-96a7b86926d7"
+      "e62806fd-a00d-3aab-8add-7a66bf40ad2a",
+      "97511840-6984-3910-87eb-6225ee3c881b",
+      "1659384b-5f18-359d-9f24-21ea92dbd3ac"
     ],
-    "updatedAt": "2026-08-11T17:53:36.249Z"
+    "updatedAt": "2026-08-11T18:53:53.749Z"
   },
   "AMD": {
+    "text": "Expected rapid growth in server CPU and data center businesses, driven by AI inference demand.",
+    "source": "stock",
+    "articleIds": [
+      "45af8795-08f8-3c64-942c-7ca3ef65756c",
+      "1da566c6-8e9f-3210-b10b-d1d6e68e1ed5"
+    ],
+    "updatedAt": "2026-08-11T18:53:58.733Z"
+  },
+  "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T17:53:40.822Z"
-  },
-  "NVDA": {
-    "text": "Launch of 30-billion-parameter Nemotron 3.5 Lightning model boosting investor confidence slightly today apparently.",
-    "source": "stock",
-    "articleIds": [
-      "3df8df52-0173-3ba4-a73e-7faed12f7dbc"
-    ],
-    "updatedAt": "2026-08-11T17:53:45.796Z"
+    "updatedAt": "2026-08-11T18:54:03.349Z"
   },
   "TSM": {
     "text": "Bernstein spotting a massive CPU opportunity and reignited tool demand from strong revenue.",
@@ -32,24 +35,25 @@
     "updatedAt": "2026-08-11T17:53:50.645Z"
   },
   "SNDK": {
-    "text": "Recent correction creating a more attractive entry valuation during a powerful growth cycle.",
+    "text": "Elon Musk's comments on memory as AI's biggest bottleneck and positive analyst upgrades.",
     "source": "stock",
     "articleIds": [
       "d22f3e9d-4a64-3f5e-b8ae-7a334f6b1951",
       "79eab6a0-0db6-3adc-ac80-030fcb6a6bc6",
       "98c7f782-5884-3212-8305-6ed7c8f4e98f",
-      "8ca87f75-07d2-3737-a7bf-fc69e0feacfa"
+      "8ca87f75-07d2-3737-a7bf-fc69e0feacfa",
+      "469c6e06-4f40-369f-9510-a956783a3162"
     ],
-    "updatedAt": "2026-08-11T17:53:55.536Z"
+    "updatedAt": "2026-08-11T18:54:13.312Z"
   },
   "MU": {
-    "text": "concerns about longer-term growth prospects and potential disruption from SpaceX's massive factory plans",
+    "text": "Concerns about the sustainability of sky-high margins in a typically cyclical business.",
     "source": "stock",
     "articleIds": [
-      "849539ac-a528-3036-8858-8d810611f4f9",
-      "9b52d8a2-c4ea-3ff8-af22-d66aae61b53f"
+      "94261b05-0288-3d65-a248-d76403e2cb46",
+      "849539ac-a528-3036-8858-8d810611f4f9"
     ],
-    "updatedAt": "2026-08-11T17:54:00.861Z"
+    "updatedAt": "2026-08-11T18:54:18.238Z"
   },
   "AVGO": {
     "text": "Widening competitive gap in AI data-center build-out due to differing business strategies.",
@@ -61,13 +65,15 @@
     "updatedAt": "2026-08-11T17:54:06.227Z"
   },
   "SPCX": {
-    "text": "Market has already factored attractive prospects into its price.",
+    "text": "Missed earnings expectations from AST, a major competitor to Starlink.",
     "source": "stock",
     "articleIds": [
-      "43751e86-ded0-3aa4-bddd-a40c06c61d5f",
-      "04dee042-f161-3391-a271-763b0d4712b5"
+      "9bfe79d2-4394-3526-81fd-cf3d125390ab",
+      "e68e96e3-9111-3ca5-83e3-ac60abae6791",
+      "1c9d4506-7c85-37e0-a401-eea926478b7d",
+      "ac580596-70ab-3cfe-9491-25632cecece2"
     ],
-    "updatedAt": "2026-08-11T17:54:10.919Z"
+    "updatedAt": "2026-08-11T18:54:27.945Z"
   },
   "MRVL": {
     "text": "Microsoft's AI silicon push and Maia 300 chip orders are driving Marvell's growth.",
@@ -91,7 +97,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T17:54:26.414Z"
+    "updatedAt": "2026-08-11T18:54:42.472Z"
   },
   "SKHY": {
     "text": "Resumption of China NAND plant operations after a 4-year pause.",
@@ -107,16 +113,15 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T17:54:36.314Z"
+    "updatedAt": "2026-08-11T18:54:51.883Z"
   },
   "005930.KS": {
-    "text": "Strong record foldable preorders and improved AI memory production yield.",
+    "text": "Strong early demand for new foldable phones and smartwatches with expanded AI tools.",
     "source": "stock",
     "articleIds": [
-      "1202dfb7-3e78-34b4-84fb-de803b11bc0b",
-      "ae12a82b-c381-35dd-bb05-6b65819df950"
+      "1202dfb7-3e78-34b4-84fb-de803b11bc0b"
     ],
-    "updatedAt": "2026-08-11T07:06:01.172Z"
+    "updatedAt": "2026-08-11T18:54:56.770Z"
   },
   "000660.KS": {
     "text": "Selloff after IPO is seen as a buying opportunity due to a potential gap created.",
