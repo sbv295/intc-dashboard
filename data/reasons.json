@@ -1,34 +1,31 @@
 {
   "INTC": {
-    "text": "increasing stock offering size to $20 billion, issuing 210.5 million shares at $95 each",
+    "text": "President's regret over hastily pulled Intel deal sparking uncertainty and investor concern today apparently",
     "source": "stock",
     "articleIds": [
-      "1659384b-5f18-359d-9f24-21ea92dbd3ac",
-      "e62806fd-a00d-3aab-8add-7a66bf40ad2a"
+      "cb40d239-3ef1-378a-9ab2-c284a2cc344d"
     ],
-    "updatedAt": "2026-08-11T10:44:55.228Z"
+    "updatedAt": "2026-08-11T11:40:01.173Z"
   },
   "AMD": {
-    "text": "Investors grew skeptical of AI spending.",
-    "source": "stock",
-    "articleIds": [
-      "d0f0f4b4-bf2b-3dc5-8e59-7d836af00fa5"
-    ],
-    "updatedAt": "2026-08-11T06:28:55.392Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T11:40:05.626Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T10:45:04.453Z"
+    "updatedAt": "2026-08-11T11:40:10.627Z"
   },
   "TSM": {
-    "text": "Investors reassessing semiconductor equipment company's long-term prospects and growth trajectory.",
+    "text": "Revenue uncertainty in 2028-29 and geopolitical concerns sparking investor caution and uncertainty.",
     "source": "stock",
     "articleIds": [
-      "fee16c14-79fb-3146-8343-68c186c42698"
+      "7d90f3e8-3e06-3d65-ad30-fc404bd4fdbb"
     ],
-    "updatedAt": "2026-08-11T10:24:33.751Z"
+    "updatedAt": "2026-08-11T11:40:16.108Z"
   },
   "SNDK": {
     "text": "Analysts see substantial upside and a buying opportunity due to robust AI memory demand.",
@@ -43,28 +40,25 @@
     "updatedAt": "2026-08-11T07:05:17.887Z"
   },
   "MU": {
-    "text": "Tight memory supply leading to a structural reset in earnings power.",
-    "source": "stock",
-    "articleIds": [
-      "a187304c-8db4-3f16-a850-3c4198d1ad6a"
-    ],
-    "updatedAt": "2026-08-11T10:45:19.144Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T11:40:25.559Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T10:45:23.639Z"
+    "updatedAt": "2026-08-11T11:40:30.041Z"
   },
   "SPCX": {
-    "text": "AI-driven growth and potential for hundreds of billions in gains.",
+    "text": "Investment firm Baron Capital's $1 billion additional investment in the company.",
     "source": "stock",
     "articleIds": [
       "bdcd2f64-4914-40b0-9c6f-d2a96a1cd81b",
-      "4279cd68-1d82-3abd-a954-754a7a4583be",
-      "785af49e-20fa-3f49-ac09-309de695bc6f"
+      "4279cd68-1d82-3abd-a954-754a7a4583be"
     ],
-    "updatedAt": "2026-08-11T06:36:07.182Z"
+    "updatedAt": "2026-08-11T11:40:34.815Z"
   },
   "MRVL": {
     "text": "Profit multiple sits below operating line due to non-operating income.",
@@ -108,7 +102,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T10:45:51.631Z"
+    "updatedAt": "2026-08-11T11:40:58.851Z"
   },
   "005930.KS": {
     "text": "Strong record foldable preorders and improved AI memory production yield.",
@@ -123,7 +117,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T10:46:00.828Z"
+    "updatedAt": "2026-08-11T11:41:08.423Z"
   },
   "INDEX": {
     "text": "Profit-taking in semiconductor funds after a $37 billion influx into QQQ.",
