@@ -1104,12 +1104,28 @@
             if (chgEl && prevClose) {
                 const pct = (price - prevClose) / prevClose * 100;
                 chgEl.innerHTML = `<span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
-                fetchIndexReason(pct, 'index-reason');
             }
         } catch(e) {}
         // Indices have no extended-hours data of their own — use QQQ (the standard NASDAQ-100
         // tracking ETF) as a pre/post-market movement proxy, clearly labeled as such.
         await fetchNasdaq100ExtendedProxy();
+        // The "why is it moving" reason is generated from QQQ's own news+move (not ^NDX's) —
+        // ^NDX has no ETF-style news coverage of its own, so its move ends up explained by
+        // whatever single constituent's news happens to dominate QQQ's feed that day.
+        await fetchQqqReasonPct();
+    }
+
+    async function fetchQqqReasonPct() {
+        try {
+            const url = `${YAHOO_BASE}QQQ?interval=1m&range=2d&includePrePost=true`;
+            const json = await yahooFetch(url);
+            const meta = json.chart.result[0].meta;
+            const price = meta.regularMarketPrice;
+            const prevClose = meta.previousClose || meta.chartPreviousClose;
+            if (price == null || !prevClose) return;
+            const pct = (price - prevClose) / prevClose * 100;
+            fetchIndexReason(pct, 'index-reason');
+        } catch (e) {}
     }
 
     // "Why is the market moving" for index/aggregate UI spots (NASDAQ 100, watchlist mkt

@@ -110,8 +110,8 @@ async function classifySentiment(apiKey, subject, articles) {
 
 async function generateSentence(apiKey, subject, direction, chgPct, articles) {
   const list = articles.map(a => `- [${a.pubDate}] ${a.title}\n  ${a.summary}`).join('\n');
-  const prompt = `Context: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nWrite the SHORTEST possible phrase (max 12 words) giving ONLY the causal reason, based only on these article(s). Do NOT restate the company/index name or generic words like "stock", "shares", "up", "down", "rises", "falls" \u2014 the reader already sees the name and direction elsewhere on the page. Start directly with the reason (e.g. "$15B stock sale sparking dilution concerns", not "Down due to a $15B stock sale"). Output ONLY the phrase, nothing else.`;
-  return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2, max_tokens: 40 });
+  const prompt = `Context: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nWrite a phrase targeting 15 words (a little shorter or longer is fine, but stay concise) giving ONLY the causal reason, based only on these article(s). Do NOT restate the company/index name or generic words like "stock", "shares", "up", "down", "rises", "falls" \u2014 the reader already sees the name and direction elsewhere on the page. Start directly with the reason (e.g. "$15B stock sale sparking dilution concerns as it looks to fund its aggressive AI data-center build-out", not "Down due to a $15B stock sale"). Output ONLY the phrase, nothing else.`;
+  return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2, max_tokens: 55 });
 }
 
 // Shared macro/sector-wide explanation via QQQ's own news feed. Used both as the
