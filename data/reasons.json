@@ -1,15 +1,12 @@
 {
   "INTC": {
-    "text": "$20 billion stock sale sparking dilution concerns at $95 per share.",
+    "text": "increasing stock offering size to $20 billion, issuing 210.5 million shares at $95 each",
     "source": "stock",
     "articleIds": [
-      "d848ddb3-f2fa-479f-8fb8-cc514186d11a",
       "1659384b-5f18-359d-9f24-21ea92dbd3ac",
-      "e62806fd-a00d-3aab-8add-7a66bf40ad2a",
-      "5be42b1a-e260-3bc2-84ce-fd0ef123f9f2",
-      "8c95898e-f9d4-3640-96ab-35c4538ea298"
+      "e62806fd-a00d-3aab-8add-7a66bf40ad2a"
     ],
-    "updatedAt": "2026-08-11T10:27:16.275Z"
+    "updatedAt": "2026-08-11T10:44:55.228Z"
   },
   "AMD": {
     "text": "Investors grew skeptical of AI spending.",
@@ -23,7 +20,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T10:27:25.771Z"
+    "updatedAt": "2026-08-11T10:45:04.453Z"
   },
   "TSM": {
     "text": "Investors reassessing semiconductor equipment company's long-term prospects and growth trajectory.",
@@ -46,19 +43,18 @@
     "updatedAt": "2026-08-11T07:05:17.887Z"
   },
   "MU": {
-    "text": "Memory-market supply constraints persist due to AI-driven demand outpacing manufacturing capacity.",
+    "text": "Tight memory supply leading to a structural reset in earnings power.",
     "source": "stock",
     "articleIds": [
-      "03604bca-3561-32f9-96d5-8ac943d3b680",
       "a187304c-8db4-3f16-a850-3c4198d1ad6a"
     ],
-    "updatedAt": "2026-08-11T10:24:42.129Z"
+    "updatedAt": "2026-08-11T10:45:19.144Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T10:27:45.853Z"
+    "updatedAt": "2026-08-11T10:45:23.639Z"
   },
   "SPCX": {
     "text": "AI-driven growth and potential for hundreds of billions in gains.",
@@ -100,18 +96,19 @@
     "updatedAt": "2026-08-11T07:05:47.328Z"
   },
   "SKHY": {
-    "text": "Closing in on Micron's margins, losing market share in AI memory.",
+    "text": "Closing in on Micron's margins in the AI memory market with a 58% share.",
     "source": "stock",
     "articleIds": [
+      "c1bb7c56-9dcc-3c15-96ba-649cfcb91afd",
       "d09e24b0-7e26-3210-83c5-4afa678f154c"
     ],
-    "updatedAt": "2026-08-11T10:28:11.706Z"
+    "updatedAt": "2026-08-11T10:45:47.291Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T10:28:15.988Z"
+    "updatedAt": "2026-08-11T10:45:51.631Z"
   },
   "005930.KS": {
     "text": "Strong record foldable preorders and improved AI memory production yield.",
@@ -126,7 +123,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T10:28:25.494Z"
+    "updatedAt": "2026-08-11T10:46:00.828Z"
   },
   "INDEX": {
     "text": "Profit-taking in semiconductor funds after a $37 billion influx into QQQ.",
