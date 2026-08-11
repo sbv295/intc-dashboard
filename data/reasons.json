@@ -1,9 +1,13 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T15:55:12.350Z"
+    "text": "Increased size of its stock offering to $20 billion from previously announced $15 billion",
+    "source": "stock",
+    "articleIds": [
+      "fe6e5f58-1604-448f-ab51-cce440c9e0ee",
+      "92186b98-8ae0-327b-b92e-5e1498bfcc29",
+      "1659384b-5f18-359d-9f24-21ea92dbd3ac"
+    ],
+    "updatedAt": "2026-08-11T16:52:38.600Z"
   },
   "AMD": {
     "text": "Concerns over revenue mix and lower-than-average gross margin on accelerator ramp growth.",
@@ -14,14 +18,13 @@
     "updatedAt": "2026-08-11T15:55:17.333Z"
   },
   "NVDA": {
-    "text": "$500 billion in third-party capital for AI projects sparking investor confidence and funding expansion.",
+    "text": "Strong revenue growth and potential to defy gravity with three specific catalysts emerging.",
     "source": "stock",
     "articleIds": [
-      "44e61101-c03f-3de5-8929-7a8f0fe11088",
-      "bdfeca83-fe83-3de6-a2ac-2ce5b6ac12f2",
-      "48ca3c90-5c78-3397-9b9c-21b80f939537"
+      "49ab9669-0701-3740-a714-027c11d8d2a1",
+      "0b93bf95-19eb-36a1-b2c3-1759ce89d8cf"
     ],
-    "updatedAt": "2026-08-11T15:55:22.552Z"
+    "updatedAt": "2026-08-11T16:52:48.376Z"
   },
   "TSM": {
     "text": "Bernstein spotting massive CPU opportunity and robust AI demand driving revenue growth.",
@@ -53,18 +56,21 @@
     "updatedAt": "2026-08-11T15:55:37.892Z"
   },
   "AVGO": {
-    "text": "Marvell Technology's expanded NVIDIA alliance and investment posing a challenge to AVGO.",
+    "text": "Quietly losing competitive ground in AI revenue and customer acquisition to Nvidia.",
     "source": "stock",
     "articleIds": [
-      "1655d1ca-f4cf-371e-96e3-e3ba52ed5603"
+      "ed376c50-c594-3fba-baeb-a5a2cb4b1606",
+      "3ed8cf15-6131-346b-bcd6-1fa543b4a128",
+      "1655d1ca-f4cf-371e-96e3-e3ba52ed5603",
+      "7e4c0320-b57d-341e-a6b4-432cc0e39ff5"
     ],
-    "updatedAt": "2026-08-11T15:55:42.661Z"
+    "updatedAt": "2026-08-11T16:53:07.797Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T15:55:47.355Z"
+    "updatedAt": "2026-08-11T16:53:13.543Z"
   },
   "MRVL": {
     "text": "Expanded NVIDIA alliance and potential Microsoft chip order sparking growth expectations.",
@@ -87,10 +93,13 @@
     "updatedAt": "2026-08-11T14:16:49.779Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T15:56:02.121Z"
+    "text": "Lower Q4 revenue guidance and lower earnings per share than a year earlier.",
+    "source": "stock",
+    "articleIds": [
+      "fb3ea9f5-db1f-3e87-8929-08770f223665",
+      "2006930d-605e-3a01-b8bb-99dec5085132"
+    ],
+    "updatedAt": "2026-08-11T16:53:27.568Z"
   },
   "SKHY": {
     "text": "Resumption of work at its Dalian production base in China after a 4-year pause.",
@@ -105,7 +114,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T15:56:11.388Z"
+    "updatedAt": "2026-08-11T16:53:36.765Z"
   },
   "005930.KS": {
     "text": "Strong record foldable preorders and improved AI memory production yield.",
