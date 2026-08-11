@@ -1,81 +1,79 @@
 {
   "INTC": {
-    "text": "$15 billion stock sale sparking institutional interest despite initial retail investor skepticism.",
-    "source": "stock",
-    "articleIds": [
-      "70338e64-27be-39b9-81d5-28c6ae92303a",
-      "e5fa4cb7-21ca-3da8-a343-ea53bb6d1ed3"
-    ],
-    "updatedAt": "2026-08-11T14:16:05.612Z"
-  },
-  "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T14:16:10.761Z"
+    "updatedAt": "2026-08-11T15:55:12.350Z"
+  },
+  "AMD": {
+    "text": "Concerns over revenue mix and lower-than-average gross margin on accelerator ramp growth.",
+    "source": "stock",
+    "articleIds": [
+      "e0c3e1e7-6c0f-3c75-9f7d-743a0159adbb"
+    ],
+    "updatedAt": "2026-08-11T15:55:17.333Z"
   },
   "NVDA": {
-    "text": "AI infrastructure deal and $500 billion financing push for artificial intelligence infrastructure partnership",
+    "text": "$500 billion in third-party capital for AI projects sparking investor confidence and funding expansion.",
     "source": "stock",
     "articleIds": [
-      "7e4c0320-b57d-341e-a6b4-432cc0e39ff5",
-      "8139e863-5e0d-3ced-9ad5-08fd995642ac",
-      "378c9bf7-25da-3369-b9ef-4896552e21ca"
+      "44e61101-c03f-3de5-8929-7a8f0fe11088",
+      "bdfeca83-fe83-3de6-a2ac-2ce5b6ac12f2",
+      "48ca3c90-5c78-3397-9b9c-21b80f939537"
     ],
-    "updatedAt": "2026-08-11T14:16:15.549Z"
+    "updatedAt": "2026-08-11T15:55:22.552Z"
   },
   "TSM": {
-    "text": "$4.7 billion joint venture for next-generation image sensors with Sony sparking investment optimism",
+    "text": "Bernstein spotting massive CPU opportunity and robust AI demand driving revenue growth.",
     "source": "stock",
     "articleIds": [
-      "56250a06-7cb4-3007-872f-ddf13895ed7c",
-      "0c8a9e2e-cb20-34e8-bb23-094ba4b16514",
-      "71eb4aec-6a88-30ac-a6db-7f57fa1a6e65",
-      "79572203-315b-3242-85ac-0f3cab5c220b"
+      "14fc6f73-db3a-374a-9dc6-31ec308b3487",
+      "96112bd3-e9e8-3459-a834-ba9b23ee34fd",
+      "7da30c5c-0701-3fbe-8fac-b37f84f44eef",
+      "bfd74ba8-a4c8-3f17-b3f7-71d1cb74b4ed",
+      "56250a06-7cb4-3007-872f-ddf13895ed7c"
     ],
-    "updatedAt": "2026-08-11T14:16:20.291Z"
+    "updatedAt": "2026-08-11T15:55:27.772Z"
   },
   "SNDK": {
-    "text": "Analysts viewing recent pullback as a buying opportunity due to robust AI memory demand.",
+    "text": "Attractive entry valuation and rising AI storage demand reframing recent correction.",
     "source": "stock",
     "articleIds": [
-      "8ca87f75-07d2-3737-a7bf-fc69e0feacfa",
-      "e1fa92c3-b8f1-3ca7-84c7-346efd1a77c2",
-      "f6486634-a74d-3c1a-acd0-02f384413c54",
-      "8a55fc76-0073-3a8a-ba5c-9d6255be973a",
-      "b6f50b40-0805-3292-95f7-ba2def90e663"
+      "79eab6a0-0db6-3adc-ac80-030fcb6a6bc6",
+      "98c7f782-5884-3212-8305-6ed7c8f4e98f"
     ],
-    "updatedAt": "2026-08-11T12:50:09.874Z"
+    "updatedAt": "2026-08-11T15:55:32.817Z"
   },
   "MU": {
-    "text": "Volatility is par for the course with the memory company's performance.",
+    "text": "investors worried about the company's longer-term growth prospects",
     "source": "stock",
     "articleIds": [
-      "d7c97349-1c95-3edc-ac34-1dbfa96ce36f"
+      "9b52d8a2-c4ea-3ff8-af22-d66aae61b53f"
     ],
-    "updatedAt": "2026-08-11T12:50:14.827Z"
+    "updatedAt": "2026-08-11T15:55:37.892Z"
   },
   "AVGO": {
+    "text": "Marvell Technology's expanded NVIDIA alliance and investment posing a challenge to AVGO.",
+    "source": "stock",
+    "articleIds": [
+      "1655d1ca-f4cf-371e-96e3-e3ba52ed5603"
+    ],
+    "updatedAt": "2026-08-11T15:55:42.661Z"
+  },
+  "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T14:16:34.641Z"
-  },
-  "SPCX": {
-    "text": "retail investors ending their 59-day buying spree after reclaiming IPO price",
-    "source": "stock",
-    "articleIds": [
-      "7f080ae2-46a9-4b2e-9299-053175eb5e8e"
-    ],
-    "updatedAt": "2026-08-11T14:16:39.688Z"
+    "updatedAt": "2026-08-11T15:55:47.355Z"
   },
   "MRVL": {
-    "text": "AI interconnect growth expected to deliver earnings and justify premium valuation.",
+    "text": "Expanded NVIDIA alliance and potential Microsoft chip order sparking growth expectations.",
     "source": "stock",
     "articleIds": [
-      "128d423d-4793-3c16-9478-70d048230086"
+      "7da30c5c-0701-3fbe-8fac-b37f84f44eef",
+      "1655d1ca-f4cf-371e-96e3-e3ba52ed5603"
     ],
-    "updatedAt": "2026-08-11T14:16:44.553Z"
+    "updatedAt": "2026-08-11T15:55:52.349Z"
   },
   "ARM": {
     "text": "Accelerating AI adoption and growing demand for its chip architecture.",
@@ -92,23 +90,22 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T14:16:54.388Z"
+    "updatedAt": "2026-08-11T15:56:02.121Z"
   },
   "SKHY": {
-    "text": "Resumption of work at its Dalian China NAND plant after a 4-year pause.",
+    "text": "Resumption of work at its Dalian production base in China after a 4-year pause.",
     "source": "stock",
     "articleIds": [
       "0dd9e658-9ecb-3845-9891-c170c5c87228",
-      "5a45c889-7f7e-3dfe-a01c-3e53e3ce321e",
-      "c1bb7c56-9dcc-3c15-96ba-649cfcb91afd"
+      "5a45c889-7f7e-3dfe-a01c-3e53e3ce321e"
     ],
-    "updatedAt": "2026-08-11T14:16:59.090Z"
+    "updatedAt": "2026-08-11T15:56:07.054Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T14:17:03.357Z"
+    "updatedAt": "2026-08-11T15:56:11.388Z"
   },
   "005930.KS": {
     "text": "Strong record foldable preorders and improved AI memory production yield.",
@@ -128,12 +125,12 @@
     "updatedAt": "2026-08-11T12:50:59.172Z"
   },
   "INDEX": {
-    "text": "Stalled US-Iran talks and shifting Federal Reserve rate expectations.",
+    "text": "Investors booked profits in semiconductor funds after a large influx of capital into QQQ.",
     "source": "macro",
     "articleIds": [
-      "36033e41-dd61-3043-a132-398cb4c41bdc",
-      "46c26e57-9b95-3b85-9e2e-ad0864fad447"
+      "e8602c43-b17a-31d7-ab95-2a81cb9493eb",
+      "7a52ed18-2d93-33fd-ae07-1c1ce70d9dda"
     ],
-    "updatedAt": "2026-08-11T14:17:18.229Z"
+    "updatedAt": "2026-08-11T15:56:25.757Z"
   }
 }
