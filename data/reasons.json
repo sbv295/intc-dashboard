@@ -1,14 +1,15 @@
 {
   "INTC": {
-    "text": "$20 billion public offering of 210.5 million shares priced at $95 each sparking dilution concerns",
+    "text": "$20 billion stock sale sparking dilution concerns at $95 per share.",
     "source": "stock",
     "articleIds": [
+      "d848ddb3-f2fa-479f-8fb8-cc514186d11a",
       "1659384b-5f18-359d-9f24-21ea92dbd3ac",
       "e62806fd-a00d-3aab-8add-7a66bf40ad2a",
       "5be42b1a-e260-3bc2-84ce-fd0ef123f9f2",
       "8c95898e-f9d4-3640-96ab-35c4538ea298"
     ],
-    "updatedAt": "2026-08-11T10:24:21.243Z"
+    "updatedAt": "2026-08-11T10:27:16.275Z"
   },
   "AMD": {
     "text": "Investors grew skeptical of AI spending.",
@@ -19,13 +20,10 @@
     "updatedAt": "2026-08-11T06:28:55.392Z"
   },
   "NVDA": {
-    "text": "No specific information about Nvidia is mentioned in the provided articles.",
-    "source": "macro",
-    "articleIds": [
-      "d9ee0b71-eca1-3e14-9fc7-1ae9433fcf86",
-      "c02915e3-e6fc-36ca-8394-89795338ebeb"
-    ],
-    "updatedAt": "2026-08-11T08:07:06.248Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T10:27:25.771Z"
   },
   "TSM": {
     "text": "Investors reassessing semiconductor equipment company's long-term prospects and growth trajectory.",
@@ -57,13 +55,10 @@
     "updatedAt": "2026-08-11T10:24:42.129Z"
   },
   "AVGO": {
-    "text": "No specific causal reason mentioned for Broadcom's move.",
-    "source": "macro",
-    "articleIds": [
-      "d9ee0b71-eca1-3e14-9fc7-1ae9433fcf86",
-      "c02915e3-e6fc-36ca-8394-89795338ebeb"
-    ],
-    "updatedAt": "2026-08-11T09:55:26.055Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T10:27:45.853Z"
   },
   "SPCX": {
     "text": "AI-driven growth and potential for hundreds of billions in gains.",
@@ -105,21 +100,18 @@
     "updatedAt": "2026-08-11T07:05:47.328Z"
   },
   "SKHY": {
-    "text": "Closing in on Micron in AI memory market share.",
+    "text": "Closing in on Micron's margins, losing market share in AI memory.",
     "source": "stock",
     "articleIds": [
-      "c1bb7c56-9dcc-3c15-96ba-649cfcb91afd",
       "d09e24b0-7e26-3210-83c5-4afa678f154c"
     ],
-    "updatedAt": "2026-08-11T10:25:07.005Z"
+    "updatedAt": "2026-08-11T10:28:11.706Z"
   },
   "MBLY": {
-    "text": "Investors are drawn to a Vanguard fund's outperformance in a year of stagnant growth.",
-    "source": "macro",
-    "articleIds": [
-      "d24bc6f6-41a1-33f0-9a2f-5464d3e71c1e"
-    ],
-    "updatedAt": "2026-08-11T06:36:30.868Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T10:28:15.988Z"
   },
   "005930.KS": {
     "text": "Strong record foldable preorders and improved AI memory production yield.",
@@ -131,12 +123,10 @@
     "updatedAt": "2026-08-11T07:06:01.172Z"
   },
   "000660.KS": {
-    "text": "Flat growth in 2026 boosts investors seeking value, as SK hynix's fundamentals align with this trend.",
-    "source": "macro",
-    "articleIds": [
-      "d24bc6f6-41a1-33f0-9a2f-5464d3e71c1e"
-    ],
-    "updatedAt": "2026-08-11T07:06:06.058Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T10:28:25.494Z"
   },
   "INDEX": {
     "text": "Profit-taking in semiconductor funds after a $37 billion influx into QQQ.",
