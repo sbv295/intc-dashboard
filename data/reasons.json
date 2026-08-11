@@ -1,11 +1,13 @@
 {
   "INTC": {
-    "text": "Investors are shifting focus to value funds as growth remains flat in 2026.",
-    "source": "macro",
+    "text": "$15B stock sale sparking dilution concerns as it funds its AI build-out efforts.",
+    "source": "stock",
     "articleIds": [
-      "d24bc6f6-41a1-33f0-9a2f-5464d3e71c1e"
+      "b780e5d6-e301-3e47-a7ee-503769f8fad0",
+      "772cb4d6-660f-3981-9dd7-318836faa2d7",
+      "00c1dddc-6510-39ea-96fd-86fe337bb981"
     ],
-    "updatedAt": "2026-08-11T06:28:54.792Z"
+    "updatedAt": "2026-08-11T07:04:58.693Z"
   },
   "AMD": {
     "text": "Investors grew skeptical of AI spending.",
@@ -16,24 +18,34 @@
     "updatedAt": "2026-08-11T06:28:55.392Z"
   },
   "NVDA": {
-    "text": "$500 billion financing venture with Wall Street giants sparks optimism about AI infrastructure growth.",
+    "text": "Capital raise could be a \"double-edged\" sword for Nvidia.",
     "source": "stock",
     "articleIds": [
-      "16015d38-d758-3419-8588-7649d0539615",
-      "f4df4593-78f1-345e-88d5-946bcfaa2450"
+      "16015d38-d758-3419-8588-7649d0539615"
     ],
-    "updatedAt": "2026-08-11T06:28:56.188Z"
+    "updatedAt": "2026-08-11T07:05:08.543Z"
   },
   "TSM": {
-    "text": "Strong demand for AI chips drives growth.",
+    "text": "Investors reevaluate semiconductor equipment company's long-term prospects amidst intense competition.",
     "source": "stock",
     "articleIds": [
-      "53d3f650-b7e2-3e26-8282-03e50cac8d2d",
-      "f4a2cd6d-e861-305e-b2e4-431697498054"
+      "fee16c14-79fb-3146-8343-68c186c42698"
     ],
-    "updatedAt": "2026-08-11T06:28:57.327Z"
+    "updatedAt": "2026-08-11T07:05:13.307Z"
   },
   "SNDK": {
+    "text": "Analysts see substantial upside and a buying opportunity due to robust AI memory demand.",
+    "source": "stock",
+    "articleIds": [
+      "e1fa92c3-b8f1-3ca7-84c7-346efd1a77c2",
+      "f6486634-a74d-3c1a-acd0-02f384413c54",
+      "8a55fc76-0073-3a8a-ba5c-9d6255be973a",
+      "b6f50b40-0805-3292-95f7-ba2def90e663",
+      "69e572b0-8ca1-30e1-a9ea-c384ebf51a7f"
+    ],
+    "updatedAt": "2026-08-11T07:05:17.887Z"
+  },
+  "MU": {
     "text": "Semiconductor sector profit-taking amid strong inflows into broader tech funds.",
     "source": "macro",
     "articleIds": [
@@ -42,29 +54,18 @@
       "e8602c43-b17a-31d7-ab95-2a81cb9493eb",
       "c02915e3-e6fc-36ca-8394-89795338ebeb"
     ],
-    "updatedAt": "2026-08-11T06:35:52.515Z"
-  },
-  "MU": {
-    "text": "Tighter supply for high-bandwidth memory driven by artificial intelligence demand persists beyond 2027.",
-    "source": "stock",
-    "articleIds": [
-      "03604bca-3561-32f9-96d5-8ac943d3b680",
-      "a187304c-8db4-3f16-a850-3c4198d1ad6a",
-      "95a101d4-a40e-3ab3-9f32-49ac1a539958",
-      "d09e24b0-7e26-3210-83c5-4afa678f154c",
-      "5a6aca27-4154-3717-8793-799f5623bc4b"
-    ],
-    "updatedAt": "2026-08-11T06:35:57.256Z"
+    "updatedAt": "2026-08-11T07:05:23.470Z"
   },
   "AVGO": {
-    "text": "Faster vDefend deployment and enhanced security features fend off Nutanix and IBM competition.",
-    "source": "stock",
+    "text": "Semiconductor sector profit-taking amid strong inflows into broader tech funds.",
+    "source": "macro",
     "articleIds": [
-      "aaf2a695-a3dc-3c7c-b1bd-c625aaa89166",
-      "ffba78bc-c285-31b0-b290-a5f757accff7",
-      "0819ff3a-3bf8-3f17-a5df-855e75803d6b"
+      "d9ee0b71-eca1-3e14-9fc7-1ae9433fcf86",
+      "6cead002-01bf-3b2f-8d3f-c0385d7e97eb",
+      "e8602c43-b17a-31d7-ab95-2a81cb9493eb",
+      "c02915e3-e6fc-36ca-8394-89795338ebeb"
     ],
-    "updatedAt": "2026-08-11T06:28:59.744Z"
+    "updatedAt": "2026-08-11T07:05:28.324Z"
   },
   "SPCX": {
     "text": "AI-driven growth and potential for hundreds of billions in gains.",
@@ -77,29 +78,33 @@
     "updatedAt": "2026-08-11T06:36:07.182Z"
   },
   "MRVL": {
-    "text": "AI interconnect growth potential justifying its premium valuation.",
+    "text": "Profit multiple sits below operating line due to non-operating income.",
     "source": "stock",
     "articleIds": [
-      "128d423d-4793-3c16-9478-70d048230086"
+      "e41c413f-aeaf-317a-be44-dac7d138f0cd",
+      "a839167c-b0df-3ecc-8c09-50d7b84703be"
     ],
-    "updatedAt": "2026-08-11T06:29:01.174Z"
+    "updatedAt": "2026-08-11T07:05:37.922Z"
   },
   "ARM": {
-    "text": "Strong Q1 2026 results and embedded AI tools deal.",
+    "text": "Federal scrutiny and volatility are causing ARM's revenue growth trajectory to battle volatility.",
     "source": "stock",
     "articleIds": [
-      "9326d252-f313-3e53-a5ef-ddf245593b09",
-      "f36f48fa-6b78-3999-a79b-2c572cbe8017"
+      "936d666e-2fce-37dc-a449-2e29add29196",
+      "671ba221-8552-3ee2-9bbb-1411584c1117",
+      "286e9b4c-8d97-3c00-adea-ef4decf81a8a"
     ],
-    "updatedAt": "2026-08-11T06:36:16.534Z"
+    "updatedAt": "2026-08-11T07:05:42.682Z"
   },
   "QCOM": {
-    "text": "Investors are drawn to its aggressive AI data-center build-out.",
-    "source": "macro",
+    "text": "Lower-than-expected Q4 revenue guidance of $9.7b to $10.5b.",
+    "source": "stock",
     "articleIds": [
-      "d24bc6f6-41a1-33f0-9a2f-5464d3e71c1e"
+      "fb3ea9f5-db1f-3e87-8929-08770f223665",
+      "2006930d-605e-3a01-b8bb-99dec5085132",
+      "b9fe635d-a7ec-3d6a-98a2-afee7f51f639"
     ],
-    "updatedAt": "2026-08-11T06:36:21.480Z"
+    "updatedAt": "2026-08-11T07:05:47.328Z"
   },
   "SKHY": {
     "text": "Closing in on Micron's margins in AI memory market.",
@@ -118,28 +123,31 @@
     "updatedAt": "2026-08-11T06:36:30.868Z"
   },
   "005930.KS": {
-    "text": "Government backing for its $576 billion chip push sparks investor optimism and renewed growth expectations.",
+    "text": "Strong record foldable preorders and improved AI memory production yield.",
     "source": "stock",
     "articleIds": [
-      "abe1fcba-025c-37ea-8d76-1fb727b8e4ac",
-      "213c622b-0def-3618-ad40-1ad34261d975"
+      "1202dfb7-3e78-34b4-84fb-de803b11bc0b",
+      "ae12a82b-c381-35dd-bb05-6b65819df950"
     ],
-    "updatedAt": "2026-08-11T06:36:35.634Z"
+    "updatedAt": "2026-08-11T07:06:01.172Z"
   },
   "000660.KS": {
-    "text": "Fears of being surpassed by Micron in AI memory market share.",
-    "source": "stock",
-    "articleIds": [
-      "d09e24b0-7e26-3210-83c5-4afa678f154c"
-    ],
-    "updatedAt": "2026-08-11T06:36:40.201Z"
-  },
-  "INDEX": {
-    "text": "Historical momentum trends, shifting Federal Reserve rate expectations, and earnings beats.",
+    "text": "Flat growth in 2026 boosts investors seeking value, as SK hynix's fundamentals align with this trend.",
     "source": "macro",
     "articleIds": [
-      "46c26e57-9b95-3b85-9e2e-ad0864fad447"
+      "d24bc6f6-41a1-33f0-9a2f-5464d3e71c1e"
     ],
-    "updatedAt": "2026-08-11T06:36:44.833Z"
+    "updatedAt": "2026-08-11T07:06:06.058Z"
+  },
+  "INDEX": {
+    "text": "Profit-taking in semiconductor funds after a $37 billion influx into QQQ.",
+    "source": "macro",
+    "articleIds": [
+      "e8602c43-b17a-31d7-ab95-2a81cb9493eb",
+      "7a52ed18-2d93-33fd-ae07-1c1ce70d9dda",
+      "5bb63143-919d-3f53-b9f4-28c6f4f76284",
+      "cfc2c024-662b-34ee-896c-19b5be524ce5"
+    ],
+    "updatedAt": "2026-08-11T07:06:10.960Z"
   }
 }
