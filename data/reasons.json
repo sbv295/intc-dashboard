@@ -1,13 +1,15 @@
 {
   "INTC": {
-    "text": "$15B stock sale sparking dilution concerns as it funds its AI build-out efforts.",
+    "text": "$20 billion stock offering and foundry losses sparking dilution and financial concerns.",
     "source": "stock",
     "articleIds": [
-      "b780e5d6-e301-3e47-a7ee-503769f8fad0",
-      "772cb4d6-660f-3981-9dd7-318836faa2d7",
-      "00c1dddc-6510-39ea-96fd-86fe337bb981"
+      "5be42b1a-e260-3bc2-84ce-fd0ef123f9f2",
+      "8c95898e-f9d4-3640-96ab-35c4538ea298",
+      "8afdb7dc-d35c-39bd-ba8c-995c2af714a6",
+      "16015d38-d758-3419-8588-7649d0539615",
+      "b780e5d6-e301-3e47-a7ee-503769f8fad0"
     ],
-    "updatedAt": "2026-08-11T07:04:58.693Z"
+    "updatedAt": "2026-08-11T08:06:56.127Z"
   },
   "AMD": {
     "text": "Investors grew skeptical of AI spending.",
@@ -18,20 +20,22 @@
     "updatedAt": "2026-08-11T06:28:55.392Z"
   },
   "NVDA": {
-    "text": "Capital raise could be a \"double-edged\" sword for Nvidia.",
-    "source": "stock",
+    "text": "No specific information about Nvidia is mentioned in the provided articles.",
+    "source": "macro",
     "articleIds": [
-      "16015d38-d758-3419-8588-7649d0539615"
+      "d9ee0b71-eca1-3e14-9fc7-1ae9433fcf86",
+      "c02915e3-e6fc-36ca-8394-89795338ebeb"
     ],
-    "updatedAt": "2026-08-11T07:05:08.543Z"
+    "updatedAt": "2026-08-11T08:07:06.248Z"
   },
   "TSM": {
-    "text": "Investors reevaluate semiconductor equipment company's long-term prospects amidst intense competition.",
-    "source": "stock",
+    "text": "No specific information about TSMC is mentioned in the provided articles.",
+    "source": "macro",
     "articleIds": [
-      "fee16c14-79fb-3146-8343-68c186c42698"
+      "d9ee0b71-eca1-3e14-9fc7-1ae9433fcf86",
+      "c02915e3-e6fc-36ca-8394-89795338ebeb"
     ],
-    "updatedAt": "2026-08-11T07:05:13.307Z"
+    "updatedAt": "2026-08-11T08:07:11.737Z"
   },
   "SNDK": {
     "text": "Analysts see substantial upside and a buying opportunity due to robust AI memory demand.",
