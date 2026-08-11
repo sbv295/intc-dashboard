@@ -1,1 +1,124 @@
-{}
+{
+  "INTC": {
+    "text": "Investors are shifting focus to value funds as growth remains flat in 2026.",
+    "source": "macro",
+    "articleIds": [
+      "d24bc6f6-41a1-33f0-9a2f-5464d3e71c1e"
+    ],
+    "updatedAt": "2026-08-11T06:28:54.792Z"
+  },
+  "AMD": {
+    "text": "Investors grew skeptical of AI spending.",
+    "source": "stock",
+    "articleIds": [
+      "d0f0f4b4-bf2b-3dc5-8e59-7d836af00fa5"
+    ],
+    "updatedAt": "2026-08-11T06:28:55.392Z"
+  },
+  "NVDA": {
+    "text": "$500 billion financing venture with Wall Street giants sparks optimism about AI infrastructure growth.",
+    "source": "stock",
+    "articleIds": [
+      "16015d38-d758-3419-8588-7649d0539615",
+      "f4df4593-78f1-345e-88d5-946bcfaa2450"
+    ],
+    "updatedAt": "2026-08-11T06:28:56.188Z"
+  },
+  "TSM": {
+    "text": "Strong demand for AI chips drives growth.",
+    "source": "stock",
+    "articleIds": [
+      "53d3f650-b7e2-3e26-8282-03e50cac8d2d",
+      "f4a2cd6d-e861-305e-b2e4-431697498054"
+    ],
+    "updatedAt": "2026-08-11T06:28:57.327Z"
+  },
+  "SNDK": {
+    "text": "Jefferies downgraded Apple to Underperform and slashed price target to $263.66.",
+    "source": "stock",
+    "articleIds": [
+      "0d7005de-affb-3cd1-bc11-e5ad6f9e63ce"
+    ],
+    "updatedAt": "2026-08-11T06:28:58.100Z"
+  },
+  "MU": {
+    "text": "Artificial intelligence driven demand outpacing industry's ability to add manufacturing capacity.",
+    "source": "stock",
+    "articleIds": [
+      "03604bca-3561-32f9-96d5-8ac943d3b680",
+      "95a101d4-a40e-3ab3-9f32-49ac1a539958",
+      "d09e24b0-7e26-3210-83c5-4afa678f154c",
+      "5a6aca27-4154-3717-8793-799f5623bc4b"
+    ],
+    "updatedAt": "2026-08-11T06:28:58.793Z"
+  },
+  "AVGO": {
+    "text": "Faster vDefend deployment and enhanced security features fend off Nutanix and IBM competition.",
+    "source": "stock",
+    "articleIds": [
+      "aaf2a695-a3dc-3c7c-b1bd-c625aaa89166",
+      "ffba78bc-c285-31b0-b290-a5f757accff7",
+      "0819ff3a-3bf8-3f17-a5df-855e75803d6b"
+    ],
+    "updatedAt": "2026-08-11T06:28:59.744Z"
+  },
+  "SPCX": {
+    "text": "AI-driven growth and strategic investments fueling significant gains.",
+    "source": "stock",
+    "articleIds": [
+      "bdcd2f64-4914-40b0-9c6f-d2a96a1cd81b",
+      "785af49e-20fa-3f49-ac09-309de695bc6f"
+    ],
+    "updatedAt": "2026-08-11T06:29:00.358Z"
+  },
+  "MRVL": {
+    "text": "AI interconnect growth potential justifying its premium valuation.",
+    "source": "stock",
+    "articleIds": [
+      "128d423d-4793-3c16-9478-70d048230086"
+    ],
+    "updatedAt": "2026-08-11T06:29:01.174Z"
+  },
+  "ARM": {
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T06:29:01.509Z"
+  },
+  "QCOM": {
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T06:29:01.874Z"
+  },
+  "SKHY": {
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T06:29:02.198Z"
+  },
+  "MBLY": {
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T06:29:02.713Z"
+  },
+  "005930.KS": {
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T06:29:03.127Z"
+  },
+  "000660.KS": {
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T06:29:03.757Z"
+  },
+  "INDEX": {
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-08-11T06:29:04.182Z"
+  }
+}
