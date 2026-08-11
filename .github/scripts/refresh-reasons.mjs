@@ -45,14 +45,18 @@ function sameArticleSet(a, b) {
 // Only overwrite a stored entry when the new result is backed by a genuinely
 // different set of articles. A "no catalyst" or failed call never downgrades
 // an existing good entry — that's the actual cause of the old flakiness.
+// `degraded` results (Groq rate-limited / errored mid-pipeline) are treated the
+// same as a failed fetch — never trusted as ground truth, never used to overwrite.
 function mergeEntry(prev, fresh) {
-  if (!fresh) return prev || null;
+  if (!fresh || fresh.degraded) return prev || null;
   if (fresh.articleIds?.length) {
     if (prev && sameArticleSet(prev.articleIds, fresh.articleIds)) return prev;
     return { text: fresh.text, source: fresh.source, articleIds: fresh.articleIds, updatedAt: new Date().toISOString() };
   }
   return prev || { text: fresh.text, source: fresh.source, articleIds: [], updatedAt: new Date().toISOString() };
 }
+
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 async function main() {
   let existing = {};
@@ -72,6 +76,9 @@ async function main() {
     }
     const fresh = await fetchReason(`ticker=${encodeURIComponent(ticker)}&chgPct=${pct}`);
     result[ticker] = mergeEntry(existing[ticker], fresh);
+    // Space out requests — bursting 15+ calls in a few seconds is what was tripping
+    // Groq's rate limit and causing spurious "degraded" results on the very first run.
+    await sleep(4000);
   }
 
   // NASDAQ 100 / watchlist market-cap line share the same macro-level explanation.

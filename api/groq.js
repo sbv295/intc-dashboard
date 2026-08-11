@@ -78,6 +78,15 @@ async function fetchNews(symbol, count = 10) {
   return stream.filter(a => !(a.ad && a.ad.length));
 }
 
+// "Roundup" articles (e.g. "Apple, Sandisk, SpaceX... Stocks That Explain Today's
+// Market") list many companies in the title, but Yahoo's summary snippet usually
+// only actually covers the first one or two — matching on title alone can pick up
+// an article whose visible content is entirely about a DIFFERENT company. For these,
+// additionally require the target name to appear in the summary itself.
+function looksLikeRoundup(title) {
+  return (title.match(/,/g) || []).length >= 2 || /stocks that explain|more stocks|earnings roundup/i.test(title);
+}
+
 function filterRelevant(articles, nameVariants, cutoff) {
   const relevant = [];
   for (const item of articles) {
@@ -88,18 +97,19 @@ function filterRelevant(articles, nameVariants, cutoff) {
     if (!pubDate) continue;
     const pubDt = new Date(pubDate);
     if (pubDt < cutoff) continue;
-    const titleMatch = nameVariants.some(v => new RegExp(`\\b${v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(title));
-    if (titleMatch) {
-      relevant.push({ id: item.id, pubDate, title, summary });
-      if (relevant.length === 5) break;
-    }
+    const nameRe = (v) => new RegExp(`\\b${v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+    const titleMatch = nameVariants.some(v => nameRe(v).test(title));
+    if (!titleMatch) continue;
+    if (looksLikeRoundup(title) && !nameVariants.some(v => nameRe(v).test(summary))) continue;
+    relevant.push({ id: item.id, pubDate, title, summary });
+    if (relevant.length === 5) break;
   }
   return relevant;
 }
 
 async function classifySentiment(apiKey, subject, articles) {
   const list = articles.map((a, i) => `${i}. ${a.title}\n   ${a.summary}`).join('\n');
-  const prompt = `For ${subject}, classify whether each article below (if it were the ONLY news driving it today) would most likely make it go UP or DOWN. Respond with ONLY a JSON array of length ${articles.length}, each element "UP" or "DOWN", e.g. ["UP","DOWN"]. No other text.\n\n${list}`;
+  const prompt = `For ${subject}, classify whether each article below (if it were the ONLY news driving it today) would most likely make it go UP or DOWN. Some articles may cover multiple companies — base your judgment ONLY on the parts specifically about ${subject}, ignoring information about other companies mentioned. Respond with ONLY a JSON array of length ${articles.length}, each element "UP" or "DOWN", e.g. ["UP","DOWN"]. No other text.\n\n${list}`;
   const content = await groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0 });
   try {
     return JSON.parse(content);
@@ -110,7 +120,7 @@ async function classifySentiment(apiKey, subject, articles) {
 
 async function generateSentence(apiKey, subject, direction, chgPct, articles) {
   const list = articles.map(a => `- [${a.pubDate}] ${a.title}\n  ${a.summary}`).join('\n');
-  const prompt = `Context: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nWrite a phrase targeting 15 words (a little shorter or longer is fine, but stay concise) giving ONLY the causal reason, based only on these article(s). Do NOT restate the company/index name or generic words like "stock", "shares", "up", "down", "rises", "falls" \u2014 the reader already sees the name and direction elsewhere on the page. Start directly with the reason (e.g. "$15B stock sale sparking dilution concerns as it looks to fund its aggressive AI data-center build-out", not "Down due to a $15B stock sale"). Output ONLY the phrase, nothing else.`;
+  const prompt = `Context: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nSome articles may mention other companies too \u2014 use ONLY the information specifically about ${subject}, ignoring parts about other companies. Write a phrase targeting 15 words (a little shorter or longer is fine, but stay concise) giving ONLY the causal reason, based only on these article(s). Do NOT restate the company/index name or generic words like "stock", "shares", "up", "down", "rises", "falls" \u2014 the reader already sees the name and direction elsewhere on the page. Start directly with the reason (e.g. "$15B stock sale sparking dilution concerns as it looks to fund its aggressive AI data-center build-out", not "Down due to a $15B stock sale"). Output ONLY the phrase, nothing else.`;
   return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2, max_tokens: 55 });
 }
 
@@ -213,8 +223,13 @@ export default async function handler(req, res) {
   const cutoff = marketDaysCutoff(2);
 
   // Every branch below must resolve to a result — the dashboard should never
-  // show a blank line just because an LLM call failed.
+  // show a blank line just because an LLM call failed. `degraded: true` marks
+  // a result that came from an actual error (e.g. Groq rate-limited) rather
+  // than the pipeline genuinely finding no catalyst — callers that persist
+  // this (the scheduled background job) should NOT treat a degraded result
+  // as ground truth and should keep whatever they had before instead.
   let result = null;
+  let degraded = false;
 
   try {
     if (isIndexMode) {
@@ -245,14 +260,17 @@ export default async function handler(req, res) {
       }
     }
   } catch (e) {
-    // Fall through to the last-resort branch below — never surface a 500 to the client.
+    // A real failure (Groq rate limit, network error, etc.) happened somewhere
+    // in the pipeline — fall through to the fallback text below, but flag it.
+    degraded = true;
   }
 
   // Tier 3: honest fallback — always non-empty, so every card shows *something*.
   if (!result) {
     result = { text: 'No plausible explanation for today\u2019s movement.', source: 'none', articleIds: [] };
   }
+  if (degraded) result.degraded = true;
 
-  setCached(key, result);
+  if (!degraded) setCached(key, result);
   return res.status(200).json(result);
 }
