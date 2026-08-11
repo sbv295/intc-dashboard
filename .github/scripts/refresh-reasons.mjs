@@ -55,10 +55,15 @@ function sameArticleSet(a, b) {
 function mergeEntry(prev, fresh) {
   if (!fresh || fresh.degraded) return prev || null;
   if (fresh.articleIds?.length) {
+    // LLM-generated, article-backed result — only replace if the underlying news
+    // actually changed, to avoid re-rolling the same story into slightly different wording.
     if (prev && sameArticleSet(prev.articleIds, fresh.articleIds)) return prev;
     return { text: fresh.text, source: fresh.source, articleIds: fresh.articleIds, updatedAt: new Date().toISOString() };
   }
-  return prev || { text: fresh.text, source: fresh.source, articleIds: [], updatedAt: new Date().toISOString() };
+  // Deterministic, non-LLM tiers (the fixed "no company-specific news" label, or a
+  // genuine tier-3 "no catalyst") — always trust a successful (non-degraded) result,
+  // there's no LLM re-rolling risk here to protect against.
+  return { text: fresh.text, source: fresh.source, articleIds: [], updatedAt: new Date().toISOString() };
 }
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
