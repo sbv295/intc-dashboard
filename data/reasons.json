@@ -1,23 +1,26 @@
 {
   "INTC": {
-    "text": "President's regret over hastily pulled Intel deal sparking uncertainty and investor concern today apparently",
+    "text": "$15 billion and potentially expanded $20 billion offering sparking dilution concerns",
     "source": "stock",
     "articleIds": [
-      "cb40d239-3ef1-378a-9ab2-c284a2cc344d"
+      "70338e64-27be-39b9-81d5-28c6ae92303a",
+      "e62806fd-a00d-3aab-8add-7a66bf40ad2a"
     ],
-    "updatedAt": "2026-08-11T11:40:01.173Z"
+    "updatedAt": "2026-08-11T12:49:50.177Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T11:40:05.626Z"
+    "updatedAt": "2026-08-11T12:49:54.891Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T11:40:10.627Z"
+    "text": "Critics warning of circular-financing concerns with new chip asset class plans.",
+    "source": "stock",
+    "articleIds": [
+      "01341e11-ae0a-3beb-bacd-7dccb2442a20"
+    ],
+    "updatedAt": "2026-08-11T12:49:59.809Z"
   },
   "TSM": {
     "text": "Revenue uncertainty in 2028-29 and geopolitical concerns sparking investor caution and uncertainty.",
@@ -28,37 +31,41 @@
     "updatedAt": "2026-08-11T11:40:16.108Z"
   },
   "SNDK": {
-    "text": "Analysts see substantial upside and a buying opportunity due to robust AI memory demand.",
+    "text": "Analysts viewing recent pullback as a buying opportunity due to robust AI memory demand.",
     "source": "stock",
     "articleIds": [
+      "8ca87f75-07d2-3737-a7bf-fc69e0feacfa",
       "e1fa92c3-b8f1-3ca7-84c7-346efd1a77c2",
       "f6486634-a74d-3c1a-acd0-02f384413c54",
       "8a55fc76-0073-3a8a-ba5c-9d6255be973a",
-      "b6f50b40-0805-3292-95f7-ba2def90e663",
-      "69e572b0-8ca1-30e1-a9ea-c384ebf51a7f"
+      "b6f50b40-0805-3292-95f7-ba2def90e663"
     ],
-    "updatedAt": "2026-08-11T07:05:17.887Z"
+    "updatedAt": "2026-08-11T12:50:09.874Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T11:40:25.559Z"
+    "text": "Volatility is par for the course with the memory company's performance.",
+    "source": "stock",
+    "articleIds": [
+      "d7c97349-1c95-3edc-ac34-1dbfa96ce36f"
+    ],
+    "updatedAt": "2026-08-11T12:50:14.827Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T11:40:30.041Z"
+    "updatedAt": "2026-08-11T12:50:19.386Z"
   },
   "SPCX": {
-    "text": "Investment firm Baron Capital's $1 billion additional investment in the company.",
+    "text": "AI-driven Cursor project potentially adding $2.5 billion to revenue in 2026.",
     "source": "stock",
     "articleIds": [
       "bdcd2f64-4914-40b0-9c6f-d2a96a1cd81b",
-      "4279cd68-1d82-3abd-a954-754a7a4583be"
+      "88069686-fb31-35fa-b6c9-0c1477a53816",
+      "9c8a6beb-3c24-3bc1-8a12-d58d1193a0c2",
+      "70e99d36-b3b8-3dd4-8d5a-c0024adb997e"
     ],
-    "updatedAt": "2026-08-11T11:40:34.815Z"
+    "updatedAt": "2026-08-11T12:50:24.250Z"
   },
   "MRVL": {
     "text": "Profit multiple sits below operating line due to non-operating income.",
@@ -102,7 +109,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T11:40:58.851Z"
+    "updatedAt": "2026-08-11T12:50:49.373Z"
   },
   "005930.KS": {
     "text": "Strong record foldable preorders and improved AI memory production yield.",
@@ -114,10 +121,12 @@
     "updatedAt": "2026-08-11T07:06:01.172Z"
   },
   "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T11:41:08.423Z"
+    "text": "Selloff after IPO is seen as a buying opportunity due to a potential gap created.",
+    "source": "stock",
+    "articleIds": [
+      "0dd9e658-9ecb-3845-9891-c170c5c87228"
+    ],
+    "updatedAt": "2026-08-11T12:50:59.172Z"
   },
   "INDEX": {
     "text": "Profit-taking in semiconductor funds after a $37 billion influx into QQQ.",
