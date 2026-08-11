@@ -1,15 +1,14 @@
 {
   "INTC": {
-    "text": "$20 billion stock offering and foundry losses sparking dilution and financial concerns.",
+    "text": "$20 billion stock offering increase sparking dilution concerns and potential loss of investor value",
     "source": "stock",
     "articleIds": [
+      "1659384b-5f18-359d-9f24-21ea92dbd3ac",
       "5be42b1a-e260-3bc2-84ce-fd0ef123f9f2",
       "8c95898e-f9d4-3640-96ab-35c4538ea298",
-      "8afdb7dc-d35c-39bd-ba8c-995c2af714a6",
-      "16015d38-d758-3419-8588-7649d0539615",
-      "b780e5d6-e301-3e47-a7ee-503769f8fad0"
+      "16015d38-d758-3419-8588-7649d0539615"
     ],
-    "updatedAt": "2026-08-11T08:06:56.127Z"
+    "updatedAt": "2026-08-11T09:54:55.916Z"
   },
   "AMD": {
     "text": "Investors grew skeptical of AI spending.",
@@ -50,26 +49,22 @@
     "updatedAt": "2026-08-11T07:05:17.887Z"
   },
   "MU": {
-    "text": "Semiconductor sector profit-taking amid strong inflows into broader tech funds.",
-    "source": "macro",
+    "text": "Reported Apple testing of Chinese memory chips introducing competitive variable.",
+    "source": "stock",
     "articleIds": [
-      "d9ee0b71-eca1-3e14-9fc7-1ae9433fcf86",
-      "6cead002-01bf-3b2f-8d3f-c0385d7e97eb",
-      "e8602c43-b17a-31d7-ab95-2a81cb9493eb",
-      "c02915e3-e6fc-36ca-8394-89795338ebeb"
+      "c1bb7c56-9dcc-3c15-96ba-649cfcb91afd",
+      "95a101d4-a40e-3ab3-9f32-49ac1a539958"
     ],
-    "updatedAt": "2026-08-11T07:05:23.470Z"
+    "updatedAt": "2026-08-11T09:55:20.930Z"
   },
   "AVGO": {
-    "text": "Semiconductor sector profit-taking amid strong inflows into broader tech funds.",
+    "text": "No specific causal reason mentioned for Broadcom's move.",
     "source": "macro",
     "articleIds": [
       "d9ee0b71-eca1-3e14-9fc7-1ae9433fcf86",
-      "6cead002-01bf-3b2f-8d3f-c0385d7e97eb",
-      "e8602c43-b17a-31d7-ab95-2a81cb9493eb",
       "c02915e3-e6fc-36ca-8394-89795338ebeb"
     ],
-    "updatedAt": "2026-08-11T07:05:28.324Z"
+    "updatedAt": "2026-08-11T09:55:26.055Z"
   },
   "SPCX": {
     "text": "AI-driven growth and potential for hundreds of billions in gains.",
