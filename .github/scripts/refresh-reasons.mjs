@@ -16,14 +16,19 @@ const TICKERS = [
 ];
 
 async function fetchChgPct(ticker) {
-  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=5d`;
+  // interval=1d&range=5d leaves meta.previousClose EMPTY for many tickers (forcing a
+  // fallback to chartPreviousClose, which can be stale by more than a day per prior
+  // findings in this repo) — interval=1m&range=2d is what the live dashboard cards use
+  // and reliably populates meta.previousClose, so use the same variant here to make
+  // sure the pct fed into the reason generator matches what's actually on-screen.
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1m&range=2d&includePrePost=true`;
   const resp = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
   if (!resp.ok) return null;
   const data = await resp.json();
   const meta = data?.chart?.result?.[0]?.meta;
   if (!meta) return null;
   const price = meta.regularMarketPrice;
-  const prevClose = meta.previousClose ?? meta.chartPreviousClose;
+  const prevClose = meta.previousClose;
   if (price == null || !prevClose) return null;
   return ((price - prevClose) / prevClose) * 100;
 }
