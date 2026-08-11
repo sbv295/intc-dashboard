@@ -8,19 +8,20 @@
     "updatedAt": "2026-08-11T19:58:14.529Z"
   },
   "AMD": {
-    "text": "Expected rapid growth in server CPU and data center businesses, driven by AI inference demand.",
+    "text": "Surprise data center deal points to much bigger demand ahead from Anthropic partnership.",
     "source": "stock",
     "articleIds": [
-      "45af8795-08f8-3c64-942c-7ca3ef65756c",
-      "1da566c6-8e9f-3210-b10b-d1d6e68e1ed5"
+      "45af8795-08f8-3c64-942c-7ca3ef65756c"
     ],
-    "updatedAt": "2026-08-11T18:53:58.733Z"
+    "updatedAt": "2026-08-11T23:33:47.303Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T22:35:12.389Z"
+    "text": "Wall Street funding of $500 billion AI infrastructure sparking sustainability concerns of the AI boom.",
+    "source": "stock",
+    "articleIds": [
+      "20540da6-59b1-33d2-89e4-0ada1a1344dc"
+    ],
+    "updatedAt": "2026-08-11T23:33:52.165Z"
   },
   "TSM": {
     "text": "Strong revenue update and massive CPU opportunity sparking renewed demand and growth expectations",
@@ -35,15 +36,14 @@
     "updatedAt": "2026-08-11T19:58:29.847Z"
   },
   "SNDK": {
-    "text": "Recent correction creating a more attractive entry valuation during a powerful growth cycle.",
+    "text": "Recent correction creates a more attractive entry valuation during a powerful memory-industry growth cycle.",
     "source": "stock",
     "articleIds": [
       "d22f3e9d-4a64-3f5e-b8ae-7a334f6b1951",
       "79eab6a0-0db6-3adc-ac80-030fcb6a6bc6",
-      "98c7f782-5884-3212-8305-6ed7c8f4e98f",
-      "8ca87f75-07d2-3737-a7bf-fc69e0feacfa"
+      "98c7f782-5884-3212-8305-6ed7c8f4e98f"
     ],
-    "updatedAt": "2026-08-11T21:40:08.814Z"
+    "updatedAt": "2026-08-11T23:34:02.117Z"
   },
   "MU": {
     "text": "Memory prices keep rising despite concerns about future Chinese competition.",
@@ -57,24 +57,22 @@
     "updatedAt": "2026-08-11T20:47:05.032Z"
   },
   "AVGO": {
-    "text": "Market already pricing in a slowdown that has not yet appeared.",
+    "text": "Market already pricing in a slowdown in Broadcom's 32% annual revenue growth.",
     "source": "stock",
     "articleIds": [
       "70e25055-7252-33bc-8f79-31e62876d0cd",
-      "ed376c50-c594-3fba-baeb-a5a2cb4b1606",
-      "1655d1ca-f4cf-371e-96e3-e3ba52ed5603"
+      "ed376c50-c594-3fba-baeb-a5a2cb4b1606"
     ],
-    "updatedAt": "2026-08-11T21:40:18.915Z"
+    "updatedAt": "2026-08-11T23:34:11.898Z"
   },
   "SPCX": {
-    "text": "Lack of ability to hold its IPO price after a brief regain.",
+    "text": "Failing to hold its IPO price after a three-day surge.",
     "source": "stock",
     "articleIds": [
-      "a07b1c97-39bb-3df7-8c5b-2a4d8f80934b",
       "88069686-fb31-35fa-b6c9-0c1477a53816",
       "1c9d4506-7c85-37e0-a401-eea926478b7d"
     ],
-    "updatedAt": "2026-08-11T22:35:36.107Z"
+    "updatedAt": "2026-08-11T23:34:16.802Z"
   },
   "MRVL": {
     "text": "Microsoft's AI chip push and expanded NVIDIA alliance are driving the gains.",
@@ -103,7 +101,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T22:35:50.089Z"
+    "updatedAt": "2026-08-11T23:34:32.108Z"
   },
   "SKHY": {
     "text": "Selloff after IPO is seen as a buying opportunity due to a gap created.",
@@ -117,7 +115,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T22:35:59.929Z"
+    "updatedAt": "2026-08-11T23:34:41.052Z"
   },
   "005930.KS": {
     "text": "Strong early demand for new foldable phones and smartwatches with expanded AI tools.",
