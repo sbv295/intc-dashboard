@@ -1,11 +1,12 @@
 {
   "INTC": {
-    "text": "Huge rally saving millions as it prepares to issue new common stock.",
+    "text": "Huge rally saving millions as it prepares to issue new common stock for AI comeback",
     "source": "stock",
     "articleIds": [
-      "fe6e5f58-1604-448f-ab51-cce440c9e0ee"
+      "fe6e5f58-1604-448f-ab51-cce440c9e0ee",
+      "9e117c04-9b2c-32a0-942a-d9745f286193"
     ],
-    "updatedAt": "2026-08-11T19:58:14.529Z"
+    "updatedAt": "2026-08-12T05:40:11.720Z"
   },
   "AMD": {
     "text": "Data center revenue doubling, driving record profitability and raised guidance.",
@@ -17,13 +18,14 @@
     "updatedAt": "2026-08-12T01:20:53.428Z"
   },
   "NVDA": {
-    "text": "concerns over heavy investment in AI ecosystem and financing structures sparking balance sheet worries",
+    "text": "concerns over heavy AI boom investment and financing structure risks weighing on balance sheet",
     "source": "stock",
     "articleIds": [
+      "7170c7f6-3bd3-35bf-bee2-a691a7f3afbd",
       "4ccd16e1-0058-3a0e-b33a-03784d42cb87",
       "4392aabd-1c33-37b4-86a2-334ebe6f1f3a"
     ],
-    "updatedAt": "2026-08-12T04:00:58.675Z"
+    "updatedAt": "2026-08-12T05:40:21.515Z"
   },
   "TSM": {
     "text": "Strong revenue update and massive CPU opportunity sparking renewed demand and growth expectations",
@@ -98,54 +100,149 @@
     "updatedAt": "2026-08-12T04:01:34.412Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-12T04:01:39.172Z"
-  },
-  "SKHY": {
-    "text": "Inclusion in South Korea's new $3.5 billion semiconductor fund and national chip megaproject.",
+    "text": "Qualcomm's Android growth metric is no longer a key focus of its quarterly summary.",
     "source": "stock",
     "articleIds": [
-      "6358eeb5-08ec-3216-adfb-6264223beae4",
-      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a",
-      "f7a70fee-911f-3094-a0c7-6e81b74690db"
+      "2006930d-605e-3a01-b8bb-99dec5085132"
     ],
-    "updatedAt": "2026-08-12T04:01:44.306Z"
+    "updatedAt": "2026-08-12T05:41:00.475Z"
+  },
+  "SKHY": {
+    "text": "Report of Temasek Holdings Pte investment sparks gains.",
+    "source": "stock",
+    "articleIds": [
+      "37611b0a-da21-3d14-b334-ca2e4c971016",
+      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a"
+    ],
+    "updatedAt": "2026-08-12T05:41:05.201Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T04:01:48.801Z"
+    "updatedAt": "2026-08-12T05:41:09.646Z"
   },
   "005930.KS": {
-    "text": "Strong early demand for new foldable phones and smartwatches drives record-breaking preorders.",
+    "text": "Strong early demand for its new foldable phones and smartwatches drives record preorder numbers.",
     "source": "stock",
     "articleIds": [
-      "1202dfb7-3e78-34b4-84fb-de803b11bc0b",
-      "abe1fcba-025c-37ea-8d76-1fb727b8e4ac",
-      "213c622b-0def-3618-ad40-1ad34261d975"
+      "37611b0a-da21-3d14-b334-ca2e4c971016",
+      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a",
+      "1202dfb7-3e78-34b4-84fb-de803b11bc0b"
     ],
-    "updatedAt": "2026-08-12T04:01:53.754Z"
+    "updatedAt": "2026-08-12T05:41:14.482Z"
   },
   "000660.KS": {
-    "text": "Positioned as a key participant in South Korea's $3.5b semiconductor fund and megaproject.",
+    "text": "Investment by Singapore's Temasek Holdings Pte reported to be planned.",
     "source": "stock",
     "articleIds": [
-      "6358eeb5-08ec-3216-adfb-6264223beae4",
-      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a",
-      "f7a70fee-911f-3094-a0c7-6e81b74690db"
+      "37611b0a-da21-3d14-b334-ca2e4c971016",
+      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a"
     ],
-    "updatedAt": "2026-08-12T04:01:58.717Z"
+    "updatedAt": "2026-08-12T05:41:19.836Z"
+  },
+  "AAPL": {
+    "text": "iPhone production concerns and lowered average selling price growth expectations.",
+    "source": "stock",
+    "articleIds": [
+      "2f1e12fb-f267-39b7-ba14-40e3ad0776a6",
+      "f4cc6e9e-9fb6-3fac-ba6f-9abfa55996f9"
+    ],
+    "updatedAt": "2026-08-12T05:41:24.896Z"
+  },
+  "MSFT": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T05:41:29.372Z"
+  },
+  "GOOGL": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T05:41:33.945Z"
+  },
+  "AMZN": {
+    "text": "Concerns over new delivery regulations and potential increased labor costs.",
+    "source": "stock",
+    "articleIds": [
+      "89ceac3e-d95e-3a85-8c2b-957de82d1378",
+      "27570b65-8af7-3c22-aece-2a7f78643678",
+      "c8852ca8-e1db-3693-9f7d-c4cb68cb1fb4"
+    ],
+    "updatedAt": "2026-08-12T05:41:38.740Z"
+  },
+  "META": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T05:41:43.760Z"
+  },
+  "HDFCBANK.NS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T05:41:48.059Z"
+  },
+  "ICICIBANK.NS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T05:41:52.399Z"
+  },
+  "DEEPAKFERT.NS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T05:41:56.689Z"
+  },
+  "AARTIIND.NS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T05:42:00.983Z"
+  },
+  "TCS.NS": {
+    "text": "Possible exposure of certain employee-related data sparking investor concerns.",
+    "source": "stock",
+    "articleIds": [
+      "a6505010-0788-32d1-92fb-40ccdd004f9c"
+    ],
+    "updatedAt": "2026-08-12T05:42:05.949Z"
+  },
+  "INFY.NS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T05:42:10.314Z"
+  },
+  "RELIANCE.NS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T05:42:14.710Z"
+  },
+  "ASIANPAINT.NS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T05:42:19.049Z"
   },
   "INDEX": {
-    "text": "Tax implications of high-yielding investments weighing on investor sentiment.",
+    "text": "Investors booking profits in semiconductor funds amid heavy inflows into tech-focused ETFs.",
     "source": "macro",
     "articleIds": [
       "ca9089c4-3fd6-324b-9bd3-75100d2a0d62",
-      "80e7c4e8-de09-3ee6-87c7-47c3ae9f1965"
+      "e8602c43-b17a-31d7-ab95-2a81cb9493eb"
     ],
-    "updatedAt": "2026-08-12T04:02:03.459Z"
+    "updatedAt": "2026-08-12T05:42:23.856Z"
+  },
+  "INDEX_IN": {
+    "text": "Firmer crude oil prices curbed risk appetite.",
+    "source": "macro",
+    "articleIds": [
+      "4b32bdc5-6675-375b-a8dd-5c274e5be2e3"
+    ],
+    "updatedAt": "2026-08-12T05:42:28.649Z"
   }
 }
