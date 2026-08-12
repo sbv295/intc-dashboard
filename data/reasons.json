@@ -1,31 +1,29 @@
 {
   "INTC": {
-    "text": "BofA's confidence in growing foundry and server CPU growth fueling investor optimism today",
+    "text": "Growing confidence in foundry business and expected server CPU growth fueling investment optimism",
     "source": "stock",
     "articleIds": [
       "595397e9-2654-37c8-8f54-c23aecd9a580",
-      "90a92a12-306b-3d29-bdc5-e1f10c81fce7",
-      "32206e20-7869-3ed1-b28d-cdcfdcda4df5",
-      "8b826f32-1c3d-3010-abda-d79b29301940"
+      "32206e20-7869-3ed1-b28d-cdcfdcda4df5"
     ],
-    "updatedAt": "2026-08-12T20:50:02.838Z"
+    "updatedAt": "2026-08-12T21:38:50.525Z"
   },
   "AMD": {
-    "text": "Strong AI server demand staying consistent and lifted outlook.",
+    "text": "Positioning for rising agentic AI demand and strong AI server demand justifying its premium valuation.",
     "source": "stock",
     "articleIds": [
+      "d321773e-1e3f-3e05-be4d-bb6206276b89",
       "2a7fa81b-0a02-3f5b-b34b-bd1c15859d12"
     ],
-    "updatedAt": "2026-08-12T17:54:20.793Z"
+    "updatedAt": "2026-08-12T21:38:55.536Z"
   },
   "NVDA": {
-    "text": "Positive read-through from Supermicro's upbeat second-quarter earnings report and partner CoreWeave's earnings.",
+    "text": "Partnership with major Wall Street firms to fund AI build-out sparking investor optimism today",
     "source": "stock",
     "articleIds": [
-      "a86a0faa-7892-344b-afee-f1abbb8a47b4",
-      "14192882-2d0d-3020-8314-bc5352b1fdcf"
+      "efc893e4-7f57-4132-9a07-f6e7c253c87a"
     ],
-    "updatedAt": "2026-08-12T20:50:12.632Z"
+    "updatedAt": "2026-08-12T21:39:00.422Z"
   },
   "TSM": {
     "text": "New joint venture with Sony to develop smartphone image sensors in Japan.",
@@ -56,10 +54,9 @@
     "articleIds": [
       "c51ff320-3490-3ca7-ae7b-9bf7d9de06b7",
       "59d22f7e-9db0-3a05-aeeb-c6201f1643ca",
-      "a23f15ec-23e1-3435-89f2-dd24b4bac4c5",
-      "42aada5b-5c98-3764-8a73-571bfc7da837"
+      "a23f15ec-23e1-3435-89f2-dd24b4bac4c5"
     ],
-    "updatedAt": "2026-08-12T20:50:27.747Z"
+    "updatedAt": "2026-08-12T21:39:16.055Z"
   },
   "AVGO": {
     "text": "Premium valuation and high P/E ratio of 23.8X.",
@@ -124,7 +121,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T20:51:02.692Z"
+    "updatedAt": "2026-08-12T21:39:51.099Z"
   },
   "005930.KS": {
     "text": "Korea accelerating chip megaproject financing and infrastructure support anchored by Samsung.",
@@ -157,33 +154,32 @@
     "updatedAt": "2026-08-12T20:51:17.395Z"
   },
   "MSFT": {
-    "text": "Investment in custom processors may not deliver meaningful scale before substantial costs.",
+    "text": "Falling AI costs may favor companies with massive distribution.",
     "source": "stock",
     "articleIds": [
+      "7f558cb1-ac00-3575-810c-26075b32b0c8",
       "44713117-34ca-3e42-ae03-1d0fc2f6f567",
-      "d8ce5bc2-dd01-3d05-936c-988a5f169adf",
-      "e412d56a-7e32-3d0c-80f9-2dba62995f50",
-      "cf39623f-90de-3609-8cda-033f22e5efdf"
+      "e412d56a-7e32-3d0c-80f9-2dba62995f50"
     ],
-    "updatedAt": "2026-08-12T20:51:23.211Z"
+    "updatedAt": "2026-08-12T21:40:12.047Z"
   },
   "GOOGL": {
-    "text": "Rising memory costs push smartphone prices higher by $100.",
+    "text": "Memory costs push smartphone prices higher, prompting a $100 price hike for the Pixel 11.",
     "source": "stock",
     "articleIds": [
+      "309e2b61-108a-4572-a58a-fe1821d382a6",
       "9aa2e343-6bc5-458e-835b-a88b41b867d0",
       "270bb178-dd5f-30a0-b024-f48f1580784a",
       "b9efa405-456f-3aa2-95ac-3ba92dc258b8",
-      "8d6836c8-0133-31a4-931a-8f34cc244ace",
-      "f0f24438-99db-3650-a029-fa3c367d4009"
+      "8d6836c8-0133-31a4-931a-8f34cc244ace"
     ],
-    "updatedAt": "2026-08-12T20:51:28.191Z"
+    "updatedAt": "2026-08-12T21:40:17.334Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T20:51:32.887Z"
+    "updatedAt": "2026-08-12T21:40:21.957Z"
   },
   "META": {
     "text": "Public relations shift from defensive to offensive amid sinking public opinion and thousands of lawsuits.",
@@ -199,25 +195,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T20:51:42.816Z"
+    "updatedAt": "2026-08-12T21:40:32.130Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T20:51:47.234Z"
+    "updatedAt": "2026-08-12T21:40:36.530Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T20:51:51.670Z"
+    "updatedAt": "2026-08-12T21:40:41.001Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T20:51:56.078Z"
+    "updatedAt": "2026-08-12T21:40:45.425Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking investor concerns.",
@@ -231,19 +227,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T20:52:05.411Z"
+    "updatedAt": "2026-08-12T21:40:55.108Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T20:52:09.833Z"
+    "updatedAt": "2026-08-12T21:40:59.631Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T20:52:14.274Z"
+    "updatedAt": "2026-08-12T21:41:04.086Z"
   },
   "INDEX": {
     "text": "Consumer inflation data in line with expectations.",
