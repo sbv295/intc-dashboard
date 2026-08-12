@@ -1,13 +1,14 @@
 {
   "INTC": {
-    "text": "BofA's positive foundry business outlook outweighing potential dilution from $20B capital raise.",
+    "text": "Equity capital raise sparking optimism about foundry business and management's increasing conviction.",
     "source": "stock",
     "articleIds": [
+      "a066e0c0-7def-362b-bba9-5152f3421e67",
       "2978eb9e-6a54-31f6-95ad-9f24aa2f936f",
       "82f1fb53-82f5-398c-aa2f-a1c06c14babe",
       "9e117c04-9b2c-32a0-942a-d9745f286193"
     ],
-    "updatedAt": "2026-08-12T11:45:40.485Z"
+    "updatedAt": "2026-08-12T12:54:55.254Z"
   },
   "AMD": {
     "text": "Record profitability and raised guidance after data center revenue doubled.",
@@ -20,10 +21,12 @@
     "updatedAt": "2026-08-12T10:57:39.765Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-12T11:45:50.352Z"
+    "text": "Criticism of Nvidia's $500bn AI funding deal, drawing comparisons to Enron's questionable practices.",
+    "source": "stock",
+    "articleIds": [
+      "27c02471-2f8d-342f-afb8-607f3606d253"
+    ],
+    "updatedAt": "2026-08-12T12:55:04.790Z"
   },
   "TSM": {
     "text": "Strong revenue figures and massive CPU opportunity sparking renewed investor interest and demand signal",
@@ -37,44 +40,41 @@
     "updatedAt": "2026-08-12T10:57:49.442Z"
   },
   "SNDK": {
-    "text": "$15.5 billion stock buyback suggests management thinks shares are still cheap.",
+    "text": "Management's $15.5 billion buyback suggests undervaluation, signaling potential for further growth.",
     "source": "stock",
     "articleIds": [
       "4da1e47c-219b-3fd3-b94a-86f240fba06a",
+      "f1a7ec22-7a1c-31ee-b5e3-9f2822afe17e",
       "d22f3e9d-4a64-3f5e-b8ae-7a334f6b1951",
       "79eab6a0-0db6-3adc-ac80-030fcb6a6bc6"
     ],
-    "updatedAt": "2026-08-12T11:46:01.026Z"
+    "updatedAt": "2026-08-12T12:55:15.127Z"
   },
   "MU": {
-    "text": "Memory prices keep rising, supporting Micron's fundamentals despite concerns about future competition.",
+    "text": "A structural shift in memory cyclicality logic buried in its latest earnings call.",
     "source": "stock",
     "articleIds": [
-      "41f85b41-c1ab-3317-a5e0-254789f94864",
-      "94261b05-0288-3d65-a248-d76403e2cb46",
-      "983dbaf4-22df-3cc7-85fe-e48e01f6c000",
-      "61c5d946-bec9-3161-90bc-9d9c1bff1bc8"
+      "e2a4707c-04f5-3ffa-abee-733d26c6cde4",
+      "41f85b41-c1ab-3317-a5e0-254789f94864"
     ],
-    "updatedAt": "2026-08-12T10:57:59.280Z"
+    "updatedAt": "2026-08-12T12:55:19.943Z"
   },
   "AVGO": {
-    "text": "Priced to deliver future revenue growth that has already been priced in.",
+    "text": "Trading at 71 times earnings and 27 times next year's, sparking valuation concerns.",
     "source": "stock",
     "articleIds": [
-      "9fd706f9-d727-3709-b60b-2062a5dc5e9c",
-      "70e25055-7252-33bc-8f79-31e62876d0cd",
-      "ed376c50-c594-3fba-baeb-a5a2cb4b1606"
+      "9fd706f9-d727-3709-b60b-2062a5dc5e9c"
     ],
-    "updatedAt": "2026-08-12T10:58:04.133Z"
+    "updatedAt": "2026-08-12T12:55:24.659Z"
   },
   "SPCX": {
-    "text": "A second insider share unlock event triggering $42.5 billion in potential selling pressure.",
+    "text": "Norway sovereign wealth fund discloses its stake in SpaceX.",
     "source": "stock",
     "articleIds": [
-      "20dfe151-7f25-38ce-a64b-9dd618d7f39d",
-      "0f080cd3-de11-3e7c-a363-8161ccec89d1"
+      "48e554ab-680e-38de-9f02-96a40e4bb2b3",
+      "6a414e72-cf77-371a-acc7-ebbdbb97ce2a"
     ],
-    "updatedAt": "2026-08-12T11:46:16.150Z"
+    "updatedAt": "2026-08-12T12:55:29.764Z"
   },
   "MRVL": {
     "text": "Investment in India and potential Microsoft AI chip partnership sparking growth expectations.",
@@ -107,94 +107,95 @@
     "updatedAt": "2026-08-12T11:46:30.757Z"
   },
   "SKHY": {
-    "text": "Report of Temasek Holdings Pte investment sparks gains.",
+    "text": "Investment from Singapore's Temasek Holdings Pte sparks gains.",
     "source": "stock",
     "articleIds": [
+      "99815554-c3e3-3bed-bd0f-9155b92d6e20",
       "37611b0a-da21-3d14-b334-ca2e4c971016",
       "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a"
     ],
-    "updatedAt": "2026-08-12T05:41:05.201Z"
+    "updatedAt": "2026-08-12T12:55:49.406Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:46:40.548Z"
+    "updatedAt": "2026-08-12T12:55:53.720Z"
   },
   "005930.KS": {
-    "text": "Strong early demand for its new foldable phones and smartwatches drives record preorder numbers.",
-    "source": "stock",
-    "articleIds": [
-      "37611b0a-da21-3d14-b334-ca2e4c971016",
-      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a",
-      "1202dfb7-3e78-34b4-84fb-de803b11bc0b"
-    ],
-    "updatedAt": "2026-08-12T05:41:14.482Z"
-  },
-  "000660.KS": {
-    "text": "Investment by Singapore's Temasek Holdings Pte reported to be planned.",
+    "text": "Investment by Temasek Holdings Pte and focus on cash returns to shareholders.",
     "source": "stock",
     "articleIds": [
       "37611b0a-da21-3d14-b334-ca2e4c971016",
       "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a"
     ],
-    "updatedAt": "2026-08-12T05:41:19.836Z"
+    "updatedAt": "2026-08-12T12:55:58.627Z"
+  },
+  "000660.KS": {
+    "text": "Investment from Singapore's Temasek Holdings Pte is driving the gains.",
+    "source": "stock",
+    "articleIds": [
+      "99815554-c3e3-3bed-bd0f-9155b92d6e20",
+      "37611b0a-da21-3d14-b334-ca2e4c971016",
+      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a"
+    ],
+    "updatedAt": "2026-08-12T12:56:03.562Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:46:55.258Z"
+    "updatedAt": "2026-08-12T12:56:08.018Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:46:59.980Z"
+    "updatedAt": "2026-08-12T12:56:12.583Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:47:04.416Z"
+    "updatedAt": "2026-08-12T12:56:16.836Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-12T11:47:09.104Z"
-  },
-  "META": {
-    "text": "Softer quarterly results partly attributed to disappointing performance.",
+    "text": "The cost of Amazon's AI pivot may be weighing on it.",
     "source": "stock",
     "articleIds": [
-      "b2a68a07-2f38-3848-817c-6a2d82334719"
+      "434ed70a-289c-354e-ad7d-5602bff650c8"
     ],
-    "updatedAt": "2026-08-12T11:47:14.279Z"
+    "updatedAt": "2026-08-12T12:56:21.697Z"
+  },
+  "META": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T12:56:26.409Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:47:18.702Z"
+    "updatedAt": "2026-08-12T12:56:30.719Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:47:23.101Z"
+    "updatedAt": "2026-08-12T12:56:35.043Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:47:27.477Z"
+    "updatedAt": "2026-08-12T12:56:39.304Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:47:31.866Z"
+    "updatedAt": "2026-08-12T12:56:43.672Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking investor concerns.",
@@ -208,19 +209,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:47:41.178Z"
+    "updatedAt": "2026-08-12T12:56:53.150Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:47:45.754Z"
+    "updatedAt": "2026-08-12T12:56:57.467Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T11:47:50.211Z"
+    "updatedAt": "2026-08-12T12:57:01.707Z"
   },
   "INDEX": {
     "text": "Investors booking profits in semiconductor funds amid heavy inflows into tech-focused ETFs.",
