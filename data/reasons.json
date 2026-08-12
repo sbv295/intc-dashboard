@@ -18,14 +18,15 @@
     "updatedAt": "2026-08-12T01:20:53.428Z"
   },
   "NVDA": {
-    "text": "concerns over heavy AI boom investment and financing structure risks weighing on balance sheet",
+    "text": "Investors worry about Nvidia's weak spot in the AI boom due to its heavy reliance on its balance sheet.",
     "source": "stock",
     "articleIds": [
       "7170c7f6-3bd3-35bf-bee2-a691a7f3afbd",
+      "10956f79-e62d-3881-9910-163733a9d4da",
       "4ccd16e1-0058-3a0e-b33a-03784d42cb87",
       "4392aabd-1c33-37b4-86a2-334ebe6f1f3a"
     ],
-    "updatedAt": "2026-08-12T05:40:21.515Z"
+    "updatedAt": "2026-08-12T06:08:46.583Z"
   },
   "TSM": {
     "text": "Strong revenue update and massive CPU opportunity sparking renewed demand and growth expectations",
@@ -43,22 +44,23 @@
     "text": "Recent correction creates a more attractive entry valuation during a powerful memory-industry growth cycle.",
     "source": "stock",
     "articleIds": [
+      "f1a7ec22-7a1c-31ee-b5e3-9f2822afe17e",
       "d22f3e9d-4a64-3f5e-b8ae-7a334f6b1951",
       "79eab6a0-0db6-3adc-ac80-030fcb6a6bc6",
       "98c7f782-5884-3212-8305-6ed7c8f4e98f"
     ],
-    "updatedAt": "2026-08-11T23:34:02.117Z"
+    "updatedAt": "2026-08-12T06:08:57.081Z"
   },
   "MU": {
-    "text": "memory prices keep rising and Wall Street analysts expecting improvement due to chip shortage",
+    "text": "Memory prices keep rising despite concerns about future Chinese competition.",
     "source": "stock",
     "articleIds": [
+      "41f85b41-c1ab-3317-a5e0-254789f94864",
       "94261b05-0288-3d65-a248-d76403e2cb46",
       "983dbaf4-22df-3cc7-85fe-e48e01f6c000",
-      "38b3b054-0265-379d-94d2-528c63563cb1",
-      "1b921880-2edc-30e3-a28d-112a641e22f0"
+      "61c5d946-bec9-3161-90bc-9d9c1bff1bc8"
     ],
-    "updatedAt": "2026-08-12T01:21:12.730Z"
+    "updatedAt": "2026-08-12T06:09:02.243Z"
   },
   "AVGO": {
     "text": "Market already pricing in a slowdown in Broadcom's 32% annual revenue growth.",
@@ -120,7 +122,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:41:09.646Z"
+    "updatedAt": "2026-08-12T06:09:35.664Z"
   },
   "005930.KS": {
     "text": "Strong early demand for its new foldable phones and smartwatches drives record preorder numbers.",
@@ -154,13 +156,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:41:29.372Z"
+    "updatedAt": "2026-08-12T06:09:54.744Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:41:33.945Z"
+    "updatedAt": "2026-08-12T06:09:59.244Z"
   },
   "AMZN": {
     "text": "Concerns over new delivery regulations and potential increased labor costs.",
@@ -176,31 +178,31 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:41:43.760Z"
+    "updatedAt": "2026-08-12T06:10:09.413Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:41:48.059Z"
+    "updatedAt": "2026-08-12T06:10:13.938Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:41:52.399Z"
+    "updatedAt": "2026-08-12T06:10:18.225Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:41:56.689Z"
+    "updatedAt": "2026-08-12T06:10:22.482Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:42:00.983Z"
+    "updatedAt": "2026-08-12T06:10:26.906Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking investor concerns.",
@@ -214,19 +216,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:42:10.314Z"
+    "updatedAt": "2026-08-12T06:10:35.944Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:42:14.710Z"
+    "updatedAt": "2026-08-12T06:10:40.233Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T05:42:19.049Z"
+    "updatedAt": "2026-08-12T06:10:44.547Z"
   },
   "INDEX": {
     "text": "Investors booking profits in semiconductor funds amid heavy inflows into tech-focused ETFs.",
