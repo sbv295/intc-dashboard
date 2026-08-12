@@ -1,12 +1,13 @@
 {
   "INTC": {
-    "text": "Jim Cramer's endorsement and CEO Lip-Bu Tan's $12 million investment sparking optimism",
+    "text": "Jim Cramer's endorsement and CEO Lip-Bu Tan's $12 million investment sparking renewed interest",
     "source": "stock",
     "articleIds": [
+      "90a92a12-306b-3d29-bdc5-e1f10c81fce7",
       "32206e20-7869-3ed1-b28d-cdcfdcda4df5",
       "8b826f32-1c3d-3010-abda-d79b29301940"
     ],
-    "updatedAt": "2026-08-12T18:53:48.836Z"
+    "updatedAt": "2026-08-12T19:58:33.831Z"
   },
   "AMD": {
     "text": "Strong AI server demand staying consistent and lifted outlook.",
@@ -17,13 +18,12 @@
     "updatedAt": "2026-08-12T17:54:20.793Z"
   },
   "NVDA": {
-    "text": "Partnership with major Wall Street firms to fund AI build-out sparking investor optimism today",
+    "text": "Key CPI inflation report and earnings anticipation sparking positive market sentiment today apparently",
     "source": "stock",
     "articleIds": [
-      "efc893e4-7f57-4132-9a07-f6e7c253c87a",
       "14192882-2d0d-3020-8314-bc5352b1fdcf"
     ],
-    "updatedAt": "2026-08-12T18:53:59.177Z"
+    "updatedAt": "2026-08-12T19:58:43.566Z"
   },
   "TSM": {
     "text": "New joint venture with Sony to develop smartphone image sensors in Japan.",
@@ -38,16 +38,15 @@
     "updatedAt": "2026-08-12T17:54:31.255Z"
   },
   "SNDK": {
-    "text": "Worldwide memory shortage catapulting memory prices higher.",
+    "text": "New AI-focused flash memory technology and skyrocketing revenues due to a worldwide memory shortage.",
     "source": "stock",
     "articleIds": [
       "7da205eb-bad6-3922-8cd6-9465559149fb",
       "7af9ee40-c6d2-3027-b889-6327f60aa217",
       "80075803-7155-3189-8ae7-e171fa4c4952",
-      "df96a292-169c-3ae4-a46c-4d99054aa713",
-      "281d5557-6f1c-3e47-aa53-f2b73135eb0e"
+      "df96a292-169c-3ae4-a46c-4d99054aa713"
     ],
-    "updatedAt": "2026-08-12T18:54:09.229Z"
+    "updatedAt": "2026-08-12T19:58:53.515Z"
   },
   "MU": {
     "text": "New demand indicators and capped memory prices leading to a margin record.",
@@ -60,35 +59,35 @@
     "updatedAt": "2026-08-12T18:54:14.428Z"
   },
   "AVGO": {
-    "text": "Broadcom's control of two chokepoints inside every major AI cluster.",
+    "text": "Premium valuation and high P/E ratio of 23.8X.",
     "source": "stock",
     "articleIds": [
-      "85ce2b5b-0450-36ed-88f4-36b76abd6bde",
-      "7e40f30d-ea19-34a1-8b78-2b83fff9f457"
+      "b5ec557d-cd12-3e6e-99ae-9b146e239eeb",
+      "9fd706f9-d727-3709-b60b-2062a5dc5e9c"
     ],
-    "updatedAt": "2026-08-12T16:52:16.969Z"
+    "updatedAt": "2026-08-12T19:59:03.120Z"
   },
   "SPCX": {
-    "text": "Elon Musk's bold prediction of $500 billion AI revenue opportunity.",
+    "text": "Elon Musk's comments on AI capabilities and the release of the new Grok model.",
     "source": "stock",
     "articleIds": [
-      "2f879ef1-c1a8-3563-89fb-8a67fe433d25",
-      "6d556b9a-fdc9-3347-8210-d15144d5e14e",
-      "938c3744-fcbe-3edd-895e-4a581eeadcc4",
-      "08faff14-28eb-3696-8724-b4ebe2a65b56"
+      "1003d4f0-c9b0-35c7-a1eb-0007ddd9950f",
+      "4f09553e-95bb-3029-a03b-a3ee8ff56cc4",
+      "3b2e7bf5-7079-3e6f-84f1-993b30af8768"
     ],
-    "updatedAt": "2026-08-12T18:54:25.632Z"
+    "updatedAt": "2026-08-12T19:59:08.088Z"
   },
   "MRVL": {
-    "text": "Investment of $250 million in India to expand presence and grow facilities.",
+    "text": "Investment in India and potential AI chip wins with Microsoft.",
     "source": "stock",
     "articleIds": [
+      "736f7545-1085-39ad-8601-b848c0c83ecc",
       "28d7e5a0-f6d2-3d11-9f31-4c1565549749",
       "79cd2636-6a01-36ea-84bf-a13646c56f02",
       "6a2e9cac-0e0b-3e66-92fc-b3a047ad9c4a",
       "7e434cdb-004d-39bd-8f8d-02f9be9d9923"
     ],
-    "updatedAt": "2026-08-12T18:54:30.571Z"
+    "updatedAt": "2026-08-12T19:59:13.833Z"
   },
   "ARM": {
     "text": "Strong Q1 2026 results and deeper integration into embedded AI workflows.",
@@ -123,17 +122,16 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T18:54:51.393Z"
+    "updatedAt": "2026-08-12T19:59:32.675Z"
   },
   "005930.KS": {
-    "text": "Government financing and infrastructure support for a semiconductor expansion anchored by Samsung.",
+    "text": "Korea accelerating chip megaproject with financing and infrastructure support.",
     "source": "stock",
     "articleIds": [
       "4fa5b7bb-ecf8-32ce-a937-a1777e961519",
-      "2ae3e8ed-e10e-3b4d-a393-8b456cdaa1bd",
-      "37611b0a-da21-3d14-b334-ca2e4c971016"
+      "2ae3e8ed-e10e-3b4d-a393-8b456cdaa1bd"
     ],
-    "updatedAt": "2026-08-12T17:55:23.170Z"
+    "updatedAt": "2026-08-12T19:59:38.095Z"
   },
   "000660.KS": {
     "text": "Government investment and potential shareholder returns are sharpening attention on its powerful cash-generation cycle.",
@@ -146,73 +144,76 @@
     "updatedAt": "2026-08-12T17:55:28.328Z"
   },
   "AAPL": {
-    "text": "Questioning whether Apple has enough product and AI momentum to support its premium expectations.",
+    "text": "Navigating Trump-era policy challenges and tariffs with a broader leadership shake-up.",
     "source": "stock",
     "articleIds": [
-      "88d92935-56a3-374a-bae1-bcadf98c9dd7",
-      "1520913c-2a6d-3566-b422-c703f6c96ee6"
+      "47354d14-9169-3ff5-a3b7-9241ab3c07ac",
+      "2bce0dfa-4f84-33d4-b236-d2ef6d724173",
+      "88d92935-56a3-374a-bae1-bcadf98c9dd7"
     ],
-    "updatedAt": "2026-08-12T17:55:33.225Z"
+    "updatedAt": "2026-08-12T19:59:48.678Z"
   },
   "MSFT": {
-    "text": "Investment in custom processors and AI data-center build-out is substantial and costly.",
+    "text": "Investment in custom processors may not deliver meaningful scale before substantial costs are incurred.",
     "source": "stock",
     "articleIds": [
+      "d8ce5bc2-dd01-3d05-936c-988a5f169adf",
       "e412d56a-7e32-3d0c-80f9-2dba62995f50",
       "cf39623f-90de-3609-8cda-033f22e5efdf"
     ],
-    "updatedAt": "2026-08-12T18:55:11.616Z"
+    "updatedAt": "2026-08-12T19:59:53.474Z"
   },
   "GOOGL": {
-    "text": "Rising memory costs prompting Google to hike Pixel 11 prices by $100.",
+    "text": "Rising memory costs push Pixel 11 prices higher by $100.",
     "source": "stock",
     "articleIds": [
       "9aa2e343-6bc5-458e-835b-a88b41b867d0",
+      "b9efa405-456f-3aa2-95ac-3ba92dc258b8",
       "f0f24438-99db-3650-a029-fa3c367d4009",
       "9ce4bc09-2757-36b2-afd7-ba1ab39bd393"
     ],
-    "updatedAt": "2026-08-12T17:55:43.264Z"
+    "updatedAt": "2026-08-12T19:59:58.261Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T18:55:21.875Z"
+    "updatedAt": "2026-08-12T20:00:02.924Z"
   },
   "META": {
-    "text": "$1.4 trillion trial opens, German criminal complaint over AI smart glasses.",
+    "text": "Sinking public opinion and thousands of lawsuits against the company.",
     "source": "stock",
     "articleIds": [
+      "698930d1-9f40-340f-aa94-b79c409a55e0",
       "440c0b93-0726-35b6-84a6-62e4c873852f",
       "2bc08047-d9cc-3749-b14d-139728c54018",
-      "67723ff3-840d-3d48-bbae-00e9bf2fe5a8",
-      "e3beda5e-ad83-3906-ac82-207e9837c311"
+      "67723ff3-840d-3d48-bbae-00e9bf2fe5a8"
     ],
-    "updatedAt": "2026-08-12T18:55:27.248Z"
+    "updatedAt": "2026-08-12T20:00:07.762Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T18:55:31.864Z"
+    "updatedAt": "2026-08-12T20:00:12.119Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T18:55:36.425Z"
+    "updatedAt": "2026-08-12T20:00:16.490Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T18:55:40.921Z"
+    "updatedAt": "2026-08-12T20:00:20.967Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T18:55:45.457Z"
+    "updatedAt": "2026-08-12T20:00:25.299Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking investor concerns.",
@@ -226,19 +227,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T18:55:55.047Z"
+    "updatedAt": "2026-08-12T20:00:34.854Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T18:55:59.478Z"
+    "updatedAt": "2026-08-12T20:00:39.285Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T18:56:03.937Z"
+    "updatedAt": "2026-08-12T20:00:43.647Z"
   },
   "INDEX": {
     "text": "Consumer inflation data in line with expectations.",
