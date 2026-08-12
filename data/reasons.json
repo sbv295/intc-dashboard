@@ -8,20 +8,19 @@
     "updatedAt": "2026-08-11T19:58:14.529Z"
   },
   "AMD": {
-    "text": "Surprise data center deal points to much bigger demand ahead from Anthropic partnership.",
+    "text": "Data center revenue doubling, driving record profitability and raised guidance.",
     "source": "stock",
     "articleIds": [
-      "45af8795-08f8-3c64-942c-7ca3ef65756c"
+      "bec8b16f-d34f-3a2c-be75-3bcb57389221",
+      "f1a7ec22-7a1c-31ee-b5e3-9f2822afe17e"
     ],
-    "updatedAt": "2026-08-11T23:33:47.303Z"
+    "updatedAt": "2026-08-12T01:20:53.428Z"
   },
   "NVDA": {
-    "text": "Wall Street funding of $500 billion AI infrastructure sparking sustainability concerns of the AI boom.",
-    "source": "stock",
-    "articleIds": [
-      "20540da6-59b1-33d2-89e4-0ada1a1344dc"
-    ],
-    "updatedAt": "2026-08-11T23:33:52.165Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T01:20:57.992Z"
   },
   "TSM": {
     "text": "Strong revenue update and massive CPU opportunity sparking renewed demand and growth expectations",
@@ -46,15 +45,15 @@
     "updatedAt": "2026-08-11T23:34:02.117Z"
   },
   "MU": {
-    "text": "Memory prices keep rising despite concerns about future Chinese competition.",
+    "text": "memory prices keep rising and Wall Street analysts expecting improvement due to chip shortage",
     "source": "stock",
     "articleIds": [
       "94261b05-0288-3d65-a248-d76403e2cb46",
       "983dbaf4-22df-3cc7-85fe-e48e01f6c000",
-      "61c5d946-bec9-3161-90bc-9d9c1bff1bc8",
+      "38b3b054-0265-379d-94d2-528c63563cb1",
       "1b921880-2edc-30e3-a28d-112a641e22f0"
     ],
-    "updatedAt": "2026-08-11T20:47:05.032Z"
+    "updatedAt": "2026-08-12T01:21:12.730Z"
   },
   "AVGO": {
     "text": "Market already pricing in a slowdown in Broadcom's 32% annual revenue growth.",
@@ -66,73 +65,71 @@
     "updatedAt": "2026-08-11T23:34:11.898Z"
   },
   "SPCX": {
-    "text": "Failing to hold its IPO price after a three-day surge.",
-    "source": "stock",
-    "articleIds": [
-      "88069686-fb31-35fa-b6c9-0c1477a53816",
-      "1c9d4506-7c85-37e0-a401-eea926478b7d"
-    ],
-    "updatedAt": "2026-08-11T23:34:16.802Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T01:21:22.335Z"
   },
   "MRVL": {
-    "text": "Microsoft's AI chip push and expanded NVIDIA alliance are driving the gains.",
+    "text": "Microsoft's new AI chip and silicon push creating potential significant demand for Marvell's products.",
     "source": "stock",
     "articleIds": [
-      "79cd2636-6a01-36ea-84bf-a13646c56f02",
       "6a2e9cac-0e0b-3e66-92fc-b3a047ad9c4a",
       "7e434cdb-004d-39bd-8f8d-02f9be9d9923",
       "7da30c5c-0701-3fbe-8fac-b37f84f44eef",
       "1655d1ca-f4cf-371e-96e3-e3ba52ed5603"
     ],
-    "updatedAt": "2026-08-11T19:58:56.049Z"
+    "updatedAt": "2026-08-12T01:21:27.229Z"
   },
   "ARM": {
-    "text": "Accelerating AI adoption and growing demand for its chip architecture.",
+    "text": "Strong Q1 2026 results and embedded AI tools deal with Alif Semiconductor.",
     "source": "stock",
     "articleIds": [
-      "b98bfe72-6f0f-348d-b7c0-2c31fa5a032b",
       "9326d252-f313-3e53-a5ef-ddf245593b09",
-      "936d666e-2fce-37dc-a449-2e29add29196",
-      "f36f48fa-6b78-3999-a79b-2c572cbe8017"
+      "936d666e-2fce-37dc-a449-2e29add29196"
     ],
-    "updatedAt": "2026-08-11T19:59:01.261Z"
+    "updatedAt": "2026-08-12T01:21:31.967Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-11T23:34:32.108Z"
-  },
-  "SKHY": {
-    "text": "Selloff after IPO is seen as a buying opportunity due to a gap created.",
+    "text": "Qualcomm's Android growth metric being downplayed in quarterly summary.",
     "source": "stock",
     "articleIds": [
-      "0dd9e658-9ecb-3845-9891-c170c5c87228"
+      "2006930d-605e-3a01-b8bb-99dec5085132"
     ],
-    "updatedAt": "2026-08-11T21:40:43.820Z"
+    "updatedAt": "2026-08-12T01:21:37.241Z"
+  },
+  "SKHY": {
+    "text": "Named in South Korea's $3.5b semiconductor fund and facing intellectual property security risks.",
+    "source": "stock",
+    "articleIds": [
+      "6358eeb5-08ec-3216-adfb-6264223beae4"
+    ],
+    "updatedAt": "2026-08-12T01:21:41.913Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-11T23:34:41.052Z"
+    "updatedAt": "2026-08-12T01:21:46.135Z"
   },
   "005930.KS": {
-    "text": "Strong early demand for new foldable phones and smartwatches with expanded AI tools.",
+    "text": "Government backing for Samsung's $576 billion chip push sparks investor optimism.",
     "source": "stock",
     "articleIds": [
+      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a",
       "1202dfb7-3e78-34b4-84fb-de803b11bc0b",
-      "ae12a82b-c381-35dd-bb05-6b65819df950"
+      "abe1fcba-025c-37ea-8d76-1fb727b8e4ac"
     ],
-    "updatedAt": "2026-08-11T20:47:45.209Z"
+    "updatedAt": "2026-08-12T01:21:51.261Z"
   },
   "000660.KS": {
-    "text": "Selloff after IPO is seen as a buying opportunity due to a potential gap created.",
+    "text": "Positioning as a key participant in South Korea's $3.5b semiconductor fund and chip megaproject.",
     "source": "stock",
     "articleIds": [
+      "6358eeb5-08ec-3216-adfb-6264223beae4",
       "0dd9e658-9ecb-3845-9891-c170c5c87228"
     ],
-    "updatedAt": "2026-08-11T12:50:59.172Z"
+    "updatedAt": "2026-08-12T01:21:56.049Z"
   },
   "INDEX": {
     "text": "Investors taking profits in semiconductor funds amid large inflows into other areas.",
