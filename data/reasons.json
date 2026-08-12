@@ -1,12 +1,12 @@
 {
   "INTC": {
-    "text": "Growing confidence in foundry business and expected server CPU growth fueling investment optimism",
+    "text": "Growing confidence in foundry business and $20 billion equity raise fueling growth prospects.",
     "source": "stock",
     "articleIds": [
-      "595397e9-2654-37c8-8f54-c23aecd9a580",
-      "32206e20-7869-3ed1-b28d-cdcfdcda4df5"
+      "69e93418-726e-320a-828d-6077e0d7d3fa",
+      "595397e9-2654-37c8-8f54-c23aecd9a580"
     ],
-    "updatedAt": "2026-08-12T21:38:50.525Z"
+    "updatedAt": "2026-08-12T23:34:44.701Z"
   },
   "AMD": {
     "text": "Positioning for rising agentic AI demand justifies the current premium valuation.",
@@ -17,13 +17,13 @@
     "updatedAt": "2026-08-12T22:33:52.899Z"
   },
   "NVDA": {
-    "text": "Partnership with major Wall Street firms to fund AI build-out.",
+    "text": "Partnership with major firms to fund AI build-out and infrastructure financing initiatives.",
     "source": "stock",
     "articleIds": [
       "efc893e4-7f57-4132-9a07-f6e7c253c87a",
-      "5bf7cbb5-573e-3fd7-a379-2cedd032556d"
+      "e5a96d30-654b-3c92-bdfb-a9a2517e934b"
     ],
-    "updatedAt": "2026-08-12T22:33:57.828Z"
+    "updatedAt": "2026-08-12T23:34:54.574Z"
   },
   "TSM": {
     "text": "New joint venture with Sony to develop smartphone image sensors in Japan.",
@@ -38,25 +38,26 @@
     "updatedAt": "2026-08-12T17:54:31.255Z"
   },
   "SNDK": {
-    "text": "Memory prices skyrocketing due to a worldwide shortage.",
+    "text": "Datacenter revenue surged 103% sequentially due to $93.9B in long-term AI demand agreements.",
     "source": "stock",
     "articleIds": [
+      "8ed6abc6-469c-365f-89c5-5fe4c40e2023",
       "a321e494-bf71-3918-9068-3d1c14f274c9",
       "7da205eb-bad6-3922-8cd6-9465559149fb",
-      "7af9ee40-c6d2-3027-b889-6327f60aa217",
-      "80075803-7155-3189-8ae7-e171fa4c4952"
+      "7af9ee40-c6d2-3027-b889-6327f60aa217"
     ],
-    "updatedAt": "2026-08-12T22:34:07.820Z"
+    "updatedAt": "2026-08-12T23:35:04.783Z"
   },
   "MU": {
-    "text": "New demand indicators and tight memory supplies through 2027.",
+    "text": "New demand indicators and fresh signals from Samsung's enterprise storage expansion.",
     "source": "stock",
     "articleIds": [
+      "30363c1b-4136-34b4-b8cd-61a0b180aa43",
       "a321e494-bf71-3918-9068-3d1c14f274c9",
-      "59d22f7e-9db0-3a05-aeeb-c6201f1643ca",
-      "a23f15ec-23e1-3435-89f2-dd24b4bac4c5"
+      "c51ff320-3490-3ca7-ae7b-9bf7d9de06b7",
+      "59d22f7e-9db0-3a05-aeeb-c6201f1643ca"
     ],
-    "updatedAt": "2026-08-12T22:34:12.577Z"
+    "updatedAt": "2026-08-12T23:35:10.017Z"
   },
   "AVGO": {
     "text": "Premium valuation concerns amid surging AI semiconductor growth and leadership in AI networking.",
@@ -67,14 +68,15 @@
     "updatedAt": "2026-08-12T22:34:17.590Z"
   },
   "SPCX": {
-    "text": "Elon Musk's prediction that AI will be 99% of SpaceX's value within 5 years.",
+    "text": "Fresh inflation data and AI-linked stocks driving gains across technology.",
     "source": "stock",
     "articleIds": [
+      "bb100a1c-89e8-3895-83ad-8a62969394b3",
+      "e82372b6-2a71-3fa6-91bd-efdbd5c08fcd",
       "7a1df1e3-de9e-3f5e-a5dc-c5b057a2514d",
-      "64249150-99f2-3ff5-be99-6c90ba7ef76e",
-      "3b2e7bf5-7079-3e6f-84f1-993b30af8768"
+      "c13f71c9-c43a-3236-a707-4de55f3257cf"
     ],
-    "updatedAt": "2026-08-12T22:34:22.351Z"
+    "updatedAt": "2026-08-12T23:35:21.049Z"
   },
   "MRVL": {
     "text": "Investment in India and potential AI chip opportunities.",
@@ -120,7 +122,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T22:34:47.354Z"
+    "updatedAt": "2026-08-12T23:35:45.764Z"
   },
   "005930.KS": {
     "text": "Korea accelerating chip megaproject financing and infrastructure support anchored by Samsung.",
@@ -144,14 +146,14 @@
     "updatedAt": "2026-08-12T22:34:58.349Z"
   },
   "AAPL": {
-    "text": "Navigating Trump-era policy challenges and tariffs amid senior leadership shake-up.",
+    "text": "Talks to pay publishers to improve AI-powered Siri weigh on investor sentiment.",
     "source": "stock",
     "articleIds": [
-      "e8ec4ea9-afa6-35a4-962f-36de13e3e7eb",
-      "47354d14-9169-3ff5-a3b7-9241ab3c07ac",
-      "2bce0dfa-4f84-33d4-b236-d2ef6d724173"
+      "fdbe515a-c1a8-3aab-82dd-4dec3ff3227d",
+      "7bcfbd5e-3f28-3d69-b7e9-e472dbf877ff",
+      "e8ec4ea9-afa6-35a4-962f-36de13e3e7eb"
     ],
-    "updatedAt": "2026-08-12T20:51:17.395Z"
+    "updatedAt": "2026-08-12T23:36:00.783Z"
   },
   "MSFT": {
     "text": "Falling AI costs may favor companies with massive distribution.",
@@ -179,41 +181,40 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T22:35:18.242Z"
+    "updatedAt": "2026-08-12T23:36:15.572Z"
   },
   "META": {
-    "text": "Public relations shift from defensive to offensive amid sinking public opinion and thousands of lawsuits.",
+    "text": "Sinking public opinion and thousands of lawsuits from states and users.",
     "source": "stock",
     "articleIds": [
       "698930d1-9f40-340f-aa94-b79c409a55e0",
-      "440c0b93-0726-35b6-84a6-62e4c873852f",
-      "2bc08047-d9cc-3749-b14d-139728c54018"
+      "440c0b93-0726-35b6-84a6-62e4c873852f"
     ],
-    "updatedAt": "2026-08-12T20:51:38.421Z"
+    "updatedAt": "2026-08-12T23:36:20.844Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T22:35:27.280Z"
+    "updatedAt": "2026-08-12T23:36:25.485Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T22:35:31.583Z"
+    "updatedAt": "2026-08-12T23:36:29.942Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T22:35:35.814Z"
+    "updatedAt": "2026-08-12T23:36:34.391Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T22:35:40.176Z"
+    "updatedAt": "2026-08-12T23:36:38.827Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking investor concerns.",
@@ -227,19 +228,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T22:35:49.352Z"
+    "updatedAt": "2026-08-12T23:36:48.385Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T22:35:53.656Z"
+    "updatedAt": "2026-08-12T23:36:52.775Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T22:35:57.900Z"
+    "updatedAt": "2026-08-12T23:36:57.206Z"
   },
   "INDEX": {
     "text": "Consumer inflation data in line with expectations.",
