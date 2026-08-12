@@ -17,10 +17,13 @@
     "updatedAt": "2026-08-12T01:20:53.428Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-12T01:20:57.992Z"
+    "text": "concerns over heavy investment in AI ecosystem and financing structures sparking balance sheet worries",
+    "source": "stock",
+    "articleIds": [
+      "4ccd16e1-0058-3a0e-b33a-03784d42cb87",
+      "4392aabd-1c33-37b4-86a2-334ebe6f1f3a"
+    ],
+    "updatedAt": "2026-08-12T04:00:58.675Z"
   },
   "TSM": {
     "text": "Strong revenue update and massive CPU opportunity sparking renewed demand and growth expectations",
@@ -65,79 +68,84 @@
     "updatedAt": "2026-08-11T23:34:11.898Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-12T01:21:22.335Z"
+    "text": "Musk's comments on AI driving most of SpaceX's value and potential core business disruption.",
+    "source": "stock",
+    "articleIds": [
+      "d16dc753-679a-3e97-8ec0-3834d6daf37e"
+    ],
+    "updatedAt": "2026-08-12T04:01:24.116Z"
   },
   "MRVL": {
-    "text": "Microsoft's new AI chip and silicon push creating potential significant demand for Marvell's products.",
+    "text": "Investment in India and potential Microsoft AI chip partnership sparking growth expectations.",
     "source": "stock",
     "articleIds": [
+      "28d7e5a0-f6d2-3d11-9f31-4c1565549749",
+      "79cd2636-6a01-36ea-84bf-a13646c56f02",
       "6a2e9cac-0e0b-3e66-92fc-b3a047ad9c4a",
       "7e434cdb-004d-39bd-8f8d-02f9be9d9923",
-      "7da30c5c-0701-3fbe-8fac-b37f84f44eef",
-      "1655d1ca-f4cf-371e-96e3-e3ba52ed5603"
+      "7da30c5c-0701-3fbe-8fac-b37f84f44eef"
     ],
-    "updatedAt": "2026-08-12T01:21:27.229Z"
+    "updatedAt": "2026-08-12T04:01:29.556Z"
   },
   "ARM": {
-    "text": "Strong Q1 2026 results and embedded AI tools deal with Alif Semiconductor.",
+    "text": "Strong Q1 2026 results and deeper integration into embedded AI workflows.",
     "source": "stock",
     "articleIds": [
+      "b98bfe72-6f0f-348d-b7c0-2c31fa5a032b",
       "9326d252-f313-3e53-a5ef-ddf245593b09",
       "936d666e-2fce-37dc-a449-2e29add29196"
     ],
-    "updatedAt": "2026-08-12T01:21:31.967Z"
+    "updatedAt": "2026-08-12T04:01:34.412Z"
   },
   "QCOM": {
-    "text": "Qualcomm's Android growth metric being downplayed in quarterly summary.",
-    "source": "stock",
-    "articleIds": [
-      "2006930d-605e-3a01-b8bb-99dec5085132"
-    ],
-    "updatedAt": "2026-08-12T01:21:37.241Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T04:01:39.172Z"
   },
   "SKHY": {
-    "text": "Named in South Korea's $3.5b semiconductor fund and facing intellectual property security risks.",
+    "text": "Inclusion in South Korea's new $3.5 billion semiconductor fund and national chip megaproject.",
     "source": "stock",
     "articleIds": [
-      "6358eeb5-08ec-3216-adfb-6264223beae4"
+      "6358eeb5-08ec-3216-adfb-6264223beae4",
+      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a",
+      "f7a70fee-911f-3094-a0c7-6e81b74690db"
     ],
-    "updatedAt": "2026-08-12T01:21:41.913Z"
+    "updatedAt": "2026-08-12T04:01:44.306Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T01:21:46.135Z"
+    "updatedAt": "2026-08-12T04:01:48.801Z"
   },
   "005930.KS": {
-    "text": "Government backing for Samsung's $576 billion chip push sparks investor optimism.",
+    "text": "Strong early demand for new foldable phones and smartwatches drives record-breaking preorders.",
     "source": "stock",
     "articleIds": [
-      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a",
       "1202dfb7-3e78-34b4-84fb-de803b11bc0b",
-      "abe1fcba-025c-37ea-8d76-1fb727b8e4ac"
+      "abe1fcba-025c-37ea-8d76-1fb727b8e4ac",
+      "213c622b-0def-3618-ad40-1ad34261d975"
     ],
-    "updatedAt": "2026-08-12T01:21:51.261Z"
+    "updatedAt": "2026-08-12T04:01:53.754Z"
   },
   "000660.KS": {
-    "text": "Positioning as a key participant in South Korea's $3.5b semiconductor fund and chip megaproject.",
+    "text": "Positioned as a key participant in South Korea's $3.5b semiconductor fund and megaproject.",
     "source": "stock",
     "articleIds": [
       "6358eeb5-08ec-3216-adfb-6264223beae4",
-      "0dd9e658-9ecb-3845-9891-c170c5c87228"
+      "9ccd29ac-7a53-39d8-bbea-7e3a5e23df1a",
+      "f7a70fee-911f-3094-a0c7-6e81b74690db"
     ],
-    "updatedAt": "2026-08-12T01:21:56.049Z"
+    "updatedAt": "2026-08-12T04:01:58.717Z"
   },
   "INDEX": {
-    "text": "Investors taking profits in semiconductor funds amid large inflows into other areas.",
+    "text": "Tax implications of high-yielding investments weighing on investor sentiment.",
     "source": "macro",
     "articleIds": [
       "ca9089c4-3fd6-324b-9bd3-75100d2a0d62",
-      "e8602c43-b17a-31d7-ab95-2a81cb9493eb"
+      "80e7c4e8-de09-3ee6-87c7-47c3ae9f1965"
     ],
-    "updatedAt": "2026-08-11T22:36:14.146Z"
+    "updatedAt": "2026-08-12T04:02:03.459Z"
   }
 }
