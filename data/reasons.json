@@ -1,77 +1,83 @@
 {
   "INTC": {
-    "text": "Huge rally saving millions as it prepares to issue new common stock for AI comeback",
+    "text": "CEO's focus on memory-CPU stacking amid chip shortage deepens.",
     "source": "stock",
     "articleIds": [
-      "fe6e5f58-1604-448f-ab51-cce440c9e0ee",
+      "82f1fb53-82f5-398c-aa2f-a1c06c14babe",
       "9e117c04-9b2c-32a0-942a-d9745f286193"
     ],
-    "updatedAt": "2026-08-12T05:40:11.720Z"
+    "updatedAt": "2026-08-12T10:57:35.015Z"
   },
   "AMD": {
-    "text": "Data center revenue doubling, driving record profitability and raised guidance.",
+    "text": "Record profitability and raised guidance after data center revenue doubled.",
     "source": "stock",
     "articleIds": [
+      "82f1fb53-82f5-398c-aa2f-a1c06c14babe",
       "bec8b16f-d34f-3a2c-be75-3bcb57389221",
       "f1a7ec22-7a1c-31ee-b5e3-9f2822afe17e"
     ],
-    "updatedAt": "2026-08-12T01:20:53.428Z"
+    "updatedAt": "2026-08-12T10:57:39.765Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-12T09:55:59.049Z"
+    "text": "trading at 24x forward earnings, considered undervalued compared to historical metrics.",
+    "source": "stock",
+    "articleIds": [
+      "7eb005fe-6e2e-3cc5-ba07-5426d863aede"
+    ],
+    "updatedAt": "2026-08-12T10:57:44.607Z"
   },
   "TSM": {
-    "text": "Strong revenue update and massive CPU opportunity sparking renewed demand and growth expectations",
+    "text": "Strong revenue figures and massive CPU opportunity sparking renewed investor interest and demand signal",
     "source": "stock",
     "articleIds": [
       "6a2e9cac-0e0b-3e66-92fc-b3a047ad9c4a",
       "da27e2e0-805d-3eae-afea-25616ff04a1d",
       "14fc6f73-db3a-374a-9dc6-31ec308b3487",
-      "96112bd3-e9e8-3459-a834-ba9b23ee34fd",
-      "7da30c5c-0701-3fbe-8fac-b37f84f44eef"
+      "96112bd3-e9e8-3459-a834-ba9b23ee34fd"
     ],
-    "updatedAt": "2026-08-11T19:58:29.847Z"
+    "updatedAt": "2026-08-12T10:57:49.442Z"
   },
   "SNDK": {
-    "text": "Recent correction creating a more attractive entry valuation during a powerful growth cycle.",
+    "text": "$15.5 billion stock buyback suggests management thinks shares are still cheap.",
     "source": "stock",
     "articleIds": [
+      "4da1e47c-219b-3fd3-b94a-86f240fba06a",
+      "f1a7ec22-7a1c-31ee-b5e3-9f2822afe17e",
       "d22f3e9d-4a64-3f5e-b8ae-7a334f6b1951",
-      "79eab6a0-0db6-3adc-ac80-030fcb6a6bc6",
-      "98c7f782-5884-3212-8305-6ed7c8f4e98f"
+      "79eab6a0-0db6-3adc-ac80-030fcb6a6bc6"
     ],
-    "updatedAt": "2026-08-12T08:11:38.819Z"
+    "updatedAt": "2026-08-12T10:57:54.181Z"
   },
   "MU": {
-    "text": "memory prices keep rising and Wall Street analysts expecting improvement due to memory-chip shortage",
+    "text": "Memory prices keep rising, supporting Micron's fundamentals despite concerns about future competition.",
     "source": "stock",
     "articleIds": [
+      "41f85b41-c1ab-3317-a5e0-254789f94864",
       "94261b05-0288-3d65-a248-d76403e2cb46",
       "983dbaf4-22df-3cc7-85fe-e48e01f6c000",
-      "38b3b054-0265-379d-94d2-528c63563cb1"
+      "61c5d946-bec9-3161-90bc-9d9c1bff1bc8"
     ],
-    "updatedAt": "2026-08-12T08:11:43.986Z"
+    "updatedAt": "2026-08-12T10:57:59.280Z"
   },
   "AVGO": {
-    "text": "trading at high multiples and potential competitive gap in AI revenue strategy",
+    "text": "Priced to deliver future revenue growth that has already been priced in.",
     "source": "stock",
     "articleIds": [
       "9fd706f9-d727-3709-b60b-2062a5dc5e9c",
+      "70e25055-7252-33bc-8f79-31e62876d0cd",
       "ed376c50-c594-3fba-baeb-a5a2cb4b1606"
     ],
-    "updatedAt": "2026-08-12T09:56:18.657Z"
+    "updatedAt": "2026-08-12T10:58:04.133Z"
   },
   "SPCX": {
-    "text": "Insider share unlock event and competitive concerns from T-Mobile's CEO sparking selling pressure",
+    "text": "Potential $42.5 billion in selling pressure triggered by a 2nd insider share unlock event.",
     "source": "stock",
     "articleIds": [
       "0f080cd3-de11-3e7c-a363-8161ccec89d1",
-      "26ab2f03-660d-3bc5-b8ac-b6de749293d1"
+      "26ab2f03-660d-3bc5-b8ac-b6de749293d1",
+      "d16dc753-679a-3e97-8ec0-3834d6daf37e"
     ],
-    "updatedAt": "2026-08-12T09:56:23.246Z"
+    "updatedAt": "2026-08-12T10:58:09.336Z"
   },
   "MRVL": {
     "text": "Investment in India and potential Microsoft AI chip partnership sparking growth expectations.",
@@ -116,7 +122,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:56:49.085Z"
+    "updatedAt": "2026-08-12T10:58:33.751Z"
   },
   "005930.KS": {
     "text": "Strong early demand for its new foldable phones and smartwatches drives record preorder numbers.",
@@ -141,58 +147,57 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:03.564Z"
+    "updatedAt": "2026-08-12T10:58:48.146Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:07.997Z"
+    "updatedAt": "2026-08-12T10:58:52.653Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:12.258Z"
+    "updatedAt": "2026-08-12T10:58:56.925Z"
   },
   "AMZN": {
-    "text": "The cost of Amazon's AI pivot may be weighing on its valuation.",
+    "text": "The cost of Amazon's AI pivot may be weighing on it.",
     "source": "stock",
     "articleIds": [
-      "434ed70a-289c-354e-ad7d-5602bff650c8",
-      "89ceac3e-d95e-3a85-8c2b-957de82d1378"
+      "434ed70a-289c-354e-ad7d-5602bff650c8"
     ],
-    "updatedAt": "2026-08-12T09:57:16.900Z"
+    "updatedAt": "2026-08-12T10:59:01.923Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:21.414Z"
+    "updatedAt": "2026-08-12T10:59:06.427Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:25.740Z"
+    "updatedAt": "2026-08-12T10:59:10.665Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:30.094Z"
+    "updatedAt": "2026-08-12T10:59:14.950Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:34.403Z"
+    "updatedAt": "2026-08-12T10:59:19.219Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:38.656Z"
+    "updatedAt": "2026-08-12T10:59:23.506Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking investor concerns.",
@@ -206,19 +211,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:47.715Z"
+    "updatedAt": "2026-08-12T10:59:32.461Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:51.981Z"
+    "updatedAt": "2026-08-12T10:59:36.704Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T09:57:56.239Z"
+    "updatedAt": "2026-08-12T10:59:40.954Z"
   },
   "INDEX": {
     "text": "Investors booking profits in semiconductor funds amid heavy inflows into tech-focused ETFs.",
