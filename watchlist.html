@@ -944,7 +944,6 @@
         <span class="mcap-summary-value" id="mcap-total-us">—</span>
         <span class="mcap-summary-change" id="mcap-chg-us"></span>
         <img src="logos/casino.png" alt="casino" class="casino-badge">
-        <span class="mcap-summary-reason" id="mcap-reason-us"></span>
     </div>
     <div class="mcap-summary" id="index-summary-us">
         <span class="mcap-summary-label">NASDAQ 100</span>
@@ -1135,8 +1134,6 @@
         if (reasonsData.INDEX) {
             const indexEl = document.getElementById('index-reason');
             if (indexEl) indexEl.textContent = reasonsData.INDEX.text;
-            const mcapEl = document.getElementById('mcap-reason-us');
-            if (mcapEl) mcapEl.textContent = reasonsData.INDEX.text;
         }
     }
 
