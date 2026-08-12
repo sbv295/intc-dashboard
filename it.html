@@ -338,6 +338,17 @@
         .stock-meta.has-volume .meta-vol { display: inline; }
         .stock-meta.has-volume .meta-avgvol { display: inline; }
 
+        .stock-reason {
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            font-style: italic;
+            text-align: center;
+            margin-top: 6px;
+            line-height: 1.35;
+            min-height: 0;
+        }
+        .stock-reason:empty { display: none; }
+
         .stock-extended {
             font-size: 0.92rem;
             color: var(--text-dim);
@@ -421,6 +432,7 @@
         /* ─── Total Market Cap Bar ────────────────────────── */
         .mcap-summary {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             gap: 12px;
             background: var(--surface);
@@ -454,6 +466,16 @@
         .mcap-summary-ext .up { color: var(--green); font-weight: 700; }
         .mcap-summary-ext .down { color: var(--red); font-weight: 700; }
         .mcap-summary-ext:empty { display: none; }
+        .mcap-summary-reason {
+            font-size: 0.7rem;
+            color: var(--text-dim);
+            font-style: italic;
+            text-align: center;
+            width: 100%;
+            flex-basis: 100%;
+            margin-top: 2px;
+        }
+        .mcap-summary-reason:empty { display: none; }
         .fx-rate-badge {
             font-size: 0.85rem;
             font-weight: 700;
@@ -927,6 +949,7 @@
         <span class="mcap-summary-value" id="ndx-value">—</span>
         <span class="mcap-summary-change" id="ndx-chg"></span>
         <span class="mcap-summary-ext" id="ndx-ext"></span>
+        <span class="mcap-summary-reason" id="index-reason"></span>
     </div>
 
     <div class="stock-grid" id="stock-grid-us"></div>
@@ -1042,6 +1065,31 @@
         // Indices have no extended-hours data of their own — use QQQ (the standard NASDAQ-100
         // tracking ETF) as a pre/post-market movement proxy, clearly labeled as such.
         await fetchNasdaq100ExtendedProxy();
+    }
+
+    // "Why is it moving" text is pre-computed by a scheduled GitHub Action
+    // (.github/workflows/refresh-reasons.yml) and written to data/reasons.json as a
+    // static file (shared across all tabs) — loaded once here and applied to every
+    // stock card + the NASDAQ 100 line. Never calls /api/groq directly from the page.
+    let reasonsData = null;
+    async function loadReasonsData() {
+        try {
+            const resp = await fetch('data/reasons.json', { cache: 'no-store' });
+            if (!resp.ok) return;
+            reasonsData = await resp.json();
+        } catch (e) {
+            return;
+        }
+        STOCKS.forEach(s => {
+            const entry = reasonsData[s.ticker];
+            if (!entry) return;
+            const el = document.getElementById(`reason-${sid(s)}`);
+            if (el) el.textContent = entry.text;
+        });
+        if (reasonsData.INDEX) {
+            const indexEl = document.getElementById('index-reason');
+            if (indexEl) indexEl.textContent = reasonsData.INDEX.text;
+        }
     }
 
     async function fetchNasdaq100ExtendedProxy() {
@@ -1591,6 +1639,7 @@
                         <div class="price-block-change" id="hl-chg-${id}"></div>
                     </div>` : ''}
                 </div>
+                <div class="stock-reason" id="reason-${id}"></div>
                 <div class="stock-collapse-body"><div class="stock-collapse-inner">
                 <div class="stock-sentiment" id="sentiment-${id}"><canvas class="sentiment-chart" id="chart-${id}"></canvas><div class="chart-glow-dot" id="glow-${id}"></div><div class="chart-tooltip" id="tooltip-${id}"></div></div>
                 <div class="stock-ohl" id="ohl-${id}"></div>
@@ -2474,6 +2523,7 @@
         setInterval(fetchUsdInrRate, 60000);
         fetchNasdaq100Index();
         setInterval(fetchNasdaq100Index, 60000);
+        loadReasonsData();
         fetchAllNasdaq().then(() => {
             fetchAllShares();
             fetchAllATH();

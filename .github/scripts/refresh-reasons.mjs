@@ -1,9 +1,10 @@
 // Scheduled background job (run via .github/workflows/refresh-reasons.yml) that
-// pre-computes "why is it moving" text for every watchlist ticker + the NASDAQ 100
-// index, and writes it to data/reasons.json. The live dashboard only ever READS
-// this static file — it never calls /api/groq directly — so every page load shows
-// the exact same stable text until the next scheduled run, instead of a fresh
-// (and sometimes rate-limited/flaky) LLM call on every visit.
+// pre-computes "why is it moving" text for every stock across all three tabs
+// (Semicon, IT, Indian market) + the NASDAQ 100 and NIFTY 50 indices, and writes
+// it to data/reasons.json. The live dashboards only ever READ this static file —
+// they never call /api/groq directly — so every page load shows the exact same
+// stable text until the next scheduled run, instead of a fresh (and sometimes
+// rate-limited/flaky) LLM call on every visit.
 import fs from 'node:fs/promises';
 
 const SITE = 'https://intc-dashboard.vercel.app';
@@ -11,8 +12,14 @@ const OUT_PATH = new URL('../../data/reasons.json', import.meta.url);
 
 // Must match the STOCK_META keys in api/groq.js
 const TICKERS = [
+  // Semicon watchlist
   'INTC', 'AMD', 'NVDA', 'TSM', 'SNDK', 'MU', 'AVGO', 'SPCX',
   'MRVL', 'ARM', 'QCOM', 'SKHY', 'MBLY', '005930.KS', '000660.KS',
+  // IT watchlist
+  'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META',
+  // Indian market watchlist
+  'HDFCBANK.NS', 'ICICIBANK.NS', 'DEEPAKFERT.NS', 'AARTIIND.NS',
+  'TCS.NS', 'INFY.NS', 'RELIANCE.NS', 'ASIANPAINT.NS',
 ];
 
 async function fetchChgPct(ticker) {
@@ -98,6 +105,16 @@ async function main() {
     result.INDEX = mergeEntry(existing.INDEX, fresh);
   } else if (existing.INDEX) {
     result.INDEX = existing.INDEX;
+  }
+  await sleep(4000);
+
+  // NIFTY 50 (India) macro-level explanation, shared by the Indian market tab.
+  const niftyPct = await fetchChgPct('^NSEI');
+  if (niftyPct != null) {
+    const fresh = await fetchReason(`index=1&market=IN&chgPct=${niftyPct}`);
+    result.INDEX_IN = mergeEntry(existing.INDEX_IN, fresh);
+  } else if (existing.INDEX_IN) {
+    result.INDEX_IN = existing.INDEX_IN;
   }
 
   await fs.mkdir(new URL('.', OUT_PATH), { recursive: true });

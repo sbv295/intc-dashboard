@@ -32,6 +32,7 @@ async function groqChat(apiKey, messages, opts) {
 // Whitelisted tickers only — an arbitrary/public `ticker` query param must not
 // be able to burn API quota on unrelated symbols or prompt-inject via `company`.
 const STOCK_META = {
+  // Semicon watchlist
   'INTC': ['INTC', 'Intel'],
   'AMD': ['AMD'],
   'NVDA': ['NVDA', 'Nvidia', 'NVIDIA'],
@@ -47,6 +48,28 @@ const STOCK_META = {
   'MBLY': ['MBLY', 'Mobileye'],
   '005930.KS': ['Samsung'],
   '000660.KS': ['SK Hynix', 'SK hynix'],
+  // IT watchlist
+  'AAPL': ['AAPL', 'Apple'],
+  'MSFT': ['MSFT', 'Microsoft'],
+  'GOOGL': ['GOOGL', 'Google', 'Alphabet'],
+  'AMZN': ['AMZN', 'Amazon'],
+  'META': ['META', 'Meta'],
+  // Indian market watchlist
+  'HDFCBANK.NS': ['HDFC Bank'],
+  'ICICIBANK.NS': ['ICICI Bank'],
+  'DEEPAKFERT.NS': ['Deepak Fertilisers'],
+  'AARTIIND.NS': ['Aarti Industries'],
+  'TCS.NS': ['TCS'],
+  'INFY.NS': ['Infosys'],
+  'RELIANCE.NS': ['Reliance', 'Reliance Industries'],
+  'ASIANPAINT.NS': ['Asian Paints'],
+};
+
+// Index-mode macro reference per market — which ETF/index news feed to pull
+// broad-market context from, and how to describe it in prompts.
+const MARKETS = {
+  US: { macroTicker: 'QQQ', subject: 'the broad US market' },
+  IN: { macroTicker: '^NSEI', subject: 'the broad Indian market' },
 };
 
 function displayName(ticker) {
@@ -143,11 +166,11 @@ function mentionsSingleCompany(article) {
   return ALL_COMPANY_NAMES.some(name => new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(article.title));
 }
 
-// Shared macro/sector-wide explanation via QQQ's own news feed. Used both as the
-// tier-2 fallback for individual tickers and as the primary (only) tier for
-// index-level UI spots (NASDAQ 100 line, watchlist market-cap line).
-async function macroExplain(apiKey, subject, direction, pct, cutoff, { preferBroad = false } = {}) {
-  const macroNews = await fetchNews('QQQ', 10);
+// Shared macro/sector-wide explanation via a market's reference ETF/index news
+// feed (QQQ for US, ^NSEI for India). Used as the primary (only) tier for
+// index-level UI spots (NASDAQ 100 / NIFTY 50 line).
+async function macroExplain(apiKey, subject, direction, pct, cutoff, { preferBroad = false, macroTicker = 'QQQ', sentimentSubject = 'the broad US stock market' } = {}) {
+  const macroNews = await fetchNews(macroTicker, 10);
   let macroRelevant = macroNews
     .map(item => {
       const c = item.content || {};
@@ -166,7 +189,7 @@ async function macroExplain(apiKey, subject, direction, pct, cutoff, { preferBro
   macroRelevant = macroRelevant.slice(0, 5);
 
   if (!macroRelevant.length) return null;
-  const macroSentiments = await classifySentiment(apiKey, 'the broad US stock market', macroRelevant);
+  const macroSentiments = await classifySentiment(apiKey, sentimentSubject, macroRelevant);
   const macroMatching = macroRelevant.filter((_, i) => macroSentiments[i] === direction);
   if (!macroMatching.length) return null;
   const text = await generateSentence(apiKey, subject, direction, pct, macroMatching);
@@ -201,8 +224,9 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { ticker, chgPct, index } = req.query;
+  const { ticker, chgPct, index, market } = req.query;
   const isIndexMode = index === '1';
+  const marketCfg = MARKETS[market] || MARKETS.US;
   if (!isIndexMode && (!ticker || !STOCK_META[ticker])) {
     return res.status(400).json({ error: 'Unknown ticker' });
   }
@@ -215,7 +239,7 @@ export default async function handler(req, res) {
   }
 
   const direction = pct > 0 ? 'UP' : 'DOWN';
-  const key = cacheKey(isIndexMode ? 'INDEX' : ticker, direction, pct);
+  const key = cacheKey(isIndexMode ? `INDEX_${market || 'US'}` : ticker, direction, pct);
   const cached = getCached(key);
   if (cached) return res.status(200).json({ ...cached, cached: true });
 
@@ -233,11 +257,15 @@ export default async function handler(req, res) {
 
   try {
     if (isIndexMode) {
-      // Index/market-wide requests (NASDAQ 100, watchlist mkt cap) go straight
-      // to the macro tier — there's no single "company" catalyst to look for.
+      // Index/market-wide requests (NASDAQ 100 / NIFTY 50) go straight to the
+      // macro tier — there's no single "company" catalyst to look for.
       // preferBroad: favor genuinely market-wide drivers (Fed/inflation/oil/rates)
       // over a single constituent's news, which reads poorly as an index-level reason.
-      result = await macroExplain(apiKey, 'the broad US market', direction, pct, cutoff, { preferBroad: true });
+      result = await macroExplain(apiKey, marketCfg.subject, direction, pct, cutoff, {
+        preferBroad: true,
+        macroTicker: marketCfg.macroTicker,
+        sentimentSubject: marketCfg.subject,
+      });
     } else {
       const nameVariants = STOCK_META[ticker];
       const subject = displayName(ticker);
