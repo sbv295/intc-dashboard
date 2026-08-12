@@ -1,14 +1,14 @@
 {
   "INTC": {
-    "text": "Equity capital raise sparking optimism about foundry business and management's increasing conviction.",
+    "text": "Stronger 2026 growth outlook and expected foundry business gains outweighing dilution from capital raise.",
     "source": "stock",
     "articleIds": [
+      "d9cae6a2-bad4-3dbb-b412-8556fcd041b9",
       "a066e0c0-7def-362b-bba9-5152f3421e67",
       "2978eb9e-6a54-31f6-95ad-9f24aa2f936f",
-      "82f1fb53-82f5-398c-aa2f-a1c06c14babe",
-      "9e117c04-9b2c-32a0-942a-d9745f286193"
+      "82f1fb53-82f5-398c-aa2f-a1c06c14babe"
     ],
-    "updatedAt": "2026-08-12T12:54:55.254Z"
+    "updatedAt": "2026-08-12T14:17:45.310Z"
   },
   "AMD": {
     "text": "Record profitability and raised guidance after data center revenue doubled.",
@@ -21,60 +21,62 @@
     "updatedAt": "2026-08-12T10:57:39.765Z"
   },
   "NVDA": {
-    "text": "Criticism of Nvidia's $500bn AI funding deal, drawing comparisons to Enron's questionable practices.",
+    "text": "Key CPI inflation report and positive news from partner CoreWeave on earnings.",
     "source": "stock",
     "articleIds": [
-      "27c02471-2f8d-342f-afb8-607f3606d253"
+      "14192882-2d0d-3020-8314-bc5352b1fdcf"
     ],
-    "updatedAt": "2026-08-12T12:55:04.790Z"
+    "updatedAt": "2026-08-12T14:17:55.571Z"
   },
   "TSM": {
-    "text": "Strong revenue figures and massive CPU opportunity sparking renewed investor interest and demand signal",
+    "text": "Strong revenue figures and upgraded outlook sparking increased demand for AI-driven chip production.",
     "source": "stock",
     "articleIds": [
+      "fbb87ef9-52f9-33f0-8636-e5d855f12315",
       "6a2e9cac-0e0b-3e66-92fc-b3a047ad9c4a",
-      "da27e2e0-805d-3eae-afea-25616ff04a1d",
-      "14fc6f73-db3a-374a-9dc6-31ec308b3487",
-      "96112bd3-e9e8-3459-a834-ba9b23ee34fd"
+      "da27e2e0-805d-3eae-afea-25616ff04a1d"
     ],
-    "updatedAt": "2026-08-12T10:57:49.442Z"
+    "updatedAt": "2026-08-12T14:18:00.643Z"
   },
   "SNDK": {
-    "text": "Management's $15.5 billion buyback suggests undervaluation, signaling potential for further growth.",
+    "text": "Rising AI storage demand and perceived undervaluation despite significant year-to-date gains.",
     "source": "stock",
     "articleIds": [
+      "281d5557-6f1c-3e47-aa53-f2b73135eb0e",
       "4da1e47c-219b-3fd3-b94a-86f240fba06a",
       "f1a7ec22-7a1c-31ee-b5e3-9f2822afe17e",
-      "d22f3e9d-4a64-3f5e-b8ae-7a334f6b1951",
-      "79eab6a0-0db6-3adc-ac80-030fcb6a6bc6"
+      "d22f3e9d-4a64-3f5e-b8ae-7a334f6b1951"
     ],
-    "updatedAt": "2026-08-12T12:55:15.127Z"
+    "updatedAt": "2026-08-12T14:18:06.189Z"
   },
   "MU": {
-    "text": "A structural shift in memory cyclicality logic buried in its latest earnings call.",
+    "text": "Shift in memory cyclicality perception due to a recent structural change in its business.",
     "source": "stock",
     "articleIds": [
-      "e2a4707c-04f5-3ffa-abee-733d26c6cde4",
-      "41f85b41-c1ab-3317-a5e0-254789f94864"
+      "e2a4707c-04f5-3ffa-abee-733d26c6cde4"
     ],
-    "updatedAt": "2026-08-12T12:55:19.943Z"
+    "updatedAt": "2026-08-12T14:18:10.920Z"
   },
   "AVGO": {
-    "text": "Trading at 71 times earnings and 27 times next year's, sparking valuation concerns.",
+    "text": "Priced to deliver 26% revenue growth annually for the next 5 years.",
     "source": "stock",
     "articleIds": [
-      "9fd706f9-d727-3709-b60b-2062a5dc5e9c"
+      "85ce2b5b-0450-36ed-88f4-36b76abd6bde",
+      "7e40f30d-ea19-34a1-8b78-2b83fff9f457",
+      "70e25055-7252-33bc-8f79-31e62876d0cd",
+      "c0bf7997-bea8-31b7-9511-cb720301fc5c"
     ],
-    "updatedAt": "2026-08-12T12:55:24.659Z"
+    "updatedAt": "2026-08-12T14:18:16.138Z"
   },
   "SPCX": {
-    "text": "Norway sovereign wealth fund discloses its stake in SpaceX.",
+    "text": "Predictions of $100B annual recurring revenue by 2027 and undervalued AI unit.",
     "source": "stock",
     "articleIds": [
-      "48e554ab-680e-38de-9f02-96a40e4bb2b3",
-      "6a414e72-cf77-371a-acc7-ebbdbb97ce2a"
+      "123c84cb-d275-4832-a980-1f1fe8e26bc0",
+      "daa6ed29-1f8f-3656-8d89-2e80f2456178",
+      "27ff1520-335b-34b6-a0f6-578127fd74cf"
     ],
-    "updatedAt": "2026-08-12T12:55:29.764Z"
+    "updatedAt": "2026-08-12T14:18:21.318Z"
   },
   "MRVL": {
     "text": "Investment in India and potential Microsoft AI chip partnership sparking growth expectations.",
@@ -99,12 +101,10 @@
     "updatedAt": "2026-08-12T09:56:33.316Z"
   },
   "QCOM": {
-    "text": "Qualcomm's Android growth metric being downplayed in quarterly summaries.",
-    "source": "stock",
-    "articleIds": [
-      "2006930d-605e-3a01-b8bb-99dec5085132"
-    ],
-    "updatedAt": "2026-08-12T11:46:30.757Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-12T14:18:35.861Z"
   },
   "SKHY": {
     "text": "Investment from Singapore's Temasek Holdings Pte sparks gains.",
@@ -117,10 +117,10 @@
     "updatedAt": "2026-08-12T12:55:49.406Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T12:55:53.720Z"
+    "updatedAt": "2026-08-12T14:18:45.812Z"
   },
   "005930.KS": {
     "text": "Investment by Temasek Holdings Pte and focus on cash returns to shareholders.",
@@ -142,60 +142,69 @@
     "updatedAt": "2026-08-12T12:56:03.562Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-12T12:56:08.018Z"
+    "text": "Memory bill climbing due to Apple's inability to secure cheaper DRAM pricing.",
+    "source": "stock",
+    "articleIds": [
+      "a31c1ea4-c1f8-32f2-9f81-5c378391e6ee",
+      "2597e46b-1a97-389e-a4a8-0ceb63b8271d",
+      "363d8bcd-a0e4-3792-a85a-216723e61052"
+    ],
+    "updatedAt": "2026-08-12T14:19:00.697Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T12:56:12.583Z"
+    "updatedAt": "2026-08-12T14:19:05.858Z"
   },
   "GOOGL": {
+    "text": "Aggressive AI spending and dilution concerns from a quieter balance sheet issue.",
+    "source": "stock",
+    "articleIds": [
+      "12dcad0b-82b7-3b85-a2ae-cf17a17e9fc0"
+    ],
+    "updatedAt": "2026-08-12T14:19:11.113Z"
+  },
+  "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T12:56:16.836Z"
-  },
-  "AMZN": {
-    "text": "The cost of Amazon's AI pivot may be weighing on it.",
-    "source": "stock",
-    "articleIds": [
-      "434ed70a-289c-354e-ad7d-5602bff650c8"
-    ],
-    "updatedAt": "2026-08-12T12:56:21.697Z"
+    "updatedAt": "2026-08-12T14:19:15.691Z"
   },
   "META": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-12T12:56:26.409Z"
+    "text": "Potential $1.4 trillion legal test and children's social media addiction claims.",
+    "source": "stock",
+    "articleIds": [
+      "12dcad0b-82b7-3b85-a2ae-cf17a17e9fc0",
+      "54b3d7b3-6d80-31a9-9dee-21852f0ca80c",
+      "198424f2-dd7b-3b0e-a746-cc3414f86f2a",
+      "301ec4b4-9926-3e22-ba70-427852e820b9"
+    ],
+    "updatedAt": "2026-08-12T14:19:21.258Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T12:56:30.719Z"
+    "updatedAt": "2026-08-12T14:19:25.755Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T12:56:35.043Z"
+    "updatedAt": "2026-08-12T14:19:30.164Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T12:56:39.304Z"
+    "updatedAt": "2026-08-12T14:19:34.605Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T12:56:43.672Z"
+    "updatedAt": "2026-08-12T14:19:39.075Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking investor concerns.",
@@ -209,28 +218,28 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T12:56:53.150Z"
+    "updatedAt": "2026-08-12T14:19:48.843Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T12:56:57.467Z"
+    "updatedAt": "2026-08-12T14:19:53.306Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-12T12:57:01.707Z"
+    "updatedAt": "2026-08-12T14:19:57.749Z"
   },
   "INDEX": {
-    "text": "Investors booking profits in semiconductor funds amid heavy inflows into tech-focused ETFs.",
+    "text": "Consumer inflation data in line with expectations, tech sector gains.",
     "source": "macro",
     "articleIds": [
-      "ca9089c4-3fd6-324b-9bd3-75100d2a0d62",
-      "e8602c43-b17a-31d7-ab95-2a81cb9493eb"
+      "037fc17a-3bb5-34fb-ab92-9e04165b7d4a",
+      "36033e41-dd61-3043-a132-398cb4c41bdc"
     ],
-    "updatedAt": "2026-08-12T05:42:23.856Z"
+    "updatedAt": "2026-08-12T14:20:02.572Z"
   },
   "INDEX_IN": {
     "text": "Firmer crude oil prices curbed risk appetite.",
