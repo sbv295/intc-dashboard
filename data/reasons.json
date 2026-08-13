@@ -18,13 +18,13 @@
     "updatedAt": "2026-08-13T01:22:55.135Z"
   },
   "NVDA": {
-    "text": "Partnership with major firms to fund AI build-out and infrastructure financing initiatives.",
+    "text": "Partnership with major Wall Street firms to fund AI build-out and new 5G drone-tracking system.",
     "source": "stock",
     "articleIds": [
       "efc893e4-7f57-4132-9a07-f6e7c253c87a",
-      "e5a96d30-654b-3c92-bdfb-a9a2517e934b"
+      "9d64fddb-bc3f-3f92-9d08-9dc783323d3b"
     ],
-    "updatedAt": "2026-08-12T23:34:54.574Z"
+    "updatedAt": "2026-08-13T04:05:37.477Z"
   },
   "TSM": {
     "text": "New joint venture with Sony to develop smartphone image sensors in Japan.",
@@ -33,10 +33,9 @@
       "ee69eeec-3995-3c92-9447-b042111d40b0",
       "fbb87ef9-52f9-33f0-8636-e5d855f12315",
       "92f56a4e-5cc6-34f8-bf7d-096b4223dcfa",
-      "6a2e9cac-0e0b-3e66-92fc-b3a047ad9c4a",
-      "da27e2e0-805d-3eae-afea-25616ff04a1d"
+      "6a2e9cac-0e0b-3e66-92fc-b3a047ad9c4a"
     ],
-    "updatedAt": "2026-08-12T17:54:31.255Z"
+    "updatedAt": "2026-08-13T04:05:42.245Z"
   },
   "SNDK": {
     "text": "Datacenter revenue surged 103% sequentially due to $93.9B in long-term AI demand agreements.",
@@ -69,14 +68,14 @@
     "updatedAt": "2026-08-12T22:34:17.590Z"
   },
   "SPCX": {
-    "text": "Cratering short interest and looming $60 billion acquisition sparking massive short squeeze potential.",
+    "text": "Short interest plummeting from 34% to 11% amid looming $60 billion acquisition and share unlock.",
     "source": "stock",
     "articleIds": [
-      "33afae74-8270-3ff3-807e-7d36b14630c5",
-      "7117dc4a-43a9-3219-8f66-4bc9361d95b5",
-      "e82372b6-2a71-3fa6-91bd-efdbd5c08fcd"
+      "de442fdb-7b4d-3549-811b-b124e38ebe36",
+      "2a613fd5-47cf-3b9d-9e32-373942a0fd84",
+      "33afae74-8270-3ff3-807e-7d36b14630c5"
     ],
-    "updatedAt": "2026-08-13T01:23:25.174Z"
+    "updatedAt": "2026-08-13T04:06:02.135Z"
   },
   "MRVL": {
     "text": "Investment in India and potential AI chip opportunities.",
@@ -89,10 +88,12 @@
     "updatedAt": "2026-08-12T22:34:27.343Z"
   },
   "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T01:23:35.032Z"
+    "text": "Ownership of the architectural blueprint powering global computing sparks investor interest and confidence.",
+    "source": "stock",
+    "articleIds": [
+      "b98bfe72-6f0f-348d-b7c0-2c31fa5a032b"
+    ],
+    "updatedAt": "2026-08-13T04:06:11.425Z"
   },
   "QCOM": {
     "text": "Qualcomm's shift toward on-device inference may trigger a hardware supercycle.",
@@ -118,17 +119,16 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T01:23:49.209Z"
+    "updatedAt": "2026-08-13T04:06:25.933Z"
   },
   "005930.KS": {
-    "text": "Korea accelerating chip megaproject financing and infrastructure support anchored by Samsung.",
+    "text": "Korea's accelerated chip megaproject financing and infrastructure support sparking renewed investor interest recently.",
     "source": "stock",
     "articleIds": [
-      "c51ff320-3490-3ca7-ae7b-9bf7d9de06b7",
       "4fa5b7bb-ecf8-32ce-a937-a1777e961519",
       "2ae3e8ed-e10e-3b4d-a393-8b456cdaa1bd"
     ],
-    "updatedAt": "2026-08-12T20:51:07.566Z"
+    "updatedAt": "2026-08-13T04:06:31.193Z"
   },
   "000660.KS": {
     "text": "Government investment and potential shareholder returns are sharpening attention on its powerful cash-generation cycle.",
@@ -152,84 +152,76 @@
     "updatedAt": "2026-08-12T23:36:00.783Z"
   },
   "MSFT": {
-    "text": "Falling AI costs may favor companies with massive distribution.",
-    "source": "stock",
-    "articleIds": [
-      "7f558cb1-ac00-3575-810c-26075b32b0c8",
-      "44713117-34ca-3e42-ae03-1d0fc2f6f567"
-    ],
-    "updatedAt": "2026-08-13T01:24:08.961Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-13T04:06:45.613Z"
   },
   "GOOGL": {
-    "text": "Memory costs push smartphone prices higher by $100.",
-    "source": "stock",
-    "articleIds": [
-      "309e2b61-108a-4572-a58a-fe1821d382a6",
-      "9aa2e343-6bc5-458e-835b-a88b41b867d0",
-      "270bb178-dd5f-30a0-b024-f48f1580784a",
-      "b9efa405-456f-3aa2-95ac-3ba92dc258b8"
-    ],
-    "updatedAt": "2026-08-13T01:24:13.931Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-13T04:06:50.417Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T01:24:18.527Z"
+    "updatedAt": "2026-08-13T04:06:54.672Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T01:24:23.102Z"
+    "updatedAt": "2026-08-13T04:06:58.904Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T01:24:27.382Z"
+    "updatedAt": "2026-08-13T04:07:03.113Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T01:24:31.710Z"
-  },
-  "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T01:24:35.971Z"
+    "updatedAt": "2026-08-13T04:07:07.351Z"
+  },
+  "DEEPAKFERT.NS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-13T04:07:11.570Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T01:24:40.261Z"
+    "updatedAt": "2026-08-13T04:07:15.780Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T01:24:44.671Z"
+    "updatedAt": "2026-08-13T04:07:20.213Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T01:24:48.956Z"
+    "updatedAt": "2026-08-13T04:07:24.435Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T01:24:53.274Z"
+    "updatedAt": "2026-08-13T04:07:28.687Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T01:24:57.576Z"
+    "updatedAt": "2026-08-13T04:07:32.914Z"
   },
   "INDEX": {
     "text": "Consumer inflation data in line with expectations.",
@@ -241,11 +233,12 @@
     "updatedAt": "2026-08-12T18:56:09.687Z"
   },
   "INDEX_IN": {
-    "text": "Firmer crude oil prices curbed risk appetite.",
+    "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
     "source": "macro",
     "articleIds": [
+      "50d1da9a-f9e2-3e4e-8474-b9b35641367a",
       "4b32bdc5-6675-375b-a8dd-5c274e5be2e3"
     ],
-    "updatedAt": "2026-08-12T05:42:28.649Z"
+    "updatedAt": "2026-08-13T04:07:42.680Z"
   }
 }
