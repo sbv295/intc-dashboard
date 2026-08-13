@@ -1,14 +1,14 @@
 {
   "INTC": {
-    "text": "Strong revenue growth and potential return to memory market sparking renewed investor interest",
+    "text": "Bank of America's forecast of massive CPU market growth and AI boost.",
     "source": "stock",
     "articleIds": [
+      "6649fdee-43c3-3fab-b01f-3f131745565c",
       "889179ae-0d61-307a-b3c6-f2c0aedc1957",
       "80a125d4-75d3-3e10-a9cd-b105f008e5f1",
-      "6a6dcc95-7d0d-3a2a-adb1-952d7b8c9d94",
-      "c01d0472-453c-3e77-8867-8de02ade834e"
+      "6a6dcc95-7d0d-3a2a-adb1-952d7b8c9d94"
     ],
-    "updatedAt": "2026-08-13T17:53:15.301Z"
+    "updatedAt": "2026-08-13T18:54:42.463Z"
   },
   "AMD": {
     "text": "$5 billion bond sale to support AI expansion and infrastructure investments.",
@@ -22,63 +22,70 @@
     "updatedAt": "2026-08-13T17:53:20.180Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T17:53:24.688Z"
+    "text": "Circular financing and massive AI capex spending potentially fueling the market rally.",
+    "source": "stock",
+    "articleIds": [
+      "e9054bba-cfee-470e-ac62-f0ba2a111470",
+      "05c55a39-942c-3f25-b944-295afa8a45b1",
+      "3840e1a0-502b-3523-8f4a-173a2a8c638e"
+    ],
+    "updatedAt": "2026-08-13T18:54:52.618Z"
   },
   "TSM": {
-    "text": "Joint venture with Sony to develop and manufacture smartphone image sensors in Japan.",
+    "text": "New joint venture with Sony to develop and manufacture smartphone image sensors in Japan.",
     "source": "stock",
     "articleIds": [
       "ee69eeec-3995-3c92-9447-b042111d40b0",
+      "fbb87ef9-52f9-33f0-8636-e5d855f12315",
       "92f56a4e-5cc6-34f8-bf7d-096b4223dcfa"
     ],
-    "updatedAt": "2026-08-13T15:54:00.575Z"
+    "updatedAt": "2026-08-13T18:54:57.427Z"
   },
   "SNDK": {
-    "text": "Bullish financial targets and ambitious growth plan unveiled at Investor Day.",
+    "text": "Strong demand amid rapid AI infrastructure buildout is driving revenue growth.",
     "source": "stock",
     "articleIds": [
+      "9e5baf1e-5bad-3683-af5f-ba732b731acb",
+      "64f949c4-b768-35f8-ad6d-c0a2d175d26b",
       "55782481-9eb8-3be4-9f0f-adfe8b94d47b",
-      "d66ff9b4-c61c-3ac0-a79e-d3ff45f10fec",
-      "6a17ab9b-3c6d-3906-ac1e-e0d7e5e09c71",
-      "ada69d91-53ed-3630-82e8-206d6cedb3cc",
-      "2cd74760-6862-3c76-a121-bfdb05ffac9f"
+      "d66ff9b4-c61c-3ac0-a79e-d3ff45f10fec"
     ],
-    "updatedAt": "2026-08-13T17:53:34.745Z"
+    "updatedAt": "2026-08-13T18:55:02.454Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T17:53:39.227Z"
+    "text": "Big plans for its growing cash pile.",
+    "source": "stock",
+    "articleIds": [
+      "25caf481-bac8-3ad3-a6b4-cce76cfff8ff",
+      "64f949c4-b768-35f8-ad6d-c0a2d175d26b"
+    ],
+    "updatedAt": "2026-08-13T18:55:07.106Z"
   },
   "AVGO": {
-    "text": "Blowout AI earnings from Broadcom's recent posting.",
+    "text": "Blowout AI earnings and strengthening market position with major customers and agreements.",
     "source": "stock",
     "articleIds": [
-      "970ed2c8-0c23-3ea4-aa8c-1adb0e1dbafe"
+      "970ed2c8-0c23-3ea4-aa8c-1adb0e1dbafe",
+      "10437504-1dcc-3d0f-8066-82b56735ec68"
     ],
-    "updatedAt": "2026-08-13T16:51:19.181Z"
+    "updatedAt": "2026-08-13T18:55:12.234Z"
   },
   "SPCX": {
-    "text": "Intuitive Machines' earnings miss set off a chain reaction impacting SpaceX.",
+    "text": "Uncertainty over sudden shift to AI-driven revenue streams sparking investor concern about core business.",
     "source": "stock",
     "articleIds": [
-      "a1d68887-1358-3ef0-93df-aeb3dee1af60",
-      "a166dad7-377f-3b27-8a04-518f27159a53"
+      "172ba2e7-ec2e-3ff5-9bce-3e8e559d2dd4"
     ],
-    "updatedAt": "2026-08-13T17:53:49.541Z"
+    "updatedAt": "2026-08-13T18:55:17.287Z"
   },
   "MRVL": {
-    "text": "Management raises its long-term outlook for data center demand.",
+    "text": "Upcoming Q2 earnings report and a quantitative structure may lead to a near-term bullish opportunity.",
     "source": "stock",
     "articleIds": [
-      "a13445d6-3800-3e7c-bc81-39ba991c69d9",
+      "c5b59ed8-fc81-3a41-b656-99e77636915f",
       "736f7545-1085-39ad-8601-b848c0c83ecc"
     ],
-    "updatedAt": "2026-08-13T17:53:54.283Z"
+    "updatedAt": "2026-08-13T18:55:22.143Z"
   },
   "ARM": {
     "text": "Shift to CPU sales for AI driving Arm's revenue growth and future pipeline potential.",
@@ -99,68 +106,64 @@
     "updatedAt": "2026-08-12T16:52:36.330Z"
   },
   "SKHY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T17:54:09.097Z"
+    "text": "Chairman's dismissal of Nvidia dependence concerns sparks investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "5d7ca948-3614-3efe-8e3f-f9d1ce909c56"
+    ],
+    "updatedAt": "2026-08-13T18:55:36.391Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T17:54:13.590Z"
+    "updatedAt": "2026-08-13T18:55:40.718Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T17:54:17.884Z"
+    "updatedAt": "2026-08-13T18:55:45.088Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T17:54:22.368Z"
+    "updatedAt": "2026-08-13T18:55:49.591Z"
   },
   "AAPL": {
-    "text": "Apple's AI advancements and content partnerships fuel investor optimism.",
+    "text": "Google's costly bet on closing the gap with Apple's consumer relationship.",
     "source": "stock",
     "articleIds": [
-      "d1db544f-7f03-39d8-813b-9e9655f02e01",
-      "a40355c4-a628-3605-9d46-e6cd6e94f6ea",
-      "f2a4fbec-0508-314b-b5fa-9eefc2917d90",
-      "344688d5-f840-399c-b4af-59f4de871edf",
-      "73ba36a5-c6c6-3d39-a3d7-5cd8a02b1806"
+      "d1db544f-7f03-39d8-813b-9e9655f02e01"
     ],
-    "updatedAt": "2026-08-13T17:54:27.329Z"
+    "updatedAt": "2026-08-13T18:55:54.480Z"
   },
   "MSFT": {
-    "text": "Post-earnings momentum is set to continue due to Azure's profitable China-linked lifeline.",
+    "text": "Analyst sees another 30% gain due to a larger-than-expected revenue opportunity.",
     "source": "stock",
     "articleIds": [
       "7a947fc0-0e1a-40bf-96b4-e6afc11138de",
-      "1daa8a49-9c95-3761-a8bd-91626c7af6fa",
-      "2e942baf-be68-303d-be3e-e9de66b00b95"
+      "39933400-3556-3135-a60d-8b7817969ad9"
     ],
-    "updatedAt": "2026-08-13T17:27:33.743Z"
+    "updatedAt": "2026-08-13T18:55:59.292Z"
   },
   "GOOGL": {
-    "text": "Investors optimistic about Gemini 3.7 Flash AI model's potential to drive growth in software coding and business tasks.",
+    "text": "Norway's sovereign wealth fund ranks Alphabet third, valuing its position at 499 billion kroner.",
     "source": "stock",
     "articleIds": [
       "309e2b61-108a-4572-a58a-fe1821d382a6",
-      "7332b573-29cd-393d-b6c0-d7295c7b5e72"
+      "8c21d4d1-1526-3578-95d8-0cabf71ce300"
     ],
-    "updatedAt": "2026-08-13T17:27:38.571Z"
+    "updatedAt": "2026-08-13T18:56:04.023Z"
   },
   "AMZN": {
-    "text": "Jeff Bezos' proposed $4B sell-off amid a large-scale AI data-center build-out.",
+    "text": "Twitch privacy fight escalates over AI training data collection concerns.",
     "source": "stock",
     "articleIds": [
-      "cf16663c-9e55-34bf-850f-b8d76790a876",
-      "1b77656f-1b61-36c6-b46a-2761f45c2f38"
+      "cf16663c-9e55-34bf-850f-b8d76790a876"
     ],
-    "updatedAt": "2026-08-13T17:27:43.303Z"
+    "updatedAt": "2026-08-13T18:56:08.642Z"
   },
   "META": {
     "text": "Investors remain skeptical of Meta's expensive push to be an AI leader.",
@@ -183,43 +186,43 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T17:54:56.100Z"
+    "updatedAt": "2026-08-13T18:56:22.763Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T17:55:00.394Z"
+    "updatedAt": "2026-08-13T18:56:27.065Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T17:55:04.745Z"
+    "updatedAt": "2026-08-13T18:56:31.379Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T17:55:09.414Z"
+    "updatedAt": "2026-08-13T18:56:36.023Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T17:55:13.667Z"
+    "updatedAt": "2026-08-13T18:56:40.448Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T17:55:18.136Z"
+    "updatedAt": "2026-08-13T18:56:45.464Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T17:55:22.465Z"
+    "updatedAt": "2026-08-13T18:56:49.829Z"
   },
   "INDEX": {
     "text": "Cooling inflation and a weakening labor market reduce rate-hike risks.",
