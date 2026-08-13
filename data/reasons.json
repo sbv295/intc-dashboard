@@ -1,12 +1,13 @@
 {
   "INTC": {
-    "text": "Growing confidence in foundry business and $20 billion equity raise fueling growth prospects.",
+    "text": "CEO's $12 million personal investment and growing confidence in foundry business expansion plans",
     "source": "stock",
     "articleIds": [
+      "2b90f6b0-38cb-3fa6-aa41-77e417661ab8",
       "69e93418-726e-320a-828d-6077e0d7d3fa",
       "595397e9-2654-37c8-8f54-c23aecd9a580"
     ],
-    "updatedAt": "2026-08-12T23:34:44.701Z"
+    "updatedAt": "2026-08-13T06:12:05.863Z"
   },
   "AMD": {
     "text": "Robust adoption of EPYC server CPUs and Instinct accelerators driving record server revenue growth.",
@@ -49,15 +50,14 @@
     "updatedAt": "2026-08-12T23:35:04.783Z"
   },
   "MU": {
-    "text": "New demand indicators and fresh signals from Samsung's enterprise storage expansion.",
+    "text": "Neocloud earnings report and positive analyst predictions sparking renewed investor interest and optimism.",
     "source": "stock",
     "articleIds": [
       "30363c1b-4136-34b4-b8cd-61a0b180aa43",
       "a321e494-bf71-3918-9068-3d1c14f274c9",
-      "c51ff320-3490-3ca7-ae7b-9bf7d9de06b7",
-      "59d22f7e-9db0-3a05-aeeb-c6201f1643ca"
+      "c51ff320-3490-3ca7-ae7b-9bf7d9de06b7"
     ],
-    "updatedAt": "2026-08-12T23:35:10.017Z"
+    "updatedAt": "2026-08-13T06:12:30.798Z"
   },
   "AVGO": {
     "text": "Premium valuation concerns amid surging AI semiconductor growth and leadership in AI networking.",
@@ -68,14 +68,14 @@
     "updatedAt": "2026-08-12T22:34:17.590Z"
   },
   "SPCX": {
-    "text": "Short interest plummeting from 34% to 11% amid looming $60 billion acquisition and share unlock.",
+    "text": "Bears capitulating as short interest falls and bullish sentiment around AI push increases.",
     "source": "stock",
     "articleIds": [
+      "cb9514bb-e8c6-3078-9c35-892329ead739",
       "de442fdb-7b4d-3549-811b-b124e38ebe36",
-      "2a613fd5-47cf-3b9d-9e32-373942a0fd84",
-      "33afae74-8270-3ff3-807e-7d36b14630c5"
+      "2a613fd5-47cf-3b9d-9e32-373942a0fd84"
     ],
-    "updatedAt": "2026-08-13T04:06:02.135Z"
+    "updatedAt": "2026-08-13T06:12:40.931Z"
   },
   "MRVL": {
     "text": "Investment in India and potential AI chip opportunities.",
@@ -110,25 +110,24 @@
     "articleIds": [
       "a321e494-bf71-3918-9068-3d1c14f274c9",
       "99815554-c3e3-3bed-bd0f-9155b92d6e20",
-      "7fafcbb8-dd5e-3211-aaa7-408425c0089c",
-      "80075803-7155-3189-8ae7-e171fa4c4952"
+      "7fafcbb8-dd5e-3211-aaa7-408425c0089c"
     ],
-    "updatedAt": "2026-08-12T22:34:43.081Z"
+    "updatedAt": "2026-08-13T06:13:00.205Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:06:25.933Z"
+    "updatedAt": "2026-08-13T06:13:04.616Z"
   },
   "005930.KS": {
-    "text": "Korea's accelerated chip megaproject financing and infrastructure support sparking renewed investor interest recently.",
+    "text": "Korea's accelerated financing and infrastructure support for Samsung's semiconductor expansion.",
     "source": "stock",
     "articleIds": [
-      "4fa5b7bb-ecf8-32ce-a937-a1777e961519",
-      "2ae3e8ed-e10e-3b4d-a393-8b456cdaa1bd"
+      "c51ff320-3490-3ca7-ae7b-9bf7d9de06b7",
+      "4fa5b7bb-ecf8-32ce-a937-a1777e961519"
     ],
-    "updatedAt": "2026-08-13T04:06:31.193Z"
+    "updatedAt": "2026-08-13T06:13:09.253Z"
   },
   "000660.KS": {
     "text": "Government investment and potential shareholder returns are sharpening attention on its powerful cash-generation cycle.",
@@ -142,86 +141,86 @@
     "updatedAt": "2026-08-12T22:34:58.349Z"
   },
   "AAPL": {
-    "text": "Talks to pay publishers to improve AI-powered Siri weigh on investor sentiment.",
+    "text": "Tim Cook's warning of a \"100-Year Flood\" in memory chip pricing concerns investors about margins.",
     "source": "stock",
     "articleIds": [
-      "fdbe515a-c1a8-3aab-82dd-4dec3ff3227d",
-      "7bcfbd5e-3f28-3d69-b7e9-e472dbf877ff",
-      "e8ec4ea9-afa6-35a4-962f-36de13e3e7eb"
+      "a5deac42-eaf6-3d85-bcb1-ad98045e368a"
     ],
-    "updatedAt": "2026-08-12T23:36:00.783Z"
+    "updatedAt": "2026-08-13T06:13:18.807Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:06:45.613Z"
+    "updatedAt": "2026-08-13T06:13:23.713Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:06:50.417Z"
+    "updatedAt": "2026-08-13T06:13:28.266Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T04:06:54.672Z"
+    "text": "Concerns over regulatory scrutiny following a safety incident and software recall at its Zoox subsidiary.",
+    "source": "stock",
+    "articleIds": [
+      "46563ff4-0996-3c53-ada1-a89b7b7ad921"
+    ],
+    "updatedAt": "2026-08-13T06:13:33.002Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:06:58.904Z"
+    "updatedAt": "2026-08-13T06:13:37.368Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:07:03.113Z"
+    "updatedAt": "2026-08-13T06:13:41.768Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:07:07.351Z"
+    "updatedAt": "2026-08-13T06:13:46.120Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:07:11.570Z"
+    "updatedAt": "2026-08-13T06:13:50.452Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:07:15.780Z"
+    "updatedAt": "2026-08-13T06:13:54.731Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:07:20.213Z"
+    "updatedAt": "2026-08-13T06:13:59.027Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:07:24.435Z"
+    "updatedAt": "2026-08-13T06:14:03.333Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:07:28.687Z"
+    "updatedAt": "2026-08-13T06:14:07.667Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T04:07:32.914Z"
+    "updatedAt": "2026-08-13T06:14:12.166Z"
   },
   "INDEX": {
     "text": "Consumer inflation data in line with expectations.",
