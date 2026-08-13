@@ -1,31 +1,29 @@
 {
   "INTC": {
-    "text": "CEO's $12 million personal investment and growing confidence in foundry business expansion plans",
+    "text": "CEO's $12 million personal investment and BofA's foundry upside outlook easing dilution fears",
     "source": "stock",
     "articleIds": [
+      "81f0ae52-5749-3d0c-a21a-ab952c02942e",
       "2b90f6b0-38cb-3fa6-aa41-77e417661ab8",
-      "69e93418-726e-320a-828d-6077e0d7d3fa",
-      "595397e9-2654-37c8-8f54-c23aecd9a580"
+      "69e93418-726e-320a-828d-6077e0d7d3fa"
     ],
-    "updatedAt": "2026-08-13T06:12:05.863Z"
+    "updatedAt": "2026-08-13T12:56:06.840Z"
   },
   "AMD": {
-    "text": "Robust adoption of EPYC server CPUs and Instinct accelerators driving record server revenue growth.",
+    "text": "Robust adoption of EPYC server CPUs and Instinct accelerators in the data center segment.",
     "source": "stock",
     "articleIds": [
-      "90d30cc1-4c69-3d70-afa7-c25732f52cbe",
-      "d321773e-1e3f-3e05-be4d-bb6206276b89"
+      "90d30cc1-4c69-3d70-afa7-c25732f52cbe"
     ],
-    "updatedAt": "2026-08-13T01:22:55.135Z"
+    "updatedAt": "2026-08-13T12:56:11.744Z"
   },
   "NVDA": {
-    "text": "Partnership with major financial institutions to fund AI build-out and launch compute financing platforms.",
+    "text": "Partnership with major Wall Street firms to fund AI build-out sparking investment optimism today",
     "source": "stock",
     "articleIds": [
-      "efc893e4-7f57-4132-9a07-f6e7c253c87a",
-      "8c9ce5c8-1beb-3964-86a7-95248480ce77"
+      "efc893e4-7f57-4132-9a07-f6e7c253c87a"
     ],
-    "updatedAt": "2026-08-13T11:00:42.861Z"
+    "updatedAt": "2026-08-13T12:56:16.526Z"
   },
   "TSM": {
     "text": "New joint venture with Sony to develop smartphone image sensors in Japan.",
@@ -39,24 +37,24 @@
     "updatedAt": "2026-08-13T04:05:42.245Z"
   },
   "SNDK": {
-    "text": "Datacenter revenue surged 103% sequentially due to $93.9B in long-term AI demand agreements.",
+    "text": "Surging datacenter revenue and long-term agreements securing AI demand.",
     "source": "stock",
     "articleIds": [
       "8ed6abc6-469c-365f-89c5-5fe4c40e2023",
       "a321e494-bf71-3918-9068-3d1c14f274c9",
-      "7da205eb-bad6-3922-8cd6-9465559149fb",
-      "7af9ee40-c6d2-3027-b889-6327f60aa217"
+      "7da205eb-bad6-3922-8cd6-9465559149fb"
     ],
-    "updatedAt": "2026-08-12T23:35:04.783Z"
+    "updatedAt": "2026-08-13T12:56:26.301Z"
   },
   "MU": {
-    "text": "Investors reassess Micron's potential to lead the next phase of AI spending and returns.",
+    "text": "Investors reassessing AI spending and returns amidst shifting market leadership and positive sector trends.",
     "source": "stock",
     "articleIds": [
       "3a528905-168d-36c6-b4ef-0ac04b4021f7",
-      "30363c1b-4136-34b4-b8cd-61a0b180aa43"
+      "30363c1b-4136-34b4-b8cd-61a0b180aa43",
+      "a321e494-bf71-3918-9068-3d1c14f274c9"
     ],
-    "updatedAt": "2026-08-13T11:00:57.723Z"
+    "updatedAt": "2026-08-13T12:56:32.647Z"
   },
   "AVGO": {
     "text": "Premium valuation concerns amid surging AI semiconductor growth and leadership in AI networking.",
@@ -67,31 +65,33 @@
     "updatedAt": "2026-08-12T22:34:17.590Z"
   },
   "SPCX": {
-    "text": "CEO Musk highlights AI revenue potential and releases latest Grok AI version.",
+    "text": "Release of Grok 4.6 AI model and Elon Musk's outlined AI ambitions and Starlink growth.",
     "source": "stock",
     "articleIds": [
-      "218943e2-4aa0-3baa-9553-2ec43d30168f",
-      "af3d5548-128d-3a89-bd09-3ce0f80c3a13",
-      "142677b9-397a-3fed-859c-0fd34aeed524",
-      "dd5ef1b7-9fd4-3c44-b6f2-7d75dff30ba4"
+      "09719d84-d4e1-46ff-838e-efc6b85a6b4c",
+      "405c6cf2-eefb-3f1c-9352-ca2c655834fc",
+      "6c93c78f-b8c2-3eaf-b10b-d7058634da9a",
+      "3b2e7bf5-7079-3e6f-84f1-993b30af8768"
     ],
-    "updatedAt": "2026-08-13T11:01:09.007Z"
+    "updatedAt": "2026-08-13T12:56:42.590Z"
   },
   "MRVL": {
-    "text": "Investment in India and potential AI chip opportunities.",
+    "text": "Planned $250 million investment in India and potential near-term bullish opportunity before earnings.",
     "source": "stock",
     "articleIds": [
       "736f7545-1085-39ad-8601-b848c0c83ecc",
       "28d7e5a0-f6d2-3d11-9f31-4c1565549749",
-      "6a2e9cac-0e0b-3e66-92fc-b3a047ad9c4a"
+      "79cd2636-6a01-36ea-84bf-a13646c56f02"
     ],
-    "updatedAt": "2026-08-12T22:34:27.343Z"
+    "updatedAt": "2026-08-13T12:56:47.734Z"
   },
   "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T11:01:18.333Z"
+    "text": "Ownership of the architectural blueprint powering global computing.",
+    "source": "stock",
+    "articleIds": [
+      "b98bfe72-6f0f-348d-b7c0-2c31fa5a032b"
+    ],
+    "updatedAt": "2026-08-13T12:56:52.608Z"
   },
   "QCOM": {
     "text": "Qualcomm's shift toward on-device inference may trigger a hardware supercycle.",
@@ -103,47 +103,42 @@
     "updatedAt": "2026-08-12T16:52:36.330Z"
   },
   "SKHY": {
-    "text": "Government investment and potential shareholder returns sharpening attention on its powerful cash-generation cycle.",
+    "text": "A neocloud earnings report sent shockwaves through the memory sector lifting SK Hynix.",
     "source": "stock",
     "articleIds": [
-      "a321e494-bf71-3918-9068-3d1c14f274c9",
-      "99815554-c3e3-3bed-bd0f-9155b92d6e20",
-      "7fafcbb8-dd5e-3211-aaa7-408425c0089c"
+      "a321e494-bf71-3918-9068-3d1c14f274c9"
     ],
-    "updatedAt": "2026-08-13T06:13:00.205Z"
+    "updatedAt": "2026-08-13T12:57:02.896Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T11:01:32.773Z"
+    "updatedAt": "2026-08-13T12:57:07.316Z"
   },
   "005930.KS": {
-    "text": "Korea accelerating chip megaproject with added financing and infrastructure support.",
-    "source": "stock",
-    "articleIds": [
-      "c51ff320-3490-3ca7-ae7b-9bf7d9de06b7",
-      "4fa5b7bb-ecf8-32ce-a937-a1777e961519"
-    ],
-    "updatedAt": "2026-08-13T09:58:14.685Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-13T12:57:11.770Z"
   },
   "000660.KS": {
-    "text": "Government investment and potential shareholder returns are sharpening attention on its powerful cash-generation cycle.",
+    "text": "A massive investment report sent shockwaves lifting SK Hynix in unison.",
     "source": "stock",
     "articleIds": [
       "a321e494-bf71-3918-9068-3d1c14f274c9",
-      "99815554-c3e3-3bed-bd0f-9155b92d6e20",
-      "7fafcbb8-dd5e-3211-aaa7-408425c0089c"
+      "99815554-c3e3-3bed-bd0f-9155b92d6e20"
     ],
-    "updatedAt": "2026-08-13T09:58:19.646Z"
+    "updatedAt": "2026-08-13T12:57:16.921Z"
   },
   "AAPL": {
-    "text": "Tim Cook's warning of a \"100-Year Flood\" in memory chip pricing concerns investors about margins.",
+    "text": "Earnings announcement causing a 5% drop, potentially followed by further decline.",
     "source": "stock",
     "articleIds": [
-      "a5deac42-eaf6-3d85-bcb1-ad98045e368a"
+      "f404ae06-3037-317e-8c4c-6cbbbcf1efb7",
+      "e7e5e7be-d550-32c9-aaa7-e303ea4ba125"
     ],
-    "updatedAt": "2026-08-13T06:13:18.807Z"
+    "updatedAt": "2026-08-13T12:57:22.215Z"
   },
   "MSFT": {
     "text": "Retreat from China due to perceived geopolitical risk outweighing economic return.",
@@ -162,14 +157,12 @@
     "updatedAt": "2026-08-13T11:01:56.910Z"
   },
   "AMZN": {
-    "text": "Potential acquisition of Decart AI's advanced artificial intelligence assets.",
+    "text": "Proposal to strengthen protections for delivery workers sparks concerns from Amazon.",
     "source": "stock",
     "articleIds": [
-      "3ce80f0d-ef6a-3a38-bacc-86731232f15a",
-      "ce7a87dd-0664-3acd-b931-6f632da7d6dc",
-      "46563ff4-0996-3c53-ada1-a89b7b7ad921"
+      "925772b3-2e6e-3773-a648-4d49b069cd2e"
     ],
-    "updatedAt": "2026-08-13T11:02:02.345Z"
+    "updatedAt": "2026-08-13T12:57:37.099Z"
   },
   "META": {
     "text": "Regulatory scrutiny and youth social media trial concerns intensify.",
@@ -184,58 +177,58 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T11:02:11.714Z"
+    "updatedAt": "2026-08-13T12:57:46.717Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T11:02:16.100Z"
+    "updatedAt": "2026-08-13T12:57:51.093Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T11:02:20.390Z"
+    "updatedAt": "2026-08-13T12:57:55.486Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T11:02:24.677Z"
+    "updatedAt": "2026-08-13T12:57:59.871Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T11:02:29.044Z"
+    "updatedAt": "2026-08-13T12:58:04.318Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T11:02:33.320Z"
+    "updatedAt": "2026-08-13T12:58:08.748Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T11:02:37.602Z"
+    "updatedAt": "2026-08-13T12:58:13.430Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T11:02:41.868Z"
+    "updatedAt": "2026-08-13T12:58:17.830Z"
   },
   "INDEX": {
-    "text": "Consumer inflation data in line with expectations.",
+    "text": "Surprise key inflation data sparks broad US market gain.",
     "source": "macro",
     "articleIds": [
-      "84c1f433-8da5-3947-9420-95cd62d5778d",
-      "037fc17a-3bb5-34fb-ab92-9e04165b7d4a"
+      "a86837ac-df8a-3747-8923-5f2f47063c11",
+      "84c1f433-8da5-3947-9420-95cd62d5778d"
     ],
-    "updatedAt": "2026-08-12T18:56:09.687Z"
+    "updatedAt": "2026-08-13T12:58:22.975Z"
   },
   "INDEX_IN": {
     "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
