@@ -56,7 +56,7 @@ const STOCK_META = {
   'META': ['META', 'Meta'],
   // Indian market watchlist
   'HDFCBANK.NS': ['HDFC Bank'],
-  'ICICIBANK.NS': ['ICICI Bank'],
+  'ICICIBANK.NS': ['ICICI', 'ICICI Bank'],
   'DEEPAKFERT.NS': ['Deepak Fertilisers'],
   'AARTIIND.NS': ['Aarti Industries'],
   'TCS.NS': ['TCS'],
@@ -244,7 +244,14 @@ export default async function handler(req, res) {
   if (cached) return res.status(200).json({ ...cached, cached: true });
 
   const apiKey = process.env.GROQ_API_KEY;
-  const cutoff = marketDaysCutoff(2);
+  // English-language news coverage for NSE-listed companies updates far less
+  // frequently than US tech names — a 2-market-day cutoff was filtering out
+  // genuinely relevant, on-topic articles almost every day, leaving Indian
+  // stocks stuck on the generic "no company-specific news" fallback. Widen the
+  // window to 7 market days (~10 calendar days) for India, keep the tighter
+  // 2-day window for the fast-moving US market.
+  const isIndiaRequest = market === 'IN' || (ticker && ticker.endsWith('.NS'));
+  const cutoff = marketDaysCutoff(isIndiaRequest ? 7 : 2);
 
   // Every branch below must resolve to a result — the dashboard should never
   // show a blank line just because an LLM call failed. `degraded: true` marks
