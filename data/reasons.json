@@ -24,7 +24,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:35:01.638Z"
+    "updatedAt": "2026-08-13T23:34:54.257Z"
   },
   "TSM": {
     "text": "Launch of $4.69 billion Sony venture to build next-generation smartphone components in Japan.",
@@ -36,23 +36,22 @@
     "updatedAt": "2026-08-13T19:53:46.148Z"
   },
   "SNDK": {
-    "text": "New forecast pointing to strong growth and cash flow unveiled in powerful FY2030 targets.",
+    "text": "Bullish outlook and upbeat presentation at an analyst meeting in New York City today",
     "source": "stock",
     "articleIds": [
-      "d77ca588-1019-36e1-8065-a36ae0ce7b6c",
-      "982b6305-1ce1-3515-9b30-edf2976fdf75"
+      "d66ff9b4-c61c-3ac0-a79e-d3ff45f10fec",
+      "d77ca588-1019-36e1-8065-a36ae0ce7b6c"
     ],
-    "updatedAt": "2026-08-13T22:35:11.543Z"
+    "updatedAt": "2026-08-13T23:35:04.822Z"
   },
   "MU": {
-    "text": "Investment in AI technology through its new $250 million Paradigm Fund.",
+    "text": "Investment in AI technology through its $250 million Paradigm Fund is driving Micron's growth.",
     "source": "stock",
     "articleIds": [
       "d8282cf5-be47-3c78-befa-9886072ceb97",
-      "2bee8ff9-1636-380e-8267-1170fd1f1cd9",
-      "93912c28-a6da-3dae-8a0a-cd87edfda8e8"
+      "2bee8ff9-1636-380e-8267-1170fd1f1cd9"
     ],
-    "updatedAt": "2026-08-13T22:35:16.497Z"
+    "updatedAt": "2026-08-13T23:35:09.754Z"
   },
   "AVGO": {
     "text": "Blowout AI earnings and strengthening market position with major customers and agreements.",
@@ -64,19 +63,23 @@
     "updatedAt": "2026-08-13T18:55:12.234Z"
   },
   "SPCX": {
-    "text": "Retail investors finally took profits after nearly eight weeks of buying.",
+    "text": "Retail investors finally broke their streak of buying after nearly eight weeks.",
     "source": "stock",
     "articleIds": [
+      "2d703779-dbf9-3e4c-b60e-40e83137687a",
       "8d59f782-86f6-3a9d-b891-7a3478e936ba",
-      "a780b7b0-c5c1-3ef0-bc4c-0977248a3bf7"
+      "a780b7b0-c5c1-3ef0-bc4c-0977248a3bf7",
+      "bc9ac37d-38f9-3018-96e6-830b7124243c"
     ],
-    "updatedAt": "2026-08-13T21:38:51.077Z"
+    "updatedAt": "2026-08-13T23:35:19.560Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T22:35:31.107Z"
+    "text": "AI networking buildout opportunity highlighted by Lumentum's CEO.",
+    "source": "stock",
+    "articleIds": [
+      "c5b59ed8-fc81-3a41-b656-99e77636915f"
+    ],
+    "updatedAt": "2026-08-13T23:35:24.357Z"
   },
   "ARM": {
     "text": "Shift to CPU sales for AI driving Arm's revenue growth and future pipeline potential.",
@@ -108,19 +111,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:35:50.953Z"
+    "updatedAt": "2026-08-13T23:35:43.952Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:35:55.382Z"
+    "updatedAt": "2026-08-13T23:35:48.439Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:35:59.789Z"
+    "updatedAt": "2026-08-13T23:35:52.929Z"
   },
   "AAPL": {
     "text": "Investors react positively to Apple's new AI manufacturing hub and expanded U.S. supply chain investments.",
@@ -133,13 +136,13 @@
     "updatedAt": "2026-08-13T22:36:04.969Z"
   },
   "MSFT": {
-    "text": "Analyst's bullish prediction of another 30% gain due to sustained high-teens earnings growth.",
+    "text": "Analyst predicts another 30% gain due to a potential Berkshire Hathaway large purchase.",
     "source": "stock",
     "articleIds": [
       "7a947fc0-0e1a-40bf-96b4-e6afc11138de",
-      "7a5d942b-2ab3-33e1-b851-618dd7acf3d7"
+      "ae1d3e87-e4b9-302e-93b7-05e18dca9abe"
     ],
-    "updatedAt": "2026-08-13T21:39:33.636Z"
+    "updatedAt": "2026-08-13T23:36:03.433Z"
   },
   "GOOGL": {
     "text": "Berkshire's significant Alphabet purchase in Q2 likely driving the current market movement.",
@@ -150,13 +153,12 @@
     "updatedAt": "2026-08-13T21:39:38.481Z"
   },
   "AMZN": {
-    "text": "Spending more than its operations generate, using legal loopholes to deny workers their rights.",
+    "text": "Never having paid a dividend despite being a $3 trillion company.",
     "source": "stock",
     "articleIds": [
-      "593e3e47-2790-3677-a253-8a2979aff1fe",
-      "5b9f5192-2e09-3e3a-aef9-a10ab7c1de6f"
+      "593e3e47-2790-3677-a253-8a2979aff1fe"
     ],
-    "updatedAt": "2026-08-13T19:54:59.070Z"
+    "updatedAt": "2026-08-13T23:36:13.941Z"
   },
   "META": {
     "text": "Meta's AI infrastructure expansion plans are sparking investor optimism.",
@@ -178,43 +180,43 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:36:34.867Z"
+    "updatedAt": "2026-08-13T23:36:29.232Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:36:39.378Z"
+    "updatedAt": "2026-08-13T23:36:33.907Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:36:43.937Z"
+    "updatedAt": "2026-08-13T23:36:38.331Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:36:48.936Z"
+    "updatedAt": "2026-08-13T23:36:43.192Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:36:53.393Z"
+    "updatedAt": "2026-08-13T23:36:47.849Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:36:58.152Z"
+    "updatedAt": "2026-08-13T23:36:52.510Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T22:37:02.660Z"
+    "updatedAt": "2026-08-13T23:36:56.924Z"
   },
   "INDEX": {
     "text": "Producer inflation data release amid pre-bell Thursday trading.",
