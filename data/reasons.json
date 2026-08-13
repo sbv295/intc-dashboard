@@ -22,12 +22,10 @@
     "updatedAt": "2026-08-13T19:53:36.386Z"
   },
   "NVDA": {
-    "text": "Jim Cramer's positive market signal and endorsement sparking investor confidence and interest.",
-    "source": "stock",
-    "articleIds": [
-      "63ebef23-2573-39d0-ad1a-f1a218c4fae4"
-    ],
-    "updatedAt": "2026-08-13T19:53:41.401Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-13T20:35:47.540Z"
   },
   "TSM": {
     "text": "Launch of $4.69 billion Sony venture to build next-generation smartphone components in Japan.",
@@ -39,26 +37,24 @@
     "updatedAt": "2026-08-13T19:53:46.148Z"
   },
   "SNDK": {
-    "text": "Unveiling powerful FY2030 targets, including 50% free-cash-flow margins, sparks investor optimism.",
+    "text": "Unveiling powerful FY2030 targets, including 50% free-cash-flow margins.",
     "source": "stock",
     "articleIds": [
       "982b6305-1ce1-3515-9b30-edf2976fdf75",
-      "93912c28-a6da-3dae-8a0a-cd87edfda8e8",
       "26130492-171b-3c90-bc8a-f6659bbd2217",
       "e0c54440-7a55-3830-aaee-31ec808b0f5a",
       "aa76cefe-1bb9-381d-a684-99a219723f24"
     ],
-    "updatedAt": "2026-08-13T19:53:51.235Z"
+    "updatedAt": "2026-08-13T20:35:57.754Z"
   },
   "MU": {
     "text": "Strong AI memory demand reignites memory trade.",
     "source": "stock",
     "articleIds": [
       "93912c28-a6da-3dae-8a0a-cd87edfda8e8",
-      "77619da5-810b-3f34-8d10-2635cb74dd66",
-      "25caf481-bac8-3ad3-a6b4-cce76cfff8ff"
+      "77619da5-810b-3f34-8d10-2635cb74dd66"
     ],
-    "updatedAt": "2026-08-13T19:53:55.947Z"
+    "updatedAt": "2026-08-13T20:36:02.680Z"
   },
   "AVGO": {
     "text": "Blowout AI earnings and strengthening market position with major customers and agreements.",
@@ -70,22 +66,20 @@
     "updatedAt": "2026-08-13T18:55:12.234Z"
   },
   "SPCX": {
-    "text": "Investors are reevaluating SpaceX due to concerns about being surpassed by Anthropic's potential IPO valuation.",
+    "text": "Investors are concerned about potential valuation comparisons to Anthropic's reportedly targeted IPO valuation.",
     "source": "stock",
     "articleIds": [
-      "a780b7b0-c5c1-3ef0-bc4c-0977248a3bf7",
       "a1d68887-1358-3ef0-93df-aeb3dee1af60"
     ],
-    "updatedAt": "2026-08-13T19:54:05.942Z"
+    "updatedAt": "2026-08-13T20:36:12.703Z"
   },
   "MRVL": {
-    "text": "Upcoming Q2 earnings report and a quantitative structure may lead to a near-term bullish opportunity.",
+    "text": "AI networking buildout opportunity highlighted by Lumentum's CEO.",
     "source": "stock",
     "articleIds": [
-      "c5b59ed8-fc81-3a41-b656-99e77636915f",
-      "736f7545-1085-39ad-8601-b848c0c83ecc"
+      "c5b59ed8-fc81-3a41-b656-99e77636915f"
     ],
-    "updatedAt": "2026-08-13T18:55:22.143Z"
+    "updatedAt": "2026-08-13T20:36:17.701Z"
   },
   "ARM": {
     "text": "Shift to CPU sales for AI driving Arm's revenue growth and future pipeline potential.",
@@ -117,19 +111,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T19:54:30.938Z"
+    "updatedAt": "2026-08-13T20:36:37.876Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T19:54:35.363Z"
+    "updatedAt": "2026-08-13T20:36:42.405Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T19:54:39.741Z"
+    "updatedAt": "2026-08-13T20:36:46.876Z"
   },
   "AAPL": {
     "text": "Norway's sovereign fund reveals huge Apple position valued at 522 billion Norwegian kroner.",
@@ -151,12 +145,10 @@
     "updatedAt": "2026-08-13T19:54:49.368Z"
   },
   "GOOGL": {
-    "text": "Deeper integration of Gemini AI in new Pixel 11 smartphone lineup.",
-    "source": "stock",
-    "articleIds": [
-      "309e2b61-108a-4572-a58a-fe1821d382a6"
-    ],
-    "updatedAt": "2026-08-13T19:54:54.153Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-13T20:37:01.732Z"
   },
   "AMZN": {
     "text": "Spending more than its operations generate, using legal loopholes to deny workers their rights.",
@@ -168,14 +160,13 @@
     "updatedAt": "2026-08-13T19:54:59.070Z"
   },
   "META": {
-    "text": "Analyst expectations of 30% to 100% gains in the near future.",
+    "text": "Investors' optimism about Meta's potential 30% to 100% gains is driving the current price movement.",
     "source": "stock",
     "articleIds": [
       "9d195f61-9f9f-3693-9a62-4446901bf90d",
-      "62912f25-49ea-3bbd-8e02-3673226e487b",
-      "c2ce93b1-48d2-384c-a034-31916aa49490"
+      "62912f25-49ea-3bbd-8e02-3673226e487b"
     ],
-    "updatedAt": "2026-08-13T19:55:05.074Z"
+    "updatedAt": "2026-08-13T20:37:11.862Z"
   },
   "HDFCBANK.NS": {
     "text": "Removed from Jefferies portfolio in a portfolio revamp.",
@@ -189,43 +180,43 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T19:55:14.446Z"
+    "updatedAt": "2026-08-13T20:37:21.187Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T19:55:18.806Z"
+    "updatedAt": "2026-08-13T20:37:25.541Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T19:55:23.098Z"
+    "updatedAt": "2026-08-13T20:37:30.016Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T19:55:27.561Z"
+    "updatedAt": "2026-08-13T20:37:34.547Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T19:55:32.003Z"
+    "updatedAt": "2026-08-13T20:37:38.975Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T19:55:36.526Z"
+    "updatedAt": "2026-08-13T20:37:43.536Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T19:55:40.868Z"
+    "updatedAt": "2026-08-13T20:37:47.919Z"
   },
   "INDEX": {
     "text": "Cooling inflation and a weakening labor market reduce rate-hike risks.",
