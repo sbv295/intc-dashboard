@@ -19,13 +19,14 @@
     "updatedAt": "2026-08-13T01:22:55.135Z"
   },
   "NVDA": {
-    "text": "Wall Street firms backing with $500B for AI data center infrastructure and overlooked business opportunities.",
+    "text": "Partnership with major financial institutions to fund AI build-out and potential $125 billion backstop.",
     "source": "stock",
     "articleIds": [
-      "67fffd35-bef1-392c-8db2-84ba89d1805a",
-      "88f02b07-6cff-38c9-9b8a-555ab0b38ad6"
+      "efc893e4-7f57-4132-9a07-f6e7c253c87a",
+      "8c9ce5c8-1beb-3964-86a7-95248480ce77",
+      "112d69b0-1f17-346a-aaed-79c2d2e27fef"
     ],
-    "updatedAt": "2026-08-13T08:14:54.179Z"
+    "updatedAt": "2026-08-13T09:57:21.501Z"
   },
   "TSM": {
     "text": "New joint venture with Sony to develop smartphone image sensors in Japan.",
@@ -68,13 +69,14 @@
     "updatedAt": "2026-08-12T22:34:17.590Z"
   },
   "SPCX": {
-    "text": "Bulls anticipating a sustained run and bears capitulating as short interest significantly decreases.",
+    "text": "First lockup expiry test passed with a $500 billion rally, alleviating early investor selling concerns.",
     "source": "stock",
     "articleIds": [
-      "cb9514bb-e8c6-3078-9c35-892329ead739",
-      "de442fdb-7b4d-3549-811b-b124e38ebe36"
+      "aaf82852-3069-3b77-9944-2948c5e63fa3",
+      "dd5ef1b7-9fd4-3c44-b6f2-7d75dff30ba4",
+      "cb9514bb-e8c6-3078-9c35-892329ead739"
     ],
-    "updatedAt": "2026-08-13T08:15:18.762Z"
+    "updatedAt": "2026-08-13T09:57:46.118Z"
   },
   "MRVL": {
     "text": "Investment in India and potential AI chip opportunities.",
@@ -87,12 +89,10 @@
     "updatedAt": "2026-08-12T22:34:27.343Z"
   },
   "ARM": {
-    "text": "Ownership of the architectural blueprint powering global computing sparks investor interest and confidence.",
-    "source": "stock",
-    "articleIds": [
-      "b98bfe72-6f0f-348d-b7c0-2c31fa5a032b"
-    ],
-    "updatedAt": "2026-08-13T04:06:11.425Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-13T09:57:55.441Z"
   },
   "QCOM": {
     "text": "Qualcomm's shift toward on-device inference may trigger a hardware supercycle.",
@@ -117,15 +117,16 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:15:42.726Z"
+    "updatedAt": "2026-08-13T09:58:09.878Z"
   },
   "005930.KS": {
-    "text": "Korea accelerating chip megaproject with financing and infrastructure support for Samsung.",
+    "text": "Korea accelerating chip megaproject with added financing and infrastructure support.",
     "source": "stock",
     "articleIds": [
+      "c51ff320-3490-3ca7-ae7b-9bf7d9de06b7",
       "4fa5b7bb-ecf8-32ce-a937-a1777e961519"
     ],
-    "updatedAt": "2026-08-13T08:15:47.551Z"
+    "updatedAt": "2026-08-13T09:58:14.685Z"
   },
   "000660.KS": {
     "text": "Government investment and potential shareholder returns are sharpening attention on its powerful cash-generation cycle.",
@@ -133,10 +134,9 @@
     "articleIds": [
       "a321e494-bf71-3918-9068-3d1c14f274c9",
       "99815554-c3e3-3bed-bd0f-9155b92d6e20",
-      "7fafcbb8-dd5e-3211-aaa7-408425c0089c",
-      "80075803-7155-3189-8ae7-e171fa4c4952"
+      "7fafcbb8-dd5e-3211-aaa7-408425c0089c"
     ],
-    "updatedAt": "2026-08-12T22:34:58.349Z"
+    "updatedAt": "2026-08-13T09:58:19.646Z"
   },
   "AAPL": {
     "text": "Tim Cook's warning of a \"100-Year Flood\" in memory chip pricing concerns investors about margins.",
@@ -150,13 +150,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:16:01.890Z"
+    "updatedAt": "2026-08-13T09:58:29.135Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:16:06.581Z"
+    "updatedAt": "2026-08-13T09:58:33.746Z"
   },
   "AMZN": {
     "text": "Concerns over regulatory scrutiny following a safety incident and software recall at its Zoox subsidiary.",
@@ -179,49 +179,49 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:16:21.056Z"
+    "updatedAt": "2026-08-13T09:58:48.642Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:16:25.448Z"
+    "updatedAt": "2026-08-13T09:58:53.056Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:16:29.725Z"
+    "updatedAt": "2026-08-13T09:58:57.470Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:16:34.022Z"
+    "updatedAt": "2026-08-13T09:59:01.899Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:16:38.311Z"
+    "updatedAt": "2026-08-13T09:59:06.374Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:16:42.672Z"
+    "updatedAt": "2026-08-13T09:59:10.808Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:16:46.999Z"
+    "updatedAt": "2026-08-13T09:59:15.238Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T08:16:51.309Z"
+    "updatedAt": "2026-08-13T09:59:19.710Z"
   },
   "INDEX": {
     "text": "Consumer inflation data in line with expectations.",
