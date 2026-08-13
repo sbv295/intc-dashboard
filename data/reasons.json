@@ -1,26 +1,34 @@
 {
   "INTC": {
-    "text": "Potential return to memory market and strong revenue growth sparking renewed investor interest",
+    "text": "Strongest revenue growth in over 15 years and potential return to memory market",
     "source": "stock",
     "articleIds": [
+      "80a125d4-75d3-3e10-a9cd-b105f008e5f1",
       "6a6dcc95-7d0d-3a2a-adb1-952d7b8c9d94",
       "c01d0472-453c-3e77-8867-8de02ade834e",
-      "498f696c-5924-3748-856a-215842cbe95e",
-      "81f0ae52-5749-3d0c-a21a-ab952c02942e"
+      "498f696c-5924-3748-856a-215842cbe95e"
     ],
-    "updatedAt": "2026-08-13T16:50:49.366Z"
+    "updatedAt": "2026-08-13T17:26:15.693Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T16:50:54.207Z"
+    "text": "Bullish verdict and massive debt sale to fund surging artificial intelligence compute demand.",
+    "source": "stock",
+    "articleIds": [
+      "ba2bf81c-d196-34e9-8f91-922867b52623",
+      "d61af3e4-e787-3e79-a683-549b6cd348ac",
+      "7e22c820-006a-3ab0-a648-3b6fb461a36f",
+      "1c41afbf-b48d-3478-9650-cc7a5fa18230"
+    ],
+    "updatedAt": "2026-08-13T17:26:20.879Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T16:50:58.810Z"
+    "text": "Massive AI capex spending continues to fuel the chip rally.",
+    "source": "stock",
+    "articleIds": [
+      "e9054bba-cfee-470e-ac62-f0ba2a111470",
+      "ba2bf81c-d196-34e9-8f91-922867b52623"
+    ],
+    "updatedAt": "2026-08-13T17:26:25.958Z"
   },
   "TSM": {
     "text": "Joint venture with Sony to develop and manufacture smartphone image sensors in Japan.",
@@ -32,25 +40,22 @@
     "updatedAt": "2026-08-13T15:54:00.575Z"
   },
   "SNDK": {
-    "text": "Bullish multi-year financial model and growth strategy unveiled at Investor Day event.",
+    "text": "Bullish financial targets and ambitious growth plan unveiled at Investor Day.",
     "source": "stock",
     "articleIds": [
-      "6a17ab9b-3c6d-3906-ac1e-e0d7e5e09c71",
       "d66ff9b4-c61c-3ac0-a79e-d3ff45f10fec",
+      "6a17ab9b-3c6d-3906-ac1e-e0d7e5e09c71",
+      "ada69d91-53ed-3630-82e8-206d6cedb3cc",
       "2cd74760-6862-3c76-a121-bfdb05ffac9f",
-      "1f918eb6-e14c-3b73-9d8b-d7a7d5dc795e",
-      "0847f983-7ef1-3eda-9cb7-2b6a784eae6c"
+      "1f918eb6-e14c-3b73-9d8b-d7a7d5dc795e"
     ],
-    "updatedAt": "2026-08-13T16:51:08.960Z"
+    "updatedAt": "2026-08-13T17:26:36.420Z"
   },
   "MU": {
-    "text": "AI memory push drives surging revenues and faster HBM4 execution.",
-    "source": "stock",
-    "articleIds": [
-      "a8bc02ec-4492-362f-901a-2965c3748289",
-      "3853d964-1d1a-34c1-841a-0e51903b33f8"
-    ],
-    "updatedAt": "2026-08-13T16:51:14.126Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-13T17:26:41.055Z"
   },
   "AVGO": {
     "text": "Blowout AI earnings from Broadcom's recent posting.",
@@ -66,28 +71,28 @@
     "articleIds": [
       "9093f63f-3650-4532-a4d9-1f034c617c27",
       "a166dad7-377f-3b27-8a04-518f27159a53",
-      "aec9ea79-5bd3-3f99-bc4e-a2600378cda7",
-      "87c5ab4e-2e3f-3463-a19c-058fa720452f"
+      "aec9ea79-5bd3-3f99-bc4e-a2600378cda7"
     ],
-    "updatedAt": "2026-08-13T16:51:24.154Z"
+    "updatedAt": "2026-08-13T17:26:50.867Z"
   },
   "MRVL": {
-    "text": "Investment in India to expand presence, double local headcount, and grow facilities for semiconductor work.",
+    "text": "Management raises its long-term outlook for data center demand.",
     "source": "stock",
     "articleIds": [
+      "a13445d6-3800-3e7c-bc81-39ba991c69d9",
       "736f7545-1085-39ad-8601-b848c0c83ecc",
       "28d7e5a0-f6d2-3d11-9f31-4c1565549749"
     ],
-    "updatedAt": "2026-08-13T15:54:24.977Z"
+    "updatedAt": "2026-08-13T17:26:55.529Z"
   },
   "ARM": {
-    "text": "Sits 33% below its recent peak despite posting third straight year of 20-plus percent revenue growth.",
+    "text": "Shift to CPU sales for AI driving Arm's revenue growth and future pipeline potential.",
     "source": "stock",
     "articleIds": [
-      "3fb791cf-c241-3382-9c32-7f3b74b4c71a",
-      "b98bfe72-6f0f-348d-b7c0-2c31fa5a032b"
+      "11342043-098b-3271-b54b-b481e259697c",
+      "3fb791cf-c241-3382-9c32-7f3b74b4c71a"
     ],
-    "updatedAt": "2026-08-13T14:21:19.907Z"
+    "updatedAt": "2026-08-13T17:27:00.663Z"
   },
   "QCOM": {
     "text": "Qualcomm's shift toward on-device inference may trigger a hardware supercycle.",
@@ -102,63 +107,64 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:51:43.340Z"
+    "updatedAt": "2026-08-13T17:27:10.680Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:51:47.862Z"
+    "updatedAt": "2026-08-13T17:27:15.055Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:51:52.344Z"
+    "updatedAt": "2026-08-13T17:27:19.421Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:51:57.021Z"
+    "updatedAt": "2026-08-13T17:27:24.028Z"
   },
   "AAPL": {
-    "text": "Apple's record June quarter and potential AI content deals with publishers.",
+    "text": "Apple's AI push gains momentum with potential major content deals with publishers.",
     "source": "stock",
     "articleIds": [
-      "f2a4fbec-0508-314b-b5fa-9eefc2917d90",
+      "a40355c4-a628-3605-9d46-e6cd6e94f6ea",
       "344688d5-f840-399c-b4af-59f4de871edf",
       "73ba36a5-c6c6-3d39-a3d7-5cd8a02b1806",
       "b0e0921f-a62e-3a36-abb2-0b0ec4c17491"
     ],
-    "updatedAt": "2026-08-13T16:52:02.141Z"
+    "updatedAt": "2026-08-13T17:27:28.969Z"
   },
   "MSFT": {
-    "text": "Microsoft's acceptance of Horizon 1 AI cloud deployment.",
+    "text": "Post-earnings momentum is set to continue due to Azure's profitable China-linked lifeline.",
     "source": "stock",
     "articleIds": [
       "7a947fc0-0e1a-40bf-96b4-e6afc11138de",
-      "47575bc4-1390-3fbb-a9fb-fd1419893d4a",
-      "f33e2561-1b7c-30f7-a45b-21ad45ca98e7"
+      "1daa8a49-9c95-3761-a8bd-91626c7af6fa",
+      "2e942baf-be68-303d-be3e-e9de66b00b95"
     ],
-    "updatedAt": "2026-08-13T16:52:07.096Z"
+    "updatedAt": "2026-08-13T17:27:33.743Z"
   },
   "GOOGL": {
-    "text": "Deeper integration of Gemini AI in new Pixel 11 smartphone lineup boosts profit growth expectations.",
+    "text": "Investors optimistic about Gemini 3.7 Flash AI model's potential to drive growth in software coding and business tasks.",
     "source": "stock",
     "articleIds": [
       "309e2b61-108a-4572-a58a-fe1821d382a6",
-      "dd5dfff0-b13a-32dd-b3b6-06b0e7f36bc3"
+      "7332b573-29cd-393d-b6c0-d7295c7b5e72"
     ],
-    "updatedAt": "2026-08-13T15:55:07.884Z"
+    "updatedAt": "2026-08-13T17:27:38.571Z"
   },
   "AMZN": {
-    "text": "Jeff Bezos' plan to sell up to 15 million Amazon shares worth $4.07 billion.",
+    "text": "Jeff Bezos' proposed $4B sell-off amid a large-scale AI data-center build-out.",
     "source": "stock",
     "articleIds": [
+      "cf16663c-9e55-34bf-850f-b8d76790a876",
       "1b77656f-1b61-36c6-b46a-2761f45c2f38"
     ],
-    "updatedAt": "2026-08-13T16:52:16.817Z"
+    "updatedAt": "2026-08-13T17:27:43.303Z"
   },
   "META": {
     "text": "Investors remain skeptical of Meta's expensive push to be an AI leader.",
@@ -170,61 +176,64 @@
     "updatedAt": "2026-08-13T16:52:21.781Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T16:52:26.249Z"
+    "text": "Removed from Jefferies portfolio in a portfolio revamp.",
+    "source": "stock",
+    "articleIds": [
+      "7d3a4c7d-2f24-3f2d-b068-3befc536d824"
+    ],
+    "updatedAt": "2026-08-13T17:27:53.299Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:52:30.703Z"
+    "updatedAt": "2026-08-13T17:27:57.630Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:52:36.018Z"
+    "updatedAt": "2026-08-13T17:28:01.951Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:52:40.536Z"
+    "updatedAt": "2026-08-13T17:28:06.254Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:52:45.031Z"
+    "updatedAt": "2026-08-13T17:28:10.770Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:52:49.590Z"
+    "updatedAt": "2026-08-13T17:28:15.206Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:52:54.056Z"
+    "updatedAt": "2026-08-13T17:28:19.990Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T16:52:58.542Z"
+    "updatedAt": "2026-08-13T17:28:24.326Z"
   },
   "INDEX": {
-    "text": "Cooling inflation and a weakening labor market are boosting the broad US market.",
+    "text": "Cooling inflation and a weakening labor market reduce rate-hike risks.",
     "source": "macro",
     "articleIds": [
+      "5e136aba-e122-3614-94c9-7d2dc493b4b1",
       "757d60e3-47a2-3491-bd0d-4755499b809c",
       "5f1f508e-509d-3c97-85e2-3380f41888fc"
     ],
-    "updatedAt": "2026-08-13T15:55:57.741Z"
+    "updatedAt": "2026-08-13T17:28:29.471Z"
   },
   "INDEX_IN": {
     "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
