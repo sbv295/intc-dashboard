@@ -17,53 +17,59 @@
     "updatedAt": "2026-08-14T14:12:16.314Z"
   },
   "NVDA": {
-    "text": "Uncertainty about being a future AI winner sparking investor caution and reevaluation.",
+    "text": "Positive earnings preview and increased stake by Renaissance fund sparking investor optimism and interest.",
     "source": "stock",
     "articleIds": [
-      "c0555413-d790-4e4d-834c-793f5fc1987f"
+      "2606fee9-8dcc-4740-8b32-8d27ecd851ac",
+      "69678118-2d8d-33df-8315-2108b64d1899",
+      "54f2b96b-79d0-3c61-ad37-ddcdb465d9b8",
+      "551b364f-723c-3d39-8db3-a30a56822df4"
     ],
-    "updatedAt": "2026-08-14T15:44:22.704Z"
+    "updatedAt": "2026-08-14T17:47:07.196Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:48:51.573Z"
+    "updatedAt": "2026-08-14T17:47:11.949Z"
   },
   "SNDK": {
-    "text": "Bullish long-term growth targets and a sustainable pricing model exceeding estimates.",
+    "text": "Bullish long-term growth targets and increased earnings estimates sparking investor optimism and lifted outlooks.",
     "source": "stock",
     "articleIds": [
       "b19083f2-afdb-48f0-8b3a-c52ab2add0b4",
-      "82f07888-be7d-3f5c-a0bb-93ad17632414",
-      "649ef6b4-28b4-372e-8829-ac9db4f451a4",
-      "88366405-08b3-3030-8789-afa92507e330"
+      "5216a212-5859-3690-b67b-37349fcc0b9e",
+      "0418f843-7638-3e51-a89f-961ef5d3b21d",
+      "a7683e8a-b36e-38e3-b544-6ccfd84d7ce7",
+      "f5ecfb05-0c72-3d06-8097-d793b35381c8"
     ],
-    "updatedAt": "2026-08-14T16:48:56.312Z"
+    "updatedAt": "2026-08-14T17:47:16.807Z"
   },
   "MU": {
-    "text": "Upgrade to 'Buy' and optimistic 2030 cash flow and market cap projections.",
+    "text": "posting a blowout memory quarter with a high-conviction institutional hold setup ahead",
     "source": "stock",
     "articleIds": [
-      "cd14d2f6-b14c-3219-9b60-86ceb9bbfcc6",
-      "069bd34d-4a35-3534-8e02-a37400f7dd26"
+      "c0555413-d790-4e4d-834c-793f5fc1987f",
+      "c570887f-8ce8-3b35-a421-f5b308ee4b92"
     ],
-    "updatedAt": "2026-08-14T16:49:01.289Z"
+    "updatedAt": "2026-08-14T17:47:21.616Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-14T16:49:05.992Z"
-  },
-  "SPCX": {
-    "text": "Musk's rockets facing a fresh rival and upcoming share release sparking uncertainty.",
+    "text": "Concerns over a $370 billion debt machine behind Broadcom's AI expansion financing.",
     "source": "stock",
     "articleIds": [
-      "d41a06f6-cd84-383e-99fc-5bf7c0f53a4f",
+      "33471654-3b68-304e-8241-54936a3b7c4d"
+    ],
+    "updatedAt": "2026-08-14T17:47:26.323Z"
+  },
+  "SPCX": {
+    "text": "Pulled back sharply after a massive weekly surge, losing most of its gain.",
+    "source": "stock",
+    "articleIds": [
+      "86c2b2c6-4e17-3d4b-ace5-a396ea521633",
       "c7a5cff5-2809-3ebf-8a2d-7d39bf34777b"
     ],
-    "updatedAt": "2026-08-14T16:49:11.371Z"
+    "updatedAt": "2026-08-14T17:47:31.337Z"
   },
   "MRVL": {
     "text": "Priced at a premium after a 290% run over the past three years.",
@@ -77,25 +83,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:49:20.903Z"
+    "updatedAt": "2026-08-14T17:47:40.679Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:49:25.524Z"
+    "updatedAt": "2026-08-14T17:47:45.973Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:49:30.042Z"
+    "updatedAt": "2026-08-14T17:47:50.621Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:49:34.388Z"
+    "updatedAt": "2026-08-14T17:47:55.026Z"
   },
   "005930.KS": {
     "text": "Record semiconductor profit and AI-infrastructure demand momentum.",
@@ -117,19 +123,20 @@
     "updatedAt": "2026-08-14T16:49:44.259Z"
   },
   "AAPL": {
-    "text": "Strong AI growth prospects driven by record Services segment and Siri's expanding user base.",
+    "text": "Apple's AI push in China gains momentum with a custom AI model and a new growth engine emerging.",
     "source": "stock",
     "articleIds": [
+      "61eda5b6-b933-326a-bb88-5eba2cec1430",
       "64e03a32-05c0-3407-8f9c-e5b23a485652",
       "fb36b45f-f261-3f85-8401-83c47ffb8a8c"
     ],
-    "updatedAt": "2026-08-14T16:49:49.679Z"
+    "updatedAt": "2026-08-14T17:48:09.587Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:49:54.193Z"
+    "updatedAt": "2026-08-14T17:48:14.410Z"
   },
   "GOOGL": {
     "text": "Loss of $550,000 to a Google advertisement phishing scam reported.",
@@ -140,12 +147,10 @@
     "updatedAt": "2026-08-14T16:49:58.846Z"
   },
   "AMZN": {
-    "text": "Costing more on next year's earnings than on last year's indicates profits are about to decline.",
-    "source": "stock",
-    "articleIds": [
-      "cb8de066-dfc4-36d9-ad2d-149bdd2b292a"
-    ],
-    "updatedAt": "2026-08-14T16:50:04.393Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-14T17:48:23.768Z"
   },
   "META": {
     "text": "Heavy AI spending and perceived lack of competitiveness in the AI race.",
@@ -161,25 +166,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:50:13.774Z"
+    "updatedAt": "2026-08-14T17:48:34.030Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:50:18.114Z"
+    "updatedAt": "2026-08-14T17:48:38.435Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:50:22.551Z"
+    "updatedAt": "2026-08-14T17:48:42.727Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:50:26.825Z"
+    "updatedAt": "2026-08-14T17:48:47.078Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -193,27 +198,28 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:50:35.747Z"
+    "updatedAt": "2026-08-14T17:48:56.172Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:50:40.167Z"
+    "updatedAt": "2026-08-14T17:49:00.732Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T16:50:44.507Z"
+    "updatedAt": "2026-08-14T17:49:05.317Z"
   },
   "INDEX": {
-    "text": "Investors' growing concerns over long-term costs of high-yielding investments.",
+    "text": "Investors' concerns about long-term costs of high-yielding investments are weighing on the broad US market.",
     "source": "macro",
     "articleIds": [
+      "97cbd0d5-e510-3300-aae5-2a0e3b8feddc",
       "29f879b3-01d4-3b9d-ba64-13fbf513d2e7"
     ],
-    "updatedAt": "2026-08-14T15:46:22.168Z"
+    "updatedAt": "2026-08-14T17:49:10.054Z"
   },
   "INDEX_IN": {
     "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
