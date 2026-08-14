@@ -1,69 +1,54 @@
 {
   "INTC": {
-    "text": "Bank of America's forecast of massive CPU market growth and AI boost.",
-    "source": "stock",
-    "articleIds": [
-      "aa8740d9-ee2b-3aeb-b58b-60d04dc0237b",
-      "6649fdee-43c3-3fab-b01f-3f131745565c",
-      "889179ae-0d61-307a-b3c6-f2c0aedc1957",
-      "80a125d4-75d3-3e10-a9cd-b105f008e5f1"
-    ],
-    "updatedAt": "2026-08-13T21:38:16.243Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-14T12:51:50.259Z"
   },
   "AMD": {
-    "text": "AI expansion plans and potential $5 billion bond sale for infrastructure development.",
+    "text": "Blowout earnings and analyst's prediction of 160% price appreciation ahead.",
     "source": "stock",
     "articleIds": [
-      "57e9fd21-9618-3a6b-81d1-582835b99a99",
-      "889179ae-0d61-307a-b3c6-f2c0aedc1957",
-      "99a3f591-0a2f-3597-9b61-347dfdffca0c"
+      "90033a31-06cd-33d4-8494-afb2a68d831a"
     ],
-    "updatedAt": "2026-08-13T21:38:21.278Z"
+    "updatedAt": "2026-08-14T12:51:55.318Z"
   },
   "NVDA": {
-    "text": "Being among stocks in buy areas ahead of upcoming earnings.",
-    "source": "stock",
-    "articleIds": [
-      "1cb4532a-8413-38fa-b844-5845dd2f7df5",
-      "6a6353b8-8fc1-3171-8248-a06969fd8844"
-    ],
-    "updatedAt": "2026-08-14T11:39:57.380Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-14T12:52:00.131Z"
   },
   "TSM": {
-    "text": "$4.69 billion Sony venture launching next-generation smartphone component manufacturing in Japan.",
-    "source": "stock",
-    "articleIds": [
-      "ee69eeec-3995-3c92-9447-b042111d40b0"
-    ],
-    "updatedAt": "2026-08-14T09:54:36.521Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-14T12:52:04.845Z"
   },
   "SNDK": {
-    "text": "JPMorgan upgrades SanDisk to Overweight after the company's 2026 Investor Day.",
+    "text": "Investor Day presentation and JPMorgan upgrade to Overweight from rating suspended sparking optimism",
     "source": "stock",
     "articleIds": [
+      "38c9b1fd-ffed-3bab-a4f7-26e7820358b6",
       "d77ca588-1019-36e1-8065-a36ae0ce7b6c",
-      "1cb4532a-8413-38fa-b844-5845dd2f7df5",
       "d7e31deb-4f15-3acc-a691-ae544744c4f1",
-      "dc9b5c47-20b4-36a3-9fdd-ea67fbdb73a2",
-      "067757d3-8ad6-316e-9e86-4c5a4314e4c6"
+      "dc9b5c47-20b4-36a3-9fdd-ea67fbdb73a2"
     ],
-    "updatedAt": "2026-08-14T11:40:07.310Z"
+    "updatedAt": "2026-08-14T12:52:09.759Z"
   },
   "MU": {
-    "text": "Investors weigh strong AI-driven memory demand as Micron positions itself for the next phase of AI growth.",
+    "text": "analysts seeing substantial room to run in the AI memory trade",
     "source": "stock",
     "articleIds": [
-      "c0555413-d790-4e4d-834c-793f5fc1987f",
-      "1cb4532a-8413-38fa-b844-5845dd2f7df5",
-      "d08fe3e3-8d96-3e1e-98c2-2f69a46e5091"
+      "5d8f06d6-4195-3c4e-8e15-4a317aaf116e"
     ],
-    "updatedAt": "2026-08-14T11:40:13.544Z"
+    "updatedAt": "2026-08-14T12:52:14.665Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:40:18.832Z"
+    "updatedAt": "2026-08-14T12:52:18.952Z"
   },
   "SPCX": {
     "text": "Forced buying by passive funds due to Nasdaq rule changes.",
@@ -74,12 +59,13 @@
     "updatedAt": "2026-08-14T11:40:23.941Z"
   },
   "MRVL": {
-    "text": "Management raises its long-term outlook for data center demand.",
+    "text": "Raised long-term outlook for data center demand and perceived AI networking buildout opportunity.",
     "source": "stock",
     "articleIds": [
+      "c5b59ed8-fc81-3a41-b656-99e77636915f",
       "a13445d6-3800-3e7c-bc81-39ba991c69d9"
     ],
-    "updatedAt": "2026-08-14T10:53:29.511Z"
+    "updatedAt": "2026-08-14T12:52:28.580Z"
   },
   "ARM": {
     "text": "Shift to CPU sales for AI driving Arm's revenue growth and future pipeline potential.",
@@ -100,93 +86,98 @@
     "updatedAt": "2026-08-12T16:52:36.330Z"
   },
   "SKHY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-14T11:40:43.216Z"
+    "text": "Investors weighing whether current valuation still leaves enough room for a reasonable margin of safety.",
+    "source": "stock",
+    "articleIds": [
+      "2ca1e63e-1609-3467-90eb-ab599c1490e7"
+    ],
+    "updatedAt": "2026-08-14T12:52:43.439Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:40:47.714Z"
+    "updatedAt": "2026-08-14T12:52:47.785Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:40:52.242Z"
+    "updatedAt": "2026-08-14T12:52:52.059Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:40:56.844Z"
+    "updatedAt": "2026-08-14T12:52:56.446Z"
   },
   "AAPL": {
-    "text": "Developing China-specific AI model with Alibaba support and expanding AI manufacturing capabilities.",
+    "text": "Apple's expansion into AI manufacturing and China-specific AI model development.",
     "source": "stock",
     "articleIds": [
-      "eed8bd49-50ea-3764-b067-6b2835a29a10",
-      "b1ff260a-9ce7-3e58-a73a-968f30b14d98"
+      "8771ab7f-3d17-326e-8050-013a6c3dfaaa",
+      "e890d008-07ac-3086-bccd-c242c109f6e7",
+      "eed8bd49-50ea-3764-b067-6b2835a29a10"
     ],
-    "updatedAt": "2026-08-14T11:41:01.657Z"
+    "updatedAt": "2026-08-14T12:53:01.255Z"
   },
   "MSFT": {
-    "text": "Analyst predicts another 30% gain due to Microsoft's potential for continued growth.",
+    "text": "Analyst predicts another 30% increase due to Microsoft's continued aggressive AI data-center build-out.",
     "source": "stock",
     "articleIds": [
-      "7a947fc0-0e1a-40bf-96b4-e6afc11138de"
+      "7a947fc0-0e1a-40bf-96b4-e6afc11138de",
+      "256565b9-ddb9-3709-bd13-9cbd385153dc"
     ],
-    "updatedAt": "2026-08-14T10:54:07.169Z"
+    "updatedAt": "2026-08-14T12:53:06.207Z"
   },
   "GOOGL": {
-    "text": "Alphabet's enormous return on its early investment in SpaceX valued at $94 billion.",
+    "text": "Valuation multiple increasing to 32x 2027 earnings compared to 29x for Amazon.",
     "source": "stock",
     "articleIds": [
-      "d9e90477-06e5-3de0-8d13-7f54c56864e6",
-      "9aa8160f-d6e7-36cc-9d48-e90f2ce85419",
-      "4e73d06c-28ee-3c1a-9442-8e5ecbacf09d"
+      "b503eaaa-4555-35e7-a5fa-4e245715fc02"
     ],
-    "updatedAt": "2026-08-14T11:41:12.084Z"
+    "updatedAt": "2026-08-14T12:53:10.802Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-14T11:41:16.845Z"
-  },
-  "META": {
-    "text": "Latest valuation work suggests current price may be 37% undervalued based on a Discounted Cash Flow approach.",
+    "text": "Valued at a lower multiple than Alphabet for 2027 earnings.",
     "source": "stock",
     "articleIds": [
+      "b503eaaa-4555-35e7-a5fa-4e245715fc02"
+    ],
+    "updatedAt": "2026-08-14T12:53:15.499Z"
+  },
+  "META": {
+    "text": "Teen safety ruling and valuation debate.",
+    "source": "stock",
+    "articleIds": [
+      "f5a8a065-83f3-38b7-9ef3-943fd287fa6d",
       "89136cd8-982e-3447-829f-596f5ba36e3c"
     ],
-    "updatedAt": "2026-08-14T08:10:54.588Z"
+    "updatedAt": "2026-08-14T12:53:20.647Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:41:26.412Z"
+    "updatedAt": "2026-08-14T12:53:25.163Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:41:30.893Z"
+    "updatedAt": "2026-08-14T12:53:29.484Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:41:35.387Z"
+    "updatedAt": "2026-08-14T12:53:33.727Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:41:39.821Z"
+    "updatedAt": "2026-08-14T12:53:37.963Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -200,28 +191,27 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:41:49.494Z"
+    "updatedAt": "2026-08-14T12:53:47.551Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:41:54.077Z"
+    "updatedAt": "2026-08-14T12:53:52.235Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T11:41:58.563Z"
+    "updatedAt": "2026-08-14T12:53:56.587Z"
   },
   "INDEX": {
-    "text": "Producer inflation data release amid pre-bell Thursday market activity.",
+    "text": "Broad-market exchange-traded funds higher after midday.",
     "source": "macro",
     "articleIds": [
-      "5e136aba-e122-3614-94c9-7d2dc493b4b1",
-      "757d60e3-47a2-3491-bd0d-4755499b809c"
+      "5e136aba-e122-3614-94c9-7d2dc493b4b1"
     ],
-    "updatedAt": "2026-08-14T06:10:57.238Z"
+    "updatedAt": "2026-08-14T12:54:01.193Z"
   },
   "INDEX_IN": {
     "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
