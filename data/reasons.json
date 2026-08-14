@@ -21,10 +21,12 @@
     "updatedAt": "2026-08-13T21:38:21.278Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T23:34:54.257Z"
+    "text": "Introduction of a bold $500 billion plan to create chip-backed securities.",
+    "source": "stock",
+    "articleIds": [
+      "89d0f34d-efda-308f-a01e-0ce292890563"
+    ],
+    "updatedAt": "2026-08-14T04:01:02.395Z"
   },
   "TSM": {
     "text": "Launch of $4.69 billion Sony venture to build next-generation smartphone components in Japan.",
@@ -54,32 +56,32 @@
     "updatedAt": "2026-08-13T23:35:09.754Z"
   },
   "AVGO": {
-    "text": "Blowout AI earnings and strengthening market position with major customers and agreements.",
+    "text": "strengthening market position with major customers and strategic agreements amidst AI infrastructure boom financing push",
     "source": "stock",
     "articleIds": [
+      "f4411260-9121-32e2-af30-8467bcb648c7",
       "970ed2c8-0c23-3ea4-aa8c-1adb0e1dbafe",
       "10437504-1dcc-3d0f-8066-82b56735ec68"
     ],
-    "updatedAt": "2026-08-13T18:55:12.234Z"
+    "updatedAt": "2026-08-14T04:01:21.968Z"
   },
   "SPCX": {
-    "text": "Retail investors finally broke their streak of buying after nearly eight weeks.",
+    "text": "Profit-taking by loyal buyers after a 67% post-IPO rise and recent trading volatility.",
     "source": "stock",
     "articleIds": [
-      "2d703779-dbf9-3e4c-b60e-40e83137687a",
       "8d59f782-86f6-3a9d-b891-7a3478e936ba",
-      "a780b7b0-c5c1-3ef0-bc4c-0977248a3bf7",
-      "bc9ac37d-38f9-3018-96e6-830b7124243c"
+      "a780b7b0-c5c1-3ef0-bc4c-0977248a3bf7"
     ],
-    "updatedAt": "2026-08-13T23:35:19.560Z"
+    "updatedAt": "2026-08-14T04:01:27.793Z"
   },
   "MRVL": {
-    "text": "AI networking buildout opportunity highlighted by Lumentum's CEO.",
+    "text": "Raised long-term outlook for data center demand and cheaper valuation after recent dip.",
     "source": "stock",
     "articleIds": [
-      "c5b59ed8-fc81-3a41-b656-99e77636915f"
+      "c5b59ed8-fc81-3a41-b656-99e77636915f",
+      "a13445d6-3800-3e7c-bc81-39ba991c69d9"
     ],
-    "updatedAt": "2026-08-13T23:35:24.357Z"
+    "updatedAt": "2026-08-14T04:01:32.568Z"
   },
   "ARM": {
     "text": "Shift to CPU sales for AI driving Arm's revenue growth and future pipeline potential.",
@@ -111,19 +113,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T23:35:43.952Z"
+    "updatedAt": "2026-08-14T04:01:51.471Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T23:35:48.439Z"
+    "updatedAt": "2026-08-14T04:01:55.693Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T23:35:52.929Z"
+    "updatedAt": "2026-08-14T04:02:00.309Z"
   },
   "AAPL": {
     "text": "Investors react positively to Apple's new AI manufacturing hub and expanded U.S. supply chain investments.",
@@ -136,21 +138,21 @@
     "updatedAt": "2026-08-13T22:36:04.969Z"
   },
   "MSFT": {
-    "text": "Analyst predicts another 30% gain due to a potential Berkshire Hathaway large purchase.",
+    "text": "Positive analyst outlook and potential for clear return on investment.",
     "source": "stock",
     "articleIds": [
       "7a947fc0-0e1a-40bf-96b4-e6afc11138de",
-      "ae1d3e87-e4b9-302e-93b7-05e18dca9abe"
+      "01a4c651-89a0-3ed4-8f08-e9be04ef5e5f"
     ],
-    "updatedAt": "2026-08-13T23:36:03.433Z"
+    "updatedAt": "2026-08-14T04:02:10.138Z"
   },
   "GOOGL": {
-    "text": "Berkshire's significant Alphabet purchase in Q2 likely driving the current market movement.",
+    "text": "Alphabet subsidiary's new appointment signaling improved performance metrics frameworks indirectly benefiting parent company.",
     "source": "stock",
     "articleIds": [
-      "ae1d3e87-e4b9-302e-93b7-05e18dca9abe"
+      "5fa2b501-7ba2-3afb-a257-84984504a38a"
     ],
-    "updatedAt": "2026-08-13T21:39:38.481Z"
+    "updatedAt": "2026-08-14T04:02:15.158Z"
   },
   "AMZN": {
     "text": "Never having paid a dividend despite being a $3 trillion company.",
@@ -169,63 +171,64 @@
     "updatedAt": "2026-08-13T22:36:25.290Z"
   },
   "HDFCBANK.NS": {
-    "text": "Removed from Jefferies portfolio in a portfolio revamp.",
-    "source": "stock",
-    "articleIds": [
-      "7d3a4c7d-2f24-3f2d-b068-3befc536d824"
-    ],
-    "updatedAt": "2026-08-13T17:27:53.299Z"
-  },
-  "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T23:36:29.232Z"
+    "updatedAt": "2026-08-14T04:02:29.326Z"
+  },
+  "ICICIBANK.NS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-14T04:02:33.560Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T23:36:33.907Z"
+    "updatedAt": "2026-08-14T04:02:37.744Z"
   },
   "AARTIIND.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T23:36:38.331Z"
+    "updatedAt": "2026-08-14T04:02:42.016Z"
   },
   "TCS.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-13T23:36:43.192Z"
+    "text": "Possible exposure of certain employee-related data sparking security concerns",
+    "source": "stock",
+    "articleIds": [
+      "a6505010-0788-32d1-92fb-40ccdd004f9c"
+    ],
+    "updatedAt": "2026-08-14T04:02:46.573Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T23:36:47.849Z"
+    "updatedAt": "2026-08-14T04:02:50.780Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T23:36:52.510Z"
+    "updatedAt": "2026-08-14T04:02:55.107Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-13T23:36:56.924Z"
+    "updatedAt": "2026-08-14T04:02:59.471Z"
   },
   "INDEX": {
-    "text": "Producer inflation data release amid pre-bell Thursday trading.",
+    "text": "Cooling inflation and a weakening labor market reducing rate-hike risks and supporting earnings growth.",
     "source": "macro",
     "articleIds": [
       "5e136aba-e122-3614-94c9-7d2dc493b4b1",
-      "757d60e3-47a2-3491-bd0d-4755499b809c"
+      "757d60e3-47a2-3491-bd0d-4755499b809c",
+      "5f1f508e-509d-3c97-85e2-3380f41888fc"
     ],
-    "updatedAt": "2026-08-13T22:37:08.112Z"
+    "updatedAt": "2026-08-14T04:03:04.393Z"
   },
   "INDEX_IN": {
     "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
