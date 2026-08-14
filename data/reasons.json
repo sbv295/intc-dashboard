@@ -1,12 +1,11 @@
 {
   "INTC": {
-    "text": "Recent hire and $20 billion common stock offering sparking potential market reentry speculation.",
+    "text": "LEAP demand driving growth for competitors, potentially challenging market position.",
     "source": "stock",
     "articleIds": [
-      "22292a3d-89ae-3554-a95e-a7e674db2bec",
-      "08ddf4e7-738c-3f19-971d-9d7e09092cb5"
+      "81050e4a-4906-3d17-9156-6e7f94eac7f3"
     ],
-    "updatedAt": "2026-08-14T14:12:11.669Z"
+    "updatedAt": "2026-08-14T15:44:12.676Z"
   },
   "AMD": {
     "text": "Blowout earnings and analyst prediction of 160% price appreciation ahead.",
@@ -18,54 +17,52 @@
     "updatedAt": "2026-08-14T14:12:16.314Z"
   },
   "NVDA": {
-    "text": "Accelerating hyperscalers spending and promising Vera Rubin chips efficiency leap.",
+    "text": "Uncertainty about being a future AI winner sparking investor caution and reevaluation.",
     "source": "stock",
     "articleIds": [
-      "146c80d5-a127-391c-972b-376b655b7823",
-      "5d323a1c-12b8-3428-94ea-b5651de4de28"
+      "c0555413-d790-4e4d-834c-793f5fc1987f"
     ],
-    "updatedAt": "2026-08-14T14:12:21.004Z"
+    "updatedAt": "2026-08-14T15:44:22.704Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:12:25.321Z"
+    "updatedAt": "2026-08-14T15:44:27.323Z"
   },
   "SNDK": {
-    "text": "Bullish long-term growth targets and positive investor day takeaways sparking Wall Street optimism suddenly.",
+    "text": "bullish long-term growth targets and positive response to revenue growth plan",
     "source": "stock",
     "articleIds": [
       "b19083f2-afdb-48f0-8b3a-c52ab2add0b4",
-      "221f1cff-7204-392f-8de8-94ccf065c447",
-      "89e16262-9300-3192-87e8-dbe4d2e95b16",
-      "52e283ee-ef33-31e2-8c04-8236971762cb"
+      "2fac0fb5-417c-3830-b256-1f96e6e172cc",
+      "82f07888-be7d-3f5c-a0bb-93ad17632414",
+      "221f1cff-7204-392f-8de8-94ccf065c447"
     ],
-    "updatedAt": "2026-08-14T14:12:30.361Z"
+    "updatedAt": "2026-08-14T15:44:32.222Z"
   },
   "MU": {
-    "text": "New Street Research upgrade and $250 million venture fund for AI investments announced today",
+    "text": "New Street's 'Buy' upgrade and $1,250 price target citing AI-driven memory demand growth.",
     "source": "stock",
     "articleIds": [
-      "fb474b7f-ee0c-339d-87df-eccff51ef525",
-      "22576730-1ccd-3ee2-a8c8-2f869dc4e549"
+      "c570887f-8ce8-3b35-a421-f5b308ee4b92",
+      "069bd34d-4a35-3534-8e02-a37400f7dd26"
     ],
-    "updatedAt": "2026-08-14T14:12:35.235Z"
+    "updatedAt": "2026-08-14T15:44:37.238Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:12:39.541Z"
+    "updatedAt": "2026-08-14T15:44:41.681Z"
   },
   "SPCX": {
-    "text": "Elon Musk's massive $900 billion stake revelation sparking potential ownership and control concerns.",
+    "text": "Musk's rockets facing a fresh rival sparking increased competition concerns.",
     "source": "stock",
     "articleIds": [
-      "08dd240b-bd32-3bc7-83ec-2b05110fd248",
-      "f04a85ba-db60-329e-9c24-24b1619f5145"
+      "d41a06f6-cd84-383e-99fc-5bf7c0f53a4f"
     ],
-    "updatedAt": "2026-08-14T14:12:44.531Z"
+    "updatedAt": "2026-08-14T15:44:46.425Z"
   },
   "MRVL": {
     "text": "Priced at a premium after a 290% run over the past three years.",
@@ -79,28 +76,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:12:53.584Z"
+    "updatedAt": "2026-08-14T15:44:55.649Z"
   },
   "QCOM": {
-    "text": "Qualcomm's shift toward on-device inference may trigger a hardware supercycle.",
-    "source": "stock",
-    "articleIds": [
-      "977b8d17-f7cd-3014-8a4b-bacbad9d8a98",
-      "2db30e1f-0d76-376a-a782-942b2e8a5777"
-    ],
-    "updatedAt": "2026-08-12T16:52:36.330Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-14T15:45:00.176Z"
   },
   "SKHY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:13:03.152Z"
+    "updatedAt": "2026-08-14T15:45:04.815Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:13:07.449Z"
+    "updatedAt": "2026-08-14T15:45:09.150Z"
   },
   "005930.KS": {
     "text": "Investor day in Milpitas sparks optimism about Samsung's AI data-center build-out plans.",
@@ -111,76 +105,81 @@
     "updatedAt": "2026-08-14T14:13:12.101Z"
   },
   "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-14T14:13:16.563Z"
+    "text": "Analysts' upward trend in earnings estimate revisions suggests near-term upside potential.",
+    "source": "stock",
+    "articleIds": [
+      "1194f09b-8a72-3a00-a48e-dd043d5299f4",
+      "f2cb4949-c1e8-3568-8931-113bfbc4d08f"
+    ],
+    "updatedAt": "2026-08-14T15:45:18.411Z"
   },
   "AAPL": {
-    "text": "Approval to offer a proprietary AI model in China with Beijing's backing.",
+    "text": "Potential for Apple to enter a new era with consumer AI opportunities.",
     "source": "stock",
     "articleIds": [
       "92735bd3-d394-336a-a1a1-bf1dc24cb235",
-      "5a624064-df95-3466-9f05-55b4b9aaf8a9",
-      "8771ab7f-3d17-326e-8050-013a6c3dfaaa"
+      "9da91d9b-b7fc-321a-afa9-549f500ac731",
+      "5a624064-df95-3466-9f05-55b4b9aaf8a9"
     ],
-    "updatedAt": "2026-08-14T14:13:21.533Z"
+    "updatedAt": "2026-08-14T15:45:23.185Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:13:26.094Z"
+    "updatedAt": "2026-08-14T15:45:27.655Z"
   },
   "GOOGL": {
-    "text": "Quiet bet on SpaceX and leadership's AI infrastructure strategy gaining market recognition.",
+    "text": "Losses from a $550,000 Google ad scam reported today.",
     "source": "stock",
     "articleIds": [
-      "16aa0025-71d8-3a2a-b39f-050a2a20b8c4",
-      "ec1db83f-6527-360a-b50c-4b79df6e0437",
-      "b503eaaa-4555-35e7-a5fa-4e245715fc02"
+      "8700dfa0-8d18-35ab-84d8-54feca2d9258",
+      "cb8de066-dfc4-36d9-ad2d-149bdd2b292a"
     ],
-    "updatedAt": "2026-08-14T14:13:31.131Z"
+    "updatedAt": "2026-08-14T15:45:32.281Z"
   },
   "AMZN": {
-    "text": "Valued at a lower multiple than Alphabet for 2027 earnings.",
+    "text": "Costing more on next year's earnings than on last year's, profits are about to decline.",
     "source": "stock",
     "articleIds": [
+      "cb8de066-dfc4-36d9-ad2d-149bdd2b292a",
       "b503eaaa-4555-35e7-a5fa-4e245715fc02"
     ],
-    "updatedAt": "2026-08-14T12:53:15.499Z"
+    "updatedAt": "2026-08-14T15:45:36.838Z"
   },
   "META": {
-    "text": "Investors are deterred by concerns over valuation multiples that look suspiciously cheap.",
+    "text": "Heavy AI spending and perceived lack of competitiveness in the AI race.",
     "source": "stock",
     "articleIds": [
-      "f5a8a065-83f3-38b7-9ef3-943fd287fa6d"
+      "8d47253a-c80a-3ea7-a208-262a246efc4e",
+      "6a4c01c8-195a-37ae-a70e-855fdffea259",
+      "64ef003a-a461-3d7d-9e3b-2d521b02dd70"
     ],
-    "updatedAt": "2026-08-14T14:13:40.910Z"
+    "updatedAt": "2026-08-14T15:45:41.426Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:13:45.336Z"
+    "updatedAt": "2026-08-14T15:45:45.848Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:13:49.691Z"
+    "updatedAt": "2026-08-14T15:45:50.125Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:13:53.924Z"
+    "updatedAt": "2026-08-14T15:45:54.595Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:13:58.202Z"
+    "updatedAt": "2026-08-14T15:45:58.973Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -194,28 +193,27 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:14:07.566Z"
+    "updatedAt": "2026-08-14T15:46:08.727Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:14:12.014Z"
+    "updatedAt": "2026-08-14T15:46:13.170Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T14:14:16.250Z"
+    "updatedAt": "2026-08-14T15:46:17.455Z"
   },
   "INDEX": {
-    "text": "Retail sales data released, indicating a mixed market reaction pre-bell Friday.",
+    "text": "Investors' growing concerns over long-term costs of high-yielding investments.",
     "source": "macro",
     "articleIds": [
-      "566fd7ed-289c-38d5-a297-6fdf0fd545f8",
-      "5e136aba-e122-3614-94c9-7d2dc493b4b1"
+      "29f879b3-01d4-3b9d-ba64-13fbf513d2e7"
     ],
-    "updatedAt": "2026-08-14T14:14:20.902Z"
+    "updatedAt": "2026-08-14T15:46:22.168Z"
   },
   "INDEX_IN": {
     "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
