@@ -1,11 +1,9 @@
 {
   "INTC": {
-    "text": "LEAP demand driving growth for competitors, potentially challenging market position.",
-    "source": "stock",
-    "articleIds": [
-      "81050e4a-4906-3d17-9156-6e7f94eac7f3"
-    ],
-    "updatedAt": "2026-08-14T15:44:12.676Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-14T21:19:27.023Z"
   },
   "AMD": {
     "text": "$4.75 billion debt deal landing, giving the chipmaker additional financial flexibility.",
@@ -27,19 +25,17 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T20:25:02.981Z"
+    "updatedAt": "2026-08-14T21:19:41.834Z"
   },
   "SNDK": {
-    "text": "Bullish long-term growth targets and increased revenue projections.",
+    "text": "bullish long-term growth targets and promising earnings power signifying understated fiscal estimates",
     "source": "stock",
     "articleIds": [
       "b19083f2-afdb-48f0-8b3a-c52ab2add0b4",
-      "4c02cf56-7769-3acb-a371-799e5a511196",
-      "aa3d9af2-0ef8-3f83-9a6f-256811b71189",
-      "82f07888-be7d-3f5c-a0bb-93ad17632414",
-      "5216a212-5859-3690-b67b-37349fcc0b9e"
+      "79b73c1c-e364-315f-8433-18e9ae96269d",
+      "4c02cf56-7769-3acb-a371-799e5a511196"
     ],
-    "updatedAt": "2026-08-14T20:25:07.774Z"
+    "updatedAt": "2026-08-14T21:19:46.751Z"
   },
   "MU": {
     "text": "Rising DRAM and NAND prices amid rapidly expanding data-center demand.",
@@ -51,21 +47,26 @@
     "updatedAt": "2026-08-14T19:44:14.838Z"
   },
   "AVGO": {
-    "text": "A $370 billion financing question for its AI expansion raises concerns about Broadcom's debt.",
+    "text": "AI trade cooling and major VMware security threat sparking fresh pressure and debt concerns.",
     "source": "stock",
     "articleIds": [
       "4a880dba-8ac8-30b8-a4ac-7060871868ee",
       "de9343ee-dc7e-35d1-b508-385ff32e35c0",
-      "37afad59-88c1-3b3e-83eb-d285d9cb7aac",
-      "33471654-3b68-304e-8241-54936a3b7c4d"
+      "37afad59-88c1-3b3e-83eb-d285d9cb7aac"
     ],
-    "updatedAt": "2026-08-14T20:25:18.504Z"
+    "updatedAt": "2026-08-14T21:19:56.815Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-14T20:25:23.057Z"
+    "text": "Elon Musk's massive 48.4% stake worth over $900 billion sparks profit-taking and dilution concerns.",
+    "source": "stock",
+    "articleIds": [
+      "8a0d6d61-6808-361b-acad-32b72e4561d8",
+      "08dd240b-bd32-3bc7-83ec-2b05110fd248",
+      "a773238e-6dec-3734-a97e-f09bf40daacb",
+      "cad272f9-1be2-3096-91d5-524c062a4cd9",
+      "cc3d182f-a6d5-3284-bd2b-9f7b76d451fc"
+    ],
+    "updatedAt": "2026-08-14T21:20:01.837Z"
   },
   "MRVL": {
     "text": "Priced at a premium after a 290% run over the past three years.",
@@ -86,10 +87,12 @@
     "updatedAt": "2026-08-14T19:44:34.493Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-14T20:25:37.181Z"
+    "text": "Market punishing Qualcomm while it offers a cash return that most blue chips can't match.",
+    "source": "stock",
+    "articleIds": [
+      "18df11da-ed36-32c3-a315-9f1e23317050"
+    ],
+    "updatedAt": "2026-08-14T21:20:16.748Z"
   },
   "SKHY": {
     "text": "Benefiting from high demand from AI data centers.",
@@ -102,10 +105,12 @@
     "updatedAt": "2026-08-14T20:25:42.543Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-14T20:25:46.839Z"
+    "text": "Intel's holding of 50 million Class A shares as of June 30.",
+    "source": "stock",
+    "articleIds": [
+      "3a431b9a-cb9f-33f6-a57d-ebc0a12b3428"
+    ],
+    "updatedAt": "2026-08-14T21:20:27.191Z"
   },
   "005930.KS": {
     "text": "Record semiconductor profit and AI-infrastructure demand momentum.",
@@ -140,7 +145,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T20:26:05.688Z"
+    "updatedAt": "2026-08-14T21:20:47.885Z"
   },
   "GOOGL": {
     "text": "Increased institutional buying by Seth Klarman's Baupost Group.",
@@ -154,7 +159,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T20:26:15.301Z"
+    "updatedAt": "2026-08-14T21:20:57.283Z"
   },
   "META": {
     "text": "Risk of Australia enforcement intensifies amid inadequate platform compliance.",
@@ -172,25 +177,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T20:26:25.354Z"
+    "updatedAt": "2026-08-14T21:21:07.356Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T20:26:29.690Z"
+    "updatedAt": "2026-08-14T21:21:11.738Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T20:26:33.989Z"
+    "updatedAt": "2026-08-14T21:21:16.101Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T20:26:38.340Z"
+    "updatedAt": "2026-08-14T21:21:20.499Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -204,27 +209,28 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T20:26:48.323Z"
+    "updatedAt": "2026-08-14T21:21:29.929Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T20:26:52.880Z"
+    "updatedAt": "2026-08-14T21:21:34.670Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T20:26:57.259Z"
+    "updatedAt": "2026-08-14T21:21:39.153Z"
   },
   "INDEX": {
-    "text": "Mixed performance of broad-market exchange-traded funds after midday.",
+    "text": "Cooling demand rapidly changing the interest-rate debate.",
     "source": "macro",
     "articleIds": [
-      "97cbd0d5-e510-3300-aae5-2a0e3b8feddc"
+      "25e27ec0-f5f5-32ec-b5ed-ab6db3d966c9",
+      "1b427611-dbb0-3039-8deb-87360a192afc"
     ],
-    "updatedAt": "2026-08-14T20:27:02.160Z"
+    "updatedAt": "2026-08-14T21:21:44.678Z"
   },
   "INDEX_IN": {
     "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
