@@ -21,12 +21,12 @@
     "updatedAt": "2026-08-13T21:38:21.278Z"
   },
   "NVDA": {
-    "text": "Introduction of a bold $500 billion plan to create chip-backed securities.",
+    "text": "Partnership with major financial institutions to launch compute platforms for AI infrastructure financing initiative.",
     "source": "stock",
     "articleIds": [
-      "89d0f34d-efda-308f-a01e-0ce292890563"
+      "24de8d74-223f-33ef-8e25-ec3814587675"
     ],
-    "updatedAt": "2026-08-14T04:01:02.395Z"
+    "updatedAt": "2026-08-14T06:08:54.923Z"
   },
   "TSM": {
     "text": "Launch of $4.69 billion Sony venture to build next-generation smartphone components in Japan.",
@@ -38,13 +38,14 @@
     "updatedAt": "2026-08-13T19:53:46.148Z"
   },
   "SNDK": {
-    "text": "Bullish outlook and upbeat presentation at an analyst meeting in New York City today",
+    "text": "Bullish 2030 outlook and upbeat presentation at an analyst meeting in New York City.",
     "source": "stock",
     "articleIds": [
-      "d66ff9b4-c61c-3ac0-a79e-d3ff45f10fec",
-      "d77ca588-1019-36e1-8065-a36ae0ce7b6c"
+      "d275f9a8-6ddf-3695-8ab0-072fdc17fc44",
+      "d77ca588-1019-36e1-8065-a36ae0ce7b6c",
+      "d66ff9b4-c61c-3ac0-a79e-d3ff45f10fec"
     ],
-    "updatedAt": "2026-08-13T23:35:04.822Z"
+    "updatedAt": "2026-08-14T06:09:04.966Z"
   },
   "MU": {
     "text": "Investment in AI technology through its $250 million Paradigm Fund is driving Micron's growth.",
@@ -69,10 +70,9 @@
     "text": "Profit-taking by loyal buyers after a 67% post-IPO rise and recent trading volatility.",
     "source": "stock",
     "articleIds": [
-      "8d59f782-86f6-3a9d-b891-7a3478e936ba",
-      "a780b7b0-c5c1-3ef0-bc4c-0977248a3bf7"
+      "8d59f782-86f6-3a9d-b891-7a3478e936ba"
     ],
-    "updatedAt": "2026-08-14T04:01:27.793Z"
+    "updatedAt": "2026-08-14T06:09:19.977Z"
   },
   "MRVL": {
     "text": "Raised long-term outlook for data center demand and cheaper valuation after recent dip.",
@@ -113,19 +113,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T04:01:51.471Z"
+    "updatedAt": "2026-08-14T06:09:44.350Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T04:01:55.693Z"
+    "updatedAt": "2026-08-14T06:09:48.775Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T04:02:00.309Z"
+    "updatedAt": "2026-08-14T06:09:53.089Z"
   },
   "AAPL": {
     "text": "Investors react positively to Apple's new AI manufacturing hub and expanded U.S. supply chain investments.",
@@ -155,12 +155,10 @@
     "updatedAt": "2026-08-14T04:02:15.158Z"
   },
   "AMZN": {
-    "text": "Never having paid a dividend despite being a $3 trillion company.",
-    "source": "stock",
-    "articleIds": [
-      "593e3e47-2790-3677-a253-8a2979aff1fe"
-    ],
-    "updatedAt": "2026-08-13T23:36:13.941Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-14T06:10:11.816Z"
   },
   "META": {
     "text": "Meta's AI infrastructure expansion plans are sparking investor optimism.",
@@ -174,25 +172,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T04:02:29.326Z"
+    "updatedAt": "2026-08-14T06:10:21.391Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T04:02:33.560Z"
+    "updatedAt": "2026-08-14T06:10:25.701Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T04:02:37.744Z"
+    "updatedAt": "2026-08-14T06:10:29.988Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T04:02:42.016Z"
+    "updatedAt": "2026-08-14T06:10:34.271Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -206,29 +204,28 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T04:02:50.780Z"
+    "updatedAt": "2026-08-14T06:10:43.300Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T04:02:55.107Z"
+    "updatedAt": "2026-08-14T06:10:47.870Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T04:02:59.471Z"
+    "updatedAt": "2026-08-14T06:10:52.254Z"
   },
   "INDEX": {
-    "text": "Cooling inflation and a weakening labor market reducing rate-hike risks and supporting earnings growth.",
+    "text": "Producer inflation data release amid pre-bell Thursday market activity.",
     "source": "macro",
     "articleIds": [
       "5e136aba-e122-3614-94c9-7d2dc493b4b1",
-      "757d60e3-47a2-3491-bd0d-4755499b809c",
-      "5f1f508e-509d-3c97-85e2-3380f41888fc"
+      "757d60e3-47a2-3491-bd0d-4755499b809c"
     ],
-    "updatedAt": "2026-08-14T04:03:04.393Z"
+    "updatedAt": "2026-08-14T06:10:57.238Z"
   },
   "INDEX_IN": {
     "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
