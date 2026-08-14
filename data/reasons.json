@@ -21,10 +21,13 @@
     "updatedAt": "2026-08-13T21:38:21.278Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-14T09:54:31.729Z"
+    "text": "Expansion of strategic partnerships and AI infrastructure investments in key markets and regions.",
+    "source": "stock",
+    "articleIds": [
+      "5de31515-0cbe-317c-b250-246f804fa676",
+      "b7c18f21-d537-3030-828e-5a0720d480bc"
+    ],
+    "updatedAt": "2026-08-14T10:53:00.207Z"
   },
   "TSM": {
     "text": "$4.69 billion Sony venture launching next-generation smartphone component manufacturing in Japan.",
@@ -35,49 +38,48 @@
     "updatedAt": "2026-08-14T09:54:36.521Z"
   },
   "SNDK": {
-    "text": "Bullish 2030 outlook and upbeat presentation at an analyst meeting in New York City.",
+    "text": "Bullish 2030 outlook lifted memory chip stocks across Asia.",
     "source": "stock",
     "articleIds": [
+      "dc9b5c47-20b4-36a3-9fdd-ea67fbdb73a2",
+      "067757d3-8ad6-316e-9e86-4c5a4314e4c6",
       "d275f9a8-6ddf-3695-8ab0-072fdc17fc44",
       "d77ca588-1019-36e1-8065-a36ae0ce7b6c",
       "d66ff9b4-c61c-3ac0-a79e-d3ff45f10fec"
     ],
-    "updatedAt": "2026-08-14T06:09:04.966Z"
+    "updatedAt": "2026-08-14T10:53:09.725Z"
   },
   "MU": {
-    "text": "Launch of $250 million AI-focused Paradigm Fund to deepen partnerships and gain future insights.",
+    "text": "Investors weigh strong AI-driven memory demand and Micron's strategic investments in emerging AI companies.",
     "source": "stock",
     "articleIds": [
+      "c0555413-d790-4e4d-834c-793f5fc1987f",
+      "d08fe3e3-8d96-3e1e-98c2-2f69a46e5091",
       "d8282cf5-be47-3c78-befa-9886072ceb97"
     ],
-    "updatedAt": "2026-08-14T08:09:49.180Z"
+    "updatedAt": "2026-08-14T10:53:14.850Z"
   },
   "AVGO": {
-    "text": "AI infrastructure boom financing and strong AI compute demand expectations.",
-    "source": "stock",
-    "articleIds": [
-      "f4411260-9121-32e2-af30-8467bcb648c7",
-      "970ed2c8-0c23-3ea4-aa8c-1adb0e1dbafe"
-    ],
-    "updatedAt": "2026-08-14T09:54:50.938Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-14T10:53:19.318Z"
   },
   "SPCX": {
-    "text": "vesting conditions tied to extremely ambitious outcomes sparking uncertainty about Elon Musk's stake value",
+    "text": "Vesting conditions on some shares may not be met, limiting potential value realization.",
     "source": "stock",
     "articleIds": [
-      "ca5a407a-38da-3f64-9359-83ba6082059c",
-      "25de5a18-9f88-33be-8fe3-32e1323b6a83"
+      "ca5a407a-38da-3f64-9359-83ba6082059c"
     ],
-    "updatedAt": "2026-08-14T09:54:55.921Z"
+    "updatedAt": "2026-08-14T10:53:24.263Z"
   },
   "MRVL": {
-    "text": "Raised long-term outlook for data center demand and cheaper valuation after recent dip.",
+    "text": "Management raises its long-term outlook for data center demand.",
     "source": "stock",
     "articleIds": [
-      "c5b59ed8-fc81-3a41-b656-99e77636915f",
       "a13445d6-3800-3e7c-bc81-39ba991c69d9"
     ],
-    "updatedAt": "2026-08-14T04:01:32.568Z"
+    "updatedAt": "2026-08-14T10:53:29.511Z"
   },
   "ARM": {
     "text": "Shift to CPU sales for AI driving Arm's revenue growth and future pipeline potential.",
@@ -101,57 +103,57 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:55:14.718Z"
+    "updatedAt": "2026-08-14T10:53:43.617Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:55:19.009Z"
+    "updatedAt": "2026-08-14T10:53:47.977Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:55:23.307Z"
+    "updatedAt": "2026-08-14T10:53:52.284Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:55:27.911Z"
+    "updatedAt": "2026-08-14T10:53:56.889Z"
   },
   "AAPL": {
-    "text": "Investors optimistic about Apple's expanding US manufacturing capabilities and AI server operations.",
+    "text": "\"Apple's AI technology advancements and U.S. manufacturing investments gain investor confidence.\"",
     "source": "stock",
     "articleIds": [
+      "eed8bd49-50ea-3764-b067-6b2835a29a10",
       "b1ff260a-9ce7-3e58-a73a-968f30b14d98",
       "10b6d17e-b96f-30bb-b1dc-a8c8543f4e6c"
     ],
-    "updatedAt": "2026-08-14T09:55:33.420Z"
+    "updatedAt": "2026-08-14T10:54:01.548Z"
   },
   "MSFT": {
-    "text": "Positive analyst outlook and potential for clear return on investment.",
+    "text": "Analyst predicts another 30% gain due to Microsoft's potential for continued growth.",
     "source": "stock",
     "articleIds": [
-      "7a947fc0-0e1a-40bf-96b4-e6afc11138de",
-      "01a4c651-89a0-3ed4-8f08-e9be04ef5e5f"
+      "7a947fc0-0e1a-40bf-96b4-e6afc11138de"
     ],
-    "updatedAt": "2026-08-14T04:02:10.138Z"
+    "updatedAt": "2026-08-14T10:54:07.169Z"
   },
   "GOOGL": {
-    "text": "Alphabet's AI hardware ambitions fueling optimism about its future growth prospects.",
+    "text": "Google's parent Alphabet significantly increasing its stake in SpaceX.",
     "source": "stock",
     "articleIds": [
-      "4e73d06c-28ee-3c1a-9442-8e5ecbacf09d"
+      "9aa8160f-d6e7-36cc-9d48-e90f2ce85419"
     ],
-    "updatedAt": "2026-08-14T09:55:43.214Z"
+    "updatedAt": "2026-08-14T10:54:12.309Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:55:47.863Z"
+    "updatedAt": "2026-08-14T10:54:16.774Z"
   },
   "META": {
     "text": "Latest valuation work suggests current price may be 37% undervalued based on a Discounted Cash Flow approach.",
@@ -165,25 +167,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:55:57.129Z"
+    "updatedAt": "2026-08-14T10:54:25.871Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:56:01.434Z"
+    "updatedAt": "2026-08-14T10:54:30.218Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:56:05.847Z"
+    "updatedAt": "2026-08-14T10:54:34.507Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:56:10.129Z"
+    "updatedAt": "2026-08-14T10:54:38.915Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -197,19 +199,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:56:19.716Z"
+    "updatedAt": "2026-08-14T10:54:48.110Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:56:24.435Z"
+    "updatedAt": "2026-08-14T10:54:52.688Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T09:56:28.735Z"
+    "updatedAt": "2026-08-14T10:54:56.979Z"
   },
   "INDEX": {
     "text": "Producer inflation data release amid pre-bell Thursday market activity.",
