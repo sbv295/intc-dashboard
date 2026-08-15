@@ -17,18 +17,21 @@
     "updatedAt": "2026-08-14T22:16:25.185Z"
   },
   "NVDA": {
-    "text": "Uncertainty about being the next AI winner sparking reevaluation of its market position.",
+    "text": "Revised funding guarantee for Ohio data center project sparking investor risk exposure concerns.",
     "source": "stock",
     "articleIds": [
-      "c0555413-d790-4e4d-834c-793f5fc1987f"
+      "c0555413-d790-4e4d-834c-793f5fc1987f",
+      "342cc9f0-8ce8-3157-957e-6da0f5e7ad24"
     ],
-    "updatedAt": "2026-08-14T19:44:00.350Z"
+    "updatedAt": "2026-08-15T00:53:36.056Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-14T23:16:00.775Z"
+    "text": "Valuation scrutiny after strong price run and expensive cash flow intrinsic value estimate",
+    "source": "stock",
+    "articleIds": [
+      "dc2fc28b-a010-3e52-8719-28ede144c401"
+    ],
+    "updatedAt": "2026-08-15T00:53:41.070Z"
   },
   "SNDK": {
     "text": "bullish long-term growth targets and revenue growth plan sparking positive Wall Street reactions",
@@ -51,24 +54,22 @@
     "updatedAt": "2026-08-14T19:44:14.838Z"
   },
   "AVGO": {
-    "text": "Concerns over a $370 billion AI financing risk and potential customer default on payments.",
+    "text": "Exposure to potential $370 billion AI financing risk and customer default concerns.",
     "source": "stock",
     "articleIds": [
+      "64c7a299-0ef1-3afe-9888-95b3474ece56",
       "42872237-753f-3d5c-b244-e251b3bcf6b8",
-      "c23f11f9-d96c-3c92-9a31-8d9271f1e58d",
-      "4a880dba-8ac8-30b8-a4ac-7060871868ee"
+      "c23f11f9-d96c-3c92-9a31-8d9271f1e58d"
     ],
-    "updatedAt": "2026-08-14T23:16:15.395Z"
+    "updatedAt": "2026-08-15T00:53:55.759Z"
   },
   "SPCX": {
-    "text": "Elon Musk's massive 48.4% stake disclosure sparks investor concerns.",
+    "text": "SEC fraud case rattling pre-IPO investors and sparking concern among existing stakeholders.",
     "source": "stock",
     "articleIds": [
-      "82bc84e9-0c36-3679-8c0c-e0d6c466a291",
-      "08dd240b-bd32-3bc7-83ec-2b05110fd248",
-      "a773238e-6dec-3734-a97e-f09bf40daacb"
+      "82bc84e9-0c36-3679-8c0c-e0d6c466a291"
     ],
-    "updatedAt": "2026-08-14T23:16:20.884Z"
+    "updatedAt": "2026-08-15T00:54:01.212Z"
   },
   "MRVL": {
     "text": "Priced at a premium after a 290% run over the past three years.",
@@ -97,14 +98,16 @@
     "updatedAt": "2026-08-14T21:20:16.748Z"
   },
   "SKHY": {
-    "text": "Benefiting from high demand from AI data centers.",
+    "text": "Unveiling of new AI memory standard through High Bandwidth Flash specification.",
     "source": "stock",
     "articleIds": [
+      "6a339901-7ff1-3c45-a540-759e56f1e5a4",
+      "22ea4b9a-9a17-3501-9d7a-27448913832e",
       "4fc60d8e-3821-39d2-9199-1c930d01a5a4",
       "1194f09b-8a72-3a00-a48e-dd043d5299f4",
       "f2cb4949-c1e8-3568-8931-113bfbc4d08f"
     ],
-    "updatedAt": "2026-08-14T20:25:42.543Z"
+    "updatedAt": "2026-08-15T00:54:21.791Z"
   },
   "MBLY": {
     "text": "Intel's holding of 50 million Class A shares as of June 30.",
@@ -124,77 +127,79 @@
     "updatedAt": "2026-08-14T16:49:39.473Z"
   },
   "000660.KS": {
-    "text": "Benefiting from high demand from AI data centers.",
+    "text": "Unveiling of new AI memory standard through High Bandwidth Flash specification.",
     "source": "stock",
     "articleIds": [
+      "6a339901-7ff1-3c45-a540-759e56f1e5a4",
+      "22ea4b9a-9a17-3501-9d7a-27448913832e",
       "4fc60d8e-3821-39d2-9199-1c930d01a5a4",
       "1194f09b-8a72-3a00-a48e-dd043d5299f4",
       "f2cb4949-c1e8-3568-8931-113bfbc4d08f"
     ],
-    "updatedAt": "2026-08-14T16:49:44.259Z"
+    "updatedAt": "2026-08-15T00:54:36.825Z"
   },
   "AAPL": {
-    "text": "Apple's tackling of iPhone's biggest competitive gap in China's AI race.",
-    "source": "stock",
-    "articleIds": [
-      "f393cd5e-9f81-3108-8944-2579116390b7",
-      "61eda5b6-b933-326a-bb88-5eba2cec1430"
-    ],
-    "updatedAt": "2026-08-14T23:16:59.120Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-15T00:54:41.515Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T23:17:03.409Z"
+    "updatedAt": "2026-08-15T00:54:46.136Z"
   },
   "GOOGL": {
-    "text": "Concerns over massive, long-term debt burden from expensive server purchases and extended repayment terms.",
+    "text": "$25 billion debt, including $2.5 billion not due until 2066, is sparking concerns.",
     "source": "stock",
     "articleIds": [
+      "41aa00bd-2bc8-3705-9d89-9084c4fa7ac3",
       "5b1882c1-07b9-3a10-82cc-b05f5990728d"
     ],
-    "updatedAt": "2026-08-14T22:17:43.172Z"
+    "updatedAt": "2026-08-15T00:54:51.443Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-14T23:17:13.189Z"
-  },
-  "META": {
-    "text": "Risk of inadequate platform compliance intensifies amid Australia enforcement.",
+    "text": "Reinstatement of binding arbitration and ban on class-action lawsuits.",
     "source": "stock",
     "articleIds": [
-      "861ad0eb-6fe3-37cf-b3a7-ea43c43506c0",
-      "294bdceb-248a-36e3-858f-4f57712baad3",
-      "5ab1a6e3-43cd-31b4-9308-1885fd07ac54"
+      "5fdc2b30-6fa1-3fb3-956e-65043b1616d3"
     ],
-    "updatedAt": "2026-08-14T22:17:52.855Z"
+    "updatedAt": "2026-08-15T00:54:56.357Z"
+  },
+  "META": {
+    "text": "Fair value estimate trimmed due to concerns over AI spending and uncertain monetization timing.",
+    "source": "stock",
+    "articleIds": [
+      "e268538e-b72b-3989-ba68-71d1b0163bb7",
+      "861ad0eb-6fe3-37cf-b3a7-ea43c43506c0",
+      "294bdceb-248a-36e3-858f-4f57712baad3"
+    ],
+    "updatedAt": "2026-08-15T00:55:01.609Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T23:17:22.390Z"
+    "updatedAt": "2026-08-15T00:55:06.377Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T23:17:26.751Z"
+    "updatedAt": "2026-08-15T00:55:10.791Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T23:17:31.040Z"
+    "updatedAt": "2026-08-15T00:55:15.143Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T23:17:35.309Z"
+    "updatedAt": "2026-08-15T00:55:19.582Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -208,19 +213,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T23:17:44.235Z"
+    "updatedAt": "2026-08-15T00:55:29.514Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T23:17:48.753Z"
+    "updatedAt": "2026-08-15T00:55:34.036Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-14T23:17:53.191Z"
+    "updatedAt": "2026-08-15T00:55:38.483Z"
   },
   "INDEX": {
     "text": "Cooling demand rapidly changing the interest-rate debate.",
