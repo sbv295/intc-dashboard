@@ -9,20 +9,20 @@
     "updatedAt": "2026-08-15T10:16:24.352Z"
   },
   "AMD": {
-    "text": "Strong earnings report and $4.75 billion debt deal for AI infrastructure expansion",
+    "text": "Super Micro's blowout numbers reigniting the AI trade and investor Stanley Druckenmiller's increased stake",
     "source": "stock",
     "articleIds": [
+      "e6f4f900-6b30-3c08-bfd3-c93dedcedc71",
       "a6e601bd-e140-3da1-915a-9c6e01b582f1",
-      "1c7ccaf3-6849-3c04-bb57-d25b5755964b",
-      "5ceb351b-13c0-399e-a294-a331305a9915"
+      "1c7ccaf3-6849-3c04-bb57-d25b5755964b"
     ],
-    "updatedAt": "2026-08-15T12:24:36.279Z"
+    "updatedAt": "2026-08-15T17:14:58.088Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T16:16:49.515Z"
+    "updatedAt": "2026-08-15T17:15:02.672Z"
   },
   "TSM": {
     "text": "SoftBank's sale of 71.5% of its holding sparking investor concern and portfolio rebalancing.",
@@ -33,26 +33,28 @@
     "updatedAt": "2026-08-15T16:16:54.190Z"
   },
   "SNDK": {
-    "text": "bullish long-term growth targets and improved outlook sparking investor optimism",
+    "text": "Long-term revenue growth plan sparks positive response from Wall Street firms.",
     "source": "stock",
     "articleIds": [
-      "b19083f2-afdb-48f0-8b3a-c52ab2add0b4",
       "c4dd0eea-5b89-30cd-908c-7c92a49307c1",
       "9e41fce7-6926-3eee-b11d-2f449eefbf53",
       "79b73c1c-e364-315f-8433-18e9ae96269d",
-      "f1e0161a-6bc7-395f-8b61-38463680f749"
+      "f1e0161a-6bc7-395f-8b61-38463680f749",
+      "82f07888-be7d-3f5c-a0bb-93ad17632414"
     ],
-    "updatedAt": "2026-08-15T16:16:59.273Z"
+    "updatedAt": "2026-08-15T17:15:13.128Z"
   },
   "MU": {
     "text": "Memory prices are expected to keep surging.",
     "source": "stock",
     "articleIds": [
       "2721793a-1c9a-3c7e-b5c5-6fefbecb167c",
+      "9e41fce7-6926-3eee-b11d-2f449eefbf53",
+      "39a5709b-8cad-3807-866e-7980d0caf157",
       "e3f56794-9841-3b40-a928-4f1d9345a748",
       "bb5129f1-1dc3-3588-9344-416f10ae2e35"
     ],
-    "updatedAt": "2026-08-15T16:17:03.969Z"
+    "updatedAt": "2026-08-15T17:15:18.205Z"
   },
   "AVGO": {
     "text": "Concerns over a $370 billion AI financing risk and potential customer default on payments.",
@@ -66,13 +68,12 @@
     "updatedAt": "2026-08-15T16:17:09.269Z"
   },
   "SPCX": {
-    "text": "Exclusive AI infrastructure deal with Nvidia sparks investor concerns about SpaceX's future direction.",
+    "text": "Exclusive AI infrastructure deal with Nvidia sparks concerns about SpaceX's future direction.",
     "source": "stock",
     "articleIds": [
-      "4cbea178-aa98-3d54-ac1b-b9063ac0f5f5",
-      "9f7a7ac7-0c70-3bd9-963c-24c0fe9ad6f9"
+      "4cbea178-aa98-3d54-ac1b-b9063ac0f5f5"
     ],
-    "updatedAt": "2026-08-15T16:17:13.880Z"
+    "updatedAt": "2026-08-15T17:15:28.307Z"
   },
   "MRVL": {
     "text": "Priced at a premium after a 290% run over the past three years.",
@@ -146,21 +147,22 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T16:17:51.880Z"
+    "updatedAt": "2026-08-15T17:16:09.035Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T16:17:56.348Z"
+    "updatedAt": "2026-08-15T17:16:13.655Z"
   },
   "GOOGL": {
-    "text": "Facing thousands of lawsuits and potential legal repercussions.",
+    "text": "Facing thousands of lawsuits may weigh on investor sentiment and confidence.",
     "source": "stock",
     "articleIds": [
+      "99a3bd34-ecdf-3658-a9ea-0ab3804eff9e",
       "40a168cb-5a0d-3660-8e1a-8d085419822c"
     ],
-    "updatedAt": "2026-08-15T16:18:01.351Z"
+    "updatedAt": "2026-08-15T17:16:18.470Z"
   },
   "AMZN": {
     "text": "Jeff Bezos' $4 billion sale sparking concerns about Amazon nearing its peak.",
@@ -185,25 +187,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T16:18:15.185Z"
+    "updatedAt": "2026-08-15T17:16:33.054Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T16:18:19.405Z"
+    "updatedAt": "2026-08-15T17:16:37.523Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T16:18:23.667Z"
+    "updatedAt": "2026-08-15T17:16:41.939Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T16:18:27.938Z"
+    "updatedAt": "2026-08-15T17:16:46.362Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -217,19 +219,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T16:18:36.803Z"
+    "updatedAt": "2026-08-15T17:16:55.716Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T16:18:41.040Z"
+    "updatedAt": "2026-08-15T17:17:00.171Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T16:18:45.302Z"
+    "updatedAt": "2026-08-15T17:17:04.576Z"
   },
   "INDEX": {
     "text": "Cooling demand rapidly changing the interest-rate debate.",
