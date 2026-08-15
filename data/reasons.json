@@ -21,13 +21,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:16:33.524Z"
+    "updatedAt": "2026-08-15T11:14:22.140Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:16:38.287Z"
+    "updatedAt": "2026-08-15T11:14:27.157Z"
   },
   "SNDK": {
     "text": "bullish long-term growth targets and revenue growth plan sparking Wall Street optimism",
@@ -65,10 +65,9 @@
     "source": "stock",
     "articleIds": [
       "c39d01e2-0af4-3499-b22f-7816a088f025",
-      "82bc84e9-0c36-3679-8c0c-e0d6c466a291",
-      "73198b96-74b2-356c-8733-54fd547a5c48"
+      "82bc84e9-0c36-3679-8c0c-e0d6c466a291"
     ],
-    "updatedAt": "2026-08-15T09:20:33.456Z"
+    "updatedAt": "2026-08-15T11:14:48.097Z"
   },
   "MRVL": {
     "text": "Priced at a premium after a 290% run over the past three years.",
@@ -142,21 +141,21 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:17:35.521Z"
+    "updatedAt": "2026-08-15T11:15:29.574Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:17:39.759Z"
+    "updatedAt": "2026-08-15T11:15:34.427Z"
   },
   "GOOGL": {
-    "text": "Integration of Google Threat Intelligence into Commvault's cyber resilience workflows.",
+    "text": "First-time reported negative free cash flow due to Alphabet's aggressive AI data-center build-out.",
     "source": "stock",
     "articleIds": [
-      "87439dad-7938-3956-9c41-4aad389fdf9e"
+      "785e4378-40b3-3fcd-bec4-2494302c1ded"
     ],
-    "updatedAt": "2026-08-15T04:24:18.714Z"
+    "updatedAt": "2026-08-15T11:15:40.904Z"
   },
   "AMZN": {
     "text": "Jeff Bezos' $4 billion sale and Amazon's reinstatement of binding arbitration.",
@@ -169,37 +168,37 @@
     "updatedAt": "2026-08-15T10:17:49.362Z"
   },
   "META": {
-    "text": "Fair value estimate trimmed due to higher AI spending and uncertain monetization timing.",
+    "text": "New Mexico judge's ruling imposes Meta's highest single penalty, pushing the company to change.",
     "source": "stock",
     "articleIds": [
-      "e268538e-b72b-3989-ba68-71d1b0163bb7",
-      "861ad0eb-6fe3-37cf-b3a7-ea43c43506c0"
+      "8c58d730-a640-3a47-bfb5-73763f50dedc",
+      "e268538e-b72b-3989-ba68-71d1b0163bb7"
     ],
-    "updatedAt": "2026-08-15T02:12:10.130Z"
+    "updatedAt": "2026-08-15T11:15:51.436Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:17:59.140Z"
+    "updatedAt": "2026-08-15T11:15:56.232Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:18:03.361Z"
+    "updatedAt": "2026-08-15T11:16:00.733Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:18:07.857Z"
+    "updatedAt": "2026-08-15T11:16:05.266Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:18:12.089Z"
+    "updatedAt": "2026-08-15T11:16:09.888Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -213,19 +212,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:18:21.338Z"
+    "updatedAt": "2026-08-15T11:16:19.352Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:18:25.573Z"
+    "updatedAt": "2026-08-15T11:16:23.810Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T10:18:29.889Z"
+    "updatedAt": "2026-08-15T11:16:28.359Z"
   },
   "INDEX": {
     "text": "Cooling demand rapidly changing the interest-rate debate.",
