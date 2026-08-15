@@ -19,12 +19,12 @@
     "updatedAt": "2026-08-15T12:24:36.279Z"
   },
   "NVDA": {
-    "text": "No specific negative news about Nvidia being reported today.",
+    "text": "Jensen Huang's $500 billion compute fund sparking cautious investor scrutiny and uncertainty.",
     "source": "stock",
     "articleIds": [
-      "2e7c3cc1-079b-32e5-a2d2-8f43b59c4736"
+      "aa8b7dfa-512f-3ee8-85d6-2c7b063043ac"
     ],
-    "updatedAt": "2026-08-15T14:16:02.253Z"
+    "updatedAt": "2026-08-15T15:14:09.494Z"
   },
   "TSM": {
     "text": "Current price screens as expensive on a Discounted Cash Flow intrinsic value estimate.",
@@ -35,25 +35,26 @@
     "updatedAt": "2026-08-15T14:16:07.475Z"
   },
   "SNDK": {
-    "text": "bullish long-term growth targets and revenue growth plan sparking Wall Street optimism",
+    "text": "Bullish long-term growth targets revealed by the company.",
     "source": "stock",
     "articleIds": [
       "b19083f2-afdb-48f0-8b3a-c52ab2add0b4",
-      "f1e0161a-6bc7-395f-8b61-38463680f749",
+      "9e41fce7-6926-3eee-b11d-2f449eefbf53",
       "79b73c1c-e364-315f-8433-18e9ae96269d",
-      "82f07888-be7d-3f5c-a0bb-93ad17632414"
+      "f1e0161a-6bc7-395f-8b61-38463680f749"
     ],
-    "updatedAt": "2026-08-15T02:10:56.501Z"
+    "updatedAt": "2026-08-15T15:14:19.467Z"
   },
   "MU": {
-    "text": "Rising memory prices and tightening supply are expected to amplify earnings.",
+    "text": "Memory prices are expected to keep surging, amplifying earnings from data-center demand.",
     "source": "stock",
     "articleIds": [
+      "9e41fce7-6926-3eee-b11d-2f449eefbf53",
       "e3f56794-9841-3b40-a928-4f1d9345a748",
       "bb5129f1-1dc3-3588-9344-416f10ae2e35",
       "b3cd0af8-cc7f-3bfa-bf30-1f2bc9adcd7e"
     ],
-    "updatedAt": "2026-08-15T10:16:48.078Z"
+    "updatedAt": "2026-08-15T15:14:24.172Z"
   },
   "AVGO": {
     "text": "Exposure to potential $370 billion AI financing risk and customer default concerns.",
@@ -66,10 +67,12 @@
     "updatedAt": "2026-08-15T00:53:55.759Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-15T14:16:27.174Z"
+    "text": "Comparison to Micron sparking uncertainty about its high-growth prospects and investment potential.",
+    "source": "stock",
+    "articleIds": [
+      "39a5709b-8cad-3807-866e-7980d0caf157"
+    ],
+    "updatedAt": "2026-08-15T15:14:34.161Z"
   },
   "MRVL": {
     "text": "Priced at a premium after a 290% run over the past three years.",
@@ -143,22 +146,21 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T14:17:06.990Z"
+    "updatedAt": "2026-08-15T15:15:15.104Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T14:17:11.478Z"
+    "updatedAt": "2026-08-15T15:15:19.526Z"
   },
   "GOOGL": {
-    "text": "Negative free cash flow milestone reported by Alphabet due to increased AI data-center expenses.",
+    "text": "Negative free cash flow due to Alphabet's aggressive AI data-center build-out.",
     "source": "stock",
     "articleIds": [
-      "785e4378-40b3-3fcd-bec4-2494302c1ded",
-      "fa2ff136-5f92-37ac-a3bf-c01b6441fd18"
+      "785e4378-40b3-3fcd-bec4-2494302c1ded"
     ],
-    "updatedAt": "2026-08-15T13:26:48.463Z"
+    "updatedAt": "2026-08-15T15:15:24.335Z"
   },
   "AMZN": {
     "text": "Jeff Bezos' $4 billion sale sparking concerns about Amazon nearing its peak.",
@@ -183,25 +185,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T14:17:32.268Z"
+    "updatedAt": "2026-08-15T15:15:38.803Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T14:17:36.625Z"
+    "updatedAt": "2026-08-15T15:15:43.244Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T14:17:40.946Z"
+    "updatedAt": "2026-08-15T15:15:47.589Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T14:17:45.355Z"
+    "updatedAt": "2026-08-15T15:15:51.903Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -215,19 +217,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T14:17:55.385Z"
+    "updatedAt": "2026-08-15T15:16:01.275Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T14:17:59.865Z"
+    "updatedAt": "2026-08-15T15:16:05.632Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T14:18:04.280Z"
+    "updatedAt": "2026-08-15T15:16:10.057Z"
   },
   "INDEX": {
     "text": "Cooling demand rapidly changing the interest-rate debate.",
