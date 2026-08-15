@@ -22,7 +22,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T19:17:01.294Z"
+    "updatedAt": "2026-08-15T20:15:43.343Z"
   },
   "TSM": {
     "text": "SoftBank's sale of 71.5% of its holding sparking investor concern and portfolio rebalancing.",
@@ -49,31 +49,29 @@
     "source": "stock",
     "articleIds": [
       "2721793a-1c9a-3c7e-b5c5-6fefbecb167c",
-      "9e41fce7-6926-3eee-b11d-2f449eefbf53",
-      "39a5709b-8cad-3807-866e-7980d0caf157",
       "e3f56794-9841-3b40-a928-4f1d9345a748",
       "bb5129f1-1dc3-3588-9344-416f10ae2e35"
     ],
-    "updatedAt": "2026-08-15T19:17:16.418Z"
+    "updatedAt": "2026-08-15T20:15:58.006Z"
   },
   "AVGO": {
-    "text": "Concerns over a $370 billion AI financing risk and potential customer default on payments.",
+    "text": "Third Point exited its position in Broadcom in the second quarter.",
     "source": "stock",
     "articleIds": [
-      "b2b6860f-0323-32d9-bf1b-9dc0e4d1e1ec",
       "64c7a299-0ef1-3afe-9888-95b3474ece56",
-      "42872237-753f-3d5c-b244-e251b3bcf6b8",
-      "c23f11f9-d96c-3c92-9a31-8d9271f1e58d"
+      "42872237-753f-3d5c-b244-e251b3bcf6b8"
     ],
-    "updatedAt": "2026-08-15T16:17:09.269Z"
+    "updatedAt": "2026-08-15T20:16:02.787Z"
   },
   "SPCX": {
-    "text": "Exclusive AI infrastructure deal with Nvidia sparks concerns about SpaceX's future direction.",
+    "text": "Exclusive Nvidia chip deal sparks investor concerns over SpaceX's AI infrastructure strategy.",
     "source": "stock",
     "articleIds": [
-      "4cbea178-aa98-3d54-ac1b-b9063ac0f5f5"
+      "e1151842-76a1-3c3f-b655-1fe4ea3ab4bb",
+      "4cbea178-aa98-3d54-ac1b-b9063ac0f5f5",
+      "39a5709b-8cad-3807-866e-7980d0caf157"
     ],
-    "updatedAt": "2026-08-15T19:17:26.319Z"
+    "updatedAt": "2026-08-15T20:16:07.483Z"
   },
   "MRVL": {
     "text": "Priced at a premium after a 290% run over the past three years.",
@@ -146,13 +144,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T19:18:06.326Z"
+    "updatedAt": "2026-08-15T20:16:47.543Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T19:18:10.583Z"
+    "updatedAt": "2026-08-15T20:16:51.858Z"
   },
   "GOOGL": {
     "text": "Facing thousands of lawsuits may weigh on investor sentiment and confidence.",
@@ -164,13 +162,12 @@
     "updatedAt": "2026-08-15T17:16:18.470Z"
   },
   "AMZN": {
-    "text": "Jeff Bezos' $4 billion sale sparking concerns about Amazon nearing its peak.",
+    "text": "Jeff Bezos' $4 billion sale sparking concerns as it looks to fund its aggressive AI data-center build-out.",
     "source": "stock",
     "articleIds": [
-      "1e837b01-7239-3879-94a2-b9c380f9c41b",
-      "3b96ebf7-6967-3e76-9b82-cf43d852a22e"
+      "1e837b01-7239-3879-94a2-b9c380f9c41b"
     ],
-    "updatedAt": "2026-08-15T14:17:21.992Z"
+    "updatedAt": "2026-08-15T20:17:01.075Z"
   },
   "META": {
     "text": "\"New Mexico's $567 million ruling and AI spending concerns weigh on fair value estimate.\"",
@@ -186,25 +183,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T19:18:29.963Z"
+    "updatedAt": "2026-08-15T20:17:10.386Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T19:18:34.214Z"
+    "updatedAt": "2026-08-15T20:17:14.780Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T19:18:38.513Z"
+    "updatedAt": "2026-08-15T20:17:19.062Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T19:18:42.785Z"
+    "updatedAt": "2026-08-15T20:17:23.384Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -218,19 +215,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T19:18:51.638Z"
+    "updatedAt": "2026-08-15T20:17:32.641Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T19:18:56.009Z"
+    "updatedAt": "2026-08-15T20:17:36.980Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T19:19:00.226Z"
+    "updatedAt": "2026-08-15T20:17:41.272Z"
   },
   "INDEX": {
     "text": "Volatility environment driving a shrinking yield on QDTE's weekly paycheck.",
