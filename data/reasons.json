@@ -22,7 +22,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T17:15:02.672Z"
+    "updatedAt": "2026-08-15T18:19:35.828Z"
   },
   "TSM": {
     "text": "SoftBank's sale of 71.5% of its holding sparking investor concern and portfolio rebalancing.",
@@ -49,12 +49,10 @@
     "source": "stock",
     "articleIds": [
       "2721793a-1c9a-3c7e-b5c5-6fefbecb167c",
-      "9e41fce7-6926-3eee-b11d-2f449eefbf53",
-      "39a5709b-8cad-3807-866e-7980d0caf157",
       "e3f56794-9841-3b40-a928-4f1d9345a748",
       "bb5129f1-1dc3-3588-9344-416f10ae2e35"
     ],
-    "updatedAt": "2026-08-15T17:15:18.205Z"
+    "updatedAt": "2026-08-15T18:19:50.526Z"
   },
   "AVGO": {
     "text": "Concerns over a $370 billion AI financing risk and potential customer default on payments.",
@@ -68,12 +66,10 @@
     "updatedAt": "2026-08-15T16:17:09.269Z"
   },
   "SPCX": {
-    "text": "Exclusive AI infrastructure deal with Nvidia sparks concerns about SpaceX's future direction.",
-    "source": "stock",
-    "articleIds": [
-      "4cbea178-aa98-3d54-ac1b-b9063ac0f5f5"
-    ],
-    "updatedAt": "2026-08-15T17:15:28.307Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-15T18:20:00.462Z"
   },
   "MRVL": {
     "text": "Priced at a premium after a 290% run over the past three years.",
@@ -108,10 +104,9 @@
       "6a339901-7ff1-3c45-a540-759e56f1e5a4",
       "22ea4b9a-9a17-3501-9d7a-27448913832e",
       "4fc60d8e-3821-39d2-9199-1c930d01a5a4",
-      "1194f09b-8a72-3a00-a48e-dd043d5299f4",
-      "f2cb4949-c1e8-3568-8931-113bfbc4d08f"
+      "1194f09b-8a72-3a00-a48e-dd043d5299f4"
     ],
-    "updatedAt": "2026-08-15T00:54:21.791Z"
+    "updatedAt": "2026-08-15T18:20:21.052Z"
   },
   "MBLY": {
     "text": "Intel's holding of 50 million Class A shares as of June 30.",
@@ -138,22 +133,21 @@
       "6a339901-7ff1-3c45-a540-759e56f1e5a4",
       "22ea4b9a-9a17-3501-9d7a-27448913832e",
       "4fc60d8e-3821-39d2-9199-1c930d01a5a4",
-      "1194f09b-8a72-3a00-a48e-dd043d5299f4",
-      "f2cb4949-c1e8-3568-8931-113bfbc4d08f"
+      "1194f09b-8a72-3a00-a48e-dd043d5299f4"
     ],
-    "updatedAt": "2026-08-15T00:54:36.825Z"
+    "updatedAt": "2026-08-15T18:20:35.717Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T17:16:09.035Z"
+    "updatedAt": "2026-08-15T18:20:40.269Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T17:16:13.655Z"
+    "updatedAt": "2026-08-15T18:20:44.615Z"
   },
   "GOOGL": {
     "text": "Facing thousands of lawsuits may weigh on investor sentiment and confidence.",
@@ -187,25 +181,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T17:16:33.054Z"
+    "updatedAt": "2026-08-15T18:21:03.702Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T17:16:37.523Z"
+    "updatedAt": "2026-08-15T18:21:07.989Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T17:16:41.939Z"
+    "updatedAt": "2026-08-15T18:21:12.255Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T17:16:46.362Z"
+    "updatedAt": "2026-08-15T18:21:16.541Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -219,28 +213,29 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T17:16:55.716Z"
+    "updatedAt": "2026-08-15T18:21:25.471Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T17:17:00.171Z"
+    "updatedAt": "2026-08-15T18:21:29.777Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T17:17:04.576Z"
+    "updatedAt": "2026-08-15T18:21:34.106Z"
   },
   "INDEX": {
-    "text": "Cooling demand rapidly changing the interest-rate debate.",
+    "text": "Volatility environment driving a shrinking yield on QDTE's weekly paycheck.",
     "source": "macro",
     "articleIds": [
+      "5e309acf-8128-3140-8209-ab7278bad2bb",
       "25e27ec0-f5f5-32ec-b5ed-ab6db3d966c9",
-      "1b427611-dbb0-3039-8deb-87360a192afc"
+      "97cbd0d5-e510-3300-aae5-2a0e3b8feddc"
     ],
-    "updatedAt": "2026-08-14T21:21:44.678Z"
+    "updatedAt": "2026-08-15T18:21:38.772Z"
   },
   "INDEX_IN": {
     "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
