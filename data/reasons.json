@@ -118,13 +118,14 @@
     "updatedAt": "2026-08-14T21:20:27.191Z"
   },
   "005930.KS": {
-    "text": "Record semiconductor profit and AI-infrastructure demand momentum.",
+    "text": "Record semiconductor profit and tightening server-memory supply fueled AI-infrastructure demand momentum.",
     "source": "stock",
     "articleIds": [
+      "b8aa4f27-a6f3-3ee5-bb4d-6b5bd2c3a7ed",
       "503e4d2a-738f-3713-a170-94653d7e2401",
       "f2cb4949-c1e8-3568-8931-113bfbc4d08f"
     ],
-    "updatedAt": "2026-08-14T16:49:39.473Z"
+    "updatedAt": "2026-08-15T05:20:09.936Z"
   },
   "000660.KS": {
     "text": "Unveiling of new AI memory standard through High Bandwidth Flash specification.",
@@ -142,13 +143,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T04:24:09.387Z"
+    "updatedAt": "2026-08-15T05:20:19.694Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T04:24:13.752Z"
+    "updatedAt": "2026-08-15T05:20:24.209Z"
   },
   "GOOGL": {
     "text": "Integration of Google Threat Intelligence into Commvault's cyber resilience workflows.",
@@ -179,25 +180,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T04:24:32.856Z"
+    "updatedAt": "2026-08-15T05:20:42.603Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T04:24:37.139Z"
+    "updatedAt": "2026-08-15T05:20:46.846Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T04:24:41.458Z"
+    "updatedAt": "2026-08-15T05:20:51.099Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T04:24:45.718Z"
+    "updatedAt": "2026-08-15T05:20:55.400Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -211,19 +212,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T04:24:54.863Z"
+    "updatedAt": "2026-08-15T05:21:04.198Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T04:24:59.166Z"
+    "updatedAt": "2026-08-15T05:21:08.487Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T04:25:03.421Z"
+    "updatedAt": "2026-08-15T05:21:12.734Z"
   },
   "INDEX": {
     "text": "Cooling demand rapidly changing the interest-rate debate.",
