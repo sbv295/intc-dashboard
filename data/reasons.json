@@ -34,15 +34,15 @@
     "updatedAt": "2026-08-15T00:53:41.070Z"
   },
   "SNDK": {
-    "text": "bullish long-term growth targets and revenue growth plan sparking positive Wall Street reactions",
+    "text": "bullish long-term growth targets and revenue growth plan sparking Wall Street optimism",
     "source": "stock",
     "articleIds": [
       "b19083f2-afdb-48f0-8b3a-c52ab2add0b4",
+      "f1e0161a-6bc7-395f-8b61-38463680f749",
       "79b73c1c-e364-315f-8433-18e9ae96269d",
-      "82f07888-be7d-3f5c-a0bb-93ad17632414",
-      "4c02cf56-7769-3acb-a371-799e5a511196"
+      "82f07888-be7d-3f5c-a0bb-93ad17632414"
     ],
-    "updatedAt": "2026-08-14T22:16:39.570Z"
+    "updatedAt": "2026-08-15T02:10:56.501Z"
   },
   "MU": {
     "text": "Rising DRAM and NAND prices amid rapidly expanding data-center demand.",
@@ -142,22 +142,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T00:54:41.515Z"
+    "updatedAt": "2026-08-15T02:11:49.800Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T00:54:46.136Z"
+    "updatedAt": "2026-08-15T02:11:54.240Z"
   },
   "GOOGL": {
-    "text": "$25 billion debt, including $2.5 billion not due until 2066, is sparking concerns.",
-    "source": "stock",
-    "articleIds": [
-      "41aa00bd-2bc8-3705-9d89-9084c4fa7ac3",
-      "5b1882c1-07b9-3a10-82cc-b05f5990728d"
-    ],
-    "updatedAt": "2026-08-15T00:54:51.443Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-15T02:11:59.916Z"
   },
   "AMZN": {
     "text": "Reinstatement of binding arbitration and ban on class-action lawsuits.",
@@ -168,38 +165,37 @@
     "updatedAt": "2026-08-15T00:54:56.357Z"
   },
   "META": {
-    "text": "Fair value estimate trimmed due to concerns over AI spending and uncertain monetization timing.",
+    "text": "Fair value estimate trimmed due to higher AI spending and uncertain monetization timing.",
     "source": "stock",
     "articleIds": [
       "e268538e-b72b-3989-ba68-71d1b0163bb7",
-      "861ad0eb-6fe3-37cf-b3a7-ea43c43506c0",
-      "294bdceb-248a-36e3-858f-4f57712baad3"
+      "861ad0eb-6fe3-37cf-b3a7-ea43c43506c0"
     ],
-    "updatedAt": "2026-08-15T00:55:01.609Z"
+    "updatedAt": "2026-08-15T02:12:10.130Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T00:55:06.377Z"
+    "updatedAt": "2026-08-15T02:12:14.649Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T00:55:10.791Z"
+    "updatedAt": "2026-08-15T02:12:19.089Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T00:55:15.143Z"
+    "updatedAt": "2026-08-15T02:12:23.392Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T00:55:19.582Z"
+    "updatedAt": "2026-08-15T02:12:27.749Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -213,19 +209,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T00:55:29.514Z"
+    "updatedAt": "2026-08-15T02:12:36.908Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T00:55:34.036Z"
+    "updatedAt": "2026-08-15T02:12:41.364Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T00:55:38.483Z"
+    "updatedAt": "2026-08-15T02:12:45.764Z"
   },
   "INDEX": {
     "text": "Cooling demand rapidly changing the interest-rate debate.",
