@@ -44,14 +44,13 @@
     "updatedAt": "2026-08-15T02:10:56.501Z"
   },
   "MU": {
-    "text": "Memory prices are expected to keep surging, amplifying earnings from data-center demand.",
+    "text": "Rising memory prices and tightening memory pricing are expected to keep surging.",
     "source": "stock",
     "articleIds": [
-      "c0555413-d790-4e4d-834c-793f5fc1987f",
       "bb5129f1-1dc3-3588-9344-416f10ae2e35",
       "b3cd0af8-cc7f-3bfa-bf30-1f2bc9adcd7e"
     ],
-    "updatedAt": "2026-08-15T04:23:21.894Z"
+    "updatedAt": "2026-08-15T06:26:55.195Z"
   },
   "AVGO": {
     "text": "Exposure to potential $370 billion AI financing risk and customer default concerns.",
@@ -143,13 +142,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T05:20:19.694Z"
+    "updatedAt": "2026-08-15T06:27:42.936Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T05:20:24.209Z"
+    "updatedAt": "2026-08-15T06:27:47.192Z"
   },
   "GOOGL": {
     "text": "Integration of Google Threat Intelligence into Commvault's cyber resilience workflows.",
@@ -160,12 +159,14 @@
     "updatedAt": "2026-08-15T04:24:18.714Z"
   },
   "AMZN": {
-    "text": "Reinstatement of binding arbitration and ban on class-action lawsuits.",
+    "text": "Amazon's AI partnership deepens with Anthropic, potentially altering its business dynamics.",
     "source": "stock",
     "articleIds": [
+      "a2580210-667b-387e-a6a1-6b73075ac275",
+      "3b96ebf7-6967-3e76-9b82-cf43d852a22e",
       "5fdc2b30-6fa1-3fb3-956e-65043b1616d3"
     ],
-    "updatedAt": "2026-08-15T00:54:56.357Z"
+    "updatedAt": "2026-08-15T06:27:56.607Z"
   },
   "META": {
     "text": "Fair value estimate trimmed due to higher AI spending and uncertain monetization timing.",
@@ -180,25 +181,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T05:20:42.603Z"
+    "updatedAt": "2026-08-15T06:28:05.591Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T05:20:46.846Z"
+    "updatedAt": "2026-08-15T06:28:09.948Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T05:20:51.099Z"
+    "updatedAt": "2026-08-15T06:28:14.184Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T05:20:55.400Z"
+    "updatedAt": "2026-08-15T06:28:18.408Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -212,19 +213,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T05:21:04.198Z"
+    "updatedAt": "2026-08-15T06:28:27.279Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T05:21:08.487Z"
+    "updatedAt": "2026-08-15T06:28:31.556Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T05:21:12.734Z"
+    "updatedAt": "2026-08-15T06:28:35.779Z"
   },
   "INDEX": {
     "text": "Cooling demand rapidly changing the interest-rate debate.",
