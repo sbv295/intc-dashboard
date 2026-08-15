@@ -9,25 +9,28 @@
     "updatedAt": "2026-08-15T10:16:24.352Z"
   },
   "AMD": {
-    "text": "Duquesne Family Office more than doubling its position and a $4.75 billion debt deal.",
+    "text": "Strong earnings report and $4.75 billion debt deal for AI infrastructure expansion",
     "source": "stock",
     "articleIds": [
+      "a6e601bd-e140-3da1-915a-9c6e01b582f1",
       "1c7ccaf3-6849-3c04-bb57-d25b5755964b",
       "5ceb351b-13c0-399e-a294-a331305a9915"
     ],
-    "updatedAt": "2026-08-14T22:16:25.185Z"
+    "updatedAt": "2026-08-15T12:24:36.279Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T11:14:22.140Z"
+    "updatedAt": "2026-08-15T12:24:40.944Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-15T11:14:27.157Z"
+    "text": "Valuation in sharp focus after strong run and expensive price on Discounted Cash Flow estimate",
+    "source": "stock",
+    "articleIds": [
+      "dc2fc28b-a010-3e52-8719-28ede144c401"
+    ],
+    "updatedAt": "2026-08-15T12:24:46.120Z"
   },
   "SNDK": {
     "text": "bullish long-term growth targets and revenue growth plan sparking Wall Street optimism",
@@ -61,13 +64,12 @@
     "updatedAt": "2026-08-15T00:53:55.759Z"
   },
   "SPCX": {
-    "text": "SEC fraud case rattles investors in SpaceX's pre-IPO funding.",
+    "text": "Nvidia's significant stake in the company is disclosed, deepening their data-center partnership.",
     "source": "stock",
     "articleIds": [
-      "c39d01e2-0af4-3499-b22f-7816a088f025",
-      "82bc84e9-0c36-3679-8c0c-e0d6c466a291"
+      "9f8fbcdd-199c-301c-8a90-d3030d662407"
     ],
-    "updatedAt": "2026-08-15T11:14:48.097Z"
+    "updatedAt": "2026-08-15T12:25:05.207Z"
   },
   "MRVL": {
     "text": "Priced at a premium after a 290% run over the past three years.",
@@ -141,21 +143,23 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T11:15:29.574Z"
+    "updatedAt": "2026-08-15T12:25:44.053Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T11:15:34.427Z"
+    "updatedAt": "2026-08-15T12:25:48.598Z"
   },
   "GOOGL": {
-    "text": "First-time reported negative free cash flow due to Alphabet's aggressive AI data-center build-out.",
+    "text": "Negative free cash flow milestone and AI model download competition.",
     "source": "stock",
     "articleIds": [
-      "785e4378-40b3-3fcd-bec4-2494302c1ded"
+      "a42e77f0-609a-3cca-a90b-e1aae1f792a0",
+      "785e4378-40b3-3fcd-bec4-2494302c1ded",
+      "fa2ff136-5f92-37ac-a3bf-c01b6441fd18"
     ],
-    "updatedAt": "2026-08-15T11:15:40.904Z"
+    "updatedAt": "2026-08-15T12:25:53.559Z"
   },
   "AMZN": {
     "text": "Jeff Bezos' $4 billion sale and Amazon's reinstatement of binding arbitration.",
@@ -168,37 +172,38 @@
     "updatedAt": "2026-08-15T10:17:49.362Z"
   },
   "META": {
-    "text": "New Mexico judge's ruling imposes Meta's highest single penalty, pushing the company to change.",
+    "text": "\"New Mexico's $567 million ruling and AI spending concerns weigh on fair value estimate.\"",
     "source": "stock",
     "articleIds": [
       "8c58d730-a640-3a47-bfb5-73763f50dedc",
+      "fa2ff136-5f92-37ac-a3bf-c01b6441fd18",
       "e268538e-b72b-3989-ba68-71d1b0163bb7"
     ],
-    "updatedAt": "2026-08-15T11:15:51.436Z"
+    "updatedAt": "2026-08-15T12:26:03.992Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T11:15:56.232Z"
+    "updatedAt": "2026-08-15T12:26:08.749Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T11:16:00.733Z"
+    "updatedAt": "2026-08-15T12:26:13.041Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T11:16:05.266Z"
+    "updatedAt": "2026-08-15T12:26:17.262Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T11:16:09.888Z"
+    "updatedAt": "2026-08-15T12:26:21.590Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -212,19 +217,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T11:16:19.352Z"
+    "updatedAt": "2026-08-15T12:26:30.754Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T11:16:23.810Z"
+    "updatedAt": "2026-08-15T12:26:35.096Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T11:16:28.359Z"
+    "updatedAt": "2026-08-15T12:26:39.343Z"
   },
   "INDEX": {
     "text": "Cooling demand rapidly changing the interest-rate debate.",
