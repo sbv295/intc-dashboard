@@ -22,7 +22,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T22:14:12.929Z"
+    "updatedAt": "2026-08-15T23:14:09.621Z"
   },
   "TSM": {
     "text": "SoftBank's sale of 71.5% of its holding sparking investor concern and portfolio rebalancing.",
@@ -153,15 +153,15 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T22:15:23.067Z"
+    "updatedAt": "2026-08-15T23:15:18.926Z"
   },
   "GOOGL": {
-    "text": "Facing thousands of lawsuits, Alphabet's legal troubles are weighing on investor confidence.",
+    "text": "Billionaire investors' Q2 buying activity, including two with similar tastes, is cited as a reason.",
     "source": "stock",
     "articleIds": [
-      "40a168cb-5a0d-3660-8e1a-8d085419822c"
+      "99a3bd34-ecdf-3658-a9ea-0ab3804eff9e"
     ],
-    "updatedAt": "2026-08-15T22:15:27.772Z"
+    "updatedAt": "2026-08-15T23:15:23.773Z"
   },
   "AMZN": {
     "text": "Jeff Bezos' $4 billion sale sparking concerns as it looks to fund its aggressive AI data-center build-out.",
@@ -185,25 +185,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T22:15:42.205Z"
+    "updatedAt": "2026-08-15T23:15:38.585Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T22:15:46.621Z"
+    "updatedAt": "2026-08-15T23:15:43.047Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T22:15:51.095Z"
+    "updatedAt": "2026-08-15T23:15:47.517Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T22:15:55.666Z"
+    "updatedAt": "2026-08-15T23:15:51.961Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -217,29 +217,31 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T22:16:04.995Z"
+    "updatedAt": "2026-08-15T23:16:01.135Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T22:16:09.504Z"
+    "updatedAt": "2026-08-15T23:16:05.610Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-15T22:16:13.949Z"
+    "updatedAt": "2026-08-15T23:16:10.046Z"
   },
   "INDEX": {
-    "text": "Volatility environment driving a shrinking yield on QDTE's weekly paycheck.",
+    "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
     "source": "macro",
     "articleIds": [
+      "77dafc00-2125-3695-a878-7545d0ea7a86",
       "5e309acf-8128-3140-8209-ab7278bad2bb",
       "25e27ec0-f5f5-32ec-b5ed-ab6db3d966c9",
+      "1b427611-dbb0-3039-8deb-87360a192afc",
       "97cbd0d5-e510-3300-aae5-2a0e3b8feddc"
     ],
-    "updatedAt": "2026-08-15T18:21:38.772Z"
+    "updatedAt": "2026-08-15T23:16:14.901Z"
   },
   "INDEX_IN": {
     "text": "Easing US rate hike concerns offset by stalled Middle East peace talks.",
