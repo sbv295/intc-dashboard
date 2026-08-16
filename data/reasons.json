@@ -9,20 +9,20 @@
     "updatedAt": "2026-08-15T10:16:24.352Z"
   },
   "AMD": {
-    "text": "Super Micro's blowout numbers reigniting the AI trade and investor Stanley Druckenmiller's increased stake",
+    "text": "Super Micro's blowout numbers reigniting the AI trade and strong earnings report expectations.",
     "source": "stock",
     "articleIds": [
       "e6f4f900-6b30-3c08-bfd3-c93dedcedc71",
-      "a6e601bd-e140-3da1-915a-9c6e01b582f1",
-      "1c7ccaf3-6849-3c04-bb57-d25b5755964b"
+      "2e7c3cc1-079b-32e5-a2d2-8f43b59c4736",
+      "a6e601bd-e140-3da1-915a-9c6e01b582f1"
     ],
-    "updatedAt": "2026-08-15T17:14:58.088Z"
+    "updatedAt": "2026-08-16T03:42:36.937Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T02:19:30.433Z"
+    "updatedAt": "2026-08-16T03:42:41.338Z"
   },
   "TSM": {
     "text": "SoftBank's sale of 71.5% of its holding sparking investor concern and portfolio rebalancing.",
@@ -74,13 +74,10 @@
     "updatedAt": "2026-08-16T00:56:54.526Z"
   },
   "MRVL": {
-    "text": "Priced at a premium after a 290% run over the past three years.",
-    "source": "stock",
-    "articleIds": [
-      "6a3e5f87-083e-3f6d-af47-8e3b6e546861",
-      "912a5452-a07e-3f9c-982f-1548e766ac31"
-    ],
-    "updatedAt": "2026-08-14T18:44:59.057Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-16T03:43:10.193Z"
   },
   "ARM": {
     "text": "Potential for significant AI-driven CPU sales benefiting from the AGI CPU pipeline.",
@@ -152,13 +149,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T02:20:36.513Z"
+    "updatedAt": "2026-08-16T03:43:48.969Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T02:20:41.037Z"
+    "updatedAt": "2026-08-16T03:43:53.447Z"
   },
   "AMZN": {
     "text": "Jeff Bezos' $4 billion sale sparking concerns as it looks to fund its aggressive AI data-center build-out.",
@@ -182,25 +179,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T02:20:55.693Z"
+    "updatedAt": "2026-08-16T03:44:07.374Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T02:21:00.228Z"
+    "updatedAt": "2026-08-16T03:44:11.675Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T02:21:04.528Z"
+    "updatedAt": "2026-08-16T03:44:15.940Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T02:21:08.851Z"
+    "updatedAt": "2026-08-16T03:44:20.195Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -214,19 +211,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T02:21:17.876Z"
+    "updatedAt": "2026-08-16T03:44:29.118Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T02:21:22.139Z"
+    "updatedAt": "2026-08-16T03:44:33.426Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T02:21:26.367Z"
+    "updatedAt": "2026-08-16T03:44:37.755Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
