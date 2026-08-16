@@ -13,16 +13,15 @@
     "source": "stock",
     "articleIds": [
       "e6f4f900-6b30-3c08-bfd3-c93dedcedc71",
-      "2e7c3cc1-079b-32e5-a2d2-8f43b59c4736",
       "a6e601bd-e140-3da1-915a-9c6e01b582f1"
     ],
-    "updatedAt": "2026-08-16T09:21:16.664Z"
+    "updatedAt": "2026-08-16T10:16:46.616Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T09:21:21.173Z"
+    "updatedAt": "2026-08-16T10:16:51.050Z"
   },
   "TSM": {
     "text": "SoftBank's sale of 71.5% of its holding sparking investor concern and portfolio rebalancing.",
@@ -44,14 +43,16 @@
     "updatedAt": "2026-08-16T02:19:40.180Z"
   },
   "MU": {
-    "text": "Memory prices are expected to keep surging.",
+    "text": "Analysts set jaw-dropping price target of $1,500 for 2026.",
     "source": "stock",
     "articleIds": [
+      "da11cf7e-b4b3-35ca-92a2-1e213ad73f47",
       "2721793a-1c9a-3c7e-b5c5-6fefbecb167c",
-      "e3f56794-9841-3b40-a928-4f1d9345a748",
-      "bb5129f1-1dc3-3588-9344-416f10ae2e35"
+      "9e41fce7-6926-3eee-b11d-2f449eefbf53",
+      "39a5709b-8cad-3807-866e-7980d0caf157",
+      "e3f56794-9841-3b40-a928-4f1d9345a748"
     ],
-    "updatedAt": "2026-08-16T04:30:02.174Z"
+    "updatedAt": "2026-08-16T10:17:06.208Z"
   },
   "AVGO": {
     "text": "Investment firm Third Point exited Broadcom, citing a shift in its semiconductor investment strategy.",
@@ -147,22 +148,24 @@
     "updatedAt": "2026-08-16T00:57:33.164Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-16T09:22:29.292Z"
+    "text": "Benefiting from the AI arms race with Amazon.",
+    "source": "stock",
+    "articleIds": [
+      "54ed399c-8884-399d-a6e4-ba45d43e7d4f"
+    ],
+    "updatedAt": "2026-08-16T10:18:00.584Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T09:22:33.791Z"
+    "updatedAt": "2026-08-16T10:18:05.065Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T09:22:38.592Z"
+    "updatedAt": "2026-08-16T10:18:09.506Z"
   },
   "META": {
     "text": "\"New Mexico's $567 million ruling and AI spending concerns weigh on fair value estimate.\"",
@@ -178,25 +181,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T09:22:48.301Z"
+    "updatedAt": "2026-08-16T10:18:18.946Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T09:22:52.633Z"
+    "updatedAt": "2026-08-16T10:18:23.253Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T09:22:56.971Z"
+    "updatedAt": "2026-08-16T10:18:27.551Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T09:23:01.279Z"
+    "updatedAt": "2026-08-16T10:18:31.841Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -210,19 +213,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T09:23:10.403Z"
+    "updatedAt": "2026-08-16T10:18:40.817Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T09:23:14.754Z"
+    "updatedAt": "2026-08-16T10:18:45.100Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T09:23:19.071Z"
+    "updatedAt": "2026-08-16T10:18:49.740Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
