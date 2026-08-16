@@ -3,7 +3,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T14:15:57.936Z"
+    "updatedAt": "2026-08-16T15:14:56.797Z"
   },
   "AMD": {
     "text": "Significant outperformance over the last year despite no impending stock split.",
@@ -14,10 +14,13 @@
     "updatedAt": "2026-08-16T11:14:35.200Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-16T14:16:06.908Z"
+    "text": "valuation checks suggesting a more balanced picture after a huge five-year gain.",
+    "source": "stock",
+    "articleIds": [
+      "6ccf0fdb-4b30-3aef-80d7-c29e5c46dc0f",
+      "4ec88945-9f79-38eb-9ee8-0bdcb5f16181"
+    ],
+    "updatedAt": "2026-08-16T15:15:06.506Z"
   },
   "TSM": {
     "text": "SoftBank's sale of 71.5% of its holding sparking investor concern and portfolio rebalancing.",
@@ -91,15 +94,15 @@
     "updatedAt": "2026-08-14T21:20:16.748Z"
   },
   "SKHY": {
-    "text": "Unveiling of new AI memory standard through High Bandwidth Flash specification.",
+    "text": "Benefiting from high demand from AI data centers and a new AI memory standard.",
     "source": "stock",
     "articleIds": [
+      "08997418-7307-3428-9238-5864bb64ef7f",
       "6a339901-7ff1-3c45-a540-759e56f1e5a4",
       "22ea4b9a-9a17-3501-9d7a-27448913832e",
-      "4fc60d8e-3821-39d2-9199-1c930d01a5a4",
-      "1194f09b-8a72-3a00-a48e-dd043d5299f4"
+      "4fc60d8e-3821-39d2-9199-1c930d01a5a4"
     ],
-    "updatedAt": "2026-08-15T18:20:21.052Z"
+    "updatedAt": "2026-08-16T15:15:50.244Z"
   },
   "MBLY": {
     "text": "Intel's holding of 50 million Class A shares as of June 30.",
@@ -121,15 +124,15 @@
     "updatedAt": "2026-08-15T19:17:57.136Z"
   },
   "000660.KS": {
-    "text": "Unveiling of new AI memory standard through High Bandwidth Flash specification.",
+    "text": "Benefiting from high demand from AI data centers and a new AI memory standard.",
     "source": "stock",
     "articleIds": [
+      "08997418-7307-3428-9238-5864bb64ef7f",
       "6a339901-7ff1-3c45-a540-759e56f1e5a4",
       "22ea4b9a-9a17-3501-9d7a-27448913832e",
-      "4fc60d8e-3821-39d2-9199-1c930d01a5a4",
-      "1194f09b-8a72-3a00-a48e-dd043d5299f4"
+      "4fc60d8e-3821-39d2-9199-1c930d01a5a4"
     ],
-    "updatedAt": "2026-08-15T18:20:35.717Z"
+    "updatedAt": "2026-08-16T15:16:04.690Z"
   },
   "AAPL": {
     "text": "Launch of Ads on Maps and AI content deals with news publishers.",
@@ -160,7 +163,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T14:17:25.730Z"
+    "updatedAt": "2026-08-16T15:16:23.209Z"
   },
   "META": {
     "text": "Facing massive social media addiction trial and record $567 million penalty.",
@@ -175,25 +178,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T14:17:34.978Z"
+    "updatedAt": "2026-08-16T15:16:32.874Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T14:17:39.659Z"
+    "updatedAt": "2026-08-16T15:16:37.190Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T14:17:44.560Z"
+    "updatedAt": "2026-08-16T15:16:41.565Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T14:17:48.892Z"
+    "updatedAt": "2026-08-16T15:16:45.949Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -207,19 +210,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T14:17:58.170Z"
+    "updatedAt": "2026-08-16T15:16:54.833Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T14:18:02.493Z"
+    "updatedAt": "2026-08-16T15:16:59.213Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-16T14:18:06.859Z"
+    "updatedAt": "2026-08-16T15:17:03.514Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
