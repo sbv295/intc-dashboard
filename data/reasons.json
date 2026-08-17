@@ -3,23 +3,24 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:16:47.244Z"
+    "updatedAt": "2026-08-17T03:43:51.549Z"
   },
   "AMD": {
-    "text": "AI-driven computing reshaping the server CPU market, providing plenty of runway.",
+    "text": "$4.75 billion bond offering to fund expansion into artificial intelligence and data center markets",
     "source": "stock",
     "articleIds": [
+      "7b8cb276-777e-3795-b430-5938ec16ee65",
       "e7999760-2e9a-32ba-9897-81daf87e2139",
       "31014d02-ea4b-35e1-b714-f9175efe1fd8",
-      "e6f4f900-6b30-3c08-bfd3-c93dedcedc71"
+      "f7a93409-6527-3115-9fa8-a90312b88f57"
     ],
-    "updatedAt": "2026-08-16T23:14:18.596Z"
+    "updatedAt": "2026-08-17T03:43:56.345Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:16:56.667Z"
+    "updatedAt": "2026-08-17T03:44:00.864Z"
   },
   "TSM": {
     "text": "SoftBank's sale of 71.5% of its holding sparking investor concern and portfolio rebalancing.",
@@ -30,27 +31,27 @@
     "updatedAt": "2026-08-15T16:16:54.190Z"
   },
   "SNDK": {
-    "text": "Revelation of a long-term financial model and potential for multibagger performance by 2030.",
+    "text": "$93.9B backlog and 80% gross margin target through fiscal 2030 sparking investor optimism suddenly",
     "source": "stock",
     "articleIds": [
       "79b73c1c-e364-315f-8433-18e9ae96269d",
+      "960e12ac-829e-36b4-a02a-7fb04ff09279",
       "c4dd0eea-5b89-30cd-908c-7c92a49307c1",
-      "9e41fce7-6926-3eee-b11d-2f449eefbf53",
-      "f1e0161a-6bc7-395f-8b61-38463680f749"
+      "9e41fce7-6926-3eee-b11d-2f449eefbf53"
     ],
-    "updatedAt": "2026-08-16T21:14:29.148Z"
+    "updatedAt": "2026-08-17T03:44:10.870Z"
   },
   "MU": {
-    "text": "Record earnings and strong guidance sparking renewed investor interest and optimism about future growth.",
+    "text": "Potential Apple catalyst and record earnings guidance sparking renewed investor interest and optimism.",
     "source": "stock",
     "articleIds": [
+      "0f60f812-6316-3f92-8c66-d98d8ad2214a",
       "130c1ba2-572e-375d-abe2-3af9c8e07a78",
       "da11cf7e-b4b3-35ca-92a2-1e213ad73f47",
       "2721793a-1c9a-3c7e-b5c5-6fefbecb167c",
-      "9e41fce7-6926-3eee-b11d-2f449eefbf53",
-      "39a5709b-8cad-3807-866e-7980d0caf157"
+      "9e41fce7-6926-3eee-b11d-2f449eefbf53"
     ],
-    "updatedAt": "2026-08-17T00:54:29.162Z"
+    "updatedAt": "2026-08-17T03:44:15.846Z"
   },
   "AVGO": {
     "text": "Top hedge funds quietly rotated out of Broadcom.",
@@ -73,7 +74,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:17:24.957Z"
+    "updatedAt": "2026-08-17T03:44:30.225Z"
   },
   "ARM": {
     "text": "Stanley Druckenmiller's significant new stake in Arm reveals a calculated bet on AI infrastructure growth.",
@@ -93,15 +94,14 @@
     "updatedAt": "2026-08-14T21:20:16.748Z"
   },
   "SKHY": {
-    "text": "Benefiting from high demand from AI data centers and a new AI memory standard.",
+    "text": "Unveiling of new High Bandwidth Flash standard through Open Compute Project.",
     "source": "stock",
     "articleIds": [
       "08997418-7307-3428-9238-5864bb64ef7f",
       "6a339901-7ff1-3c45-a540-759e56f1e5a4",
-      "22ea4b9a-9a17-3501-9d7a-27448913832e",
-      "4fc60d8e-3821-39d2-9199-1c930d01a5a4"
+      "22ea4b9a-9a17-3501-9d7a-27448913832e"
     ],
-    "updatedAt": "2026-08-16T15:15:50.244Z"
+    "updatedAt": "2026-08-17T03:44:44.390Z"
   },
   "MBLY": {
     "text": "Intel's holding of 50 million Class A shares as of June 30.",
@@ -123,27 +123,28 @@
     "updatedAt": "2026-08-15T19:17:57.136Z"
   },
   "000660.KS": {
-    "text": "Benefiting from high demand from AI data centers and a new AI memory standard.",
+    "text": "Unveiling of new AI memory standard through High Bandwidth Flash specification.",
     "source": "stock",
     "articleIds": [
       "08997418-7307-3428-9238-5864bb64ef7f",
       "6a339901-7ff1-3c45-a540-759e56f1e5a4",
-      "22ea4b9a-9a17-3501-9d7a-27448913832e",
-      "4fc60d8e-3821-39d2-9199-1c930d01a5a4"
+      "22ea4b9a-9a17-3501-9d7a-27448913832e"
     ],
-    "updatedAt": "2026-08-16T15:16:04.690Z"
+    "updatedAt": "2026-08-17T03:44:58.514Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-17T02:17:58.671Z"
+    "text": "Apple's potential entry into the foldable smartphone market with a $2,000 device.",
+    "source": "stock",
+    "articleIds": [
+      "58146bc1-3641-3c5b-bb0c-e43e69e502b4"
+    ],
+    "updatedAt": "2026-08-17T03:45:03.148Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:18:03.012Z"
+    "updatedAt": "2026-08-17T03:45:07.929Z"
   },
   "GOOGL": {
     "text": "Investors are weighing rising competitive pressure from open source and lower cost Chinese AI models.",
@@ -158,7 +159,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:18:12.194Z"
+    "updatedAt": "2026-08-17T03:45:17.020Z"
   },
   "META": {
     "text": "Facing massive social media addiction trial with 29 attorneys general on Tuesday.",
@@ -169,28 +170,30 @@
     "updatedAt": "2026-08-16T19:18:06.682Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-17T02:18:21.122Z"
+    "text": "Removed from Jefferies portfolio in a portfolio revamp.",
+    "source": "stock",
+    "articleIds": [
+      "7d3a4c7d-2f24-3f2d-b068-3befc536d824"
+    ],
+    "updatedAt": "2026-08-17T03:45:26.477Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:18:25.400Z"
+    "updatedAt": "2026-08-17T03:45:30.834Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:18:29.612Z"
+    "updatedAt": "2026-08-17T03:45:35.105Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:18:33.838Z"
+    "updatedAt": "2026-08-17T03:45:39.400Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -204,19 +207,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:18:42.750Z"
+    "updatedAt": "2026-08-17T03:45:48.369Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:18:47.084Z"
+    "updatedAt": "2026-08-17T03:45:52.814Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T02:18:51.386Z"
+    "updatedAt": "2026-08-17T03:45:57.284Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
