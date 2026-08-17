@@ -3,7 +3,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:41:00.020Z"
+    "updatedAt": "2026-08-17T07:46:39.811Z"
   },
   "AMD": {
     "text": "$4.75 billion bond offering to fund expansion into artificial intelligence and data center markets",
@@ -20,7 +20,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:41:09.602Z"
+    "updatedAt": "2026-08-17T07:46:49.789Z"
   },
   "TSM": {
     "text": "SoftBank's sale of 71.5% of its holding sparking investor concern and portfolio rebalancing.",
@@ -42,16 +42,15 @@
     "updatedAt": "2026-08-17T03:44:10.870Z"
   },
   "MU": {
-    "text": "Potential Apple catalyst and record earnings guidance sparking renewed investor interest and optimism.",
+    "text": "Guidance points to another record earnings setting, sitting 23% below its 52-week high.",
     "source": "stock",
     "articleIds": [
       "0f60f812-6316-3f92-8c66-d98d8ad2214a",
       "130c1ba2-572e-375d-abe2-3af9c8e07a78",
       "da11cf7e-b4b3-35ca-92a2-1e213ad73f47",
-      "2721793a-1c9a-3c7e-b5c5-6fefbecb167c",
-      "9e41fce7-6926-3eee-b11d-2f449eefbf53"
+      "2721793a-1c9a-3c7e-b5c5-6fefbecb167c"
     ],
-    "updatedAt": "2026-08-17T03:44:15.846Z"
+    "updatedAt": "2026-08-17T07:47:04.153Z"
   },
   "AVGO": {
     "text": "Top hedge funds rotated out of Broadcom due to its aggressive AI data-center build-out.",
@@ -74,7 +73,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:41:38.220Z"
+    "updatedAt": "2026-08-17T07:47:19.614Z"
   },
   "ARM": {
     "text": "Stanley Druckenmiller's significant new stake in Arm reveals a calculated bet on AI infrastructure growth.",
@@ -133,33 +132,33 @@
     "updatedAt": "2026-08-17T03:44:58.514Z"
   },
   "AAPL": {
-    "text": "Apple's potential entry into the foldable smartphone market with a $2,000 device.",
+    "text": "Potential price hike with next iPhone model is sparking buying interest.",
     "source": "stock",
     "articleIds": [
+      "f7dbcf25-236b-3f6d-ac42-989ebd25e919",
       "58146bc1-3641-3c5b-bb0c-e43e69e502b4"
     ],
-    "updatedAt": "2026-08-17T03:45:03.148Z"
+    "updatedAt": "2026-08-17T07:47:52.857Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:42:16.586Z"
+    "updatedAt": "2026-08-17T07:47:57.253Z"
   },
   "GOOGL": {
-    "text": "Investors are weighing rising competitive pressure from open source and lower cost Chinese AI models.",
+    "text": "\"Borrowing billions to fund AI investments, including reportedly eyeing Australia's bond market.\"",
     "source": "stock",
     "articleIds": [
-      "ce32efeb-059f-3768-90c3-e0601a835fb5",
-      "7c3f66f5-c0aa-3de9-b754-55a7d895c243"
+      "ce32efeb-059f-3768-90c3-e0601a835fb5"
     ],
-    "updatedAt": "2026-08-17T02:18:07.793Z"
+    "updatedAt": "2026-08-17T07:48:02.043Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:42:26.130Z"
+    "updatedAt": "2026-08-17T07:48:06.632Z"
   },
   "META": {
     "text": "Facing massive social media addiction trial with 29 attorneys general on Tuesday.",
@@ -170,30 +169,28 @@
     "updatedAt": "2026-08-16T19:18:06.682Z"
   },
   "HDFCBANK.NS": {
-    "text": "Removed from Jefferies portfolio in a portfolio revamp.",
-    "source": "stock",
-    "articleIds": [
-      "7d3a4c7d-2f24-3f2d-b068-3befc536d824"
-    ],
-    "updatedAt": "2026-08-17T03:45:26.477Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-17T07:48:15.660Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:42:39.690Z"
+    "updatedAt": "2026-08-17T07:48:19.937Z"
   },
   "DEEPAKFERT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:42:43.931Z"
+    "updatedAt": "2026-08-17T07:48:24.252Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:42:48.156Z"
+    "updatedAt": "2026-08-17T07:48:28.507Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -207,19 +204,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:42:57.089Z"
+    "updatedAt": "2026-08-17T07:48:37.395Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:43:01.377Z"
+    "updatedAt": "2026-08-17T07:48:41.674Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T06:43:05.678Z"
+    "updatedAt": "2026-08-17T07:48:45.946Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
