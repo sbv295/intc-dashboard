@@ -3,7 +3,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:54:04.463Z"
+    "updatedAt": "2026-08-17T02:16:47.244Z"
   },
   "AMD": {
     "text": "AI-driven computing reshaping the server CPU market, providing plenty of runway.",
@@ -16,12 +16,10 @@
     "updatedAt": "2026-08-16T23:14:18.596Z"
   },
   "NVDA": {
-    "text": "Legendary fund managers' opposing trades sparking uncertainty and divided market sentiment today.",
-    "source": "stock",
-    "articleIds": [
-      "77b46559-1f51-300b-807e-3d7e91c57125"
-    ],
-    "updatedAt": "2026-08-17T00:54:13.960Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-17T02:16:56.667Z"
   },
   "TSM": {
     "text": "SoftBank's sale of 71.5% of its holding sparking investor concern and portfolio rebalancing.",
@@ -75,7 +73,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:54:43.253Z"
+    "updatedAt": "2026-08-17T02:17:24.957Z"
   },
   "ARM": {
     "text": "Stanley Druckenmiller's significant new stake in Arm reveals a calculated bet on AI infrastructure growth.",
@@ -139,27 +137,28 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:55:16.882Z"
+    "updatedAt": "2026-08-17T02:17:58.671Z"
   },
   "MSFT": {
-    "text": "Investors shorting out-of-the-money put options, attracted by lower buy-in points and potential income collection.",
-    "source": "stock",
-    "articleIds": [
-      "cf624c68-da1a-33af-8405-078d3526aee4"
-    ],
-    "updatedAt": "2026-08-16T20:16:13.181Z"
-  },
-  "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:55:25.975Z"
+    "updatedAt": "2026-08-17T02:18:03.012Z"
+  },
+  "GOOGL": {
+    "text": "Investors are weighing rising competitive pressure from open source and lower cost Chinese AI models.",
+    "source": "stock",
+    "articleIds": [
+      "ce32efeb-059f-3768-90c3-e0601a835fb5",
+      "7c3f66f5-c0aa-3de9-b754-55a7d895c243"
+    ],
+    "updatedAt": "2026-08-17T02:18:07.793Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:55:30.400Z"
+    "updatedAt": "2026-08-17T02:18:12.194Z"
   },
   "META": {
     "text": "Facing massive social media addiction trial with 29 attorneys general on Tuesday.",
@@ -173,25 +172,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:55:39.359Z"
+    "updatedAt": "2026-08-17T02:18:21.122Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:55:43.615Z"
+    "updatedAt": "2026-08-17T02:18:25.400Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:55:48.161Z"
+    "updatedAt": "2026-08-17T02:18:29.612Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:55:52.386Z"
+    "updatedAt": "2026-08-17T02:18:33.838Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -205,19 +204,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:56:01.282Z"
+    "updatedAt": "2026-08-17T02:18:42.750Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:56:05.627Z"
+    "updatedAt": "2026-08-17T02:18:47.084Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T00:56:09.879Z"
+    "updatedAt": "2026-08-17T02:18:51.386Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
