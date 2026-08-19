@@ -146,12 +146,10 @@
     "updatedAt": "2026-08-17T08:36:54.787Z"
   },
   "GOOGL": {
-    "text": "\"Borrowing billions to fund AI investments, including reportedly eyeing Australia's bond market.\"",
-    "source": "stock",
-    "articleIds": [
-      "ce32efeb-059f-3768-90c3-e0601a835fb5"
-    ],
-    "updatedAt": "2026-08-17T07:48:02.043Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-19T07:34:08.299Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
@@ -171,25 +169,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-19T06:34:33.107Z"
+    "updatedAt": "2026-08-19T07:34:22.190Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-19T06:34:37.423Z"
+    "updatedAt": "2026-08-19T07:34:26.643Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-19T06:34:41.735Z"
+    "updatedAt": "2026-08-19T07:34:31.074Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-19T06:34:46.019Z"
+    "updatedAt": "2026-08-19T07:34:35.448Z"
   },
   "TCS.NS": {
     "text": "Possible exposure of certain employee-related data sparking security concerns",
@@ -203,19 +201,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-19T06:34:54.788Z"
+    "updatedAt": "2026-08-19T07:34:44.332Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-19T06:34:59.091Z"
+    "updatedAt": "2026-08-19T07:34:48.720Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-19T06:35:03.405Z"
+    "updatedAt": "2026-08-19T07:34:53.142Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
