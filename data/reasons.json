@@ -140,10 +140,10 @@
     "updatedAt": "2026-08-17T07:47:52.857Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-17T08:36:54.787Z"
+    "updatedAt": "2026-08-20T06:36:40.609Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
@@ -169,49 +169,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T05:25:49.776Z"
+    "updatedAt": "2026-08-20T06:36:58.554Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T05:25:54.012Z"
+    "updatedAt": "2026-08-20T06:37:02.894Z"
   },
   "DEEPAKFERT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-20T05:25:58.246Z"
-  },
-  "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T05:26:02.457Z"
+    "updatedAt": "2026-08-20T06:37:07.187Z"
+  },
+  "AARTIIND.NS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-20T06:37:11.472Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T05:26:06.686Z"
+    "updatedAt": "2026-08-20T06:37:15.777Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T05:26:10.930Z"
+    "updatedAt": "2026-08-20T06:37:20.072Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T05:26:15.188Z"
+    "updatedAt": "2026-08-20T06:37:24.396Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T05:26:19.487Z"
+    "updatedAt": "2026-08-20T06:37:28.675Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
