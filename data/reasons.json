@@ -84,12 +84,10 @@
     "updatedAt": "2026-08-16T14:16:40.987Z"
   },
   "QCOM": {
-    "text": "Market punishing Qualcomm while it offers a cash return that most blue chips can't match.",
-    "source": "stock",
-    "articleIds": [
-      "18df11da-ed36-32c3-a315-9f1e23317050"
-    ],
-    "updatedAt": "2026-08-14T21:20:16.748Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-20T12:35:32.679Z"
   },
   "SKHY": {
     "text": "Unveiling of new High Bandwidth Flash standard through Open Compute Project.",
@@ -169,49 +167,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T11:22:05.071Z"
+    "updatedAt": "2026-08-20T12:36:18.749Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T11:22:09.362Z"
+    "updatedAt": "2026-08-20T12:36:23.087Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T11:22:13.658Z"
+    "updatedAt": "2026-08-20T12:36:27.445Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T11:22:17.926Z"
+    "updatedAt": "2026-08-20T12:36:31.709Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T11:22:22.222Z"
+    "updatedAt": "2026-08-20T12:36:35.998Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T11:22:26.504Z"
+    "updatedAt": "2026-08-20T12:36:40.370Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T11:22:30.784Z"
+    "updatedAt": "2026-08-20T12:36:44.644Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-20T11:22:35.073Z"
+    "updatedAt": "2026-08-20T12:36:48.981Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
