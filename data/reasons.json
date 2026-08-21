@@ -51,12 +51,10 @@
     "updatedAt": "2026-08-17T08:36:01.306Z"
   },
   "AVGO": {
-    "text": "Top hedge funds rotated out of Broadcom due to its aggressive AI data-center build-out.",
-    "source": "stock",
-    "articleIds": [
-      "cc0a7ff2-8b78-3980-8e25-a5b7451294b7"
-    ],
-    "updatedAt": "2026-08-17T06:41:28.695Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-21T15:26:42.086Z"
   },
   "SPCX": {
     "text": "$94 billion paper gain from reported profit included in Alphabet's earnings.",
@@ -78,7 +76,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T14:28:58.138Z"
+    "updatedAt": "2026-08-21T15:26:56.305Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
@@ -164,49 +162,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T14:29:46.687Z"
+    "updatedAt": "2026-08-21T15:27:45.337Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T14:29:51.549Z"
+    "updatedAt": "2026-08-21T15:27:49.698Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T14:29:55.946Z"
+    "updatedAt": "2026-08-21T15:27:54.072Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T14:30:00.179Z"
+    "updatedAt": "2026-08-21T15:27:58.370Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T14:30:04.508Z"
+    "updatedAt": "2026-08-21T15:28:02.666Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T14:30:08.815Z"
+    "updatedAt": "2026-08-21T15:28:06.979Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T14:30:13.286Z"
+    "updatedAt": "2026-08-21T15:28:11.298Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T14:30:17.630Z"
+    "updatedAt": "2026-08-21T15:28:15.634Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
