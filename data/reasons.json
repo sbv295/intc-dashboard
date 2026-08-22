@@ -95,12 +95,10 @@
     "updatedAt": "2026-08-17T03:44:44.390Z"
   },
   "MBLY": {
-    "text": "Intel's holding of 50 million Class A shares as of June 30.",
-    "source": "stock",
-    "articleIds": [
-      "3a431b9a-cb9f-33f6-a57d-ebc0a12b3428"
-    ],
-    "updatedAt": "2026-08-14T21:20:27.191Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-22T00:53:45.914Z"
   },
   "005930.KS": {
     "text": "Memory patent fight resolved with five-year licensing deal and long-term alliance.",
@@ -162,49 +160,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T23:19:00.638Z"
+    "updatedAt": "2026-08-22T00:54:23.338Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T23:19:04.997Z"
+    "updatedAt": "2026-08-22T00:54:27.734Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T23:19:09.350Z"
+    "updatedAt": "2026-08-22T00:54:32.163Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T23:19:13.733Z"
+    "updatedAt": "2026-08-22T00:54:36.896Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T23:19:18.058Z"
+    "updatedAt": "2026-08-22T00:54:41.357Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T23:19:22.449Z"
+    "updatedAt": "2026-08-22T00:54:45.809Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T23:19:26.848Z"
+    "updatedAt": "2026-08-22T00:54:50.233Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T23:19:31.309Z"
+    "updatedAt": "2026-08-22T00:54:54.675Z"
   },
   "INDEX": {
     "text": "Market uncertainty driven by shifting interest-rate expectations and volatility.",
