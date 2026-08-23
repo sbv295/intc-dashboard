@@ -6,15 +6,10 @@
     "updatedAt": "2026-08-17T22:17:45.047Z"
   },
   "AMD": {
-    "text": "$4.75 billion bond offering to fund expansion into artificial intelligence and data center markets",
-    "source": "stock",
-    "articleIds": [
-      "7b8cb276-777e-3795-b430-5938ec16ee65",
-      "e7999760-2e9a-32ba-9897-81daf87e2139",
-      "31014d02-ea4b-35e1-b714-f9175efe1fd8",
-      "f7a93409-6527-3115-9fa8-a90312b88f57"
-    ],
-    "updatedAt": "2026-08-17T03:43:56.345Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-23T07:28:02.007Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
@@ -98,7 +93,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-23T06:31:15.258Z"
+    "updatedAt": "2026-08-23T07:28:51.235Z"
   },
   "005930.KS": {
     "text": "Memory patent fight resolved with five-year licensing deal and long-term alliance.",
@@ -160,49 +155,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-23T06:31:51.945Z"
+    "updatedAt": "2026-08-23T07:29:26.652Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-23T06:31:56.305Z"
+    "updatedAt": "2026-08-23T07:29:30.951Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-23T06:32:00.706Z"
+    "updatedAt": "2026-08-23T07:29:35.193Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-23T06:32:05.044Z"
+    "updatedAt": "2026-08-23T07:29:39.384Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-23T06:32:09.419Z"
+    "updatedAt": "2026-08-23T07:29:43.661Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-23T06:32:13.734Z"
+    "updatedAt": "2026-08-23T07:29:47.913Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-23T06:32:18.066Z"
+    "updatedAt": "2026-08-23T07:29:52.188Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-23T06:32:22.443Z"
+    "updatedAt": "2026-08-23T07:29:56.471Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
