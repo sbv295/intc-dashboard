@@ -29,6 +29,7 @@ async function groqChatOnce(apiKey, model, messages, { temperature = 0.2, max_to
     throw new Error(`Groq API error: ${resp.status} ${body.slice(0, 200)}`);
   }
   const data = await resp.json();
+  global.__lastFullResponse = { model, finish_reason: data.choices?.[0]?.finish_reason, usage: data.usage, message: data.choices?.[0]?.message };
   return data.choices[0].message.content.trim();
 }
 
@@ -332,7 +333,7 @@ export default async function handler(req, res) {
     result = { text: 'No plausible explanation for today\u2019s movement.', source: 'none', articleIds: [] };
   }
   if (degraded) result.degraded = true;
-  if (req.query.debug) { result.rawClassify = global.__lastRawClassify; result.lastDebug = global.__lastDebug; }
+  if (req.query.debug) { result.rawClassify = global.__lastRawClassify; result.lastDebug = global.__lastDebug; result.fullResponse = global.__lastFullResponse; }
 
   if (!degraded) setCached(key, result);
   return res.status(200).json(result);
