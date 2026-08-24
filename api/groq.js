@@ -317,6 +317,7 @@ export default async function handler(req, res) {
     // A real failure (Groq rate limit, network error, etc.) happened somewhere
     // in the pipeline — fall through to the fallback text below, but flag it.
     degraded = true;
+    if (req.query.debug) result = { text: '', source: 'error', articleIds: [], debugError: e.message };
   }
 
   // Tier 3: honest fallback — always non-empty, so every card shows *something*.
