@@ -14,7 +14,10 @@ async function groqChatOnce(apiKey, model, messages, { temperature = 0.2, max_to
     },
     body: JSON.stringify({ model, messages, temperature, max_tokens }),
   });
-  if (!resp.ok) throw new Error(`Groq API error: ${resp.status}`);
+  if (!resp.ok) {
+    const body = await resp.text().catch(() => '');
+    throw new Error(`Groq API error: ${resp.status} ${body.slice(0, 200)}`);
+  }
   const data = await resp.json();
   return data.choices[0].message.content.trim();
 }
@@ -309,6 +312,7 @@ export default async function handler(req, res) {
     // A real failure (Groq rate limit, network error, etc.) happened somewhere
     // in the pipeline — fall through to the fallback text below, but flag it.
     degraded = true;
+    if (req.query.debug) result = { text: '', source: 'error', articleIds: [], debugError: e.message };
   }
 
   // Tier 3: honest fallback — always non-empty, so every card shows *something*.
