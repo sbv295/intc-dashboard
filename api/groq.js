@@ -2,8 +2,13 @@
 // "why is this stock moving" explanation. Groq key stays server-side only
 // (process.env.GROQ_API_KEY, set in Vercel project settings — never in git).
 // Plain REST calls (no groq-sdk dependency) to match this repo's zero-npm-deps convention.
-const MODEL_PRIMARY = 'llama-3.3-70b-versatile';
-const MODEL_FALLBACK = 'llama-3.1-8b-instant'; // much higher free-tier rate limit, used when primary 429s
+// llama-3.3-70b-versatile and llama-3.1-8b-instant were both deprecated by Groq
+// on 2026-08-16 (requests now 404 with model_not_found) — migrated to Groq's
+// recommended replacements, which is what silently broke every AI summary that
+// actually needed a Groq call (tier-2/tier-3 non-LLM fallbacks kept working fine,
+// which is why the dashboard appeared to "only ever show the generic fallback").
+const MODEL_PRIMARY = 'openai/gpt-oss-120b';
+const MODEL_FALLBACK = 'openai/gpt-oss-20b'; // much higher free-tier rate limit, used when primary 429s
 
 async function groqChatOnce(apiKey, model, messages, { temperature = 0.2, max_tokens = 60 } = {}) {
   const resp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -312,7 +317,6 @@ export default async function handler(req, res) {
     // A real failure (Groq rate limit, network error, etc.) happened somewhere
     // in the pipeline — fall through to the fallback text below, but flag it.
     degraded = true;
-    if (req.query.debug) result = { text: '', source: 'error', articleIds: [], debugError: e.message };
   }
 
   // Tier 3: honest fallback — always non-empty, so every card shows *something*.
