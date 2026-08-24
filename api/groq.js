@@ -199,6 +199,7 @@ async function macroExplain(apiKey, subject, direction, pct, cutoff, { preferBro
 
   if (!macroRelevant.length) return null;
   const macroSentiments = await classifySentiment(apiKey, sentimentSubject, macroRelevant);
+  global.__lastDebug = { count: macroRelevant.length, sentiments: macroSentiments, titles: macroRelevant.map(a => a.title) };
   const macroMatching = macroRelevant.filter((_, i) => macroSentiments[i] === direction);
   if (!macroMatching.length) return null;
   const text = await generateSentence(apiKey, subject, direction, pct, macroMatching);
@@ -326,7 +327,7 @@ export default async function handler(req, res) {
     result = { text: 'No plausible explanation for today\u2019s movement.', source: 'none', articleIds: [] };
   }
   if (degraded) result.degraded = true;
-  if (req.query.debug) result.rawClassify = global.__lastRawClassify;
+  if (req.query.debug) { result.rawClassify = global.__lastRawClassify; result.lastDebug = global.__lastDebug; }
 
   if (!degraded) setCached(key, result);
   return res.status(200).json(result);
