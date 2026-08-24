@@ -17,7 +17,12 @@ async function groqChatOnce(apiKey, model, messages, { temperature = 0.2, max_to
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${apiKey}`,
     },
-    body: JSON.stringify({ model, messages, temperature, max_tokens }),
+    // gpt-oss models are reasoning models — without reasoning_effort:'low' +
+    // reasoning_format:'hidden' they can burn the entire max_tokens budget on
+    // hidden chain-of-thought and return an EMPTY final `content`, which silently
+    // looked identical to "the model found no answer" (JSON.parse('') failing /
+    // an empty generated sentence) instead of an actual error.
+    body: JSON.stringify({ model, messages, temperature, max_tokens, reasoning_effort: 'low', reasoning_format: 'hidden' }),
   });
   if (!resp.ok) {
     const body = await resp.text().catch(() => '');
@@ -141,7 +146,7 @@ function filterRelevant(articles, nameVariants, cutoff) {
 async function classifySentiment(apiKey, subject, articles) {
   const list = articles.map((a, i) => `${i}. ${a.title}\n   ${a.summary}`).join('\n');
   const prompt = `For ${subject}, classify whether each article below (if it were the ONLY news driving it today) would most likely make it go UP or DOWN. Some articles may cover multiple companies — base your judgment ONLY on the parts specifically about ${subject}, ignoring information about other companies mentioned. Respond with ONLY a JSON array of length ${articles.length}, each element "UP" or "DOWN", e.g. ["UP","DOWN"]. No other text.\n\n${list}`;
-  const content = await groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0 });
+  const content = await groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0, max_tokens: 200 });
   try {
     return JSON.parse(content);
   } catch {
@@ -153,7 +158,7 @@ async function classifySentiment(apiKey, subject, articles) {
 async function generateSentence(apiKey, subject, direction, chgPct, articles) {
   const list = articles.map(a => `- [${a.pubDate}] ${a.title}\n  ${a.summary}`).join('\n');
   const prompt = `Context: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nSome articles may mention other companies too \u2014 use ONLY the information specifically about ${subject}, ignoring parts about other companies. Write a phrase targeting 15 words (a little shorter or longer is fine, but stay concise) giving ONLY the causal reason, based only on these article(s). Do NOT restate the company/index name or generic words like "stock", "shares", "up", "down", "rises", "falls" \u2014 the reader already sees the name and direction elsewhere on the page. Start directly with the reason (e.g. "$15B stock sale sparking dilution concerns as it looks to fund its aggressive AI data-center build-out", not "Down due to a $15B stock sale"). Output ONLY the phrase, nothing else.`;
-  return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2, max_tokens: 55 });
+  return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2, max_tokens: 300 });
 }
 
 // Signals that an article is about the broad market/macro conditions rather than
