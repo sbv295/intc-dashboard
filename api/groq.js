@@ -145,6 +145,7 @@ async function classifySentiment(apiKey, subject, articles) {
   try {
     return JSON.parse(content);
   } catch {
+    global.__lastRawClassify = content;
     return articles.map(() => null);
   }
 }
@@ -325,6 +326,7 @@ export default async function handler(req, res) {
     result = { text: 'No plausible explanation for today\u2019s movement.', source: 'none', articleIds: [] };
   }
   if (degraded) result.degraded = true;
+  if (req.query.debug) result.rawClassify = global.__lastRawClassify;
 
   if (!degraded) setCached(key, result);
   return res.status(200).json(result);
