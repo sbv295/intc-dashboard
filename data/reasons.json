@@ -1,218 +1,228 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-17T22:17:45.047Z"
+    "text": "$20 billion stock sale at $95 per share fuels dilution worries, pressuring price below $93 significantly.",
+    "source": "stock",
+    "articleIds": [
+      "12ec7071-67a5-3ec9-be95-7f0aadc54ccc"
+    ],
+    "updatedAt": "2026-08-24T14:23:35.473Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-23T07:28:02.007Z"
+    "updatedAt": "2026-08-24T14:23:40.257Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-23T09:21:58.751Z"
+    "text": "Weak earnings outlook coupled with looming inflation data, plus a high‑valued Perplexity investment raising valuation concerns.",
+    "source": "stock",
+    "articleIds": [
+      "2b0ca97c-9e5b-441a-b0c3-846ee1ac8d32",
+      "4a28bc05-cb8d-356f-94b0-0cb6ed426a94"
+    ],
+    "updatedAt": "2026-08-24T14:23:45.586Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-21T19:21:32.129Z"
+    "updatedAt": "2026-08-24T14:23:50.561Z"
   },
   "SNDK": {
-    "text": "Analysts raise price targets after SanDisk issues bullish targets for 2030.",
+    "text": "Investor concerns over heightened geopolitical risk from Iran’s “economic D‑Day.”",
     "source": "stock",
     "articleIds": [
-      "43a96bab-9d1e-352f-aa09-897f28010e86",
-      "79b73c1c-e364-315f-8433-18e9ae96269d",
-      "960e12ac-829e-36b4-a02a-7fb04ff09279",
-      "c4dd0eea-5b89-30cd-908c-7c92a49307c1"
+      "1a58dcaa-61d6-34aa-8999-e800df60b02d"
     ],
-    "updatedAt": "2026-08-17T08:35:56.515Z"
+    "updatedAt": "2026-08-24T14:23:55.962Z"
   },
   "MU": {
-    "text": "Nearing a $1,000 price milestone and potential catalysts from KOSPI gains.",
+    "text": "AI-driven demand outpacing memory supply, with long‑term contracts highlighting a structural shortage, creating investor concerns.",
     "source": "stock",
     "articleIds": [
-      "cab78b27-c5b6-3d86-a926-f525d6d75e79",
-      "0f60f812-6316-3f92-8c66-d98d8ad2214a",
-      "130c1ba2-572e-375d-abe2-3af9c8e07a78",
-      "da11cf7e-b4b3-35ca-92a2-1e213ad73f47"
+      "1a58dcaa-61d6-34aa-8999-e800df60b02d",
+      "51018ef8-a96a-3d71-8963-eaa9d301d3dc",
+      "e5fc8258-a886-364c-90d0-216a2b97119f"
     ],
-    "updatedAt": "2026-08-17T08:36:01.306Z"
+    "updatedAt": "2026-08-24T14:24:01.466Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-21T15:26:42.086Z"
+    "text": "Quietly guaranteeing tens of billions in AI chip debt, exposing massive liability if industry demand falters.",
+    "source": "stock",
+    "articleIds": [
+      "28cdb21f-acb8-3d1a-900f-5248f674ee39"
+    ],
+    "updatedAt": "2026-08-24T14:24:06.688Z"
   },
   "SPCX": {
-    "text": "$94 billion paper gain from reported profit included in Alphabet's earnings.",
+    "text": "Investor unease over Trump’s massive launch mandate coupled with pending 14th Starship test fuels skepticism.",
     "source": "stock",
     "articleIds": [
-      "6fc04381-f510-30d8-ad44-f6ae73a9b9d9",
-      "4574c884-0923-378a-80a5-9a7a37dc7bdf",
-      "de531756-0844-3466-ac64-08317294f00a"
+      "ffb015df-853f-3d97-a267-be2542f22f10",
+      "ceb571a2-72c6-3558-a7c8-e74630314dbb",
+      "cdfdb03b-9187-375d-ba2d-a9025c749923",
+      "599d0862-98ee-3e53-a56c-383ad17c506d"
     ],
-    "updatedAt": "2026-08-17T08:36:11.666Z"
+    "updatedAt": "2026-08-24T14:24:12.177Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-17T08:36:16.282Z"
-  },
-  "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-21T19:21:58.533Z"
-  },
-  "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-20T13:41:25.583Z"
-  },
-  "SKHY": {
-    "text": "Unveiling of new High Bandwidth Flash standard through Open Compute Project.",
+    "text": "Anticipated earnings report Thursday driving heightened trader expectations of a sizable price swing.",
     "source": "stock",
     "articleIds": [
-      "08997418-7307-3428-9238-5864bb64ef7f",
-      "6a339901-7ff1-3c45-a540-759e56f1e5a4",
-      "22ea4b9a-9a17-3501-9d7a-27448913832e"
+      "01cd5278-d888-3cdb-b618-9edfa5732107"
     ],
-    "updatedAt": "2026-08-17T03:44:44.390Z"
+    "updatedAt": "2026-08-24T14:24:17.341Z"
+  },
+  "ARM": {
+    "text": "Valuation appears stretched after a 112% YTD surge, compounded by concerns over the new data‑center chip strategy.",
+    "source": "stock",
+    "articleIds": [
+      "a8843c12-e1ea-3c4b-85a7-a6979bd838e1",
+      "334dd5d6-d115-3c08-a848-9e93c310fbd7",
+      "6d5e1336-b27a-3fa8-b808-e4bcedd532d4",
+      "cc03ca5b-e874-3e84-ab36-bdf09e15a7b6"
+    ],
+    "updatedAt": "2026-08-24T14:24:22.750Z"
+  },
+  "QCOM": {
+    "text": "Lagging AI chip competitiveness as Nvidia dominates the lucrative market, eroding investor confidence.",
+    "source": "stock",
+    "articleIds": [
+      "d23409c7-be27-319d-a49b-adcae8d04f67"
+    ],
+    "updatedAt": "2026-08-24T14:24:28.437Z"
+  },
+  "SKHY": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-24T14:24:33.017Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-24T13:46:17.836Z"
+    "updatedAt": "2026-08-24T14:24:37.300Z"
   },
   "005930.KS": {
-    "text": "Memory patent fight resolved with five-year licensing deal and long-term alliance.",
+    "text": "Disappointing shareholder return plan, with a smaller-than-expected buyback commitment, triggered investor sell‑off.",
     "source": "stock",
     "articleIds": [
-      "691cc921-a247-3f04-99b9-03459416b6d9",
-      "b8aa4f27-a6f3-3ee5-bb4d-6b5bd2c3a7ed",
-      "503e4d2a-738f-3713-a170-94653d7e2401",
-      "f2cb4949-c1e8-3568-8931-113bfbc4d08f"
+      "0f915189-1fcf-3b11-8d17-d0629ace1b3a",
+      "5732e252-c767-3b0e-a162-2f10d19ea1d2"
     ],
-    "updatedAt": "2026-08-15T19:17:57.136Z"
+    "updatedAt": "2026-08-24T14:24:42.345Z"
   },
   "000660.KS": {
-    "text": "Unveiling of new AI memory standard through High Bandwidth Flash specification.",
-    "source": "stock",
-    "articleIds": [
-      "08997418-7307-3428-9238-5864bb64ef7f",
-      "6a339901-7ff1-3c45-a540-759e56f1e5a4",
-      "22ea4b9a-9a17-3501-9d7a-27448913832e"
-    ],
-    "updatedAt": "2026-08-17T03:44:58.514Z"
-  },
-  "AAPL": {
-    "text": "Potential price hike with next iPhone model is sparking buying interest.",
-    "source": "stock",
-    "articleIds": [
-      "f7dbcf25-236b-3f6d-ac42-989ebd25e919",
-      "58146bc1-3641-3c5b-bb0c-e43e69e502b4"
-    ],
-    "updatedAt": "2026-08-17T07:47:52.857Z"
-  },
-  "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-20T06:36:40.609Z"
-  },
-  "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-19T07:34:08.299Z"
-  },
-  "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-19T09:28:02.853Z"
+    "updatedAt": "2026-08-24T14:24:46.916Z"
   },
-  "META": {
-    "text": "Facing massive social media addiction trial with 29 attorneys general on Tuesday.",
+  "AAPL": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-24T14:24:51.920Z"
+  },
+  "MSFT": {
+    "text": "Strong cloud computing momentum driving investor confidence, boosting valuation amid robust enterprise adoption and AI services.",
     "source": "stock",
     "articleIds": [
-      "6ecad0d8-5de2-499b-8b88-e03fbc779f36"
+      "da49bba9-fb86-3992-827f-51a1b0258abe"
     ],
-    "updatedAt": "2026-08-16T19:18:06.682Z"
+    "updatedAt": "2026-08-24T14:24:57.214Z"
+  },
+  "GOOGL": {
+    "text": "Increased AI demand prompting SGA to boost its Alphabet allocation.",
+    "source": "stock",
+    "articleIds": [
+      "bbbe9a3c-0056-3f4a-809a-e89f95b59a08",
+      "60852ee6-3abe-3be0-b1c1-c6b99386da7c"
+    ],
+    "updatedAt": "2026-08-24T14:25:02.164Z"
+  },
+  "AMZN": {
+    "text": "TD Cowen’s aggressive AWS revenue forecast, projecting $222 B by 2027, fuels optimism about AI‑driven cloud growth.",
+    "source": "stock",
+    "articleIds": [
+      "029faad2-7c24-32d6-aad1-ec9915f01497"
+    ],
+    "updatedAt": "2026-08-24T14:25:07.639Z"
+  },
+  "META": {
+    "text": "Legendary investors' recent purchases signal confidence in Meta's growth prospects, driving buying pressure among traders.",
+    "source": "stock",
+    "articleIds": [
+      "354d830b-2c5a-3c03-8474-38c56f2657c1"
+    ],
+    "updatedAt": "2026-08-24T14:25:13.309Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-24T13:46:54.860Z"
+    "updatedAt": "2026-08-24T14:25:17.609Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-24T13:46:59.386Z"
+    "updatedAt": "2026-08-24T14:25:21.970Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-24T13:47:03.695Z"
+    "updatedAt": "2026-08-24T14:25:26.305Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-24T13:47:08.004Z"
+    "updatedAt": "2026-08-24T14:25:30.683Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-24T13:47:12.390Z"
+    "updatedAt": "2026-08-24T14:25:35.127Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-24T13:47:16.990Z"
+    "updatedAt": "2026-08-24T14:25:39.451Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-24T13:47:21.361Z"
+    "updatedAt": "2026-08-24T14:25:43.773Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-24T13:47:25.700Z"
+    "updatedAt": "2026-08-24T14:25:48.078Z"
   },
   "INDEX": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-08-22T13:28:32.889Z"
-  },
-  "INDEX_IN": {
-    "text": "Elevated crude prices curbing risk appetite.",
+    "text": "Investors awaiting details on U.S. sanctions against Iran.",
     "source": "macro",
     "articleIds": [
-      "6495e7f9-2a59-3a91-9c8f-d80df37f4b2b",
-      "50d1da9a-f9e2-3e4e-8474-b9b35641367a",
-      "4b32bdc5-6675-375b-a8dd-5c274e5be2e3"
+      "1525eb1b-e1b1-3d0c-8743-84a8c01a880d"
     ],
-    "updatedAt": "2026-08-17T04:37:30.076Z"
+    "updatedAt": "2026-08-24T14:25:53.067Z"
+  },
+  "INDEX_IN": {
+    "text": "Elevated crude prices and climbing global bond yields, amid lingering Middle‑East tensions, dampened risk appetite.",
+    "source": "macro",
+    "articleIds": [
+      "67eff8e4-cb17-32d0-b5b4-c22e80ced1a3",
+      "70d14d7a-65b2-3b42-9db6-1ad0cfe6489b",
+      "6a96edf9-ef5e-30b9-bc67-f4678b5d8994",
+      "6495e7f9-2a59-3a91-9c8f-d80df37f4b2b"
+    ],
+    "updatedAt": "2026-08-24T14:25:58.881Z"
   }
 }
