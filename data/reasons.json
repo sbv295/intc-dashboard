@@ -11,17 +11,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:34:45.548Z"
+    "updatedAt": "2026-08-25T09:28:55.073Z"
   },
   "NVDA": {
-    "text": "Anticipation of Q2 earnings and guidance uncertainty amid AI cycle optimism dampening investor confidence.",
-    "source": "stock",
-    "articleIds": [
-      "7bc768bb-0768-491d-a7bc-c75848987d2f",
-      "ff0aae86-6289-4d4a-a7b9-68a659130b1d",
-      "a2cbe971-1d32-3243-baf3-c1a2a0323866"
-    ],
-    "updatedAt": "2026-08-25T08:34:50.708Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-25T09:29:00.280Z"
   },
   "TSM": {
     "text": "Profit‑taking sparked by Samsung’s collapse and looming Nvidia earnings, shaking confidence in AI‑chip demand overall.",
@@ -36,13 +32,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:35:00.311Z"
+    "updatedAt": "2026-08-25T09:29:10.041Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:35:05.180Z"
+    "updatedAt": "2026-08-25T09:29:15.124Z"
   },
   "AVGO": {
     "text": "AI infrastructure spending and off‑balance‑sheet guarantees heighten credit risk concerns, pressuring valuation significantly among investors.",
@@ -57,23 +53,24 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:35:15.169Z"
+    "updatedAt": "2026-08-25T09:29:25.169Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:35:19.650Z"
+    "updatedAt": "2026-08-25T09:29:29.736Z"
   },
   "ARM": {
-    "text": "Valuation appears stretched after a 112% YTD surge, prompting concerns over over‑priced market multiple.",
+    "text": "Valuation concerns after AI progress push price lower amid market caution and future growth uncertainty.",
     "source": "stock",
     "articleIds": [
       "a8843c12-e1ea-3c4b-85a7-a6979bd838e1",
+      "334dd5d6-d115-3c08-a848-9e93c310fbd7",
       "6d5e1336-b27a-3fa8-b808-e4bcedd532d4",
       "cc03ca5b-e874-3e84-ab36-bdf09e15a7b6"
     ],
-    "updatedAt": "2026-08-25T06:36:11.922Z"
+    "updatedAt": "2026-08-25T09:29:34.861Z"
   },
   "QCOM": {
     "text": "Lagging AI chip competitiveness as Nvidia dominates the lucrative market, eroding investor confidence.",
@@ -97,7 +94,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:35:39.936Z"
+    "updatedAt": "2026-08-25T09:29:49.711Z"
   },
   "005930.KS": {
     "text": "Massive cash dividend payout disappointed investors seeking aggressive buybacks, prompting sell‑off despite record payout announcement.",
@@ -122,7 +119,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:35:54.447Z"
+    "updatedAt": "2026-08-25T09:30:04.450Z"
   },
   "MSFT": {
     "text": "$678 billion backlog and strong Azure contract demand boost confidence amid broader AI financing concerns.",
@@ -163,49 +160,49 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:36:18.939Z"
+    "updatedAt": "2026-08-25T09:30:29.437Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:36:23.332Z"
+    "updatedAt": "2026-08-25T09:30:33.660Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:36:27.551Z"
+    "updatedAt": "2026-08-25T09:30:37.873Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:36:31.808Z"
+    "updatedAt": "2026-08-25T09:30:42.083Z"
   },
   "TCS.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:36:36.129Z"
+    "updatedAt": "2026-08-25T09:30:46.363Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:36:40.400Z"
+    "updatedAt": "2026-08-25T09:30:50.620Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:36:44.652Z"
+    "updatedAt": "2026-08-25T09:30:54.867Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T08:36:48.976Z"
+    "updatedAt": "2026-08-25T09:30:59.121Z"
   },
   "INDEX": {
     "text": "Investor concerns over looming U.S. sanctions on Iran dampening risk appetite and market momentum.",
