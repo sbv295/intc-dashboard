@@ -1,33 +1,33 @@
 {
   "INTC": {
-    "text": "Pelosi’s $1.5 M purchase spotlighting dilution concerns while Intel expands AI infrastructure portfolio.",
+    "text": "$20 billion foundry investment driven by strengthening AI demand fuels the modest gain.",
     "source": "stock",
     "articleIds": [
-      "1c694244-e51e-37e0-ac48-9fc8a506b7ad",
-      "d7d8498a-90d4-3fc2-a92c-29c007584c5a"
+      "55e8fa51-ce05-3e2d-a3e7-8b7739379252"
     ],
-    "updatedAt": "2026-08-25T20:21:19.304Z"
+    "updatedAt": "2026-08-25T21:20:53.919Z"
   },
   "AMD": {
-    "text": "Agentic AI demand boosting server CPU value, prompting a $641 target repricing and strong buy upgrade.",
+    "text": "Agentic AI demand boosting server CPU valuations, prompting a strong‑buy upgrade and higher target price.",
     "source": "stock",
     "articleIds": [
       "2f3c572b-c7a8-41a0-a605-4837244f11d4",
+      "a5ddfc6e-703b-393b-85de-1b997023dd13",
       "e6424a4a-7e45-3dd9-a349-cb9cf38944a7",
       "5d62aa00-9e0b-3ea4-98c5-90fd6d3dcf3a",
-      "8237fb1f-6625-3fe3-8a7d-e5f03fb891f8",
-      "2b5d5922-6f25-3fae-8c61-cf5dc7d071a6"
+      "8237fb1f-6625-3fe3-8a7d-e5f03fb891f8"
     ],
-    "updatedAt": "2026-08-25T20:21:24.733Z"
+    "updatedAt": "2026-08-25T21:20:59.604Z"
   },
   "NVDA": {
-    "text": "Anticipation of strong Q2 earnings, driven by faster‑growing networking segment outpacing compute.",
+    "text": "Rapid growth in its networking segment outpacing compute, fueling optimism ahead of the upcoming earnings report.",
     "source": "stock",
     "articleIds": [
-      "e4a4c946-50d6-4fc8-9e41-26b86b279a24",
-      "725add4b-68be-414c-866d-33c2bb7505bf"
+      "725add4b-68be-414c-866d-33c2bb7505bf",
+      "01c6acc0-3d8d-4881-b687-f51d282a8cff",
+      "a1a5cb94-36b5-3bbd-869f-362442258823"
     ],
-    "updatedAt": "2026-08-25T20:21:30.764Z"
+    "updatedAt": "2026-08-25T21:21:04.929Z"
   },
   "TSM": {
     "text": "Surging AI demand and aggressive capacity expansion, bolstered by Nvidia’s upcoming earnings validation, drive optimism.",
@@ -49,14 +49,15 @@
     "updatedAt": "2026-08-25T17:25:57.104Z"
   },
   "MU": {
-    "text": "Robust $25 B cash flow, AI rack‑scale memory pooling breakthrough, and long‑term contracts driving price upside.",
+    "text": "Strong operating cash flow, AI memory‑pooling breakthrough, and long‑term contracts driving price surge in market.",
     "source": "stock",
     "articleIds": [
+      "de79ffd0-f04e-3c28-992c-6801c26cfde3",
       "ebef46be-6a64-3754-90d6-ff2f6967749d",
       "aebcfbc8-29ea-38e9-a488-bd275ca39267",
       "4e569a6e-22c3-33e2-86e0-8926425cd069"
     ],
-    "updatedAt": "2026-08-25T20:21:47.319Z"
+    "updatedAt": "2026-08-25T21:21:21.330Z"
   },
   "AVGO": {
     "text": "Marvell's expansion erodes Broadcom's exclusivity narrative, dampening confidence in its custom chip dominance market sentiment.",
@@ -67,13 +68,12 @@
     "updatedAt": "2026-08-25T20:21:52.515Z"
   },
   "SPCX": {
-    "text": "IPO price hit, AI momentum, Nvidia space-chip partnership, and new Louisiana launch site boost investor optimism.",
+    "text": "Cathie Wood’s sizable purchase of SpaceX shares, mirroring her recent Palantir sale, signals renewed confidence in growth prospects.",
     "source": "stock",
     "articleIds": [
-      "fb82bc4b-9412-3ca7-86cc-36e0fcf7a245",
-      "69b2cdfe-8b07-3dbc-a057-92c835478031"
+      "c3b8eeee-44f6-3ff6-9581-95227834769a"
     ],
-    "updatedAt": "2026-08-25T20:21:58.011Z"
+    "updatedAt": "2026-08-25T21:21:32.616Z"
   },
   "MRVL": {
     "text": "AI‑driven data‑center expansion fuels optimism, with analysts raising targets amid strong earnings outlook.",
@@ -116,7 +116,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:22:24.532Z"
+    "updatedAt": "2026-08-25T21:21:58.377Z"
   },
   "005930.KS": {
     "text": "Largest shareholder return triggers market sell‑off, reflecting investor demand for higher payouts in this cycle.",
@@ -149,19 +149,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:22:46.323Z"
+    "updatedAt": "2026-08-25T21:22:19.362Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:22:51.295Z"
+    "updatedAt": "2026-08-25T21:22:24.816Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:22:55.774Z"
+    "updatedAt": "2026-08-25T21:22:29.408Z"
   },
   "META": {
     "text": "AI agent launch imminent and $22 B annual revenue potential from AI‑compute rentals spark optimism.",
@@ -176,25 +176,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:23:05.908Z"
+    "updatedAt": "2026-08-25T21:22:39.149Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:23:10.729Z"
+    "updatedAt": "2026-08-25T21:22:43.636Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:23:15.165Z"
+    "updatedAt": "2026-08-25T21:22:48.261Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:23:19.633Z"
+    "updatedAt": "2026-08-25T21:22:52.823Z"
   },
   "TCS.NS": {
     "text": "Acquisition of Porsche’s MHP consulting unit for €320 million fuels TCS’s AI mobility expansion, strategic growth.",
@@ -209,33 +209,33 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:23:29.253Z"
+    "updatedAt": "2026-08-25T21:23:02.882Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:23:33.721Z"
+    "updatedAt": "2026-08-25T21:23:07.341Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:23:38.220Z"
+    "updatedAt": "2026-08-25T21:23:11.767Z"
   },
   "INDEX": {
-    "text": "Chip sector rebound lifts broader market after midday gains, buoyed by earnings and investor confidence.",
+    "text": "Midday ETF gains, falling crude prices, and easing bond yields lift market sentiment.",
     "source": "macro",
     "articleIds": [
       "ae2f5e8c-120d-39af-8bd0-0cafe3a0dfd9",
-      "f37ff379-55ba-384f-9758-6755dcec980d"
+      "b7cf53c7-0539-3d6c-b449-32a90049dd01"
     ],
-    "updatedAt": "2026-08-25T17:28:03.234Z"
+    "updatedAt": "2026-08-25T21:23:16.696Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-08-25T20:23:48.705Z"
+    "updatedAt": "2026-08-25T21:23:21.393Z"
   }
 }
