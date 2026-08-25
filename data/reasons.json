@@ -21,22 +21,23 @@
     "updatedAt": "2026-08-25T15:36:30.111Z"
   },
   "NVDA": {
-    "text": "Anticipation of upcoming earnings after a seven‑day losing streak fuels rebound amid falling Treasury yields.",
+    "text": "Anticipation of Q2 earnings after a seven‑day losing streak fuels optimism.",
     "source": "stock",
     "articleIds": [
       "d45c7c1e-e02f-4733-9750-2992e90babf9",
-      "de79ffd0-f04e-3c28-992c-6801c26cfde3"
+      "32ca812a-65d3-3501-9604-0ecb194eff64"
     ],
-    "updatedAt": "2026-08-25T14:38:30.543Z"
+    "updatedAt": "2026-08-25T16:34:26.002Z"
   },
   "TSM": {
-    "text": "Analysts' raised price targets indicating 25% upside and anticipated Nvidia earnings boost fuel optimism.",
+    "text": "Surging AI demand and advanced‑node adoption, coupled with capacity expansion and upbeat analyst earnings forecasts.",
     "source": "stock",
     "articleIds": [
+      "120c9d85-1b44-353c-8195-8bc10a2c7a35",
       "39c0c1e2-fdde-39c3-a800-66f93b1ee369",
       "75897b46-0bc0-316e-bd90-9614b3a19192"
     ],
-    "updatedAt": "2026-08-25T14:38:36.237Z"
+    "updatedAt": "2026-08-25T16:34:31.499Z"
   },
   "SNDK": {
     "text": "Analyst spotlight in Zacks' Screen of The Week boosting investor confidence.",
@@ -65,23 +66,20 @@
     "updatedAt": "2026-08-25T14:38:52.449Z"
   },
   "SPCX": {
-    "text": "JPMorgan bullish on Grok‑Cursor monetization, analysts project 61% upside from earnings revisions in SpaceX operations.",
-    "source": "stock",
-    "articleIds": [
-      "baf25403-09d2-46fb-a11c-d6dbac658bd3",
-      "4c193b9c-9a1b-36db-889a-da161e9840ea",
-      "fa94442f-d294-3f6a-84fb-1d9e38c9f8da"
-    ],
-    "updatedAt": "2026-08-25T15:37:01.398Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-25T16:34:54.671Z"
   },
   "MRVL": {
-    "text": "Major hyperscaler deal fuels AI infrastructure expansion, positioning Marvell for accelerated custom chip deployment.",
+    "text": "Anticipated strong Q2 2027 earnings and AI networking upside drive investor optimism for the valuation growth.",
     "source": "stock",
     "articleIds": [
-      "fbb4194b-f471-3168-b81d-ab56b747e5bd",
-      "225cfa49-b27f-3045-9743-0cb2e166fbf6"
+      "82b6f8c6-0929-3554-b659-906687392433",
+      "bf9ac38f-5f4c-39dc-98fa-acd0be4e0b9d",
+      "bea25143-fa2d-34b7-8235-692e7b1ed68a"
     ],
-    "updatedAt": "2026-08-25T13:44:23.462Z"
+    "updatedAt": "2026-08-25T16:35:00.168Z"
   },
   "ARM": {
     "text": "Shifting strategy to sell its data center chips signals confidence in demand and growth prospects.",
@@ -113,17 +111,16 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:37:27.301Z"
+    "updatedAt": "2026-08-25T16:35:22.465Z"
   },
   "005930.KS": {
-    "text": "Massive cash dividend payout disappointed investors seeking aggressive buybacks, prompting sell‑off despite record payout announcement.",
+    "text": "Record $79B payout ignites investor frustration over cash dividends, prompting aggressive buyback expectations.",
     "source": "stock",
     "articleIds": [
       "dcc74c70-ce3c-3e5e-9eb9-ed21bf28d81b",
-      "c6c527e1-ab0d-342a-9737-25351b4e6361",
-      "cba6750d-4547-3e8f-be8f-bf134ff01570"
+      "c6c527e1-ab0d-342a-9737-25351b4e6361"
     ],
-    "updatedAt": "2026-08-25T04:34:08.105Z"
+    "updatedAt": "2026-08-25T16:35:28.169Z"
   },
   "000660.KS": {
     "text": "$28.6B buyback program boosts confidence,",
@@ -139,27 +136,29 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:37:43.200Z"
+    "updatedAt": "2026-08-25T16:35:39.025Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:37:47.540Z"
+    "updatedAt": "2026-08-25T16:35:43.965Z"
   },
   "GOOGL": {
-    "text": "Booming AI chip sales yet to re-rate, awaiting Gemini 4 launch.",
+    "text": "Underlying shift in financial structure raises risk for investors, dampening enthusiasm despite strong revenue growth.",
     "source": "stock",
     "articleIds": [
-      "a512d2f1-9b86-3452-98c4-5d956312652d"
+      "76565bae-6676-3abf-86e5-9becfbda9c42"
     ],
-    "updatedAt": "2026-08-25T15:37:52.520Z"
+    "updatedAt": "2026-08-25T16:35:50.174Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-25T15:37:57.130Z"
+    "text": "Gadget price hikes driven by AI memory crunch, as high-bandwidth memory demand squeezes consumer electronics supply.",
+    "source": "stock",
+    "articleIds": [
+      "70396950-6d91-3b36-b8cd-d702ff0bd8bb"
+    ],
+    "updatedAt": "2026-08-25T16:35:55.410Z"
   },
   "META": {
     "text": "New AI agent launch, Hyperion data center investment, and recruitment of Luke Metz boost confidence.",
@@ -174,25 +173,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:38:06.758Z"
+    "updatedAt": "2026-08-25T16:36:05.942Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:38:11.127Z"
+    "updatedAt": "2026-08-25T16:36:10.564Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:38:15.407Z"
+    "updatedAt": "2026-08-25T16:36:15.548Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:38:19.745Z"
+    "updatedAt": "2026-08-25T16:36:20.147Z"
   },
   "TCS.NS": {
     "text": "Porsche’s $1.5B MHP acquisition fuels TCS’s AI Mobility Centre expansion, boosting confidence.",
@@ -206,19 +205,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:38:29.133Z"
+    "updatedAt": "2026-08-25T16:36:30.013Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:38:33.430Z"
+    "updatedAt": "2026-08-25T16:36:34.620Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:38:37.697Z"
+    "updatedAt": "2026-08-25T16:36:39.279Z"
   },
   "INDEX": {
     "text": "Recovery in chip sector lifts investor confidence, driving broader market gains amid positive earnings outlook.",
@@ -232,6 +231,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-08-25T15:38:47.323Z"
+    "updatedAt": "2026-08-25T16:36:50.041Z"
   }
 }
