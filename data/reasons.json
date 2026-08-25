@@ -1,104 +1,115 @@
 {
   "INTC": {
-    "text": "",
+    "text": "Nancy Pelosi’s disclosed stake and call‑option purchase boosting investor confidence.",
     "source": "stock",
     "articleIds": [
-      "6f89d457-8f7a-37e1-b0a4-2b4d8e722a52"
+      "29810810-838b-3c1b-8015-c0f7388b5f48",
+      "c057be68-f333-3167-a52d-f7cbeb993967",
+      "7a78b77d-5351-330e-b50f-c4b02da23092"
     ],
-    "updatedAt": "2026-08-25T12:35:48.409Z"
+    "updatedAt": "2026-08-25T13:43:40.113Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-25T12:35:53.409Z"
+    "text": "Raymond James’ Strong‑Buy upgrade, citing AI‑driven server CPU market expansion and agentic workload growth.",
+    "source": "stock",
+    "articleIds": [
+      "e813ee55-1099-3f07-b446-3d2fc05def5a",
+      "29810810-838b-3c1b-8015-c0f7388b5f48",
+      "282ee9ee-5282-3d7b-8c90-910e5fb65bca",
+      "7de5bed7-2277-31ea-acd6-1c6a8442ef25"
+    ],
+    "updatedAt": "2026-08-25T13:43:45.844Z"
   },
   "NVDA": {
-    "text": "Investors wary as earnings expectations soar, making extraordinary growth seem ordinary and valuation appear cheap.",
+    "text": "Commercialization of the $20 billion Groq chip partnership boosts confidence in AI agent deployment.",
     "source": "stock",
     "articleIds": [
-      "6f741299-6d01-486b-ae43-6bb5192a380a",
-      "fa045437-d0f1-4487-b1cf-d2a7368dc218",
-      "cbeb82f9-cab5-3e52-b8ec-bc64fda57546"
+      "83a61d31-4aa4-37e6-bbc8-7958b4ca7495"
     ],
-    "updatedAt": "2026-08-25T12:35:58.874Z"
+    "updatedAt": "2026-08-25T13:43:50.787Z"
   },
   "TSM": {
-    "text": "Profit‑taking sparked by Samsung’s collapse and looming Nvidia earnings, shaking confidence in AI‑chip demand overall.",
+    "text": "Anticipated Nvidia earnings surge expected to drive higher demand for TSMC’s advanced chips.",
     "source": "stock",
     "articleIds": [
-      "4ef0952c-0c0c-3944-97f6-6a43c4458c2c",
-      "515b225d-908b-36c9-a317-965812407e55"
+      "75897b46-0bc0-316e-bd90-9614b3a19192"
     ],
-    "updatedAt": "2026-08-24T22:19:09.939Z"
+    "updatedAt": "2026-08-25T13:43:56.892Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-25T12:36:09.405Z"
+    "text": "Treasury yields dropping and pre‑market rally alongside Nvidia and Micron boosts confidence, driving investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "de79ffd0-f04e-3c28-992c-6801c26cfde3",
+      "cf488517-9c0a-301b-8c06-e4a44baf671a"
+    ],
+    "updatedAt": "2026-08-25T13:44:02.236Z"
   },
   "MU": {
-    "text": "Strong margin profile curtails earnings growth potential while missing anticipated memory‑price surge dampens momentum.",
+    "text": "Falling Treasury yields lifted investor sentiment, driving the rally.",
     "source": "stock",
     "articleIds": [
-      "b6cff95e-e522-3e64-9c6c-b020219d7889",
-      "4e569a6e-22c3-33e2-86e0-8926425cd069"
+      "de79ffd0-f04e-3c28-992c-6801c26cfde3"
     ],
-    "updatedAt": "2026-08-25T12:36:15.311Z"
+    "updatedAt": "2026-08-25T13:44:07.253Z"
   },
   "AVGO": {
-    "text": "Alphabet’s shift to Marvell chips raises doubts about Broadcom’s future custom‑chip revenue growth in market",
+    "text": "benefiting from broader semiconductor rally sparked by NVIDIA’s momentum",
     "source": "stock",
     "articleIds": [
-      "fbb4194b-f471-3168-b81d-ab56b747e5bd"
+      "29810810-838b-3c1b-8015-c0f7388b5f48"
     ],
-    "updatedAt": "2026-08-25T12:36:20.877Z"
+    "updatedAt": "2026-08-25T13:44:12.999Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-25T12:36:25.918Z"
+    "text": "JPMorgan’s bullish AI outlook, Cursor acquisition, and Nvidia’s space‑optimized Vera Rubin chip boost confidence.",
+    "source": "stock",
+    "articleIds": [
+      "fa94442f-d294-3f6a-84fb-1d9e38c9f8da",
+      "3a9e449b-7b33-3c08-9cc5-fa11bcbbbe48",
+      "69b2cdfe-8b07-3dbc-a057-92c835478031"
+    ],
+    "updatedAt": "2026-08-25T13:44:18.373Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-25T12:36:30.685Z"
+    "text": "Major hyperscaler deal fuels AI infrastructure expansion, positioning Marvell for accelerated custom chip deployment.",
+    "source": "stock",
+    "articleIds": [
+      "fbb4194b-f471-3168-b81d-ab56b747e5bd",
+      "225cfa49-b27f-3045-9743-0cb2e166fbf6"
+    ],
+    "updatedAt": "2026-08-25T13:44:23.462Z"
   },
   "ARM": {
-    "text": "Valuation appears stretched after a 112% YTD surge, compounded by a strategic pivot toward proprietary data‑center chips.",
+    "text": "Shifting strategy to sell its data center chips signals confidence in demand and growth prospects.",
     "source": "stock",
     "articleIds": [
-      "a8843c12-e1ea-3c4b-85a7-a6979bd838e1",
-      "334dd5d6-d115-3c08-a848-9e93c310fbd7",
-      "6d5e1336-b27a-3fa8-b808-e4bcedd532d4",
-      "cc03ca5b-e874-3e84-ab36-bdf09e15a7b6"
+      "334dd5d6-d115-3c08-a848-9e93c310fbd7"
     ],
-    "updatedAt": "2026-08-25T12:36:36.103Z"
+    "updatedAt": "2026-08-25T13:44:28.639Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-25T12:36:40.809Z"
-  },
-  "SKHY": {
-    "text": "Union rejected tentative wage agreement, rejecting 6.3% raise and profit‑sharing bonus revision.",
+    "text": "AI data‑center roadmap and confirmed hyperscaler wins boost confidence, positioning Qualcomm as a growing AI infrastructure player.",
     "source": "stock",
     "articleIds": [
-      "5c18b811-b2b7-3e9a-bd5f-f2285edecaf9",
-      "61d4f634-551b-36a7-9f7f-9a6f928d5136",
-      "9cd7f59e-b372-32ba-8290-d5e5bf7215f4"
+      "accb8ad2-0992-3385-bd1b-f70a3dce750f"
     ],
-    "updatedAt": "2026-08-25T08:35:35.622Z"
+    "updatedAt": "2026-08-25T13:44:33.658Z"
+  },
+  "SKHY": {
+    "text": "AI partnership with Nvidia and planned 40 trillion won buyback boost confidence, driving recent gains today.",
+    "source": "stock",
+    "articleIds": [
+      "ba0417c6-c768-382c-9ab8-470677ce0d3f",
+      "e641e190-90eb-3606-832e-d30be9e211d6"
+    ],
+    "updatedAt": "2026-08-25T13:44:38.804Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T12:36:50.329Z"
+    "updatedAt": "2026-08-25T13:44:43.257Z"
   },
   "005930.KS": {
     "text": "Massive cash dividend payout disappointed investors seeking aggressive buybacks, prompting sell‑off despite record payout announcement.",
@@ -120,10 +131,14 @@
     "updatedAt": "2026-08-25T08:35:50.115Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-25T12:37:05.558Z"
+    "text": "New Mac mini launch featuring M6 and M5 Pro chips boosts demand expectations.",
+    "source": "stock",
+    "articleIds": [
+      "89dc0fa2-8a3c-38dc-83db-f1ad2f467621",
+      "ad74c974-da6f-3e04-86ac-2da82b5bb87c",
+      "114aa2fa-5c41-33f7-8780-b6387b3dcc89"
+    ],
+    "updatedAt": "2026-08-25T13:44:59.570Z"
   },
   "MSFT": {
     "text": "Microsoft's AI moat, driven by Azure, Copilot, and its enterprise ecosystem, fuels investor confidence.",
@@ -134,86 +149,93 @@
     "updatedAt": "2026-08-25T12:37:10.842Z"
   },
   "GOOGL": {
-    "text": "Expanded Gemini AI platform for law firms boosts confidence in AI‑driven legal services and growth.",
+    "text": "Buffett’s continued Alphabet buying, driven by a key hidden financial metric, fuels investor confidence.",
     "source": "stock",
     "articleIds": [
+      "8ca35aa6-81e9-3c11-96f0-45d5948a5790",
       "3941336c-ab19-3a35-82f3-8a94369a225e",
       "fbb4194b-f471-3168-b81d-ab56b747e5bd"
     ],
-    "updatedAt": "2026-08-25T12:37:16.185Z"
+    "updatedAt": "2026-08-25T13:45:09.702Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T12:37:20.646Z"
+    "updatedAt": "2026-08-25T13:45:14.210Z"
   },
   "META": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-25T12:37:25.532Z"
+    "text": "Meta’s imminent Hatch AI agent launch fuels optimism, positioning the company as a primary consumer‑AI monetization leader.",
+    "source": "stock",
+    "articleIds": [
+      "0ae6843b-08a2-3027-a325-86083a9e226b",
+      "2bfac0e1-5b60-3176-b787-f8ddefc4600b",
+      "51a5dcbb-e435-345b-afd7-cc91456e432f"
+    ],
+    "updatedAt": "2026-08-25T13:45:19.224Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T12:37:29.913Z"
+    "updatedAt": "2026-08-25T13:45:23.632Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T12:37:34.349Z"
+    "updatedAt": "2026-08-25T13:45:28.257Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T12:37:38.748Z"
+    "updatedAt": "2026-08-25T13:45:32.607Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T12:37:43.075Z"
+    "updatedAt": "2026-08-25T13:45:36.889Z"
   },
   "TCS.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-25T12:37:47.558Z"
+    "text": "Porsche’s $1.5B MHP acquisition fuels TCS’s AI Mobility Centre expansion, boosting confidence.",
+    "source": "stock",
+    "articleIds": [
+      "069b15e4-d4de-3641-8d4f-aa8a002c9e6a"
+    ],
+    "updatedAt": "2026-08-25T13:45:41.751Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T12:37:52.007Z"
+    "updatedAt": "2026-08-25T13:45:45.988Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T12:37:56.404Z"
+    "updatedAt": "2026-08-25T13:45:50.308Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T12:38:00.824Z"
+    "updatedAt": "2026-08-25T13:45:54.566Z"
   },
   "INDEX": {
-    "text": "Midday ETF sell‑off dampens broader market momentum as investors reassess earnings outlook amid inflation concerns.",
+    "text": "Recovery in chip sector lifts investor confidence, driving broader market gains amid positive earnings outlook.",
     "source": "macro",
     "articleIds": [
-      "b309bb85-7885-3cf4-897b-b10b5f8f612f"
+      "f37ff379-55ba-384f-9758-6755dcec980d"
     ],
-    "updatedAt": "2026-08-25T12:38:06.045Z"
+    "updatedAt": "2026-08-25T13:45:59.704Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-08-25T12:38:11.026Z"
+    "updatedAt": "2026-08-25T13:46:04.822Z"
   }
 }
