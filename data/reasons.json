@@ -20,14 +20,15 @@
     "updatedAt": "2026-08-25T21:20:59.604Z"
   },
   "NVDA": {
-    "text": "Rapid growth in its networking segment outpacing compute, fueling optimism ahead of the upcoming earnings report.",
+    "text": "Rapid growth in Nvidia’s networking segment, outpacing compute, fuels optimism ahead of upcoming earnings.",
     "source": "stock",
     "articleIds": [
       "725add4b-68be-414c-866d-33c2bb7505bf",
       "01c6acc0-3d8d-4881-b687-f51d282a8cff",
-      "a1a5cb94-36b5-3bbd-869f-362442258823"
+      "a1a5cb94-36b5-3bbd-869f-362442258823",
+      "48d7ea7b-2c89-3d66-8893-73029d6f922f"
     ],
-    "updatedAt": "2026-08-25T21:21:04.929Z"
+    "updatedAt": "2026-08-25T22:19:49.369Z"
   },
   "TSM": {
     "text": "Surging AI demand and aggressive capacity expansion, bolstered by Nvidia’s upcoming earnings validation, drive optimism.",
@@ -41,23 +42,19 @@
     "updatedAt": "2026-08-25T20:21:36.115Z"
   },
   "SNDK": {
-    "text": "Mizuho cutting estimates on Sandisk.",
+    "text": "Mizuho's lowered earnings forecasts triggered the decline.",
     "source": "stock",
     "articleIds": [
+      "97910b5a-a0eb-3cca-a226-fb1dfb184d13",
       "a2c12022-cf74-368e-b6ac-7d864451841d"
     ],
-    "updatedAt": "2026-08-25T17:25:57.104Z"
+    "updatedAt": "2026-08-25T22:20:00.361Z"
   },
   "MU": {
-    "text": "Strong operating cash flow, AI memory‑pooling breakthrough, and long‑term contracts driving price surge in market.",
-    "source": "stock",
-    "articleIds": [
-      "de79ffd0-f04e-3c28-992c-6801c26cfde3",
-      "ebef46be-6a64-3754-90d6-ff2f6967749d",
-      "aebcfbc8-29ea-38e9-a488-bd275ca39267",
-      "4e569a6e-22c3-33e2-86e0-8926425cd069"
-    ],
-    "updatedAt": "2026-08-25T21:21:21.330Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-25T22:20:05.567Z"
   },
   "AVGO": {
     "text": "Marvell's expansion erodes Broadcom's exclusivity narrative, dampening confidence in its custom chip dominance market sentiment.",
@@ -76,14 +73,15 @@
     "updatedAt": "2026-08-25T21:21:32.616Z"
   },
   "MRVL": {
-    "text": "AI‑driven data‑center expansion fuels optimism, with analysts raising targets amid strong earnings outlook.",
+    "text": "AI earnings anticipation, analyst target lift, and robust data‑center growth fuel Marvell’s rally.",
     "source": "stock",
     "articleIds": [
+      "63cb310d-d759-3b98-bb01-dbc460072387",
       "f047a254-873e-30ed-887e-e5bebbcf8998",
       "f428e28e-07f5-311d-8dd1-580ae77bc3ed",
       "215844bd-62ba-3262-ab49-e4916d85f558"
     ],
-    "updatedAt": "2026-08-25T20:22:03.509Z"
+    "updatedAt": "2026-08-25T22:20:21.958Z"
   },
   "ARM": {
     "text": "Strategic pivot to sell proprietary data‑center chips and AI accelerators boosts confidence in future growth.",
@@ -95,12 +93,13 @@
     "updatedAt": "2026-08-25T20:22:08.717Z"
   },
   "QCOM": {
-    "text": "Positioned to harness immense AI opportunity, Qualcomm signals robust growth prospects amid expanding AI demand.",
+    "text": "AI momentum fuels optimism, positioning Qualcomm for a 2027 breakout as it capitalizes on expansive AI opportunities.",
     "source": "stock",
     "articleIds": [
-      "db0a62c6-54bf-398d-926a-dc78abce1c72"
+      "db0a62c6-54bf-398d-926a-dc78abce1c72",
+      "9a588fdb-7bab-33cc-a1c5-c4adad45fbbe"
     ],
-    "updatedAt": "2026-08-25T18:31:42.465Z"
+    "updatedAt": "2026-08-25T22:20:33.505Z"
   },
   "SKHY": {
     "text": "$28.6B buyback program boosts confidence, signaling strong cash flow for future growth and shareholder value.",
@@ -116,7 +115,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:21:58.377Z"
+    "updatedAt": "2026-08-25T22:20:43.713Z"
   },
   "005930.KS": {
     "text": "Largest shareholder return triggers market sell‑off, reflecting investor demand for higher payouts in this cycle.",
@@ -137,31 +136,30 @@
     "updatedAt": "2026-08-25T14:39:35.787Z"
   },
   "AAPL": {
-    "text": "iPhone price hikes from Chinese memory shortages and new leasing model dampen demand for customers.",
+    "text": "New Macs launch coupled with controversial forever‑lease partnership sparks consumer skepticism and pricing concerns.",
     "source": "stock",
     "articleIds": [
-      "bf28ea7d-9900-3c98-814f-c17db5de40e5",
       "1d1e6e21-5a93-3c95-bb28-39a4bd8ef2ce"
     ],
-    "updatedAt": "2026-08-25T20:22:41.034Z"
+    "updatedAt": "2026-08-25T22:21:00.195Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:22:19.362Z"
+    "updatedAt": "2026-08-25T22:21:05.640Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:22:24.816Z"
+    "updatedAt": "2026-08-25T22:21:10.481Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:22:29.408Z"
+    "updatedAt": "2026-08-25T22:21:15.272Z"
   },
   "META": {
     "text": "AI agent launch imminent and $22 B annual revenue potential from AI‑compute rentals spark optimism.",
@@ -176,25 +174,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:22:39.149Z"
+    "updatedAt": "2026-08-25T22:21:24.631Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:22:43.636Z"
+    "updatedAt": "2026-08-25T22:21:28.970Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:22:48.261Z"
+    "updatedAt": "2026-08-25T22:21:33.297Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:22:52.823Z"
+    "updatedAt": "2026-08-25T22:21:37.867Z"
   },
   "TCS.NS": {
     "text": "Acquisition of Porsche’s MHP consulting unit for €320 million fuels TCS’s AI mobility expansion, strategic growth.",
@@ -209,33 +207,33 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:23:02.882Z"
+    "updatedAt": "2026-08-25T22:21:47.275Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:23:07.341Z"
+    "updatedAt": "2026-08-25T22:21:51.644Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:23:11.767Z"
+    "updatedAt": "2026-08-25T22:21:56.010Z"
   },
   "INDEX": {
-    "text": "Midday ETF gains, falling crude prices, and easing bond yields lift market sentiment.",
+    "text": "Chip stocks recover after mid‑day gains, boosting overall market momentum and investor confidence rises today.",
     "source": "macro",
     "articleIds": [
       "ae2f5e8c-120d-39af-8bd0-0cafe3a0dfd9",
-      "b7cf53c7-0539-3d6c-b449-32a90049dd01"
+      "f37ff379-55ba-384f-9758-6755dcec980d"
     ],
-    "updatedAt": "2026-08-25T21:23:16.696Z"
+    "updatedAt": "2026-08-25T22:22:01.290Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-08-25T21:23:21.393Z"
+    "updatedAt": "2026-08-25T22:22:06.140Z"
   }
 }
