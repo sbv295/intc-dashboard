@@ -8,42 +8,45 @@
     "updatedAt": "2026-08-26T13:49:19.367Z"
   },
   "AMD": {
-    "text": "A surprise government cash‑account report spurred optimism about AI‑driven data‑center demand and new TRACE security rollout.",
+    "text": "Government cash account report spurring expectations of increased AI data‑center demand and funding for future.",
     "source": "stock",
     "articleIds": [
       "8623b26b-72c5-350a-bbfd-2637f312a184",
-      "c2db6ade-faed-3020-8462-1e689624b00e",
-      "f639f324-c302-307e-b0f7-bf6114c04fb1"
+      "c2db6ade-faed-3020-8462-1e689624b00e"
     ],
-    "updatedAt": "2026-08-26T14:38:12.498Z"
+    "updatedAt": "2026-08-26T16:13:16.444Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T14:38:17.673Z"
+    "updatedAt": "2026-08-26T16:13:22.408Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T14:38:22.798Z"
+    "text": "valuation discount versus AI‑chip customers amid expectations of closing the gap in 2027.",
+    "source": "stock",
+    "articleIds": [
+      "414597ba-d033-3d83-a2ca-2e400d7559bb",
+      "e939675c-8920-33ed-a6b8-5c7cdef334f5"
+    ],
+    "updatedAt": "2026-08-26T16:13:27.918Z"
   },
   "SNDK": {
-    "text": "I’m sorry, but I can’t provide a causal phrase based on the given information.",
+    "text": "Launch of 9th‑gen 2 TB QLC 3D flash targeting AI and data‑intensive cloud workloads.",
     "source": "stock",
     "articleIds": [
-      "97910b5a-a0eb-3cca-a226-fb1dfb184d13"
+      "f5cf8d75-c6cb-309f-aee6-eeff7df50c25"
     ],
-    "updatedAt": "2026-08-26T11:23:36.659Z"
+    "updatedAt": "2026-08-26T16:13:33.071Z"
   },
   "MU": {
-    "text": "A surprising government cash‑account report triggered buying, boosting demand for Micron’s memory products.",
+    "text": "CEO’s optimism on long‑term memory market expansion and surprise government cash injection fueling demand today",
     "source": "stock",
     "articleIds": [
+      "e85b87f7-c31f-3af4-9bc7-86dd5cb26e0d",
       "8623b26b-72c5-350a-bbfd-2637f312a184"
     ],
-    "updatedAt": "2026-08-26T14:38:33.527Z"
+    "updatedAt": "2026-08-26T16:13:39.575Z"
   },
   "AVGO": {
     "text": "Heavy reliance on a narrow AI customer list constrains revenue growth amid rising competition pressures.",
@@ -55,20 +58,21 @@
     "updatedAt": "2026-08-26T13:49:52.763Z"
   },
   "SPCX": {
-    "text": "EchoStar creditors lawsuit over alleged draining of funds for spectrum sale sparks investor uncertainty.",
+    "text": "valuation slump to $95 by 2028 amid $1.5 billion creditor reckoning from EchoStar deal, raising skepticism",
     "source": "stock",
     "articleIds": [
-      "baf25403-09d2-46fb-a11c-d6dbac658bd3",
-      "4cba46af-8899-3c6a-b83c-58fe313e2893",
-      "6a717ab2-8627-3040-bf5b-ffd738901139"
+      "706f9f28-00b8-31e6-8a86-da3be48d4ec9",
+      "4cba46af-8899-3c6a-b83c-58fe313e2893"
     ],
-    "updatedAt": "2026-08-26T14:38:45.644Z"
+    "updatedAt": "2026-08-26T16:13:50.628Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T14:38:50.599Z"
+    "text": "Anticipation of after‑hours earnings release tomorrow fuels investor caution ahead of performance outlook the market",
+    "source": "stock",
+    "articleIds": [
+      "3b55f93d-74f8-3ba1-8c9c-75e7b88a7a30"
+    ],
+    "updatedAt": "2026-08-26T16:13:56.746Z"
   },
   "ARM": {
     "text": "93X-plus earnings multiple overshadows growth potential, raising concerns about execution risk.",
@@ -80,26 +84,28 @@
     "updatedAt": "2026-08-26T14:38:55.792Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T14:39:00.812Z"
-  },
-  "SKHY": {
-    "text": "Union vote failure by 25 ballots sparks concentration risk concerns amid rising AI memory demand.",
+    "text": "Edge‑AI demand surges as VENTUNO Q launches, bolstered by new Mobile‑Compute‑AI chief’s strategic push.",
     "source": "stock",
     "articleIds": [
-      "dabeb3a7-ecd0-336e-853e-4913d97a7f8a",
-      "e961d1c0-f2bd-3a30-af37-df6ff4cde255",
-      "43543f0f-4ec2-3323-960a-2cb8c9c2ed8b"
+      "08b9c965-35f7-30d6-a1f6-2631780485b8",
+      "f319a9bb-e6f3-3567-abe2-a7f0fa97a811",
+      "db0a62c6-54bf-398d-926a-dc78abce1c72"
     ],
-    "updatedAt": "2026-08-26T13:50:19.805Z"
+    "updatedAt": "2026-08-26T16:14:07.898Z"
+  },
+  "SKHY": {
+    "text": "$28.6 billion buyback program signals confidence, boosting investor sentiment and supporting valuation.",
+    "source": "stock",
+    "articleIds": [
+      "7b019cd6-69de-3016-8fd6-360cc5e1e64a"
+    ],
+    "updatedAt": "2026-08-26T16:14:12.835Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T14:39:10.662Z"
+    "updatedAt": "2026-08-26T16:14:17.577Z"
   },
   "005930.KS": {
     "text": "AI-driven gains from semiconductor demand surge, fueled by expanding AI chip production and strong market momentum.",
@@ -118,101 +124,99 @@
     "updatedAt": "2026-08-26T12:40:10.837Z"
   },
   "AAPL": {
-    "text": "Billionaire investors purchasing Apple shares in Q2, signaling confidence and market optimism for future growth.",
+    "text": "Cost story turned credit, replaced by supplier‑priced market with three suppliers in the tech sector.",
     "source": "stock",
     "articleIds": [
-      "0bc44a9d-7074-375c-a4ba-d4d4aef7c2ef"
+      "8ca0bbe9-8ba6-3056-905d-66b1286f1465"
     ],
-    "updatedAt": "2026-08-26T13:50:40.510Z"
+    "updatedAt": "2026-08-26T16:14:33.666Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T13:50:45.015Z"
+    "text": "New Copilot integrations and data center expansion boost AI platform confidence, driving investor optimism growth.",
+    "source": "stock",
+    "articleIds": [
+      "a533bbf2-4828-391d-9f65-edcf55543cc4",
+      "53fb720d-44a0-395b-9881-40c6e4334cce"
+    ],
+    "updatedAt": "2026-08-26T16:14:39.081Z"
   },
   "GOOGL": {
-    "text": "Profit‑taking after Rezolve AI’s 22% rally, despite Google Cloud’s modest gains, dampened momentum.",
-    "source": "stock",
-    "articleIds": [
-      "3bdf54e9-2e02-3762-a663-52503e08a89d"
-    ],
-    "updatedAt": "2026-08-26T13:50:50.408Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-26T16:14:43.989Z"
   },
   "AMZN": {
-    "text": "Shutting down Mechanical Turk as AI reshapes its business, eliminating the 21‑year‑old data‑training platform.",
-    "source": "stock",
-    "articleIds": [
-      "05d62656-1c97-3c7f-b6cd-b8773a73654c",
-      "ef1ad132-fc83-3d3d-965c-50353784fb7b",
-      "e98599a4-0b48-39e1-8412-a4d11163b8c7"
-    ],
-    "updatedAt": "2026-08-26T12:40:33.134Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-26T16:14:48.751Z"
   },
   "META": {
-    "text": "Billionaire investors purchasing Meta shares, signaling confidence in its AI initiatives and future growth prospects.",
+    "text": "Settlement of a $17‑$18 billion social‑media addiction and teen‑safety lawsuit removes major legal overhang.",
     "source": "stock",
     "articleIds": [
-      "0bc44a9d-7074-375c-a4ba-d4d4aef7c2ef"
+      "7e2d1d7c-9880-40ef-9a9b-90e50bbc94fe",
+      "5024278f-32d8-3946-be81-792e86c61905",
+      "d9564a45-6e13-31cb-a7e1-0a66ecb84bb4"
     ],
-    "updatedAt": "2026-08-26T11:24:53.031Z"
+    "updatedAt": "2026-08-26T16:14:54.669Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T14:39:47.503Z"
+    "updatedAt": "2026-08-26T16:14:59.057Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T13:51:08.766Z"
+    "updatedAt": "2026-08-26T16:15:03.722Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T14:39:56.372Z"
+    "updatedAt": "2026-08-26T16:15:08.123Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T14:40:00.791Z"
+    "updatedAt": "2026-08-26T16:15:12.545Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T12:41:01.086Z"
+    "updatedAt": "2026-08-26T16:15:17.424Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T14:40:10.179Z"
+    "updatedAt": "2026-08-26T16:15:21.908Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T14:40:14.625Z"
+    "updatedAt": "2026-08-26T16:15:26.278Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T14:40:19.072Z"
+    "updatedAt": "2026-08-26T16:15:30.724Z"
   },
   "INDEX": {
-    "text": "Heavy allocations to mega‑cap equity vehicles and cash‑like Treasury ETFs drive market gains for investors.",
+    "text": "Inflation data release fuels uncertainty, prompting cautious positioning and modest pullback across the market.",
     "source": "macro",
     "articleIds": [
-      "dfd7fa83-f1e2-3504-a2dc-d3f727fe27e7",
-      "ae2f5e8c-120d-39af-8bd0-0cafe3a0dfd9"
+      "b96285fc-4d8d-3203-ba9c-3c56fb2f85fd"
     ],
-    "updatedAt": "2026-08-26T12:41:18.933Z"
+    "updatedAt": "2026-08-26T16:15:35.735Z"
   },
   "INDEX_IN": {
     "text": "Elevated crude prices and climbing global Treasury yields dampen risk appetite, curbing market momentum today.",
