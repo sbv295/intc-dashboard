@@ -3,7 +3,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:55:54.198Z"
+    "updatedAt": "2026-08-26T02:22:52.325Z"
   },
   "AMD": {
     "text": "AI demand and Raymond James’ upgrade to Strong Buy boost investor confidence in growth prospects.",
@@ -21,7 +21,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:56:04.923Z"
+    "updatedAt": "2026-08-26T02:23:02.652Z"
   },
   "TSM": {
     "text": "Surging AI demand and aggressive capacity expansion, bolstered by advanced‑node adoption and upcoming earnings validation.",
@@ -37,7 +37,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:56:15.197Z"
+    "updatedAt": "2026-08-26T02:23:12.985Z"
   },
   "MU": {
     "text": "Aggressive BMO coverage target after strong earnings and $25B cash flow amid sector rebound.",
@@ -50,12 +50,13 @@
     "updatedAt": "2026-08-25T23:20:22.070Z"
   },
   "AVGO": {
-    "text": "Marvell's expansion erodes Broadcom's exclusivity narrative, dampening confidence in its custom chip dominance market sentiment.",
+    "text": "Earnings miss and rising Google custom‑chip competition, plus Marvell’s expansion eroding Broadcom’s exclusivity in market.",
     "source": "stock",
     "articleIds": [
+      "8ad5f6c2-fbc8-354a-9236-75089eb6e2f3",
       "b9745b67-3535-3819-ae08-be7fe3720a3e"
     ],
-    "updatedAt": "2026-08-25T20:21:52.515Z"
+    "updatedAt": "2026-08-26T02:23:23.966Z"
   },
   "SPCX": {
     "text": "Musk unveils $100B Louisiana spaceport, boosting confidence in Starship launch expansion for future missions and.",
@@ -109,16 +110,15 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:56:57.925Z"
+    "updatedAt": "2026-08-26T02:23:55.983Z"
   },
   "005930.KS": {
-    "text": "",
+    "text": "AI-driven gains from Samsung’s semiconductor surge, propelled by robust demand for AI chip production.",
     "source": "stock",
     "articleIds": [
-      "ba0417c6-c768-382c-9ab8-470677ce0d3f",
-      "dcc74c70-ce3c-3e5e-9eb9-ed21bf28d81b"
+      "ba0417c6-c768-382c-9ab8-470677ce0d3f"
     ],
-    "updatedAt": "2026-08-26T00:57:03.301Z"
+    "updatedAt": "2026-08-26T02:24:00.856Z"
   },
   "000660.KS": {
     "text": "40 trillion won buyback program signals confidence, boosting investor sentiment amid AI‑driven market rally today.",
@@ -130,65 +130,61 @@
     "updatedAt": "2026-08-26T00:57:08.500Z"
   },
   "AAPL": {
-    "text": "New Macs launch coupled with controversial forever‑lease partnership sparks consumer skepticism and pricing concerns.",
+    "text": "iPhone price hikes from Chinese memory shortages and new Mac leasing model dampen investor confidence.",
     "source": "stock",
     "articleIds": [
+      "bf28ea7d-9900-3c98-814f-c17db5de40e5",
       "1d1e6e21-5a93-3c95-bb28-39a4bd8ef2ce"
     ],
-    "updatedAt": "2026-08-25T22:21:00.195Z"
+    "updatedAt": "2026-08-26T02:24:11.310Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:57:19.133Z"
+    "updatedAt": "2026-08-26T02:24:15.602Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:57:24.013Z"
+    "updatedAt": "2026-08-26T02:24:20.226Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:57:28.470Z"
+    "updatedAt": "2026-08-26T02:24:24.738Z"
   },
   "META": {
-    "text": "Hatch AI partnership with Reddit unlocks $22B annual revenue potential, boosting investor confidence.",
-    "source": "stock",
-    "articleIds": [
-      "015fb2f0-60dd-3636-a66c-9fca17f50a48",
-      "b097233b-8156-3ec7-9381-7e6590445fde",
-      "0c53e238-d3de-3a6e-8137-bd037505576b",
-      "e0ccb900-4d62-3cd9-8037-86057c384830"
-    ],
-    "updatedAt": "2026-08-26T00:57:33.786Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-26T02:24:29.434Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:57:38.087Z"
+    "updatedAt": "2026-08-26T02:24:33.803Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:57:42.296Z"
+    "updatedAt": "2026-08-26T02:24:38.053Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:57:46.581Z"
+    "updatedAt": "2026-08-26T02:24:42.277Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:57:50.954Z"
+    "updatedAt": "2026-08-26T02:24:46.607Z"
   },
   "TCS.NS": {
     "text": "Acquisition of Porsche’s MHP consulting unit for €320 million fuels TCS’s AI mobility expansion, strategic growth.",
@@ -203,19 +199,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:58:00.374Z"
+    "updatedAt": "2026-08-26T02:24:55.992Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:58:04.671Z"
+    "updatedAt": "2026-08-26T02:25:00.397Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:58:08.985Z"
+    "updatedAt": "2026-08-26T02:25:04.658Z"
   },
   "INDEX": {
     "text": "Robust earnings reports from major sectors across lift investor confidence, propelling broad market gains today.",
@@ -229,6 +225,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-08-26T00:58:19.152Z"
+    "updatedAt": "2026-08-26T02:25:14.291Z"
   }
 }
