@@ -1,28 +1,31 @@
 {
   "INTC": {
-    "text": "Pelosi's $1.5 million purchase highlights dilution concerns from a $20 billion capital raise that could impact valuation.",
+    "text": "Unveiling next‑gen AI processors expands enterprise and data‑center offerings, boosting investor confidence amid market optimism",
     "source": "stock",
     "articleIds": [
-      "1c694244-e51e-37e0-ac48-9fc8a506b7ad"
+      "d1e3e2e8-b1a4-380c-a1b6-643fed6aa6d8"
     ],
-    "updatedAt": "2026-08-26T08:35:58.544Z"
+    "updatedAt": "2026-08-26T12:38:50.412Z"
   },
   "AMD": {
-    "text": "AI‑focused initiatives—new TRACE security standard, confidential‑computing rollout, and a higher‑memory AI accelerator—fueling strong demand.",
+    "text": "Surging data‑center demand and new AI‑focused hardware and security initiatives driving strong growth.",
     "source": "stock",
     "articleIds": [
-      "2f3c572b-c7a8-41a0-a605-4837244f11d4",
+      "c2db6ade-faed-3020-8462-1e689624b00e",
       "f639f324-c302-307e-b0f7-bf6114c04fb1",
       "735d6fea-3c0d-36fc-ba54-2a4759596546",
       "22f8d8d4-9066-3d53-a627-aa373e099d3d"
     ],
-    "updatedAt": "2026-08-26T08:36:03.849Z"
+    "updatedAt": "2026-08-26T12:38:55.948Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T11:23:26.386Z"
+    "text": "Anticipation of upcoming earnings after the close, aiming to break a seven‑day losing streak today.",
+    "source": "stock",
+    "articleIds": [
+      "c098774e-551a-440b-a4b8-4cff0ad68226",
+      "d45c7c1e-e02f-4733-9750-2992e90babf9"
+    ],
+    "updatedAt": "2026-08-26T12:39:01.690Z"
   },
   "TSM": {
     "text": "Surging AI demand and capacity expansion on advanced nodes boost earnings outlook, validating growth forecasts.",
@@ -42,41 +45,38 @@
     "updatedAt": "2026-08-26T11:23:36.659Z"
   },
   "MU": {
-    "text": "BMO Capital’s aggressive post‑earnings target upgrade fuels investor optimism.",
+    "text": "Strong demand for AI‑optimized memory driving earnings expectations and boosting revenue forecasts for next quarter.",
     "source": "stock",
     "articleIds": [
-      "d4680153-031e-360e-a44b-1997107d68a9",
-      "abc659b9-fab3-3f18-bc2e-be2116a444b4"
+      "d4680153-031e-360e-a44b-1997107d68a9"
     ],
-    "updatedAt": "2026-08-26T11:23:41.839Z"
+    "updatedAt": "2026-08-26T12:39:21.868Z"
   },
   "AVGO": {
-    "text": "Earnings miss and AI chip ranking second to Nvidia raise doubts about future growth prospects.",
+    "text": "Weaker AI data‑center momentum versus rivals, dampening growth expectations.",
     "source": "stock",
     "articleIds": [
-      "8ad5f6c2-fbc8-354a-9236-75089eb6e2f3"
+      "c2db6ade-faed-3020-8462-1e689624b00e"
     ],
-    "updatedAt": "2026-08-26T11:23:47.052Z"
+    "updatedAt": "2026-08-26T12:39:27.457Z"
   },
   "SPCX": {
-    "text": "",
+    "text": "Anticipation of Nvidia‑powered orbital data center launch and Louisiana facility easing Starship reuse constraints.",
     "source": "stock",
     "articleIds": [
       "01c6acc0-3d8d-4881-b687-f51d282a8cff",
-      "ac1bb11a-6059-36eb-ac47-99f289a124a6",
-      "31b8587d-e729-3fad-8656-1d7d153d275c"
+      "2ae9aae2-9166-3124-9bc3-59b1973131dc"
     ],
-    "updatedAt": "2026-08-26T11:23:52.699Z"
+    "updatedAt": "2026-08-26T12:39:33.093Z"
   },
   "MRVL": {
-    "text": "Upcoming earnings report and Google warrant issuance spark optimism, boosting confidence in Marvell's AI strategy.",
+    "text": "Google warrant issuance for up to 58.97 million shares at $206.58, highlighting deep AI partnership.",
     "source": "stock",
     "articleIds": [
-      "3b55f93d-74f8-3ba1-8c9c-75e7b88a7a30",
       "65aa68d8-7583-35c5-beda-7676689eccd2",
       "63cb310d-d759-3b98-bb01-dbc460072387"
     ],
-    "updatedAt": "2026-08-26T10:29:31.794Z"
+    "updatedAt": "2026-08-26T12:39:38.747Z"
   },
   "ARM": {
     "text": "Strategic pivot to sell proprietary data‑center chips and AI accelerators boosts confidence in future growth.",
@@ -88,54 +88,53 @@
     "updatedAt": "2026-08-25T20:22:08.717Z"
   },
   "QCOM": {
-    "text": "Leadership change appoints AI‑focused chief, positioning Qualcomm for significant AI hardware expansion and revenue growth.",
+    "text": "Leadership shift appoints Sergio Buniac to spearhead mobile, PC, wearables and XR AI initiatives, boosting confidence.",
     "source": "stock",
     "articleIds": [
       "f319a9bb-e6f3-3567-abe2-a7f0fa97a811",
-      "db0a62c6-54bf-398d-926a-dc78abce1c72",
-      "9a588fdb-7bab-33cc-a1c5-c4adad45fbbe"
+      "db0a62c6-54bf-398d-926a-dc78abce1c72"
     ],
-    "updatedAt": "2026-08-26T08:36:50.632Z"
+    "updatedAt": "2026-08-26T12:39:49.928Z"
   },
   "SKHY": {
-    "text": "$28.6 billion share repurchase program fuels optimism amid AI‑driven market rally.",
+    "text": "$28.6 billion share repurchase program announced, signaling strong cash return to shareholders.",
     "source": "stock",
     "articleIds": [
-      "7b019cd6-69de-3016-8fd6-360cc5e1e64a",
-      "ba0417c6-c768-382c-9ab8-470677ce0d3f"
+      "7b019cd6-69de-3016-8fd6-360cc5e1e64a"
     ],
-    "updatedAt": "2026-08-26T00:56:53.653Z"
+    "updatedAt": "2026-08-26T12:39:54.956Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T11:24:17.801Z"
+    "updatedAt": "2026-08-26T12:39:59.476Z"
   },
   "005930.KS": {
-    "text": "AI-driven gains from Samsung’s semiconductor expansion fuel market rally, boosting investor confidence and valuation.",
+    "text": "AI-driven gains propel Samsung's performance amid market rally, reflecting robust semiconductor demand and strategic investments.",
     "source": "stock",
     "articleIds": [
-      "ba0417c6-c768-382c-9ab8-470677ce0d3f"
+      "ba0417c6-c768-382c-9ab8-470677ce0d3f",
+      "dcc74c70-ce3c-3e5e-9eb9-ed21bf28d81b"
     ],
-    "updatedAt": "2026-08-26T10:29:58.614Z"
+    "updatedAt": "2026-08-26T12:40:04.511Z"
   },
   "000660.KS": {
-    "text": "40 trillion won buyback program signals confidence, boosting investor sentiment amid AI‑driven market rally today.",
+    "text": "40 trillion won buyback program",
     "source": "stock",
     "articleIds": [
-      "7b019cd6-69de-3016-8fd6-360cc5e1e64a",
-      "ba0417c6-c768-382c-9ab8-470677ce0d3f"
+      "7b019cd6-69de-3016-8fd6-360cc5e1e64a"
     ],
-    "updatedAt": "2026-08-26T00:57:08.500Z"
+    "updatedAt": "2026-08-26T12:40:10.837Z"
   },
   "AAPL": {
-    "text": "",
+    "text": "Cost story shift to credit and new three‑supplier market pricing erodes margins for core products.",
     "source": "stock",
     "articleIds": [
+      "8ca0bbe9-8ba6-3056-905d-66b1286f1465",
       "70aa2132-cb18-3536-8e38-9206781f3adf"
     ],
-    "updatedAt": "2026-08-26T11:24:32.764Z"
+    "updatedAt": "2026-08-26T12:40:16.357Z"
   },
   "MSFT": {
     "text": "Pershing Square's AI pivot and Moonshot AI revenue‑sharing negotiations boost confidence in Microsoft's AI strategy.",
@@ -147,22 +146,23 @@
     "updatedAt": "2026-08-26T10:30:16.049Z"
   },
   "GOOGL": {
-    "text": "Pershing Square divested Alphabet shares, shifting focus to Microsoft, dampening demand for Google's AI assets.",
+    "text": "Fierce AI model competition and OpenAI threat weigh on confidence, prompting investor divestment in market.",
     "source": "stock",
     "articleIds": [
-      "384e3861-20ee-3ec5-a7b8-77bd87dc6485"
+      "fed45db5-8a81-329b-8ed0-94124b9d6465",
+      "41b61db5-b745-3c71-8a9c-8485dc5c0943"
     ],
-    "updatedAt": "2026-08-26T10:30:21.825Z"
+    "updatedAt": "2026-08-26T12:40:28.312Z"
   },
   "AMZN": {
-    "text": "Amazon shutting down Mechanical Turk platform on Sept. 30, 2026, ending 21-year workforce and marketplace.",
+    "text": "Shutting down Mechanical Turk as AI reshapes its business, eliminating the 21‑year‑old data‑training platform.",
     "source": "stock",
     "articleIds": [
+      "05d62656-1c97-3c7f-b6cd-b8773a73654c",
       "ef1ad132-fc83-3d3d-965c-50353784fb7b",
-      "e98599a4-0b48-39e1-8412-a4d11163b8c7",
-      "f28acf4a-a552-3d26-9a77-2f387edc236b"
+      "e98599a4-0b48-39e1-8412-a4d11163b8c7"
     ],
-    "updatedAt": "2026-08-26T11:24:47.941Z"
+    "updatedAt": "2026-08-26T12:40:33.134Z"
   },
   "META": {
     "text": "Billionaire investors purchasing Meta shares, signaling confidence in its AI initiatives and future growth prospects.",
@@ -176,57 +176,58 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T11:24:57.339Z"
+    "updatedAt": "2026-08-26T12:40:42.600Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T11:25:01.988Z"
+    "updatedAt": "2026-08-26T12:40:47.405Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T11:25:06.217Z"
+    "updatedAt": "2026-08-26T12:40:51.810Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T11:25:10.522Z"
+    "updatedAt": "2026-08-26T12:40:56.014Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T11:25:15.088Z"
+    "updatedAt": "2026-08-26T12:41:01.086Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T11:25:19.443Z"
+    "updatedAt": "2026-08-26T12:41:05.396Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T11:25:23.658Z"
+    "updatedAt": "2026-08-26T12:41:09.730Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T11:25:27.950Z"
+    "updatedAt": "2026-08-26T12:41:14.045Z"
   },
   "INDEX": {
-    "text": "Robust earnings reports from major sectors across lift investor confidence, propelling broad market gains today.",
+    "text": "Heavy allocations to mega‑cap equity vehicles and cash‑like Treasury ETFs drive market gains for investors.",
     "source": "macro",
     "articleIds": [
+      "dfd7fa83-f1e2-3504-a2dc-d3f727fe27e7",
       "ae2f5e8c-120d-39af-8bd0-0cafe3a0dfd9"
     ],
-    "updatedAt": "2026-08-26T00:58:14.206Z"
+    "updatedAt": "2026-08-26T12:41:18.933Z"
   },
   "INDEX_IN": {
     "text": "Elevated crude prices and climbing global Treasury yields dampen risk appetite, curbing market momentum today.",
