@@ -19,20 +19,23 @@
     "updatedAt": "2026-08-26T08:36:03.849Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T08:36:08.693Z"
+    "text": "Anticipation of robust Q2 earnings and hype around upcoming Nvidia‑powered orbital data center fueling optimism.",
+    "source": "stock",
+    "articleIds": [
+      "e4a4c946-50d6-4fc8-9e41-26b86b279a24",
+      "01c6acc0-3d8d-4881-b687-f51d282a8cff",
+      "92a4fcf2-99c9-34f2-8fa1-f94a03fbe873"
+    ],
+    "updatedAt": "2026-08-26T09:35:02.156Z"
   },
   "TSM": {
-    "text": "Surging AI demand and aggressive capacity expansion, bolstered by advanced‑node adoption and upcoming earnings validation.",
+    "text": "Surging AI demand and capacity expansion on advanced nodes boost earnings outlook, validating growth forecasts.",
     "source": "stock",
     "articleIds": [
       "3052d107-56d2-3871-8d69-e579dd853c30",
-      "120c9d85-1b44-353c-8195-8bc10a2c7a35",
-      "39c0c1e2-fdde-39c3-a800-66f93b1ee369"
+      "120c9d85-1b44-353c-8195-8bc10a2c7a35"
     ],
-    "updatedAt": "2026-08-26T00:56:09.864Z"
+    "updatedAt": "2026-08-26T09:35:07.545Z"
   },
   "SNDK": {
     "text": "Investor concerns over its aggressive new strategy rewrite prompting valuation pullback",
@@ -62,26 +65,25 @@
     "updatedAt": "2026-08-26T02:23:23.966Z"
   },
   "SPCX": {
-    "text": "Aggressive capex on Starbase Louisiana launch site and Nvidia‑powered orbital data center launch timeline.",
+    "text": "Aggressive capex: Starbase launch site and Nvidia‑powered orbital data center slated for 2027, boosting launch cadence prospects.",
     "source": "stock",
     "articleIds": [
       "d8cd2bfd-ec7c-4212-a23d-e4eb198ef91c",
       "01c6acc0-3d8d-4881-b687-f51d282a8cff",
-      "719bb564-9ec6-3b1b-b2e5-c4939fd01316"
+      "31b8587d-e729-3fad-8656-1d7d153d275c"
     ],
-    "updatedAt": "2026-08-26T08:36:35.572Z"
+    "updatedAt": "2026-08-26T09:35:29.701Z"
   },
   "MRVL": {
-    "text": "Anticipated earnings release coupled with Google warrant issuance fuels optimism about Marvell's AI chip expansion.",
+    "text": "Earnings outlook, Google warrant, AI expansion, analyst target hike, and valuation upgrade spark optimism today.",
     "source": "stock",
     "articleIds": [
       "3b55f93d-74f8-3ba1-8c9c-75e7b88a7a30",
       "65aa68d8-7583-35c5-beda-7676689eccd2",
       "63cb310d-d759-3b98-bb01-dbc460072387",
-      "f047a254-873e-30ed-887e-e5bebbcf8998",
-      "f6d5fa75-9ba4-31cd-906a-9a680ae3b40a"
+      "f047a254-873e-30ed-887e-e5bebbcf8998"
     ],
-    "updatedAt": "2026-08-26T04:34:01.551Z"
+    "updatedAt": "2026-08-26T09:35:35.318Z"
   },
   "ARM": {
     "text": "Strategic pivot to sell proprietary data‑center chips and AI accelerators boosts confidence in future growth.",
@@ -115,7 +117,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T08:37:00.246Z"
+    "updatedAt": "2026-08-26T09:35:56.209Z"
   },
   "005930.KS": {
     "text": "AI‑driven demand for memory chips propels Samsung’s valuation higher amid robust semiconductor growth.",
@@ -152,13 +154,10 @@
     "updatedAt": "2026-08-26T08:37:20.568Z"
   },
   "GOOGL": {
-    "text": "Alphabet’s server costs surged over 15%, tightening margins amid its massive AI infrastructure spend.",
-    "source": "stock",
-    "articleIds": [
-      "f28acf4a-a552-3d26-9a77-2f387edc236b",
-      "1e33c03c-cab0-343b-b35c-3d54c00a62d0"
-    ],
-    "updatedAt": "2026-08-26T07:41:55.731Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-26T09:36:21.243Z"
   },
   "AMZN": {
     "text": "Nvidia’s biggest customers, including Amazon, turning into rivals, signaling potential AI growth slowdown.",
@@ -170,61 +169,63 @@
     "updatedAt": "2026-08-26T08:37:31.383Z"
   },
   "META": {
-    "text": "Potential billions paid to end teen addiction trial, mitigating legal risk and boosting confidence investors.",
+    "text": "Billionaire investors buying shares and ongoing settlement talks with states boost confidence, driving recent gains.",
     "source": "stock",
     "articleIds": [
-      "86cd9ad6-c38f-3a68-91b0-1335d6fde358",
+      "0bc44a9d-7074-375c-a4ba-d4d4aef7c2ef",
+      "762758d7-fe71-37dd-92c3-c7f4773eff20",
+      "f0b87067-63fc-3ed5-9f9d-276d0a8f981e",
       "015fb2f0-60dd-3636-a66c-9fca17f50a48"
     ],
-    "updatedAt": "2026-08-26T08:37:36.956Z"
+    "updatedAt": "2026-08-26T09:36:32.596Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T08:37:41.227Z"
+    "updatedAt": "2026-08-26T09:36:36.959Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T08:37:45.543Z"
+    "updatedAt": "2026-08-26T09:36:41.330Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T08:37:49.756Z"
+    "updatedAt": "2026-08-26T09:36:45.780Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T08:37:53.980Z"
+    "updatedAt": "2026-08-26T09:36:50.204Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T08:37:58.597Z"
+    "updatedAt": "2026-08-26T09:36:55.166Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T08:38:02.823Z"
+    "updatedAt": "2026-08-26T09:36:59.639Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T08:38:07.089Z"
+    "updatedAt": "2026-08-26T09:37:04.138Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T08:38:11.356Z"
+    "updatedAt": "2026-08-26T09:37:08.567Z"
   },
   "INDEX": {
     "text": "Robust earnings reports from major sectors across lift investor confidence, propelling broad market gains today.",
@@ -235,13 +236,12 @@
     "updatedAt": "2026-08-26T00:58:14.206Z"
   },
   "INDEX_IN": {
-    "text": "Elevated crude oil prices and climbing global Treasury yields dampen risk appetite, curbing market momentum.",
+    "text": "Elevated crude prices and climbing global Treasury yields dampen risk appetite, curbing market momentum today.",
     "source": "macro",
     "articleIds": [
       "67eff8e4-cb17-32d0-b5b4-c22e80ced1a3",
-      "70d14d7a-65b2-3b42-9db6-1ad0cfe6489b",
-      "6a96edf9-ef5e-30b9-bc67-f4678b5d8994"
+      "70d14d7a-65b2-3b42-9db6-1ad0cfe6489b"
     ],
-    "updatedAt": "2026-08-26T05:30:52.666Z"
+    "updatedAt": "2026-08-26T09:37:19.039Z"
   }
 }
