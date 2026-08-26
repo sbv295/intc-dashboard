@@ -19,13 +19,10 @@
     "updatedAt": "2026-08-26T08:36:03.849Z"
   },
   "NVDA": {
-    "text": "Anticipation of Nvidia’s upcoming earnings report and key inflation data driving investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "c2212ed9-17c1-4330-93bd-1643e1810dd6",
-      "d45c7c1e-e02f-4733-9750-2992e90babf9"
-    ],
-    "updatedAt": "2026-08-26T10:28:59.934Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-26T11:23:26.386Z"
   },
   "TSM": {
     "text": "Surging AI demand and capacity expansion on advanced nodes boost earnings outlook, validating growth forecasts.",
@@ -37,37 +34,39 @@
     "updatedAt": "2026-08-26T09:35:07.545Z"
   },
   "SNDK": {
-    "text": "Investor concerns over its aggressive new strategy rewrite prompting valuation pullback",
+    "text": "I’m sorry, but I can’t provide a causal phrase based on the given information.",
     "source": "stock",
     "articleIds": [
-      "97910b5a-a0eb-3cca-a226-fb1dfb184d13",
-      "216fbaa1-f7f1-364c-9df6-94d031efb7bc"
+      "97910b5a-a0eb-3cca-a226-fb1dfb184d13"
     ],
-    "updatedAt": "2026-08-26T03:48:56.480Z"
+    "updatedAt": "2026-08-26T11:23:36.659Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T10:29:15.164Z"
-  },
-  "AVGO": {
-    "text": "Earnings miss and rising Google custom‑chip competition, plus Marvell’s expansion eroding Broadcom’s exclusivity in market.",
+    "text": "BMO Capital’s aggressive post‑earnings target upgrade fuels investor optimism.",
     "source": "stock",
     "articleIds": [
-      "8ad5f6c2-fbc8-354a-9236-75089eb6e2f3",
-      "b9745b67-3535-3819-ae08-be7fe3720a3e"
+      "d4680153-031e-360e-a44b-1997107d68a9",
+      "abc659b9-fab3-3f18-bc2e-be2116a444b4"
     ],
-    "updatedAt": "2026-08-26T02:23:23.966Z"
+    "updatedAt": "2026-08-26T11:23:41.839Z"
+  },
+  "AVGO": {
+    "text": "Earnings miss and AI chip ranking second to Nvidia raise doubts about future growth prospects.",
+    "source": "stock",
+    "articleIds": [
+      "8ad5f6c2-fbc8-354a-9236-75089eb6e2f3"
+    ],
+    "updatedAt": "2026-08-26T11:23:47.052Z"
   },
   "SPCX": {
     "text": "",
     "source": "stock",
     "articleIds": [
       "01c6acc0-3d8d-4881-b687-f51d282a8cff",
+      "ac1bb11a-6059-36eb-ac47-99f289a124a6",
       "31b8587d-e729-3fad-8656-1d7d153d275c"
     ],
-    "updatedAt": "2026-08-26T10:29:26.006Z"
+    "updatedAt": "2026-08-26T11:23:52.699Z"
   },
   "MRVL": {
     "text": "Upcoming earnings report and Google warrant issuance spark optimism, boosting confidence in Marvell's AI strategy.",
@@ -111,7 +110,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T10:29:53.554Z"
+    "updatedAt": "2026-08-26T11:24:17.801Z"
   },
   "005930.KS": {
     "text": "AI-driven gains from Samsung’s semiconductor expansion fuel market rally, boosting investor confidence and valuation.",
@@ -131,12 +130,12 @@
     "updatedAt": "2026-08-26T00:57:08.500Z"
   },
   "AAPL": {
-    "text": "iPhone prices climbing as U.S. memory production lags, forcing Apple to seek costly overseas alternatives.",
+    "text": "",
     "source": "stock",
     "articleIds": [
-      "bf28ea7d-9900-3c98-814f-c17db5de40e5"
+      "70aa2132-cb18-3536-8e38-9206781f3adf"
     ],
-    "updatedAt": "2026-08-26T06:38:24.132Z"
+    "updatedAt": "2026-08-26T11:24:32.764Z"
   },
   "MSFT": {
     "text": "Pershing Square's AI pivot and Moonshot AI revenue‑sharing negotiations boost confidence in Microsoft's AI strategy.",
@@ -156,67 +155,70 @@
     "updatedAt": "2026-08-26T10:30:21.825Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T10:30:26.878Z"
-  },
-  "META": {
-    "text": "Billionaire investors purchasing shares and ongoing settlement discussions with states boost confidence in Meta’s future.",
+    "text": "Amazon shutting down Mechanical Turk platform on Sept. 30, 2026, ending 21-year workforce and marketplace.",
     "source": "stock",
     "articleIds": [
-      "0bc44a9d-7074-375c-a4ba-d4d4aef7c2ef",
-      "762758d7-fe71-37dd-92c3-c7f4773eff20"
+      "ef1ad132-fc83-3d3d-965c-50353784fb7b",
+      "e98599a4-0b48-39e1-8412-a4d11163b8c7",
+      "f28acf4a-a552-3d26-9a77-2f387edc236b"
     ],
-    "updatedAt": "2026-08-26T10:30:31.863Z"
+    "updatedAt": "2026-08-26T11:24:47.941Z"
+  },
+  "META": {
+    "text": "Billionaire investors purchasing Meta shares, signaling confidence in its AI initiatives and future growth prospects.",
+    "source": "stock",
+    "articleIds": [
+      "0bc44a9d-7074-375c-a4ba-d4d4aef7c2ef"
+    ],
+    "updatedAt": "2026-08-26T11:24:53.031Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T10:30:36.178Z"
+    "updatedAt": "2026-08-26T11:24:57.339Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T10:30:40.522Z"
+    "updatedAt": "2026-08-26T11:25:01.988Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T10:30:44.781Z"
+    "updatedAt": "2026-08-26T11:25:06.217Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T10:30:49.015Z"
+    "updatedAt": "2026-08-26T11:25:10.522Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T10:30:53.896Z"
+    "updatedAt": "2026-08-26T11:25:15.088Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T10:30:58.165Z"
+    "updatedAt": "2026-08-26T11:25:19.443Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T10:31:02.442Z"
+    "updatedAt": "2026-08-26T11:25:23.658Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T10:31:06.850Z"
+    "updatedAt": "2026-08-26T11:25:27.950Z"
   },
   "INDEX": {
     "text": "Robust earnings reports from major sectors across lift investor confidence, propelling broad market gains today.",
