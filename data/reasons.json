@@ -20,10 +20,12 @@
     "updatedAt": "2026-08-26T04:33:25.991Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T04:33:30.959Z"
+    "text": "Rapid expansion of its networking segment outpacing compute growth, boosting investor confidence.",
+    "source": "stock",
+    "articleIds": [
+      "725add4b-68be-414c-866d-33c2bb7505bf"
+    ],
+    "updatedAt": "2026-08-26T05:28:32.517Z"
   },
   "TSM": {
     "text": "Surging AI demand and aggressive capacity expansion, bolstered by advanced‑node adoption and upcoming earnings validation.",
@@ -45,10 +47,14 @@
     "updatedAt": "2026-08-26T03:48:56.480Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T04:33:46.021Z"
+    "text": "BMO's aggressive target and robust $25B cash engine buoy confidence, driving recent gains.",
+    "source": "stock",
+    "articleIds": [
+      "abc659b9-fab3-3f18-bc2e-be2116a444b4",
+      "de79ffd0-f04e-3c28-992c-6801c26cfde3",
+      "ebef46be-6a64-3754-90d6-ff2f6967749d"
+    ],
+    "updatedAt": "2026-08-26T05:28:49.291Z"
   },
   "AVGO": {
     "text": "Earnings miss and rising Google custom‑chip competition, plus Marvell’s expansion eroding Broadcom’s exclusivity in market.",
@@ -60,13 +66,15 @@
     "updatedAt": "2026-08-26T02:23:23.966Z"
   },
   "SPCX": {
-    "text": "Earnings call highlighted Nvidia partnership, while Louisiana spaceport expansion signals future launch capacity growth potential.",
+    "text": "New Starbase launch site and accelerated Nvidia‑powered orbital data center timeline spark bullish optimism.",
     "source": "stock",
     "articleIds": [
+      "d8cd2bfd-ec7c-4212-a23d-e4eb198ef91c",
+      "01c6acc0-3d8d-4881-b687-f51d282a8cff",
       "0fb1a155-b291-3fbf-bf8d-8f08c4d0692b",
       "15e30d6c-0a6e-3ca0-8124-ac19aadf37d4"
     ],
-    "updatedAt": "2026-08-26T04:33:55.859Z"
+    "updatedAt": "2026-08-26T05:29:00.255Z"
   },
   "MRVL": {
     "text": "Anticipated earnings release coupled with Google warrant issuance fuels optimism about Marvell's AI chip expansion.",
@@ -111,7 +119,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:34:21.907Z"
+    "updatedAt": "2026-08-26T05:29:27.755Z"
   },
   "005930.KS": {
     "text": "AI‑driven gains from Samsung's memory chip sales boost investor confidence, driving today's rally.",
@@ -132,18 +140,19 @@
     "updatedAt": "2026-08-26T00:57:08.500Z"
   },
   "AAPL": {
-    "text": "New Macs launch coupled with a controversial forever‑lease partnership sparks investor caution and pricing pressure.",
+    "text": "iPhone price hikes from Chinese memory shortages and U.S. trade policy, coupled with leasing model.",
     "source": "stock",
     "articleIds": [
+      "bf28ea7d-9900-3c98-814f-c17db5de40e5",
       "1d1e6e21-5a93-3c95-bb28-39a4bd8ef2ce"
     ],
-    "updatedAt": "2026-08-26T03:49:55.960Z"
+    "updatedAt": "2026-08-26T05:29:44.932Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:34:41.267Z"
+    "updatedAt": "2026-08-26T05:29:49.485Z"
   },
   "GOOGL": {
     "text": "Higher server spending—Alphabet allocating 60 cents per infrastructure dollar—drives cost pressure, nudging the share price lower.",
@@ -157,7 +166,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:34:51.022Z"
+    "updatedAt": "2026-08-26T05:29:59.678Z"
   },
   "META": {
     "text": "Meta's Hatch AI integration with Reddit data fuels optimism about consumer AI expansion in future.",
@@ -172,49 +181,49 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:35:00.666Z"
+    "updatedAt": "2026-08-26T05:30:09.713Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:35:04.938Z"
+    "updatedAt": "2026-08-26T05:30:14.423Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:35:09.234Z"
+    "updatedAt": "2026-08-26T05:30:19.075Z"
   },
   "AARTIIND.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:35:13.464Z"
+    "updatedAt": "2026-08-26T05:30:23.552Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:35:17.952Z"
+    "updatedAt": "2026-08-26T05:30:28.338Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:35:22.242Z"
+    "updatedAt": "2026-08-26T05:30:32.878Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:35:26.524Z"
+    "updatedAt": "2026-08-26T05:30:37.429Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T04:35:30.817Z"
+    "updatedAt": "2026-08-26T05:30:41.968Z"
   },
   "INDEX": {
     "text": "Robust earnings reports from major sectors across lift investor confidence, propelling broad market gains today.",
@@ -225,11 +234,13 @@
     "updatedAt": "2026-08-26T00:58:14.206Z"
   },
   "INDEX_IN": {
-    "text": "Oil prices fell as hopes rise that the Strait of Hormuz will reopen following renewed Iranian talks.",
+    "text": "Elevated crude oil prices and climbing global Treasury yields dampen risk appetite, curbing market momentum.",
     "source": "macro",
     "articleIds": [
-      "a9f6ba9f-a5b7-3f48-85ce-87876e424650"
+      "67eff8e4-cb17-32d0-b5b4-c22e80ced1a3",
+      "70d14d7a-65b2-3b42-9db6-1ad0cfe6489b",
+      "6a96edf9-ef5e-30b9-bc67-f4678b5d8994"
     ],
-    "updatedAt": "2026-08-26T03:51:00.801Z"
+    "updatedAt": "2026-08-26T05:30:52.666Z"
   }
 }
