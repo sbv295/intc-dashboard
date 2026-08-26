@@ -19,14 +19,13 @@
     "updatedAt": "2026-08-26T08:36:03.849Z"
   },
   "NVDA": {
-    "text": "Anticipation of robust Q2 earnings and hype around upcoming Nvidia‑powered orbital data center fueling optimism.",
+    "text": "Anticipation of Nvidia’s upcoming earnings report and key inflation data driving investor optimism.",
     "source": "stock",
     "articleIds": [
-      "e4a4c946-50d6-4fc8-9e41-26b86b279a24",
-      "01c6acc0-3d8d-4881-b687-f51d282a8cff",
-      "92a4fcf2-99c9-34f2-8fa1-f94a03fbe873"
+      "c2212ed9-17c1-4330-93bd-1643e1810dd6",
+      "d45c7c1e-e02f-4733-9750-2992e90babf9"
     ],
-    "updatedAt": "2026-08-26T09:35:02.156Z"
+    "updatedAt": "2026-08-26T10:28:59.934Z"
   },
   "TSM": {
     "text": "Surging AI demand and capacity expansion on advanced nodes boost earnings outlook, validating growth forecasts.",
@@ -47,13 +46,10 @@
     "updatedAt": "2026-08-26T03:48:56.480Z"
   },
   "MU": {
-    "text": "BMO Capital’s aggressive post‑earnings target and broader market rebound lifted sentiment.",
-    "source": "stock",
-    "articleIds": [
-      "abc659b9-fab3-3f18-bc2e-be2116a444b4",
-      "de79ffd0-f04e-3c28-992c-6801c26cfde3"
-    ],
-    "updatedAt": "2026-08-26T06:37:29.689Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-26T10:29:15.164Z"
   },
   "AVGO": {
     "text": "Earnings miss and rising Google custom‑chip competition, plus Marvell’s expansion eroding Broadcom’s exclusivity in market.",
@@ -65,25 +61,23 @@
     "updatedAt": "2026-08-26T02:23:23.966Z"
   },
   "SPCX": {
-    "text": "Aggressive capex: Starbase launch site and Nvidia‑powered orbital data center slated for 2027, boosting launch cadence prospects.",
+    "text": "",
     "source": "stock",
     "articleIds": [
-      "d8cd2bfd-ec7c-4212-a23d-e4eb198ef91c",
       "01c6acc0-3d8d-4881-b687-f51d282a8cff",
       "31b8587d-e729-3fad-8656-1d7d153d275c"
     ],
-    "updatedAt": "2026-08-26T09:35:29.701Z"
+    "updatedAt": "2026-08-26T10:29:26.006Z"
   },
   "MRVL": {
-    "text": "Earnings outlook, Google warrant, AI expansion, analyst target hike, and valuation upgrade spark optimism today.",
+    "text": "Upcoming earnings report and Google warrant issuance spark optimism, boosting confidence in Marvell's AI strategy.",
     "source": "stock",
     "articleIds": [
       "3b55f93d-74f8-3ba1-8c9c-75e7b88a7a30",
       "65aa68d8-7583-35c5-beda-7676689eccd2",
-      "63cb310d-d759-3b98-bb01-dbc460072387",
-      "f047a254-873e-30ed-887e-e5bebbcf8998"
+      "63cb310d-d759-3b98-bb01-dbc460072387"
     ],
-    "updatedAt": "2026-08-26T09:35:35.318Z"
+    "updatedAt": "2026-08-26T10:29:31.794Z"
   },
   "ARM": {
     "text": "Strategic pivot to sell proprietary data‑center chips and AI accelerators boosts confidence in future growth.",
@@ -117,16 +111,15 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T09:35:56.209Z"
+    "updatedAt": "2026-08-26T10:29:53.554Z"
   },
   "005930.KS": {
-    "text": "AI‑driven demand for memory chips propels Samsung’s valuation higher amid robust semiconductor growth.",
+    "text": "AI-driven gains from Samsung’s semiconductor expansion fuel market rally, boosting investor confidence and valuation.",
     "source": "stock",
     "articleIds": [
-      "ba0417c6-c768-382c-9ab8-470677ce0d3f",
-      "dcc74c70-ce3c-3e5e-9eb9-ed21bf28d81b"
+      "ba0417c6-c768-382c-9ab8-470677ce0d3f"
     ],
-    "updatedAt": "2026-08-26T07:41:35.334Z"
+    "updatedAt": "2026-08-26T10:29:58.614Z"
   },
   "000660.KS": {
     "text": "40 trillion won buyback program signals confidence, boosting investor sentiment amid AI‑driven market rally today.",
@@ -146,86 +139,84 @@
     "updatedAt": "2026-08-26T06:38:24.132Z"
   },
   "MSFT": {
-    "text": "Revenue‑sharing negotiations with China’s Moonshot AI spark optimism about future cloud partnership earnings.",
+    "text": "Pershing Square's AI pivot and Moonshot AI revenue‑sharing negotiations boost confidence in Microsoft's AI strategy.",
     "source": "stock",
     "articleIds": [
+      "384e3861-20ee-3ec5-a7b8-77bd87dc6485",
       "56fadcb4-931e-37c7-9a53-bb4ce451bc81"
     ],
-    "updatedAt": "2026-08-26T08:37:20.568Z"
+    "updatedAt": "2026-08-26T10:30:16.049Z"
   },
   "GOOGL": {
+    "text": "Pershing Square divested Alphabet shares, shifting focus to Microsoft, dampening demand for Google's AI assets.",
+    "source": "stock",
+    "articleIds": [
+      "384e3861-20ee-3ec5-a7b8-77bd87dc6485"
+    ],
+    "updatedAt": "2026-08-26T10:30:21.825Z"
+  },
+  "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T09:36:21.243Z"
-  },
-  "AMZN": {
-    "text": "Nvidia’s biggest customers, including Amazon, turning into rivals, signaling potential AI growth slowdown.",
-    "source": "stock",
-    "articleIds": [
-      "f28acf4a-a552-3d26-9a77-2f387edc236b",
-      "641c804f-6c41-3bf3-bb96-fe01c231193a"
-    ],
-    "updatedAt": "2026-08-26T08:37:31.383Z"
+    "updatedAt": "2026-08-26T10:30:26.878Z"
   },
   "META": {
-    "text": "Billionaire investors buying shares and ongoing settlement talks with states boost confidence, driving recent gains.",
+    "text": "Billionaire investors purchasing shares and ongoing settlement discussions with states boost confidence in Meta’s future.",
     "source": "stock",
     "articleIds": [
       "0bc44a9d-7074-375c-a4ba-d4d4aef7c2ef",
-      "762758d7-fe71-37dd-92c3-c7f4773eff20",
-      "f0b87067-63fc-3ed5-9f9d-276d0a8f981e",
-      "015fb2f0-60dd-3636-a66c-9fca17f50a48"
+      "762758d7-fe71-37dd-92c3-c7f4773eff20"
     ],
-    "updatedAt": "2026-08-26T09:36:32.596Z"
+    "updatedAt": "2026-08-26T10:30:31.863Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T09:36:36.959Z"
+    "updatedAt": "2026-08-26T10:30:36.178Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T09:36:41.330Z"
+    "updatedAt": "2026-08-26T10:30:40.522Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T09:36:45.780Z"
+    "updatedAt": "2026-08-26T10:30:44.781Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T09:36:50.204Z"
+    "updatedAt": "2026-08-26T10:30:49.015Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T09:36:55.166Z"
+    "updatedAt": "2026-08-26T10:30:53.896Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T09:36:59.639Z"
+    "updatedAt": "2026-08-26T10:30:58.165Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T09:37:04.138Z"
+    "updatedAt": "2026-08-26T10:31:02.442Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T09:37:08.567Z"
+    "updatedAt": "2026-08-26T10:31:06.850Z"
   },
   "INDEX": {
     "text": "Robust earnings reports from major sectors across lift investor confidence, propelling broad market gains today.",
