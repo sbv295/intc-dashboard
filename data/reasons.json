@@ -8,33 +8,26 @@
     "updatedAt": "2026-08-26T13:49:19.367Z"
   },
   "AMD": {
-    "text": "Surging data‑center AI demand and launch of TRACE open‑spec for verifiable AI workloads boost confidence.",
+    "text": "A surprise government cash‑account report spurred optimism about AI‑driven data‑center demand and new TRACE security rollout.",
     "source": "stock",
     "articleIds": [
+      "8623b26b-72c5-350a-bbfd-2637f312a184",
       "c2db6ade-faed-3020-8462-1e689624b00e",
-      "f639f324-c302-307e-b0f7-bf6114c04fb1",
-      "735d6fea-3c0d-36fc-ba54-2a4759596546"
+      "f639f324-c302-307e-b0f7-bf6114c04fb1"
     ],
-    "updatedAt": "2026-08-26T13:49:25.168Z"
+    "updatedAt": "2026-08-26T14:38:12.498Z"
   },
   "NVDA": {
-    "text": "Sticky PCE inflation and looming earnings amid worries competition could cut AI data‑center market share.",
-    "source": "stock",
-    "articleIds": [
-      "c2212ed9-17c1-4330-93bd-1643e1810dd6",
-      "7a35be53-010d-4075-abb4-b6e409bd231d",
-      "1f3477ad-0640-358f-a375-2848450fbb87"
-    ],
-    "updatedAt": "2026-08-26T13:49:30.639Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-26T14:38:17.673Z"
   },
   "TSM": {
-    "text": "Surging AI demand and capacity expansion on advanced nodes boost earnings outlook, validating growth forecasts.",
-    "source": "stock",
-    "articleIds": [
-      "3052d107-56d2-3871-8d69-e579dd853c30",
-      "120c9d85-1b44-353c-8195-8bc10a2c7a35"
-    ],
-    "updatedAt": "2026-08-26T09:35:07.545Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-26T14:38:22.798Z"
   },
   "SNDK": {
     "text": "I’m sorry, but I can’t provide a causal phrase based on the given information.",
@@ -45,12 +38,12 @@
     "updatedAt": "2026-08-26T11:23:36.659Z"
   },
   "MU": {
-    "text": "Facing heightened competition from China's YMTC, raising concerns over market share and pricing pressure.",
+    "text": "A surprising government cash‑account report triggered buying, boosting demand for Micron’s memory products.",
     "source": "stock",
     "articleIds": [
-      "dabeb3a7-ecd0-336e-853e-4913d97a7f8a"
+      "8623b26b-72c5-350a-bbfd-2637f312a184"
     ],
-    "updatedAt": "2026-08-26T13:49:47.161Z"
+    "updatedAt": "2026-08-26T14:38:33.527Z"
   },
   "AVGO": {
     "text": "Heavy reliance on a narrow AI customer list constrains revenue growth amid rising competition pressures.",
@@ -62,37 +55,35 @@
     "updatedAt": "2026-08-26T13:49:52.763Z"
   },
   "SPCX": {
-    "text": "Trump’s undisclosed ownership coupled with a $100 billion Starbase build fuels investor uncertainty amid market concerns.",
+    "text": "EchoStar creditors lawsuit over alleged draining of funds for spectrum sale sparks investor uncertainty.",
     "source": "stock",
     "articleIds": [
       "baf25403-09d2-46fb-a11c-d6dbac658bd3",
+      "4cba46af-8899-3c6a-b83c-58fe313e2893",
       "6a717ab2-8627-3040-bf5b-ffd738901139"
     ],
-    "updatedAt": "2026-08-26T13:49:58.800Z"
+    "updatedAt": "2026-08-26T14:38:45.644Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T13:50:03.786Z"
+    "updatedAt": "2026-08-26T14:38:50.599Z"
   },
   "ARM": {
-    "text": "Strategic pivot to sell proprietary data‑center chips and AI accelerators boosts confidence in future growth.",
+    "text": "93X-plus earnings multiple overshadows growth potential, raising concerns about execution risk.",
     "source": "stock",
     "articleIds": [
-      "abe0079d-d1b4-3747-a67d-12d35d052194",
-      "334dd5d6-d115-3c08-a848-9e93c310fbd7"
+      "c93312d1-1652-326a-9933-ddb128c6c574",
+      "a8843c12-e1ea-3c4b-85a7-a6979bd838e1"
     ],
-    "updatedAt": "2026-08-25T20:22:08.717Z"
+    "updatedAt": "2026-08-26T14:38:55.792Z"
   },
   "QCOM": {
-    "text": "Leadership shift appoints Sergio Buniac to spearhead mobile, PC, wearables and XR AI initiatives, boosting confidence.",
-    "source": "stock",
-    "articleIds": [
-      "f319a9bb-e6f3-3567-abe2-a7f0fa97a811",
-      "db0a62c6-54bf-398d-926a-dc78abce1c72"
-    ],
-    "updatedAt": "2026-08-26T12:39:49.928Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-26T14:39:00.812Z"
   },
   "SKHY": {
     "text": "Union vote failure by 25 ballots sparks concentration risk concerns amid rising AI memory demand.",
@@ -105,10 +96,10 @@
     "updatedAt": "2026-08-26T13:50:19.805Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T13:50:24.300Z"
+    "updatedAt": "2026-08-26T14:39:10.662Z"
   },
   "005930.KS": {
     "text": "AI-driven gains from semiconductor demand surge, fueled by expanding AI chip production and strong market momentum.",
@@ -170,7 +161,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T13:51:04.073Z"
+    "updatedAt": "2026-08-26T14:39:47.503Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
@@ -182,13 +173,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T13:51:13.140Z"
+    "updatedAt": "2026-08-26T14:39:56.372Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T13:51:17.568Z"
+    "updatedAt": "2026-08-26T14:40:00.791Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
@@ -200,19 +191,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T13:51:26.422Z"
+    "updatedAt": "2026-08-26T14:40:10.179Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T13:51:30.844Z"
+    "updatedAt": "2026-08-26T14:40:14.625Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T13:51:35.275Z"
+    "updatedAt": "2026-08-26T14:40:19.072Z"
   },
   "INDEX": {
     "text": "Heavy allocations to mega‑cap equity vehicles and cash‑like Treasury ETFs drive market gains for investors.",
