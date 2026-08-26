@@ -1,29 +1,28 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T07:40:25.443Z"
+    "text": "Pelosi's $1.5 million purchase highlights dilution concerns from a $20 billion capital raise that could impact valuation.",
+    "source": "stock",
+    "articleIds": [
+      "1c694244-e51e-37e0-ac48-9fc8a506b7ad"
+    ],
+    "updatedAt": "2026-08-26T08:35:58.544Z"
   },
   "AMD": {
-    "text": "Launch of TRACE AI‑runtime standard and EPYC confidential computing boost confidence in AI‑driven CPU demand",
+    "text": "AI‑focused initiatives—new TRACE security standard, confidential‑computing rollout, and a higher‑memory AI accelerator—fueling strong demand.",
     "source": "stock",
     "articleIds": [
       "2f3c572b-c7a8-41a0-a605-4837244f11d4",
       "f639f324-c302-307e-b0f7-bf6114c04fb1",
-      "735d6fea-3c0d-36fc-ba54-2a4759596546"
+      "735d6fea-3c0d-36fc-ba54-2a4759596546",
+      "22f8d8d4-9066-3d53-a627-aa373e099d3d"
     ],
-    "updatedAt": "2026-08-26T07:40:31.369Z"
+    "updatedAt": "2026-08-26T08:36:03.849Z"
   },
   "NVDA": {
-    "text": "Accelerating networking segment outpaces compute growth, fueling optimism ahead of this upcoming earnings release.",
-    "source": "stock",
-    "articleIds": [
-      "725add4b-68be-414c-866d-33c2bb7505bf",
-      "d45c7c1e-e02f-4733-9750-2992e90babf9",
-      "a1a5cb94-36b5-3bbd-869f-362442258823"
-    ],
-    "updatedAt": "2026-08-26T07:40:36.678Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-26T08:36:08.693Z"
   },
   "TSM": {
     "text": "Surging AI demand and aggressive capacity expansion, bolstered by advanced‑node adoption and upcoming earnings validation.",
@@ -63,15 +62,14 @@
     "updatedAt": "2026-08-26T02:23:23.966Z"
   },
   "SPCX": {
-    "text": "Starbase Louisiana launch site and Nvidia‑powered orbital data center timeline boost confidence in aggressive expansion plans.",
+    "text": "Aggressive capex on Starbase Louisiana launch site and Nvidia‑powered orbital data center launch timeline.",
     "source": "stock",
     "articleIds": [
       "d8cd2bfd-ec7c-4212-a23d-e4eb198ef91c",
       "01c6acc0-3d8d-4881-b687-f51d282a8cff",
-      "719bb564-9ec6-3b1b-b2e5-c4939fd01316",
-      "0fb1a155-b291-3fbf-bf8d-8f08c4d0692b"
+      "719bb564-9ec6-3b1b-b2e5-c4939fd01316"
     ],
-    "updatedAt": "2026-08-26T07:41:05.023Z"
+    "updatedAt": "2026-08-26T08:36:35.572Z"
   },
   "MRVL": {
     "text": "Anticipated earnings release coupled with Google warrant issuance fuels optimism about Marvell's AI chip expansion.",
@@ -95,13 +93,14 @@
     "updatedAt": "2026-08-25T20:22:08.717Z"
   },
   "QCOM": {
-    "text": "New executive Buniac’s appointment signals Qualcomm’s intensified push into AI‑powered mobile and personal devices.",
+    "text": "Leadership change appoints AI‑focused chief, positioning Qualcomm for significant AI hardware expansion and revenue growth.",
     "source": "stock",
     "articleIds": [
       "f319a9bb-e6f3-3567-abe2-a7f0fa97a811",
-      "db0a62c6-54bf-398d-926a-dc78abce1c72"
+      "db0a62c6-54bf-398d-926a-dc78abce1c72",
+      "9a588fdb-7bab-33cc-a1c5-c4adad45fbbe"
     ],
-    "updatedAt": "2026-08-26T07:41:20.828Z"
+    "updatedAt": "2026-08-26T08:36:50.632Z"
   },
   "SKHY": {
     "text": "$28.6 billion share repurchase program fuels optimism amid AI‑driven market rally.",
@@ -116,7 +115,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T07:41:30.240Z"
+    "updatedAt": "2026-08-26T08:37:00.246Z"
   },
   "005930.KS": {
     "text": "AI‑driven demand for memory chips propels Samsung’s valuation higher amid robust semiconductor growth.",
@@ -145,10 +144,12 @@
     "updatedAt": "2026-08-26T06:38:24.132Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-26T07:41:50.665Z"
+    "text": "Revenue‑sharing negotiations with China’s Moonshot AI spark optimism about future cloud partnership earnings.",
+    "source": "stock",
+    "articleIds": [
+      "56fadcb4-931e-37c7-9a53-bb4ce451bc81"
+    ],
+    "updatedAt": "2026-08-26T08:37:20.568Z"
   },
   "GOOGL": {
     "text": "Alphabet’s server costs surged over 15%, tightening margins amid its massive AI infrastructure spend.",
@@ -160,69 +161,70 @@
     "updatedAt": "2026-08-26T07:41:55.731Z"
   },
   "AMZN": {
-    "text": "Nvidia’s major clients, including Amazon, turning into competitors, raising concerns over future AI market share.",
+    "text": "Nvidia’s biggest customers, including Amazon, turning into rivals, signaling potential AI growth slowdown.",
     "source": "stock",
     "articleIds": [
-      "f28acf4a-a552-3d26-9a77-2f387edc236b"
+      "f28acf4a-a552-3d26-9a77-2f387edc236b",
+      "641c804f-6c41-3bf3-bb96-fe01c231193a"
     ],
-    "updatedAt": "2026-08-26T07:42:01.052Z"
+    "updatedAt": "2026-08-26T08:37:31.383Z"
   },
   "META": {
-    "text": "Meta's Hatch AI integration with Reddit data fuels optimism about consumer AI expansion in future.",
+    "text": "Potential billions paid to end teen addiction trial, mitigating legal risk and boosting confidence investors.",
     "source": "stock",
     "articleIds": [
-      "015fb2f0-60dd-3636-a66c-9fca17f50a48",
-      "b097233b-8156-3ec7-9381-7e6590445fde"
+      "86cd9ad6-c38f-3a68-91b0-1335d6fde358",
+      "015fb2f0-60dd-3636-a66c-9fca17f50a48"
     ],
-    "updatedAt": "2026-08-26T03:50:15.517Z"
+    "updatedAt": "2026-08-26T08:37:36.956Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T07:42:10.714Z"
+    "updatedAt": "2026-08-26T08:37:41.227Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T07:42:15.002Z"
+    "updatedAt": "2026-08-26T08:37:45.543Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T07:42:19.220Z"
+    "updatedAt": "2026-08-26T08:37:49.756Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T07:42:23.464Z"
+    "updatedAt": "2026-08-26T08:37:53.980Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T07:42:28.005Z"
+    "updatedAt": "2026-08-26T08:37:58.597Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T07:42:32.287Z"
+    "updatedAt": "2026-08-26T08:38:02.823Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T07:42:36.829Z"
+    "updatedAt": "2026-08-26T08:38:07.089Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T07:42:41.097Z"
+    "updatedAt": "2026-08-26T08:38:11.356Z"
   },
   "INDEX": {
     "text": "Robust earnings reports from major sectors across lift investor confidence, propelling broad market gains today.",
