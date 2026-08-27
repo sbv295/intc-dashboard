@@ -1,37 +1,31 @@
 {
   "INTC": {
-    "text": "Backing AI video startup Higgsfield and securing $23 B for AI chip capacity boost confidence among.",
+    "text": "$23 billion capital raise fuels AI chip capacity expansion, boosting confidence in data‑center demand and roadmap momentum.",
     "source": "stock",
     "articleIds": [
+      "4942bf17-0167-33a4-963e-64d43c84ae49",
       "6f536cb5-a565-3355-8992-16f54f1db784",
       "488647d8-bd2c-36c6-9e85-18aacd8202a7"
     ],
-    "updatedAt": "2026-08-26T21:34:03.471Z"
+    "updatedAt": "2026-08-27T02:47:15.817Z"
   },
   "AMD": {
-    "text": "$4‑5 B bond issuance to fund AI‑chip expansion, bolstered by analyst’s upbeat outlook on rising AI demand.",
-    "source": "stock",
-    "articleIds": [
-      "42727674-22da-3f55-b100-bd80374c56e8",
-      "66362f89-f371-31fc-98ad-9bdec70f3703"
-    ],
-    "updatedAt": "2026-08-26T18:54:18.226Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-27T02:47:21.181Z"
   },
   "NVDA": {
-    "text": "Earnings beat eclipsed by doubts that AI demand growth is already fully priced and unsustainable.",
-    "source": "stock",
-    "articleIds": [
-      "e5e8547e-9587-4c16-accd-0f07459f054a",
-      "978e7e1e-bf80-425f-a062-47e3f069fc7b",
-      "a28a9904-fe8d-4d3f-92d0-5f2b21be963f"
-    ],
-    "updatedAt": "2026-08-26T21:34:14.823Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-27T02:47:26.658Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:34:19.772Z"
+    "updatedAt": "2026-08-27T02:47:31.894Z"
   },
   "SNDK": {
     "text": "Massive capital‑return buybacks coupled with launch of 2TB AI‑optimized flash memory driving investor enthusiasm today.",
@@ -43,16 +37,16 @@
     "updatedAt": "2026-08-26T21:34:25.699Z"
   },
   "MU": {
-    "text": "AI-driven memory demand surge, bolstered by leadership reshuffle and bullish analyst outlook, fuels strong momentum.",
+    "text": "AI‑driven memory demand surge plus veteran leadership boost, fueling cash‑flow‑rich growth expectations.",
     "source": "stock",
     "articleIds": [
       "8ad9a670-a5d3-3773-9e2e-6bb341382148",
       "d7f80b14-8dc7-32d8-aa94-5ee0dea18bdb",
       "57885e55-e555-326c-85ba-063d5a5e224f",
-      "e815a821-3c95-389e-80a2-b5c62b6284f0",
-      "dabeb3a7-ecd0-336e-853e-4913d97a7f8a"
+      "2d576fa7-798b-326b-8164-1760f2affc1d",
+      "e815a821-3c95-389e-80a2-b5c62b6284f0"
     ],
-    "updatedAt": "2026-08-26T21:34:31.402Z"
+    "updatedAt": "2026-08-27T02:47:42.648Z"
   },
   "AVGO": {
     "text": "Retirement‑focused investors view its AI gains as less sustainable than rivals, prompting caution in portfolios.",
@@ -64,61 +58,53 @@
     "updatedAt": "2026-08-26T21:34:36.886Z"
   },
   "SPCX": {
-    "text": "500k+ monthly Starlink sign‑ups, $100 billion Louisiana Starbase, and Coatue’s billion‑dollar backing drive optimism.",
+    "text": "Massive subscriber growth and aggressive Starship spending boost revenue prospects and future AI‑data‑center opportunities.",
     "source": "stock",
     "articleIds": [
       "8b0ebce3-2395-32ff-9b5a-503e68b30746",
-      "ca51e4ca-d2d4-34b8-a2f7-abec1a56b883",
-      "4d51c0e3-6aee-3708-b0d7-ec9d9726b179",
-      "159f91c3-5fb5-3792-8fec-69507eb536be"
+      "4d51c0e3-6aee-3708-b0d7-ec9d9726b179"
     ],
-    "updatedAt": "2026-08-26T21:34:42.614Z"
+    "updatedAt": "2026-08-27T02:47:54.177Z"
   },
   "MRVL": {
-    "text": "AI connectivity focus and a looming $12.2 billion custom chip deal with Google driving investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "263ce67c-b278-3e14-82fc-cfa62fa872e0",
-      "444e2ffd-6944-37a2-8783-950632034f98",
-      "95fce0e3-63e7-364e-87c4-0fabcdef050f"
-    ],
-    "updatedAt": "2026-08-26T21:34:47.963Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-27T02:47:59.506Z"
   },
   "ARM": {
-    "text": "AI accelerator demand and IBM mainframe integration boost confidence in ARM’s own data‑center chip strategy.",
+    "text": "AI accelerator demand surges and IBM’s mainframe integration boost ARM architecture adoption.",
     "source": "stock",
     "articleIds": [
       "abe0079d-d1b4-3747-a67d-12d35d052194",
-      "d7ef53d1-c79a-3fc9-93e7-6113095ba543",
-      "334dd5d6-d115-3c08-a848-9e93c310fbd7"
+      "d7ef53d1-c79a-3fc9-93e7-6113095ba543"
     ],
-    "updatedAt": "2026-08-26T18:55:03.985Z"
+    "updatedAt": "2026-08-27T02:48:04.857Z"
   },
   "QCOM": {
-    "text": "Edge AI expansion via Arduino VENTUNO Q and new Mobile‑Compute‑AI leadership driving optimism.",
+    "text": "New HPC technology tackling AI memory‑bandwidth limits, plus expanded edge AI offerings and leadership shift.",
     "source": "stock",
     "articleIds": [
+      "91349a43-8b01-358c-bdc7-521f6268ca11",
       "08b9c965-35f7-30d6-a1f6-2631780485b8",
       "98b6d8d6-3a6d-3b54-b875-6054601fa118",
-      "f319a9bb-e6f3-3567-abe2-a7f0fa97a811",
-      "db0a62c6-54bf-398d-926a-dc78abce1c72"
+      "f319a9bb-e6f3-3567-abe2-a7f0fa97a811"
     ],
-    "updatedAt": "2026-08-26T18:55:09.672Z"
+    "updatedAt": "2026-08-27T02:48:10.722Z"
   },
   "SKHY": {
-    "text": "Failed union vote by 25 ballots exposing concentration risk at its HBM operations, unsettling investors.",
+    "text": "Massive $720 billion memory‑factory expansion plan fuels investor concerns over capital intensity and future profitability risk.",
     "source": "stock",
     "articleIds": [
-      "cb7cb458-d5d7-34c6-b921-18d36c8c076e",
-      "e961d1c0-f2bd-3a30-af37-df6ff4cde255"
+      "cb7cb458-d5d7-34c6-b921-18d36c8c076e"
     ],
-    "updatedAt": "2026-08-26T21:35:05.758Z"
+    "updatedAt": "2026-08-27T02:48:16.622Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:35:10.103Z"
+    "updatedAt": "2026-08-27T02:48:21.162Z"
   },
   "005930.KS": {
     "text": "Announcement of up to KRW 110 trillion in dividends, buybacks and cancellations fuels rebound.",
@@ -130,108 +116,107 @@
     "updatedAt": "2026-08-26T21:35:17.622Z"
   },
   "000660.KS": {
-    "text": "$28.6 billion share repurchase program boosting investor confidence amid AI‑focused growth plans",
+    "text": "AI memory demand surge prompting packaging plant review and expansion plans, boosting margins.",
     "source": "stock",
     "articleIds": [
-      "bc3c804d-29e6-3527-abd8-ba1669f25b3e",
-      "7b019cd6-69de-3016-8fd6-360cc5e1e64a"
+      "b59f18d3-3c6c-37bd-9f5a-8958c82b8eb3",
+      "3afdbbc2-7c0d-3f6e-b151-1de61279452b",
+      "bc3c804d-29e6-3527-abd8-ba1669f25b3e"
     ],
-    "updatedAt": "2026-08-26T18:55:31.147Z"
+    "updatedAt": "2026-08-27T02:48:32.183Z"
   },
   "AAPL": {
-    "text": "Projected 10 M+ foldable iPhone shipments this year and strong pricing power boost earnings outlook significantly.",
+    "text": "Launch of AI‑powered Macs with M6/M5 chips and debut of foldable iPhone driving enthusiasm.",
     "source": "stock",
     "articleIds": [
+      "48448a29-cf07-3c9d-ba96-be84168c9f15",
+      "5bfed90b-1635-340f-bea5-fa9d017e8b55",
       "c994cf84-63d0-35c9-a782-6df0985d0c2f",
-      "f8791156-6805-3aea-b192-a208cc238f1a",
-      "3f7281bc-7494-3d9e-8455-22a5e23b3a32",
-      "7c10440e-1715-35dd-9b4d-d9f2a50eda2f"
+      "f8791156-6805-3aea-b192-a208cc238f1a"
     ],
-    "updatedAt": "2026-08-26T21:35:28.973Z"
+    "updatedAt": "2026-08-27T02:48:37.659Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:35:33.840Z"
+    "updatedAt": "2026-08-27T02:48:42.214Z"
   },
   "GOOGL": {
-    "text": "$84.75 B financing mainly covering employee‑share tax liabilities rather than expanding AI infrastructure.",
+    "text": "AI‑responsibility team removed from DeepMind Lab, raising independence and threat‑detection concerns.",
     "source": "stock",
     "articleIds": [
-      "959e4436-981e-351b-af26-09b08deecf0c"
+      "f8d76ddd-28bb-3697-a53c-9ebc694e9358"
     ],
-    "updatedAt": "2026-08-26T21:35:39.051Z"
+    "updatedAt": "2026-08-27T02:48:47.504Z"
   },
   "AMZN": {
-    "text": "AWS revenue surge outpaces cash generation, as heavy infrastructure spending drags free cash flow backward.",
-    "source": "stock",
-    "articleIds": [
-      "7de50fb2-5ca8-39d0-ad42-3285c996cea3"
-    ],
-    "updatedAt": "2026-08-26T21:35:44.800Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-27T02:48:52.595Z"
   },
   "META": {
-    "text": "$18 billion settlement of teen social‑media addiction lawsuit removing a major overhang.",
+    "text": "Settlement of $16.68 billion social‑media addiction lawsuit with state attorneys general.",
     "source": "stock",
     "articleIds": [
-      "d9564a45-6e13-31cb-a7e1-0a66ecb84bb4"
+      "7e2d1d7c-9880-40ef-9a9b-90e50bbc94fe"
     ],
-    "updatedAt": "2026-08-26T21:35:50.571Z"
+    "updatedAt": "2026-08-27T02:48:58.011Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:35:54.881Z"
+    "updatedAt": "2026-08-27T02:49:02.471Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:35:59.606Z"
+    "updatedAt": "2026-08-27T02:49:07.586Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:36:03.951Z"
+    "updatedAt": "2026-08-27T02:49:12.032Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:36:08.278Z"
+    "updatedAt": "2026-08-27T02:49:16.538Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:36:13.433Z"
+    "updatedAt": "2026-08-27T02:49:21.248Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:36:17.771Z"
+    "updatedAt": "2026-08-27T02:49:25.728Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:36:22.106Z"
+    "updatedAt": "2026-08-27T02:49:30.691Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:36:26.400Z"
+    "updatedAt": "2026-08-27T02:49:35.259Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-08-26T21:36:31.058Z"
+    "updatedAt": "2026-08-27T02:49:40.155Z"
   },
   "INDEX_IN": {
     "text": "Elevated crude prices and climbing global Treasury yields dampen risk appetite, curbing market momentum today.",
