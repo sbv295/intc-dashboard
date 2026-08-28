@@ -1,12 +1,11 @@
 {
   "INTC": {
-    "text": "Nvidia’s modest $5 billion entry price appears cheap, sparking optimism about Intel’s valuation upside.",
+    "text": "Pelosi’s purchase of call options and equity signals confidence, fueling investor optimism and price surge.",
     "source": "stock",
     "articleIds": [
-      "902d9e03-5c1e-3f04-aeed-234e4c6839d9",
-      "dc38f950-5616-3eb3-80e5-badf5a397338"
+      "48391798-8123-3eb7-bafe-05eb3c3a2934"
     ],
-    "updatedAt": "2026-08-27T23:27:37.994Z"
+    "updatedAt": "2026-08-28T08:30:50.862Z"
   },
   "AMD": {
     "text": "Cathie Wood’s ARK fund sold AMD holdings, signaling reduced confidence amid AI‑chip competition.",
@@ -39,189 +38,184 @@
     "updatedAt": "2026-08-27T23:27:54.721Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-27T23:27:59.657Z"
+    "text": "explosive demand for high‑performance memory in AI‑driven data‑center applications",
+    "source": "stock",
+    "articleIds": [
+      "71355854-1d72-36b9-ad08-8dab1494717e"
+    ],
+    "updatedAt": "2026-08-28T08:31:12.498Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:28:05.043Z"
+    "updatedAt": "2026-08-28T08:31:17.366Z"
   },
   "AVGO": {
-    "text": "Cathie Wood’s $20 M endorsement plus accelerating AI XPU demand and post‑quantum push fuels optimism now.",
+    "text": "Rising demand for OpenAI’s Jalapeño AI inference chip and upbeat Nvidia earnings fueling AI infrastructure optimism.",
     "source": "stock",
     "articleIds": [
-      "3f22717f-1a01-37aa-97b4-fceceef5ffe0",
-      "a2cc4853-30e3-3202-9b0d-6ec6c404bf32",
-      "41c86c2e-2f8b-3c70-8b85-18bc323888cc"
+      "eee0908d-3aa6-3947-b6fd-8e0519446313",
+      "9fed4453-e71d-3834-8fda-4be0f68b1508"
     ],
-    "updatedAt": "2026-08-27T23:28:10.849Z"
+    "updatedAt": "2026-08-28T08:31:22.289Z"
   },
   "SPCX": {
+    "text": "Anticipation of receiving Nvidia’s Vera Rubin CPU and Musk’s $3.5 trillion revenue forecast fuels optimism among investors.",
+    "source": "stock",
+    "articleIds": [
+      "fb816ed2-b761-44f4-b1e8-5f0f8521d88d",
+      "5515c718-c82a-372f-bd68-91db48bf6529"
+    ],
+    "updatedAt": "2026-08-28T08:31:27.580Z"
+  },
+  "MRVL": {
+    "text": "Weaker-than-expected quarterly earnings dampening investor confidence despite AI partnership optimism.",
+    "source": "stock",
+    "articleIds": [
+      "acb6b279-1f99-450f-80c8-cef8cc80288a",
+      "21bec9f1-dbfb-3793-879b-8edfede43926"
+    ],
+    "updatedAt": "2026-08-28T08:31:32.955Z"
+  },
+  "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:28:15.930Z"
-  },
-  "MRVL": {
-    "text": "Quarterly earnings barely met forecasts, missing the blow‑out expectations investors hoped for.",
-    "source": "stock",
-    "articleIds": [
-      "72d0ef6e-2f1b-454a-b15d-298715917bc2",
-      "acb6b279-1f99-450f-80c8-cef8cc80288a",
-      "6b87d7a6-b143-31e3-b451-5ad4763f7e76",
-      "449f7d34-dee4-3c62-a6e8-d690c340fe3b"
-    ],
-    "updatedAt": "2026-08-27T23:28:21.701Z"
-  },
-  "ARM": {
-    "text": "AI accelerator demand surges and IBM’s mainframe integration boost ARM architecture adoption.",
-    "source": "stock",
-    "articleIds": [
-      "abe0079d-d1b4-3747-a67d-12d35d052194",
-      "d7ef53d1-c79a-3fc9-93e7-6113095ba543"
-    ],
-    "updatedAt": "2026-08-27T02:48:04.857Z"
+    "updatedAt": "2026-08-28T08:31:37.389Z"
   },
   "QCOM": {
-    "text": "HPC roadmap tackling AI memory bottlenecks and expanding edge AI with VENTUNO Q lifts investor confidence.",
+    "text": "Vietnam's push for AI chip investment plus Qualcomm's HPC roadmap tackling memory bottlenecks fuels optimism.",
     "source": "stock",
     "articleIds": [
+      "c9bf9eb3-d9d2-3799-afa1-1e104e6b5ef6",
       "91349a43-8b01-358c-bdc7-521f6268ca11",
-      "08b9c965-35f7-30d6-a1f6-2631780485b8",
-      "98b6d8d6-3a6d-3b54-b875-6054601fa118"
+      "08b9c965-35f7-30d6-a1f6-2631780485b8"
     ],
-    "updatedAt": "2026-08-27T23:28:31.807Z"
+    "updatedAt": "2026-08-28T08:31:43.098Z"
   },
   "SKHY": {
-    "text": "Groundbreaking $4 billion Indiana HBM plant to meet Nvidia’s massive AI memory demand.",
+    "text": "AI‑driven memory shortage outlook through 2030, boosted by $4 B Indiana HBM plant and Nvidia supply partnership.",
     "source": "stock",
     "articleIds": [
+      "f9d881df-f1f7-352f-bf00-4db07339199e",
+      "70df6803-aa78-396d-afd5-3e42741ea887",
       "fdaa16a1-9610-3857-bfae-1cc3a77f201c",
       "992f6887-e2eb-3b20-ab05-5954a4b563c4",
-      "60f63131-4c82-3bf2-85a4-ed26cfc53045",
-      "b97075a4-15f7-32e3-910c-ab4deee689d2"
+      "60f63131-4c82-3bf2-85a4-ed26cfc53045"
     ],
-    "updatedAt": "2026-08-27T23:28:37.745Z"
+    "updatedAt": "2026-08-28T08:31:48.338Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:28:42.088Z"
+    "updatedAt": "2026-08-28T08:31:52.876Z"
   },
   "005930.KS": {
-    "text": "Nvidia‑driven memory shortage boosting pricing power and cash generation.",
-    "source": "stock",
-    "articleIds": [
-      "fb9edb82-f333-3dbb-8a10-0b88e14e51c4",
-      "b2739bb0-6671-3799-b2cd-0e6ba4842537",
-      "01240a90-4e37-3ee7-9c0a-a22ca6660745"
-    ],
-    "updatedAt": "2026-08-27T23:28:47.389Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-28T08:31:57.972Z"
   },
   "000660.KS": {
-    "text": "Breaking ground on a $4 billion Indiana HBM plant to meet Nvidia’s massive AI memory demand.",
-    "source": "stock",
-    "articleIds": [
-      "fdaa16a1-9610-3857-bfae-1cc3a77f201c",
-      "992f6887-e2eb-3b20-ab05-5954a4b563c4",
-      "60f63131-4c82-3bf2-85a4-ed26cfc53045",
-      "b97075a4-15f7-32e3-910c-ab4deee689d2"
-    ],
-    "updatedAt": "2026-08-27T23:28:52.627Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-28T08:32:02.999Z"
   },
   "AAPL": {
-    "text": "AI‑centric Mac refresh featuring new M6 chip and upcoming September product event fuels investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "d911fca3-0732-45fc-a109-8f730539e24b",
-      "38d87b22-d8b6-3ce9-af0c-0c84b3f0bf66"
-    ],
-    "updatedAt": "2026-08-27T23:28:57.756Z"
-  },
-  "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:29:02.124Z"
+    "updatedAt": "2026-08-28T08:32:08.025Z"
   },
-  "GOOGL": {
-    "text": "Final‑stage FTC probe into YouTube consumer‑protection practices raises regulatory risk and investor uncertainty amid scrutiny.",
+  "MSFT": {
+    "text": "Anticipation of strong earnings after Burry’s Nvidia rally spurred investor optimism.",
     "source": "stock",
     "articleIds": [
-      "7d0684fd-931a-3b12-a07d-fc1e3788d294"
+      "81024e3f-7e3d-3ea8-960a-213227935597"
     ],
-    "updatedAt": "2026-08-27T23:29:07.788Z"
+    "updatedAt": "2026-08-28T08:32:13.294Z"
+  },
+  "GOOGL": {
+    "text": "Paying $353.3 million UK settlement and facing FTC YouTube probe fuels investor concerns.",
+    "source": "stock",
+    "articleIds": [
+      "0db6c0c6-f490-32b9-a99d-62c002c3ff37",
+      "9f15d202-661c-3c33-b19f-3bf22c4d2d0b",
+      "9131f28a-854f-3226-950c-00f5614da148"
+    ],
+    "updatedAt": "2026-08-28T08:32:18.581Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:29:12.960Z"
+    "updatedAt": "2026-08-28T08:32:23.347Z"
   },
   "META": {
-    "text": "Legal settlement permitting retention of children’s data for age‑detection models, sparking privacy‑related investor concerns.",
+    "text": "Restrictions on teenage social‑media use stemming from a new settlement, raising concerns over user engagement.",
     "source": "stock",
     "articleIds": [
       "2a698158-9631-39cb-bb9f-51e2ac2d4bad",
-      "51e7f4b7-1563-38f5-b464-50e7355fd45b",
-      "5280003d-c29e-3325-ae01-4da3d2a4115e"
+      "f564875c-8dad-3234-9e1a-278e9c214e10",
+      "51e7f4b7-1563-38f5-b464-50e7355fd45b"
     ],
-    "updatedAt": "2026-08-27T23:29:18.307Z"
+    "updatedAt": "2026-08-28T08:32:28.596Z"
   },
   "HDFCBANK.NS": {
-    "text": "Legal challenges and leadership uncertainty eroding investor confidence.",
-    "source": "stock",
-    "articleIds": [
-      "de91df48-7a79-37d1-bcfa-5d7785fb7396"
-    ],
-    "updatedAt": "2026-08-27T13:34:33.593Z"
-  },
-  "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:29:27.942Z"
+    "updatedAt": "2026-08-28T08:32:33.477Z"
+  },
+  "ICICIBANK.NS": {
+    "text": "Prudential's $333 million open‑market sale of a 2% stake raises dilution worries among investors and market.",
+    "source": "stock",
+    "articleIds": [
+      "6e4c630f-018f-398e-85b8-f841ce1035bb"
+    ],
+    "updatedAt": "2026-08-28T08:32:38.998Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:29:32.516Z"
+    "updatedAt": "2026-08-28T08:32:43.476Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:29:36.824Z"
+    "updatedAt": "2026-08-28T08:32:47.840Z"
   },
   "TCS.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-27T23:29:41.402Z"
+    "text": "Acquiring MHP for €320 million to launch an AI Mobility Centre of Excellence with Porsche.",
+    "source": "stock",
+    "articleIds": [
+      "88a5513b-673b-3832-a0a5-968a6c4ee800",
+      "069b15e4-d4de-3641-8d4f-aa8a002c9e6a"
+    ],
+    "updatedAt": "2026-08-28T08:32:52.794Z"
   },
   "INFY.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:29:45.741Z"
+    "updatedAt": "2026-08-28T08:32:57.533Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:29:50.048Z"
+    "updatedAt": "2026-08-28T08:33:01.983Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-27T23:29:54.406Z"
+    "updatedAt": "2026-08-28T08:33:06.444Z"
   },
   "INDEX": {
     "text": "Seasonal volatility easing, reinforced technical trends and bullish sentiment, bolstered by optimism ahead of the Jackson Hole symposium.",
