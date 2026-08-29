@@ -20,10 +20,12 @@
     "updatedAt": "2026-08-28T20:35:35.933Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-29T14:53:27.114Z"
+    "text": "No specific Nvidia-related news identified in the provided articles.",
+    "source": "stock",
+    "articleIds": [
+      "b7788304-afcd-39c5-b3be-dc82758849bc"
+    ],
+    "updatedAt": "2026-08-29T18:07:09.322Z"
   },
   "TSM": {
     "text": "valuation appears stretched despite a 363% three‑year run, raising concerns over risk‑adjusted returns.",
@@ -47,12 +49,10 @@
     "updatedAt": "2026-08-29T14:53:38.636Z"
   },
   "MU": {
-    "text": "Shortage news failed to boost investor confidence, limiting price momentum despite strong memory demand today.",
-    "source": "stock",
-    "articleIds": [
-      "d845bc06-12b2-343c-bf7d-3a6740aadbc8"
-    ],
-    "updatedAt": "2026-08-29T09:55:38.616Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-29T18:07:24.834Z"
   },
   "AVGO": {
     "text": "Quarterly AI revenue lagging and labor market softness raise doubts about sustaining cash conversion momentum.",
@@ -64,13 +64,14 @@
     "updatedAt": "2026-08-29T14:53:49.827Z"
   },
   "SPCX": {
-    "text": "Growing political resistance to terrestrial data centers boosting orbital compute appeal, plus ambitious Louisiana coast investment.",
+    "text": "Institutional overweight plus a lockup release buyer, bolstered by record‑breaking launch cadence, fuels optimism.",
     "source": "stock",
     "articleIds": [
-      "d9fd9dd2-b8fb-3ccc-a361-83c12fa79b8a",
-      "f77ddb2b-7a45-3562-9d59-4c62138d1cf3"
+      "b632c62a-888e-3afa-8470-b1a40f36c6c5",
+      "8ca7ff82-59a3-3f2b-8118-562fffcf0f78",
+      "225b092f-a254-36c1-85ee-813234b60642"
     ],
-    "updatedAt": "2026-08-29T14:53:55.565Z"
+    "updatedAt": "2026-08-29T18:07:35.765Z"
   },
   "MRVL": {
     "text": "Guidance for lower gross margins despite stellar AI bookings and strong data‑center results spooked investors.",
@@ -87,66 +88,63 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:54:05.821Z"
+    "updatedAt": "2026-08-29T18:07:46.022Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:54:10.769Z"
+    "updatedAt": "2026-08-29T18:07:51.340Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:54:15.894Z"
+    "updatedAt": "2026-08-29T18:07:56.316Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:54:20.405Z"
+    "updatedAt": "2026-08-29T18:08:00.709Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:54:25.372Z"
+    "updatedAt": "2026-08-29T18:08:05.631Z"
   },
   "000660.KS": {
-    "text": "valuation appears stretched after a 16‑fold return, prompting profit‑taking amid concerns of limited upside.",
-    "source": "stock",
-    "articleIds": [
-      "f9d881df-f1f7-352f-bf00-4db07339199e"
-    ],
-    "updatedAt": "2026-08-29T03:01:02.247Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-29T18:08:10.412Z"
   },
   "AAPL": {
-    "text": "Price increases for Apple TV and Apple One subscriptions boost revenue outlook, fueling today’s gain.",
+    "text": "Investor confidence boosted by Tim Cook’s endorsement of the upcoming CEO transition.",
     "source": "stock",
     "articleIds": [
-      "5cbf94c9-41e3-3158-beb5-cdd15d235bf7",
+      "941a3ced-9eb6-324e-8256-15f1427063cc",
+      "9bd4a306-38f9-30a2-bdb4-e19fc11c0e4a",
       "f71ad446-1f7b-3fd7-9a31-767c245e765e"
     ],
-    "updatedAt": "2026-08-29T09:56:30.761Z"
+    "updatedAt": "2026-08-29T18:08:15.724Z"
   },
   "MSFT": {
-    "text": "Record $24.1 B OpenAI revenue and top A+ accumulation rating boost confidence in software rebound.",
+    "text": "Long‑term AI data‑center partnership with Chevron boosting confidence and masking broader market weakness.",
     "source": "stock",
     "articleIds": [
+      "831da3a3-5d14-38fa-bc94-3465a673af4e",
       "5851be5e-4456-36df-acc2-e391c82c51f8",
-      "b414058c-8e62-33ba-b995-207f327e190e",
-      "7fb55ca6-5870-3a6d-8144-c92a5b782baa"
+      "b414058c-8e62-33ba-b995-207f327e190e"
     ],
-    "updatedAt": "2026-08-29T14:54:42.747Z"
+    "updatedAt": "2026-08-29T18:08:20.950Z"
   },
   "GOOGL": {
-    "text": "Launch of Gemini Enterprise for Financial Services, enabling AI agents within regulated banking compliance frameworks.",
-    "source": "stock",
-    "articleIds": [
-      "1e1a2e28-064d-38d6-8b4c-2cd4f0c15ae5"
-    ],
-    "updatedAt": "2026-08-29T14:54:48.107Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-29T18:08:25.832Z"
   },
   "AMZN": {
     "text": "Analyst favoritism driven by expectations of magnificent earnings growth and strong profit expansion prospects ahead.",
@@ -157,21 +155,19 @@
     "updatedAt": "2026-08-29T14:54:53.432Z"
   },
   "META": {
-    "text": "Open‑sourcing its most powerful AI model, signaling aggressive AI monetization strategy and competitive edge potential.",
+    "text": "Open‑sourcing its flagship AI model and anticipation of a benchmark‑setting Jio IPO fuel investor optimism.",
     "source": "stock",
     "articleIds": [
       "cb2c8f1f-8bb7-3a19-bdee-e0ac044cb47f",
-      "7d3671d8-cd8c-33a7-a2a6-59424bbd5733",
-      "76382372-e68a-33b7-8460-18cc96e7d06d",
-      "c24bf905-30ac-3246-a11c-0c52916a50ef"
+      "7d3671d8-cd8c-33a7-a2a6-59424bbd5733"
     ],
-    "updatedAt": "2026-08-29T09:56:51.749Z"
+    "updatedAt": "2026-08-29T18:08:35.904Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:55:03.487Z"
+    "updatedAt": "2026-08-29T18:08:40.778Z"
   },
   "ICICIBANK.NS": {
     "text": "Prudential's $333 million open‑market sale of a 2% stake raises dilution worries among investors and market.",
@@ -185,13 +181,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:55:13.054Z"
+    "updatedAt": "2026-08-29T18:08:50.573Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:55:17.792Z"
+    "updatedAt": "2026-08-29T18:08:54.903Z"
   },
   "TCS.NS": {
     "text": "Acquiring MHP for €320 million to launch an AI Mobility Centre of Excellence with Porsche.",
@@ -206,19 +202,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:55:27.750Z"
+    "updatedAt": "2026-08-29T18:09:04.143Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:55:32.270Z"
+    "updatedAt": "2026-08-29T18:09:08.612Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T14:55:36.773Z"
+    "updatedAt": "2026-08-29T18:09:12.892Z"
   },
   "INDEX": {
     "text": "Midday profit‑taking amid weaker earnings outlook dampened investor confidence.",
