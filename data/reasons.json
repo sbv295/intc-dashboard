@@ -20,12 +20,10 @@
     "updatedAt": "2026-08-28T20:35:35.933Z"
   },
   "NVDA": {
-    "text": "No specific Nvidia-related news identified in the provided articles.",
-    "source": "stock",
-    "articleIds": [
-      "b7788304-afcd-39c5-b3be-dc82758849bc"
-    ],
-    "updatedAt": "2026-08-29T18:07:09.322Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-29T21:28:42.318Z"
   },
   "TSM": {
     "text": "valuation appears stretched despite a 363% three‑year run, raising concerns over risk‑adjusted returns.",
@@ -37,31 +35,25 @@
     "updatedAt": "2026-08-29T14:53:33.098Z"
   },
   "SNDK": {
-    "text": "$31 B Japan expansion and $14 B buyback amid AI‑driven memory shortage boosting growth prospects.",
-    "source": "stock",
-    "articleIds": [
-      "2c7825c9-cf5b-3227-a31f-9a1d90a0a36e",
-      "d0c066c0-ab28-3596-95f4-e0b949038429",
-      "d58705ad-e1a6-3095-be4f-ee75af3abc8a",
-      "e2d06a33-140a-3adf-8664-da6a241fa669",
-      "0d15e87b-990f-3bac-95a2-7044f6240628"
-    ],
-    "updatedAt": "2026-08-29T14:53:38.636Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-29T21:28:52.399Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:07:24.834Z"
+    "updatedAt": "2026-08-29T21:28:57.399Z"
   },
   "AVGO": {
-    "text": "Quarterly AI revenue lagging and labor market softness raise doubts about sustaining cash conversion momentum.",
+    "text": "Investor sell‑off and weaker quarterly earnings amid labor‑market concerns.",
     "source": "stock",
     "articleIds": [
-      "803c8db6-5d54-34a2-8277-a884f0b954da",
-      "b008e139-eb47-35f7-bd8f-5b304e65c126"
+      "b5379027-2805-3c8f-a53f-c4763263327e",
+      "803c8db6-5d54-34a2-8277-a884f0b954da"
     ],
-    "updatedAt": "2026-08-29T14:53:49.827Z"
+    "updatedAt": "2026-08-29T21:29:02.622Z"
   },
   "SPCX": {
     "text": "Institutional overweight plus a lockup release buyer, bolstered by record‑breaking launch cadence, fuels optimism.",
@@ -88,47 +80,43 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:07:46.022Z"
+    "updatedAt": "2026-08-29T21:29:18.576Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:07:51.340Z"
+    "updatedAt": "2026-08-29T21:29:23.386Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:07:56.316Z"
+    "updatedAt": "2026-08-29T21:29:28.462Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:08:00.709Z"
+    "updatedAt": "2026-08-29T21:29:32.834Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:08:05.631Z"
+    "updatedAt": "2026-08-29T21:29:37.939Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:08:10.412Z"
+    "updatedAt": "2026-08-29T21:29:42.729Z"
   },
   "AAPL": {
-    "text": "Investor confidence boosted by Tim Cook’s endorsement of the upcoming CEO transition.",
-    "source": "stock",
-    "articleIds": [
-      "941a3ced-9eb6-324e-8256-15f1427063cc",
-      "9bd4a306-38f9-30a2-bdb4-e19fc11c0e4a",
-      "f71ad446-1f7b-3fd7-9a31-767c245e765e"
-    ],
-    "updatedAt": "2026-08-29T18:08:15.724Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-29T21:29:47.799Z"
   },
   "MSFT": {
     "text": "Long‑term AI data‑center partnership with Chevron boosting confidence and masking broader market weakness.",
@@ -144,30 +132,32 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:08:25.832Z"
+    "updatedAt": "2026-08-29T21:29:58.672Z"
   },
   "AMZN": {
-    "text": "Analyst favoritism driven by expectations of magnificent earnings growth and strong profit expansion prospects ahead.",
+    "text": "Tripling Nvidia GPU orders for AI workloads and expanding Zoox robotaxi supplier network boost growth prospects.",
     "source": "stock",
     "articleIds": [
+      "fcc6c7a1-676c-330e-9793-c6d6aae3bdc8",
+      "fc8aee8d-ab63-3b7d-8c3b-1f53ba7c46a1",
       "2b47c372-177e-3051-aa01-406a8d82b220"
     ],
-    "updatedAt": "2026-08-29T14:54:53.432Z"
+    "updatedAt": "2026-08-29T21:30:03.620Z"
   },
   "META": {
-    "text": "Open‑sourcing its flagship AI model and anticipation of a benchmark‑setting Jio IPO fuel investor optimism.",
+    "text": "Open‑sourcing its powerful AI model and founder‑led AI focus boost investor confidence amid rate concerns",
     "source": "stock",
     "articleIds": [
-      "cb2c8f1f-8bb7-3a19-bdee-e0ac044cb47f",
-      "7d3671d8-cd8c-33a7-a2a6-59424bbd5733"
+      "ba48c79a-43da-33b0-87a6-50539fb4f101",
+      "cb2c8f1f-8bb7-3a19-bdee-e0ac044cb47f"
     ],
-    "updatedAt": "2026-08-29T18:08:35.904Z"
+    "updatedAt": "2026-08-29T21:30:08.930Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:08:40.778Z"
+    "updatedAt": "2026-08-29T21:30:13.641Z"
   },
   "ICICIBANK.NS": {
     "text": "Prudential's $333 million open‑market sale of a 2% stake raises dilution worries among investors and market.",
@@ -181,13 +171,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:08:50.573Z"
+    "updatedAt": "2026-08-29T21:30:23.509Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:08:54.903Z"
+    "updatedAt": "2026-08-29T21:30:27.787Z"
   },
   "TCS.NS": {
     "text": "Acquiring MHP for €320 million to launch an AI Mobility Centre of Excellence with Porsche.",
@@ -202,19 +192,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:09:04.143Z"
+    "updatedAt": "2026-08-29T21:30:37.494Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:09:08.612Z"
+    "updatedAt": "2026-08-29T21:30:41.866Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-29T18:09:12.892Z"
+    "updatedAt": "2026-08-29T21:30:46.185Z"
   },
   "INDEX": {
     "text": "Midday profit‑taking amid weaker earnings outlook dampened investor confidence.",
