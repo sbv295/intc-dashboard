@@ -23,7 +23,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:02:02.683Z"
+    "updatedAt": "2026-08-30T09:39:43.773Z"
   },
   "TSM": {
     "text": "valuation appears stretched despite a 363% three‑year run, raising concerns over risk‑adjusted returns.",
@@ -35,10 +35,16 @@
     "updatedAt": "2026-08-29T14:53:33.098Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-30T03:02:12.828Z"
+    "text": "$31 billion joint Japan flash‑memory expansion investment through 2032, boosting growth prospects.",
+    "source": "stock",
+    "articleIds": [
+      "df2c276e-f7ca-3a55-beea-0603bbf02ee6",
+      "66aa2654-ba25-339f-8768-a0fafd81501b",
+      "bee50f80-015f-3ae7-bbc7-2605d5ba3d06",
+      "2c7825c9-cf5b-3227-a31f-9a1d90a0a36e",
+      "d0c066c0-ab28-3596-95f4-e0b949038429"
+    ],
+    "updatedAt": "2026-08-30T09:39:53.907Z"
   },
   "MU": {
     "text": "Shortage news failed to boost investor confidence, limiting price momentum despite strong memory demand today.",
@@ -58,14 +64,14 @@
     "updatedAt": "2026-08-29T21:29:02.622Z"
   },
   "SPCX": {
-    "text": "Projected $3.5 trillion 2033 revenue and a $100",
+    "text": "Morgan Stanley’s $100 billion bet and Musk’s $3.5 trillion revenue forecast fuel heightened growth optimism.",
     "source": "stock",
     "articleIds": [
+      "03e2f0ad-b3c0-399e-8821-dde62b6cef70",
       "429b77cb-de62-3428-9cb7-326152798492",
-      "0bb05004-fba4-3467-bcc6-90e37dd747fc",
-      "bb13e252-b48d-3629-a806-236d0befabcc"
+      "0bb05004-fba4-3467-bcc6-90e37dd747fc"
     ],
-    "updatedAt": "2026-08-30T03:02:29.344Z"
+    "updatedAt": "2026-08-30T09:40:10.604Z"
   },
   "MRVL": {
     "text": "Guidance for lower gross margins despite stellar AI bookings and strong data‑center results spooked investors.",
@@ -82,37 +88,37 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:02:39.098Z"
+    "updatedAt": "2026-08-30T09:40:20.293Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:02:43.666Z"
+    "updatedAt": "2026-08-30T09:40:24.932Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:02:48.917Z"
+    "updatedAt": "2026-08-30T09:40:29.763Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:02:53.301Z"
+    "updatedAt": "2026-08-30T09:40:34.091Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:02:57.926Z"
+    "updatedAt": "2026-08-30T09:40:38.838Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:03:02.388Z"
+    "updatedAt": "2026-08-30T09:40:43.344Z"
   },
   "AAPL": {
     "text": "M6 2nm chip launch positioning Apple ahead in on‑device AI, fueling investor optimism amid upcoming September product announcements.",
@@ -126,13 +132,12 @@
     "updatedAt": "2026-08-30T03:03:07.977Z"
   },
   "MSFT": {
-    "text": "Chevron AI data‑center partnership fuels investor optimism, highlighting Microsoft’s expanding cloud and AI infrastructure.",
+    "text": "energy agreement with Chevron fuels AI data‑center expansion, supporting its services and boosting investor confidence",
     "source": "stock",
     "articleIds": [
-      "831da3a3-5d14-38fa-bc94-3465a673af4e",
-      "5851be5e-4456-36df-acc2-e391c82c51f8"
+      "831da3a3-5d14-38fa-bc94-3465a673af4e"
     ],
-    "updatedAt": "2026-08-30T03:03:12.995Z"
+    "updatedAt": "2026-08-30T09:40:54.889Z"
   },
   "GOOGL": {
     "text": "AI‑enhanced search boosting value while subscription services provide predictable, diversified revenue growth for investors now.",
@@ -143,15 +148,15 @@
     "updatedAt": "2026-08-30T03:03:18.142Z"
   },
   "AMZN": {
-    "text": "Tripling Nvidia AI chip orders and expanding robotaxi camera supply boost growth outlook.",
+    "text": "Tripling Nvidia GPU orders for AI workloads and expanding robotaxi supplier network fuels growth optimism.",
     "source": "stock",
     "articleIds": [
+      "c9bdf703-f331-3215-bd96-989948661786",
       "c6bdf642-bbdf-3000-b719-e8fda3904fef",
       "fcc6c7a1-676c-330e-9793-c6d6aae3bdc8",
-      "fc8aee8d-ab63-3b7d-8c3b-1f53ba7c46a1",
-      "2b47c372-177e-3051-aa01-406a8d82b220"
+      "fc8aee8d-ab63-3b7d-8c3b-1f53ba7c46a1"
     ],
-    "updatedAt": "2026-08-29T23:51:08.632Z"
+    "updatedAt": "2026-08-30T09:41:05.908Z"
   },
   "META": {
     "text": "Open‑sourcing its powerful AI model and founder‑led AI focus boost investor confidence amid rate concerns",
@@ -166,7 +171,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:03:33.726Z"
+    "updatedAt": "2026-08-30T09:41:15.813Z"
   },
   "ICICIBANK.NS": {
     "text": "Prudential's $333 million open‑market sale of a 2% stake raises dilution worries among investors and market.",
@@ -180,13 +185,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:03:43.330Z"
+    "updatedAt": "2026-08-30T09:41:24.803Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:03:47.551Z"
+    "updatedAt": "2026-08-30T09:41:29.022Z"
   },
   "TCS.NS": {
     "text": "Acquiring MHP for €320 million to launch an AI Mobility Centre of Excellence with Porsche.",
@@ -201,19 +206,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:03:56.867Z"
+    "updatedAt": "2026-08-30T09:41:38.343Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:04:01.142Z"
+    "updatedAt": "2026-08-30T09:41:42.611Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-30T03:04:05.367Z"
+    "updatedAt": "2026-08-30T09:41:46.847Z"
   },
   "INDEX": {
     "text": "Midday profit‑taking amid weaker earnings outlook dampened investor confidence.",
