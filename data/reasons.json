@@ -1,33 +1,40 @@
 {
   "INTC": {
-    "text": "CEO’s bullish outlook, CFO’s financial confidence, and potential SK Hynix foundry partnership driving optimism for growth.",
+    "text": "CEO touts 12 million growth catalysts while CFO outlines benefits, plus potential SK Hynix foundry partnership soon.",
     "source": "stock",
     "articleIds": [
       "3de54967-df39-37bd-ac34-1622d58e8838",
-      "f4e62109-88a1-3f26-9769-b6faaf8c8d8b",
       "4dae47a1-ff19-3465-8680-2db349cd3e9e"
     ],
-    "updatedAt": "2026-08-31T14:44:09.181Z"
+    "updatedAt": "2026-08-31T20:34:43.024Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-31T14:44:14.445Z"
-  },
-  "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-31T14:44:19.055Z"
-  },
-  "TSM": {
-    "text": "New chip production wins boosting growth outlook and supporting valuation despite stretched price levels.",
+    "text": "New Saudi AI infrastructure contracts and European sovereign AI showcase validate AMD's processors, fueling growth.",
     "source": "stock",
     "articleIds": [
+      "ef799092-cb01-3541-befc-df152830f55c",
+      "77c8e8d0-d2c1-388b-8ca0-ac924a2a67ad",
+      "87a0355c-c3d7-3d30-bf31-eec7d8cc320f"
+    ],
+    "updatedAt": "2026-08-31T20:34:48.875Z"
+  },
+  "NVDA": {
+    "text": "Analyst upgrades and a bullish earnings beat raise expectations, sparking fresh breakout momentum.",
+    "source": "stock",
+    "articleIds": [
+      "cf596b01-f1f7-3f47-a099-0149c6b6c0e0"
+    ],
+    "updatedAt": "2026-08-31T20:34:54.142Z"
+  },
+  "TSM": {
+    "text": "Valuation stretch concerns as DCF suggests intrinsic value exceeds current price, prompting profit‑taking.",
+    "source": "stock",
+    "articleIds": [
+      "264b7058-3c7d-3cd0-8f0a-ae580ea71449",
+      "793c4003-bf43-3cca-8bba-23c57440b605",
       "a0f5350b-caeb-3170-97a8-11a2424af353"
     ],
-    "updatedAt": "2026-08-31T14:44:24.286Z"
+    "updatedAt": "2026-08-31T20:34:59.578Z"
   },
   "SNDK": {
     "text": "Backing a $31 billion Japan flash‑memory expansion, fueling growth expectations for data‑center and AI demand.",
@@ -40,54 +47,62 @@
     "updatedAt": "2026-08-31T14:44:30.119Z"
   },
   "MU": {
-    "text": "$10 billion research investment hailed by Trump, signaling policy support and boosting confidence in future growth",
+    "text": "AI earnings outlook exceeding expectations, reinforced by Jim Cramer’s endorsement and a technical “buy‑the‑dip” trendline signal.",
     "source": "stock",
     "articleIds": [
-      "1740809b-f637-327a-b1cc-191311a4e9a9"
+      "4fa694ae-2317-3158-9f31-b115cf19ad31",
+      "4c4c8fde-6994-3181-a95b-ead59b8bbc55",
+      "12506ac8-812d-3439-8ec5-37a5d8dba8dc",
+      "26609241-95d2-3e66-ac84-650d6db171aa"
     ],
-    "updatedAt": "2026-08-31T14:44:35.651Z"
+    "updatedAt": "2026-08-31T20:35:10.949Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-31T14:44:40.603Z"
+    "text": "Launch of VMware Private AI Cloud platform and strong earnings outlook fuels investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "228ff869-cd30-3ca6-b4ef-72116965e750",
+      "7342c666-336a-3df8-b599-c0501773cbe7",
+      "a173d1cb-863f-3f11-927e-5cc11aad751d"
+    ],
+    "updatedAt": "2026-08-31T20:35:16.262Z"
   },
   "SPCX": {
-    "text": "NASA launch success and entry into gas turbine production to meet AI power demands drives momentum.",
+    "text": "Hiring a natural‑gas trading team and building a Texas gas‑fired plant to power turbines operations",
     "source": "stock",
     "articleIds": [
-      "9333a3ae-8b65-331d-b5a0-ae399f9f43bb"
+      "8cb21ee5-03d2-31f8-a03d-ff8e675a01fe",
+      "d2b2deb5-2306-37e4-8eed-e659f0a6c3b7",
+      "b98a7ef7-85f7-3fac-b3ad-bd8dcb94b154",
+      "1dc68369-db06-32a2-ac71-2abde918fc27"
     ],
-    "updatedAt": "2026-08-31T14:44:46.154Z"
+    "updatedAt": "2026-08-31T20:35:22.228Z"
   },
   "MRVL": {
-    "text": "slipping international revenue coupled with looming earnings and custom silicon booking momentum fueling investor caution",
+    "text": "Investor fear over concentrated AI bet despite landmark Google agreement triggered the sharp sell‑off today.",
     "source": "stock",
     "articleIds": [
-      "e8b35b89-59c1-3a18-9b82-8feadc60811a",
-      "321123fb-28f4-3c08-ac00-5a4b68ba8f07"
+      "f5e5da46-3014-3205-b6ec-3aac05051bd3",
+      "5cf0ae34-3fe2-33ba-9117-e07f82b3f5a6",
+      "7e6e66ba-3791-3e8b-9e10-fb249157492a"
     ],
-    "updatedAt": "2026-08-31T14:44:51.769Z"
+    "updatedAt": "2026-08-31T20:35:27.868Z"
   },
   "ARM": {
-    "text": "IBM's dual‑architecture mainframe processor launch and expanding AI opportunities boost growth prospects for ARM globally",
+    "text": "AI‑centric conference spotlight and IBM’s new Arm‑based mainframe processor boost growth expectations.",
     "source": "stock",
     "articleIds": [
+      "a4723329-3f9f-3d28-899a-f286f7ce8c5a",
       "23d88789-1299-327b-8d7c-96f282e235ca",
       "a3d75d2e-2471-328f-b0e2-30572786fd0a"
     ],
-    "updatedAt": "2026-08-31T14:44:57.048Z"
+    "updatedAt": "2026-08-31T20:35:33.376Z"
   },
   "QCOM": {
-    "text": "Expanding AI and semiconductor investments beyond smartphones, highlighted by Vietnam urging deeper chip collaboration.",
-    "source": "stock",
-    "articleIds": [
-      "e86a891f-61c2-3677-a651-a7b3cddb957f",
-      "74f7cf4b-4057-3db8-bb43-d68ae3777cab",
-      "c9bf9eb3-d9d2-3799-afa1-1e104e6b5ef6"
-    ],
-    "updatedAt": "2026-08-31T14:45:02.386Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-08-31T20:35:38.456Z"
   },
   "SKHY": {
     "text": "Anticipated AI-driven memory demand and potential Intel partnership fuel optimism, prompting a joint‑venture in Japan.",
@@ -101,18 +116,18 @@
     "updatedAt": "2026-08-31T14:45:07.725Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-31T14:45:12.162Z"
+    "updatedAt": "2026-08-31T20:35:48.200Z"
   },
   "005930.KS": {
-    "text": "Aggressive share buyback program boosting investor confidence and lifting price.",
+    "text": "Securing 70% of HBM capacity through 2031 amid AI memory shortage fuels investor optimism.",
     "source": "stock",
     "articleIds": [
-      "1491c8d5-5ed3-3a18-b104-68569cafba80"
+      "807f526b-aa20-3042-b785-b91fcfaa8358"
     ],
-    "updatedAt": "2026-08-31T14:45:19.982Z"
+    "updatedAt": "2026-08-31T20:35:53.529Z"
   },
   "000660.KS": {
     "text": "Analysts project 53.6% upside amid earnings revisions and AI‑driven memory demand from Japan JV plans.",
@@ -126,39 +141,48 @@
     "updatedAt": "2026-08-31T14:45:25.439Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-08-31T14:45:30.611Z"
+    "text": "CEO transition and 20% Mac/iPad price hikes amid memory shortage spark investor uncertainty.",
+    "source": "stock",
+    "articleIds": [
+      "13c48b2f-15b6-4421-abec-a81cd830d92a",
+      "6b8f7370-36fd-3e7e-b191-f1c225b9b14a",
+      "f3325f18-969a-3795-89b4-01d9167c43c1"
+    ],
+    "updatedAt": "2026-08-31T20:36:04.789Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-31T14:45:35.037Z"
+    "updatedAt": "2026-08-31T20:36:09.659Z"
   },
   "GOOGL": {
-    "text": "Meta’s $60 billion AI advertising push threatens Google’s search ad dominance, sparking investor concerns.",
-    "source": "stock",
-    "articleIds": [
-      "e5ea2214-0e81-3378-a85e-11eea3d42fe1",
-      "b375085b-e266-3cb4-8c83-d51e7578a966"
-    ],
-    "updatedAt": "2026-08-31T14:45:40.502Z"
-  },
-  "AMZN": {
-    "text": "Heavy AI capital expenditures and cloud growth strain margins, raising investor concerns over funding runway.",
-    "source": "stock",
-    "articleIds": [
-      "31162447-2da4-3e23-8c7b-1baa512e06b6"
-    ],
-    "updatedAt": "2026-08-31T14:45:45.803Z"
-  },
-  "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-31T14:45:50.987Z"
+    "updatedAt": "2026-08-31T20:36:14.417Z"
+  },
+  "AMZN": {
+    "text": "FTC lawsuit alleging secret ad surcharge scheme that overcharged advertisers billions, sparking investor concerns.",
+    "source": "stock",
+    "articleIds": [
+      "cf726853-f717-34b8-8630-b6fa29708069",
+      "3269635d-f672-338f-85e6-e68b768f4a3c",
+      "cdbcab0e-0c63-30c5-a9ad-03522d7c67ad",
+      "76d7c597-4a87-3345-8f88-34eac6de7438",
+      "655c55da-f757-3cd5-a209-552236bf2054"
+    ],
+    "updatedAt": "2026-08-31T20:36:19.505Z"
+  },
+  "META": {
+    "text": "India crackdown on 39 scam ads triggers regulatory backlash, eroding confidence in Meta’s ad‑revenue reliability.",
+    "source": "stock",
+    "articleIds": [
+      "1515eb10-9016-30b2-b551-3cf8fd3743b6",
+      "4d1665aa-6047-367f-a843-52477740ef15",
+      "562d19ce-d81d-373d-9dc6-c4b1f165b194"
+    ],
+    "updatedAt": "2026-08-31T20:36:25.804Z"
   },
   "HDFCBANK.NS": {
     "text": "Legal challenges and leadership uncertainty eroding investor confidence, triggering a continued sell‑off.",
@@ -172,19 +196,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-31T14:46:00.819Z"
+    "updatedAt": "2026-08-31T20:36:35.933Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-31T14:46:05.185Z"
+    "updatedAt": "2026-08-31T20:36:40.238Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-31T14:46:09.625Z"
+    "updatedAt": "2026-08-31T20:36:44.582Z"
   },
   "TCS.NS": {
     "text": "Acquiring MHP for €320 million, creating an AI Mobility Centre of Excellence with Porsche.",
@@ -199,33 +223,30 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-31T14:46:18.824Z"
+    "updatedAt": "2026-08-31T20:36:54.102Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-31T14:46:23.151Z"
+    "updatedAt": "2026-08-31T20:36:58.509Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-08-31T14:46:27.541Z"
+    "updatedAt": "2026-08-31T20:37:02.858Z"
   },
   "INDEX": {
-    "text": "Escalating US‑Iran strikes heightening geopolitical tension, dampening investor sentiment.",
-    "source": "macro",
-    "articleIds": [
-      "c57f0554-71e8-33dd-9dcc-a2cad75076ba",
-      "452cc71a-1d5c-36b3-a85b-befb09645197"
-    ],
-    "updatedAt": "2026-08-31T14:46:32.804Z"
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-08-31T20:37:07.537Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-08-31T14:46:37.676Z"
+    "updatedAt": "2026-08-31T20:37:12.740Z"
   }
 }
