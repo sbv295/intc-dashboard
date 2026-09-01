@@ -1,73 +1,76 @@
 {
   "INTC": {
-    "text": "Global bond selloff spiking long‑term yields forces investors to reprice ambitious AI growth expectations sectorwide.",
+    "text": "Higher Treasury yields pressure valuations as investors doubt AI demand can offset rising cost concerns.",
     "source": "stock",
     "articleIds": [
-      "fe371c26-c5dd-3d55-9016-7178a7a165cb"
+      "a7be71a2-8c19-3c4d-b5d0-5cdebc8ed82a"
     ],
-    "updatedAt": "2026-09-01T15:55:21.259Z"
+    "updatedAt": "2026-09-01T22:18:03.050Z"
   },
   "AMD": {
-    "text": "Global bond selloff spiking long‑term yields, forcing a repricing of ambitious AI growth expectations.",
-    "source": "stock",
-    "articleIds": [
-      "fe371c26-c5dd-3d55-9016-7178a7a165cb"
-    ],
-    "updatedAt": "2026-09-01T15:55:26.613Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-01T22:18:07.955Z"
   },
   "NVDA": {
-    "text": "AI data‑center operators cutting operating costs by abandoning traditional electricity model, reducing demand for GPUs.",
-    "source": "stock",
-    "articleIds": [
-      "bf900332-c634-35df-a77f-77e7d82d6372"
-    ],
-    "updatedAt": "2026-09-01T19:08:58.387Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-01T22:18:13.238Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-01T19:09:03.586Z"
+    "text": "Investors pivoting to broader Taiwan market and ASML’s monopoly, dampening enthusiasm for TSMC’s dominance amid.",
+    "source": "stock",
+    "articleIds": [
+      "264b7058-3c7d-3cd0-8f0a-ae580ea71449",
+      "793c4003-bf43-3cca-8bba-23c57440b605"
+    ],
+    "updatedAt": "2026-09-01T22:18:18.914Z"
   },
   "SNDK": {
-    "text": "Pricing caps on multiyear contracts throttling revenue as demand outpaces supply.",
+    "text": "China's CXMT breakthrough AI memory chip intensifies competition, pressuring SanDisk's market position amid global challenges.",
     "source": "stock",
     "articleIds": [
-      "4d1e8f7f-5f5a-3dd2-9924-e9980e691a87",
-      "b667b1d2-15db-3575-a0de-877de67ca777"
+      "4d1e8f7f-5f5a-3dd2-9924-e9980e691a87"
     ],
-    "updatedAt": "2026-09-01T19:09:08.810Z"
+    "updatedAt": "2026-09-01T22:18:24.707Z"
   },
   "MU": {
-    "text": "Potential large‑scale strike in Taiwan threatens production amid unions demanding higher pay and profit sharing.",
+    "text": "Taiwan workers threaten strike demanding larger bonuses and profit‑sharing, raising labor risk concerns.",
     "source": "stock",
     "articleIds": [
-      "26cc2c59-9ed3-356e-a7d8-1677c46ff2d4",
+      "01f4a532-05e7-3571-8eb1-b7afa3f67969",
+      "7df2a0dc-c6d6-302c-adce-f355dc9d3a60",
       "959007d0-4ead-32eb-b712-491186b7956c",
-      "ed03dd23-5cc2-3357-aed2-b972473fa29e"
+      "b088f643-7200-3cde-8632-6b70d736dc1f"
     ],
-    "updatedAt": "2026-09-01T19:09:13.872Z"
+    "updatedAt": "2026-09-01T22:18:30.077Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-01T19:09:18.764Z"
+    "text": "Surging AI chip demand and software growth tempered by margin pressure and lofty valuation.",
+    "source": "stock",
+    "articleIds": [
+      "d548883d-312a-373d-b719-e83497539edd"
+    ],
+    "updatedAt": "2026-09-01T22:18:35.832Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-01T19:09:24.057Z"
+    "text": "Investors shifting focus to BofA‑highlighted alternatives, prompting profit‑taking amid perceived growth opportunities elsewhere.",
+    "source": "stock",
+    "articleIds": [
+      "1955cdb5-4e44-30ef-b0f1-5a15dfb01a68"
+    ],
+    "updatedAt": "2026-09-01T22:18:41.260Z"
   },
   "MRVL": {
-    "text": "unexpected catch in massive AI contract creating cost overruns and margin pressure",
+    "text": "Delayed Google AI deal payoff and unexpected terms in the $120 billion partnership creating uncertainty.",
     "source": "stock",
     "articleIds": [
       "a4c8f8e2-f9de-30f5-8ce9-227f6e31d255",
-      "f0ee7f7d-73f0-384f-8a72-0bb291399af8"
+      "8f7ee269-ea52-34ce-be88-574dae6fdf78"
     ],
-    "updatedAt": "2026-09-01T19:09:29.338Z"
+    "updatedAt": "2026-09-01T22:18:46.624Z"
   },
   "ARM": {
     "text": "Insider share sale and backlash against an $800 million CEO compensation plan spooked investors in market",
@@ -80,26 +83,25 @@
     "updatedAt": "2026-09-01T19:09:35.068Z"
   },
   "QCOM": {
-    "text": "Shrinking handset demand, rising costs and unproven data‑center AI bets amid leadership transition to Sergio Buniac.",
+    "text": "Rising costs, shrinking handset volumes and unproven AI/data‑center bets after leadership shuffle fuel concerns.",
     "source": "stock",
     "articleIds": [
       "43ac7ca3-3974-317c-b1a2-4ce2979a57b1",
-      "92da42fa-a2e9-3624-b214-7eeff5f30d63",
-      "4f8979bc-757a-3890-888c-06dbe77c8bce"
+      "92da42fa-a2e9-3624-b214-7eeff5f30d63"
     ],
-    "updatedAt": "2026-09-01T15:56:18.177Z"
+    "updatedAt": "2026-09-01T22:18:57.672Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:09:44.740Z"
+    "updatedAt": "2026-09-01T22:19:02.625Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:09:49.051Z"
+    "updatedAt": "2026-09-01T22:19:07.110Z"
   },
   "005930.KS": {
     "text": "Securing 70% of HBM capacity through 2031 amid AI memory shortage fuels investor optimism.",
@@ -110,61 +112,64 @@
     "updatedAt": "2026-08-31T20:35:53.529Z"
   },
   "000660.KS": {
-    "text": "AI-driven HBM demand and bullish analyst price targets fueling investor optimism and near-term momentum today.",
+    "text": "Board approval of a ₩40 trillion share‑repurchase program, cancelling repurchased shares and boosting shareholder return.",
     "source": "stock",
     "articleIds": [
+      "69a32f08-7661-3653-a035-b0e49c5809d1",
       "c3d26386-29a3-34d9-9c0b-42a37712a167",
-      "3df5223b-8ab1-3907-bda1-071576df6320",
-      "c4c6904e-5a31-38e2-8464-4cb309010bc4"
+      "3df5223b-8ab1-3907-bda1-071576df6320"
     ],
-    "updatedAt": "2026-09-01T19:09:59.365Z"
+    "updatedAt": "2026-09-01T22:19:17.579Z"
   },
   "AAPL": {
-    "text": "John Ternus assuming CEO role and heralding a “phenomenal” iPhone launch, energizing investor optimism today.",
-    "source": "stock",
-    "articleIds": [
-      "786f8387-24a0-4f68-a543-7a4c6cc2c06f",
-      "51ea69a8-e301-38c6-af65-c63327339180",
-      "02eaa62c-7d1d-3acd-9aff-340dba1d6a21",
-      "95348eb3-9882-39f2-96a2-9b146101503f"
-    ],
-    "updatedAt": "2026-09-01T19:10:05.005Z"
-  },
-  "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:10:10.133Z"
+    "updatedAt": "2026-09-01T22:19:22.809Z"
+  },
+  "MSFT": {
+    "text": "Intensifying enterprise AI and hybrid‑cloud competition from VMware/Broadcom and Amazon’s larger e‑commerce scale",
+    "source": "stock",
+    "articleIds": [
+      "83bb4f81-8872-397a-97c0-69fcb682546d",
+      "e06a0af9-48d2-3f8b-8008-50b46d112762"
+    ],
+    "updatedAt": "2026-09-01T22:19:28.485Z"
   },
   "GOOGL": {
-    "text": "Talent exodus accelerating, as key AI engineers depart, raising concerns over innovation pipeline and growth.",
+    "text": "Talent exodus accelerating, as engineers depart for rivals, weakening AI development pipeline and growth prospects.",
     "source": "stock",
     "articleIds": [
       "b392597e-1e96-4d9f-8afa-f898f50b2343",
-      "479f99c4-aded-33a1-a682-d69e3ac30e43"
+      "8c14be01-d16c-3936-b7d5-ff59b6484b12"
     ],
-    "updatedAt": "2026-09-01T19:10:15.632Z"
+    "updatedAt": "2026-09-01T22:19:33.826Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-01T19:10:20.270Z"
-  },
-  "META": {
-    "text": "Resolution of teen‑harm lawsuit removes legal overhang, boosting investor confidence and easing overall engagement concerns.",
+    "text": "FTC and 22 states allege hidden fees in ad auctions, overcharging advertisers by over $20 billion.",
     "source": "stock",
     "articleIds": [
-      "9177eb00-6190-329e-a1f1-08b8e515ac52",
-      "bc95e18b-cbc2-3f06-81b3-f7c8093f46be"
+      "550ccb2c-2eeb-3e61-a74c-0ba7f68f1d3a",
+      "34538642-d301-3475-8bbd-0c9a878e7223",
+      "82a73609-d33c-3c26-a070-56d761f522f9"
     ],
-    "updatedAt": "2026-09-01T19:10:25.811Z"
+    "updatedAt": "2026-09-01T22:19:39.173Z"
+  },
+  "META": {
+    "text": "AI-driven ad revenue boost and reduced regulatory friction after settlement clearance.",
+    "source": "stock",
+    "articleIds": [
+      "8c14be01-d16c-3936-b7d5-ff59b6484b12",
+      "b211245a-a146-30c9-b4c7-5c3f5cd8967d",
+      "a93b9931-dec2-305a-92fc-deab2a4ea8a1"
+    ],
+    "updatedAt": "2026-09-01T22:19:44.494Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:10:30.484Z"
+    "updatedAt": "2026-09-01T22:19:49.281Z"
   },
   "ICICIBANK.NS": {
     "text": "Prudential's $333 million 2% stake sale raises dilution worries, pressuring the bank's valuation amid broader uncertainty.",
@@ -178,37 +183,37 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:10:40.410Z"
+    "updatedAt": "2026-09-01T22:19:58.843Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:10:44.727Z"
+    "updatedAt": "2026-09-01T22:20:03.286Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:10:49.208Z"
+    "updatedAt": "2026-09-01T22:20:08.145Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:10:53.482Z"
+    "updatedAt": "2026-09-01T22:20:12.640Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:10:57.731Z"
+    "updatedAt": "2026-09-01T22:20:17.164Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:11:02.049Z"
+    "updatedAt": "2026-09-01T22:20:21.666Z"
   },
   "INDEX": {
     "text": "Rising Treasury yields from a broad bond selloff eroding risk appetite and pressure on debt‑laden equities.",
@@ -226,6 +231,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-01T19:11:11.755Z"
+    "updatedAt": "2026-09-01T22:20:31.906Z"
   }
 }
