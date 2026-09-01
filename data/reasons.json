@@ -16,67 +16,68 @@
     "updatedAt": "2026-09-01T15:55:26.613Z"
   },
   "NVDA": {
-    "text": "$267 billion supply‑capacity spend warning fuels investor anxiety over massive capital outlay through 2029 in coming",
+    "text": "AI data‑center operators cutting operating costs by abandoning traditional electricity model, reducing demand for GPUs.",
     "source": "stock",
     "articleIds": [
-      "75b7ef32-f761-3a59-ba9c-aeb1ed36b575"
+      "bf900332-c634-35df-a77f-77e7d82d6372"
     ],
-    "updatedAt": "2026-09-01T15:55:32.877Z"
+    "updatedAt": "2026-09-01T19:08:58.387Z"
   },
   "TSM": {
-    "text": "Stellar quarterly earnings exceeding expectations, reinforcing growth outlook.",
-    "source": "stock",
-    "articleIds": [
-      "18c0557c-0a03-362b-a5c9-862aa14941ea"
-    ],
-    "updatedAt": "2026-09-01T15:55:39.027Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-01T19:09:03.586Z"
   },
   "SNDK": {
-    "text": "Inclusion in MSCI World Index and Japan expansion boosting AI data‑center supply positioning, investor interest.",
+    "text": "Pricing caps on multiyear contracts throttling revenue as demand outpaces supply.",
     "source": "stock",
     "articleIds": [
-      "97445ed8-33db-3bf0-bfa8-7f02cdbc3f38",
-      "fb584e74-6b36-3209-8022-15329f927502",
-      "4f8979bc-757a-3890-888c-06dbe77c8bce"
+      "4d1e8f7f-5f5a-3dd2-9924-e9980e691a87",
+      "b667b1d2-15db-3575-a0de-877de67ca777"
     ],
-    "updatedAt": "2026-09-01T05:58:04.922Z"
+    "updatedAt": "2026-09-01T19:09:08.810Z"
   },
   "MU": {
-    "text": "Resolution of the three‑decade memory pricing slump restores confidence, prompting renewed buying activity among investors",
+    "text": "Potential large‑scale strike in Taiwan threatens production amid unions demanding higher pay and profit sharing.",
     "source": "stock",
     "articleIds": [
-      "61e49f7e-d004-3594-83fe-5542c8320642"
+      "26cc2c59-9ed3-356e-a7d8-1677c46ff2d4",
+      "959007d0-4ead-32eb-b712-491186b7956c",
+      "ed03dd23-5cc2-3357-aed2-b972473fa29e"
     ],
-    "updatedAt": "2026-09-01T15:55:50.445Z"
+    "updatedAt": "2026-09-01T19:09:13.872Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:55:55.875Z"
+    "updatedAt": "2026-09-01T19:09:18.764Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:56:01.037Z"
+    "updatedAt": "2026-09-01T19:09:24.057Z"
   },
   "MRVL": {
-    "text": "Higher valuation risk perception amid AI ASIC boom dampens enthusiasm despite raised outlook in 2026",
+    "text": "unexpected catch in massive AI contract creating cost overruns and margin pressure",
     "source": "stock",
     "articleIds": [
+      "a4c8f8e2-f9de-30f5-8ce9-227f6e31d255",
       "f0ee7f7d-73f0-384f-8a72-0bb291399af8"
     ],
-    "updatedAt": "2026-09-01T15:56:07.201Z"
+    "updatedAt": "2026-09-01T19:09:29.338Z"
   },
   "ARM": {
-    "text": "CEO $800 million compensation plan facing pushback from major shareholder advisers, raising governance concerns.",
+    "text": "Insider share sale and backlash against an $800 million CEO compensation plan spooked investors in market",
     "source": "stock",
     "articleIds": [
+      "7bbd5ed6-c29b-33dc-911d-07a704e4151c",
       "14c377a7-2da0-3fa2-b3bb-a9cc7a8767c6",
       "46501a8e-9eff-345e-bab6-58b86e386b22"
     ],
-    "updatedAt": "2026-09-01T15:56:12.586Z"
+    "updatedAt": "2026-09-01T19:09:35.068Z"
   },
   "QCOM": {
     "text": "Shrinking handset demand, rising costs and unproven data‑center AI bets amid leadership transition to Sergio Buniac.",
@@ -92,13 +93,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:56:23.017Z"
+    "updatedAt": "2026-09-01T19:09:44.740Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:56:27.477Z"
+    "updatedAt": "2026-09-01T19:09:49.051Z"
   },
   "005930.KS": {
     "text": "Securing 70% of HBM capacity through 2031 amid AI memory shortage fuels investor optimism.",
@@ -109,56 +110,61 @@
     "updatedAt": "2026-08-31T20:35:53.529Z"
   },
   "000660.KS": {
-    "text": "Dominance in HBM AI supply chain and rising analyst price targets fueling optimism.",
+    "text": "AI-driven HBM demand and bullish analyst price targets fueling investor optimism and near-term momentum today.",
     "source": "stock",
     "articleIds": [
+      "c3d26386-29a3-34d9-9c0b-42a37712a167",
       "3df5223b-8ab1-3907-bda1-071576df6320",
       "c4c6904e-5a31-38e2-8464-4cb309010bc4"
     ],
-    "updatedAt": "2026-09-01T15:56:38.056Z"
+    "updatedAt": "2026-09-01T19:09:59.365Z"
   },
   "AAPL": {
-    "text": "John Ternus assuming CEO role, emphasizing hardware innovation, fuels investor optimism and drives price surge.",
+    "text": "John Ternus assuming CEO role and heralding a “phenomenal” iPhone launch, energizing investor optimism today.",
     "source": "stock",
     "articleIds": [
-      "74d5d77e-a46c-4fce-93e3-3cdeb7a85358"
+      "786f8387-24a0-4f68-a543-7a4c6cc2c06f",
+      "51ea69a8-e301-38c6-af65-c63327339180",
+      "02eaa62c-7d1d-3acd-9aff-340dba1d6a21",
+      "95348eb3-9882-39f2-96a2-9b146101503f"
     ],
-    "updatedAt": "2026-09-01T15:56:43.368Z"
+    "updatedAt": "2026-09-01T19:10:05.005Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:56:48.112Z"
+    "updatedAt": "2026-09-01T19:10:10.133Z"
   },
   "GOOGL": {
+    "text": "Talent exodus accelerating, as key AI engineers depart, raising concerns over innovation pipeline and growth.",
+    "source": "stock",
+    "articleIds": [
+      "b392597e-1e96-4d9f-8afa-f898f50b2343",
+      "479f99c4-aded-33a1-a682-d69e3ac30e43"
+    ],
+    "updatedAt": "2026-09-01T19:10:15.632Z"
+  },
+  "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:56:53.302Z"
-  },
-  "AMZN": {
-    "text": "Fears SpaceX’s disruptive expansion will pressure Amazon’s cloud and logistics businesses.",
-    "source": "stock",
-    "articleIds": [
-      "df30ea56-b728-337d-8da5-53a3959158ac"
-    ],
-    "updatedAt": "2026-09-01T15:56:59.030Z"
+    "updatedAt": "2026-09-01T19:10:20.270Z"
   },
   "META": {
-    "text": "Positive investor sentiment from recent favorable news and AI‑enhanced accounting initiatives boosting confidence among analysts",
+    "text": "Resolution of teen‑harm lawsuit removes legal overhang, boosting investor confidence and easing overall engagement concerns.",
     "source": "stock",
     "articleIds": [
-      "bc95e18b-cbc2-3f06-81b3-f7c8093f46be",
-      "27f44740-ee4d-3896-9fbf-545a55607b88"
+      "9177eb00-6190-329e-a1f1-08b8e515ac52",
+      "bc95e18b-cbc2-3f06-81b3-f7c8093f46be"
     ],
-    "updatedAt": "2026-09-01T15:57:04.624Z"
+    "updatedAt": "2026-09-01T19:10:25.811Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:57:09.317Z"
+    "updatedAt": "2026-09-01T19:10:30.484Z"
   },
   "ICICIBANK.NS": {
     "text": "Prudential's $333 million 2% stake sale raises dilution worries, pressuring the bank's valuation amid broader uncertainty.",
@@ -172,54 +178,54 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:57:18.883Z"
+    "updatedAt": "2026-09-01T19:10:40.410Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:57:23.293Z"
+    "updatedAt": "2026-09-01T19:10:44.727Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:57:28.270Z"
+    "updatedAt": "2026-09-01T19:10:49.208Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:57:33.116Z"
+    "updatedAt": "2026-09-01T19:10:53.482Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:57:37.642Z"
+    "updatedAt": "2026-09-01T19:10:57.731Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:57:42.286Z"
+    "updatedAt": "2026-09-01T19:11:02.049Z"
   },
   "INDEX": {
-    "text": "Rising Treasury yields and surging oil prices squeezing risk appetite across the market.",
+    "text": "Rising Treasury yields from a broad bond selloff eroding risk appetite and pressure on debt‑laden equities.",
     "source": "macro",
     "articleIds": [
-      "01f4a532-05e7-3571-8eb1-b7afa3f67969",
+      "7873d4c9-263b-3c6c-ae45-9cc1594a477b",
+      "7dfd3681-cbdf-3808-b109-ff9c8b1ba9dd",
+      "d4886313-2551-3a68-b52b-d51e949f050e",
       "549369fa-effb-3bd3-8ce8-0e4e5ea8e406",
-      "86b7ebdc-5c4d-30e5-b49d-af20418e04fc",
-      "2d823d78-e873-3ee9-a5ea-83a9e6786ee0",
-      "69e7e083-f37c-3b69-90fa-c8738b1de38d"
+      "86b7ebdc-5c4d-30e5-b49d-af20418e04fc"
     ],
-    "updatedAt": "2026-09-01T15:57:47.596Z"
+    "updatedAt": "2026-09-01T19:11:07.093Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-01T15:57:52.378Z"
+    "updatedAt": "2026-09-01T19:11:11.755Z"
   }
 }
