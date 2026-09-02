@@ -11,22 +11,22 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:18:07.955Z"
+    "updatedAt": "2026-09-02T00:45:35.493Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:18:13.238Z"
+    "updatedAt": "2026-09-02T00:45:40.942Z"
   },
   "TSM": {
-    "text": "Investors pivoting to broader Taiwan market and ASML’s monopoly, dampening enthusiasm for TSMC’s dominance amid.",
+    "text": "Massive $269 B expansion straining its 67.7% margin expectations.",
     "source": "stock",
     "articleIds": [
-      "264b7058-3c7d-3cd0-8f0a-ae580ea71449",
-      "793c4003-bf43-3cca-8bba-23c57440b605"
+      "6165f3a9-8116-3430-896b-a69ffd326765",
+      "264b7058-3c7d-3cd0-8f0a-ae580ea71449"
     ],
-    "updatedAt": "2026-09-01T22:18:18.914Z"
+    "updatedAt": "2026-09-02T00:45:46.653Z"
   },
   "SNDK": {
     "text": "China's CXMT breakthrough AI memory chip intensifies competition, pressuring SanDisk's market position amid global challenges.",
@@ -48,20 +48,18 @@
     "updatedAt": "2026-09-01T22:18:30.077Z"
   },
   "AVGO": {
-    "text": "Surging AI chip demand and software growth tempered by margin pressure and lofty valuation.",
+    "text": "Launch of VMware Private AI Cloud and AI governance tools, signaling new revenue streams amid recent volatility.",
     "source": "stock",
     "articleIds": [
-      "d548883d-312a-373d-b719-e83497539edd"
+      "841e0ad4-d8fc-349a-9540-f7e8cebe8afe"
     ],
-    "updatedAt": "2026-09-01T22:18:35.832Z"
+    "updatedAt": "2026-09-02T00:46:03.051Z"
   },
   "SPCX": {
-    "text": "Investors shifting focus to BofA‑highlighted alternatives, prompting profit‑taking amid perceived growth opportunities elsewhere.",
-    "source": "stock",
-    "articleIds": [
-      "1955cdb5-4e44-30ef-b0f1-5a15dfb01a68"
-    ],
-    "updatedAt": "2026-09-01T22:18:41.260Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-02T00:46:08.367Z"
   },
   "MRVL": {
     "text": "Delayed Google AI deal payoff and unexpected terms in the $120 billion partnership creating uncertainty.",
@@ -73,14 +71,15 @@
     "updatedAt": "2026-09-01T22:18:46.624Z"
   },
   "ARM": {
-    "text": "Insider share sale and backlash against an $800 million CEO compensation plan spooked investors in market",
+    "text": "Insider sale sparked investor concerns, amplified by opposition to the $800 million CEO compensation plan.",
     "source": "stock",
     "articleIds": [
+      "bf062749-6fa5-3dba-9809-bdbf79a595f6",
       "7bbd5ed6-c29b-33dc-911d-07a704e4151c",
       "14c377a7-2da0-3fa2-b3bb-a9cc7a8767c6",
       "46501a8e-9eff-345e-bab6-58b86e386b22"
     ],
-    "updatedAt": "2026-09-01T19:09:35.068Z"
+    "updatedAt": "2026-09-02T00:46:19.348Z"
   },
   "QCOM": {
     "text": "Rising costs, shrinking handset volumes and unproven AI/data‑center bets after leadership shuffle fuel concerns.",
@@ -95,37 +94,34 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:19:02.625Z"
+    "updatedAt": "2026-09-02T00:46:29.970Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:19:07.110Z"
+    "updatedAt": "2026-09-02T00:46:34.456Z"
   },
   "005930.KS": {
-    "text": "Securing 70% of HBM capacity through 2031 amid AI memory shortage fuels investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "807f526b-aa20-3042-b785-b91fcfaa8358"
-    ],
-    "updatedAt": "2026-08-31T20:35:53.529Z"
-  },
-  "000660.KS": {
-    "text": "Board approval of a ₩40 trillion share‑repurchase program, cancelling repurchased shares and boosting shareholder return.",
-    "source": "stock",
-    "articleIds": [
-      "69a32f08-7661-3653-a035-b0e49c5809d1",
-      "c3d26386-29a3-34d9-9c0b-42a37712a167",
-      "3df5223b-8ab1-3907-bda1-071576df6320"
-    ],
-    "updatedAt": "2026-09-01T22:19:17.579Z"
-  },
-  "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:19:22.809Z"
+    "updatedAt": "2026-09-02T00:46:39.582Z"
+  },
+  "000660.KS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-02T00:46:44.670Z"
+  },
+  "AAPL": {
+    "text": "New CEO John Ternus takes helm, analyst lifts target ahead of imminent iPhone launch.",
+    "source": "stock",
+    "articleIds": [
+      "dd177e28-e7c9-3764-8647-cebd7096f695",
+      "bb7969e9-4970-3e0b-9662-8c67cd4ded05"
+    ],
+    "updatedAt": "2026-09-02T00:46:50.658Z"
   },
   "MSFT": {
     "text": "Intensifying enterprise AI and hybrid‑cloud competition from VMware/Broadcom and Amazon’s larger e‑commerce scale",
@@ -169,7 +165,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:19:49.281Z"
+    "updatedAt": "2026-09-02T00:47:17.741Z"
   },
   "ICICIBANK.NS": {
     "text": "Prudential's $333 million 2% stake sale raises dilution worries, pressuring the bank's valuation amid broader uncertainty.",
@@ -183,54 +179,55 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:19:58.843Z"
+    "updatedAt": "2026-09-02T00:47:27.688Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:20:03.286Z"
+    "updatedAt": "2026-09-02T00:47:32.177Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:20:08.145Z"
+    "updatedAt": "2026-09-02T00:47:37.042Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:20:12.640Z"
+    "updatedAt": "2026-09-02T00:47:41.550Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-01T22:20:17.164Z"
+    "text": "Global launch of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore fuels optimism.",
+    "source": "stock",
+    "articleIds": [
+      "7408502c-d216-344d-921b-d6dd8859967f"
+    ],
+    "updatedAt": "2026-09-02T00:47:46.826Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:20:21.666Z"
+    "updatedAt": "2026-09-02T00:47:51.410Z"
   },
   "INDEX": {
-    "text": "Rising Treasury yields from a broad bond selloff eroding risk appetite and pressure on debt‑laden equities.",
+    "text": "Rising Treasury yields and bond‑selloff pressure on debt‑heavy AI builders driving market decline.",
     "source": "macro",
     "articleIds": [
+      "75e73a14-3538-383c-b6d5-ddd9ec6b7c5a",
       "7873d4c9-263b-3c6c-ae45-9cc1594a477b",
-      "7dfd3681-cbdf-3808-b109-ff9c8b1ba9dd",
       "d4886313-2551-3a68-b52b-d51e949f050e",
-      "549369fa-effb-3bd3-8ce8-0e4e5ea8e406",
-      "86b7ebdc-5c4d-30e5-b49d-af20418e04fc"
+      "549369fa-effb-3bd3-8ce8-0e4e5ea8e406"
     ],
-    "updatedAt": "2026-09-01T19:11:07.093Z"
+    "updatedAt": "2026-09-02T00:47:56.885Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-01T22:20:31.906Z"
+    "updatedAt": "2026-09-02T00:48:01.691Z"
   }
 }
