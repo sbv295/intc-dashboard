@@ -1,28 +1,30 @@
 {
   "INTC": {
-    "text": "Higher Treasury yields pressure valuations as investors doubt AI demand can offset rising cost concerns.",
+    "text": "Major comeback catalyst from dramatic reversal and new open‑source 5G/NextG partnership accelerating growth prospects overall",
     "source": "stock",
     "articleIds": [
-      "a7be71a2-8c19-3c4d-b5d0-5cdebc8ed82a"
+      "248b0855-526b-3581-9c85-8e086ff850cf",
+      "4330788c-0713-3cd3-b2a7-28b1f9a831ae",
+      "f73693e7-6f65-369a-9f16-f2e164e3cbe1"
     ],
-    "updatedAt": "2026-09-01T22:18:03.050Z"
+    "updatedAt": "2026-09-02T18:20:05.488Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-02T14:53:15.720Z"
-  },
-  "NVDA": {
-    "text": "$3.5 B Mediatek investment and expanded Equinix inference partnership driving AI ecosystem confidence and growth",
+    "text": "Weaker quarterly earnings outlook and slower AI chip demand compared to peers.",
     "source": "stock",
     "articleIds": [
-      "70acb8e0-eb1c-46d9-a340-33500582a814",
-      "585b303b-a0ac-42f9-8c22-0f7fb5de5580",
-      "545f1f6b-a47c-37da-ab07-0813d7e0340f",
-      "56d2cb74-9fd0-38fd-9a7b-578f3d9e5d9c"
+      "2a152872-1bee-3fde-88b2-814d3bfa9c98"
     ],
-    "updatedAt": "2026-09-02T14:53:21.309Z"
+    "updatedAt": "2026-09-02T18:20:10.888Z"
+  },
+  "NVDA": {
+    "text": "Approaching a $14 billion acquisition of Hugging Face, signaling long‑term AI platform expansion for growth opportunities.",
+    "source": "stock",
+    "articleIds": [
+      "90c3c364-c7bc-3e50-aa37-6075c6388e55",
+      "e814fcda-c2cf-389d-a3bd-ddd7fcb8bf52"
+    ],
+    "updatedAt": "2026-09-02T18:20:16.351Z"
   },
   "TSM": {
     "text": "Rising overseas costs from its $100 billion Arizona expansion and global fab buildout pressure margins.",
@@ -33,45 +35,44 @@
     "updatedAt": "2026-09-02T14:53:26.342Z"
   },
   "SNDK": {
-    "text": "David Tepper sold holdings and hedged exposure to SanDisk’s biggest client, prompting sell pressure overall",
+    "text": "Revenue nearly tripled over two years, reflecting rapid sequential growth driving investor optimism.",
     "source": "stock",
     "articleIds": [
-      "3481cc77-93fd-3c21-9cf9-f0838e70e582"
+      "bf062749-6fa5-3dba-9809-bdbf79a595f6"
     ],
-    "updatedAt": "2026-09-02T14:53:31.703Z"
+    "updatedAt": "2026-09-02T18:20:27.743Z"
   },
   "MU": {
-    "text": "Surging AI memory demand and sold‑out HBM production, coupled with rising memory prices, fuel continued momentum.",
-    "source": "stock",
-    "articleIds": [
-      "d033a583-b1dd-3bfb-a2ca-da33512d9f47",
-      "10b4e05f-5a07-377f-9bcf-a436b002445e"
-    ],
-    "updatedAt": "2026-09-02T14:53:37.194Z"
-  },
-  "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:53:42.167Z"
+    "updatedAt": "2026-09-02T18:20:32.866Z"
   },
-  "SPCX": {
-    "text": "Expanding into new ventures creates AI‑growth bottleneck, sparking investor concerns over resource allocation and capital.",
+  "AVGO": {
+    "text": "Investors skeptical as Broadcom must demonstrate custom‑chip demand can dominate revenue amid $16 B AI verdict.",
     "source": "stock",
     "articleIds": [
-      "aa9238d6-0416-3506-b307-0110eef11235"
+      "3737c102-5e9d-3f6d-a2f8-c6ae568ef14f",
+      "97153c76-82fc-3dde-bfd9-5cbfcc56e3dc"
     ],
-    "updatedAt": "2026-09-02T14:53:47.854Z"
+    "updatedAt": "2026-09-02T18:20:38.595Z"
+  },
+  "SPCX": {
+    "text": "Negative reaction to SpaceX Foundry announcement, prompting investor concerns and selling pressure amid broader uncertainty.",
+    "source": "stock",
+    "articleIds": [
+      "15a0ba15-02b3-3fa4-8ba6-8c10bef0d640"
+    ],
+    "updatedAt": "2026-09-02T18:20:44.058Z"
   },
   "MRVL": {
-    "text": "Unclear profit impact of the Google partnership and reliance on a single hyperscaler spooked investors.",
+    "text": "earnings call disclosed weaker‑than‑expected margins on the Google partnership, unsettling investors.",
     "source": "stock",
     "articleIds": [
       "fbb26429-0b62-3952-83e5-bbf76270a448",
-      "c38c7e16-ebf3-340b-8b80-c98f991f066f",
       "4a01944c-fffc-35f9-9abe-54ce0594abbc"
     ],
-    "updatedAt": "2026-09-02T14:53:53.371Z"
+    "updatedAt": "2026-09-02T18:20:49.634Z"
   },
   "ARM": {
     "text": "Insider sale sparked investor concerns, amplified by opposition to the $800 million CEO compensation plan.",
@@ -85,79 +86,78 @@
     "updatedAt": "2026-09-02T00:46:19.348Z"
   },
   "QCOM": {
-    "text": "Partnership with HUMAIN's Horizon Ultra AI PC, leveraging Snapdragon X2 Elite, fuels investor optimism market.",
+    "text": "AI PC partnership with HUMAIN’s Horizon Ultra, leveraging Snapdragon X2 Elite, fuels investor optimism.",
     "source": "stock",
     "articleIds": [
-      "51c155c5-59bc-3253-ab07-5578e4bad583"
+      "51c155c5-59bc-3253-ab07-5578e4bad583",
+      "43ac7ca3-3974-317c-b1a2-4ce2979a57b1"
     ],
-    "updatedAt": "2026-09-02T14:54:04.340Z"
+    "updatedAt": "2026-09-02T18:21:00.295Z"
   },
   "SKHY": {
-    "text": "$20 billion USD repatriation purchase by South Korean FX authorities after SK Hynix’s $26.5 billion ADR sale.",
-    "source": "stock",
-    "articleIds": [
-      "33c962c8-b0ee-37f6-b4e5-793d2ab1a0f7"
-    ],
-    "updatedAt": "2026-09-02T14:54:09.714Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-02T18:21:05.377Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:54:14.076Z"
+    "updatedAt": "2026-09-02T18:21:09.814Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:54:18.892Z"
+    "updatedAt": "2026-09-02T18:21:14.736Z"
   },
   "000660.KS": {
-    "text": "South Korean FX authorities bought $20 billion of SK Hynix’s USD proceeds, prompting a sell‑off.",
+    "text": "Massive $20 billion repatriation sale of ADRs to FX authorities draining liquidity.",
     "source": "stock",
     "articleIds": [
+      "dc1cb209-7625-3680-bb82-0f6f38144594",
       "33c962c8-b0ee-37f6-b4e5-793d2ab1a0f7"
     ],
-    "updatedAt": "2026-09-02T14:54:24.051Z"
+    "updatedAt": "2026-09-02T18:21:20.207Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:54:28.929Z"
+    "updatedAt": "2026-09-02T18:21:25.301Z"
   },
   "MSFT": {
-    "text": "Unanswered concerns over its $115.9 billion spending spree threaten momentum, prompting investor caution.",
+    "text": "Intensifying AI competition from ServiceNow’s expanded Aramco partnership eroding Microsoft’s market momentum.",
     "source": "stock",
     "articleIds": [
-      "bddc630a-8589-34bf-a6aa-771ab6c57a05"
+      "09c23bdb-a707-3548-984e-6afaef0573e0"
     ],
-    "updatedAt": "2026-09-02T14:54:33.854Z"
+    "updatedAt": "2026-09-02T18:21:30.839Z"
   },
   "GOOGL": {
-    "text": "Judge rejected antitrust bid to force ad‑tech divestiture, reinforcing confidence in Google’s AI‑driven growth.",
+    "text": "Judge rejected DOJ’s request to force a divestiture of Google’s ad exchange, averting a breakup.",
     "source": "stock",
     "articleIds": [
-      "7d6c2f95-72a3-3d2b-9d9e-549e9c08b67a",
-      "db82c15d-f844-3b47-8ac7-745de8ef9084",
-      "fbb26429-0b62-3952-83e5-bbf76270a448"
+      "be6c87e9-dfe1-38a4-a89e-de4b84d703fa",
+      "25098fea-7dd6-3619-a0a2-73b41aabdcd2",
+      "8189308c-f729-381c-b1c2-98bd5821ddae",
+      "ef56dcc7-e66e-3236-a210-194cd2f5f424",
+      "3a0ddb0e-92dc-3f03-b4b4-56ddc5e7e3cf"
     ],
-    "updatedAt": "2026-09-02T14:54:41.330Z"
+    "updatedAt": "2026-09-02T18:21:36.060Z"
   },
   "AMZN": {
-    "text": "AI-driven data‑center expansion and record AWS growth fueling investor optimism despite heavy capex spending.",
-    "source": "stock",
-    "articleIds": [
-      "db82c15d-f844-3b47-8ac7-745de8ef9084",
-      "ea079852-4a49-33f9-bc44-c0068b5201b5"
-    ],
-    "updatedAt": "2026-09-02T14:54:46.485Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-02T18:21:40.943Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:54:51.040Z"
+    "updatedAt": "2026-09-02T18:21:46.068Z"
   },
   "HDFCBANK.NS": {
     "text": "CEO departure and lingering legal challenges erode investor confidence, widening governance and return gaps significantly.",
@@ -180,25 +180,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:55:06.728Z"
+    "updatedAt": "2026-09-02T18:22:01.434Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:55:11.089Z"
+    "updatedAt": "2026-09-02T18:22:06.088Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:55:15.615Z"
+    "updatedAt": "2026-09-02T18:22:11.084Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:55:20.081Z"
+    "updatedAt": "2026-09-02T18:22:15.556Z"
   },
   "RELIANCE.NS": {
     "text": "Global launch of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore fuels optimism.",
@@ -212,20 +212,20 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:55:29.216Z"
+    "updatedAt": "2026-09-02T18:22:25.317Z"
   },
   "INDEX": {
-    "text": "Escalating US‑Iran tensions tempering investor sentiment amid mixed ETF and futures activity.",
+    "text": "Midday rally in equities spurred investor buying, lifting exchange‑traded fund prices across the market",
     "source": "macro",
     "articleIds": [
-      "b14c84d2-4332-3335-a6a0-7af29fd1b39c"
+      "583c10de-fbeb-3af0-893b-ea3d80fc94c2"
     ],
-    "updatedAt": "2026-09-02T14:55:34.490Z"
+    "updatedAt": "2026-09-02T18:22:30.644Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-02T14:55:39.227Z"
+    "updatedAt": "2026-09-02T18:22:35.462Z"
   }
 }
