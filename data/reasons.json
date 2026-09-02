@@ -11,13 +11,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:45:35.493Z"
+    "updatedAt": "2026-09-02T05:20:29.012Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:45:40.942Z"
+    "updatedAt": "2026-09-02T05:20:33.888Z"
   },
   "TSM": {
     "text": "Massive $269 B expansion straining its 67.7% margin expectations.",
@@ -29,12 +29,10 @@
     "updatedAt": "2026-09-02T00:45:46.653Z"
   },
   "SNDK": {
-    "text": "China's CXMT breakthrough AI memory chip intensifies competition, pressuring SanDisk's market position amid global challenges.",
-    "source": "stock",
-    "articleIds": [
-      "4d1e8f7f-5f5a-3dd2-9924-e9980e691a87"
-    ],
-    "updatedAt": "2026-09-01T22:18:24.707Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-02T05:20:44.232Z"
   },
   "MU": {
     "text": "Taiwan workers threaten strike demanding larger bonuses and profit‑sharing, raising labor risk concerns.",
@@ -48,27 +46,26 @@
     "updatedAt": "2026-09-01T22:18:30.077Z"
   },
   "AVGO": {
-    "text": "Launch of VMware Private AI Cloud and AI governance tools, signaling new revenue streams amid recent volatility.",
-    "source": "stock",
-    "articleIds": [
-      "841e0ad4-d8fc-349a-9540-f7e8cebe8afe"
-    ],
-    "updatedAt": "2026-09-02T00:46:03.051Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-02T05:20:54.414Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:46:08.367Z"
+    "updatedAt": "2026-09-02T05:20:59.391Z"
   },
   "MRVL": {
-    "text": "Delayed Google AI deal payoff and unexpected terms in the $120 billion partnership creating uncertainty.",
+    "text": "Google AI partnership's delayed payoff and unexpected deal terms raising revenue doubts.",
     "source": "stock",
     "articleIds": [
+      "2d320e5a-019c-3be1-999c-f52c2c6269b8",
       "a4c8f8e2-f9de-30f5-8ce9-227f6e31d255",
       "8f7ee269-ea52-34ce-be88-574dae6fdf78"
     ],
-    "updatedAt": "2026-09-01T22:18:46.624Z"
+    "updatedAt": "2026-09-02T05:21:04.636Z"
   },
   "ARM": {
     "text": "Insider sale sparked investor concerns, amplified by opposition to the $800 million CEO compensation plan.",
@@ -94,34 +91,35 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:46:29.970Z"
+    "updatedAt": "2026-09-02T05:21:19.944Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:46:34.456Z"
+    "updatedAt": "2026-09-02T05:21:24.373Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:46:39.582Z"
+    "updatedAt": "2026-09-02T05:21:28.925Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:46:44.670Z"
+    "updatedAt": "2026-09-02T05:21:33.943Z"
   },
   "AAPL": {
-    "text": "New CEO John Ternus takes helm, analyst lifts target ahead of imminent iPhone launch.",
+    "text": "John Ternus’s first day as CEO with a $55 million equity award tied to S&P 500 outperformance.",
     "source": "stock",
     "articleIds": [
-      "dd177e28-e7c9-3764-8647-cebd7096f695",
-      "bb7969e9-4970-3e0b-9662-8c67cd4ded05"
+      "d03469f5-7a3b-4563-aba6-c9d2c9081361",
+      "9cab9a7e-f7cb-365c-8d9d-381d77352f1a",
+      "e9927dc8-975a-3b4c-a1bf-e7e3b9f50ec0"
     ],
-    "updatedAt": "2026-09-02T00:46:50.658Z"
+    "updatedAt": "2026-09-02T05:21:39.248Z"
   },
   "MSFT": {
     "text": "Intensifying enterprise AI and hybrid‑cloud competition from VMware/Broadcom and Amazon’s larger e‑commerce scale",
@@ -133,13 +131,12 @@
     "updatedAt": "2026-09-01T22:19:28.485Z"
   },
   "GOOGL": {
-    "text": "Talent exodus accelerating, as engineers depart for rivals, weakening AI development pipeline and growth prospects.",
+    "text": "Significant talent exodus weakening AI initiatives and growth prospects, prompting investor concerns amid market uncertainty.",
     "source": "stock",
     "articleIds": [
-      "b392597e-1e96-4d9f-8afa-f898f50b2343",
-      "8c14be01-d16c-3936-b7d5-ff59b6484b12"
+      "b392597e-1e96-4d9f-8afa-f898f50b2343"
     ],
-    "updatedAt": "2026-09-01T22:19:33.826Z"
+    "updatedAt": "2026-09-02T05:21:50.027Z"
   },
   "AMZN": {
     "text": "FTC and 22 states allege hidden fees in ad auctions, overcharging advertisers by over $20 billion.",
@@ -162,10 +159,13 @@
     "updatedAt": "2026-09-01T22:19:44.494Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-02T00:47:17.741Z"
+    "text": "CEO departure and lingering legal challenges erode investor confidence, widening governance and return gaps significantly.",
+    "source": "stock",
+    "articleIds": [
+      "115503aa-d9f5-398c-8f4d-b577c8d5267f",
+      "de91df48-7a79-37d1-bcfa-5d7785fb7396"
+    ],
+    "updatedAt": "2026-09-02T05:22:05.871Z"
   },
   "ICICIBANK.NS": {
     "text": "Prudential's $333 million 2% stake sale raises dilution worries, pressuring the bank's valuation amid broader uncertainty.",
@@ -176,28 +176,28 @@
     "updatedAt": "2026-09-01T05:59:32.762Z"
   },
   "DEEPAKFERT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:47:27.688Z"
+    "updatedAt": "2026-09-02T05:22:14.983Z"
   },
   "AARTIIND.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:47:32.177Z"
+    "updatedAt": "2026-09-02T05:22:19.336Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:47:37.042Z"
+    "updatedAt": "2026-09-02T05:22:23.862Z"
   },
   "INFY.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:47:41.550Z"
+    "updatedAt": "2026-09-02T05:22:28.219Z"
   },
   "RELIANCE.NS": {
     "text": "Global launch of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore fuels optimism.",
@@ -211,23 +211,22 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:47:51.410Z"
+    "updatedAt": "2026-09-02T05:22:37.392Z"
   },
   "INDEX": {
-    "text": "Rising Treasury yields and bond‑selloff pressure on debt‑heavy AI builders driving market decline.",
+    "text": "Rising Treasury yields from a broad bond sell‑off increasing financing costs for debt‑heavy AI and fintech firms.",
     "source": "macro",
     "articleIds": [
-      "75e73a14-3538-383c-b6d5-ddd9ec6b7c5a",
       "7873d4c9-263b-3c6c-ae45-9cc1594a477b",
-      "d4886313-2551-3a68-b52b-d51e949f050e",
-      "549369fa-effb-3bd3-8ce8-0e4e5ea8e406"
+      "7dfd3681-cbdf-3808-b109-ff9c8b1ba9dd",
+      "d4886313-2551-3a68-b52b-d51e949f050e"
     ],
-    "updatedAt": "2026-09-02T00:47:56.885Z"
+    "updatedAt": "2026-09-02T05:22:42.367Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-02T00:48:01.691Z"
+    "updatedAt": "2026-09-02T05:22:46.921Z"
   }
 }
