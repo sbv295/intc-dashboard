@@ -1,27 +1,31 @@
 {
   "INTC": {
-    "text": "anticipated AI data‑center demand and successful product roadmap fueling a major turnaround, driving investor optimism",
+    "text": "Expanded Kasm AI partnership enabling private LLMs on Xeon 6 processors with AMX drives optimism.",
     "source": "stock",
     "articleIds": [
+      "cb81229c-215a-3e8f-a8ba-229aa66fd779",
       "ff888f52-ab90-389a-8f58-8fe8b5172584",
-      "248b0855-526b-3581-9c85-8e086ff850cf",
-      "4330788c-0713-3cd3-b2a7-28b1f9a831ae"
+      "248b0855-526b-3581-9c85-8e086ff850cf"
     ],
-    "updatedAt": "2026-09-03T07:37:45.609Z"
+    "updatedAt": "2026-09-03T12:28:08.796Z"
   },
   "AMD": {
-    "text": "Investor caution over upcoming 250 MW Saudi AI infrastructure rollout.",
+    "text": "Pricier valuation versus Nvidia prompting investor caution.",
     "source": "stock",
     "articleIds": [
+      "7c7bed12-e7c9-385c-8828-16fd56450f08",
       "3e98114d-6375-348e-8a46-beaca2c86cb5"
     ],
-    "updatedAt": "2026-09-02T21:30:10.393Z"
+    "updatedAt": "2026-09-03T12:28:13.889Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-03T07:37:55.953Z"
+    "text": "Deployment of two high‑growth AI investments and Broadcom’s AI success fueling confidence in Nvidia’s strategy.",
+    "source": "stock",
+    "articleIds": [
+      "fe8960f3-63e3-4d6f-9c07-fb10561d103a",
+      "bb76b88d-1d61-362e-bd26-07283af4b206"
+    ],
+    "updatedAt": "2026-09-03T12:28:19.282Z"
   },
   "TSM": {
     "text": "67.7% margin expansion and bullish Artisan Partners outlook on AI‑driven demand fuels optimism.",
@@ -33,40 +37,37 @@
     "updatedAt": "2026-09-02T21:30:21.332Z"
   },
   "SNDK": {
-    "text": "Rapid data‑center revenue surge, now contributing a third of quarterly earnings, fuels strong investor confidence.",
+    "text": "Rapid data‑center revenue surge, delivering $2.98 B this quarter under expanding multiyear contracts, boosting earnings outlook.",
     "source": "stock",
     "articleIds": [
+      "5be0722d-66a0-3c87-b7ff-573a3c6388fa",
       "7bfccb9b-665c-37be-91f1-2cf71f0903c7",
-      "9199cb7f-c939-3a26-b304-ff2eb71ed685",
-      "494fcca9-c5b1-35df-bb3f-c0b77f768c82"
+      "9199cb7f-c939-3a26-b304-ff2eb71ed685"
     ],
-    "updatedAt": "2026-09-02T23:46:21.788Z"
+    "updatedAt": "2026-09-03T12:28:29.967Z"
   },
   "MU": {
-    "text": "Soros Fund Management increased its Micron position nearly eightfold, indicating strong investor confidence.",
+    "text": "Soros Fund Management’s near‑eightfold position boost signals strong confidence in AI memory demand.",
     "source": "stock",
     "articleIds": [
-      "8170aa22-e218-3954-b76b-cd33f3f446f6",
-      "5958f614-7a93-3517-984e-d71b1bdea5f1"
+      "8170aa22-e218-3954-b76b-cd33f3f446f6"
     ],
-    "updatedAt": "2026-09-03T07:38:12.305Z"
+    "updatedAt": "2026-09-03T12:28:35.302Z"
   },
   "AVGO": {
-    "text": "Modest Q3 earnings beat deemed insufficient, coupled with disappointing results and a major fund’s exit.",
-    "source": "stock",
-    "articleIds": [
-      "28d31dc5-4113-4a6a-87bc-0d46c2c77110",
-      "ad318a90-4066-30b4-8754-df4ed0d4c742",
-      "1f1add2f-22d4-3605-b13a-6594e17235a5",
-      "1d7123ac-a008-32ff-9bbd-f00beb6c5dbf"
-    ],
-    "updatedAt": "2026-09-03T07:38:17.899Z"
-  },
-  "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:38:22.962Z"
+    "updatedAt": "2026-09-03T12:28:40.153Z"
+  },
+  "SPCX": {
+    "text": "Recent high‑profile loss of a CA$250,000 SpaceX bet by a day‑trader spooked investors.",
+    "source": "stock",
+    "articleIds": [
+      "ba351777-0562-3424-9582-fbdc04167cc4",
+      "af6c2c1c-0cee-39fd-b503-8f123d03806e"
+    ],
+    "updatedAt": "2026-09-03T12:28:46.793Z"
   },
   "MRVL": {
     "text": "Market worries that AI‑driven growth may stall as the business model’s complexity raises sustainability concerns.",
@@ -80,7 +81,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:38:33.303Z"
+    "updatedAt": "2026-09-03T12:28:56.279Z"
   },
   "QCOM": {
     "text": "Undervalued per DCF analysis and boosted by AI PC partnership with HUMAIN's Horizon Ultra platform",
@@ -92,20 +93,19 @@
     "updatedAt": "2026-09-03T02:32:44.318Z"
   },
   "SKHY": {
-    "text": "Board‑approved ₩40 trillion share repurchase plan boosting investor confidence and valuation amid AI memory demand and growth prospects.",
+    "text": "Anticipated Japan plant expansion and AI‑driven HBM demand boost growth prospects, fueling investor optimism.",
     "source": "stock",
     "articleIds": [
       "4dbee8ae-c90e-3c10-9896-64df71056251",
-      "078152dd-3600-3c81-86d2-d20253f644b9",
-      "69a32f08-7661-3653-a035-b0e49c5809d1"
+      "078152dd-3600-3c81-86d2-d20253f644b9"
     ],
-    "updatedAt": "2026-09-03T02:32:50.514Z"
+    "updatedAt": "2026-09-03T12:29:06.620Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:38:48.521Z"
+    "updatedAt": "2026-09-03T12:29:10.944Z"
   },
   "005930.KS": {
     "text": "Inflation and rate‑hike concerns eclipsed record chip earnings, triggering a macro‑driven sell‑off amid market anxiety.",
@@ -125,39 +125,42 @@
     "updatedAt": "2026-09-03T07:38:59.750Z"
   },
   "AAPL": {
-    "text": "Investor caution over unproven foldable iPhone bets and a neutral rating amid the new CEO’s performance‑linked equity award.",
+    "text": "Facing a £2 billion UK lawsuit over app‑tracking rules, raising antitrust concerns and investor unease today.",
     "source": "stock",
     "articleIds": [
-      "f661b49f-c78b-3d8f-ae81-5a25b1674f96",
-      "cf4c865a-d10a-39a8-8931-e240d6588db7",
-      "c6549ac3-9e32-3eed-b2a6-64d458f1cb6a"
+      "e440a0ec-6a02-48aa-a759-ea05662aa0ff",
+      "542a94f4-4a4c-3cb0-a6fc-f25dfe7e4b40",
+      "41c6fdda-27e6-3394-a151-27b030dc11d5",
+      "64dcdca3-057a-3392-ad34-1f0bc03d0cde"
     ],
-    "updatedAt": "2026-09-03T07:39:05.240Z"
+    "updatedAt": "2026-09-03T12:29:28.014Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:39:10.487Z"
+    "updatedAt": "2026-09-03T12:29:32.762Z"
   },
   "GOOGL": {
-    "text": "82% YoY Google Cloud revenue surge validates hefty capex spending, boosting investor confidence in 2026.",
+    "text": "Gemini 3.8 Flash AI model debut, coinciding with a judge’s rejection of the DOJ’s AdX breakup push.",
     "source": "stock",
     "articleIds": [
-      "50ff20e9-0c72-3cda-9552-4b17b613a20b",
-      "9b54d45f-f568-39a0-a3a4-fcfb26236514"
+      "62056bd2-405f-37f1-9494-965428806f73",
+      "9dec9ec2-39c0-3e76-bd64-8783f629a3a9",
+      "72bdb6a3-7797-35f5-ad0a-e766f41470d0"
     ],
-    "updatedAt": "2026-09-03T07:39:16.340Z"
+    "updatedAt": "2026-09-03T12:29:37.873Z"
   },
   "AMZN": {
-    "text": "Robust AWS cash flow plus massive Druckenmiller buying fuels confidence amid expanding Zoox robotaxi rollout.",
+    "text": "Strong AWS cash flow and new Whole Foods tech enhancements boost investor confidence.",
     "source": "stock",
     "articleIds": [
-      "c1ff4303-baa8-3697-90bf-2ba6087823c0",
-      "36a9a672-08e4-31c8-a25f-a0b18577f8e2",
-      "37b6d145-3fa7-3427-81a1-b6d0fc76ab91"
+      "becba0fc-3e1e-452c-9520-6a23a4f39192",
+      "c96e43ef-c5d1-320b-a89f-460e636d03f4",
+      "483eb42c-87ee-3197-84dd-7d800b69909d",
+      "c1ff4303-baa8-3697-90bf-2ba6087823c0"
     ],
-    "updatedAt": "2026-09-03T02:33:27.478Z"
+    "updatedAt": "2026-09-03T12:29:43.070Z"
   },
   "META": {
     "text": "Launch of Muse Spark 1.3, Meta’s most powerful AI model, fuels optimism and drives the surge.",
@@ -171,49 +174,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:39:31.306Z"
+    "updatedAt": "2026-09-03T12:29:52.953Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:39:36.020Z"
+    "updatedAt": "2026-09-03T12:29:57.557Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:39:40.353Z"
+    "updatedAt": "2026-09-03T12:30:01.907Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:39:44.675Z"
+    "updatedAt": "2026-09-03T12:30:06.294Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:39:49.255Z"
+    "updatedAt": "2026-09-03T12:30:10.940Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:39:53.640Z"
+    "updatedAt": "2026-09-03T12:30:15.215Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:39:58.260Z"
+    "updatedAt": "2026-09-03T12:30:20.304Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:40:02.642Z"
+    "updatedAt": "2026-09-03T12:30:24.517Z"
   },
   "INDEX": {
     "text": "Midday rally in equities spurred investor buying, lifting exchange‑traded fund prices across the market",
@@ -227,6 +230,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-03T07:40:12.771Z"
+    "updatedAt": "2026-09-03T12:30:34.214Z"
   }
 }
