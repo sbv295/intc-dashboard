@@ -1,12 +1,13 @@
 {
   "INTC": {
-    "text": "Major catalyst emerging from dramatic reversal in semiconductor performance, suggesting sustainable momentum behind its comeback.",
+    "text": "anticipated AI data‑center demand and successful product roadmap fueling a major turnaround, driving investor optimism",
     "source": "stock",
     "articleIds": [
+      "ff888f52-ab90-389a-8f58-8fe8b5172584",
       "248b0855-526b-3581-9c85-8e086ff850cf",
       "4330788c-0713-3cd3-b2a7-28b1f9a831ae"
     ],
-    "updatedAt": "2026-09-02T21:30:04.872Z"
+    "updatedAt": "2026-09-03T07:37:45.609Z"
   },
   "AMD": {
     "text": "Investor caution over upcoming 250 MW Saudi AI infrastructure rollout.",
@@ -20,7 +21,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:32:01.267Z"
+    "updatedAt": "2026-09-03T07:37:55.953Z"
   },
   "TSM": {
     "text": "67.7% margin expansion and bullish Artisan Partners outlook on AI‑driven demand fuels optimism.",
@@ -42,30 +43,30 @@
     "updatedAt": "2026-09-02T23:46:21.788Z"
   },
   "MU": {
-    "text": "U.S. appeals court upheld patent rulings, confirming invalidation of five Netlist memory patents, fueling optimism.",
+    "text": "Soros Fund Management increased its Micron position nearly eightfold, indicating strong investor confidence.",
     "source": "stock",
     "articleIds": [
-      "5958f614-7a93-3517-984e-d71b1bdea5f1",
-      "a0a05038-d122-3417-8e60-fee01a8ce000",
-      "4bd641d8-b429-327a-a405-6fee4d5436d5"
+      "8170aa22-e218-3954-b76b-cd33f3f446f6",
+      "5958f614-7a93-3517-984e-d71b1bdea5f1"
     ],
-    "updatedAt": "2026-09-03T02:32:18.209Z"
+    "updatedAt": "2026-09-03T07:38:12.305Z"
   },
   "AVGO": {
-    "text": "first‑quarter revenue forecast missed estimates, disappointing investors despite strong results.",
+    "text": "Modest Q3 earnings beat deemed insufficient, coupled with disappointing results and a major fund’s exit.",
     "source": "stock",
     "articleIds": [
-      "6c86b02e-c4ff-4956-be46-fbab725cabc2",
-      "cdd60b7c-9175-47b3-a73e-f7db3f1dde68",
+      "28d31dc5-4113-4a6a-87bc-0d46c2c77110",
+      "ad318a90-4066-30b4-8754-df4ed0d4c742",
+      "1f1add2f-22d4-3605-b13a-6594e17235a5",
       "1d7123ac-a008-32ff-9bbd-f00beb6c5dbf"
     ],
-    "updatedAt": "2026-09-02T23:46:32.722Z"
+    "updatedAt": "2026-09-03T07:38:17.899Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:32:28.646Z"
+    "updatedAt": "2026-09-03T07:38:22.962Z"
   },
   "MRVL": {
     "text": "Market worries that AI‑driven growth may stall as the business model’s complexity raises sustainability concerns.",
@@ -79,7 +80,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:32:38.905Z"
+    "updatedAt": "2026-09-03T07:38:33.303Z"
   },
   "QCOM": {
     "text": "Undervalued per DCF analysis and boosted by AI PC partnership with HUMAIN's Horizon Ultra platform",
@@ -104,52 +105,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:32:55.066Z"
+    "updatedAt": "2026-09-03T07:38:48.521Z"
   },
   "005930.KS": {
-    "text": "New share repurchase program and upcoming Kiwoom Corporate Day presentation boosting investor confidence.",
+    "text": "Inflation and rate‑hike concerns eclipsed record chip earnings, triggering a macro‑driven sell‑off amid market anxiety.",
     "source": "stock",
     "articleIds": [
-      "11aaf616-18b9-3a5a-ba16-3029c7954704",
-      "7d754de2-29c7-3e03-a70c-faccd2a16975"
+      "a38fbf3c-ffa0-361b-909a-4e7a9bbd49f4"
     ],
-    "updatedAt": "2026-09-03T02:33:00.259Z"
+    "updatedAt": "2026-09-03T07:38:54.103Z"
   },
   "000660.KS": {
-    "text": "Potential Japan expansion, AI‑driven memory demand surge, and approval of a massive share‑repurchase program.",
+    "text": "FX authorities' $20 billion repatriation purchase pressures liquidity, dampening investor confidence amid memory‑cycle uncertainty today.",
     "source": "stock",
     "articleIds": [
-      "4dbee8ae-c90e-3c10-9896-64df71056251",
-      "078152dd-3600-3c81-86d2-d20253f644b9",
-      "69a32f08-7661-3653-a035-b0e49c5809d1"
+      "dc1cb209-7625-3680-bb82-0f6f38144594",
+      "33c962c8-b0ee-37f6-b4e5-793d2ab1a0f7"
     ],
-    "updatedAt": "2026-09-03T02:33:05.614Z"
+    "updatedAt": "2026-09-03T07:38:59.750Z"
   },
   "AAPL": {
-    "text": "Investor caution over unproven foldable iPhone bet and neutral analyst rating.",
+    "text": "Investor caution over unproven foldable iPhone bets and a neutral rating amid the new CEO’s performance‑linked equity award.",
     "source": "stock",
     "articleIds": [
       "f661b49f-c78b-3d8f-ae81-5a25b1674f96",
-      "cf4c865a-d10a-39a8-8931-e240d6588db7"
+      "cf4c865a-d10a-39a8-8931-e240d6588db7",
+      "c6549ac3-9e32-3eed-b2a6-64d458f1cb6a"
     ],
-    "updatedAt": "2026-09-03T02:33:11.237Z"
+    "updatedAt": "2026-09-03T07:39:05.240Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:33:16.460Z"
+    "updatedAt": "2026-09-03T07:39:10.487Z"
   },
   "GOOGL": {
-    "text": "Securing a $2 billion geothermal power agreement to source 400 MW from Fervo Energy’s Cape Station project.",
+    "text": "82% YoY Google Cloud revenue surge validates hefty capex spending, boosting investor confidence in 2026.",
     "source": "stock",
     "articleIds": [
-      "9b54d45f-f568-39a0-a3a4-fcfb26236514",
-      "36a9a672-08e4-31c8-a25f-a0b18577f8e2",
-      "94da716d-ff29-3524-9388-efb5dc0cd2a8",
-      "93618dd4-8bc5-3160-b58d-745598add48f"
+      "50ff20e9-0c72-3cda-9552-4b17b613a20b",
+      "9b54d45f-f568-39a0-a3a4-fcfb26236514"
     ],
-    "updatedAt": "2026-09-03T02:33:21.945Z"
+    "updatedAt": "2026-09-03T07:39:16.340Z"
   },
   "AMZN": {
     "text": "Robust AWS cash flow plus massive Druckenmiller buying fuels confidence amid expanding Zoox robotaxi rollout.",
@@ -170,59 +168,52 @@
     "updatedAt": "2026-09-02T21:31:45.228Z"
   },
   "HDFCBANK.NS": {
-    "text": "CEO departure and lingering legal challenges erode investor confidence, widening governance and return gaps significantly.",
-    "source": "stock",
-    "articleIds": [
-      "115503aa-d9f5-398c-8f4d-b577c8d5267f",
-      "de91df48-7a79-37d1-bcfa-5d7785fb7396"
-    ],
-    "updatedAt": "2026-09-02T05:22:05.871Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-03T07:39:31.306Z"
   },
   "ICICIBANK.NS": {
-    "text": "Prudential's $333 million 2% stake sale raises dilution worries, pressuring the bank's valuation amid broader uncertainty.",
-    "source": "stock",
-    "articleIds": [
-      "6e4c630f-018f-398e-85b8-f841ce1035bb"
-    ],
-    "updatedAt": "2026-09-01T05:59:32.762Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-03T07:39:36.020Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:33:47.269Z"
+    "updatedAt": "2026-09-03T07:39:40.353Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:33:51.701Z"
+    "updatedAt": "2026-09-03T07:39:44.675Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:33:56.440Z"
+    "updatedAt": "2026-09-03T07:39:49.255Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:34:00.896Z"
+    "updatedAt": "2026-09-03T07:39:53.640Z"
   },
   "RELIANCE.NS": {
-    "text": "Global launch of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore fuels optimism.",
-    "source": "stock",
-    "articleIds": [
-      "7408502c-d216-344d-921b-d6dd8859967f"
-    ],
-    "updatedAt": "2026-09-02T00:47:46.826Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-03T07:39:58.260Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:34:10.482Z"
+    "updatedAt": "2026-09-03T07:40:02.642Z"
   },
   "INDEX": {
     "text": "Midday rally in equities spurred investor buying, lifting exchange‑traded fund prices across the market",
@@ -236,6 +227,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-03T02:34:20.545Z"
+    "updatedAt": "2026-09-03T07:40:12.771Z"
   }
 }
