@@ -47,32 +47,30 @@
     "updatedAt": "2026-09-04T00:37:57.861Z"
   },
   "MU": {
-    "text": "Broad DRAM, HBM, and NAND exposure sustains bullish confidence despite recent price dip, reinforcing market sentiment.",
-    "source": "stock",
-    "articleIds": [
-      "b3dc8365-f308-3706-a94b-d3a0bbdfa10b",
-      "07468284-b351-3f60-88a3-51e1bc9a60f5"
-    ],
-    "updatedAt": "2026-09-03T22:08:25.880Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-04T10:21:58.416Z"
   },
   "AVGO": {
-    "text": "Investors reacted to mixed signals despite an 86% revenue surge and strong AI‑chip demand outlook.",
+    "text": "massive AI‑chip revenue surge raising profit‑margin and valuation concerns",
     "source": "stock",
     "articleIds": [
-      "b116c984-749d-3486-9368-c66b6e54bafd",
-      "9b0c707c-2e12-3616-8b10-b97a648ca1b4"
+      "b116c984-749d-3486-9368-c66b6e54bafd"
     ],
-    "updatedAt": "2026-09-04T05:20:56.602Z"
+    "updatedAt": "2026-09-04T10:22:03.561Z"
   },
   "SPCX": {
-    "text": "Analysts boost price target as AI infrastructure outlook strengthens, outweighing massive capex concerns overall significantly.",
+    "text": "Musk’s $70 B wealth surge boosting investor confidence amid optimistic AI‑data‑center valuation outlook",
     "source": "stock",
     "articleIds": [
-      "b5b29d10-ce64-3a02-97d2-8d966a25d6e9",
-      "11b911ce-37bf-31f6-8d79-82ce51681d3e",
-      "67bb6fb3-8bd4-3aba-8675-d37184b384a6"
+      "2f190c73-a1e5-3a6d-b534-0ccc321299bb",
+      "f1f39258-92ed-32ad-836d-417c39d5be8f",
+      "e6207408-a88d-3004-9098-1eae27b902c9",
+      "9cd9e724-c4c8-3e89-ad80-7cd52249c7a4",
+      "b5b29d10-ce64-3a02-97d2-8d966a25d6e9"
     ],
-    "updatedAt": "2026-09-04T05:21:02.013Z"
+    "updatedAt": "2026-09-04T10:22:09.064Z"
   },
   "MRVL": {
     "text": "Raised FY27‑28 revenue outlook and $4.56 B share repurchase boost investor confidence despite delayed AI benefits.",
@@ -112,15 +110,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T05:21:27.106Z"
+    "updatedAt": "2026-09-04T10:22:35.015Z"
   },
   "005930.KS": {
-    "text": "New share repurchase program and upcoming Kiwoom Corporate Day presentation boosting investor confidence.",
-    "source": "stock",
-    "articleIds": [
-      "11aaf616-18b9-3a5a-ba16-3029c7954704"
-    ],
-    "updatedAt": "2026-09-04T00:38:45.234Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-04T10:22:39.570Z"
   },
   "000660.KS": {
     "text": "Surging AI data‑center demand fuels HBM capacity expansion and new U.S./Japan plants with NVIDIA partnership.",
@@ -133,23 +129,20 @@
     "updatedAt": "2026-09-04T00:38:50.835Z"
   },
   "AAPL": {
-    "text": "Anticipation of John Ternus driving AI‑focused M&A, filling the missing piece in Apple’s strategy overall",
+    "text": "John Ternus assuming CEO role fuels optimism about fresh strategic direction and continued innovation momentum.",
     "source": "stock",
     "articleIds": [
-      "2f492d3c-6ee8-30a5-a7f0-5f5a18132ead",
-      "4a0dc6a1-3dab-3770-838b-81e291dfd5c7"
+      "3b566525-d52b-38bd-9e9c-b9a6afab46ec"
     ],
-    "updatedAt": "2026-09-04T05:21:42.772Z"
+    "updatedAt": "2026-09-04T10:22:49.756Z"
   },
   "MSFT": {
-    "text": "Revealing Azure’s $29.4 B core validates AI infrastructure scale, boosting investor confidence in growth prospects long‑term.",
+    "text": "Benefiting from OpenAI’s AGI‑era Astra launch, giving Microsoft a slight edge in the emerging AI race.",
     "source": "stock",
     "articleIds": [
-      "5d83acd3-360c-316f-871d-76c33405f4ff",
-      "3e202711-35d2-3404-b61c-fd0bb2c7f6a8",
-      "5d695529-abc2-3051-a1ca-b76d419f496e"
+      "5d83acd3-360c-316f-871d-76c33405f4ff"
     ],
-    "updatedAt": "2026-09-04T05:21:48.071Z"
+    "updatedAt": "2026-09-04T10:22:55.292Z"
   },
   "GOOGL": {
     "text": "Collaboration validates Eos’s long‑duration battery tech, delivering round‑the‑clock clean energy to the PJM grid.",
@@ -160,60 +153,60 @@
     "updatedAt": "2026-09-04T05:21:53.048Z"
   },
   "AMZN": {
-    "text": "Whole Foods’ push for smaller stores and new AI‑driven tech, plus Amazon’s leading AI advancements, fuels optimism.",
+    "text": "Whole Foods pivot to smaller stores plus Amazon’s AI breakthroughs driving investor optimism in 2026.",
     "source": "stock",
     "articleIds": [
       "acdfe110-a46f-47f6-b08c-ba884d8d4881",
-      "becba0fc-3e1e-452c-9520-6a23a4f39192",
       "5d83acd3-360c-316f-871d-76c33405f4ff",
       "5f27718a-b70b-3c51-bd7a-53cc5873314c"
     ],
-    "updatedAt": "2026-09-04T05:21:58.059Z"
+    "updatedAt": "2026-09-04T10:23:05.828Z"
   },
   "META": {
-    "text": "Meta's paid developer access to upgraded Muse Spark 1.3 AI model fuels rally.",
+    "text": "Paid developer access to the upgraded Muse Spark 1.3 AI model spurred investor enthusiasm.",
     "source": "stock",
     "articleIds": [
-      "4a030cf8-71b2-3c08-acc6-6e3d158efe2e",
-      "3170f4c1-1e1e-3d34-b364-f13792b1234b"
+      "4a030cf8-71b2-3c08-acc6-6e3d158efe2e"
     ],
-    "updatedAt": "2026-09-04T05:22:03.298Z"
+    "updatedAt": "2026-09-04T10:23:11.049Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T05:22:07.878Z"
+    "updatedAt": "2026-09-04T10:23:15.549Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-04T05:22:12.449Z"
+    "text": "Prudential's $333 million open‑market sale of a 2% stake raises dilution concerns.",
+    "source": "stock",
+    "articleIds": [
+      "6e4c630f-018f-398e-85b8-f841ce1035bb"
+    ],
+    "updatedAt": "2026-09-04T10:23:20.519Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T05:22:16.733Z"
+    "updatedAt": "2026-09-04T10:23:24.830Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T05:22:21.007Z"
+    "updatedAt": "2026-09-04T10:23:29.112Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T05:22:25.271Z"
+    "updatedAt": "2026-09-04T10:23:33.416Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T05:22:29.511Z"
+    "updatedAt": "2026-09-04T10:23:37.693Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -224,10 +217,10 @@
     "updatedAt": "2026-09-04T05:22:34.422Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T05:22:38.646Z"
+    "updatedAt": "2026-09-04T10:23:46.795Z"
   },
   "INDEX": {
     "text": "Midday equity momentum bolstered by upbeat tech earnings and steadier oil prices.",
@@ -239,12 +232,9 @@
     "updatedAt": "2026-09-03T22:10:28.668Z"
   },
   "INDEX_IN": {
-    "text": "Anticipation of Fed chair remarks and easing oil prices from Strait of Hormuz reopening hopes.",
-    "source": "macro",
-    "articleIds": [
-      "38a7309b-b1a9-3598-b188-be444f88dee1",
-      "a9f6ba9f-a5b7-3f48-85ce-87876e424650"
-    ],
-    "updatedAt": "2026-09-04T05:22:49.055Z"
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-09-04T10:23:56.231Z"
   }
 }
