@@ -9,24 +9,21 @@
     "updatedAt": "2026-09-03T22:07:56.648Z"
   },
   "AMD": {
-    "text": "$72.8 million worth of shares sold by Cathie Wood, prompting profit‑taking pressure.",
+    "text": "Cathie Wood offloaded $72.8 million of AMD holdings, prompting sell‑off pressure amid broader AI trade reallocation.",
     "source": "stock",
     "articleIds": [
-      "03df8029-89de-347a-8794-efe5f5d84dfc",
-      "561fa016-8229-3ed8-8945-2e0c165c2dfd"
+      "03df8029-89de-347a-8794-efe5f5d84dfc"
     ],
-    "updatedAt": "2026-09-03T22:08:02.447Z"
+    "updatedAt": "2026-09-04T00:37:41.799Z"
   },
   "NVDA": {
-    "text": "Acquiring Hugging Face for $12.9 B and realizing $30 B gain from Intel stake fuels optimism.",
+    "text": "Acquisition of Hugging Face for $12.9 billion expands open‑weight AI model portfolio, boosting growth prospects.",
     "source": "stock",
     "articleIds": [
       "cdfeef47-92be-4d09-9533-61ec82d90bdc",
-      "355dc224-7330-4ac0-a68d-c0239858ce20",
-      "25fa2879-cc47-3cb5-9711-2c5a3026e40c",
-      "718f9716-2905-3d84-be53-4b3903324bc9"
+      "355dc224-7330-4ac0-a68d-c0239858ce20"
     ],
-    "updatedAt": "2026-09-03T22:08:07.953Z"
+    "updatedAt": "2026-09-04T00:37:47.158Z"
   },
   "TSM": {
     "text": "$265 billion Arizona expansion and $4 billion European fab rollout boosting growth outlook, alongside a 67.7% margin surge.",
@@ -39,14 +36,13 @@
     "updatedAt": "2026-09-03T19:34:23.622Z"
   },
   "SNDK": {
-    "text": "Rapid data‑center revenue surge, delivering $2.98 B this quarter under multiyear contracts, fuels optimism.",
+    "text": "Bullish earnings outlook from recent EPS revisions fuels investor optimism and drives modest price increase.",
     "source": "stock",
     "articleIds": [
-      "5be0722d-66a0-3c87-b7ff-573a3c6388fa",
-      "7bfccb9b-665c-37be-91f1-2cf71f0903c7",
-      "9199cb7f-c939-3a26-b304-ff2eb71ed685"
+      "93d98365-7815-3454-9b36-3169fe43b94e",
+      "5be0722d-66a0-3c87-b7ff-573a3c6388fa"
     ],
-    "updatedAt": "2026-09-03T22:08:20.020Z"
+    "updatedAt": "2026-09-04T00:37:57.861Z"
   },
   "MU": {
     "text": "Broad DRAM, HBM, and NAND exposure sustains bullish confidence despite recent price dip, reinforcing market sentiment.",
@@ -58,25 +54,25 @@
     "updatedAt": "2026-09-03T22:08:25.880Z"
   },
   "AVGO": {
-    "text": "Disappointing Q2 outlook fell short of Wall Street expectations, prompting investor disappointment.",
+    "text": "Weaker‑than‑expected upcoming‑quarter sales outlook disappointed investors, prompting the decline.",
     "source": "stock",
     "articleIds": [
       "b116c984-749d-3486-9368-c66b6e54bafd",
       "9b0c707c-2e12-3616-8b10-b97a648ca1b4",
-      "047df3b2-3a17-346f-8acd-cc662c2e2c6e",
-      "5f2fa157-62cc-3a2d-b8f5-5e175ebdb833"
+      "047df3b2-3a17-346f-8acd-cc662c2e2c6e"
     ],
-    "updatedAt": "2026-09-03T22:08:31.287Z"
+    "updatedAt": "2026-09-04T00:38:08.744Z"
   },
   "SPCX": {
-    "text": "Bullish Oppenheimer forecast and upcoming Cybercab integration fueling investor confidence and market rally this today",
+    "text": "Analyst optimism and a $10 M bet on price recovery, plus Cybercab integration, boost confidence.",
     "source": "stock",
     "articleIds": [
+      "67bb6fb3-8bd4-3aba-8675-d37184b384a6",
+      "4062fff3-0fbc-3cbb-bc53-a4a0cce04a74",
       "b61d1e82-f266-3aaf-88bd-ffd1c1bca63a",
-      "69561f9e-07f4-38c5-9bb0-89adb280b31d",
-      "9ebcfa1b-fe54-35b4-80f4-a19bd972d821"
+      "69561f9e-07f4-38c5-9bb0-89adb280b31d"
     ],
-    "updatedAt": "2026-09-03T22:08:37.305Z"
+    "updatedAt": "2026-09-04T00:38:14.326Z"
   },
   "MRVL": {
     "text": "Operating margin widening two consecutive years and raised fiscal 2027‑2028 revenue outlook.",
@@ -116,60 +112,58 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T22:09:03.918Z"
+    "updatedAt": "2026-09-04T00:38:40.141Z"
   },
   "005930.KS": {
-    "text": "Inflation and rate‑hike concerns eclipsed record chip earnings, triggering a macro‑driven sell‑off amid market anxiety.",
+    "text": "New share repurchase program and upcoming Kiwoom Corporate Day presentation boosting investor confidence.",
     "source": "stock",
     "articleIds": [
-      "a38fbf3c-ffa0-361b-909a-4e7a9bbd49f4"
+      "11aaf616-18b9-3a5a-ba16-3029c7954704"
     ],
-    "updatedAt": "2026-09-03T07:38:54.103Z"
+    "updatedAt": "2026-09-04T00:38:45.234Z"
   },
   "000660.KS": {
-    "text": "Anticipation that the DRAM memory supercycle peak is approaching, dampening demand expectations across the industry.",
+    "text": "Surging AI data‑center demand fuels HBM capacity expansion and new U.S./Japan plants with NVIDIA partnership.",
     "source": "stock",
     "articleIds": [
-      "dc1cb209-7625-3680-bb82-0f6f38144594"
+      "b338440e-68d1-3ab5-a166-2c3694e6ea09",
+      "4dbee8ae-c90e-3c10-9896-64df71056251",
+      "078152dd-3600-3c81-86d2-d20253f644b9"
     ],
-    "updatedAt": "2026-09-03T19:35:20.912Z"
+    "updatedAt": "2026-09-04T00:38:50.835Z"
   },
   "AAPL": {
-    "text": "Leadership transition highlighting John Ternus’ product‑first strategy fuels optimism about sustained growth.",
+    "text": "Anticipation of aggressive AI‑focused M&A under new CEO fuels investor optimism and buying pressure today.",
     "source": "stock",
     "articleIds": [
-      "4a0dc6a1-3dab-3770-838b-81e291dfd5c7"
+      "2f492d3c-6ee8-30a5-a7f0-5f5a18132ead",
+      "4a0dc6a1-3dab-3770-838b-81e291dfd5c7",
+      "77efd63f-8b71-3de8-99c6-d2999eccae38"
     ],
-    "updatedAt": "2026-09-03T22:09:21.287Z"
+    "updatedAt": "2026-09-04T00:38:56.182Z"
   },
   "MSFT": {
-    "text": "Azure's $29.4 billion core disclosure highlights massive scale, reinforcing confidence in its AI cloud leadership.",
-    "source": "stock",
-    "articleIds": [
-      "5d695529-abc2-3051-a1ca-b76d419f496e",
-      "9ff9cfac-2118-3530-8faf-eff572d99fd4"
-    ],
-    "updatedAt": "2026-09-03T22:09:27.078Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-04T00:39:01.362Z"
   },
   "GOOGL": {
-    "text": "Partnering with PG&E and Rewiring America to launch a virtual power plant boosting energy services.",
-    "source": "stock",
-    "articleIds": [
-      "c1474b6b-2067-394f-a892-95287f7555bb"
-    ],
-    "updatedAt": "2026-09-03T22:09:32.951Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-04T00:39:06.064Z"
   },
   "AMZN": {
-    "text": "Whole Foods rollout of smaller stores combined with cutting‑edge tech upgrades fuels investor optimism.",
+    "text": "Strong Whole Foods performance with smaller stores and new tech, plus AWS’s cloud profitability boost",
     "source": "stock",
     "articleIds": [
       "acdfe110-a46f-47f6-b08c-ba884d8d4881",
       "becba0fc-3e1e-452c-9520-6a23a4f39192",
       "7c67a5b7-c9b2-3ada-852f-f0d0e1556d59",
-      "9ff9cfac-2118-3530-8faf-eff572d99fd4",
-      "56149a22-a9bf-3b01-82da-e9b6270e8e50"
+      "9ff9cfac-2118-3530-8faf-eff572d99fd4"
     ],
-    "updatedAt": "2026-09-03T22:09:38.276Z"
+    "updatedAt": "2026-09-04T00:39:11.542Z"
   },
   "META": {
     "text": "Launch of Muse Spark 1.3 AI model claiming parity with Anthropic and OpenAI fuels optimism.",
@@ -184,49 +178,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T22:09:49.060Z"
+    "updatedAt": "2026-09-04T00:39:22.083Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T22:09:54.142Z"
+    "updatedAt": "2026-09-04T00:39:26.855Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T22:09:58.765Z"
+    "updatedAt": "2026-09-04T00:39:31.142Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T22:10:03.610Z"
+    "updatedAt": "2026-09-04T00:39:35.514Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T22:10:08.625Z"
+    "updatedAt": "2026-09-04T00:39:40.049Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T22:10:13.425Z"
+    "updatedAt": "2026-09-04T00:39:44.370Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T22:10:18.444Z"
+    "updatedAt": "2026-09-04T00:39:49.017Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-03T22:10:23.005Z"
+    "updatedAt": "2026-09-04T00:39:53.295Z"
   },
   "INDEX": {
     "text": "Midday equity momentum bolstered by upbeat tech earnings and steadier oil prices.",
@@ -241,6 +235,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-03T22:10:33.572Z"
+    "updatedAt": "2026-09-04T00:40:03.348Z"
   }
 }
