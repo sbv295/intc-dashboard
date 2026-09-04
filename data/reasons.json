@@ -1,82 +1,82 @@
 {
   "INTC": {
-    "text": "Nvidia’s $5 billion stake delivering a $30 billion paper gain, fueling confidence in Intel’s AI partnership.",
+    "text": "Bullish Dell earnings signal surging server CPU demand, driving AI‑related estimate upgrades and manufacturing momentum.",
     "source": "stock",
     "articleIds": [
-      "460ee249-f95a-3ea6-8c94-1aaaed29b0e6",
-      "25fa2879-cc47-3cb5-9711-2c5a3026e40c"
+      "1528d6bc-32b2-3aff-9f61-6c1c1d39b75a",
+      "b5297163-3393-357c-85e0-0f3cbc54f1af",
+      "0bab2bfe-ace6-30ca-a635-eb0ed37c455c"
     ],
-    "updatedAt": "2026-09-03T22:07:56.648Z"
+    "updatedAt": "2026-09-04T17:58:36.719Z"
   },
   "AMD": {
-    "text": "Launch of Ryzen AI Halo and AI partnerships moving workloads from cloud to local devices",
-    "source": "stock",
-    "articleIds": [
-      "22731ec3-ccfb-3acb-a347-d0b93476b606",
-      "eb38bc0b-4209-3294-b234-50ae84c3d018"
-    ],
-    "updatedAt": "2026-09-04T14:41:45.409Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-04T17:58:41.525Z"
   },
   "NVDA": {
-    "text": "Acquiring Hugging Face for $12.9 B and eyeing a $2.5 B stake in Mira Murati’s AI startup fuels investor optimism.",
+    "text": "Jensen Huang’s $12.9 billion acquisition of Hugging Face bolstering confidence in Nvidia’s AI momentum.",
     "source": "stock",
     "articleIds": [
-      "3351b481-4379-4b51-880b-5824633b6042",
-      "c086d0cc-20f1-3a6c-9db9-212e4a55b436",
-      "6d891c7e-6bf6-3eca-a4c4-5a6753d062cc",
-      "64f13108-e2e0-3872-9691-3d148d5fa88d"
+      "3351b481-4379-4b51-880b-5824633b6042"
     ],
-    "updatedAt": "2026-09-04T14:41:50.382Z"
+    "updatedAt": "2026-09-04T17:58:46.696Z"
   },
   "TSM": {
-    "text": "Strong demand from Magnificent Seven partners boosting earnings outlook.",
+    "text": "Surging equipment demand and new packaging lab easing bottlenecks, boosting growth outlook.",
     "source": "stock",
     "articleIds": [
+      "2d709214-ff7e-3e27-8d69-baaf9498acc7",
+      "0f008f2f-8f34-3694-a77f-b3ddd2b20b04",
       "ef0ead48-ff82-303d-84b9-ddec48879a35"
     ],
-    "updatedAt": "2026-09-04T14:41:55.712Z"
+    "updatedAt": "2026-09-04T17:58:52.531Z"
   },
   "SNDK": {
-    "text": "AI rally fueled by falling Treasury yields and upbeat earnings revisions boosting investor confidence.",
+    "text": "Surge in AI memory demand driven by a massive AI‑server backlog and a pivotal new AI‑chip partnership.",
     "source": "stock",
     "articleIds": [
-      "5d6748bc-705d-389a-b4ee-c90494db82bb",
-      "93d98365-7815-3454-9b36-3169fe43b94e"
+      "f2bd65e3-39c7-3345-811e-e5b2754c694b",
+      "b009f9ca-1fbc-3a52-ae38-c3178521ff1c",
+      "a793754c-91f5-3456-b347-f44cacb20e0b",
+      "b1c89f45-86ca-3f2e-aed7-ef6fe9d8efb3",
+      "a991d5ba-b038-3d6c-87e5-8d6b4ea8f269"
     ],
-    "updatedAt": "2026-09-04T14:42:01.265Z"
+    "updatedAt": "2026-09-04T17:58:57.819Z"
   },
   "MU": {
-    "text": "Broad market rally and heightened Reddit buzz driving investor optimism for the memory‑chip sector today",
+    "text": "Strong AI server backlog and new OpenAI model fueling heightened memory‑chip demand for data‑center deployments.",
     "source": "stock",
     "articleIds": [
-      "6568b17f-2f89-3b31-91c3-132cdef021c0",
+      "f2bd65e3-39c7-3345-811e-e5b2754c694b",
+      "b009f9ca-1fbc-3a52-ae38-c3178521ff1c",
+      "7bd36585-ed22-31a4-84a2-49cec54626f6",
+      "a991d5ba-b038-3d6c-87e5-8d6b4ea8f269",
       "c14cc0ec-a7ad-37b2-a6b9-54ccdeb2ec18"
     ],
-    "updatedAt": "2026-09-04T14:42:06.683Z"
+    "updatedAt": "2026-09-04T17:59:02.901Z"
   },
   "AVGO": {
-    "text": "Supply‑chain bottlenecks and slower data‑center deployments temper AI demand expectations.",
-    "source": "stock",
-    "articleIds": [
-      "0f5328b1-f792-3a83-b658-122f3de7fd9f"
-    ],
-    "updatedAt": "2026-09-04T14:42:11.688Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-04T17:59:07.399Z"
   },
   "SPCX": {
-    "text": "$15 billion revolver plus $2 trillion market‑cap rebound from Starlink growth, launch dominance and AI ambitions driving.",
+    "text": "Upcoming September 9 share unlock raising dilution concerns and prompting investor caution.",
     "source": "stock",
     "articleIds": [
-      "6be4a8f0-8698-39a4-b6a7-be3f0b766359",
-      "30ac8b20-1876-3de7-aeb0-93e1be5ea4fc",
-      "9beda745-9201-3a9e-804d-4f2fb0d38bf3"
+      "46c7c606-035a-3f9a-a0bc-a2b8498fa490",
+      "b201e19c-c391-372c-bd70-d7b57ec224cd"
     ],
-    "updatedAt": "2026-09-04T14:42:17.473Z"
+    "updatedAt": "2026-09-04T17:59:12.752Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:42:23.013Z"
+    "updatedAt": "2026-09-04T17:59:17.772Z"
   },
   "ARM": {
     "text": "Anticipated $15 billion revenue from AGI CPU launch, with sales starting FY’28, fuels optimism among investors.",
@@ -87,14 +87,10 @@
     "updatedAt": "2026-09-03T19:34:54.538Z"
   },
   "QCOM": {
-    "text": "Backing Ultrahuman’s $70 M smart‑ring round, highlighting growth potential in wearable computing.",
-    "source": "stock",
-    "articleIds": [
-      "39865520-8f41-340b-8214-bb51c3156007",
-      "7baa5c50-8765-3ef3-b71a-210fced04086",
-      "ededbfd7-c6fc-3685-af65-e472b784dd32"
-    ],
-    "updatedAt": "2026-09-04T14:42:33.171Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-04T17:59:27.761Z"
   },
   "SKHY": {
     "text": "Surging AI data‑center demand fuels HBM capacity expansion, U.S. production boost, and deeper NVIDIA partnership.",
@@ -108,13 +104,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:42:42.781Z"
+    "updatedAt": "2026-09-04T17:59:37.250Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:42:47.332Z"
+    "updatedAt": "2026-09-04T17:59:42.185Z"
   },
   "000660.KS": {
     "text": "Surging AI data‑center demand drives expanded HBM capacity, U.S. production and deeper NVIDIA partnership strategic.",
@@ -125,52 +121,49 @@
     "updatedAt": "2026-09-04T14:42:52.579Z"
   },
   "AAPL": {
-    "text": "Foldable iPhone pricing at $2,000, quadrupled memory costs and limited production causing revenue concerns.",
+    "text": "Quadrupled memory component costs and pricing uncertainty dampening investor sentiment.",
     "source": "stock",
     "articleIds": [
-      "bfa56b96-5e96-4ba0-ba0e-01c1ca149aab",
-      "2c43d7e2-14f9-3866-9bc4-b0e54b04e44a",
-      "68db35ed-d138-338c-bfa5-8a543e889f64",
-      "c0b0b75d-0591-36f7-9fa7-4aaa245e65b6"
+      "e190df53-689d-344a-a2bc-58f318e0e1b8",
+      "2c43d7e2-14f9-3866-9bc4-b0e54b04e44a"
     ],
-    "updatedAt": "2026-09-04T14:42:58.084Z"
+    "updatedAt": "2026-09-04T17:59:53.123Z"
   },
   "MSFT": {
-    "text": "$43 million CEO stock sale and termination of Game Pass cloud gaming, citing rising infrastructure expenses",
+    "text": "Consolidation expectations after recent price surge prompting profit‑seeking options strategy.",
     "source": "stock",
     "articleIds": [
-      "eb1402ac-a0d2-3cf5-bc74-3fa733e66598",
-      "aa8ca4bc-e92f-3ac6-81ec-7e014202904a",
-      "3eb2e28d-d0a8-3446-9a70-9ffddd0d5540"
+      "3d68f2dd-a33a-34bb-af88-3a72cd32da92"
     ],
-    "updatedAt": "2026-09-04T14:43:03.686Z"
+    "updatedAt": "2026-09-04T17:59:58.371Z"
   },
   "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-04T14:43:08.605Z"
+    "text": "Higher capital‑spending guidance and quarterly negative free cash flow raise concerns over funding its AI data‑center expansion.",
+    "source": "stock",
+    "articleIds": [
+      "e4de28a1-3ddb-3d3b-aaeb-5761adc8caa9"
+    ],
+    "updatedAt": "2026-09-04T18:00:03.688Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:43:13.186Z"
+    "updatedAt": "2026-09-04T18:00:08.099Z"
   },
   "META": {
-    "text": "Opened paid developer access to the upgraded Muse Spark 1.3 AI coding model.",
+    "text": "Investors favor Apple’s stronger growth outlook, reducing demand for Meta’s platform revenue prospects",
     "source": "stock",
     "articleIds": [
-      "4f49e7cb-3195-3ed0-a8dc-b50fdf355171",
-      "4a030cf8-71b2-3c08-acc6-6e3d158efe2e"
+      "997b6e9f-d47a-3b64-a6cb-0b2ef428858d"
     ],
-    "updatedAt": "2026-09-04T14:43:18.079Z"
+    "updatedAt": "2026-09-04T18:00:13.461Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:43:22.592Z"
+    "updatedAt": "2026-09-04T18:00:18.056Z"
   },
   "ICICIBANK.NS": {
     "text": "Prudential's $333 million open‑market sale of a 2% stake raises dilution concerns.",
@@ -184,25 +177,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:43:32.714Z"
+    "updatedAt": "2026-09-04T18:00:28.010Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:43:37.014Z"
+    "updatedAt": "2026-09-04T18:00:32.647Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:43:41.326Z"
+    "updatedAt": "2026-09-04T18:00:37.076Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:43:45.821Z"
+    "updatedAt": "2026-09-04T18:00:41.426Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -216,22 +209,21 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:43:55.272Z"
+    "updatedAt": "2026-09-04T18:00:50.821Z"
   },
   "INDEX": {
-    "text": "Robust August payroll gains exceeding expectations boosted market sentiment.",
+    "text": "Elevated Treasury yields heightening rate‑risk concerns, dampening investor appetite across the broad market.",
     "source": "macro",
     "articleIds": [
-      "ad038ff4-0003-324b-8c7e-f30849ef8173",
-      "66f821a3-49c9-3ba4-9638-76d493807f26",
-      "30dc0d80-941f-38d3-950a-09f79b144050"
+      "a76ff614-5d2d-35f4-af3a-898b6e304261",
+      "49b1952b-b3ac-35ae-a2e6-ffcb86a66f2f"
     ],
-    "updatedAt": "2026-09-04T14:44:00.401Z"
+    "updatedAt": "2026-09-04T18:00:56.268Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-04T14:44:05.107Z"
+    "updatedAt": "2026-09-04T18:01:00.925Z"
   }
 }
