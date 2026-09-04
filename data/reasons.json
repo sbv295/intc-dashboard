@@ -9,12 +9,13 @@
     "updatedAt": "2026-09-03T22:07:56.648Z"
   },
   "AMD": {
-    "text": "Cathie Wood offloaded $72.8 million of AMD holdings, prompting sell‑off pressure amid broader AI trade reallocation.",
+    "text": "Investors fleeing to Nvidia after warning of its server‑CPU surge and Ark’s large AMD sell‑off",
     "source": "stock",
     "articleIds": [
+      "ee76f948-32d0-31d5-bdea-b104d35d1742",
       "03df8029-89de-347a-8794-efe5f5d84dfc"
     ],
-    "updatedAt": "2026-09-04T00:37:41.799Z"
+    "updatedAt": "2026-09-04T05:20:29.745Z"
   },
   "NVDA": {
     "text": "Acquisition of Hugging Face for $12.9 billion expands open‑weight AI model portfolio, boosting growth prospects.",
@@ -26,14 +27,15 @@
     "updatedAt": "2026-09-04T00:37:47.158Z"
   },
   "TSM": {
-    "text": "$265 billion Arizona expansion and $4 billion European fab rollout boosting growth outlook, alongside a 67.7% margin surge.",
+    "text": "$265 B Arizona expansion and $4 B European fab boost, coupled with 67.7% margin growth, fueling optimism.",
     "source": "stock",
     "articleIds": [
+      "ef0ead48-ff82-303d-84b9-ddec48879a35",
       "4440a965-4d74-3691-a1d9-1f835053223c",
       "4421c9f4-e871-3da0-b631-dadb34aa0c2a",
       "79ec3777-cf6f-3dbc-b921-0b941027aaa8"
     ],
-    "updatedAt": "2026-09-03T19:34:23.622Z"
+    "updatedAt": "2026-09-04T05:20:40.355Z"
   },
   "SNDK": {
     "text": "Bullish earnings outlook from recent EPS revisions fuels investor optimism and drives modest price increase.",
@@ -54,34 +56,32 @@
     "updatedAt": "2026-09-03T22:08:25.880Z"
   },
   "AVGO": {
-    "text": "Weaker‑than‑expected upcoming‑quarter sales outlook disappointed investors, prompting the decline.",
+    "text": "Investors reacted to mixed signals despite an 86% revenue surge and strong AI‑chip demand outlook.",
     "source": "stock",
     "articleIds": [
       "b116c984-749d-3486-9368-c66b6e54bafd",
-      "9b0c707c-2e12-3616-8b10-b97a648ca1b4",
-      "047df3b2-3a17-346f-8acd-cc662c2e2c6e"
+      "9b0c707c-2e12-3616-8b10-b97a648ca1b4"
     ],
-    "updatedAt": "2026-09-04T00:38:08.744Z"
+    "updatedAt": "2026-09-04T05:20:56.602Z"
   },
   "SPCX": {
-    "text": "Analyst optimism and a $10 M bet on price recovery, plus Cybercab integration, boost confidence.",
+    "text": "Analysts boost price target as AI infrastructure outlook strengthens, outweighing massive capex concerns overall significantly.",
     "source": "stock",
     "articleIds": [
-      "67bb6fb3-8bd4-3aba-8675-d37184b384a6",
-      "4062fff3-0fbc-3cbb-bc53-a4a0cce04a74",
-      "b61d1e82-f266-3aaf-88bd-ffd1c1bca63a",
-      "69561f9e-07f4-38c5-9bb0-89adb280b31d"
+      "b5b29d10-ce64-3a02-97d2-8d966a25d6e9",
+      "11b911ce-37bf-31f6-8d79-82ce51681d3e",
+      "67bb6fb3-8bd4-3aba-8675-d37184b384a6"
     ],
-    "updatedAt": "2026-09-04T00:38:14.326Z"
+    "updatedAt": "2026-09-04T05:21:02.013Z"
   },
   "MRVL": {
-    "text": "Operating margin widening two consecutive years and raised fiscal 2027‑2028 revenue outlook.",
+    "text": "Raised FY27‑28 revenue outlook and $4.56 B share repurchase boost investor confidence despite delayed AI benefits.",
     "source": "stock",
     "articleIds": [
-      "37ca38d5-c136-396f-91fe-6e883f6451b7",
-      "e41931bf-fcaf-3876-a92c-c3f9e160d96d"
+      "16ad0c50-8256-333e-a53e-4fa208941384",
+      "37ca38d5-c136-396f-91fe-6e883f6451b7"
     ],
-    "updatedAt": "2026-09-03T22:08:42.630Z"
+    "updatedAt": "2026-09-04T05:21:07.395Z"
   },
   "ARM": {
     "text": "Anticipated $15 billion revenue from AGI CPU launch, with sales starting FY’28, fuels optimism among investors.",
@@ -112,7 +112,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T00:38:40.141Z"
+    "updatedAt": "2026-09-04T05:21:27.106Z"
   },
   "005930.KS": {
     "text": "New share repurchase program and upcoming Kiwoom Corporate Day presentation boosting investor confidence.",
@@ -133,94 +133,101 @@
     "updatedAt": "2026-09-04T00:38:50.835Z"
   },
   "AAPL": {
-    "text": "Anticipation of aggressive AI‑focused M&A under new CEO fuels investor optimism and buying pressure today.",
+    "text": "Anticipation of John Ternus driving AI‑focused M&A, filling the missing piece in Apple’s strategy overall",
     "source": "stock",
     "articleIds": [
       "2f492d3c-6ee8-30a5-a7f0-5f5a18132ead",
-      "4a0dc6a1-3dab-3770-838b-81e291dfd5c7",
-      "77efd63f-8b71-3de8-99c6-d2999eccae38"
+      "4a0dc6a1-3dab-3770-838b-81e291dfd5c7"
     ],
-    "updatedAt": "2026-09-04T00:38:56.182Z"
+    "updatedAt": "2026-09-04T05:21:42.772Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-04T00:39:01.362Z"
+    "text": "Revealing Azure’s $29.4 B core validates AI infrastructure scale, boosting investor confidence in growth prospects long‑term.",
+    "source": "stock",
+    "articleIds": [
+      "5d83acd3-360c-316f-871d-76c33405f4ff",
+      "3e202711-35d2-3404-b61c-fd0bb2c7f6a8",
+      "5d695529-abc2-3051-a1ca-b76d419f496e"
+    ],
+    "updatedAt": "2026-09-04T05:21:48.071Z"
   },
   "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-04T00:39:06.064Z"
+    "text": "Collaboration validates Eos’s long‑duration battery tech, delivering round‑the‑clock clean energy to the PJM grid.",
+    "source": "stock",
+    "articleIds": [
+      "7c7e52b3-8afd-3ec0-b6ad-e51a33832a86"
+    ],
+    "updatedAt": "2026-09-04T05:21:53.048Z"
   },
   "AMZN": {
-    "text": "Strong Whole Foods performance with smaller stores and new tech, plus AWS’s cloud profitability boost",
+    "text": "Whole Foods’ push for smaller stores and new AI‑driven tech, plus Amazon’s leading AI advancements, fuels optimism.",
     "source": "stock",
     "articleIds": [
       "acdfe110-a46f-47f6-b08c-ba884d8d4881",
       "becba0fc-3e1e-452c-9520-6a23a4f39192",
-      "7c67a5b7-c9b2-3ada-852f-f0d0e1556d59",
-      "9ff9cfac-2118-3530-8faf-eff572d99fd4"
+      "5d83acd3-360c-316f-871d-76c33405f4ff",
+      "5f27718a-b70b-3c51-bd7a-53cc5873314c"
     ],
-    "updatedAt": "2026-09-04T00:39:11.542Z"
+    "updatedAt": "2026-09-04T05:21:58.059Z"
   },
   "META": {
-    "text": "Launch of Muse Spark 1.3 AI model claiming parity with Anthropic and OpenAI fuels optimism.",
+    "text": "Meta's paid developer access to upgraded Muse Spark 1.3 AI model fuels rally.",
     "source": "stock",
     "articleIds": [
-      "3170f4c1-1e1e-3d34-b364-f13792b1234b",
-      "f5f47781-f45e-3e16-93ce-c672c7d215f3"
+      "4a030cf8-71b2-3c08-acc6-6e3d158efe2e",
+      "3170f4c1-1e1e-3d34-b364-f13792b1234b"
     ],
-    "updatedAt": "2026-09-03T22:09:44.111Z"
+    "updatedAt": "2026-09-04T05:22:03.298Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T00:39:22.083Z"
+    "updatedAt": "2026-09-04T05:22:07.878Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T00:39:26.855Z"
+    "updatedAt": "2026-09-04T05:22:12.449Z"
   },
   "DEEPAKFERT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T00:39:31.142Z"
+    "updatedAt": "2026-09-04T05:22:16.733Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T00:39:35.514Z"
+    "updatedAt": "2026-09-04T05:22:21.007Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T00:39:40.049Z"
+    "updatedAt": "2026-09-04T05:22:25.271Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T00:39:44.370Z"
+    "updatedAt": "2026-09-04T05:22:29.511Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-04T00:39:49.017Z"
+    "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
+    "source": "stock",
+    "articleIds": [
+      "7408502c-d216-344d-921b-d6dd8859967f"
+    ],
+    "updatedAt": "2026-09-04T05:22:34.422Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T00:39:53.295Z"
+    "updatedAt": "2026-09-04T05:22:38.646Z"
   },
   "INDEX": {
     "text": "Midday equity momentum bolstered by upbeat tech earnings and steadier oil prices.",
@@ -232,9 +239,12 @@
     "updatedAt": "2026-09-03T22:10:28.668Z"
   },
   "INDEX_IN": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-09-04T00:40:03.348Z"
+    "text": "Anticipation of Fed chair remarks and easing oil prices from Strait of Hormuz reopening hopes.",
+    "source": "macro",
+    "articleIds": [
+      "38a7309b-b1a9-3598-b188-be444f88dee1",
+      "a9f6ba9f-a5b7-3f48-85ce-87876e424650"
+    ],
+    "updatedAt": "2026-09-04T05:22:49.055Z"
   }
 }
