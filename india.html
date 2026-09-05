@@ -337,7 +337,7 @@
         .stock-extended:empty {
             display: none;
         }
-        .stock-extended:empty + .stock-ath {
+        .stock-extended:empty + .stock-week:empty + .stock-ath {
             border-top: none;
             padding-top: 0;
         }
@@ -503,6 +503,35 @@
             color: var(--text-dim);
             font-weight: 400;
         }
+
+        /* ─── Weekly Performance Readout ────────────────── */
+        .stock-week {
+            font-size: 0.6rem;
+            margin-top: 4px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+        .stock-week:empty { display: none; }
+        .stock-week .week-day-letter {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 0.62rem;
+            color: var(--text-dim);
+            background: color-mix(in srgb, var(--text-dim) 18%, transparent);
+            cursor: help;
+        }
+        .stock-week .week-day-letter.up { background: var(--green); color: #06210f; }
+        .stock-week .week-day-letter.down { background: var(--red); color: #2a0508; }
 
         .stock-ath {
             font-size: 0.58rem;
@@ -1325,6 +1354,7 @@
                 <div class="stock-ohl" id="ohl-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
                 <div class="stock-extended" id="ext-${id}"></div>
+                <div class="stock-week" id="week-${id}"></div>
                 <div class="stock-ath" id="ath-${id}"></div>
                 <div class="stock-fundamentals" id="fundamentals-${id}"></div>
                 <div class="stock-risk" id="risk-${id}"></div>
@@ -1478,6 +1508,7 @@
                 drawSentimentChart(stock.ticker);
             }
 
+            renderWeekReadout(stock);
         } catch (e) {
             // Silent fail
         }
@@ -1551,6 +1582,7 @@
             priceEl.classList.add(price > prev ? 'price-flash-up' : 'price-flash-down');
         }
         st.prevPrice = price;
+        st.price = price;
         priceEl.textContent = fmtPrice(stock, price);
         updateMarketCap(ticker);
 
@@ -1572,6 +1604,7 @@
             chgEl.className = `price-block-change`;
             updateSentiment(ticker, pct);
         }
+        renderWeekReadout(stock);
     }
 
     // ─── Fetch Shares Outstanding / Fundamentals ────────────────────────────
@@ -1845,6 +1878,107 @@
     }
 
     // ─── 52-Week High/Low ────────────────────────────────────────────────────
+    // ─── Weekly Performance Readout (M T W T F) ─────────────────────────────
+    const WEEK_DAY_LETTERS = ['M', 'T', 'W', 'T', 'F'];
+    const INDIA_MARKET_OPEN_MINS = 555; // 9:15 AM IST
+
+    function dateStrInTz(date, tz) {
+        const s = date.toLocaleString('en-US', { timeZone: tz, hour12: false });
+        const d = new Date(s);
+        return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    }
+
+    // Returns a UTC-midnight Date for the Monday of the week containing the given 'YYYY-MM-DD' string.
+    function mondayOfWeek(dateStr) {
+        const [y, m, d] = dateStr.split('-').map(Number);
+        const dt = new Date(Date.UTC(y, m - 1, d));
+        const offset = (dt.getUTCDay() + 6) % 7; // days since Monday
+        dt.setUTCDate(dt.getUTCDate() - offset);
+        return dt;
+    }
+
+    function utcDateStr(dt) {
+        return `${dt.getUTCFullYear()}-${String(dt.getUTCMonth() + 1).padStart(2, '0')}-${String(dt.getUTCDate()).padStart(2, '0')}`;
+    }
+
+    async function fetchWeekForStock(stock) {
+        try {
+            const url = `${YAHOO_BASE}${stock.ticker}?interval=1d&range=1mo`;
+            const json = await yahooFetch(url);
+            const result = json.chart.result[0];
+            const quote = result.indicators.quote[0];
+            const timestamps = result.timestamp || [];
+
+            const closes = new Map();
+            for (let i = 0; i < timestamps.length; i++) {
+                const c = quote.close[i];
+                if (c != null) closes.set(dateStrInTz(new Date(timestamps[i] * 1000), 'Asia/Kolkata'), c);
+            }
+            state[stock.ticker].weekCloses = closes;
+            renderWeekReadout(stock);
+        } catch (e) {}
+    }
+
+    // Renders the current week's M/T/W/T/F readout from cached daily closes plus the live
+    // price (for today), so it updates in real time without an extra network fetch per tick.
+    function renderWeekReadout(stock) {
+        const st = state[stock.ticker];
+        const closes = st.weekCloses;
+        const weekEl = document.getElementById(`week-${sid(stock)}`);
+        if (!weekEl) return;
+        if (!closes) { weekEl.innerHTML = ''; return; }
+
+        const todayStr = dateStrInTz(new Date(), 'Asia/Kolkata');
+        const monday = mondayOfWeek(todayStr);
+        const sortedDates = Array.from(closes.keys()).sort();
+
+        // getIndiaMarketStatus() only distinguishes 'market'/'closed' (no premarket state),
+        // so use the IST clock directly to tell "not yet open today" apart from "closed after hours".
+        const istNow = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata', hour12: false }));
+        const beforeOpenToday = (istNow.getHours() * 60 + istNow.getMinutes()) < INDIA_MARKET_OPEN_MINS;
+
+        const cells = WEEK_DAY_LETTERS.map((letter, i) => {
+            const dt = new Date(monday);
+            dt.setUTCDate(dt.getUTCDate() + i);
+            const dateStr = utcDateStr(dt);
+
+            let cls = 'grey', title = 'No data';
+            if (dateStr > todayStr) {
+                title = 'Market not yet open';
+            } else if (INDIA_MARKET_HOLIDAYS.has(dateStr)) {
+                title = INDIA_MARKET_HOLIDAYS.get(dateStr);
+            } else if (dateStr === todayStr && beforeOpenToday) {
+                title = 'Market not yet open';
+            } else if (dateStr === todayStr) {
+                const priorDate = sortedDates.filter(d => d < dateStr).pop();
+                const prevClose = st.prevClose ?? (priorDate ? closes.get(priorDate) : null);
+                const curPrice = st.price ?? closes.get(dateStr);
+                if (curPrice != null && prevClose != null) {
+                    cls = curPrice >= prevClose ? 'up' : 'down';
+                    title = `${fmtPrice(stock, curPrice)} vs prev close ${fmtPrice(stock, prevClose)}`;
+                }
+            } else {
+                const idx = sortedDates.indexOf(dateStr);
+                if (idx > 0) {
+                    const close = closes.get(dateStr);
+                    const prevClose = closes.get(sortedDates[idx - 1]);
+                    if (close != null && prevClose != null) {
+                        cls = close >= prevClose ? 'up' : 'down';
+                        title = `${fmtPrice(stock, close)} vs prev close ${fmtPrice(stock, prevClose)}`;
+                    }
+                }
+            }
+
+            return `<span class="week-day-letter ${cls}" title="${title}">${letter}</span>`;
+        }).join('');
+
+        weekEl.innerHTML = cells;
+    }
+
+    async function fetchAllWeek() {
+        await Promise.allSettled(STOCKS.map(s => fetchWeekForStock(s)));
+    }
+
     async function fetchATHForStock(stock) {
         try {
             const url = `${YAHOO_BASE}${stock.ticker}?interval=1d&range=1y`;
@@ -1924,6 +2058,7 @@
         fetchAllIndia().then(() => {
             fetchAllShares();
             fetchAllATH();
+            fetchAllWeek();
         });
 
         setInterval(() => {
