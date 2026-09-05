@@ -1,27 +1,33 @@
 {
   "INTC": {
-    "text": "Bullish Dell earnings signal surging server CPU demand, driving AI‑related estimate upgrades and manufacturing momentum.",
+    "text": "Explosive Dell server growth driving heightened demand for Intel CPUs.",
     "source": "stock",
     "articleIds": [
+      "a91c1760-cb30-35a5-aafa-aa8fe449488e",
+      "7dfee411-0a82-318a-a1ed-841f801c5496",
       "1528d6bc-32b2-3aff-9f61-6c1c1d39b75a",
       "b5297163-3393-357c-85e0-0f3cbc54f1af",
       "0bab2bfe-ace6-30ca-a635-eb0ed37c455c"
     ],
-    "updatedAt": "2026-09-04T17:58:36.719Z"
+    "updatedAt": "2026-09-05T00:33:01.038Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-04T22:42:55.760Z"
-  },
-  "NVDA": {
-    "text": "Elon Musk’s exclusive SpaceX commitment secures massive compute spend, boosting Nvidia’s revenue outlook.",
+    "text": "Surging demand for AI accelerators and server CPUs drives revenue and EPS doubling by 2027.",
     "source": "stock",
     "articleIds": [
-      "3cc32d0a-a216-3bac-87f3-56a93813628b"
+      "ca834645-c820-3f40-b0a7-9fe069e23d9d"
     ],
-    "updatedAt": "2026-09-04T22:43:00.845Z"
+    "updatedAt": "2026-09-05T00:33:06.943Z"
+  },
+  "NVDA": {
+    "text": "AWS’s announcement to deploy two million additional Blackwell and Rubin GPUs, expanding NVIDIA’s AI hardware demand.",
+    "source": "stock",
+    "articleIds": [
+      "ada19db6-beec-314f-bb68-dbbf2e66cc04",
+      "c022b64c-df79-3520-acda-f62c580456de",
+      "8e4b3604-37c4-347e-9e8c-5a2541b5b889"
+    ],
+    "updatedAt": "2026-09-05T00:33:12.394Z"
   },
   "TSM": {
     "text": "Equipment demand surging 1.9× and a new three‑hectare lab easing packaging constraints, boosting demand.",
@@ -46,15 +52,15 @@
     "updatedAt": "2026-09-04T22:43:11.084Z"
   },
   "MU": {
-    "text": "AI surge from GPT‑6 launch fuels memory demand, prompting investor optimism and a breakout rally.",
+    "text": "OpenAI’s latest AI model release sparked AI‑trade momentum, prompting strong investor",
     "source": "stock",
     "articleIds": [
       "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
+      "c14cc0ec-a7ad-37b2-a6b9-54ccdeb2ec18",
       "5d6748bc-705d-389a-b4ee-c90494db82bb",
-      "c6e13a71-fa46-3e3e-93a4-48ef78a15205",
-      "54177afb-0b5b-318a-8400-ba4d8e6b6fda"
+      "c6e13a71-fa46-3e3e-93a4-48ef78a15205"
     ],
-    "updatedAt": "2026-09-04T22:43:16.290Z"
+    "updatedAt": "2026-09-05T00:33:29.224Z"
   },
   "AVGO": {
     "text": "Surging AI chip demand and Hock Tan’s bold revenue outlook prompted Morgan Stanley to raise the price target.",
@@ -68,7 +74,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:43:26.382Z"
+    "updatedAt": "2026-09-05T00:33:39.974Z"
   },
   "MRVL": {
     "text": "Sizable AI‑focused acquisition boosting growth prospects and positioning Marvell as a key hyperscaler supplier partner",
@@ -88,12 +94,10 @@
     "updatedAt": "2026-09-03T19:34:54.538Z"
   },
   "QCOM": {
-    "text": "Backing a $70 million smart‑ring venture, expanding wearables portfolio and showcasing Qualcomm‑powered AI capabilities for growth.",
-    "source": "stock",
-    "articleIds": [
-      "9fbb5582-e1d1-32bb-baad-3a040384b0d9"
-    ],
-    "updatedAt": "2026-09-04T20:29:03.539Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-05T00:33:56.661Z"
   },
   "SKHY": {
     "text": "Tariff negotiations unlocking AI‑focused memory demand, boosting margins and investment capacity.",
@@ -108,13 +112,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:43:51.963Z"
+    "updatedAt": "2026-09-05T00:34:05.711Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:43:56.685Z"
+    "updatedAt": "2026-09-05T00:34:10.200Z"
   },
   "000660.KS": {
     "text": "Tariff negotiations expanding AI memory access boost investor confidence, driving a sharp price surge today.",
@@ -146,62 +150,63 @@
     "updatedAt": "2026-09-04T22:44:12.383Z"
   },
   "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-04T22:44:16.960Z"
+    "text": "Massive $2.1 B Arkansas solar and transmission costs raising power‑infrastructure expense concerns.",
+    "source": "stock",
+    "articleIds": [
+      "51124c18-e32c-3b2d-86fe-44c82255eb44",
+      "e8adcb87-3f13-3db2-b626-0d6e4b9cb4df"
+    ],
+    "updatedAt": "2026-09-05T00:34:31.911Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:44:21.598Z"
+    "updatedAt": "2026-09-05T00:34:36.460Z"
   },
   "META": {
-    "text": "Cutting AI output prices by 95% for developers who share their data, boosting demand for Meta’s services.",
+    "text": "Court victory narrowly secured, boosting confidence after prolonged legal uncertainty.",
     "source": "stock",
     "articleIds": [
-      "a543a03a-6b71-3917-bfd2-3d1fb808bc53"
+      "3f9da0f0-8b0f-30c2-80ae-5d993aef4c4d"
     ],
-    "updatedAt": "2026-09-04T20:29:49.901Z"
+    "updatedAt": "2026-09-05T00:34:41.645Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:44:31.110Z"
+    "updatedAt": "2026-09-05T00:34:46.421Z"
   },
   "ICICIBANK.NS": {
-    "text": "Prudential's $333 million open‑market sale of a 2% stake raises dilution concerns.",
-    "source": "stock",
-    "articleIds": [
-      "6e4c630f-018f-398e-85b8-f841ce1035bb"
-    ],
-    "updatedAt": "2026-09-04T10:23:20.519Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-05T00:34:50.703Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:44:40.178Z"
+    "updatedAt": "2026-09-05T00:34:55.085Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:44:44.424Z"
+    "updatedAt": "2026-09-05T00:34:59.355Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:44:48.738Z"
+    "updatedAt": "2026-09-05T00:35:03.782Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:44:52.964Z"
+    "updatedAt": "2026-09-05T00:35:08.151Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -215,18 +220,18 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:45:02.169Z"
+    "updatedAt": "2026-09-05T00:35:17.603Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:45:06.892Z"
+    "updatedAt": "2026-09-05T00:35:22.280Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-04T22:45:11.616Z"
+    "updatedAt": "2026-09-05T00:35:27.000Z"
   }
 }
