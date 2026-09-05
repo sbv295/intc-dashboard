@@ -20,14 +20,12 @@
     "updatedAt": "2026-09-05T00:33:06.943Z"
   },
   "NVDA": {
-    "text": "AWS’s announcement to deploy two million additional Blackwell and Rubin GPUs, expanding NVIDIA’s AI hardware demand.",
+    "text": "$2.5 billion investment in Mira Murati’s Thinking Machines Lab, expanding Nvidia’s capital‑allocation role into model‑space.",
     "source": "stock",
     "articleIds": [
-      "ada19db6-beec-314f-bb68-dbbf2e66cc04",
-      "c022b64c-df79-3520-acda-f62c580456de",
-      "8e4b3604-37c4-347e-9e8c-5a2541b5b889"
+      "4ad8989b-557c-38f3-9903-dd41d8938edf"
     ],
-    "updatedAt": "2026-09-05T00:33:12.394Z"
+    "updatedAt": "2026-09-05T05:10:33.896Z"
   },
   "TSM": {
     "text": "Equipment demand surging 1.9× and a new three‑hectare lab easing packaging constraints, boosting demand.",
@@ -40,50 +38,51 @@
     "updatedAt": "2026-09-04T22:43:05.912Z"
   },
   "SNDK": {
-    "text": "Surging AI-server demand and a $95 billion backlog boost confidence in memory chip growth prospects.",
+    "text": "Addition to the S&P 100 index and hedge funds doubling their stake sparked buying frenzy.",
     "source": "stock",
     "articleIds": [
+      "d88bb5d3-8857-3b67-b6e6-0240fb8305ad",
+      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
       "64f13108-e2e0-3872-9691-3d148d5fa88d",
-      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
-      "5d6748bc-705d-389a-b4ee-c90494db82bb",
-      "c6e13a71-fa46-3e3e-93a4-48ef78a15205",
-      "f2bd65e3-39c7-3345-811e-e5b2754c694b"
-    ],
-    "updatedAt": "2026-09-04T22:43:11.084Z"
-  },
-  "MU": {
-    "text": "OpenAI’s latest AI model release sparked AI‑trade momentum, prompting strong investor",
-    "source": "stock",
-    "articleIds": [
-      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
-      "c14cc0ec-a7ad-37b2-a6b9-54ccdeb2ec18",
       "5d6748bc-705d-389a-b4ee-c90494db82bb",
       "c6e13a71-fa46-3e3e-93a4-48ef78a15205"
     ],
-    "updatedAt": "2026-09-05T00:33:29.224Z"
+    "updatedAt": "2026-09-05T05:10:44.666Z"
   },
-  "AVGO": {
-    "text": "Surging AI chip demand and Hock Tan’s bold revenue outlook prompted Morgan Stanley to raise the price target.",
+  "MU": {
+    "text": "Release of OpenAI’s latest AI model spurred AI‑trade momentum, driving investor demand for memory products.",
     "source": "stock",
     "articleIds": [
+      "51bfe692-422b-3260-a4a7-67363608ed1a",
+      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
+      "c14cc0ec-a7ad-37b2-a6b9-54ccdeb2ec18",
+      "5d6748bc-705d-389a-b4ee-c90494db82bb"
+    ],
+    "updatedAt": "2026-09-05T05:10:50.097Z"
+  },
+  "AVGO": {
+    "text": "Surging AI chip demand and CEO’s financing of Anthropic and OpenAI fuel optimistic revenue outlook.",
+    "source": "stock",
+    "articleIds": [
+      "ad9b8763-fd6f-3d52-b9c3-b7d85195b538",
+      "4ee36cc6-c82c-3a09-a24a-b89ba7c22447",
       "d44d141d-138b-3d23-9821-db4a2e3957b1"
     ],
-    "updatedAt": "2026-09-04T20:28:41.360Z"
+    "updatedAt": "2026-09-05T05:10:55.776Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:33:39.974Z"
+    "updatedAt": "2026-09-05T05:11:00.624Z"
   },
   "MRVL": {
-    "text": "Sizable AI‑focused acquisition boosting growth prospects and positioning Marvell as a key hyperscaler supplier partner",
+    "text": "Sizable AI‑focused acquisition boosted investor confidence, driving a sharp rally today.",
     "source": "stock",
     "articleIds": [
-      "b05c5166-f4d1-3795-bbea-a8cf76d131f5",
-      "62d736a9-96f4-3a87-ba56-2463fc10b5c6"
+      "b05c5166-f4d1-3795-bbea-a8cf76d131f5"
     ],
-    "updatedAt": "2026-09-04T22:43:31.750Z"
+    "updatedAt": "2026-09-05T05:11:05.705Z"
   },
   "ARM": {
     "text": "Anticipated $15 billion revenue from AGI CPU launch, with sales starting FY’28, fuels optimism among investors.",
@@ -97,7 +96,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:33:56.661Z"
+    "updatedAt": "2026-09-05T05:11:16.125Z"
   },
   "SKHY": {
     "text": "Tariff negotiations unlocking AI‑focused memory demand, boosting margins and investment capacity.",
@@ -112,13 +111,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:34:05.711Z"
+    "updatedAt": "2026-09-05T05:11:25.346Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:34:10.200Z"
+    "updatedAt": "2026-09-05T05:11:29.615Z"
   },
   "000660.KS": {
     "text": "Tariff negotiations expanding AI memory access boost investor confidence, driving a sharp price surge today.",
@@ -141,13 +140,12 @@
     "updatedAt": "2026-09-04T22:44:07.166Z"
   },
   "MSFT": {
-    "text": "cloud profitability obscured by new reporting structure despite booming Azure revenue expectations",
+    "text": "Lingering doubts over AI monetization prospects despite recent improvements in Microsoft’s AI narrative.",
     "source": "stock",
     "articleIds": [
-      "4e6afb20-9e7d-3393-b9ec-0c0c48d2a435",
-      "cd9ca485-8577-38d7-9233-82c90e89d107"
+      "4e6afb20-9e7d-3393-b9ec-0c0c48d2a435"
     ],
-    "updatedAt": "2026-09-04T22:44:12.383Z"
+    "updatedAt": "2026-09-05T05:11:44.767Z"
   },
   "GOOGL": {
     "text": "Massive $2.1 B Arkansas solar and transmission costs raising power‑infrastructure expense concerns.",
@@ -162,7 +160,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:34:36.460Z"
+    "updatedAt": "2026-09-05T05:11:54.480Z"
   },
   "META": {
     "text": "Court victory narrowly secured, boosting confidence after prolonged legal uncertainty.",
@@ -176,37 +174,37 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:34:46.421Z"
+    "updatedAt": "2026-09-05T05:12:04.024Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:34:50.703Z"
+    "updatedAt": "2026-09-05T05:12:08.428Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:34:55.085Z"
+    "updatedAt": "2026-09-05T05:12:12.705Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:34:59.355Z"
+    "updatedAt": "2026-09-05T05:12:16.941Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:35:03.782Z"
+    "updatedAt": "2026-09-05T05:12:21.358Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:35:08.151Z"
+    "updatedAt": "2026-09-05T05:12:25.593Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -220,18 +218,20 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:35:17.603Z"
+    "updatedAt": "2026-09-05T05:12:34.508Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-05T00:35:22.280Z"
+    "updatedAt": "2026-09-05T05:12:39.393Z"
   },
   "INDEX_IN": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-09-05T00:35:27.000Z"
+    "text": "Anticipation of the Fed chair’s speech and heightened closing‑auction volatility driving market sentiment.",
+    "source": "macro",
+    "articleIds": [
+      "38a7309b-b1a9-3598-b188-be444f88dee1"
+    ],
+    "updatedAt": "2026-09-05T05:12:44.128Z"
   }
 }
