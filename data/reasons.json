@@ -20,10 +20,13 @@
     "updatedAt": "2026-09-05T00:33:06.943Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-05T09:48:48.835Z"
+    "text": "Positive AI demand signals and fresh buy recommendations boost investor confidence, driving modest intraday gain.",
+    "source": "stock",
+    "articleIds": [
+      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
+      "9cbc5f65-18a0-3d52-b15f-eb41d010980d"
+    ],
+    "updatedAt": "2026-09-05T13:11:14.834Z"
   },
   "TSM": {
     "text": "Equipment demand surging 1.9× and a new three‑hectare lab easing packaging constraints, boosting demand.",
@@ -36,42 +39,38 @@
     "updatedAt": "2026-09-04T22:43:05.912Z"
   },
   "SNDK": {
-    "text": "Addition to the S&P 100 index and hedge funds doubling their stake sparked buying frenzy.",
+    "text": "addition to the S&P 100 index and hedge funds doubling their ownership driving investor enthusiasm",
     "source": "stock",
     "articleIds": [
+      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
       "d88bb5d3-8857-3b67-b6e6-0240fb8305ad",
-      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
       "64f13108-e2e0-3872-9691-3d148d5fa88d",
-      "5d6748bc-705d-389a-b4ee-c90494db82bb",
-      "c6e13a71-fa46-3e3e-93a4-48ef78a15205"
-    ],
-    "updatedAt": "2026-09-05T05:10:44.666Z"
-  },
-  "MU": {
-    "text": "Release of OpenAI’s latest AI model spurred AI‑trade momentum, driving investor demand for memory products.",
-    "source": "stock",
-    "articleIds": [
-      "51bfe692-422b-3260-a4a7-67363608ed1a",
-      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
-      "c14cc0ec-a7ad-37b2-a6b9-54ccdeb2ec18",
       "5d6748bc-705d-389a-b4ee-c90494db82bb"
     ],
-    "updatedAt": "2026-09-05T05:10:50.097Z"
+    "updatedAt": "2026-09-05T13:11:25.781Z"
   },
-  "AVGO": {
-    "text": "Strong cash generation highlighted by resilient US services activity and CEO’s AI infrastructure financing commitments.",
+  "MU": {
+    "text": "AI‑driven demand surge after OpenAI’s new model release and bullish Nvidia/SK Hynix signals.",
     "source": "stock",
     "articleIds": [
-      "d503ccd6-294a-30d1-9536-1b22c0f86f27",
-      "ad9b8763-fd6f-3d52-b9c3-b7d85195b538"
+      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
+      "9cbc5f65-18a0-3d52-b15f-eb41d010980d",
+      "51bfe692-422b-3260-a4a7-67363608ed1a",
+      "c14cc0ec-a7ad-37b2-a6b9-54ccdeb2ec18"
     ],
-    "updatedAt": "2026-09-05T09:49:09.769Z"
+    "updatedAt": "2026-09-05T13:11:30.888Z"
+  },
+  "AVGO": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-05T13:11:35.930Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:49:14.969Z"
+    "updatedAt": "2026-09-05T13:11:40.904Z"
   },
   "MRVL": {
     "text": "Sizable AI‑focused acquisition boosted investor confidence, driving a sharp rally today.",
@@ -93,7 +92,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:49:30.332Z"
+    "updatedAt": "2026-09-05T13:11:56.551Z"
   },
   "SKHY": {
     "text": "Tariff negotiations unlocking AI‑focused memory demand, boosting margins and investment capacity.",
@@ -108,13 +107,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:49:39.410Z"
+    "updatedAt": "2026-09-05T13:12:05.949Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:49:43.689Z"
+    "updatedAt": "2026-09-05T13:12:10.297Z"
   },
   "000660.KS": {
     "text": "Tariff negotiations expanding AI memory access boost investor confidence, driving a sharp price surge today.",
@@ -126,15 +125,13 @@
     "updatedAt": "2026-09-04T22:44:01.738Z"
   },
   "AAPL": {
-    "text": "Uncertainty over John Ternus’s leadership transition and expectations he won’t replicate Tim Cook’s strategy at.",
+    "text": "Uncertainty over John Ternus’s leadership style diverging from Tim Cook fuels investor caution.",
     "source": "stock",
     "articleIds": [
       "e89c7bbd-f957-4812-8608-104fc9dd8956",
-      "2dd799bd-bc25-3dda-b4e9-179563f2fc20",
-      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
-      "6571f3fe-4381-306c-9df3-a7b8ebcdf27c"
+      "d5001ca0-1c20-3379-83c3-ddca4526f9c2"
     ],
-    "updatedAt": "2026-09-05T09:49:54.220Z"
+    "updatedAt": "2026-09-05T13:12:20.509Z"
   },
   "MSFT": {
     "text": "Lawsuit over unpermitted AI training data and CEO’s $43 M Rule 10b5‑1 share sale fueling investor concerns.",
@@ -155,10 +152,12 @@
     "updatedAt": "2026-09-05T00:34:31.911Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-05T09:50:09.613Z"
+    "text": "Cramer’s warning that growth is slowing and margins under pressure spooked investors.",
+    "source": "stock",
+    "articleIds": [
+      "bf544d90-ddb5-382f-91d3-b9ff573c0eb6"
+    ],
+    "updatedAt": "2026-09-05T13:12:35.915Z"
   },
   "META": {
     "text": "Court victory narrowly secured, boosting confidence after prolonged legal uncertainty.",
@@ -172,37 +171,37 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:50:19.542Z"
+    "updatedAt": "2026-09-05T13:12:45.694Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:50:23.809Z"
+    "updatedAt": "2026-09-05T13:12:50.171Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:50:28.102Z"
+    "updatedAt": "2026-09-05T13:12:54.556Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:50:32.394Z"
+    "updatedAt": "2026-09-05T13:12:58.886Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:50:36.803Z"
+    "updatedAt": "2026-09-05T13:13:03.176Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:50:41.086Z"
+    "updatedAt": "2026-09-05T13:13:07.506Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -216,13 +215,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:50:50.414Z"
+    "updatedAt": "2026-09-05T13:13:16.862Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-05T09:50:55.304Z"
+    "updatedAt": "2026-09-05T13:13:21.496Z"
   },
   "INDEX_IN": {
     "text": "Anticipation of the Fed chair’s speech and heightened closing‑auction volatility driving market sentiment.",
