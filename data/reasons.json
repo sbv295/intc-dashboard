@@ -1,15 +1,14 @@
 {
   "INTC": {
-    "text": "Explosive Dell server growth driving heightened demand for Intel CPUs.",
+    "text": "Dell’s strong server earnings signal soaring CPU demand, driving investor optimism for Intel’s AI‑focused roadmap.",
     "source": "stock",
     "articleIds": [
       "a91c1760-cb30-35a5-aafa-aa8fe449488e",
-      "7dfee411-0a82-318a-a1ed-841f801c5496",
       "1528d6bc-32b2-3aff-9f61-6c1c1d39b75a",
       "b5297163-3393-357c-85e0-0f3cbc54f1af",
       "0bab2bfe-ace6-30ca-a635-eb0ed37c455c"
     ],
-    "updatedAt": "2026-09-05T00:33:01.038Z"
+    "updatedAt": "2026-09-05T16:27:56.704Z"
   },
   "AMD": {
     "text": "Surging demand for AI accelerators and server CPUs drives revenue and EPS doubling by 2027.",
@@ -20,13 +19,10 @@
     "updatedAt": "2026-09-05T00:33:06.943Z"
   },
   "NVDA": {
-    "text": "Positive AI demand signals and fresh buy recommendations boost investor confidence, driving modest intraday gain.",
-    "source": "stock",
-    "articleIds": [
-      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
-      "9cbc5f65-18a0-3d52-b15f-eb41d010980d"
-    ],
-    "updatedAt": "2026-09-05T13:11:14.834Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-05T16:28:06.351Z"
   },
   "TSM": {
     "text": "Equipment demand surging 1.9× and a new three‑hectare lab easing packaging constraints, boosting demand.",
@@ -61,16 +57,19 @@
     "updatedAt": "2026-09-05T13:11:30.888Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-05T13:11:35.930Z"
+    "text": "Robust cash flow and AI infrastructure financing highlighted by CEO, reinforcing confidence amid macro signals.",
+    "source": "stock",
+    "articleIds": [
+      "d503ccd6-294a-30d1-9536-1b22c0f86f27",
+      "ad9b8763-fd6f-3d52-b9c3-b7d85195b538"
+    ],
+    "updatedAt": "2026-09-05T16:28:28.482Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:11:40.904Z"
+    "updatedAt": "2026-09-05T16:28:33.536Z"
   },
   "MRVL": {
     "text": "Sizable AI‑focused acquisition boosted investor confidence, driving a sharp rally today.",
@@ -92,7 +91,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:11:56.551Z"
+    "updatedAt": "2026-09-05T16:28:49.245Z"
   },
   "SKHY": {
     "text": "Tariff negotiations unlocking AI‑focused memory demand, boosting margins and investment capacity.",
@@ -107,13 +106,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:12:05.949Z"
+    "updatedAt": "2026-09-05T16:28:58.746Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:12:10.297Z"
+    "updatedAt": "2026-09-05T16:29:03.051Z"
   },
   "000660.KS": {
     "text": "Tariff negotiations expanding AI memory access boost investor confidence, driving a sharp price surge today.",
@@ -125,13 +124,10 @@
     "updatedAt": "2026-09-04T22:44:01.738Z"
   },
   "AAPL": {
-    "text": "Uncertainty over John Ternus’s leadership style diverging from Tim Cook fuels investor caution.",
-    "source": "stock",
-    "articleIds": [
-      "e89c7bbd-f957-4812-8608-104fc9dd8956",
-      "d5001ca0-1c20-3379-83c3-ddca4526f9c2"
-    ],
-    "updatedAt": "2026-09-05T13:12:20.509Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-05T16:29:13.482Z"
   },
   "MSFT": {
     "text": "Lawsuit over unpermitted AI training data and CEO’s $43 M Rule 10b5‑1 share sale fueling investor concerns.",
@@ -143,13 +139,14 @@
     "updatedAt": "2026-09-05T09:49:59.429Z"
   },
   "GOOGL": {
-    "text": "Massive $2.1 B Arkansas solar and transmission costs raising power‑infrastructure expense concerns.",
+    "text": "Inflated earnings beat driven by a $77.1 billion unrealized equity gain, raising growth‑quality concerns.",
     "source": "stock",
     "articleIds": [
+      "69756e18-c639-3c92-b753-4ecdf18b4410",
       "51124c18-e32c-3b2d-86fe-44c82255eb44",
       "e8adcb87-3f13-3db2-b626-0d6e4b9cb4df"
     ],
-    "updatedAt": "2026-09-05T00:34:31.911Z"
+    "updatedAt": "2026-09-05T16:29:23.920Z"
   },
   "AMZN": {
     "text": "Cramer’s warning that growth is slowing and margins under pressure spooked investors.",
@@ -171,37 +168,37 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:12:45.694Z"
+    "updatedAt": "2026-09-05T16:29:38.724Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:12:50.171Z"
+    "updatedAt": "2026-09-05T16:29:43.031Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:12:54.556Z"
+    "updatedAt": "2026-09-05T16:29:47.445Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:12:58.886Z"
+    "updatedAt": "2026-09-05T16:29:51.766Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:13:03.176Z"
+    "updatedAt": "2026-09-05T16:29:56.140Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:13:07.506Z"
+    "updatedAt": "2026-09-05T16:30:00.485Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -215,13 +212,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:13:16.862Z"
+    "updatedAt": "2026-09-05T16:30:09.717Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-05T13:13:21.496Z"
+    "updatedAt": "2026-09-05T16:30:14.375Z"
   },
   "INDEX_IN": {
     "text": "Anticipation of the Fed chair’s speech and heightened closing‑auction volatility driving market sentiment.",
