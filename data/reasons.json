@@ -12,18 +12,19 @@
     "updatedAt": "2026-09-05T20:53:12.422Z"
   },
   "AMD": {
-    "text": "Surging demand for AI accelerators and server CPUs drives revenue and EPS doubling by 2027.",
+    "text": "Commitment of up to $5 billion to Anthropic and surging AI accelerator demand boost growth outlook.",
     "source": "stock",
     "articleIds": [
+      "c775e846-45ca-31c8-9dcd-3d8dbd532e0c",
       "ca834645-c820-3f40-b0a7-9fe069e23d9d"
     ],
-    "updatedAt": "2026-09-05T00:33:06.943Z"
+    "updatedAt": "2026-09-05T22:34:24.363Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:53:22.515Z"
+    "updatedAt": "2026-09-05T22:34:29.093Z"
   },
   "TSM": {
     "text": "Equipment demand surging 1.9× and a new three‑hectare lab easing packaging constraints, boosting demand.",
@@ -95,47 +96,40 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:54:05.788Z"
+    "updatedAt": "2026-09-05T22:35:12.731Z"
   },
   "SKHY": {
-    "text": "Tariff negotiations boosting U.S. market access amid rising AI‑driven memory demand.",
-    "source": "stock",
-    "articleIds": [
-      "717f3202-bd15-3aa2-a108-959d131643d3",
-      "8fa3af81-3c8a-35e5-af9b-660ec44dd878",
-      "6b1c813c-3f8f-339a-9b38-4c60294ea9be"
-    ],
-    "updatedAt": "2026-09-05T20:54:11.419Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-05T22:35:17.952Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:54:15.858Z"
+    "updatedAt": "2026-09-05T22:35:22.485Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:54:20.294Z"
+    "updatedAt": "2026-09-05T22:35:26.932Z"
   },
   "000660.KS": {
-    "text": "Tariff negotiations boosting AI‑focused memory demand and investment outlook.",
-    "source": "stock",
-    "articleIds": [
-      "717f3202-bd15-3aa2-a108-959d131643d3",
-      "8fa3af81-3c8a-35e5-af9b-660ec44dd878",
-      "6b1c813c-3f8f-339a-9b38-4c60294ea9be"
-    ],
-    "updatedAt": "2026-09-05T20:54:25.563Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-05T22:35:32.164Z"
   },
   "AAPL": {
-    "text": "New £2 billion UK ATT lawsuit alleging Apple’s tracking feature unfairly benefits its own advertising operations.",
+    "text": "New £2 billion UK ATT lawsuit alleging unfair advantage for Apple’s own advertising operations.",
     "source": "stock",
     "articleIds": [
-      "1d1383da-926e-39c8-b5a0-0a77e8406648"
+      "1d1383da-926e-39c8-b5a0-0a77e8406648",
+      "30b38001-c329-31cf-aebb-eac480c69853"
     ],
-    "updatedAt": "2026-09-05T20:54:30.744Z"
+    "updatedAt": "2026-09-05T22:35:37.777Z"
   },
   "MSFT": {
     "text": "Lawsuit over unpermitted AI training data and CEO’s $43 M Rule 10b5‑1 share sale fueling investor concerns.",
@@ -176,37 +170,37 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:54:56.782Z"
+    "updatedAt": "2026-09-05T22:36:04.465Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:55:01.524Z"
+    "updatedAt": "2026-09-05T22:36:09.008Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:55:05.972Z"
+    "updatedAt": "2026-09-05T22:36:13.523Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:55:10.348Z"
+    "updatedAt": "2026-09-05T22:36:18.064Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:55:14.880Z"
+    "updatedAt": "2026-09-05T22:36:22.550Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:55:19.295Z"
+    "updatedAt": "2026-09-05T22:36:27.029Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -220,13 +214,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:55:29.044Z"
+    "updatedAt": "2026-09-05T22:36:37.371Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-05T20:55:33.856Z"
+    "updatedAt": "2026-09-05T22:36:42.291Z"
   },
   "INDEX_IN": {
     "text": "Anticipation of the Fed chair’s speech and heightened closing‑auction volatility driving market sentiment.",
