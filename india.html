@@ -506,7 +506,7 @@
 
         /* ─── Weekly Performance Readout ────────────────── */
         .stock-week {
-            font-size: 0.6rem;
+            font-size: 0.66rem;
             margin-top: 4px;
             padding-top: 6px;
             padding-bottom: 6px;
@@ -514,24 +514,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 8px;
+            gap: 9px;
         }
         .stock-week:empty { display: none; }
         .stock-week .week-day-letter {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
             font-weight: 700;
-            font-size: 0.62rem;
+            letter-spacing: 0.2px;
             color: var(--text-dim);
-            background: color-mix(in srgb, var(--text-dim) 18%, transparent);
+            opacity: 0.4;
             cursor: help;
         }
-        .stock-week .week-day-letter.up { background: var(--green); color: #06210f; }
-        .stock-week .week-day-letter.down { background: var(--red); color: #2a0508; }
+        .stock-week .week-day-letter.up { color: var(--green); opacity: 1; }
+        .stock-week .week-day-letter.down { color: var(--red); opacity: 1; }
 
         .stock-ath {
             font-size: 0.58rem;
