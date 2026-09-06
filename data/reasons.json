@@ -1,14 +1,13 @@
 {
   "INTC": {
-    "text": "Intel’s role in trusted AI standards and expanding enterprise AI infrastructure drives the surge.",
+    "text": "Intel’s role in trusted AI standards and expanding enterprise AI infrastructure drives the rally.",
     "source": "stock",
     "articleIds": [
       "3643e37f-5c1f-350b-8bd3-285bf07dc45f",
       "4739103d-c310-3540-ab1b-533e9ccebf18",
-      "a91c1760-cb30-35a5-aafa-aa8fe449488e",
-      "7dfee411-0a82-318a-a1ed-841f801c5496"
+      "a91c1760-cb30-35a5-aafa-aa8fe449488e"
     ],
-    "updatedAt": "2026-09-06T13:53:04.798Z"
+    "updatedAt": "2026-09-06T20:59:31.611Z"
   },
   "AMD": {
     "text": "Commitment of up to $5 billion to Anthropic and surging AI accelerator demand boost growth outlook.",
@@ -20,12 +19,13 @@
     "updatedAt": "2026-09-05T22:34:24.363Z"
   },
   "NVDA": {
-    "text": "Strong AI spending wave boosting demand, keeping Nvidia near its recent high.",
+    "text": "Strong buy signals and multibagger potential fueling investor enthusiasm.",
     "source": "stock",
     "articleIds": [
-      "22d39a01-07aa-37c0-ae11-78095527ff63"
+      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
+      "d3115176-f06f-3281-b01f-844cc08431fb"
     ],
-    "updatedAt": "2026-09-06T18:48:09.649Z"
+    "updatedAt": "2026-09-06T20:59:42.563Z"
   },
   "TSM": {
     "text": "Equipment demand surging 1.9× and a new three‑hectare lab easing packaging constraints, boosting demand.",
@@ -49,31 +49,30 @@
     "updatedAt": "2026-09-06T16:39:19.563Z"
   },
   "MU": {
-    "text": "Upcoming earnings catalyst plus booming DDR5/NAND data‑center demand, highlighted by CEO’s Taiwan honor driving investor optimism.",
+    "text": "CEO’s Taiwan economic medal underscores AI‑chip leadership, fueling investor optimism ahead of earnings report.",
     "source": "stock",
     "articleIds": [
       "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
       "13c3173a-0484-381c-8a02-5b925fe74d29",
-      "a2680809-97b3-3e70-8fd2-bb3f13ea200e",
-      "27a3d548-bca2-3f36-b77d-4c2eeaf1f82c"
+      "a2680809-97b3-3e70-8fd2-bb3f13ea200e"
     ],
-    "updatedAt": "2026-09-06T18:48:25.786Z"
+    "updatedAt": "2026-09-06T20:59:58.222Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:48:30.845Z"
+    "updatedAt": "2026-09-06T21:00:03.131Z"
   },
   "SPCX": {
-    "text": "Swelling losses and debt‑heavy AI bets, plus a critical IPO misstep, erode investor confidence significantly.",
+    "text": "Swelling losses and heavy debt from an aggressive AI data‑center push spooking investors.",
     "source": "stock",
     "articleIds": [
-      "b3b3d68e-979a-3176-9485-1add7c6a8158",
-      "e676bccd-0d00-3f61-84dc-8113c7f753c4",
-      "975ad569-de2b-3948-be55-c7ed6ef746a0"
+      "6e908d3a-c5a7-3691-a6c8-1eb469c65e7b",
+      "66c4d527-c77a-3f1c-a16c-d39748d608da",
+      "b3b3d68e-979a-3176-9485-1add7c6a8158"
     ],
-    "updatedAt": "2026-09-06T18:48:36.761Z"
+    "updatedAt": "2026-09-06T21:00:08.291Z"
   },
   "MRVL": {
     "text": "Sizable AI‑focused acquisition boosted investor confidence, driving a sharp rally today.",
@@ -95,67 +94,63 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:48:52.809Z"
+    "updatedAt": "2026-09-06T21:00:24.050Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:48:57.878Z"
+    "updatedAt": "2026-09-06T21:00:28.978Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:49:02.384Z"
+    "updatedAt": "2026-09-06T21:00:33.214Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:49:06.850Z"
+    "updatedAt": "2026-09-06T21:00:37.524Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:49:12.212Z"
+    "updatedAt": "2026-09-06T21:00:42.800Z"
   },
   "AAPL": {
-    "text": "Investor worries iPhone 18 pricing could trigger sticker shock, hurting unit volumes and compressing margins.",
+    "text": "Investor worries iPhone 18 pricing and margin pressure could trigger sticker shock and demand slowdown",
     "source": "stock",
     "articleIds": [
-      "1754a105-a544-3fdb-9657-d4f209cff129",
-      "4bad1cbe-f353-3841-9424-437e051f408b",
-      "cd8ffe47-a4fc-3ef0-9bba-58fd5e6bcf55",
-      "964cb29a-6faf-3b3a-a3e2-913bf9fbe7cb"
+      "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
+      "81749127-6830-3b53-b393-af83c1c4663b",
+      "736d38bc-4861-37a5-bebd-9353ee16aa26",
+      "1754a105-a544-3fdb-9657-d4f209cff129"
     ],
-    "updatedAt": "2026-09-06T18:49:17.384Z"
+    "updatedAt": "2026-09-06T21:00:48.309Z"
   },
   "MSFT": {
-    "text": "Lawsuit over unpermitted AI training data and CEO’s $43 M Rule 10b5‑1 share sale fueling investor concerns.",
-    "source": "stock",
-    "articleIds": [
-      "44581796-e334-3c91-bb01-e758b5032741",
-      "8baecebd-c34d-31b1-a958-ad14581bc410"
-    ],
-    "updatedAt": "2026-09-05T09:49:59.429Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-06T21:00:52.538Z"
   },
   "GOOGL": {
-    "text": "Earnings beat perceived as inflated by a $77.1 billion unrealized equity gain, prompting growth‑quality concerns.",
-    "source": "stock",
-    "articleIds": [
-      "69756e18-c639-3c92-b753-4ecdf18b4410"
-    ],
-    "updatedAt": "2026-09-06T13:54:31.391Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-06T21:00:58.744Z"
   },
   "AMZN": {
-    "text": "Cramer’s warning that growth is slowing and margins under pressure spooked investors.",
+    "text": "Boeing 767 cargo plane crash and Mechanical Turk shutdown raising safety and service concerns",
     "source": "stock",
     "articleIds": [
-      "bf544d90-ddb5-382f-91d3-b9ff573c0eb6"
+      "da580388-14bb-30f1-bb2a-950bf58510b7",
+      "17f84b09-b7d9-3753-88bb-51e5e1c77531"
     ],
-    "updatedAt": "2026-09-05T13:12:35.915Z"
+    "updatedAt": "2026-09-06T21:01:04.081Z"
   },
   "META": {
     "text": "Zuckerberg’s unexpected policy shift and a favorable court ruling boosting investor confidence.",
@@ -170,37 +165,37 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:49:43.093Z"
+    "updatedAt": "2026-09-06T21:01:13.823Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:49:47.541Z"
+    "updatedAt": "2026-09-06T21:01:18.141Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:49:52.050Z"
+    "updatedAt": "2026-09-06T21:01:22.489Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:49:56.422Z"
+    "updatedAt": "2026-09-06T21:01:26.806Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:50:01.158Z"
+    "updatedAt": "2026-09-06T21:01:31.034Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:50:05.573Z"
+    "updatedAt": "2026-09-06T21:01:35.292Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -214,13 +209,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:50:15.159Z"
+    "updatedAt": "2026-09-06T21:01:44.966Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-06T18:50:19.965Z"
+    "updatedAt": "2026-09-06T21:01:49.602Z"
   },
   "INDEX_IN": {
     "text": "Anticipation of the Fed chair’s speech and heightened closing‑auction volatility driving market sentiment.",
