@@ -20,10 +20,13 @@
     "updatedAt": "2026-09-05T22:34:24.363Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-06T13:53:14.966Z"
+    "text": "Projected $851 B profit by 2029 and cash partnership with AI cloud supplier boost confidence.",
+    "source": "stock",
+    "articleIds": [
+      "4b20e76a-da96-32d4-a023-cf8e47956197",
+      "f5ed6359-b600-380a-8b12-c32526267a05"
+    ],
+    "updatedAt": "2026-09-06T16:39:09.012Z"
   },
   "TSM": {
     "text": "Equipment demand surging 1.9× and a new three‑hectare lab easing packaging constraints, boosting demand.",
@@ -36,15 +39,15 @@
     "updatedAt": "2026-09-04T22:43:05.912Z"
   },
   "SNDK": {
-    "text": "Addition to the S&P 100 index and hedge fund ownership more than doubling spurred buying activity.",
+    "text": "Inclusion in the S&P 100 and hedge‑fund ownership more than doubling drove the surge.",
     "source": "stock",
     "articleIds": [
+      "f368b793-9229-3576-a559-eb5ff6deea5c",
       "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
       "2078f36b-e153-3713-975b-6a1a5009182b",
-      "d88bb5d3-8857-3b67-b6e6-0240fb8305ad",
-      "64f13108-e2e0-3872-9691-3d148d5fa88d"
+      "d88bb5d3-8857-3b67-b6e6-0240fb8305ad"
     ],
-    "updatedAt": "2026-09-05T20:53:33.631Z"
+    "updatedAt": "2026-09-06T16:39:19.563Z"
   },
   "MU": {
     "text": "Earnings beat plus CEO’s Taiwan honor fuels data‑center DDR5/NAND demand and AI‑driven growth expectations.",
@@ -62,7 +65,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:53:36.232Z"
+    "updatedAt": "2026-09-06T16:39:29.597Z"
   },
   "SPCX": {
     "text": "Suze Orman's highlighted mistake and doubts over squishy TAM claims eroding investor confidence.",
@@ -93,41 +96,41 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:53:57.100Z"
+    "updatedAt": "2026-09-06T16:39:50.337Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:54:02.010Z"
+    "updatedAt": "2026-09-06T16:39:55.204Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:54:06.323Z"
+    "updatedAt": "2026-09-06T16:39:59.568Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:54:10.733Z"
+    "updatedAt": "2026-09-06T16:40:03.841Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:54:15.596Z"
+    "updatedAt": "2026-09-06T16:40:08.748Z"
   },
   "AAPL": {
-    "text": "Upcoming CEO transition and a £2 billion UK ATT lawsuit intensify regulatory and leadership uncertainty.",
+    "text": "New CEO faces pressure, iPhone launch perceived as AI setback, and £2B UK ATT lawsuit",
     "source": "stock",
     "articleIds": [
       "cd8ffe47-a4fc-3ef0-9bba-58fd5e6bcf55",
-      "1d1383da-926e-39c8-b5a0-0a77e8406648",
-      "30b38001-c329-31cf-aebb-eac480c69853"
+      "964cb29a-6faf-3b3a-a3e2-913bf9fbe7cb",
+      "1d1383da-926e-39c8-b5a0-0a77e8406648"
     ],
-    "updatedAt": "2026-09-06T13:54:21.098Z"
+    "updatedAt": "2026-09-06T16:40:14.454Z"
   },
   "MSFT": {
     "text": "Lawsuit over unpermitted AI training data and CEO’s $43 M Rule 10b5‑1 share sale fueling investor concerns.",
@@ -167,37 +170,37 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:54:46.386Z"
+    "updatedAt": "2026-09-06T16:40:40.393Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:54:50.696Z"
+    "updatedAt": "2026-09-06T16:40:44.677Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:54:55.016Z"
+    "updatedAt": "2026-09-06T16:40:49.019Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:54:59.336Z"
+    "updatedAt": "2026-09-06T16:40:53.356Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:55:03.653Z"
+    "updatedAt": "2026-09-06T16:40:57.730Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:55:07.961Z"
+    "updatedAt": "2026-09-06T16:41:02.038Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -211,13 +214,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:55:17.251Z"
+    "updatedAt": "2026-09-06T16:41:11.341Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-06T13:55:22.183Z"
+    "updatedAt": "2026-09-06T16:41:16.192Z"
   },
   "INDEX_IN": {
     "text": "Anticipation of the Fed chair’s speech and heightened closing‑auction volatility driving market sentiment.",
