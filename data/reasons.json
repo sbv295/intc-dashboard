@@ -1,13 +1,14 @@
 {
   "INTC": {
-    "text": "Trusted AI standards adoption and Dell’s strong revenue boost confidence in Intel’s enterprise AI infrastructure growth.",
+    "text": "Intel’s role in trusted AI standards and expanding enterprise AI infrastructure drives the surge.",
     "source": "stock",
     "articleIds": [
       "3643e37f-5c1f-350b-8bd3-285bf07dc45f",
       "4739103d-c310-3540-ab1b-533e9ccebf18",
-      "a91c1760-cb30-35a5-aafa-aa8fe449488e"
+      "a91c1760-cb30-35a5-aafa-aa8fe449488e",
+      "7dfee411-0a82-318a-a1ed-841f801c5496"
     ],
-    "updatedAt": "2026-09-06T05:24:40.004Z"
+    "updatedAt": "2026-09-06T13:53:04.798Z"
   },
   "AMD": {
     "text": "Commitment of up to $5 billion to Anthropic and surging AI accelerator demand boost growth outlook.",
@@ -19,12 +20,10 @@
     "updatedAt": "2026-09-05T22:34:24.363Z"
   },
   "NVDA": {
-    "text": "Backing fast‑growing Nebius, fueling investor optimism about Nvidia’s AI ecosystem expansion.",
-    "source": "stock",
-    "articleIds": [
-      "468a8056-9c85-35a4-9c4d-8c0829c6be11"
-    ],
-    "updatedAt": "2026-09-06T10:05:10.309Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-06T13:53:14.966Z"
   },
   "TSM": {
     "text": "Equipment demand surging 1.9× and a new three‑hectare lab easing packaging constraints, boosting demand.",
@@ -48,31 +47,31 @@
     "updatedAt": "2026-09-05T20:53:33.631Z"
   },
   "MU": {
-    "text": "CEO’s Taiwan economic medal underscoring U.S.–Taiwan chip partnership and surging data‑center DDR5/NAND demand.",
+    "text": "Earnings beat plus CEO’s Taiwan honor fuels data‑center DDR5/NAND demand and AI‑driven growth expectations.",
     "source": "stock",
     "articleIds": [
+      "13c3173a-0484-381c-8a02-5b925fe74d29",
       "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
       "a2680809-97b3-3e70-8fd2-bb3f13ea200e",
       "27a3d548-bca2-3f36-b77d-4c2eeaf1f82c",
       "9cbc5f65-18a0-3d52-b15f-eb41d010980d"
     ],
-    "updatedAt": "2026-09-05T20:53:39.055Z"
+    "updatedAt": "2026-09-06T13:53:31.334Z"
   },
   "AVGO": {
-    "text": "Strong cash generation and AI infrastructure financing for Anthropic and OpenAI boost investor confidence.",
-    "source": "stock",
-    "articleIds": [
-      "35ee28f7-338d-3727-b5bb-411358b0666f",
-      "d503ccd6-294a-30d1-9536-1b22c0f86f27",
-      "ad9b8763-fd6f-3d52-b9c3-b7d85195b538"
-    ],
-    "updatedAt": "2026-09-06T10:05:31.887Z"
-  },
-  "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:05:36.603Z"
+    "updatedAt": "2026-09-06T13:53:36.232Z"
+  },
+  "SPCX": {
+    "text": "Suze Orman's highlighted mistake and doubts over squishy TAM claims eroding investor confidence.",
+    "source": "stock",
+    "articleIds": [
+      "e676bccd-0d00-3f61-84dc-8113c7f753c4",
+      "975ad569-de2b-3948-be55-c7ed6ef746a0"
+    ],
+    "updatedAt": "2026-09-06T13:53:41.623Z"
   },
   "MRVL": {
     "text": "Sizable AI‑focused acquisition boosted investor confidence, driving a sharp rally today.",
@@ -91,45 +90,44 @@
     "updatedAt": "2026-09-03T19:34:54.538Z"
   },
   "QCOM": {
-    "text": "Backing a $70 million investment in Ultrahuman’s AI‑powered smart ring, signaling Qualcomm’s expansion into advanced wearables.",
-    "source": "stock",
-    "articleIds": [
-      "9fbb5582-e1d1-32bb-baad-3a040384b0d9"
-    ],
-    "updatedAt": "2026-09-06T00:30:25.825Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-06T13:53:57.100Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:05:57.630Z"
+    "updatedAt": "2026-09-06T13:54:02.010Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:06:01.898Z"
+    "updatedAt": "2026-09-06T13:54:06.323Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:06:06.191Z"
+    "updatedAt": "2026-09-06T13:54:10.733Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:06:11.194Z"
+    "updatedAt": "2026-09-06T13:54:15.596Z"
   },
   "AAPL": {
-    "text": "New £2 billion UK ATT lawsuit alleging unfair advantage for Apple’s own advertising operations.",
+    "text": "Upcoming CEO transition and a £2 billion UK ATT lawsuit intensify regulatory and leadership uncertainty.",
     "source": "stock",
     "articleIds": [
+      "cd8ffe47-a4fc-3ef0-9bba-58fd5e6bcf55",
       "1d1383da-926e-39c8-b5a0-0a77e8406648",
       "30b38001-c329-31cf-aebb-eac480c69853"
     ],
-    "updatedAt": "2026-09-05T22:35:37.777Z"
+    "updatedAt": "2026-09-06T13:54:21.098Z"
   },
   "MSFT": {
     "text": "Lawsuit over unpermitted AI training data and CEO’s $43 M Rule 10b5‑1 share sale fueling investor concerns.",
@@ -141,13 +139,12 @@
     "updatedAt": "2026-09-05T09:49:59.429Z"
   },
   "GOOGL": {
-    "text": "$77.1 billion unrealized equity gain inflating earnings beat, prompting investors to question true growth momentum.",
+    "text": "Earnings beat perceived as inflated by a $77.1 billion unrealized equity gain, prompting growth‑quality concerns.",
     "source": "stock",
     "articleIds": [
-      "69756e18-c639-3c92-b753-4ecdf18b4410",
-      "51124c18-e32c-3b2d-86fe-44c82255eb44"
+      "69756e18-c639-3c92-b753-4ecdf18b4410"
     ],
-    "updatedAt": "2026-09-06T00:31:02.357Z"
+    "updatedAt": "2026-09-06T13:54:31.391Z"
   },
   "AMZN": {
     "text": "Cramer’s warning that growth is slowing and margins under pressure spooked investors.",
@@ -170,37 +167,37 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:06:41.508Z"
+    "updatedAt": "2026-09-06T13:54:46.386Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:06:46.081Z"
+    "updatedAt": "2026-09-06T13:54:50.696Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:06:50.434Z"
+    "updatedAt": "2026-09-06T13:54:55.016Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:06:54.760Z"
+    "updatedAt": "2026-09-06T13:54:59.336Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:06:59.090Z"
+    "updatedAt": "2026-09-06T13:55:03.653Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:07:03.433Z"
+    "updatedAt": "2026-09-06T13:55:07.961Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -214,13 +211,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:07:13.065Z"
+    "updatedAt": "2026-09-06T13:55:17.251Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-06T10:07:17.861Z"
+    "updatedAt": "2026-09-06T13:55:22.183Z"
   },
   "INDEX_IN": {
     "text": "Anticipation of the Fed chair’s speech and heightened closing‑auction volatility driving market sentiment.",
