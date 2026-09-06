@@ -19,10 +19,12 @@
     "updatedAt": "2026-09-05T22:34:24.363Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-06T05:24:49.990Z"
+    "text": "Backing fast‑growing Nebius, fueling investor optimism about Nvidia’s AI ecosystem expansion.",
+    "source": "stock",
+    "articleIds": [
+      "468a8056-9c85-35a4-9c4d-8c0829c6be11"
+    ],
+    "updatedAt": "2026-09-06T10:05:10.309Z"
   },
   "TSM": {
     "text": "Equipment demand surging 1.9× and a new three‑hectare lab easing packaging constraints, boosting demand.",
@@ -57,20 +59,20 @@
     "updatedAt": "2026-09-05T20:53:39.055Z"
   },
   "AVGO": {
-    "text": "AI revenue projected to jump 400% in two years, bolstered by financing Anthropic and OpenAI infrastructure.",
+    "text": "Strong cash generation and AI infrastructure financing for Anthropic and OpenAI boost investor confidence.",
     "source": "stock",
     "articleIds": [
-      "d5e8f0ea-44a6-32ed-b4f4-1a48a0fba1b9",
+      "35ee28f7-338d-3727-b5bb-411358b0666f",
       "d503ccd6-294a-30d1-9536-1b22c0f86f27",
       "ad9b8763-fd6f-3d52-b9c3-b7d85195b538"
     ],
-    "updatedAt": "2026-09-06T05:25:13.061Z"
+    "updatedAt": "2026-09-06T10:05:31.887Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:25:17.767Z"
+    "updatedAt": "2026-09-06T10:05:36.603Z"
   },
   "MRVL": {
     "text": "Sizable AI‑focused acquisition boosted investor confidence, driving a sharp rally today.",
@@ -100,25 +102,25 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:25:39.447Z"
+    "updatedAt": "2026-09-06T10:05:57.630Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:25:43.769Z"
+    "updatedAt": "2026-09-06T10:06:01.898Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:25:48.201Z"
+    "updatedAt": "2026-09-06T10:06:06.191Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:25:53.167Z"
+    "updatedAt": "2026-09-06T10:06:11.194Z"
   },
   "AAPL": {
     "text": "New £2 billion UK ATT lawsuit alleging unfair advantage for Apple’s own advertising operations.",
@@ -168,37 +170,37 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:26:25.122Z"
+    "updatedAt": "2026-09-06T10:06:41.508Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:26:29.519Z"
+    "updatedAt": "2026-09-06T10:06:46.081Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:26:34.038Z"
+    "updatedAt": "2026-09-06T10:06:50.434Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:26:38.393Z"
+    "updatedAt": "2026-09-06T10:06:54.760Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:26:42.866Z"
+    "updatedAt": "2026-09-06T10:06:59.090Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:26:47.356Z"
+    "updatedAt": "2026-09-06T10:07:03.433Z"
   },
   "RELIANCE.NS": {
     "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
@@ -212,13 +214,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:26:57.051Z"
+    "updatedAt": "2026-09-06T10:07:13.065Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-06T05:27:01.909Z"
+    "updatedAt": "2026-09-06T10:07:17.861Z"
   },
   "INDEX_IN": {
     "text": "Anticipation of the Fed chair’s speech and heightened closing‑auction volatility driving market sentiment.",
