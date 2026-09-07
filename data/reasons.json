@@ -1,65 +1,70 @@
 {
   "INTC": {
-    "text": "Investors widening AI trade beyond Nvidia, boosting demand for Intel’s AI‑focused compute solutions.",
+    "text": "Analyst’s upgraded price target fuels optimism amid expanding AI investment narrative and heightened market attention.",
     "source": "stock",
     "articleIds": [
+      "08e50375-ee2c-3369-8461-e57f3b285486",
       "da1f9d54-5fad-3efe-879e-5099142b84cd",
-      "8c585c15-9c72-39c2-ae3b-003562ba943e",
-      "04367528-42b5-3059-8232-8d0f47f514d0"
+      "8c585c15-9c72-39c2-ae3b-003562ba943e"
     ],
-    "updatedAt": "2026-09-07T17:02:17.347Z"
+    "updatedAt": "2026-09-07T23:22:05.760Z"
   },
   "AMD": {
-    "text": "AI earnings beat and strategic AI chip positioning perceived undervalued, driving buying pressure among investors",
+    "text": "Unveiling a $100,000 AI workstation and leading the AI chip shift fuels investor optimism.",
     "source": "stock",
     "articleIds": [
-      "29591057-2168-39da-bf5c-cbc5c2f29e2b",
+      "49960354-be35-356b-a001-1586e9b5d434",
       "2f52e95e-5a7f-3e45-bd92-4324d9283ee5"
     ],
-    "updatedAt": "2026-09-07T20:59:44.539Z"
+    "updatedAt": "2026-09-07T23:22:11.199Z"
   },
   "NVDA": {
-    "text": "Cramer’s call for a massive $500 B buyback and potential Hugging Face acquisition fuels optimism.",
+    "text": "$1.47 billion equity infusion from Wistron bolsters Nvidia’s AI supply chain, fueling today’s price gain.",
     "source": "stock",
     "articleIds": [
-      "d0732713-9fd1-3b1e-950f-469d24e3e3df",
-      "5732ff05-7e83-3d12-a833-93122b9bebd6",
-      "d4a71a29-5173-3b6f-b037-32ca5268a60c"
+      "4b06595d-f92d-38ab-8d63-4a2939b0c821",
+      "68918562-9735-331b-aae8-1bb5db91d604"
     ],
-    "updatedAt": "2026-09-07T20:59:50.165Z"
+    "updatedAt": "2026-09-07T23:22:16.840Z"
   },
   "TSM": {
-    "text": "U.S. $265 billion expansion plan and raised guidance from soaring advanced‑chip demand.",
+    "text": "$265 billion U.S. investment boosting demand for advanced chips, prompting higher guidance and diplomatic leverage.",
     "source": "stock",
     "articleIds": [
+      "f297135e-9d1a-3b08-88cd-b11e0cd181a9",
       "f0334196-8749-34dd-bb0c-970447733056",
       "35648c2c-666e-31e8-8e09-e688465ac93e",
       "723e9705-78c5-3d34-bfaa-e9243c4403ca"
     ],
-    "updatedAt": "2026-09-07T20:59:55.649Z"
+    "updatedAt": "2026-09-07T23:22:22.228Z"
   },
   "SNDK": {
-    "text": "Aggressive analyst price targets and renewed AI‑driven storage demand fueling investor enthusiasm.",
+    "text": "AI‑driven storage demand surge, upcoming S&P 100 inclusion, and aggressive analyst price targets boost investor confidence.",
     "source": "stock",
     "articleIds": [
+      "c64f6762-1589-36e0-8540-6f25d2d81e89",
       "5354fd0b-9012-384e-854c-60ed8bfad248",
       "4f0f047a-9168-36b6-bac1-e16813ce7a08",
-      "a6eeb4d0-423d-3a98-be2d-acf293d03779",
-      "9236dbf9-0958-3d2e-8348-fbad0a55c35c"
+      "a6eeb4d0-423d-3a98-be2d-acf293d03779"
     ],
-    "updatedAt": "2026-09-07T21:00:01.220Z"
+    "updatedAt": "2026-09-07T23:22:27.828Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:00:06.655Z"
+    "updatedAt": "2026-09-07T23:22:32.739Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-07T21:00:12.184Z"
+    "text": "AI chip revenue forecast raised to $115 billion for FY2027, reflecting strong hyperscaler demand growth.",
+    "source": "stock",
+    "articleIds": [
+      "e350ef4c-30d6-3948-9776-0818deb234c2",
+      "2c08c202-0869-3b57-bc96-151dbe1ef1bb",
+      "41f90243-5fe1-361c-8220-5a4d8a8a57b5",
+      "83284f0d-ce4c-3672-ad52-3705abdcef0c"
+    ],
+    "updatedAt": "2026-09-07T23:22:38.078Z"
   },
   "SPCX": {
     "text": "319 million new shares slated for issuance, raising dilution fears amid upcoming funding needs this quarter.",
@@ -94,51 +99,47 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:00:34.514Z"
+    "updatedAt": "2026-09-07T23:22:59.192Z"
   },
   "SKHY": {
-    "text": "Heavy Korean investor demand for ADRs and a $20 billion FX fund purchase amid surging AI memory demand.",
+    "text": "AI-driven memory demand surges, amplified by a $20 billion South Korean FX fund purchase recently today",
     "source": "stock",
     "articleIds": [
       "c4bf23f6-8826-3521-abbc-b80a2294807e",
-      "c6f08f61-2a7c-3d5a-a6c6-dd72760bd172",
-      "9b42d00f-544c-30d1-863b-58db0c818dff",
-      "717f3202-bd15-3aa2-a108-959d131643d3"
+      "c6f08f61-2a7c-3d5a-a6c6-dd72760bd172"
     ],
-    "updatedAt": "2026-09-07T17:03:14.647Z"
+    "updatedAt": "2026-09-07T23:23:04.433Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:00:44.636Z"
+    "updatedAt": "2026-09-07T23:23:08.723Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:00:49.688Z"
+    "updatedAt": "2026-09-07T23:23:13.558Z"
   },
   "000660.KS": {
-    "text": "Massive Korean investor buying of ADRs and a $20 billion FX fund purchase fueling AI‑memory demand.",
+    "text": "AI-driven memory demand surges while a $20 billion sovereign fund purchase fuels investor confidence in markets.",
     "source": "stock",
     "articleIds": [
       "c4bf23f6-8826-3521-abbc-b80a2294807e",
-      "c6f08f61-2a7c-3d5a-a6c6-dd72760bd172",
-      "9b42d00f-544c-30d1-863b-58db0c818dff",
-      "717f3202-bd15-3aa2-a108-959d131643d3"
+      "c6f08f61-2a7c-3d5a-a6c6-dd72760bd172"
     ],
-    "updatedAt": "2026-09-07T17:03:28.900Z"
+    "updatedAt": "2026-09-07T23:23:19.200Z"
   },
   "AAPL": {
-    "text": "",
+    "text": "AI memory shortage, aggressive Huawei foldable rivals, and KeyBanc’s iPhone 18 launch warning strain margins.",
     "source": "stock",
     "articleIds": [
-      "c926bce5-24c0-30ec-8b8b-9fac805535ca",
-      "b1d43f60-76c6-3272-b943-1ab9dc6671d3",
-      "a8bbf98a-fe7b-3e25-bc55-376f22814fbf"
+      "8b1372c2-b5c1-3ecd-8602-feba0ab6aeeb",
+      "d75f8f93-581e-3774-8d76-5e10ef7bdf4b",
+      "c926bce5-24c0-30ec-8b8b-9fac805535ca"
     ],
-    "updatedAt": "2026-09-07T21:01:00.967Z"
+    "updatedAt": "2026-09-07T23:23:24.742Z"
   },
   "MSFT": {
     "text": "Pending federal ban on superintelligence and AI pause legislation raising uncertainty over future AI revenue prospects.",
@@ -154,25 +155,27 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:01:11.262Z"
+    "updatedAt": "2026-09-07T23:23:34.929Z"
   },
   "AMZN": {
-    "text": "Fatal cargo plane crash at Miami airport causing extensive flight delays and operational disruptions.",
+    "text": "Fatal Miami plane crash investigation raising safety concerns and potential oversight costs, dampening investor confidence.",
     "source": "stock",
     "articleIds": [
       "505161b0-0ca6-3135-a3a8-4ebf665d4e56",
-      "30dc26cd-e15d-337c-9aed-1c4419614f0f",
-      "52029ef0-43c2-346c-a83d-1408b6c9719f"
+      "7bc4117d-24c7-327c-b0d3-7dd5df2efb8f",
+      "7a601ed6-c135-366a-b53a-b2101597d145",
+      "30dc26cd-e15d-337c-9aed-1c4419614f0f"
     ],
-    "updatedAt": "2026-09-07T21:01:16.467Z"
+    "updatedAt": "2026-09-07T23:23:40.028Z"
   },
   "META": {
-    "text": "Settlement easing major legal overhang, prompting renewed investor confidence.",
+    "text": "Settlement easing major legal overhang, prompting investors to view it as “at the price.”",
     "source": "stock",
     "articleIds": [
-      "f1c5c2e3-cd3d-38e9-88ca-cf8209d12e16"
+      "f1c5c2e3-cd3d-38e9-88ca-cf8209d12e16",
+      "12d26246-2f07-3b76-abf2-b9c80accad26"
     ],
-    "updatedAt": "2026-09-07T21:01:21.946Z"
+    "updatedAt": "2026-09-07T23:23:45.277Z"
   },
   "HDFCBANK.NS": {
     "text": "CEO departure and lingering legal/leadership issues eroding investor confidence.",
@@ -187,54 +190,54 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:01:31.829Z"
+    "updatedAt": "2026-09-07T23:23:54.873Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:01:36.466Z"
+    "updatedAt": "2026-09-07T23:23:59.177Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:01:40.928Z"
+    "updatedAt": "2026-09-07T23:24:03.449Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:01:45.406Z"
+    "updatedAt": "2026-09-07T23:24:07.707Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:01:49.931Z"
+    "updatedAt": "2026-09-07T23:24:12.131Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:01:54.650Z"
+    "updatedAt": "2026-09-07T23:24:16.594Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:01:59.178Z"
+    "updatedAt": "2026-09-07T23:24:20.907Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:02:04.250Z"
+    "updatedAt": "2026-09-07T23:24:25.687Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-07T21:02:08.964Z"
+    "updatedAt": "2026-09-07T23:24:30.261Z"
   }
 }
