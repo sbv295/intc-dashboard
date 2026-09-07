@@ -1,30 +1,21 @@
 {
   "INTC": {
-    "text": "Trusted AI standards adoption and Dell’s strong revenue boost confidence in Intel’s enterprise infrastructure growth",
-    "source": "stock",
-    "articleIds": [
-      "3643e37f-5c1f-350b-8bd3-285bf07dc45f",
-      "4739103d-c310-3540-ab1b-533e9ccebf18"
-    ],
-    "updatedAt": "2026-09-07T05:34:52.720Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-07T11:19:04.598Z"
   },
   "AMD": {
-    "text": "Commitment of up to $5 billion to Anthropic, coinciding with its imminent IPO, fuels optimism among investors.",
-    "source": "stock",
-    "articleIds": [
-      "7491f9f5-cce6-3fad-9808-2082ebef6e13",
-      "c775e846-45ca-31c8-9dcd-3d8dbd532e0c"
-    ],
-    "updatedAt": "2026-09-07T05:34:58.071Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-07T11:19:09.740Z"
   },
   "NVDA": {
-    "text": "Massive $99 B AI ecosystem investment, including a $30 B Intel stake, fuels investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "04367528-42b5-3059-8232-8d0f47f514d0",
-      "d5001ca0-1c20-3379-83c3-ddca4526f9c2"
-    ],
-    "updatedAt": "2026-09-07T05:35:03.671Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-07T11:19:14.802Z"
   },
   "TSM": {
     "text": "steady demand for its advanced process technologies fuels the rise",
@@ -35,14 +26,16 @@
     "updatedAt": "2026-09-07T05:35:09.019Z"
   },
   "SNDK": {
-    "text": "Inclusion in the S&P 100 and hedge fund ownership more than doubling spurred buying by investors.",
+    "text": "Added to the S&P 100 with hedge‑fund ownership more than doubling, fueling strong buying pressure today.",
     "source": "stock",
     "articleIds": [
+      "9236dbf9-0958-3d2e-8348-fbad0a55c35c",
       "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
       "f368b793-9229-3576-a559-eb5ff6deea5c",
+      "2078f36b-e153-3713-975b-6a1a5009182b",
       "d88bb5d3-8857-3b67-b6e6-0240fb8305ad"
     ],
-    "updatedAt": "2026-09-07T00:37:01.205Z"
+    "updatedAt": "2026-09-07T11:19:25.472Z"
   },
   "MU": {
     "text": "CEO’s Taiwan economic medal underscores AI‑chip leadership, fueling investor optimism ahead of earnings report.",
@@ -55,20 +48,23 @@
     "updatedAt": "2026-09-06T20:59:58.222Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-07T05:35:24.694Z"
-  },
-  "SPCX": {
-    "text": "OpenAI ending Cursor access after SpaceX’s $60 B acquisition of Anysphere.",
+    "text": "Robust Q3 earnings clash with investor wariness over Fed rate hikes despite AI growth prospects.",
     "source": "stock",
     "articleIds": [
-      "c91ca124-edb1-3d4b-be3d-0c1d01e245a3",
-      "66c4d527-c77a-3f1c-a16c-d39748d608da",
-      "b3b3d68e-979a-3176-9485-1add7c6a8158"
+      "55ef29a9-b0b7-3cba-bb1d-9d4963d22a37",
+      "d5e8f0ea-44a6-32ed-b4f4-1a48a0fba1b9"
     ],
-    "updatedAt": "2026-09-07T00:37:16.862Z"
+    "updatedAt": "2026-09-07T11:19:36.378Z"
+  },
+  "SPCX": {
+    "text": "Loss of OpenAI Cursor access after SpaceX’s $60B acquisition raises AI integration concerns.",
+    "source": "stock",
+    "articleIds": [
+      "e552bdec-87e6-357f-bcb7-616f54d58697",
+      "c91ca124-edb1-3d4b-be3d-0c1d01e245a3",
+      "66c4d527-c77a-3f1c-a16c-d39748d608da"
+    ],
+    "updatedAt": "2026-09-07T11:19:41.613Z"
   },
   "MRVL": {
     "text": "Sizable AI‑focused acquisition boosted investor confidence, driving a sharp rally today.",
@@ -90,41 +86,44 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:35:44.783Z"
+    "updatedAt": "2026-09-07T11:19:56.941Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:35:49.954Z"
+    "updatedAt": "2026-09-07T11:20:02.186Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:35:54.509Z"
+    "updatedAt": "2026-09-07T11:20:06.494Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-07T05:35:58.789Z"
+    "text": "AI-driven surge in global chip and memory demand fuels investor optimism for Samsung’s next‑generation products.",
+    "source": "stock",
+    "articleIds": [
+      "df4f13eb-ee47-3745-a5bc-ae1c65c97cdf"
+    ],
+    "updatedAt": "2026-09-07T11:20:11.372Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:36:03.671Z"
+    "updatedAt": "2026-09-07T11:20:16.380Z"
   },
   "AAPL": {
-    "text": "Higher Apple TV and Apple One subscription fees prompting investor concerns.",
+    "text": "Higher Apple TV/Apple One fees and $2,000‑plus foldable iPhone price expectations dampen investor sentiment.",
     "source": "stock",
     "articleIds": [
+      "06b2777b-76c3-3aaa-986c-44d34c0a5bd9",
       "d5001ca0-1c20-3379-83c3-ddca4526f9c2",
       "4c4b01da-2283-3b3c-b9ba-a44a16764ebf",
       "7d62217f-1877-374d-8f1c-e12331ace416"
     ],
-    "updatedAt": "2026-09-07T00:37:56.358Z"
+    "updatedAt": "2026-09-07T11:20:21.731Z"
   },
   "MSFT": {
     "text": "Widespread Outlook and Exchange Online outage, compounded by simultaneous ChatGPT service disruption, triggered investor concerns.",
@@ -135,21 +134,25 @@
     "updatedAt": "2026-09-07T00:38:01.360Z"
   },
   "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-07T05:36:19.111Z"
+    "text": "Bill Ackman’s large Alphabet selloff and renewed Pentagon AI‑risk blacklist concerns rattling investor confidence.",
+    "source": "stock",
+    "articleIds": [
+      "d180d01c-02b5-3313-8c03-8acddd18e348",
+      "c606c93f-1a8c-3680-9d2c-c03c043a7d2a",
+      "7d62217f-1877-374d-8f1c-e12331ace416"
+    ],
+    "updatedAt": "2026-09-07T11:20:31.801Z"
   },
   "AMZN": {
-    "text": "Fatal Miami cargo‑plane crash involving Amazon Air, resulting in multiple deaths and injuries.",
+    "text": "Fatal Miami cargo‑plane crash involving Prime Air, killing five and injuring others.",
     "source": "stock",
     "articleIds": [
       "c606c93f-1a8c-3680-9d2c-c03c043a7d2a",
+      "e28afdaf-feef-32b2-b286-52c6c2a60564",
       "e05be7d6-1679-3e46-bb21-053d62a9e121",
-      "78bbe4ac-ff4e-377a-bb9c-f49097c00322",
-      "9f5dc70e-0307-3af2-b662-6601f051e569"
+      "78bbe4ac-ff4e-377a-bb9c-f49097c00322"
     ],
-    "updatedAt": "2026-09-07T05:36:24.108Z"
+    "updatedAt": "2026-09-07T11:20:36.884Z"
   },
   "META": {
     "text": "Zuckerberg’s unexpected policy shift and a favorable court ruling boosting investor confidence.",
@@ -173,54 +176,54 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:36:38.483Z"
+    "updatedAt": "2026-09-07T11:20:51.092Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:36:42.777Z"
+    "updatedAt": "2026-09-07T11:20:55.483Z"
   },
   "AARTIIND.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:36:47.029Z"
+    "updatedAt": "2026-09-07T11:20:59.830Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:36:51.296Z"
+    "updatedAt": "2026-09-07T11:21:04.120Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:36:55.590Z"
+    "updatedAt": "2026-09-07T11:21:08.462Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:37:00.088Z"
+    "updatedAt": "2026-09-07T11:21:13.125Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:37:04.365Z"
+    "updatedAt": "2026-09-07T11:21:17.460Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:37:09.003Z"
+    "updatedAt": "2026-09-07T11:21:22.133Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-07T05:37:13.520Z"
+    "updatedAt": "2026-09-07T11:21:26.692Z"
   }
 }
