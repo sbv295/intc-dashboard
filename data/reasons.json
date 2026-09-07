@@ -1,37 +1,38 @@
 {
   "INTC": {
-    "text": "Intel’s role in trusted AI standards and expanding enterprise AI infrastructure drives the rally.",
+    "text": "Trusted AI standards adoption and Dell’s strong revenue boost confidence in Intel’s enterprise infrastructure growth",
     "source": "stock",
     "articleIds": [
       "3643e37f-5c1f-350b-8bd3-285bf07dc45f",
-      "4739103d-c310-3540-ab1b-533e9ccebf18",
-      "a91c1760-cb30-35a5-aafa-aa8fe449488e"
+      "4739103d-c310-3540-ab1b-533e9ccebf18"
     ],
-    "updatedAt": "2026-09-06T20:59:31.611Z"
+    "updatedAt": "2026-09-07T05:34:52.720Z"
   },
   "AMD": {
-    "text": "Commitment of up to $5 billion to Anthropic and surging AI accelerator demand boost growth outlook.",
+    "text": "Commitment of up to $5 billion to Anthropic, coinciding with its imminent IPO, fuels optimism among investors.",
     "source": "stock",
     "articleIds": [
-      "c775e846-45ca-31c8-9dcd-3d8dbd532e0c",
-      "ca834645-c820-3f40-b0a7-9fe069e23d9d"
+      "7491f9f5-cce6-3fad-9808-2082ebef6e13",
+      "c775e846-45ca-31c8-9dcd-3d8dbd532e0c"
     ],
-    "updatedAt": "2026-09-05T22:34:24.363Z"
+    "updatedAt": "2026-09-07T05:34:58.071Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-07T00:36:49.992Z"
-  },
-  "TSM": {
-    "text": "Surging equipment demand, with tool hunger nearly doubling in six months, fuels the price jump.",
+    "text": "Massive $99 B AI ecosystem investment, including a $30 B Intel stake, fuels investor optimism.",
     "source": "stock",
     "articleIds": [
-      "798e221d-6bba-34bb-8128-84d42d6a2d83",
-      "2d709214-ff7e-3e27-8d69-baaf9498acc7"
+      "04367528-42b5-3059-8232-8d0f47f514d0",
+      "d5001ca0-1c20-3379-83c3-ddca4526f9c2"
     ],
-    "updatedAt": "2026-09-07T00:36:55.490Z"
+    "updatedAt": "2026-09-07T05:35:03.671Z"
+  },
+  "TSM": {
+    "text": "steady demand for its advanced process technologies fuels the rise",
+    "source": "stock",
+    "articleIds": [
+      "798e221d-6bba-34bb-8128-84d42d6a2d83"
+    ],
+    "updatedAt": "2026-09-07T05:35:09.019Z"
   },
   "SNDK": {
     "text": "Inclusion in the S&P 100 and hedge fund ownership more than doubling spurred buying by investors.",
@@ -57,7 +58,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:37:11.429Z"
+    "updatedAt": "2026-09-07T05:35:24.694Z"
   },
   "SPCX": {
     "text": "OpenAI ending Cursor access after SpaceX’s $60 B acquisition of Anysphere.",
@@ -89,31 +90,31 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:37:32.664Z"
+    "updatedAt": "2026-09-07T05:35:44.783Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:37:37.541Z"
+    "updatedAt": "2026-09-07T05:35:49.954Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:37:41.831Z"
+    "updatedAt": "2026-09-07T05:35:54.509Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:37:46.109Z"
+    "updatedAt": "2026-09-07T05:35:58.789Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:37:51.143Z"
+    "updatedAt": "2026-09-07T05:36:03.671Z"
   },
   "AAPL": {
     "text": "Higher Apple TV and Apple One subscription fees prompting investor concerns.",
@@ -134,23 +135,21 @@
     "updatedAt": "2026-09-07T00:38:01.360Z"
   },
   "GOOGL": {
-    "text": "No specific news identified linking to the move.",
-    "source": "stock",
-    "articleIds": [
-      "7d62217f-1877-374d-8f1c-e12331ace416"
-    ],
-    "updatedAt": "2026-09-06T22:51:20.024Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-07T05:36:19.111Z"
   },
   "AMZN": {
-    "text": "Fatal Miami cargo‑plane crash involving its aircraft, resulting in multiple deaths and injuries.",
+    "text": "Fatal Miami cargo‑plane crash involving Amazon Air, resulting in multiple deaths and injuries.",
     "source": "stock",
     "articleIds": [
+      "c606c93f-1a8c-3680-9d2c-c03c043a7d2a",
+      "e05be7d6-1679-3e46-bb21-053d62a9e121",
       "78bbe4ac-ff4e-377a-bb9c-f49097c00322",
-      "9f5dc70e-0307-3af2-b662-6601f051e569",
-      "da580388-14bb-30f1-bb2a-950bf58510b7",
-      "17f84b09-b7d9-3753-88bb-51e5e1c77531"
+      "9f5dc70e-0307-3af2-b662-6601f051e569"
     ],
-    "updatedAt": "2026-09-06T22:51:25.242Z"
+    "updatedAt": "2026-09-07T05:36:24.108Z"
   },
   "META": {
     "text": "Zuckerberg’s unexpected policy shift and a favorable court ruling boosting investor confidence.",
@@ -162,67 +161,66 @@
     "updatedAt": "2026-09-06T00:31:12.910Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-07T00:38:21.095Z"
+    "text": "CEO departure and lingering legal/leadership issues eroding investor confidence.",
+    "source": "stock",
+    "articleIds": [
+      "115503aa-d9f5-398c-8f4d-b577c8d5267f",
+      "de91df48-7a79-37d1-bcfa-5d7785fb7396"
+    ],
+    "updatedAt": "2026-09-07T05:36:34.170Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-07T00:38:25.415Z"
-  },
-  "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:38:29.700Z"
+    "updatedAt": "2026-09-07T05:36:38.483Z"
   },
-  "AARTIIND.NS": {
+  "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:38:33.979Z"
+    "updatedAt": "2026-09-07T05:36:42.777Z"
+  },
+  "AARTIIND.NS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-07T05:36:47.029Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:38:38.339Z"
+    "updatedAt": "2026-09-07T05:36:51.296Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:38:42.678Z"
+    "updatedAt": "2026-09-07T05:36:55.590Z"
   },
   "RELIANCE.NS": {
-    "text": "Global rollout of JioHotstar’s entertainment‑only streaming service in the UK, Canada, and Singapore.",
-    "source": "stock",
-    "articleIds": [
-      "7408502c-d216-344d-921b-d6dd8859967f"
-    ],
-    "updatedAt": "2026-09-04T05:22:34.422Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-07T05:37:00.088Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:38:52.047Z"
+    "updatedAt": "2026-09-07T05:37:04.365Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-07T00:38:56.764Z"
+    "updatedAt": "2026-09-07T05:37:09.003Z"
   },
   "INDEX_IN": {
-    "text": "Anticipation of the Fed chair’s speech and heightened closing‑auction volatility driving market sentiment.",
-    "source": "macro",
-    "articleIds": [
-      "38a7309b-b1a9-3598-b188-be444f88dee1"
-    ],
-    "updatedAt": "2026-09-05T05:12:44.128Z"
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-09-07T05:37:13.520Z"
   }
 }
