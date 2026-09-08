@@ -631,7 +631,7 @@
 
         /* ─── Weekly Performance Readout ────────────────── */
         .stock-week {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             margin-top: 4px;
             padding-top: 8px;
             padding-bottom: 8px;
@@ -639,29 +639,20 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 11px;
         }
         .stock-week:empty { display: none; }
+        /* Single glyph is its own "glass" container: the stroke is the outline, and the
+           gradient background clipped to the text shape is the liquid rising to --fill.
+           (Kept as one element — a two-layer overlay misaligned on some mobile browsers.) */
         .stock-week .week-day-letter {
-            position: relative;
             display: inline-block;
             font-weight: 800;
             line-height: 1;
             cursor: help;
             --liquid: var(--text-dim);
-        }
-        .stock-week .week-day-letter.up { --liquid: var(--green); }
-        .stock-week .week-day-letter.down { --liquid: var(--red); }
-        /* Base glyph acts as the empty "glass" container — stroke only, transparent fill. */
-        .stock-week .week-letter-outline {
             color: transparent;
             -webkit-text-stroke: 1px color-mix(in srgb, var(--liquid) 45%, transparent);
-        }
-        /* Liquid overlay clipped to the same glyph shape; --fill controls how far up it rises. */
-        .stock-week .week-letter-liquid {
-            position: absolute;
-            inset: 0;
-            color: transparent;
             background: linear-gradient(
                 to top,
                 var(--liquid) 0%,
@@ -674,6 +665,8 @@
             background-clip: text;
             transition: background 0.8s ease;
         }
+        .stock-week .week-day-letter.up { --liquid: var(--green); }
+        .stock-week .week-day-letter.down { --liquid: var(--red); }
 
         .stock-ath {
             font-size: 0.58rem;
@@ -2601,9 +2594,7 @@
                 }
             }
 
-            return `<span class="week-day-letter ${cls}" style="--fill:${fill.toFixed(1)}%" title="${title}">` +
-                `<span class="week-letter-outline">${letter}</span><span class="week-letter-liquid">${letter}</span>` +
-                `</span>`;
+            return `<span class="week-day-letter ${cls}" style="--fill:${fill.toFixed(1)}%" title="${title}">${letter}</span>`;
         }).join('');
 
         weekEl.innerHTML = cells;
