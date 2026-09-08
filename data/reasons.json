@@ -10,22 +10,18 @@
     "updatedAt": "2026-09-07T23:22:05.760Z"
   },
   "AMD": {
-    "text": "Unveiling a $100,000 AI workstation and leading the AI chip shift fuels investor optimism.",
+    "text": "Unveiling a $100,000‑plus AI workstation for 2027, signaling premium enterprise demand and revenue boost.",
     "source": "stock",
     "articleIds": [
-      "49960354-be35-356b-a001-1586e9b5d434",
-      "2f52e95e-5a7f-3e45-bd92-4324d9283ee5"
+      "49960354-be35-356b-a001-1586e9b5d434"
     ],
-    "updatedAt": "2026-09-07T23:22:11.199Z"
+    "updatedAt": "2026-09-08T02:33:50.116Z"
   },
   "NVDA": {
-    "text": "$1.47 billion equity infusion from Wistron bolsters Nvidia’s AI supply chain, fueling today’s price gain.",
-    "source": "stock",
-    "articleIds": [
-      "4b06595d-f92d-38ab-8d63-4a2939b0c821",
-      "68918562-9735-331b-aae8-1bb5db91d604"
-    ],
-    "updatedAt": "2026-09-07T23:22:16.840Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-08T02:33:55.376Z"
   },
   "TSM": {
     "text": "$265 billion U.S. investment boosting demand for advanced chips, prompting higher guidance and diplomatic leverage.",
@@ -39,21 +35,25 @@
     "updatedAt": "2026-09-07T23:22:22.228Z"
   },
   "SNDK": {
-    "text": "AI‑driven storage demand surge, upcoming S&P 100 inclusion, and aggressive analyst price targets boost investor confidence.",
+    "text": "Inclusion in the S&P 100, following its promotion effective September 21, spurred the rally.",
     "source": "stock",
     "articleIds": [
+      "cba55855-e673-3650-9c73-b3b55cff4d99",
       "c64f6762-1589-36e0-8540-6f25d2d81e89",
       "5354fd0b-9012-384e-854c-60ed8bfad248",
-      "4f0f047a-9168-36b6-bac1-e16813ce7a08",
-      "a6eeb4d0-423d-3a98-be2d-acf293d03779"
+      "4f0f047a-9168-36b6-bac1-e16813ce7a08"
     ],
-    "updatedAt": "2026-09-07T23:22:27.828Z"
+    "updatedAt": "2026-09-08T02:34:06.458Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-07T23:22:32.739Z"
+    "text": "Seoul’s 8.3% signal on a $50 billion guide and aggressive analyst price targets fuel optimism today.",
+    "source": "stock",
+    "articleIds": [
+      "d6ea69af-935c-341a-b9e3-fd4d7896545c",
+      "5354fd0b-9012-384e-854c-60ed8bfad248",
+      "c4bf23f6-8826-3521-abbc-b80a2294807e"
+    ],
+    "updatedAt": "2026-09-08T02:34:11.857Z"
   },
   "AVGO": {
     "text": "AI chip revenue forecast raised to $115 billion for FY2027, reflecting strong hyperscaler demand growth.",
@@ -67,39 +67,38 @@
     "updatedAt": "2026-09-07T23:22:38.078Z"
   },
   "SPCX": {
-    "text": "319 million new shares slated for issuance, raising dilution fears amid upcoming funding needs this quarter.",
+    "text": "319 million new shares slated for issuance, raising dilution worries amid funding needs.",
     "source": "stock",
     "articleIds": [
       "53e3b43f-77f0-3897-937e-287ef203011b",
+      "287978ba-6617-3785-ac57-f0f660a775c5",
       "b8bf25a8-c831-3902-a9d8-946be9fa612f",
       "7c6c3fc0-bddc-3453-966a-8317adc23a5c"
     ],
-    "updatedAt": "2026-09-07T21:00:17.655Z"
+    "updatedAt": "2026-09-08T02:34:22.400Z"
   },
   "MRVL": {
-    "text": "Booming AI data‑center revenue and upcoming Investor Day hints at major photonics announcements, driving optimism.",
+    "text": "Investor Day hype and a 46% data‑center revenue surge from booming AI and photonics initiatives.",
     "source": "stock",
     "articleIds": [
       "c1a6aa99-f11b-3c2a-875b-57429dbae500",
-      "1548f542-ea4a-3766-bf6f-ec65173ab3ea",
-      "41f90243-5fe1-361c-8220-5a4d8a8a57b5"
+      "1548f542-ea4a-3766-bf6f-ec65173ab3ea"
     ],
-    "updatedAt": "2026-09-07T21:00:23.683Z"
+    "updatedAt": "2026-09-08T02:34:27.746Z"
   },
   "ARM": {
-    "text": "Surging CPU demand and projected $15 billion AGI processor revenue by FY’31 driving optimism.",
+    "text": "Surging CPU demand fuels growth expectations, boosting investor confidence.",
     "source": "stock",
     "articleIds": [
-      "d37e5d6d-0766-330a-9409-8bd127747ba3",
-      "962a68cb-9030-3ca2-8b94-33b43678641c"
+      "d37e5d6d-0766-330a-9409-8bd127747ba3"
     ],
-    "updatedAt": "2026-09-07T17:03:04.034Z"
+    "updatedAt": "2026-09-08T02:34:32.655Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:22:59.192Z"
+    "updatedAt": "2026-09-08T02:34:37.569Z"
   },
   "SKHY": {
     "text": "AI-driven memory demand surges, amplified by a $20 billion South Korean FX fund purchase recently today",
@@ -114,13 +113,15 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:23:08.723Z"
+    "updatedAt": "2026-09-08T02:34:46.916Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-07T23:23:13.558Z"
+    "text": "Anticipated equity buyback narrowing the steep discount on non‑voting preferred shares.",
+    "source": "stock",
+    "articleIds": [
+      "806728ee-fcef-3289-90cb-0e1333f0032d"
+    ],
+    "updatedAt": "2026-09-08T02:34:52.982Z"
   },
   "000660.KS": {
     "text": "AI-driven memory demand surges while a $20 billion sovereign fund purchase fuels investor confidence in markets.",
@@ -142,20 +143,19 @@
     "updatedAt": "2026-09-07T23:23:24.742Z"
   },
   "MSFT": {
-    "text": "Pending federal ban on superintelligence and AI pause legislation raising uncertainty over future AI revenue prospects.",
+    "text": "Project Helix Xbox faces a $1,000 cost hurdle, raising concerns over profitability and pricing.",
     "source": "stock",
     "articleIds": [
       "bbf4a303-05b8-3836-b3d0-8166fdacd413",
-      "ddb3fc6a-20c2-35ed-85d7-512904789898",
-      "52029ef0-43c2-346c-a83d-1408b6c9719f"
+      "ddb3fc6a-20c2-35ed-85d7-512904789898"
     ],
-    "updatedAt": "2026-09-07T21:01:06.310Z"
+    "updatedAt": "2026-09-08T02:35:08.931Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:23:34.929Z"
+    "updatedAt": "2026-09-08T02:35:13.574Z"
   },
   "AMZN": {
     "text": "Fatal Miami plane crash investigation raising safety concerns and potential oversight costs, dampening investor confidence.",
@@ -169,75 +169,71 @@
     "updatedAt": "2026-09-07T23:23:40.028Z"
   },
   "META": {
-    "text": "Settlement easing major legal overhang, prompting investors to view it as “at the price.”",
-    "source": "stock",
-    "articleIds": [
-      "f1c5c2e3-cd3d-38e9-88ca-cf8209d12e16",
-      "12d26246-2f07-3b76-abf2-b9c80accad26"
-    ],
-    "updatedAt": "2026-09-07T23:23:45.277Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-08T02:35:23.518Z"
   },
   "HDFCBANK.NS": {
-    "text": "CEO departure and lingering legal/leadership issues eroding investor confidence.",
+    "text": "CEO departure intensifies governance concerns and return‑gap worries, prompting investor unease.",
     "source": "stock",
     "articleIds": [
-      "115503aa-d9f5-398c-8f4d-b577c8d5267f",
-      "de91df48-7a79-37d1-bcfa-5d7785fb7396"
+      "115503aa-d9f5-398c-8f4d-b577c8d5267f"
     ],
-    "updatedAt": "2026-09-07T05:36:34.170Z"
+    "updatedAt": "2026-09-08T02:35:28.911Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:23:54.873Z"
+    "updatedAt": "2026-09-08T02:35:33.138Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:23:59.177Z"
+    "updatedAt": "2026-09-08T02:35:37.386Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:24:03.449Z"
+    "updatedAt": "2026-09-08T02:35:41.610Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:24:07.707Z"
+    "updatedAt": "2026-09-08T02:35:45.906Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:24:12.131Z"
+    "updatedAt": "2026-09-08T02:35:50.437Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:24:16.594Z"
+    "updatedAt": "2026-09-08T02:35:54.987Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:24:20.907Z"
+    "updatedAt": "2026-09-08T02:35:59.363Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:24:25.687Z"
+    "updatedAt": "2026-09-08T02:36:04.160Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-07T23:24:30.261Z"
+    "updatedAt": "2026-09-08T02:36:08.640Z"
   }
 }
