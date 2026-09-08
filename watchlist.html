@@ -629,7 +629,7 @@
 
         /* ─── Weekly Performance Readout ────────────────── */
         .stock-week {
-            font-size: 0.9rem;
+            font-size: 0.62rem;
             margin-top: 4px;
             padding-top: 8px;
             padding-bottom: 8px;
@@ -637,34 +637,48 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 11px;
+            gap: 6px;
         }
         .stock-week:empty { display: none; }
-        /* Single glyph is its own "glass" container: the stroke is the outline, and the
-           gradient background clipped to the text shape is the liquid rising to --fill.
-           (Kept as one element — a two-layer overlay misaligned on some mobile browsers.) */
+        /* Small capsule container per day; a liquid fill rises behind the letter as the
+           session progresses. (A text-stroke/background-clip glyph effect was tried first
+           but rendered as a near-invisible smudge on mobile — this is far more robust.) */
         .stock-week .week-day-letter {
-            display: inline-block;
-            font-weight: 800;
-            line-height: 1;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            font-weight: 700;
+            border: 1px solid color-mix(in srgb, var(--liquid) 45%, var(--border));
             cursor: help;
             --liquid: var(--text-dim);
-            color: transparent;
-            -webkit-text-stroke: 1px color-mix(in srgb, var(--liquid) 45%, transparent);
-            background: linear-gradient(
-                to top,
-                var(--liquid) 0%,
-                var(--liquid) calc(var(--fill, 0%) - 4%),
-                color-mix(in srgb, var(--liquid) 55%, transparent) var(--fill, 0%),
-                transparent calc(var(--fill, 0%) + 4%),
-                transparent 100%
-            );
-            -webkit-background-clip: text;
-            background-clip: text;
-            transition: background 0.8s ease;
         }
         .stock-week .week-day-letter.up { --liquid: var(--green); }
         .stock-week .week-day-letter.down { --liquid: var(--red); }
+        .stock-week .week-day-letter::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: var(--fill, 0%);
+            background: color-mix(in srgb, var(--liquid) 65%, transparent);
+            transition: height 0.8s ease;
+        }
+        .stock-week .week-letter-text {
+            position: relative;
+            z-index: 1;
+            color: var(--text);
+            opacity: 0.5;
+        }
+        .stock-week .week-day-letter.up .week-letter-text,
+        .stock-week .week-day-letter.down .week-letter-text {
+            opacity: 1;
+        }
 
         .stock-ath {
             font-size: 0.58rem;
@@ -2636,7 +2650,7 @@
                 }
             }
 
-            return `<span class="week-day-letter ${cls}" style="--fill:${fill.toFixed(1)}%" title="${title}">${letter}</span>`;
+            return `<span class="week-day-letter ${cls}" style="--fill:${fill.toFixed(1)}%" title="${title}"><span class="week-letter-text">${letter}</span></span>`;
         }).join('');
 
         weekEl.innerHTML = cells;
