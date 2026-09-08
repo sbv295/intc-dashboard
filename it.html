@@ -631,26 +631,49 @@
 
         /* ─── Weekly Performance Readout ────────────────── */
         .stock-week {
-            font-size: 0.66rem;
+            font-size: 0.8rem;
             margin-top: 4px;
-            padding-top: 6px;
-            padding-bottom: 6px;
+            padding-top: 8px;
+            padding-bottom: 8px;
             border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 9px;
+            gap: 10px;
         }
         .stock-week:empty { display: none; }
         .stock-week .week-day-letter {
-            font-weight: 700;
-            letter-spacing: 0.2px;
-            color: var(--text-dim);
-            opacity: 0.4;
+            position: relative;
+            display: inline-block;
+            font-weight: 800;
+            line-height: 1;
             cursor: help;
+            --liquid: var(--text-dim);
         }
-        .stock-week .week-day-letter.up { color: var(--green); opacity: 1; }
-        .stock-week .week-day-letter.down { color: var(--red); opacity: 1; }
+        .stock-week .week-day-letter.up { --liquid: var(--green); }
+        .stock-week .week-day-letter.down { --liquid: var(--red); }
+        /* Base glyph acts as the empty "glass" container — stroke only, transparent fill. */
+        .stock-week .week-letter-outline {
+            color: transparent;
+            -webkit-text-stroke: 1px color-mix(in srgb, var(--liquid) 45%, transparent);
+        }
+        /* Liquid overlay clipped to the same glyph shape; --fill controls how far up it rises. */
+        .stock-week .week-letter-liquid {
+            position: absolute;
+            inset: 0;
+            color: transparent;
+            background: linear-gradient(
+                to top,
+                var(--liquid) 0%,
+                var(--liquid) calc(var(--fill, 0%) - 4%),
+                color-mix(in srgb, var(--liquid) 55%, transparent) var(--fill, 0%),
+                transparent calc(var(--fill, 0%) + 4%),
+                transparent 100%
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            transition: background 0.8s ease;
+        }
 
         .stock-ath {
             font-size: 0.58rem;
@@ -2495,10 +2518,12 @@
             : { tz: 'America/New_York', holidays: US_MARKET_HOLIDAYS };
     }
 
-    // Regular-session close time, in minutes past local midnight — used to gate "today"'s
-    // coloring so it only appears once the regular session has actually finished, never
-    // during pre-market/market-open/post-market and never from extended-hours/HL prices.
-    const WEEK_MARKET_CLOSE_MINS = { US: 960, KRW: 930 }; // 4:00 PM ET / 3:30 PM KST
+    // Regular trading session window (open/close), in minutes past local midnight — drives
+    // both today's live fill progress and the previous-close lookup for each weekday.
+    const WEEK_SESSION_MINS = {
+        US:  { open: 570, close: 960 }, // 9:30 AM – 4:00 PM ET
+        KRW: { open: 540, close: 930 }, // 9:00 AM – 3:30 PM KST
+    };
 
     async function fetchWeekForStock(stock) {
         try {
@@ -2519,9 +2544,10 @@
         } catch (e) {}
     }
 
-    // Renders the current week's M/T/W/T/F readout from cached daily closes plus today's
-    // regular-session close once it's final — never colored until that session has actually
-    // ended, and never derived from extended-hours or Hyperliquid prices.
+    // Renders the current week's M/T/W/T/F readout as a "liquid fill" per letter: past days
+    // show a fully filled glyph in their close-vs-prevClose color, today fills up live as the
+    // session progresses (colored by the live regular-market price), future/holiday days stay
+    // an empty grey outline.
     function renderWeekReadout(stock) {
         const st = state[stock.ticker];
         const closes = st.weekCloses;
@@ -2534,30 +2560,31 @@
         const monday = mondayOfWeek(todayStr);
         const sortedDates = Array.from(closes.keys()).sort();
 
+        const session = stock.currency === 'KRW' ? WEEK_SESSION_MINS.KRW : WEEK_SESSION_MINS.US;
         const nowLocal = new Date(new Date().toLocaleString('en-US', { timeZone: tz, hour12: false }));
         const nowMins = nowLocal.getHours() * 60 + nowLocal.getMinutes();
-        const closeMins = stock.currency === 'KRW' ? WEEK_MARKET_CLOSE_MINS.KRW : WEEK_MARKET_CLOSE_MINS.US;
-        const todaySessionClosed = nowMins >= closeMins;
+        const todayFillPct = Math.max(0, Math.min(100, (nowMins - session.open) / (session.close - session.open) * 100));
 
         const cells = WEEK_DAY_LETTERS.map((letter, i) => {
             const dt = new Date(monday);
             dt.setUTCDate(dt.getUTCDate() + i);
             const dateStr = utcDateStr(dt);
 
-            let cls = 'grey', title = 'No data';
+            let cls = '', fill = 0, title = 'No data';
             if (dateStr > todayStr) {
                 title = 'Market not yet open';
             } else if (holidays.has(dateStr)) {
                 title = holidays.get(dateStr);
-            } else if (dateStr === todayStr && !todaySessionClosed) {
-                title = 'Market has not closed yet for today';
             } else if (dateStr === todayStr) {
+                fill = todayFillPct;
                 const priorDate = sortedDates.filter(d => d < dateStr).pop();
                 const prevClose = st.prevClose ?? (priorDate ? closes.get(priorDate) : null);
-                const closePrice = st.sessionClose ?? closes.get(dateStr);
-                if (closePrice != null && prevClose != null) {
-                    cls = closePrice >= prevClose ? 'up' : 'down';
-                    title = `${fmtPrice(stock, closePrice)} vs prev close ${fmtPrice(stock, prevClose)}`;
+                const curPrice = st.nasdaqPrice ?? st.sessionClose ?? closes.get(dateStr);
+                if (curPrice != null && prevClose != null) {
+                    cls = curPrice >= prevClose ? 'up' : 'down';
+                    title = `${fmtPrice(stock, curPrice)} vs prev close ${fmtPrice(stock, prevClose)}`;
+                } else {
+                    title = 'No data yet';
                 }
             } else {
                 const idx = sortedDates.indexOf(dateStr);
@@ -2566,12 +2593,15 @@
                     const prevClose = closes.get(sortedDates[idx - 1]);
                     if (close != null && prevClose != null) {
                         cls = close >= prevClose ? 'up' : 'down';
+                        fill = 100;
                         title = `${fmtPrice(stock, close)} vs prev close ${fmtPrice(stock, prevClose)}`;
                     }
                 }
             }
 
-            return `<span class="week-day-letter ${cls}" title="${title}">${letter}</span>`;
+            return `<span class="week-day-letter ${cls}" style="--fill:${fill.toFixed(1)}%" title="${title}">` +
+                `<span class="week-letter-outline">${letter}</span><span class="week-letter-liquid">${letter}</span>` +
+                `</span>`;
         }).join('');
 
         weekEl.innerHTML = cells;
