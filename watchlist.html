@@ -2617,6 +2617,8 @@
                 title = 'Market not yet open';
             } else if (holidays.has(dateStr)) {
                 title = holidays.get(dateStr);
+            } else if (dateStr === todayStr && nowMins < session.open) {
+                title = 'Market not yet open';
             } else if (dateStr === todayStr) {
                 fill = todayFillPct;
                 const priorDate = sortedDates.filter(d => d < dateStr).pop();

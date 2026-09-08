@@ -1964,6 +1964,8 @@
                 title = 'Market not yet open';
             } else if (INDIA_MARKET_HOLIDAYS.has(dateStr)) {
                 title = INDIA_MARKET_HOLIDAYS.get(dateStr);
+            } else if (dateStr === todayStr && nowMins < INDIA_SESSION_MINS.open) {
+                title = 'Market not yet open';
             } else if (dateStr === todayStr) {
                 fill = todayFillPct;
                 const priorDate = sortedDates.filter(d => d < dateStr).pop();
