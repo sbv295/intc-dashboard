@@ -341,6 +341,13 @@
             border-top: none;
             padding-top: 0;
         }
+        /* india.html has no pre/post market, so .stock-extended is always empty — without
+           this, its hidden line still left the weekly readout's own top border floating
+           right under .stock-meta's bottom border with nothing between them. */
+        .stock-extended:empty + .stock-week {
+            border-top: none;
+            padding-top: 0;
+        }
         .stock-extended .ext-label {
             font-weight: 600;
             color: var(--amber);

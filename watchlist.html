@@ -375,6 +375,12 @@
             border-top: none;
             padding-top: 0;
         }
+        /* When Pre/Post text is hidden (regular market hours), avoid the same redundant
+           double border between .stock-meta's bottom edge and the readout's own top border. */
+        .stock-extended:empty + .stock-week {
+            border-top: none;
+            padding-top: 0;
+        }
         .stock-extended .ext-label {
             font-weight: 600;
             color: var(--amber);
