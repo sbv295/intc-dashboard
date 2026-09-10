@@ -22,28 +22,30 @@
     "updatedAt": "2026-09-10T19:25:35.519Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-10T19:25:40.907Z"
-  },
-  "TSM": {
-    "text": "Record AI‑driven sales couldn't offset rising bond yields and heightened investor expectations.",
+    "text": "Positron AI’s $875 M funding for commodity memory threatens NVIDIA’s inference advantage.",
     "source": "stock",
     "articleIds": [
+      "86f8dfc5-efcf-3c39-a2ea-ef638529df3f"
+    ],
+    "updatedAt": "2026-09-10T22:11:14.192Z"
+  },
+  "TSM": {
+    "text": "Higher bond yields and soaring AI expectations eclipsed record August sales, pressuring valuation.",
+    "source": "stock",
+    "articleIds": [
+      "d4feae93-8f81-3f17-919f-ce62e6a6ecc3",
       "e58abbee-8bff-358b-9786-598649b412c6"
     ],
-    "updatedAt": "2026-09-10T19:25:46.480Z"
+    "updatedAt": "2026-09-10T22:11:20.300Z"
   },
   "SNDK": {
-    "text": "$8 million insider sale under a preplanned program raising dilution concerns.",
+    "text": "CTO’s $8 million pre‑planned stock sale triggering investor concerns about insider dumping",
     "source": "stock",
     "articleIds": [
       "8f6c2841-982b-3ba2-82e0-e2c8a401d6b4",
-      "a4ca1dd9-9a28-3194-baa5-edb82380b69b",
       "acee8fcc-9c38-3743-9af1-5450633297ee"
     ],
-    "updatedAt": "2026-09-10T19:25:51.633Z"
+    "updatedAt": "2026-09-10T22:11:25.886Z"
   },
   "MU": {
     "text": "Intel-backed Kepler Computing's challenge to memory-chip pricing raises concerns, pressuring valuation for Micron.",
@@ -65,25 +67,19 @@
     "updatedAt": "2026-09-10T19:26:03.152Z"
   },
   "SPCX": {
-    "text": "Data‑center overhaul and a classified Space Force launch boosting investor confidence.",
+    "text": "Classified Space Force payload launch showcases Falcon 9 dominance, boosting investor confidence in mission reliability.",
     "source": "stock",
     "articleIds": [
-      "698aff05-123f-47b4-8123-c4c9ed421fa1",
-      "20d797d2-cd43-4ccf-b5eb-2228c6d9f488",
-      "c8357bcb-2892-3c5c-b1fe-fb55a5c07d99",
-      "07de825a-1521-32b8-bcea-74c388cacac5"
+      "07de825a-1521-32b8-bcea-74c388cacac5",
+      "c8357bcb-2892-3c5c-b1fe-fb55a5c07d99"
     ],
-    "updatedAt": "2026-09-10T19:26:08.806Z"
+    "updatedAt": "2026-09-10T22:11:42.946Z"
   },
   "MRVL": {
-    "text": "Revenue outlook raised, yet business narrowed to a single AI‑chip bet, raising concentration concerns.",
-    "source": "stock",
-    "articleIds": [
-      "d6c508ae-1aed-3702-87ed-5edfe485ae9d",
-      "fc7afde6-8070-3952-b24f-3d436f0a5ac4",
-      "662570c4-39b6-3ad2-bbad-537cd395ed8d"
-    ],
-    "updatedAt": "2026-09-10T19:26:14.434Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-10T22:11:48.036Z"
   },
   "ARM": {
     "text": "Massive $200 billion robotics bet and AI chip shortages raise doubts about near‑term revenue growth.",
@@ -115,15 +111,16 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-10T19:26:35.879Z"
+    "updatedAt": "2026-09-10T22:12:09.137Z"
   },
   "005930.KS": {
-    "text": "Investors frustrated by a massive 100‑trillion‑won payout plan lacking clear buyback commitments.",
+    "text": "Apple’s cheaper $1,999 foldable intensifies competition, while vague buyback plans disappoint investors amid AI cash.",
     "source": "stock",
     "articleIds": [
+      "7fb1ab67-2c80-397a-839c-7051cf8a7614",
       "fc1289a8-277a-37b6-bc17-6a55de6d34ab"
     ],
-    "updatedAt": "2026-09-10T19:26:41.138Z"
+    "updatedAt": "2026-09-10T22:12:14.644Z"
   },
   "000660.KS": {
     "text": "Surging Treasury yields and triple‑digit oil prices undermining bullish outlook despite JPMorgan’s Overweight rating.",
@@ -134,21 +131,24 @@
     "updatedAt": "2026-09-10T16:51:32.953Z"
   },
   "AAPL": {
-    "text": "Showcasing AI advancements at the iPhone Duo event and unveiling the iPhone 18 Pro/Pro Max drove enthusiasm.",
+    "text": "New iPhone Duo launch and foldable lineup excitement driving strong buyer demand and market enthusiasm.",
     "source": "stock",
     "articleIds": [
-      "45be8e62-b7c7-4093-a8d7-a76717240f0e",
-      "9cacad0b-367b-4763-ba32-8f930f556f20"
+      "9451ea7f-7928-44ed-a220-eae3eaa12747",
+      "9cacad0b-367b-4763-ba32-8f930f556f20",
+      "194905be-43c6-3265-b405-a453f8439ead",
+      "0c4716dd-9bb6-3de3-b09c-8bdf9992ecc0",
+      "9987e23c-83e5-3b7f-bae7-41125f2e9cc4"
     ],
-    "updatedAt": "2026-09-10T19:26:51.649Z"
+    "updatedAt": "2026-09-10T22:12:25.483Z"
   },
   "MSFT": {
-    "text": "New school AI rules sacrificing data access to meet politically sensitive institution requirements.",
+    "text": "Plans to more than triple data‑center capacity, signaling aggressive AI infrastructure expansion.",
     "source": "stock",
     "articleIds": [
-      "ec00630c-3d5e-33ea-8f47-348564a42bf0"
+      "48743ed0-d5f8-3821-823c-63857fe6aa91"
     ],
-    "updatedAt": "2026-09-10T19:26:56.757Z"
+    "updatedAt": "2026-09-10T22:12:30.764Z"
   },
   "GOOGL": {
     "text": "University partnership fuels long‑term AI adoption, bolstering its AI and quantum growth prospects.",
@@ -160,83 +160,78 @@
     "updatedAt": "2026-09-10T19:27:01.754Z"
   },
   "AMZN": {
-    "text": "Massive $220 B AI capital spend and $230 M Whole Foods expansion intensifying cash‑flow pressures.",
-    "source": "stock",
-    "articleIds": [
-      "6b94e70a-4009-3a2b-8de7-ead210a2bf8a",
-      "c49e5bd3-b3f4-3040-9ba3-a9999ba41dfb"
-    ],
-    "updatedAt": "2026-09-10T19:27:07.039Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-10T22:12:41.277Z"
   },
   "META": {
-    "text": "AI agent access promise followed by a cease‑and‑desist letter, raising doubts over data‑access plans.",
-    "source": "stock",
-    "articleIds": [
-      "d6f4701d-04d0-365b-a29a-29a7954939b8",
-      "8af0920d-6b54-3993-b151-20c168d01ff5"
-    ],
-    "updatedAt": "2026-09-10T19:27:12.592Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-10T22:12:46.265Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-10T19:27:17.503Z"
+    "updatedAt": "2026-09-10T22:12:51.135Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-10T19:27:21.997Z"
+    "updatedAt": "2026-09-10T22:12:56.459Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-10T19:27:26.442Z"
+    "updatedAt": "2026-09-10T22:13:00.874Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-10T19:27:30.881Z"
+    "updatedAt": "2026-09-10T22:13:05.276Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-10T19:27:35.431Z"
+    "updatedAt": "2026-09-10T22:13:09.687Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-10T19:27:39.983Z"
+    "updatedAt": "2026-09-10T22:13:14.103Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-10T19:27:44.750Z"
+    "updatedAt": "2026-09-10T22:13:18.915Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-10T19:27:49.151Z"
+    "updatedAt": "2026-09-10T22:13:23.429Z"
   },
   "INDEX": {
-    "text": "Midday profit‑taking pressure amid mixed earnings reports.",
+    "text": "Loss of QQQI’s IRA tax advantage prompting investor withdrawals, dragging down broad‑market ETFs.",
     "source": "macro",
     "articleIds": [
+      "3837b87f-5b5c-3ec8-a98e-4a74d2a7ba6b",
       "4a7d7a8e-c8ad-3e0e-8a31-e9dbb77ced80"
     ],
-    "updatedAt": "2026-09-10T19:27:54.488Z"
+    "updatedAt": "2026-09-10T22:13:28.695Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-10T19:27:58.947Z"
+    "updatedAt": "2026-09-10T22:13:33.437Z"
   }
 }
