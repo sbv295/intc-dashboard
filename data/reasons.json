@@ -23,16 +23,18 @@
     "updatedAt": "2026-09-09T23:45:17.063Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-09T23:45:22.302Z"
+    "text": "DOJ investigation into Nvidia’s licensing agreement with AI startup Groq raises antitrust concerns.",
+    "source": "stock",
+    "articleIds": [
+      "ddf58b5a-57e8-3e6b-a342-e4419d8124ad"
+    ],
+    "updatedAt": "2026-09-10T02:36:52.876Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-09T23:45:27.384Z"
+    "updatedAt": "2026-09-10T02:36:58.105Z"
   },
   "SNDK": {
     "text": "AI data‑center contracts double revenue, while Goldman’s constructive outlook boosts visibility across the memory cycle.",
@@ -66,27 +68,26 @@
     "updatedAt": "2026-09-09T23:45:43.800Z"
   },
   "SPCX": {
-    "text": "319 million newly unlocked shares raise dilution fears, erasing prior gains amid AI data‑center spending pressure.",
+    "text": "Rapid AI data‑center rollout strains resources, turbine‑blade competition and massive share unlock spark dilution worries.",
     "source": "stock",
     "articleIds": [
       "a56861b4-2ba2-398e-a704-72891dba22c5",
       "f26057f9-8358-3e56-aece-692fe23bce82",
       "21128589-ea3c-310b-8dea-9d13d0952cb5",
-      "2dc6872e-c529-3626-abee-64df0250168e",
-      "bc1526cc-300b-392b-afbd-cbb13ac5143d"
+      "2dc6872e-c529-3626-abee-64df0250168e"
     ],
-    "updatedAt": "2026-09-09T23:45:49.485Z"
+    "updatedAt": "2026-09-10T02:37:19.872Z"
   },
   "MRVL": {
-    "text": "CEO confidence and repeated growth outlook upgrades highlight Marvell’s pivotal AI data‑center custom‑chip role, fueling investor optimism.",
+    "text": "Announcing an AI Infra Summit showcase of end‑to‑end data‑center connectivity and memory solutions.",
     "source": "stock",
     "articleIds": [
+      "8472a35d-90f0-3f5c-923b-4fddfb8c692a",
       "503da2b5-62c1-3933-b7e3-d21b10526394",
       "b61c67a9-3c1f-3e89-bd53-152555f4627f",
-      "85430744-cbd2-3860-8aa6-d21d8651d1d8",
-      "00809f03-fc86-384b-a2aa-68a1dd475d77"
+      "85430744-cbd2-3860-8aa6-d21d8651d1d8"
     ],
-    "updatedAt": "2026-09-09T23:45:55.016Z"
+    "updatedAt": "2026-09-10T02:37:25.238Z"
   },
   "ARM": {
     "text": "Previewing new AI compute innovations spanning data centers to edge devices, boosting growth expectations.",
@@ -97,70 +98,66 @@
     "updatedAt": "2026-09-09T21:28:29.607Z"
   },
   "QCOM": {
-    "text": "Amazon AI‑chip partnership boosting growth outlook, prompting analyst upgrades and a higher price target.",
+    "text": "Announced AI chip partnership with Amazon, prompting RBC price‑target upgrade and bullish analyst commentary overall.",
     "source": "stock",
     "articleIds": [
+      "4567a8de-231c-37a4-b0f4-aa6157fd39dc",
       "b192994b-2eca-3081-96a6-b8aedd485c1b",
       "b04519dc-7b19-3d67-bc70-f36db03c54f5",
       "28f9f80a-ddf4-336b-a696-b3a2e3908956",
-      "65fba754-b06b-38c1-9196-a123ace58780",
-      "272d2655-392e-323e-8665-f666c00645bd"
+      "65fba754-b06b-38c1-9196-a123ace58780"
     ],
-    "updatedAt": "2026-09-09T23:46:05.416Z"
+    "updatedAt": "2026-09-10T02:37:36.013Z"
   },
   "SKHY": {
-    "text": "Surging AI memory demand highlighted by OpenAI and Goldman’s constructive outlook on the memory market.",
-    "source": "stock",
-    "articleIds": [
-      "e0b6f217-bd92-37cd-95d8-e3b152fe274f",
-      "92c29bce-6f7a-3090-94ad-a79042a7ba65"
-    ],
-    "updatedAt": "2026-09-09T18:23:36.831Z"
-  },
-  "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-09T23:46:15.027Z"
-  },
-  "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-09T23:46:19.557Z"
-  },
-  "000660.KS": {
-    "text": "Eye‑popping shareholder‑return plans and surging AI‑driven memory demand fuel investor enthusiasm.",
+    "text": "Eye‑popping shareholder‑return plan and strong AI‑driven memory demand, bolstered by Goldman’s constructive outlook.",
     "source": "stock",
     "articleIds": [
       "9d3ede22-cee5-300d-8980-ef986b683c7a",
       "e0b6f217-bd92-37cd-95d8-e3b152fe274f",
       "92c29bce-6f7a-3090-94ad-a79042a7ba65"
     ],
-    "updatedAt": "2026-09-09T23:46:25.007Z"
+    "updatedAt": "2026-09-10T02:37:41.248Z"
+  },
+  "MBLY": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-10T02:37:45.617Z"
+  },
+  "005930.KS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-10T02:37:50.614Z"
+  },
+  "000660.KS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-10T02:37:55.378Z"
   },
   "AAPL": {
-    "text": "Lackluster market reaction to new foldable iPhone launch dampened investor enthusiasm amid expectations of demand.",
+    "text": "Facing stiff competition from Samsung and Huawei foldable phones, raising doubts about Apple's upcoming launch.",
     "source": "stock",
     "articleIds": [
-      "777e0e60-2b34-4e32-98b0-c3488093fd5c",
-      "7df211a4-bcb6-346d-82e2-b0fbf5fb0bcf"
+      "777e0e60-2b34-4e32-98b0-c3488093fd5c"
     ],
-    "updatedAt": "2026-09-09T23:46:30.708Z"
+    "updatedAt": "2026-09-10T02:38:00.682Z"
   },
   "MSFT": {
-    "text": "AI copyright lawsuit nearing judgment, raising potential costs for training models with protected material.",
+    "text": "Profitability peak prompting higher spending expectations into fiscal 2027, tempering enthusiasm.",
     "source": "stock",
     "articleIds": [
-      "bd72feb3-162e-3c1f-8ea6-73554d53f55b"
+      "7681b46f-4ac5-37c8-96b4-47d3962acb17"
     ],
-    "updatedAt": "2026-09-09T21:29:06.298Z"
+    "updatedAt": "2026-09-10T02:38:05.797Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-09T23:46:40.535Z"
+    "updatedAt": "2026-09-10T02:38:10.484Z"
   },
   "AMZN": {
     "text": "",
@@ -171,13 +168,13 @@
     "updatedAt": "2026-09-09T23:46:46.096Z"
   },
   "META": {
-    "text": "Launch of the autonomous Muse AI agent, promising new revenue streams for the platform.",
+    "text": "Launch of Muse AI agent, offering free and paid tiers to handle everyday tasks, driving investor enthusiasm.",
     "source": "stock",
     "articleIds": [
       "cbbdf9eb-5321-4cf0-9537-c10b63cb2be4",
-      "d622c48d-2b5b-380a-bab7-002416ec8311"
+      "eebf7504-5d5a-3746-bddd-3c5195886f80"
     ],
-    "updatedAt": "2026-09-09T23:46:51.372Z"
+    "updatedAt": "2026-09-10T02:38:21.129Z"
   },
   "HDFCBANK.NS": {
     "text": "CEO departure intensifies governance concerns and return‑gap worries, prompting investor unease.",
@@ -191,43 +188,43 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-09T23:47:00.586Z"
+    "updatedAt": "2026-09-10T02:38:30.279Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-09T23:47:04.907Z"
+    "updatedAt": "2026-09-10T02:38:34.595Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-09T23:47:09.388Z"
+    "updatedAt": "2026-09-10T02:38:38.911Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-09T23:47:13.727Z"
+    "updatedAt": "2026-09-10T02:38:43.283Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-09T23:47:18.018Z"
+    "updatedAt": "2026-09-10T02:38:47.642Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-09T23:47:22.664Z"
+    "updatedAt": "2026-09-10T02:38:52.175Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-09T23:47:27.003Z"
+    "updatedAt": "2026-09-10T02:38:56.666Z"
   },
   "INDEX": {
     "text": "Midday profit‑taking pressure amid mixed earnings reports.",
@@ -241,6 +238,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-09T23:47:36.365Z"
+    "updatedAt": "2026-09-10T02:39:06.207Z"
   }
 }
