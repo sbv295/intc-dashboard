@@ -25,7 +25,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:46:15.965Z"
+    "updatedAt": "2026-09-11T05:31:42.053Z"
   },
   "TSM": {
     "text": "Higher bond yields and soaring AI expectations eclipsed record August sales, pressuring valuation.",
@@ -48,31 +48,27 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:46:32.494Z"
+    "updatedAt": "2026-09-11T05:31:57.629Z"
   },
   "AVGO": {
-    "text": "Investor concerns over OpenAI’s Samsung chip partnership eclipsing Broadcom’s AI ambitions.",
+    "text": "Investors penalize after OpenAI announced a Samsung partnership, casting doubt on Broadcom’s AI chip prospects.",
     "source": "stock",
     "articleIds": [
-      "6b17e61f-d805-3062-b700-83cbb8bfe569",
-      "52e9ccbb-32ef-3fbf-b105-f50df349e1b5"
+      "6b17e61f-d805-3062-b700-83cbb8bfe569"
     ],
-    "updatedAt": "2026-09-10T19:26:03.152Z"
+    "updatedAt": "2026-09-11T05:32:03.288Z"
   },
   "SPCX": {
-    "text": "Anticipation of imminent paying Starship mission and successful classified Space Force launch fuels investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "597d4bb8-2216-3387-bb42-6fa8090de973",
-      "07de825a-1521-32b8-bcea-74c388cacac5"
-    ],
-    "updatedAt": "2026-09-11T00:46:43.182Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-11T05:32:08.313Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:46:48.591Z"
+    "updatedAt": "2026-09-11T05:32:13.429Z"
   },
   "ARM": {
     "text": "Massive $200 billion robot venture pressures earnings as partner ecosystem spending fails to generate royalty revenue.",
@@ -103,7 +99,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:47:08.480Z"
+    "updatedAt": "2026-09-11T05:32:32.660Z"
   },
   "005930.KS": {
     "text": "Apple’s cheaper $1,999 foldable intensifies competition, while vague buyback plans disappoint investors amid AI cash.",
@@ -123,14 +119,15 @@
     "updatedAt": "2026-09-10T16:51:32.953Z"
   },
   "AAPL": {
-    "text": "New iPhone 18 Pro lineup and iPhone Duo hardware features attract buyers, driving strong market enthusiasm.",
+    "text": "New iPhone 18 Pro/Max hardware upgrades and iPhone Duo appeal sparking strong consumer demand.",
     "source": "stock",
     "articleIds": [
       "9451ea7f-7928-44ed-a220-eae3eaa12747",
       "9cacad0b-367b-4763-ba32-8f930f556f20",
-      "194905be-43c6-3265-b405-a453f8439ead"
+      "67b72efa-a4b9-36eb-bb54-12031d63d206",
+      "fdecfbcf-ef7f-3223-b3f2-d9ef5c49d769"
     ],
-    "updatedAt": "2026-09-11T00:47:24.025Z"
+    "updatedAt": "2026-09-11T05:32:47.834Z"
   },
   "MSFT": {
     "text": "Expanding data‑center capacity to over 38 GW by 2032 to alleviate server shortages and boost computing power.",
@@ -142,76 +139,78 @@
     "updatedAt": "2026-09-11T00:47:31.077Z"
   },
   "GOOGL": {
-    "text": "University partnership fuels long‑term AI adoption, bolstering its AI and quantum growth prospects.",
+    "text": "Waymo’s expansion into Houston and San Diego fuels investor optimism about growing autonomous ride‑hailing revenue.",
     "source": "stock",
     "articleIds": [
-      "37bb9a9f-3f5c-3fb4-a33e-b45ad6c6de8b",
-      "33e146e7-9ba0-36c8-af0f-9cfde73fcca9"
+      "6278499b-5587-3ffd-8dc4-1073eea32100"
     ],
-    "updatedAt": "2026-09-10T19:27:01.754Z"
+    "updatedAt": "2026-09-11T05:32:57.656Z"
   },
   "AMZN": {
-    "text": "NTSB revelations that Prime Air pilots considered aborting the Miami landing, raising safety concerns.",
+    "text": "Fatal Miami Prime Air crash killing five, raising safety concerns and operational scrutiny.",
     "source": "stock",
     "articleIds": [
-      "c1c1bf58-226d-34d3-a5fd-65e2bfe19496",
-      "f62570c7-2bc1-3306-beda-a59455baefd7"
+      "7c0eb7c9-3435-30c7-b04e-af5942bc8cae",
+      "c1c1bf58-226d-34d3-a5fd-65e2bfe19496"
     ],
-    "updatedAt": "2026-09-11T00:47:41.688Z"
+    "updatedAt": "2026-09-11T05:33:02.916Z"
   },
   "META": {
+    "text": "$18 billion settlement over alleged addictive design harming teen mental health.",
+    "source": "stock",
+    "articleIds": [
+      "b6f7f16a-8526-3b51-8767-6624660e71fa",
+      "158faa5d-180e-317d-a404-664e087baf92"
+    ],
+    "updatedAt": "2026-09-11T05:33:08.023Z"
+  },
+  "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:47:46.660Z"
-  },
-  "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-11T00:47:51.036Z"
+    "updatedAt": "2026-09-11T05:33:12.222Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:47:55.393Z"
+    "updatedAt": "2026-09-11T05:33:16.460Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:47:59.660Z"
+    "updatedAt": "2026-09-11T05:33:20.711Z"
   },
   "AARTIIND.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-11T00:48:03.985Z"
-  },
-  "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:48:08.318Z"
+    "updatedAt": "2026-09-11T05:33:24.901Z"
+  },
+  "TCS.NS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-11T05:33:29.149Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:48:12.658Z"
+    "updatedAt": "2026-09-11T05:33:33.367Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:48:16.946Z"
+    "updatedAt": "2026-09-11T05:33:37.586Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:48:21.259Z"
+    "updatedAt": "2026-09-11T05:33:41.881Z"
   },
   "INDEX": {
     "text": "Loss of QQQI’s IRA tax advantage prompting investor withdrawals, dragging down broad‑market ETFs.",
@@ -226,6 +225,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-11T00:48:30.941Z"
+    "updatedAt": "2026-09-11T05:33:50.940Z"
   }
 }
