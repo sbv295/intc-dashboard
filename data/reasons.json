@@ -12,13 +12,15 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:34:37.081Z"
+    "updatedAt": "2026-09-12T11:53:18.800Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-12T07:34:41.974Z"
+    "text": "$30 B AI contract surge with Oracle raising concerns over Nvidia’s pricing and margin pressures",
+    "source": "stock",
+    "articleIds": [
+      "3d7b952a-5962-3fa3-b710-79338c18a8b4"
+    ],
+    "updatedAt": "2026-09-12T11:53:24.320Z"
   },
   "TSM": {
     "text": "Record August revenue surged 53.3% YoY, reflecting booming demand for advanced AI accelerator production.",
@@ -41,48 +43,45 @@
     "updatedAt": "2026-09-11T21:30:26.175Z"
   },
   "MU": {
-    "text": "Taiwan unions threaten strike demanding profit‑sharing overhaul and better bonuses, unsettling investors.",
+    "text": "Taiwan labor unions threatening strike over profit‑sharing and bonus reforms, pressuring earnings outlook.",
     "source": "stock",
     "articleIds": [
+      "3adaacd7-1def-3fad-909c-8fc2634a5076",
       "358b1a55-1a9b-36f3-b272-d2a23c52a0cd",
-      "a74c181e-5edb-3c45-91dc-b8133c1eaa08",
-      "574a80c0-361c-313b-a050-20830837ad4d",
-      "1a98f8c2-eb59-3cec-b64d-ef9c34a52915"
+      "a74c181e-5edb-3c45-91dc-b8133c1eaa08"
     ],
-    "updatedAt": "2026-09-11T23:47:42.674Z"
+    "updatedAt": "2026-09-12T11:53:39.661Z"
   },
   "AVGO": {
-    "text": "EU scrutiny of VMware licensing amid a surge in custom AI chip demand driving optimism.",
+    "text": "AI chip revenue surged 221% last quarter, fueling optimism about its custom accelerator momentum overall.",
     "source": "stock",
     "articleIds": [
+      "282459b4-96ae-3a4c-9520-3836d9c14f85",
       "586bb81d-9135-39eb-9e69-59afd35bf724",
       "abbb5920-34f5-3616-8c18-1ea9a06d1434"
     ],
-    "updatedAt": "2026-09-11T23:47:47.825Z"
+    "updatedAt": "2026-09-12T11:53:45.092Z"
   },
   "SPCX": {
-    "text": "Massive $13 billion AI compute contract and upcoming Starship milestones driving investor optimism.",
+    "text": "Cramer’s fantasy‑flex endorsement and CFO’s orbital AI compute push spotlight growth, fueling investor enthusiasm.",
     "source": "stock",
     "articleIds": [
-      "fc0e73b3-f2e1-319a-8016-57686bc4b0ac",
-      "692bdbee-e4bc-3173-b1d4-17b7e0c17ee9",
-      "b726f837-97f2-3fef-a31d-ec04f07fa62c",
-      "84345083-dcf1-301e-b4a1-2010bfe66e59",
-      "b6f28d69-59aa-385d-81cf-e71ed07c9794"
+      "6f0915bf-9e00-3693-bbbc-ea710b2801af",
+      "f5b2adbb-90ff-38b1-b68e-17c946c4cf74",
+      "fc0e73b3-f2e1-319a-8016-57686bc4b0ac"
     ],
-    "updatedAt": "2026-09-12T07:35:07.261Z"
+    "updatedAt": "2026-09-12T11:53:50.774Z"
   },
   "MRVL": {
-    "text": "Piper Sandler’s bullish coverage and strong AI custom‑silicon demand boost investor confidence amid rapid growth.",
+    "text": "Custom AI accelerator momentum and exclusive 3nm wafer supply from TSMC driving strong investor confidence.",
     "source": "stock",
     "articleIds": [
       "6e7b57d2-35ea-3787-80df-63df144840f3",
       "385ba468-0403-3057-960b-026d6e02984c",
       "508ffc88-2e3e-3326-8171-5f336a92c4e6",
-      "bedaabaa-d7e6-3478-8123-8455c8311665",
-      "6f5ccdf5-b268-33dc-b65e-17b55d279657"
+      "bedaabaa-d7e6-3478-8123-8455c8311665"
     ],
-    "updatedAt": "2026-09-12T02:39:36.406Z"
+    "updatedAt": "2026-09-12T11:53:55.993Z"
   },
   "ARM": {
     "text": "AI infrastructure growth and surging CPU demand boost outlook, fueling investor optimism.",
@@ -106,13 +105,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:35:26.989Z"
+    "updatedAt": "2026-09-12T11:54:10.766Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:35:31.392Z"
+    "updatedAt": "2026-09-12T11:54:15.256Z"
   },
   "005930.KS": {
     "text": "OpenAI chip partnership stalled without a contract, while Qualcomm pricing dispute over 2nm costs intensifies.",
@@ -128,96 +127,99 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:35:40.631Z"
+    "updatedAt": "2026-09-12T11:54:25.172Z"
   },
   "AAPL": {
-    "text": "Morgan Stanley reaffirmed outlook after iPhone Duo launch, prompting analysts to add Apple as a buy.",
+    "text": "AI‑focused vision rollout and upgraded Health‑app Apple Watch sensors driving investor optimism.",
     "source": "stock",
     "articleIds": [
-      "ff3ebbcf-fe39-3ccd-b655-37522db9df46",
-      "757bfca6-9610-3041-beea-24ac63fae47e"
+      "0412e998-3697-4082-8135-0169db997490",
+      "41332dfb-556c-39ec-84cd-e2f185a807a9"
     ],
-    "updatedAt": "2026-09-12T02:40:09.835Z"
+    "updatedAt": "2026-09-12T11:54:30.511Z"
   },
   "MSFT": {
-    "text": "Signing enforceable school‑AI guardrails, sacrificing student‑data flexibility, reopens procurement market amid looming AI bans.",
+    "text": "AI earnings rebound and new AI safety pact for schools bolstering confidence in its strategy",
     "source": "stock",
     "articleIds": [
-      "14238c9b-eb17-300c-816c-5d7150e2ee58"
+      "7e260fea-1359-3160-9c84-7b8373852765",
+      "21cec9c5-3573-34da-a4b8-8bac7e3498d1"
     ],
-    "updatedAt": "2026-09-12T07:35:51.062Z"
+    "updatedAt": "2026-09-12T11:54:36.479Z"
   },
   "GOOGL": {
-    "text": "Investing $15 billion in Finnish AI infrastructure, adding three data centers and a GPU supply deal.",
-    "source": "stock",
-    "articleIds": [
-      "b67f5887-8cb0-33ac-a1fc-f49f7ba3ad87",
-      "9c36a6c3-bdc2-34ae-ad1e-1578f486a0f7",
-      "297c2371-0e4a-36dd-8445-fce2c731d00e"
-    ],
-    "updatedAt": "2026-09-11T23:48:44.261Z"
-  },
-  "AMZN": {
-    "text": "AI‑powered Prime Video shopping feature boosting engagement and expected revenue, fueling investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "f58e2942-5feb-306f-af58-5e0d14f646b7"
-    ],
-    "updatedAt": "2026-09-12T02:40:25.210Z"
-  },
-  "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:36:05.835Z"
+    "updatedAt": "2026-09-12T11:54:41.241Z"
+  },
+  "AMZN": {
+    "text": "Cramer’s “sleep‑at‑night growth” endorsement plus AI‑driven Prime Video shopping feature boosting growth outlook.",
+    "source": "stock",
+    "articleIds": [
+      "c5a8b741-dfe0-34e1-bf7a-a8ce3d7cece7",
+      "f58e2942-5feb-306f-af58-5e0d14f646b7",
+      "f4ff583a-4205-3072-a964-2bcfc5655db4"
+    ],
+    "updatedAt": "2026-09-12T11:54:46.839Z"
+  },
+  "META": {
+    "text": "Settlement clears path for aggressive AI product rollout, boosting investor confidence and driving price gain.",
+    "source": "stock",
+    "articleIds": [
+      "c482587a-7854-336e-9034-4f160dbc5026",
+      "a277b4e8-76a5-3847-bb01-7781b7b1ac13",
+      "d4c5e28a-1565-3e3a-bc4f-deed09a01e3e"
+    ],
+    "updatedAt": "2026-09-12T11:54:52.321Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:36:10.182Z"
+    "updatedAt": "2026-09-12T11:54:56.759Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:36:14.896Z"
+    "updatedAt": "2026-09-12T11:55:01.877Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:36:19.165Z"
+    "updatedAt": "2026-09-12T11:55:06.511Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:36:23.481Z"
+    "updatedAt": "2026-09-12T11:55:10.923Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:36:27.709Z"
+    "updatedAt": "2026-09-12T11:55:15.464Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:36:32.032Z"
+    "updatedAt": "2026-09-12T11:55:19.909Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:36:36.367Z"
+    "updatedAt": "2026-09-12T11:55:24.321Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T07:36:40.644Z"
+    "updatedAt": "2026-09-12T11:55:28.786Z"
   },
   "INDEX": {
     "text": "Higher CPI reading fuels anticipation of Fed policy decisions, boosting market optimism.",
