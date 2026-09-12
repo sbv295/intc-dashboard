@@ -1,30 +1,24 @@
 {
   "INTC": {
-    "text": "Trump’s $5,000 stimulus pledge, highlighting Washington’s Intel stake as funding, spurred the surge.",
+    "text": "Trump’s $5,000 citizen checks pledge, highlighting Washington’s stake in Intel as funding source.",
     "source": "stock",
     "articleIds": [
       "060b2791-21e6-309e-abf9-598d27c563e3",
-      "a74c181e-5edb-3c45-91dc-b8133c1eaa08",
-      "22aae0b6-6851-35a7-8c22-1910abe6c9fe"
+      "a74c181e-5edb-3c45-91dc-b8133c1eaa08"
     ],
-    "updatedAt": "2026-09-12T02:38:55.059Z"
+    "updatedAt": "2026-09-12T07:34:32.345Z"
   },
   "AMD": {
-    "text": "Expanding rack‑scale AI systems and accelerating AI accelerator rollout, boosting demand for its server CPUs.",
-    "source": "stock",
-    "articleIds": [
-      "c5e47ef5-22b8-349e-9626-999c1932bffe",
-      "badc48b8-9992-3ccf-82d4-2e4d62ad8ced"
-    ],
-    "updatedAt": "2026-09-11T23:47:22.130Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-12T07:34:37.081Z"
   },
   "NVDA": {
-    "text": "Enabling rival AI accelerators via NVLink Fusion integration, expanding ecosystem and data‑center appeal.",
-    "source": "stock",
-    "articleIds": [
-      "9acee888-fd60-3dec-bb4e-d83cc0fc4a52"
-    ],
-    "updatedAt": "2026-09-11T23:47:27.514Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-12T07:34:41.974Z"
   },
   "TSM": {
     "text": "Record August revenue surged 53.3% YoY, reflecting booming demand for advanced AI accelerator production.",
@@ -67,15 +61,16 @@
     "updatedAt": "2026-09-11T23:47:47.825Z"
   },
   "SPCX": {
-    "text": "Securing a $13 billion AI compute hosting contract and upcoming Starship milestones fuels investor optimism.",
+    "text": "Massive $13 billion AI compute contract and upcoming Starship milestones driving investor optimism.",
     "source": "stock",
     "articleIds": [
+      "fc0e73b3-f2e1-319a-8016-57686bc4b0ac",
       "692bdbee-e4bc-3173-b1d4-17b7e0c17ee9",
       "b726f837-97f2-3fef-a31d-ec04f07fa62c",
       "84345083-dcf1-301e-b4a1-2010bfe66e59",
       "b6f28d69-59aa-385d-81cf-e71ed07c9794"
     ],
-    "updatedAt": "2026-09-11T23:47:53.237Z"
+    "updatedAt": "2026-09-12T07:35:07.261Z"
   },
   "MRVL": {
     "text": "Piper Sandler’s bullish coverage and strong AI custom‑silicon demand boost investor confidence amid rapid growth.",
@@ -111,13 +106,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:39:50.778Z"
+    "updatedAt": "2026-09-12T07:35:26.989Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:39:55.033Z"
+    "updatedAt": "2026-09-12T07:35:31.392Z"
   },
   "005930.KS": {
     "text": "OpenAI chip partnership stalled without a contract, while Qualcomm pricing dispute over 2nm costs intensifies.",
@@ -133,7 +128,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:40:04.534Z"
+    "updatedAt": "2026-09-12T07:35:40.631Z"
   },
   "AAPL": {
     "text": "Morgan Stanley reaffirmed outlook after iPhone Duo launch, prompting analysts to add Apple as a buy.",
@@ -145,13 +140,12 @@
     "updatedAt": "2026-09-12T02:40:09.835Z"
   },
   "MSFT": {
-    "text": "Signing enforceable school AI guardrails while announcing a data‑center expansion to 38 GW by 2032.",
+    "text": "Signing enforceable school‑AI guardrails, sacrificing student‑data flexibility, reopens procurement market amid looming AI bans.",
     "source": "stock",
     "articleIds": [
-      "14238c9b-eb17-300c-816c-5d7150e2ee58",
-      "c7ecaf47-23bc-3c0e-9cb0-3ed6731bea53"
+      "14238c9b-eb17-300c-816c-5d7150e2ee58"
     ],
-    "updatedAt": "2026-09-12T02:40:15.006Z"
+    "updatedAt": "2026-09-12T07:35:51.062Z"
   },
   "GOOGL": {
     "text": "Investing $15 billion in Finnish AI infrastructure, adding three data centers and a GPU supply deal.",
@@ -175,55 +169,55 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:40:30.078Z"
+    "updatedAt": "2026-09-12T07:36:05.835Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:40:34.321Z"
+    "updatedAt": "2026-09-12T07:36:10.182Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:40:39.247Z"
+    "updatedAt": "2026-09-12T07:36:14.896Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:40:43.532Z"
+    "updatedAt": "2026-09-12T07:36:19.165Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:40:47.777Z"
+    "updatedAt": "2026-09-12T07:36:23.481Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:40:52.044Z"
+    "updatedAt": "2026-09-12T07:36:27.709Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:40:56.304Z"
+    "updatedAt": "2026-09-12T07:36:32.032Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:41:00.568Z"
+    "updatedAt": "2026-09-12T07:36:36.367Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T02:41:04.866Z"
+    "updatedAt": "2026-09-12T07:36:40.644Z"
   },
   "INDEX": {
     "text": "Higher CPI reading fuels anticipation of Fed policy decisions, boosting market optimism.",
@@ -235,9 +229,11 @@
     "updatedAt": "2026-09-11T23:49:35.447Z"
   },
   "INDEX_IN": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-09-12T02:41:14.416Z"
+    "text": "Weak earnings, lofty valuations and absent AI investment theme eroding investor confidence, prompting fund pullbacks.",
+    "source": "macro",
+    "articleIds": [
+      "cf36eb1a-ebeb-310d-bbed-3fbe3bb74462"
+    ],
+    "updatedAt": "2026-09-12T07:36:50.715Z"
   }
 }
