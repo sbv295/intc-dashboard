@@ -66,7 +66,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:46:19.150Z"
+    "updatedAt": "2026-09-13T00:33:04.317Z"
   },
   "MRVL": {
     "text": "Custom AI accelerator momentum and exclusive 3nm wafer supply from TSMC driving strong investor confidence.",
@@ -101,13 +101,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:46:39.340Z"
+    "updatedAt": "2026-09-13T00:33:24.640Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:46:43.668Z"
+    "updatedAt": "2026-09-13T00:33:29.067Z"
   },
   "005930.KS": {
     "text": "OpenAI chip partnership stalled without a contract, while Qualcomm pricing dispute over 2nm costs intensifies.",
@@ -123,13 +123,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:46:53.127Z"
+    "updatedAt": "2026-09-13T00:33:39.149Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-12T22:46:57.971Z"
+    "text": "Launch of first foldable iPhone and unveiling of cutting‑edge chip with TSMC fuels investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "0412e998-3697-4082-8135-0169db997490",
+      "ff3ebbcf-fe39-3ccd-b655-37522db9df46",
+      "7ac9166f-5aa1-3893-9844-4e9055c1cca6",
+      "38380be5-4090-3c67-bf67-62bf32248839",
+      "d74c7582-77f7-36be-baa0-2fe95eed15ba"
+    ],
+    "updatedAt": "2026-09-13T00:33:44.632Z"
   },
   "MSFT": {
     "text": "AI earnings rebound and new AI safety pact for schools bolstering confidence in its strategy",
@@ -171,49 +177,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:47:23.610Z"
+    "updatedAt": "2026-09-13T00:34:10.498Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:47:28.370Z"
+    "updatedAt": "2026-09-13T00:34:15.440Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:47:32.647Z"
+    "updatedAt": "2026-09-13T00:34:19.869Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:47:36.932Z"
+    "updatedAt": "2026-09-13T00:34:24.255Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:47:41.297Z"
+    "updatedAt": "2026-09-13T00:34:28.993Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:47:45.682Z"
+    "updatedAt": "2026-09-13T00:34:33.423Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:47:49.999Z"
+    "updatedAt": "2026-09-13T00:34:37.868Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-12T22:47:54.363Z"
+    "updatedAt": "2026-09-13T00:34:42.259Z"
   },
   "INDEX": {
     "text": "Higher CPI reading fuels anticipation of Fed policy decisions, boosting market optimism.",
