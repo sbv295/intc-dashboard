@@ -18,12 +18,10 @@
     "updatedAt": "2026-09-12T22:45:47.766Z"
   },
   "NVDA": {
-    "text": "Investors pivot to a cheaper AI contender, trimming Nvidia’s momentum.",
-    "source": "stock",
-    "articleIds": [
-      "2932c484-eca9-34b7-8907-641b1c9bae95"
-    ],
-    "updatedAt": "2026-09-12T22:45:52.921Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-13T10:55:33.310Z"
   },
   "TSM": {
     "text": "Record August revenue surged 53.3% YoY, reflecting booming demand for advanced AI accelerator production.",
@@ -50,22 +48,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:34:23.218Z"
+    "updatedAt": "2026-09-13T10:55:48.516Z"
   },
   "AVGO": {
-    "text": "AI chip revenue surged 221% last quarter, fueling optimism from accelerator demand and TSM partnership.",
+    "text": "AI chip revenue surged 221% last quarter, fueling optimism about near‑term growth prospects.",
     "source": "stock",
     "articleIds": [
-      "282459b4-96ae-3a4c-9520-3836d9c14f85",
-      "586bb81d-9135-39eb-9e69-59afd35bf724"
+      "282459b4-96ae-3a4c-9520-3836d9c14f85"
     ],
-    "updatedAt": "2026-09-12T14:49:34.081Z"
+    "updatedAt": "2026-09-13T10:55:53.494Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-13T05:34:33.507Z"
+    "text": "New AI hosting client paying $1.11 billion monthly and upcoming $100 billion Starbase expansion drive",
+    "source": "stock",
+    "articleIds": [
+      "bae372c6-86aa-3be9-8025-3419255add30",
+      "4d7d3e0a-365f-3cd8-934d-d3811f85bf44",
+      "4237dcc6-4c15-3eac-a4b2-cc9b19c4b6a4"
+    ],
+    "updatedAt": "2026-09-13T10:55:58.811Z"
   },
   "MRVL": {
     "text": "Custom AI accelerator momentum and exclusive 3nm wafer supply from TSMC driving strong investor confidence.",
@@ -100,124 +101,125 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:34:53.648Z"
+    "updatedAt": "2026-09-13T10:56:18.713Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:34:58.376Z"
+    "updatedAt": "2026-09-13T10:56:22.952Z"
   },
   "005930.KS": {
-    "text": "OpenAI chip partnership stalled without a contract, while Qualcomm pricing dispute over 2nm costs intensifies.",
+    "text": "OpenAI chip collaboration stalled without a contract, while Samsung resists Qualcomm’s 2nm price cuts.",
     "source": "stock",
     "articleIds": [
       "903de58b-d986-3934-8e9d-1e19490b042e",
-      "794465df-d029-341a-808a-f571d52da3df",
-      "7fb1ab67-2c80-397a-839c-7051cf8a7614"
+      "794465df-d029-341a-808a-f571d52da3df"
     ],
-    "updatedAt": "2026-09-11T21:31:11.707Z"
+    "updatedAt": "2026-09-13T10:56:27.850Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:35:07.981Z"
+    "updatedAt": "2026-09-13T10:56:32.120Z"
   },
   "AAPL": {
-    "text": "Launch of first foldable iPhone plus AI vision hype fuels investor optimism amid market volatility.",
+    "text": "first foldable iPhone debut boosting growth prospects amid favorable Fed outlook",
     "source": "stock",
     "articleIds": [
-      "0412e998-3697-4082-8135-0169db997490",
+      "c78987a1-2705-38b0-959c-24626e4a7fd0",
       "ff3ebbcf-fe39-3ccd-b655-37522db9df46",
       "7ac9166f-5aa1-3893-9844-4e9055c1cca6"
     ],
-    "updatedAt": "2026-09-13T05:35:13.414Z"
+    "updatedAt": "2026-09-13T10:56:37.052Z"
   },
   "MSFT": {
-    "text": "AI earnings rebound and new AI safety pact for schools bolstering confidence in its strategy",
+    "text": "Billions invested in AI driving a major turnaround, boosting confidence after a strong Q2 earnings beat.",
     "source": "stock",
     "articleIds": [
-      "7e260fea-1359-3160-9c84-7b8373852765",
-      "21cec9c5-3573-34da-a4b8-8bac7e3498d1"
+      "7e260fea-1359-3160-9c84-7b8373852765"
     ],
-    "updatedAt": "2026-09-12T11:54:36.479Z"
+    "updatedAt": "2026-09-13T10:56:41.982Z"
   },
   "GOOGL": {
-    "text": "AI server ROI under two years and $396 MW clean‑energy pact boost profitability expectations significantly.",
+    "text": "AI revenue surge from a $1.11 B/month customer and profitable clean‑energy‑backed AI infrastructure investments.",
     "source": "stock",
     "articleIds": [
+      "bae372c6-86aa-3be9-8025-3419255add30",
+      "b7f39e7f-b92b-36d4-bcab-8bd4ea1e16aa",
       "6d4da608-f67a-3160-ac23-4fcf5edb3285",
       "1b044c3d-e233-30b0-bef8-5a841dbcd8fb",
       "0f70958d-f1a3-339a-8976-b3c0d39df1f5"
     ],
-    "updatedAt": "2026-09-13T05:35:24.224Z"
+    "updatedAt": "2026-09-13T10:56:47.285Z"
   },
   "AMZN": {
-    "text": "Rapid AWS expansion and booming ad revenue, plus a $60 billion Qualcomm partnership, drive optimism.",
+    "text": "AI exposure via Anthropic partnership, AWS growth, booming ad revenue, and $60B Qualcomm silicon deal",
     "source": "stock",
     "articleIds": [
+      "22da4703-ee9b-3ddc-829b-05704b0ffff5",
       "6ee37818-4d76-3b04-9248-b9a935b4aec7",
-      "d74c7582-77f7-36be-baa0-2fe95eed15ba",
-      "01b087b2-03e5-30ca-a28d-6056f72964ae"
+      "d74c7582-77f7-36be-baa0-2fe95eed15ba"
     ],
-    "updatedAt": "2026-09-12T22:47:14.066Z"
+    "updatedAt": "2026-09-13T10:56:52.918Z"
   },
   "META": {
-    "text": "AI focus draws major investors, prompting Cathie Wood to swap Google for Meta investment",
+    "text": "JPMorgan upgrade and Cathie Wood’s shift to Meta, driven by strong AI growth prospects.",
     "source": "stock",
     "articleIds": [
+      "f43a1439-59e3-32b2-afe4-95c63918db07",
       "9907c980-e196-35a1-b1f5-931f7397d136"
     ],
-    "updatedAt": "2026-09-13T05:35:35.274Z"
+    "updatedAt": "2026-09-13T10:56:57.841Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:35:39.655Z"
+    "updatedAt": "2026-09-13T10:57:02.114Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:35:44.453Z"
+    "updatedAt": "2026-09-13T10:57:06.849Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:35:48.826Z"
+    "updatedAt": "2026-09-13T10:57:11.095Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:35:53.191Z"
+    "updatedAt": "2026-09-13T10:57:15.309Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:35:57.587Z"
+    "updatedAt": "2026-09-13T10:57:19.520Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:36:02.320Z"
+    "updatedAt": "2026-09-13T10:57:23.771Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:36:06.776Z"
+    "updatedAt": "2026-09-13T10:57:28.027Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T05:36:11.193Z"
+    "updatedAt": "2026-09-13T10:57:32.316Z"
   },
   "INDEX": {
     "text": "Higher CPI reading fuels anticipation of Fed policy decisions, boosting market optimism.",
