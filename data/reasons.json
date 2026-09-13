@@ -1,28 +1,28 @@
 {
   "INTC": {
-    "text": "Trump’s $5,000 check pledge and Washington’s disclosed stake fueling investor optimism.",
+    "text": "GCC’s new support for Intel‑AMD AI Compute Extensions, boosting developer confidence in x86 AI workloads.",
     "source": "stock",
     "articleIds": [
+      "5bb5fb83-2940-32df-a94a-00c5985a2519",
+      "02a75e42-4df2-399a-9bb9-ee899844f1d6",
       "947ea89c-d335-3932-ba30-121b0a655131",
-      "060b2791-21e6-309e-abf9-598d27c563e3",
-      "a74c181e-5edb-3c45-91dc-b8133c1eaa08"
+      "060b2791-21e6-309e-abf9-598d27c563e3"
     ],
-    "updatedAt": "2026-09-13T14:46:20.170Z"
+    "updatedAt": "2026-09-13T17:50:42.038Z"
   },
   "AMD": {
-    "text": "Demand and accelerating earnings growth, boosted by a trillion‑dollar expansion in its 2030 market outlook.",
-    "source": "stock",
-    "articleIds": [
-      "2b0d1fdc-02cf-3770-9a0c-af4706c01263",
-      "084a9b7b-7480-31a8-a9df-f397a5987244"
-    ],
-    "updatedAt": "2026-09-12T22:45:47.766Z"
-  },
-  "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:46:30.196Z"
+    "updatedAt": "2026-09-13T17:50:47.158Z"
+  },
+  "NVDA": {
+    "text": "Investor caution over Huang’s aggressive 2030 market expansion bet.",
+    "source": "stock",
+    "articleIds": [
+      "ac646235-b32d-3778-a5eb-6d011b5624a9"
+    ],
+    "updatedAt": "2026-09-13T17:50:52.521Z"
   },
   "TSM": {
     "text": "Record August revenue surged 53% YoY, reflecting booming demand for advanced AI semiconductor production.",
@@ -36,46 +36,48 @@
     "updatedAt": "2026-09-13T14:46:35.324Z"
   },
   "SNDK": {
-    "text": "Oracle AI boom fails to lift memory demand, and DeepSeek cuts SSD requirements, dampening prospects",
-    "source": "stock",
-    "articleIds": [
-      "8cc8ee71-cd85-3400-a97f-7817f39905e8",
-      "38637649-5c50-3f27-bc67-db751fbd14cb"
-    ],
-    "updatedAt": "2026-09-13T05:34:18.028Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-13T17:51:02.611Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:46:45.938Z"
+    "updatedAt": "2026-09-13T17:51:07.500Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-13T14:46:50.849Z"
+    "text": "Surging AI processor demand and accelerated Ironwood shipments after earnings beat fuel investor optimism today",
+    "source": "stock",
+    "articleIds": [
+      "a8f35573-3780-3dac-9017-ab17aecf9d97",
+      "6b3bb98a-0681-3899-b022-6c59cfb2b28b",
+      "dd965174-33c6-39ae-916e-e5d3e0603893",
+      "efbd9b10-74a9-3705-9d13-04f47dde006f"
+    ],
+    "updatedAt": "2026-09-13T17:51:12.992Z"
   },
   "SPCX": {
-    "text": "Unnamed AI hosting client will generate $1.11 billion monthly revenue starting Dec 1, boosting earnings outlook significantly.",
+    "text": "Perceived upside from xAI merger gains, suggesting SpaceX worth far above prior $90 estimate now.",
     "source": "stock",
     "articleIds": [
-      "921e5a44-a4c8-3023-b425-c053aaa5c02d",
-      "1985157f-f079-361f-9a49-35bbc8345e3f",
-      "bae372c6-86aa-3be9-8025-3419255add30"
+      "fe03dd4d-7e72-3b64-9fac-487546cc87e2",
+      "c3e34846-bac4-3591-b85b-85ab4339fdcc",
+      "921e5a44-a4c8-3023-b425-c053aaa5c02d"
     ],
-    "updatedAt": "2026-09-13T14:46:56.603Z"
+    "updatedAt": "2026-09-13T17:51:18.447Z"
   },
   "MRVL": {
-    "text": "Custom AI accelerator momentum and exclusive 3nm wafer supply from TSMC driving strong investor confidence.",
+    "text": "Bank of America’s bullish outlook plus booming custom AI accelerator demand and exclusive TSMC 3nm supply driving strong growth momentum.",
     "source": "stock",
     "articleIds": [
+      "59c68f76-ed00-3b20-99ee-526599944c34",
       "6e7b57d2-35ea-3787-80df-63df144840f3",
       "385ba468-0403-3057-960b-026d6e02984c",
-      "508ffc88-2e3e-3326-8171-5f336a92c4e6",
-      "bedaabaa-d7e6-3478-8123-8455c8311665"
+      "508ffc88-2e3e-3326-8171-5f336a92c4e6"
     ],
-    "updatedAt": "2026-09-12T11:53:55.993Z"
+    "updatedAt": "2026-09-13T17:51:24.001Z"
   },
   "ARM": {
     "text": "AI infrastructure growth and surging CPU demand boost outlook, fueling investor optimism.",
@@ -99,13 +101,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:47:16.526Z"
+    "updatedAt": "2026-09-13T17:51:39.017Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:47:20.877Z"
+    "updatedAt": "2026-09-13T17:51:43.319Z"
   },
   "005930.KS": {
     "text": "OpenAI chip collaboration stalled without a contract, while Samsung resists Qualcomm’s 2nm price cuts.",
@@ -120,19 +122,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:47:30.502Z"
+    "updatedAt": "2026-09-13T17:51:52.888Z"
   },
   "AAPL": {
-    "text": "Launch of the iPhone Duo foldable, boosted by superior memory chips and AI wearables advancements.",
+    "text": "Launch of the iPhone Duo foldable, boosting growth expectations and AI wearables momentum.",
     "source": "stock",
     "articleIds": [
       "d8285251-dc65-49b2-8d78-dea8c0f38431",
+      "f081ed81-d519-33a6-b3c6-d61d11236f61",
       "ebe1823d-d548-31aa-9276-19dffefd472c",
       "6c8a78ec-9f34-3d9d-b41c-e10b1b7d0a7b",
-      "ff3ebbcf-fe39-3ccd-b655-37522db9df46",
-      "c78987a1-2705-38b0-959c-24626e4a7fd0"
+      "ff3ebbcf-fe39-3ccd-b655-37522db9df46"
     ],
-    "updatedAt": "2026-09-13T14:47:35.782Z"
+    "updatedAt": "2026-09-13T17:51:58.307Z"
   },
   "MSFT": {
     "text": "$678 billion cloud backlog signals sustained growth, fueling investor confidence and supporting the modest price increase.",
@@ -143,14 +145,13 @@
     "updatedAt": "2026-09-13T14:47:40.778Z"
   },
   "GOOGL": {
-    "text": "Cloud backlog soaring to $514 B after an 82% quarterly revenue surge fuels growth optimism.",
+    "text": "Surging $514B cloud backlog and a new $1.11 B‑monthly AI compute contract fueling growth expectations.",
     "source": "stock",
     "articleIds": [
       "8ec4d29a-62e2-3ae0-b781-1337a83e3a35",
-      "bae372c6-86aa-3be9-8025-3419255add30",
-      "b7f39e7f-b92b-36d4-bcab-8bd4ea1e16aa"
+      "bae372c6-86aa-3be9-8025-3419255add30"
     ],
-    "updatedAt": "2026-09-13T14:47:45.947Z"
+    "updatedAt": "2026-09-13T17:52:09.095Z"
   },
   "AMZN": {
     "text": "Zoox expansion into San Francisco robotaxi market and heightened AI exposure via Anthropic IPO driving.",
@@ -162,61 +163,60 @@
     "updatedAt": "2026-09-13T14:47:51.273Z"
   },
   "META": {
-    "text": "JPMorgan upgrade and Cathie Wood’s shift to Meta, driven by strong AI growth prospects.",
+    "text": "JPMorgan’s upgrade, citing strong AI initiatives and promising growth prospects, fuels investor optimism.",
     "source": "stock",
     "articleIds": [
-      "f43a1439-59e3-32b2-afe4-95c63918db07",
-      "9907c980-e196-35a1-b1f5-931f7397d136"
+      "f43a1439-59e3-32b2-afe4-95c63918db07"
     ],
-    "updatedAt": "2026-09-13T10:56:57.841Z"
+    "updatedAt": "2026-09-13T17:52:19.333Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:48:00.538Z"
+    "updatedAt": "2026-09-13T17:52:23.560Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:48:05.172Z"
+    "updatedAt": "2026-09-13T17:52:28.384Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:48:09.709Z"
+    "updatedAt": "2026-09-13T17:52:32.595Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:48:13.947Z"
+    "updatedAt": "2026-09-13T17:52:36.819Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:48:18.193Z"
+    "updatedAt": "2026-09-13T17:52:41.138Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:48:22.552Z"
+    "updatedAt": "2026-09-13T17:52:45.496Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:48:26.934Z"
+    "updatedAt": "2026-09-13T17:52:49.767Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-13T14:48:31.249Z"
+    "updatedAt": "2026-09-13T17:52:54.051Z"
   },
   "INDEX": {
     "text": "Higher CPI reading fuels anticipation of Fed policy decisions, boosting market optimism.",
