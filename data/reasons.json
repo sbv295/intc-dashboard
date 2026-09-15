@@ -1,21 +1,23 @@
 {
   "INTC": {
-    "text": "AI industry leaders warning of capability slowdown dampening investor confidence in Intel's AI roadmap",
+    "text": "AI slowdown warnings raise concerns over reduced demand for Intel’s high‑performance chips.",
     "source": "stock",
     "articleIds": [
+      "9e90cf0e-3f0a-34fe-9d98-7ad30548549e",
       "bee79b29-f619-3ec4-922a-b58723c658b1",
-      "89a2c3cd-2aee-30d2-a190-127d402a7e1f"
+      "1e37b78c-8f2a-33f5-859f-97b605961e14"
     ],
-    "updatedAt": "2026-09-14T21:17:32.658Z"
+    "updatedAt": "2026-09-15T00:09:00.751Z"
   },
   "AMD": {
-    "text": "Heightened AI development warnings and slower adoption outlook spooked investors, triggering a sharp sell‑off today",
+    "text": "AI leaders’ call for a coordinated slowdown in advanced AI development spooked investors, triggering a sharp sell‑off.",
     "source": "stock",
     "articleIds": [
+      "9e90cf0e-3f0a-34fe-9d98-7ad30548549e",
       "bee79b29-f619-3ec4-922a-b58723c658b1",
       "839748f0-0da5-3bc3-83c5-4266be545953"
     ],
-    "updatedAt": "2026-09-14T21:17:37.808Z"
+    "updatedAt": "2026-09-15T00:09:06.350Z"
   },
   "NVDA": {
     "text": "AI warning intensifies concerns as investors anticipate a widely expected Fed rate hike this week.",
@@ -43,26 +45,30 @@
     "updatedAt": "2026-09-14T21:17:53.718Z"
   },
   "MU": {
-    "text": "AI warning combined with looming Fed rate hike spooked investors, triggering a sharp sell‑off.",
+    "text": "AI‑related concerns and anticipation of a Fed rate hike spooked investors, triggering a sharp sell‑off.",
     "source": "stock",
     "articleIds": [
-      "2084aecc-79ec-32d8-a4ee-0894a4e6a808"
+      "2084aecc-79ec-32d8-a4ee-0894a4e6a808",
+      "54026945-baa4-3219-841b-bd4461f48fc8"
     ],
-    "updatedAt": "2026-09-14T21:17:58.678Z"
+    "updatedAt": "2026-09-15T00:09:28.523Z"
   },
   "AVGO": {
+    "text": "$21.7 billion AI revenue forecast sparks slowdown concerns, weighing on investor confidence amid execution risks overall.",
+    "source": "stock",
+    "articleIds": [
+      "d5b9e255-1bbf-36dc-ac16-67c0b598a24e",
+      "24fe7e51-ac33-31d2-af2d-4ee5bc9595c9",
+      "9d0269af-9159-3d34-955f-807e0c63f66b",
+      "7ce532a5-5410-3c96-ba13-19cbabe7c5b9"
+    ],
+    "updatedAt": "2026-09-15T00:09:34.933Z"
+  },
+  "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:18:03.669Z"
-  },
-  "SPCX": {
-    "text": "delayed Roadster launch fueling investor disappointment over missed SpaceX promotional opportunity and revenue growth prospects",
-    "source": "stock",
-    "articleIds": [
-      "a1b4e206-4fe6-31f1-93ed-d860f0c9fdf2"
-    ],
-    "updatedAt": "2026-09-14T21:18:09.254Z"
+    "updatedAt": "2026-09-15T00:09:39.600Z"
   },
   "MRVL": {
     "text": "Investor concerns over AI spending slowdown amid new competitive threat and Fed rate uncertainty",
@@ -87,7 +93,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:18:25.264Z"
+    "updatedAt": "2026-09-15T00:09:55.645Z"
   },
   "SKHY": {
     "text": "Anthropic and OpenAI CEOs urging slower AI development triggered investor concerns, prompting the decline.",
@@ -101,16 +107,17 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:18:35.020Z"
+    "updatedAt": "2026-09-15T00:10:05.162Z"
   },
   "005930.KS": {
-    "text": "Rejected $18.7 billion electricity prepayment plan, exposing costly AI‑infrastructure funding pressures.",
+    "text": "Massive AI‑related electricity prepayment proposal exposing high power costs for semiconductor expansion, triggering investor concerns.",
     "source": "stock",
     "articleIds": [
+      "c62501f9-dab1-3a04-b66c-6fe1cf1f6f50",
       "dfc5e1a6-9437-310e-ac67-d40111ad196c",
       "033725ed-5282-3a9b-9abf-53e68f6b099d"
     ],
-    "updatedAt": "2026-09-14T21:18:39.927Z"
+    "updatedAt": "2026-09-15T00:10:10.637Z"
   },
   "000660.KS": {
     "text": "Anthropic and OpenAI CEOs urging slower AI development triggered investor concerns, prompting sell‑off.",
@@ -130,13 +137,13 @@
     "updatedAt": "2026-09-14T21:18:50.391Z"
   },
   "MSFT": {
-    "text": "Release of a 37‑page Humanist AI Code of Conduct reassuring investors about AI risk management.",
+    "text": "Reporting Azure revenue directly in quarterly results, increasing transparency and highlighting growth potential.",
     "source": "stock",
     "articleIds": [
-      "a27b8efe-cfd9-351c-94a1-6a82996ced4f",
-      "cb50a980-90d9-3bd8-8cf4-22393fcb704a"
+      "bce0c7c7-b0ee-3152-a73b-9ed20219664e",
+      "834a838f-68d1-331f-a6b9-b8b3823fdf08"
     ],
-    "updatedAt": "2026-09-14T21:18:56.030Z"
+    "updatedAt": "2026-09-15T00:10:28.438Z"
   },
   "GOOGL": {
     "text": "Investors rallied as AI leaders urged a development slowdown, boosting confidence in Alphabet’s responsible AI strategy.",
@@ -147,78 +154,78 @@
     "updatedAt": "2026-09-14T21:19:01.300Z"
   },
   "AMZN": {
-    "text": "AI advertising pilot with ChatGPT and Anthropic’s slowdown concerns dampening growth expectations.",
+    "text": "Investor worries that a carrier-wide disruption could impair Amazon’s delivery network.",
     "source": "stock",
     "articleIds": [
-      "00394e20-de85-3bc0-8606-2a0eeda70721",
-      "ddd9c8cc-f7e8-379c-8f95-d7163be9b782"
+      "b76f26ee-86be-36df-8a85-b8e105ccc21a"
     ],
-    "updatedAt": "2026-09-14T21:19:06.687Z"
+    "updatedAt": "2026-09-15T00:10:39.088Z"
   },
   "META": {
-    "text": "Investors rallied after AI leaders urged a development slowdown, boosting confidence in Meta’s responsible approach.",
+    "text": "Launch of Muse personal AI agent expanding beyond chatbots, driving investor optimism and price gain.",
     "source": "stock",
     "articleIds": [
+      "ce20c1fd-d288-35a1-bacc-3bbf3bf8d266",
       "76017585-6f3a-3b2b-b905-7d6bdd05883b"
     ],
-    "updatedAt": "2026-09-14T21:19:12.893Z"
+    "updatedAt": "2026-09-15T00:10:44.658Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:19:17.215Z"
+    "updatedAt": "2026-09-15T00:10:48.904Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:19:22.211Z"
+    "updatedAt": "2026-09-15T00:10:53.744Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:19:26.439Z"
+    "updatedAt": "2026-09-15T00:10:57.976Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:19:30.658Z"
+    "updatedAt": "2026-09-15T00:11:02.300Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:19:35.048Z"
+    "updatedAt": "2026-09-15T00:11:06.531Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:19:39.310Z"
+    "updatedAt": "2026-09-15T00:11:10.858Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:19:43.717Z"
+    "updatedAt": "2026-09-15T00:11:15.248Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-14T21:19:48.005Z"
+    "updatedAt": "2026-09-15T00:11:19.709Z"
   },
   "INDEX": {
-    "text": "Fears of AI slowdown alongside climbing bond yields and surging crude prices dampened market sentiment.",
+    "text": "midday profit‑taking amid anticipation of Fed policy decisions",
     "source": "macro",
     "articleIds": [
       "2e56a049-2146-33d0-be46-f70bc83b6eaf",
-      "f87e5460-d53f-33c9-ba7b-aa25d73ae058"
+      "64f527cf-1ef4-3c19-945b-13faa7d2b629"
     ],
-    "updatedAt": "2026-09-14T21:19:53.054Z"
+    "updatedAt": "2026-09-15T00:11:25.029Z"
   },
   "INDEX_IN": {
     "text": "Weak earnings, lofty valuations and absent AI investment theme eroding investor confidence, prompting fund pullbacks.",
