@@ -1,31 +1,26 @@
 {
   "INTC": {
-    "text": "AI slowdown warnings raise concerns over reduced demand for Intel’s high‑performance chips.",
+    "text": "Calls for a coordinated AI slowdown raise fears of regulatory constraints, dampening investor confidence overall.",
     "source": "stock",
     "articleIds": [
       "9e90cf0e-3f0a-34fe-9d98-7ad30548549e",
-      "bee79b29-f619-3ec4-922a-b58723c658b1",
-      "1e37b78c-8f2a-33f5-859f-97b605961e14"
+      "bee79b29-f619-3ec4-922a-b58723c658b1"
     ],
-    "updatedAt": "2026-09-15T00:09:00.751Z"
+    "updatedAt": "2026-09-15T05:40:28.840Z"
   },
   "AMD": {
-    "text": "AI leaders’ call for a coordinated slowdown in advanced AI development spooked investors, triggering a sharp sell‑off.",
+    "text": "AI slowdown calls sparked investor concerns, triggering a sharp sell‑off amid fears of doomsday scenarios.",
     "source": "stock",
     "articleIds": [
-      "9e90cf0e-3f0a-34fe-9d98-7ad30548549e",
-      "bee79b29-f619-3ec4-922a-b58723c658b1",
-      "839748f0-0da5-3bc3-83c5-4266be545953"
+      "9e90cf0e-3f0a-34fe-9d98-7ad30548549e"
     ],
-    "updatedAt": "2026-09-15T00:09:06.350Z"
+    "updatedAt": "2026-09-15T05:40:33.675Z"
   },
   "NVDA": {
-    "text": "AI warning intensifies concerns as investors anticipate a widely expected Fed rate hike this week.",
-    "source": "stock",
-    "articleIds": [
-      "2084aecc-79ec-32d8-a4ee-0894a4e6a808"
-    ],
-    "updatedAt": "2026-09-14T21:17:42.920Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-15T05:40:38.348Z"
   },
   "TSM": {
     "text": "2028 chip roadmap delays high‑NA lithography adoption, prompting investor concerns over future technology leadership timeline.",
@@ -45,30 +40,32 @@
     "updatedAt": "2026-09-14T21:17:53.718Z"
   },
   "MU": {
-    "text": "AI‑related concerns and anticipation of a Fed rate hike spooked investors, triggering a sharp sell‑off.",
+    "text": "AI leaders’ safety‑driven slowdown call raised doubts on high‑bandwidth memory demand, pressuring Micron.",
     "source": "stock",
     "articleIds": [
       "2084aecc-79ec-32d8-a4ee-0894a4e6a808",
-      "54026945-baa4-3219-841b-bd4461f48fc8"
+      "54026945-baa4-3219-841b-bd4461f48fc8",
+      "8deb1431-a959-3228-acf9-be7037e8763b"
     ],
-    "updatedAt": "2026-09-15T00:09:28.523Z"
+    "updatedAt": "2026-09-15T05:40:54.224Z"
   },
   "AVGO": {
-    "text": "$21.7 billion AI revenue forecast sparks slowdown concerns, weighing on investor confidence amid execution risks overall.",
+    "text": "$21.7 B AI revenue forecast triggers slowdown concerns, prompting investor sell‑off amid infrastructure‑spending doubts in the market.",
     "source": "stock",
     "articleIds": [
       "d5b9e255-1bbf-36dc-ac16-67c0b598a24e",
       "24fe7e51-ac33-31d2-af2d-4ee5bc9595c9",
-      "9d0269af-9159-3d34-955f-807e0c63f66b",
-      "7ce532a5-5410-3c96-ba13-19cbabe7c5b9"
+      "9d0269af-9159-3d34-955f-807e0c63f66b"
     ],
-    "updatedAt": "2026-09-15T00:09:34.933Z"
+    "updatedAt": "2026-09-15T05:41:00.103Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-15T00:09:39.600Z"
+    "text": "Heavy $15.8 B AI spend raises doubts about reliance on terrestrial data centers if orbital facilities underperform.",
+    "source": "stock",
+    "articleIds": [
+      "48d929f1-a7e5-37d7-baca-cd90a3c146ea"
+    ],
+    "updatedAt": "2026-09-15T05:41:04.923Z"
   },
   "MRVL": {
     "text": "Investor concerns over AI spending slowdown amid new competitive threat and Fed rate uncertainty",
@@ -81,19 +78,16 @@
     "updatedAt": "2026-09-14T21:18:15.467Z"
   },
   "ARM": {
-    "text": "Slower-than-expected royalty growth as AI‑chip competition intensifies, raising concerns over ARM’s revenue trajectory.",
-    "source": "stock",
-    "articleIds": [
-      "6933b569-091d-355f-b929-103354e3184e",
-      "0b73c600-052d-3d93-a892-2c095d73f3ea"
-    ],
-    "updatedAt": "2026-09-14T17:26:02.800Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-15T05:41:14.668Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T00:09:55.645Z"
+    "updatedAt": "2026-09-15T05:41:19.505Z"
   },
   "SKHY": {
     "text": "Anthropic and OpenAI CEOs urging slower AI development triggered investor concerns, prompting the decline.",
@@ -107,7 +101,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T00:10:05.162Z"
+    "updatedAt": "2026-09-15T05:41:28.844Z"
   },
   "005930.KS": {
     "text": "Massive AI‑related electricity prepayment proposal exposing high power costs for semiconductor expansion, triggering investor concerns.",
@@ -128,13 +122,15 @@
     "updatedAt": "2026-09-14T17:26:27.877Z"
   },
   "AAPL": {
-    "text": "Unveiling the iPhone Duo foldable, hailed as a must‑have, while Apple successfully dismissed antitrust claims.",
+    "text": "Unveiling the highly anticipated iPhone Duo foldable, sparking strong market enthusiasm and demand expectations.",
     "source": "stock",
     "articleIds": [
+      "a8250f25-350f-3051-923b-788abf8c2a06",
+      "84b2f4fc-2459-3fb6-a2d1-1d7d1bd804bd",
       "f57e58eb-bc66-313e-97c7-8634c40958a2",
       "cea14b6b-6b9f-3c71-8eb5-4a0a954bf5b5"
     ],
-    "updatedAt": "2026-09-14T21:18:50.391Z"
+    "updatedAt": "2026-09-15T05:41:44.832Z"
   },
   "MSFT": {
     "text": "Reporting Azure revenue directly in quarterly results, increasing transparency and highlighting growth potential.",
@@ -146,20 +142,19 @@
     "updatedAt": "2026-09-15T00:10:28.438Z"
   },
   "GOOGL": {
-    "text": "Investors rallied as AI leaders urged a development slowdown, boosting confidence in Alphabet’s responsible AI strategy.",
-    "source": "stock",
-    "articleIds": [
-      "76017585-6f3a-3b2b-b905-7d6bdd05883b"
-    ],
-    "updatedAt": "2026-09-14T21:19:01.300Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-15T05:41:54.516Z"
   },
   "AMZN": {
-    "text": "Investor worries that a carrier-wide disruption could impair Amazon’s delivery network.",
+    "text": "$60 billion Qualcomm commitment raising AI‑investment costs and profit‑margin worries, pressuring the price.",
     "source": "stock",
     "articleIds": [
-      "b76f26ee-86be-36df-8a85-b8e105ccc21a"
+      "a8250f25-350f-3051-923b-788abf8c2a06",
+      "a4f0a8c6-e9d8-31f5-85d2-8262a594a1cf"
     ],
-    "updatedAt": "2026-09-15T00:10:39.088Z"
+    "updatedAt": "2026-09-15T05:42:00.101Z"
   },
   "META": {
     "text": "Launch of Muse personal AI agent expanding beyond chatbots, driving investor optimism and price gain.",
@@ -174,58 +169,57 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T00:10:48.904Z"
+    "updatedAt": "2026-09-15T05:42:09.744Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T00:10:53.744Z"
+    "updatedAt": "2026-09-15T05:42:14.417Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T00:10:57.976Z"
+    "updatedAt": "2026-09-15T05:42:18.607Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T00:11:02.300Z"
+    "updatedAt": "2026-09-15T05:42:22.856Z"
   },
   "TCS.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T00:11:06.531Z"
+    "updatedAt": "2026-09-15T05:42:27.055Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T00:11:10.858Z"
+    "updatedAt": "2026-09-15T05:42:31.333Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T00:11:15.248Z"
+    "updatedAt": "2026-09-15T05:42:35.655Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T00:11:19.709Z"
+    "updatedAt": "2026-09-15T05:42:39.969Z"
   },
   "INDEX": {
-    "text": "midday profit‑taking amid anticipation of Fed policy decisions",
+    "text": "Midday profit‑taking pressure after earlier gains, driven by concerns over slowing earnings growth and weaker economic data.",
     "source": "macro",
     "articleIds": [
-      "2e56a049-2146-33d0-be46-f70bc83b6eaf",
-      "64f527cf-1ef4-3c19-945b-13faa7d2b629"
+      "2e56a049-2146-33d0-be46-f70bc83b6eaf"
     ],
-    "updatedAt": "2026-09-15T00:11:25.029Z"
+    "updatedAt": "2026-09-15T05:42:45.151Z"
   },
   "INDEX_IN": {
     "text": "Weak earnings, lofty valuations and absent AI investment theme eroding investor confidence, prompting fund pullbacks.",
