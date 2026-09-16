@@ -1,9 +1,11 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-15T22:37:53.807Z"
+    "text": "Mizuho cut its price target, citing a red‑flag concern despite four major analyst‑identified tailwinds.",
+    "source": "stock",
+    "articleIds": [
+      "ed2b3b6b-7546-3a2b-9bb7-9d2040d6dced"
+    ],
+    "updatedAt": "2026-09-16T00:57:46.447Z"
   },
   "AMD": {
     "text": "Investors undervalue continued AI data‑center expansion despite temporary pause in its 58% AI engine rollout.",
@@ -17,13 +19,13 @@
     "updatedAt": "2026-09-15T22:37:59.647Z"
   },
   "NVDA": {
-    "text": "New Pinterest partnership fuels AI shopping expansion, while confirming leadership after winning AI training race.",
+    "text": "CEO’s call to pace AI development plus a strategic portfolio reshuffle bolsters investor confidence.",
     "source": "stock",
     "articleIds": [
-      "989ffce1-d7bc-3681-a683-0d384d63167b",
-      "046b3068-8c50-37ae-ae77-e5e77a38f76d"
+      "e732ea48-5342-4e1d-bae4-74baa6899210",
+      "f3f7c936-edb0-3335-a939-74249fb92413"
     ],
-    "updatedAt": "2026-09-15T22:38:05.742Z"
+    "updatedAt": "2026-09-16T00:57:57.754Z"
   },
   "TSM": {
     "text": "Uncertainty over 2‑nanometer production volumes after MediaTek’s AI‑focused launch dampens investor confidence in the near‑term earnings.",
@@ -34,20 +36,21 @@
     "updatedAt": "2026-09-15T19:25:57.209Z"
   },
   "SNDK": {
-    "text": "multiyear contract commitments dampening short‑term upside despite strong AI‑driven NAND demand.",
+    "text": "Refinancing its revolving credit facility amid cooling momentum and multiyear contract sales dampening investor enthusiasm",
     "source": "stock",
     "articleIds": [
-      "cf151e9d-d0f6-3869-b088-8dfe8761858f",
-      "f2dc3487-e749-3fef-ad90-ff63df0ef391",
-      "2b345adf-893b-3748-b04e-f2d7476f87e7"
+      "0ab3c257-e386-38c7-ac42-5315bbf351ab",
+      "cf151e9d-d0f6-3869-b088-8dfe8761858f"
     ],
-    "updatedAt": "2026-09-15T19:26:02.599Z"
+    "updatedAt": "2026-09-16T00:58:08.784Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-15T22:38:22.328Z"
+    "text": "Appointment of Deirdre Hanford to lead Micron Research Labs, emphasizing long‑term memory and AI innovation.",
+    "source": "stock",
+    "articleIds": [
+      "b1586ccc-dd63-3cf3-b8c2-3e5bb0e1ef8f"
+    ],
+    "updatedAt": "2026-09-16T00:58:14.509Z"
   },
   "AVGO": {
     "text": "AI revenue share surging to 62% heightens sensitivity to shifting AI sentiment, pressuring earnings outlook.",
@@ -59,12 +62,13 @@
     "updatedAt": "2026-09-15T22:38:27.571Z"
   },
   "SPCX": {
-    "text": "Funding uncertainties as SpaceX seeks new capital amid ambitious launch schedule and rising development costs",
+    "text": "328 million shares unlocking on Sept 24 sparks dilution worries, pressuring valuation despite Musk’s growth narrative.",
     "source": "stock",
     "articleIds": [
+      "193b84c8-4510-3391-8efa-319d383fa400",
       "63b4d9a2-dfdc-3485-a3dc-08c38ac51945"
     ],
-    "updatedAt": "2026-09-15T22:38:32.920Z"
+    "updatedAt": "2026-09-16T00:58:25.992Z"
   },
   "MRVL": {
     "text": "Explosive data‑center demand driven by AI workloads fuels massive revenue growth expectations.",
@@ -75,10 +79,13 @@
     "updatedAt": "2026-09-15T19:26:24.086Z"
   },
   "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-15T22:38:43.981Z"
+    "text": "Doubling data‑center royalties from accelerating AI infrastructure spending fuels the recent price gain.",
+    "source": "stock",
+    "articleIds": [
+      "e20102c2-972f-3b64-a4d7-19e9293e74a1",
+      "72b2efac-268c-318e-92aa-f87afe5f02aa"
+    ],
+    "updatedAt": "2026-09-16T00:58:37.077Z"
   },
   "QCOM": {
     "text": "Strong data‑center demand, boosted by Amazon AI chip partnership and StoneX’s $270 target, fuels momentum.",
@@ -96,46 +103,43 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:38:54.179Z"
+    "updatedAt": "2026-09-16T00:58:46.833Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:38:59.240Z"
+    "updatedAt": "2026-09-16T00:58:51.532Z"
   },
   "005930.KS": {
-    "text": "Higher Galaxy prices and costly AI‑infrastructure power prepayment proposal weighing on sentiment.",
+    "text": "Tim Cook’s cameo in the Galaxy Z Fold 8 campaign fuels investor optimism.",
     "source": "stock",
     "articleIds": [
-      "c62501f9-dab1-3a04-b66c-6fe1cf1f6f50",
-      "dfc5e1a6-9437-310e-ac67-d40111ad196c"
+      "04f407b2-88fe-38a5-9872-4d9c76c09782",
+      "af0ecc63-9f27-3e11-a54c-bc858a752db9"
     ],
-    "updatedAt": "2026-09-15T15:24:17.653Z"
+    "updatedAt": "2026-09-16T00:58:56.918Z"
   },
   "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:39:09.192Z"
+    "updatedAt": "2026-09-16T00:59:01.356Z"
   },
   "AAPL": {
-    "text": "Weak iPhone 18 Pro pre‑orders and limited Siri AI rollout constraints dampen investor enthusiasm in the near term.",
+    "text": "Weak iPhone 18 Pro pre‑orders and limited Siri AI rollout constraints dampen investor enthusiasm.",
     "source": "stock",
     "articleIds": [
       "27d2f961-ee46-31c1-b9d6-2df13c193fb4",
-      "395740ff-7e0c-3313-9c5a-ce4462f4d6be",
-      "7b13c612-f3aa-3ac3-983a-a8ae5f6744e0"
+      "395740ff-7e0c-3313-9c5a-ce4462f4d6be"
     ],
-    "updatedAt": "2026-09-15T22:39:15.087Z"
+    "updatedAt": "2026-09-16T00:59:06.986Z"
   },
   "MSFT": {
-    "text": "Dividends outpacing buybacks, shrinking capital return via repurchases and limiting share‑count reduction.",
-    "source": "stock",
-    "articleIds": [
-      "2861e5bc-9c71-3aae-863c-8abd3c2a4c8d"
-    ],
-    "updatedAt": "2026-09-15T22:39:20.384Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-16T00:59:12.191Z"
   },
   "GOOGL": {
     "text": "New AI safety warning from former DeepMind researcher heightens concerns over accelerating technology risks globally",
@@ -155,70 +159,69 @@
     "updatedAt": "2026-09-15T22:39:31.750Z"
   },
   "META": {
-    "text": "AI monetization surge from new Meta One subscription service, creator marketing hub, and cost‑cutting AI chip rollout.",
+    "text": "AI monetization gains momentum via Meta One subscriptions, creator hub, and cost‑cutting AI chip strategy",
     "source": "stock",
     "articleIds": [
       "fec98449-7cba-4cae-8353-7596679635c4",
       "435dbfc7-3ea5-3e8c-8697-c4df458cb5b1",
       "1561809b-212c-3dd0-81a3-70150b9beebe",
-      "da116579-ac3b-3f31-9ad9-6f3f62c1a701",
-      "44f88499-7a93-32bc-bc43-0524e7bd4f09"
+      "da116579-ac3b-3f31-9ad9-6f3f62c1a701"
     ],
-    "updatedAt": "2026-09-15T22:39:36.925Z"
+    "updatedAt": "2026-09-16T00:59:29.006Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:39:41.353Z"
+    "updatedAt": "2026-09-16T00:59:33.564Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:39:46.177Z"
+    "updatedAt": "2026-09-16T00:59:38.547Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:39:50.615Z"
+    "updatedAt": "2026-09-16T00:59:42.947Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:39:54.990Z"
+    "updatedAt": "2026-09-16T00:59:47.433Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:39:59.384Z"
+    "updatedAt": "2026-09-16T00:59:51.873Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:40:03.795Z"
+    "updatedAt": "2026-09-16T00:59:56.302Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:40:08.207Z"
+    "updatedAt": "2026-09-16T01:00:00.840Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:40:12.656Z"
+    "updatedAt": "2026-09-16T01:00:05.313Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-15T22:40:17.805Z"
+    "updatedAt": "2026-09-16T01:00:14.819Z"
   },
   "INDEX_IN": {
     "text": "Weak earnings, lofty valuations and absent AI investment theme eroding investor confidence, prompting fund pullbacks.",
