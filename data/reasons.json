@@ -1,27 +1,27 @@
 {
   "INTC": {
+    "text": "Analyst upgrade plus rumored SK Hynix exploratory talks on US chip manufacturing fueling fresh turnaround momentum.",
+    "source": "stock",
+    "articleIds": [
+      "d831b3a5-d2af-3e90-86fe-4ccea9961306",
+      "a3a7c4cf-e38c-30fe-ad8e-5ffcc938bfbd"
+    ],
+    "updatedAt": "2026-09-17T23:18:52.508Z"
+  },
+  "AMD": {
+    "text": "Broad semiconductor rally and buy signals lifted AMD amid renewed investor confidence in chip demand",
+    "source": "stock",
+    "articleIds": [
+      "1921e6e5-7c6c-3cc6-ae73-750d397323c3",
+      "c04c7815-41c6-3fb6-9a52-2b9916a1105e"
+    ],
+    "updatedAt": "2026-09-17T23:18:57.868Z"
+  },
+  "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:50:38.979Z"
-  },
-  "AMD": {
-    "text": "Recovery from AI‑development panic, boosted by broader semiconductor sector rebound and renewed investor confidence.",
-    "source": "stock",
-    "articleIds": [
-      "c04c7815-41c6-3fb6-9a52-2b9916a1105e",
-      "51210fda-acb1-3b64-beda-20e27ed4d2e4",
-      "bfea4a1f-da7e-364e-b1f7-8bf4e56254f4"
-    ],
-    "updatedAt": "2026-09-17T20:50:44.623Z"
-  },
-  "NVDA": {
-    "text": "Amazon partnership boosting demand for its AI chips, driving the price surge.",
-    "source": "stock",
-    "articleIds": [
-      "dd537ea9-d49e-3b94-874c-ef12aa1ee375"
-    ],
-    "updatedAt": "2026-09-17T20:50:49.854Z"
+    "updatedAt": "2026-09-17T23:19:02.667Z"
   },
   "TSM": {
     "text": "MediaTek’s dual‑node launch brings 2‑nanometer chips to smartphones, delivering near‑term commercial visibility for the industry.",
@@ -35,40 +35,48 @@
     "updatedAt": "2026-09-17T20:50:55.222Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-17T20:51:00.155Z"
+    "text": "Continued memory shortage driving demand and supporting earnings growth expectations.",
+    "source": "stock",
+    "articleIds": [
+      "f35c017b-55b7-3af8-b34c-a22827c56dc3",
+      "c4e95a07-0887-3d7b-89cb-8a46f110a247",
+      "bb40cbe8-a7c4-3d5f-9103-b12939d9c1e6",
+      "7a940ebe-69c6-3041-8ca8-a0487fa51f6c",
+      "f83c8bfc-8029-3c85-a378-e84256a4b98c"
+    ],
+    "updatedAt": "2026-09-17T23:19:13.838Z"
   },
   "MU": {
-    "text": "Intel CEO warned memory prices surged over 500%, highlighting tight supply and boosting AI demand expectations.",
+    "text": "Intel’s warning of worsening memory shortage boosts pricing power amid tight supply and AI‑driven margin gains.",
     "source": "stock",
     "articleIds": [
+      "1553b86a-0107-35df-a6e2-4dfe30d4753e",
+      "f35c017b-55b7-3af8-b34c-a22827c56dc3",
       "6335a720-67ff-32d0-a929-8ccee543850e",
       "09083a68-5abe-353e-8333-4ccb7704c2bc",
-      "bb40cbe8-a7c4-3d5f-9103-b12939d9c1e6",
-      "73429002-4d9e-3c05-a280-8fb6b030add3",
-      "25b20183-aeee-3dc1-9e9f-547e57eb0760"
+      "bb40cbe8-a7c4-3d5f-9103-b12939d9c1e6"
     ],
-    "updatedAt": "2026-09-17T20:51:05.550Z"
+    "updatedAt": "2026-09-17T23:19:18.941Z"
   },
   "AVGO": {
-    "text": "Impressive AI‑focused growth outlook and renewed semiconductor sector momentum driving investor optimism.",
+    "text": "Perceived undervaluation highlighted by Jim Cramer, citing strong AI‑related growth runway.",
     "source": "stock",
     "articleIds": [
+      "dd28b3c9-bdff-34d5-a83c-30f00a6cd60f",
       "8e5a9e99-183f-381c-8353-d17b6443eeee",
       "51210fda-acb1-3b64-beda-20e27ed4d2e4"
     ],
-    "updatedAt": "2026-09-17T20:51:10.583Z"
+    "updatedAt": "2026-09-17T23:19:24.260Z"
   },
   "SPCX": {
-    "text": "Strong AI demand and upcoming Starship test flight boost investor confidence, driving the 2.6% gain.",
+    "text": "NASA’s StarBurst launch contract and upcoming Starship test flight fueling heightened market optimism.",
     "source": "stock",
     "articleIds": [
-      "43409b44-6225-3252-b307-2f11f7b9c36b",
+      "1921e6e5-7c6c-3cc6-ae73-750d397323c3",
+      "5316f9ec-9659-3f2b-832a-24e8f3b70ae3",
       "4b5c5796-d9f3-3419-a291-60141f7ddb11"
     ],
-    "updatedAt": "2026-09-17T20:51:16.264Z"
+    "updatedAt": "2026-09-17T23:19:29.773Z"
   },
   "MRVL": {
     "text": "Securing additional SiGe manufacturing capacity for next‑gen AI optical connectivity amid surging data‑center demand growth.",
@@ -82,32 +90,32 @@
     "updatedAt": "2026-09-17T20:51:21.914Z"
   },
   "ARM": {
-    "text": "CEO’s heightened confidence in achieving the $2 billion AI chip revenue target fuels investor optimism.",
+    "text": "CEO Rene Haas' heightened confidence in achieving the $2 billion AI chip revenue goal fuels optimism.",
     "source": "stock",
     "articleIds": [
       "e06842c2-116e-34c9-9a3f-b3b932035264",
       "2601bced-3ae2-35fb-a8bb-c23e24d82d94",
-      "cc2f0154-e042-3138-aca4-cfc17984eeaa"
+      "b2ad737d-abc6-3e1c-96ef-31f341ca100b"
     ],
-    "updatedAt": "2026-09-17T20:51:27.297Z"
+    "updatedAt": "2026-09-17T23:19:41.493Z"
   },
   "QCOM": {
-    "text": "Amazon‑linked AI equity incentive validates diversification, boosting investor confidence and driving recent price surge significantly.",
+    "text": "Amazon’s AI‑linked warrant pricing validates diversification, boosting investor confidence.",
     "source": "stock",
     "articleIds": [
-      "679c41c9-fb3c-30e5-a266-1897d036e7c5",
+      "d33955d7-5ffb-3b1d-a48d-285125388dc3",
       "aa0eb33a-8564-3020-987c-764029a035cc"
     ],
-    "updatedAt": "2026-09-17T20:51:32.764Z"
+    "updatedAt": "2026-09-17T23:19:46.893Z"
   },
   "SKHY": {
-    "text": "Rumors of partnering with Intel to produce memory chips at its Ohio facility sparked investor optimism.",
+    "text": "Rumors of SK Hynix negotiating to produce memory chips at Intel’s Ohio facility sparked investor optimism.",
     "source": "stock",
     "articleIds": [
-      "d5159f0a-8f1d-31db-947f-a45ee055bf47",
-      "affcc577-9b17-370c-a84f-0c53bb16017c"
+      "d831b3a5-d2af-3e90-86fe-4ccea9961306",
+      "d5159f0a-8f1d-31db-947f-a45ee055bf47"
     ],
-    "updatedAt": "2026-09-17T20:51:38.115Z"
+    "updatedAt": "2026-09-17T23:19:52.194Z"
   },
   "MBLY": {
     "text": "Growing OEM demand for software‑defined vehicle platforms fuels Mobileye’s surge.",
@@ -121,106 +129,104 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:51:48.473Z"
+    "updatedAt": "2026-09-17T23:20:03.011Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:51:53.278Z"
+    "updatedAt": "2026-09-17T23:20:08.003Z"
   },
   "AAPL": {
-    "text": "Carrier promotions boosting iPhone 18 Pro sales offset higher prices, supporting earnings growth expectations.",
+    "text": "Carrier promotions boosting iPhone 18 Pro sales and offsetting higher prices, reinforcing bullish outlook.",
     "source": "stock",
     "articleIds": [
+      "eea34d82-ec08-3eb8-8664-24c3ea23b442",
       "74d62a29-1f7b-3f95-924b-399b49b779b5",
       "52755f89-1f1e-3623-94fc-6afa626e1724"
     ],
-    "updatedAt": "2026-09-17T20:51:58.808Z"
+    "updatedAt": "2026-09-17T23:20:13.689Z"
   },
   "MSFT": {
-    "text": "Azure’s new payment vault service promises simplified cloud security, driving investor optimism despite undisclosed pricing.",
-    "source": "stock",
-    "articleIds": [
-      "dd6b3a4f-d9dc-3271-b6bd-6e953739eeec"
-    ],
-    "updatedAt": "2026-09-17T20:52:04.200Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-17T23:20:18.182Z"
   },
   "GOOGL": {
-    "text": "Enterprise AI adoption soaring, with 90% of Fortune 100 using Gemini, plus Google Home now supporting rival agents.",
+    "text": "outperforming the broader market during the session.",
     "source": "stock",
     "articleIds": [
-      "b7bc0193-8e8d-3b55-a7be-bcfa0c7bcd4e",
-      "83ae5345-b1ab-38df-b32a-477dc116068f"
+      "46205b72-5d20-3872-b5d7-dffa842898d2",
+      "e50cebde-992c-328e-a55e-72d23e6dba0c"
     ],
-    "updatedAt": "2026-09-17T20:52:09.195Z"
+    "updatedAt": "2026-09-17T23:20:23.362Z"
   },
   "AMZN": {
-    "text": "AI commitment validated by warrant pricing, signaling stronger future partnership and revenue potential",
+    "text": "Generac agreement accelerates Amazon’s AI data‑center expansion, significantly fueling investor optimism and price gain.",
     "source": "stock",
     "articleIds": [
-      "aa0eb33a-8564-3020-987c-764029a035cc"
+      "8dcdbd5f-ebb1-302a-ac0c-9af8ab387321"
     ],
-    "updatedAt": "2026-09-17T20:52:14.410Z"
+    "updatedAt": "2026-09-17T23:20:29.306Z"
   },
   "META": {
-    "text": "Custom AI chip rollout, global Meta One launch and Muse platform momentum boost investor optimism.",
+    "text": "New AI‑driven subscription service and rollout of custom Meta One chips boost revenue outlook significantly.",
     "source": "stock",
     "articleIds": [
-      "2a4c5b98-8e33-3227-a199-e402493a69c5",
-      "5685caa1-42e9-33e2-b0c2-be002c3fa652"
+      "dc1f8bc2-8545-3718-b081-a9d5d7e4751e",
+      "db0aadc9-4cad-3069-9be0-a4fee4f1e9a3",
+      "2a4c5b98-8e33-3227-a199-e402493a69c5"
     ],
-    "updatedAt": "2026-09-17T20:52:19.943Z"
+    "updatedAt": "2026-09-17T23:20:34.866Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:52:24.177Z"
+    "updatedAt": "2026-09-17T23:20:39.302Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:52:29.052Z"
+    "updatedAt": "2026-09-17T23:20:44.386Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:52:33.350Z"
+    "updatedAt": "2026-09-17T23:20:48.872Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:52:37.614Z"
+    "updatedAt": "2026-09-17T23:20:53.307Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:52:41.910Z"
+    "updatedAt": "2026-09-17T23:20:57.673Z"
   },
   "INFY.NS": {
-    "text": "Funding of former chief’s AI venture draws investor focus away, pressuring valuation.",
-    "source": "stock",
-    "articleIds": [
-      "01e484f7-8e3e-3275-ace4-31a1e37dec36"
-    ],
-    "updatedAt": "2026-09-17T20:52:46.904Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-17T23:21:02.508Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:52:51.158Z"
+    "updatedAt": "2026-09-17T23:21:06.986Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:52:55.402Z"
+    "updatedAt": "2026-09-17T23:21:11.416Z"
   },
   "INDEX": {
     "text": "Midday buying pressure lifted exchange‑traded funds, driving broader market gains.",
@@ -234,6 +240,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-17T20:53:05.196Z"
+    "updatedAt": "2026-09-17T23:21:21.398Z"
   }
 }
