@@ -1,14 +1,15 @@
 {
   "INTC": {
-    "text": "Potential U.S. memory‑chip manufacturing partnership with SK Hynix fuels investor optimism amid AI demand.",
+    "text": "Potential SK Hynix U.S. memory‑chip partnership boosting demand for Intel’s costly domestic manufacturing network.",
     "source": "stock",
     "articleIds": [
+      "916b1110-4fa3-322a-bdde-ba83afd3df4b",
       "87d518c9-aba1-3d60-bc11-2727f3d1faba",
       "5696ba90-1708-3760-9be3-1a7554ffc0c9",
       "93fd1de8-2547-39dc-bd77-a55aad5bc99a",
       "0ed43f78-efca-3599-a222-21362cefc634"
     ],
-    "updatedAt": "2026-09-17T01:01:03.558Z"
+    "updatedAt": "2026-09-17T07:01:00.074Z"
   },
   "AMD": {
     "text": "Renewed optimism about sustained AI data‑center spending and fresh AI hardware announcements driving investor confidence.",
@@ -21,14 +22,13 @@
     "updatedAt": "2026-09-16T22:33:42.861Z"
   },
   "NVDA": {
-    "text": "$5.5 billion AI‑cloud partnership with IREN driving optimism.",
+    "text": "Massive $46 B shareholder returns and prospects of another dividend hike fuel investor optimism today.",
     "source": "stock",
     "articleIds": [
-      "d9c9e204-0841-333f-94df-039c8627aaa0",
-      "0e4b4b61-05d6-363f-904f-92d88c43735a",
-      "0ad88e7c-82a8-3d04-bc6e-0beefab2fcbb"
+      "a125b2a4-a9a2-3ad5-be55-61961d367ff2",
+      "21514060-653b-337c-b4eb-9908cd878a68"
     ],
-    "updatedAt": "2026-09-17T01:01:14.753Z"
+    "updatedAt": "2026-09-17T07:01:10.517Z"
   },
   "TSM": {
     "text": "MediaTek's dual‑node launch brings 2‑nanometer chips to smartphones, boosting near‑term commercial visibility.",
@@ -50,14 +50,10 @@
     "updatedAt": "2026-09-16T19:17:53.430Z"
   },
   "MU": {
-    "text": "Intel and SK Hynix talks on U.S. memory‑chip manufacturing threaten Micron’s domestic market dominance.",
-    "source": "stock",
-    "articleIds": [
-      "5d709a47-26fa-3a63-b108-3c8acc1e787a",
-      "bbb289d5-6e68-3b42-8ed7-b34131914488",
-      "d90dadb2-2765-3fa6-adf4-8be8150b48b7"
-    ],
-    "updatedAt": "2026-09-17T01:01:31.603Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-17T07:01:25.944Z"
   },
   "AVGO": {
     "text": "Guidance projecting $230 B AI revenue by 2028 restores confidence after earlier growth underestimates.",
@@ -68,13 +64,13 @@
     "updatedAt": "2026-09-17T01:01:37.126Z"
   },
   "SPCX": {
-    "text": "Anticipation of imminent Starship launch fueling investor optimism and short‑term buying pressure.",
+    "text": "Anticipation of Starship’s first orbital flight on Sept. 22, carrying revenue‑generating payload, fuels optimism among investors.",
     "source": "stock",
     "articleIds": [
       "d6737052-a65a-4545-bd20-cdca65d10ece",
-      "127b3c0b-f974-36dd-8852-5793b5347c93"
+      "6e8d562d-374f-33bf-8b67-ca806797ca08"
     ],
-    "updatedAt": "2026-09-17T01:01:42.745Z"
+    "updatedAt": "2026-09-17T07:01:36.444Z"
   },
   "MRVL": {
     "text": "Potential AI partnership deal boosting investor confidence in future revenue growth and market expansion.",
@@ -93,48 +89,50 @@
     "updatedAt": "2026-09-17T01:01:53.738Z"
   },
   "QCOM": {
-    "text": "Apple’s exit erodes smartphone chip revenue, shrinking cash flow and prompting investor concerns.",
+    "text": "Apple’s chip demand wanes as it shifts away, while a new rival’s AI processor intensifies competition.",
     "source": "stock",
     "articleIds": [
+      "71c07bd3-2663-3198-bf18-54ec809a7204",
       "4901ca87-fb0e-3bd4-be13-40fbcb31a775",
       "d633d95c-8dd7-3a89-b8ad-5fce9c067c0c"
     ],
-    "updatedAt": "2026-09-16T22:34:31.116Z"
+    "updatedAt": "2026-09-17T07:01:52.393Z"
   },
   "SKHY": {
-    "text": "Negotiations with Intel to produce U.S.-based memory chips, boosting AI and data‑center growth prospects.",
+    "text": "Intel negotiations for U.S. memory‑chip manufacturing partnership boost investor confidence in growth prospects and future.",
     "source": "stock",
     "articleIds": [
+      "916b1110-4fa3-322a-bdde-ba83afd3df4b",
       "93fd1de8-2547-39dc-bd77-a55aad5bc99a",
       "0ed43f78-efca-3599-a222-21362cefc634"
     ],
-    "updatedAt": "2026-09-17T01:02:04.540Z"
+    "updatedAt": "2026-09-17T07:01:57.632Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:02:09.340Z"
+    "updatedAt": "2026-09-17T07:02:02.220Z"
   },
   "005930.KS": {
-    "text": "Leveraging Tim Cook in a bold Galaxy Z Fold 8 campaign, sparking heightened consumer excitement.",
+    "text": "Bark Technologies' launch of the Bark Watch, built on Galaxy Watch8, spotlighting demand for kid‑focused wearables.",
     "source": "stock",
     "articleIds": [
-      "04f407b2-88fe-38a5-9872-4d9c76c09782"
+      "231276a4-ef8e-30f1-9b5e-0abf7ac5b654"
     ],
-    "updatedAt": "2026-09-16T15:17:22.989Z"
+    "updatedAt": "2026-09-17T07:02:07.507Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:02:19.627Z"
+    "updatedAt": "2026-09-17T07:02:12.242Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:02:24.868Z"
+    "updatedAt": "2026-09-17T07:02:17.152Z"
   },
   "MSFT": {
     "text": "Higher quarterly dividend, up 8%, raises cash‑outflow concerns amid expanding cloud and AI investments programs",
@@ -146,91 +144,87 @@
     "updatedAt": "2026-09-16T22:35:03.137Z"
   },
   "GOOGL": {
-    "text": "Judge’s order to appoint an antitrust compliance officer and restructure its ad‑tech business.",
+    "text": "Federal judge ordered Google to overhaul ad auction rules and appoint an antitrust compliance monitor, prompting investor concern.",
     "source": "stock",
     "articleIds": [
+      "ea246c6d-8189-3d05-a011-108763e267e0",
+      "45950e29-f919-3b6f-818e-71e86255ca17",
       "251fdad2-c8a6-3736-acc0-1a63f19fa10a"
     ],
-    "updatedAt": "2026-09-16T22:35:08.398Z"
+    "updatedAt": "2026-09-17T07:02:27.572Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:02:41.036Z"
+    "updatedAt": "2026-09-17T07:02:32.388Z"
   },
   "META": {
-    "text": "Anticipation of next week’s developers conference and Zuckerberg’s refusal to impose AI restrictions fuels optimism.",
+    "text": "Aggressive expansion of Meta’s advertising platform boosting revenue expectations.",
     "source": "stock",
     "articleIds": [
-      "88910720-7f43-397c-b577-afee207e7b6a",
-      "2c4d6589-145d-3bd6-b003-d6ed3edc4dc6",
-      "ac5d90c6-3969-3dd7-9b6d-db90176a42f7"
+      "ea246c6d-8189-3d05-a011-108763e267e0"
     ],
-    "updatedAt": "2026-09-17T01:02:46.626Z"
+    "updatedAt": "2026-09-17T07:02:37.401Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:02:51.092Z"
+    "updatedAt": "2026-09-17T07:02:41.654Z"
   },
   "ICICIBANK.NS": {
-    "text": "Clearance for ICICI Prudential AMC to acquire up to 9.95% stakes in multiple lenders fuels optimism on group expansion.",
-    "source": "stock",
-    "articleIds": [
-      "700fdbdb-b5d1-33b0-8410-29ee01830319"
-    ],
-    "updatedAt": "2026-09-16T05:42:34.832Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-17T07:02:46.335Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:03:00.916Z"
+    "updatedAt": "2026-09-17T07:02:50.763Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:03:05.440Z"
+    "updatedAt": "2026-09-17T07:02:55.028Z"
   },
   "TCS.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:03:09.940Z"
+    "updatedAt": "2026-09-17T07:02:59.355Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:03:14.878Z"
+    "updatedAt": "2026-09-17T07:03:03.911Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:03:19.356Z"
+    "updatedAt": "2026-09-17T07:03:08.178Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:03:23.772Z"
+    "updatedAt": "2026-09-17T07:03:12.413Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-17T01:03:28.880Z"
+    "updatedAt": "2026-09-17T07:03:17.320Z"
   },
   "INDEX_IN": {
-    "text": "Weak earnings, elevated valuations and absence of a compelling AI investment theme eroding investor confidence.",
-    "source": "macro",
-    "articleIds": [
-      "cf36eb1a-ebeb-310d-bbed-3fbe3bb74462"
-    ],
-    "updatedAt": "2026-09-16T10:42:00.055Z"
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-09-17T07:03:21.921Z"
   }
 }
