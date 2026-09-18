@@ -8,42 +8,60 @@
     "updatedAt": "2026-09-18T19:22:32.901Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-18T19:22:37.939Z"
+    "text": "Rumor of a 2027 GPU lineup promising a competitive edge against Nvidia fuels the rally.",
+    "source": "stock",
+    "articleIds": [
+      "c00eaa36-ebaf-3db7-8d18-d6cecf15bfb9",
+      "832159c8-6dc5-38e6-b838-d7db7090ca09",
+      "8c03e28b-1cf5-34dd-a907-fad4160bfe16",
+      "7d9fc887-1ab2-3b0e-82d7-3a6927d61502"
+    ],
+    "updatedAt": "2026-09-18T22:09:46.601Z"
   },
   "NVDA": {
-    "text": "Endorsements from AI leaders and new AI Energy Management Alliance highlight Nvidia’s dominant AI chip position.",
+    "text": "AI chip dominance reinforced by CEO endorsements, $3‑$4 trillion AI infrastructure forecast, and Nscale IPO filing.",
     "source": "stock",
     "articleIds": [
       "2aad5e51-9528-451d-bf8a-ce047abb8dba",
-      "0c4ca524-c66e-30a6-8465-d1fc9657a3dc",
-      "acbd9b6e-1af2-32dd-b213-f24b4ed653ec",
-      "92a76355-b8d0-3bef-bf2f-1edda9d5d6e9"
+      "45e1d89f-fe15-3e0c-9af5-3df9cb777bef",
+      "c0b28f3d-e238-3f9a-8ec8-82a087c9c30a",
+      "ffd028d5-a99d-3078-91b7-5c7e15fe5d3e",
+      "82155ee2-99a1-3ddd-af38-1a0613e5f700"
     ],
-    "updatedAt": "2026-09-18T19:22:43.278Z"
+    "updatedAt": "2026-09-18T22:09:51.766Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-18T19:22:48.382Z"
-  },
-  "SNDK": {
-    "text": "Anticipation of inclusion in a high‑profile benchmark driving investor demand and sharp price rally today.",
+    "text": "Accelerated 2nm commercial rollout and MediaTek’s Dimensity 9600 Pro win driving investor optimism.",
     "source": "stock",
     "articleIds": [
-      "9159421f-2c4f-38ad-8db4-1a81376e3120",
-      "87324de7-2e63-3974-817b-bc465433d03e"
+      "ce6a98ca-08dc-3710-b24e-5e2da52eaaa9",
+      "3bdd1259-e52e-3467-a6af-b89b2a2e38cc",
+      "98f42c6e-6373-3b22-99e4-be98e9e58411",
+      "9d4ff805-36f1-3794-95b7-284f5327bcc6"
     ],
-    "updatedAt": "2026-09-18T19:22:53.941Z"
+    "updatedAt": "2026-09-18T22:09:57.011Z"
+  },
+  "SNDK": {
+    "text": "Inclusion in a high‑profile benchmark driving investor demand and price surge.",
+    "source": "stock",
+    "articleIds": [
+      "a79cf87c-d3f5-3e16-8ee6-e536ba767ccf",
+      "832159c8-6dc5-38e6-b838-d7db7090ca09",
+      "59fd590d-ffbb-39f7-9bc9-72bb0e3db4f6",
+      "9159421f-2c4f-38ad-8db4-1a81376e3120"
+    ],
+    "updatedAt": "2026-09-18T22:10:02.782Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-18T19:22:58.879Z"
+    "text": "Intel’s prolonged memory shortage into 2027 spurs five‑to‑sevenfold price hikes, bolstering margins and investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "8a2f1ecd-a7ec-3964-ad83-f6e3cd2e9c6a",
+      "5e6ef70e-46dd-3276-9f5c-504041d4a5e0",
+      "04a37f9c-ba02-39ef-b179-8f35c25b3456",
+      "2be3328d-9970-3b1a-a838-00c2c7dc0c37"
+    ],
+    "updatedAt": "2026-09-18T22:10:08.185Z"
   },
   "AVGO": {
     "text": "Investor focus on custom hyperscale chip breakthroughs, with billions of hyperscaler bets challenging GPU dominance.",
@@ -55,23 +73,24 @@
     "updatedAt": "2026-09-18T19:23:04.228Z"
   },
   "SPCX": {
-    "text": "Delay of Starship’s first orbital flight to Sept. 28, prompting retail investors to sell amid uncertainty.",
+    "text": "Delay of Starship’s first orbital test flight to Sept. 28 dampens investor optimism, prompting sell‑offs.",
     "source": "stock",
     "articleIds": [
       "152617ce-1689-49bf-b3c6-35232d4eead9",
-      "a08c110d-69ac-3f6b-8d6d-3c9d89131393",
-      "158a634c-b027-31a9-9895-9d1c48eb0a2c",
-      "84118857-9e0c-3a1c-a280-3976ee34d850"
+      "16d8390e-84b4-3ead-915c-6c26c117f2b6"
     ],
-    "updatedAt": "2026-09-18T19:23:09.911Z"
+    "updatedAt": "2026-09-18T22:10:18.638Z"
   },
   "MRVL": {
-    "text": "Intensifying competition from Amphenol’s expanding AI datacom portfolio eroding market confidence.",
+    "text": "",
     "source": "stock",
     "articleIds": [
-      "5be26451-ddf3-359f-9317-c469a920bc52"
+      "8635bbe6-fbfc-3d96-8798-9490cc8692ef",
+      "4e53cf70-dee3-3472-ba61-d322cc234a76",
+      "fd31c499-7216-3d6e-8b44-14059c6a3a8c",
+      "e4754f41-91ac-33b3-a814-a68906d9bc39"
     ],
-    "updatedAt": "2026-09-18T19:23:15.325Z"
+    "updatedAt": "2026-09-18T22:10:24.408Z"
   },
   "ARM": {
     "text": "SoftBank’s $5 billion margin‑loan boost to $25 billion underscores confidence in Arm’s expanding AI data‑center opportunities.",
@@ -95,21 +114,21 @@
     "updatedAt": "2026-09-18T19:23:26.009Z"
   },
   "SKHY": {
-    "text": "Eisman’s buy call, new AI venture unit, and Intel memory‑chip partnership fueling optimism.",
+    "text": "Partnership talks with Intel and launch of an AI‑focused venture arm boost growth expectations.",
     "source": "stock",
     "articleIds": [
+      "08d820f8-c144-37ec-9a9f-25be10ef3e94",
       "3938c56d-99bb-3740-be67-12c9d2766d95",
       "71c281d2-c3ec-38b5-a468-d774ff43869e",
-      "97f52ef0-d2fe-31a4-beea-1b0ee361ce00",
-      "1ad79071-8a48-39fa-88b1-114348715697"
+      "97f52ef0-d2fe-31a4-beea-1b0ee361ce00"
     ],
-    "updatedAt": "2026-09-18T19:23:31.645Z"
+    "updatedAt": "2026-09-18T22:10:40.222Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-18T19:23:36.363Z"
+    "updatedAt": "2026-09-18T22:10:44.762Z"
   },
   "005930.KS": {
     "text": "New AI partnership with Mistral and expanded ASML High‑NA EUV collaboration boosting semiconductor outlook.",
@@ -133,79 +152,74 @@
     "updatedAt": "2026-09-18T19:23:47.190Z"
   },
   "AAPL": {
-    "text": "$100 iPhone 18 Pro hike amid memory‑chip shortage and AI costs, plus Italian labor",
+    "text": "$100 price increase on iPhone 18 Pro line amid memory shortages and AI demand pressures.",
     "source": "stock",
     "articleIds": [
-      "ace6ac4d-d96e-4222-842b-c535361dc4ea",
-      "67dd6c63-af1a-384f-83fc-626f05dc39dc"
+      "ace6ac4d-d96e-4222-842b-c535361dc4ea"
     ],
-    "updatedAt": "2026-09-18T19:23:52.971Z"
+    "updatedAt": "2026-09-18T22:11:00.349Z"
   },
   "MSFT": {
-    "text": "NYT lawsuit against OpenAI and Microsoft intensifying legal exposure, weighing on investor sentiment",
+    "text": "NYT lawsuit alleging OpenAI data theft implicates Microsoft, raising legal risk concerns.",
     "source": "stock",
     "articleIds": [
-      "1f91360a-043b-48c3-a621-e7dcdb2fd60a",
-      "44fdf105-7717-330b-9f7a-e994d8bef8b4"
+      "1f91360a-043b-48c3-a621-e7dcdb2fd60a"
     ],
-    "updatedAt": "2026-09-18T19:23:58.132Z"
+    "updatedAt": "2026-09-18T22:11:05.179Z"
   },
   "GOOGL": {
-    "text": "AI becoming broader earnings engine and new AI Energy Management Alliance boosting data‑center efficiency prospects.",
+    "text": "Launch of its in‑house AI chip line and an analyst price target boost investor optimism.",
     "source": "stock",
     "articleIds": [
-      "e76fbf86-fe20-37dc-913c-dfc8ba63af2b",
-      "92a76355-b8d0-3bef-bf2f-1edda9d5d6e9"
+      "324a48ea-d96b-39f7-a202-3c90ef28b6e5",
+      "e76fbf86-fe20-37dc-913c-dfc8ba63af2b"
     ],
-    "updatedAt": "2026-09-18T19:24:03.337Z"
+    "updatedAt": "2026-09-18T22:11:10.320Z"
   },
   "AMZN": {
-    "text": "AWS’s fastest 18‑quarter growth and strong AI revenue traction driving the gain.",
+    "text": "Strategic partnership with Nvidia and F5 fuels investor optimism, boosting confidence in Amazon’s growth prospects.",
     "source": "stock",
     "articleIds": [
-      "44fdf105-7717-330b-9f7a-e994d8bef8b4",
-      "0fdbe3fd-38e4-32ff-a3e5-4d89491c2cad"
+      "56686008-30b6-322d-90f9-6d9c892b69be",
+      "44fdf105-7717-330b-9f7a-e994d8bef8b4"
     ],
-    "updatedAt": "2026-09-18T19:24:08.349Z"
+    "updatedAt": "2026-09-18T22:11:15.757Z"
   },
   "META": {
-    "text": "French prosecutors and CNIL investigation into Meta's smart‑glasses partnership raises regulatory risk concerns among investors.",
-    "source": "stock",
-    "articleIds": [
-      "44ad0aa8-f4b6-3362-bc56-fda317e8a5e5",
-      "cf47dc99-e94f-399c-9b69-7d49b924adf4"
-    ],
-    "updatedAt": "2026-09-18T19:24:13.524Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-18T22:11:20.576Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-18T19:24:18.077Z"
+    "updatedAt": "2026-09-18T22:11:24.820Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-18T19:24:22.831Z"
+    "updatedAt": "2026-09-18T22:11:29.529Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-18T19:24:27.171Z"
+    "updatedAt": "2026-09-18T22:11:33.831Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-18T19:24:31.524Z"
+    "updatedAt": "2026-09-18T22:11:38.077Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-18T19:24:35.820Z"
+    "updatedAt": "2026-09-18T22:11:42.751Z"
   },
   "INFY.NS": {
     "text": "Investor concerns over former chief’s AI startup attracting capital, diverting attention from core business growth.",
@@ -219,24 +233,24 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-18T19:24:45.532Z"
+    "updatedAt": "2026-09-18T22:11:52.832Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-18T19:24:49.844Z"
+    "updatedAt": "2026-09-18T22:11:57.092Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-18T19:24:54.571Z"
+    "updatedAt": "2026-09-18T22:12:01.799Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-18T19:24:59.144Z"
+    "updatedAt": "2026-09-18T22:12:06.578Z"
   }
 }
