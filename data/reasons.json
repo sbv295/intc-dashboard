@@ -1,27 +1,28 @@
 {
   "INTC": {
-    "text": "Analyst upgrade plus rumored SK Hynix exploratory talks on US chip manufacturing fueling fresh turnaround momentum.",
+    "text": "Rumored preliminary talks with SK Hynix to supply Ohio fabs, sparking optimism for turnaround momentum.",
     "source": "stock",
     "articleIds": [
-      "d831b3a5-d2af-3e90-86fe-4ccea9961306",
-      "a3a7c4cf-e38c-30fe-ad8e-5ffcc938bfbd"
+      "e2de14a9-8a13-3d42-b1e0-36910a2592c5",
+      "d831b3a5-d2af-3e90-86fe-4ccea9961306"
     ],
-    "updatedAt": "2026-09-17T23:18:52.508Z"
+    "updatedAt": "2026-09-18T02:41:45.146Z"
   },
   "AMD": {
-    "text": "Broad semiconductor rally and buy signals lifted AMD amid renewed investor confidence in chip demand",
+    "text": "Nebius cloud‑computing price hike signals robust AI demand for AMD’s data‑center chips.",
     "source": "stock",
     "articleIds": [
       "1921e6e5-7c6c-3cc6-ae73-750d397323c3",
+      "3e953442-7ecf-3bbf-8e97-ee0e05b53323",
       "c04c7815-41c6-3fb6-9a52-2b9916a1105e"
     ],
-    "updatedAt": "2026-09-17T23:18:57.868Z"
+    "updatedAt": "2026-09-18T02:41:50.379Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T23:19:02.667Z"
+    "updatedAt": "2026-09-18T02:41:55.025Z"
   },
   "TSM": {
     "text": "MediaTek’s dual‑node launch brings 2‑nanometer chips to smartphones, delivering near‑term commercial visibility for the industry.",
@@ -47,16 +48,15 @@
     "updatedAt": "2026-09-17T23:19:13.838Z"
   },
   "MU": {
-    "text": "Intel’s warning of worsening memory shortage boosts pricing power amid tight supply and AI‑driven margin gains.",
+    "text": "Intel CEO warns worsening memory shortage, tightening supply boosts pricing power and AI margin expectations.",
     "source": "stock",
     "articleIds": [
       "1553b86a-0107-35df-a6e2-4dfe30d4753e",
       "f35c017b-55b7-3af8-b34c-a22827c56dc3",
       "6335a720-67ff-32d0-a929-8ccee543850e",
-      "09083a68-5abe-353e-8333-4ccb7704c2bc",
-      "bb40cbe8-a7c4-3d5f-9103-b12939d9c1e6"
+      "09083a68-5abe-353e-8333-4ccb7704c2bc"
     ],
-    "updatedAt": "2026-09-17T23:19:18.941Z"
+    "updatedAt": "2026-09-18T02:42:11.860Z"
   },
   "AVGO": {
     "text": "Perceived undervaluation highlighted by Jim Cramer, citing strong AI‑related growth runway.",
@@ -69,25 +69,23 @@
     "updatedAt": "2026-09-17T23:19:24.260Z"
   },
   "SPCX": {
-    "text": "NASA’s StarBurst launch contract and upcoming Starship test flight fueling heightened market optimism.",
+    "text": "NASA awarding launch contract for StarBurst mission fuels investor optimism and drives price surge today.",
     "source": "stock",
     "articleIds": [
       "1921e6e5-7c6c-3cc6-ae73-750d397323c3",
-      "5316f9ec-9659-3f2b-832a-24e8f3b70ae3",
-      "4b5c5796-d9f3-3419-a291-60141f7ddb11"
+      "5316f9ec-9659-3f2b-832a-24e8f3b70ae3"
     ],
-    "updatedAt": "2026-09-17T23:19:29.773Z"
+    "updatedAt": "2026-09-18T02:42:22.771Z"
   },
   "MRVL": {
-    "text": "Securing additional SiGe manufacturing capacity for next‑gen AI optical connectivity amid surging data‑center demand growth.",
+    "text": "Expanded GlobalFoundries SiGe manufacturing deal secures additional capacity for next‑gen AI optical connectivity.",
     "source": "stock",
     "articleIds": [
       "5daf9844-0ebc-3161-a7c9-038d889a93d7",
       "73283b18-9ae2-39d9-95b4-b38f6510dd24",
-      "42d913ef-3408-34d7-906e-5efe82c452fa",
-      "821e957f-36ac-3595-8954-a24971271e67"
+      "42d913ef-3408-34d7-906e-5efe82c452fa"
     ],
-    "updatedAt": "2026-09-17T20:51:21.914Z"
+    "updatedAt": "2026-09-18T02:42:28.208Z"
   },
   "ARM": {
     "text": "CEO Rene Haas' heightened confidence in achieving the $2 billion AI chip revenue goal fuels optimism.",
@@ -100,13 +98,14 @@
     "updatedAt": "2026-09-17T23:19:41.493Z"
   },
   "QCOM": {
-    "text": "Amazon’s AI‑linked warrant pricing validates diversification, boosting investor confidence.",
+    "text": "Amazon's AI‑linked warrant pricing validates Qualcomm's diversification, boosting investor confidence and signals future growth prospects.",
     "source": "stock",
     "articleIds": [
       "d33955d7-5ffb-3b1d-a48d-285125388dc3",
+      "679c41c9-fb3c-30e5-a266-1897d036e7c5",
       "aa0eb33a-8564-3020-987c-764029a035cc"
     ],
-    "updatedAt": "2026-09-17T23:19:46.893Z"
+    "updatedAt": "2026-09-18T02:42:39.082Z"
   },
   "SKHY": {
     "text": "Rumors of SK Hynix negotiating to produce memory chips at Intel’s Ohio facility sparked investor optimism.",
@@ -126,16 +125,23 @@
     "updatedAt": "2026-09-17T17:28:18.903Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-17T23:20:03.011Z"
+    "text": "New AI partnership with Mistral and expanded ASML High‑NA EUV collaboration boosting semiconductor outlook.",
+    "source": "stock",
+    "articleIds": [
+      "a3a9bf9a-670b-3fbe-aa75-d831a41c53eb",
+      "66a3c54b-1465-3eb7-b2a3-6d3d41abe1f1",
+      "231276a4-ef8e-30f1-9b5e-0abf7ac5b654"
+    ],
+    "updatedAt": "2026-09-18T02:42:54.276Z"
   },
   "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-17T23:20:08.003Z"
+    "text": "Rumors of partnering with Intel to produce memory chips at its Ohio facility sparked investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "d831b3a5-d2af-3e90-86fe-4ccea9961306",
+      "d5159f0a-8f1d-31db-947f-a45ee055bf47"
+    ],
+    "updatedAt": "2026-09-18T02:42:59.511Z"
   },
   "AAPL": {
     "text": "Carrier promotions boosting iPhone 18 Pro sales and offsetting higher prices, reinforcing bullish outlook.",
@@ -151,7 +157,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T23:20:18.182Z"
+    "updatedAt": "2026-09-18T02:43:09.584Z"
   },
   "GOOGL": {
     "text": "outperforming the broader market during the session.",
@@ -163,83 +169,82 @@
     "updatedAt": "2026-09-17T23:20:23.362Z"
   },
   "AMZN": {
-    "text": "Generac agreement accelerates Amazon’s AI data‑center expansion, significantly fueling investor optimism and price gain.",
-    "source": "stock",
-    "articleIds": [
-      "8dcdbd5f-ebb1-302a-ac0c-9af8ab387321"
-    ],
-    "updatedAt": "2026-09-17T23:20:29.306Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-18T02:43:19.817Z"
   },
   "META": {
-    "text": "New AI‑driven subscription service and rollout of custom Meta One chips boost revenue outlook significantly.",
+    "text": "New AI‑powered subscription service launch, expected to generate revenue to fund Meta’s expanding artificial‑intelligence investments.",
     "source": "stock",
     "articleIds": [
       "dc1f8bc2-8545-3718-b081-a9d5d7e4751e",
-      "db0aadc9-4cad-3069-9be0-a4fee4f1e9a3",
-      "2a4c5b98-8e33-3227-a199-e402493a69c5"
+      "db0aadc9-4cad-3069-9be0-a4fee4f1e9a3"
     ],
-    "updatedAt": "2026-09-17T23:20:34.866Z"
+    "updatedAt": "2026-09-18T02:43:25.068Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T23:20:39.302Z"
+    "updatedAt": "2026-09-18T02:43:29.475Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T23:20:44.386Z"
+    "updatedAt": "2026-09-18T02:43:34.313Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T23:20:48.872Z"
+    "updatedAt": "2026-09-18T02:43:38.740Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T23:20:53.307Z"
+    "updatedAt": "2026-09-18T02:43:43.200Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T23:20:57.673Z"
+    "updatedAt": "2026-09-18T02:43:47.601Z"
   },
   "INFY.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-17T23:21:02.508Z"
+    "text": "Investor concerns over former chief’s AI startup attracting capital, diverting attention from core business growth.",
+    "source": "stock",
+    "articleIds": [
+      "01e484f7-8e3e-3275-ace4-31a1e37dec36"
+    ],
+    "updatedAt": "2026-09-18T02:43:52.782Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T23:21:06.986Z"
+    "updatedAt": "2026-09-18T02:43:57.329Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-17T23:21:11.416Z"
+    "updatedAt": "2026-09-18T02:44:01.725Z"
   },
   "INDEX": {
-    "text": "Midday buying pressure lifted exchange‑traded funds, driving broader market gains.",
+    "text": "declining crude oil prices and slipping bond yields boosted investor confidence",
     "source": "macro",
     "articleIds": [
-      "fcbde839-1923-3c82-a8bc-e97fc8db6c55"
+      "ca32bc10-d22d-3cca-9278-c176a0d381ac"
     ],
-    "updatedAt": "2026-09-17T20:53:00.438Z"
+    "updatedAt": "2026-09-18T02:44:06.804Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-17T23:21:21.398Z"
+    "updatedAt": "2026-09-18T02:44:11.597Z"
   }
 }
