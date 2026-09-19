@@ -8,28 +8,25 @@
     "updatedAt": "2026-09-19T10:07:36.857Z"
   },
   "AMD": {
-    "text": "Strong AI demand and perception of cheap valuation after 467% three‑year rally fuels buying.",
+    "text": "AI-driven momentum and perception of cheap valuation after a 467% three‑year surge fuels buying.",
     "source": "stock",
     "articleIds": [
       "832159c8-6dc5-38e6-b838-d7db7090ca09",
-      "c00eaa36-ebaf-3db7-8d18-d6cecf15bfb9",
-      "8c03e28b-1cf5-34dd-a907-fad4160bfe16"
+      "c00eaa36-ebaf-3db7-8d18-d6cecf15bfb9"
     ],
-    "updatedAt": "2026-09-19T17:40:28.490Z"
+    "updatedAt": "2026-09-19T19:53:40.618Z"
   },
   "NVDA": {
-    "text": "$2 billion investment in Marvell bolstering confidence in its AI ecosystem expansion.",
-    "source": "stock",
-    "articleIds": [
-      "689f7eac-9847-3b06-9e83-14537be286af"
-    ],
-    "updatedAt": "2026-09-19T17:40:33.787Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-19T19:53:45.268Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:40:38.883Z"
+    "updatedAt": "2026-09-19T19:53:50.334Z"
   },
   "SNDK": {
     "text": "Inclusion in the S&P 100 spurring index‑fund buying, propelling a rally into buy‑area momentum.",
@@ -45,7 +42,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:40:49.404Z"
+    "updatedAt": "2026-09-19T19:54:01.640Z"
   },
   "AVGO": {
     "text": "Revenue more than doubled in two years, highlighting rapid AI-driven growth momentum.",
@@ -56,13 +53,10 @@
     "updatedAt": "2026-09-19T10:08:09.671Z"
   },
   "SPCX": {
-    "text": "Investor David Einhorn flags undisclosed liability risk, raising concerns over SpaceX's financial stability amid uncertainty.",
-    "source": "stock",
-    "articleIds": [
-      "2f98fe89-de63-38e9-a54c-7c3ac660af98",
-      "50b9b574-be17-3a78-83da-d60a0e7b1d61"
-    ],
-    "updatedAt": "2026-09-19T17:40:59.767Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-19T19:54:11.750Z"
   },
   "MRVL": {
     "text": "Expanded GlobalFoundries deal boosting SiGe capacity to meet AI‑driven high‑speed optical connectivity demand in data centers.",
@@ -99,21 +93,22 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:41:21.707Z"
+    "updatedAt": "2026-09-19T19:54:32.933Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:41:26.340Z"
+    "updatedAt": "2026-09-19T19:54:38.031Z"
   },
   "005930.KS": {
-    "text": "Expanded AI partnership with Mistral and new High‑NA EUV collaboration with ASML boost semiconductor efficiency.",
+    "text": "Expanded AI partnership with Mistral and High‑NA EUV collaboration boosting semiconductor efficiency and precision.",
     "source": "stock",
     "articleIds": [
+      "a3a9bf9a-670b-3fbe-aa75-d831a41c53eb",
       "66a3c54b-1465-3eb7-b2a3-6d3d41abe1f1"
     ],
-    "updatedAt": "2026-09-19T17:41:31.610Z"
+    "updatedAt": "2026-09-19T19:54:43.249Z"
   },
   "000660.KS": {
     "text": "Early, unfinalized talks with Intel on U.S. memory production and AI partnership boost investor confidence.",
@@ -151,78 +146,79 @@
     "updatedAt": "2026-09-19T17:41:53.043Z"
   },
   "AMZN": {
-    "text": "Jassy’s chip‑risk mitigation remarks and launch of 30 A330 freighters signal growth‑focused diversification for",
+    "text": "Andy Jassy’s AI‑chip strategy eases Nvidia competition concerns, boosting confidence in Amazon’s cloud offerings.",
     "source": "stock",
     "articleIds": [
-      "c50cedcf-bb28-3e8a-ae2e-60a726bb7eeb",
-      "ec98384f-eec3-3263-b4fa-43a17dd0c526"
+      "c50cedcf-bb28-3e8a-ae2e-60a726bb7eeb"
     ],
-    "updatedAt": "2026-09-19T17:41:58.914Z"
+    "updatedAt": "2026-09-19T19:55:09.310Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:03.876Z"
+    "updatedAt": "2026-09-19T19:55:14.587Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:08.304Z"
+    "updatedAt": "2026-09-19T19:55:18.998Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:13.365Z"
+    "updatedAt": "2026-09-19T19:55:23.831Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:17.848Z"
+    "updatedAt": "2026-09-19T19:55:28.306Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:22.344Z"
+    "updatedAt": "2026-09-19T19:55:32.721Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:26.764Z"
+    "updatedAt": "2026-09-19T19:55:37.122Z"
   },
   "INFY.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:31.625Z"
+    "text": "Former chief’s AI startup securing $53 million funding, drawing investor attention away.",
+    "source": "stock",
+    "articleIds": [
+      "01e484f7-8e3e-3275-ace4-31a1e37dec36"
+    ],
+    "updatedAt": "2026-09-19T19:55:42.409Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:36.984Z"
+    "updatedAt": "2026-09-19T19:55:47.125Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:41.408Z"
+    "updatedAt": "2026-09-19T19:55:51.528Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:46.331Z"
+    "updatedAt": "2026-09-19T19:55:56.581Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-19T17:42:51.416Z"
+    "updatedAt": "2026-09-19T19:56:01.386Z"
   }
 }
