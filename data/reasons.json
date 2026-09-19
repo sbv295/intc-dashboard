@@ -3,53 +3,58 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:52:28.579Z"
+    "updatedAt": "2026-09-19T05:23:56.304Z"
   },
   "AMD": {
-    "text": "Rumor of a 2027 GPU lineup offering a unique advantage over Nvidia fuels investor optimism.",
+    "text": "Rumor of a 2027 GPU lineup promising a competitive edge against Nvidia fuels investor optimism.",
     "source": "stock",
     "articleIds": [
       "832159c8-6dc5-38e6-b838-d7db7090ca09",
-      "8c03e28b-1cf5-34dd-a907-fad4160bfe16",
+      "c00eaa36-ebaf-3db7-8d18-d6cecf15bfb9",
       "7d9fc887-1ab2-3b0e-82d7-3a6927d61502"
     ],
-    "updatedAt": "2026-09-19T00:52:34.273Z"
+    "updatedAt": "2026-09-19T05:24:01.836Z"
   },
   "NVDA": {
-    "text": "Marc Benioff’s praise, calling Nvidia “exquisite,” fuels investor confidence in its AI chip leadership.",
+    "text": "Marc Benioff’s praise and Jensen Huang’s charismatic leadership at Dreamforce boost investor confidence.",
     "source": "stock",
     "articleIds": [
-      "2aad5e51-9528-451d-bf8a-ce047abb8dba"
+      "2aad5e51-9528-451d-bf8a-ce047abb8dba",
+      "582404ac-8f94-3044-80a8-e4fa3fc8f9a4",
+      "e1602a1a-4bee-3acd-bdf8-04c44af056b0"
     ],
-    "updatedAt": "2026-09-19T00:52:39.539Z"
+    "updatedAt": "2026-09-19T05:24:06.666Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-19T00:52:44.576Z"
-  },
-  "SNDK": {
-    "text": "Inclusion in a high‑profile benchmark driving investor demand and price surge.",
+    "text": "Accelerated 2nm commercial rollout and increased capex to meet global semiconductor arms race demands.",
     "source": "stock",
     "articleIds": [
-      "a79cf87c-d3f5-3e16-8ee6-e536ba767ccf",
-      "832159c8-6dc5-38e6-b838-d7db7090ca09",
-      "59fd590d-ffbb-39f7-9bc9-72bb0e3db4f6",
-      "9159421f-2c4f-38ad-8db4-1a81376e3120"
+      "ce6a98ca-08dc-3710-b24e-5e2da52eaaa9",
+      "3bdd1259-e52e-3467-a6af-b89b2a2e38cc",
+      "9d4ff805-36f1-3794-95b7-284f5327bcc6"
     ],
-    "updatedAt": "2026-09-18T22:10:02.782Z"
+    "updatedAt": "2026-09-19T05:24:12.319Z"
+  },
+  "SNDK": {
+    "text": "Inclusion in the S&P 100 triggers mandatory purchases by index funds, boosting demand.",
+    "source": "stock",
+    "articleIds": [
+      "64194d7f-4ec7-3d3f-b1e5-fc97853afdcd",
+      "832159c8-6dc5-38e6-b838-d7db7090ca09",
+      "a79cf87c-d3f5-3e16-8ee6-e536ba767ccf",
+      "59fd590d-ffbb-39f7-9bc9-72bb0e3db4f6"
+    ],
+    "updatedAt": "2026-09-19T05:24:17.496Z"
   },
   "MU": {
-    "text": "",
+    "text": "Extended memory shortages through 2027 boosting DRAM/NAND prices, lifting margins amid strong AI and data‑center demand.",
     "source": "stock",
     "articleIds": [
       "4c8a0b71-a2b2-3999-94b4-68f751ea9b00",
       "8a2f1ecd-a7ec-3964-ad83-f6e3cd2e9c6a",
-      "5e6ef70e-46dd-3276-9f5c-504041d4a5e0",
-      "04a37f9c-ba02-39ef-b179-8f35c25b3456"
+      "5e6ef70e-46dd-3276-9f5c-504041d4a5e0"
     ],
-    "updatedAt": "2026-09-19T00:52:56.410Z"
+    "updatedAt": "2026-09-19T05:24:22.763Z"
   },
   "AVGO": {
     "text": "Strong earnings outlook and growing demand for data‑center components driving investor interest amid industry growth",
@@ -93,29 +98,30 @@
     "updatedAt": "2026-09-19T00:53:18.477Z"
   },
   "QCOM": {
-    "text": "Unwinding of the past month’s rally, prompting profit‑taking after recent rapid gains.",
+    "text": "Expectations of a reduced iPhone component share after revised launch guidance driving sell‑off.",
     "source": "stock",
     "articleIds": [
-      "01656ef0-9cf5-393b-8e91-0f227d10ee21"
+      "01656ef0-9cf5-393b-8e91-0f227d10ee21",
+      "5add12b0-b647-3e7a-ba63-b57c9b459b81"
     ],
-    "updatedAt": "2026-09-19T00:53:23.586Z"
+    "updatedAt": "2026-09-19T05:24:48.970Z"
   },
   "SKHY": {
-    "text": "Partnership talks with Intel and launch of an AI‑focused venture arm boost growth expectations.",
+    "text": "Partnership talks and a new AI venture arm boost confidence, while Eisman’s endorsement highlights AI‑chip supply upside.",
     "source": "stock",
     "articleIds": [
+      "e1602a1a-4bee-3acd-bdf8-04c44af056b0",
       "08d820f8-c144-37ec-9a9f-25be10ef3e94",
       "3938c56d-99bb-3740-be67-12c9d2766d95",
-      "71c281d2-c3ec-38b5-a468-d774ff43869e",
-      "97f52ef0-d2fe-31a4-beea-1b0ee361ce00"
+      "71c281d2-c3ec-38b5-a468-d774ff43869e"
     ],
-    "updatedAt": "2026-09-18T22:10:40.222Z"
+    "updatedAt": "2026-09-19T05:24:54.302Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:53:34.319Z"
+    "updatedAt": "2026-09-19T05:24:58.951Z"
   },
   "005930.KS": {
     "text": "Expanded AI partnership with Mistral and High‑NA EUV collaboration boosting semiconductor efficiency in production.",
@@ -127,15 +133,15 @@
     "updatedAt": "2026-09-19T00:53:39.744Z"
   },
   "000660.KS": {
-    "text": "Exploring partnership with Intel and launching an AI‑focused venture arm fuels investor optimism in the semiconductor sector",
+    "text": "Announced AI venture arm and partnership talks, signaling deeper AI ecosystem involvement and growth potential.",
     "source": "stock",
     "articleIds": [
+      "e1602a1a-4bee-3acd-bdf8-04c44af056b0",
       "08d820f8-c144-37ec-9a9f-25be10ef3e94",
       "3938c56d-99bb-3740-be67-12c9d2766d95",
-      "71c281d2-c3ec-38b5-a468-d774ff43869e",
-      "97f52ef0-d2fe-31a4-beea-1b0ee361ce00"
+      "71c281d2-c3ec-38b5-a468-d774ff43869e"
     ],
-    "updatedAt": "2026-09-18T19:23:47.190Z"
+    "updatedAt": "2026-09-19T05:25:09.623Z"
   },
   "AAPL": {
     "text": "$100 price increase on iPhone 18 Pro line amid memory shortages and AI demand pressures.",
@@ -163,80 +169,79 @@
     "updatedAt": "2026-09-19T00:54:00.919Z"
   },
   "AMZN": {
-    "text": "Strategic partnership with Nvidia and F5 fuels investor optimism, boosting confidence in Amazon’s growth prospects.",
+    "text": "Reworking its air fleet, Amazon plans 30 Airbus A330 freighters by 2027, boosting logistics efficiency.",
     "source": "stock",
     "articleIds": [
+      "ec98384f-eec3-3263-b4fa-43a17dd0c526",
       "56686008-30b6-322d-90f9-6d9c892b69be",
       "44fdf105-7717-330b-9f7a-e994d8bef8b4"
     ],
-    "updatedAt": "2026-09-18T22:11:15.757Z"
+    "updatedAt": "2026-09-19T05:25:30.244Z"
   },
   "META": {
-    "text": "Profit‑taking after a 23% monthly surge following strong July earnings.",
-    "source": "stock",
-    "articleIds": [
-      "b5d303e8-f87f-3106-b2fe-1597d20d17a7"
-    ],
-    "updatedAt": "2026-09-19T00:54:11.491Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-19T05:25:35.177Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:54:15.887Z"
+    "updatedAt": "2026-09-19T05:25:39.508Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:54:20.780Z"
+    "updatedAt": "2026-09-19T05:25:44.246Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:54:25.219Z"
+    "updatedAt": "2026-09-19T05:25:48.584Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:54:29.656Z"
+    "updatedAt": "2026-09-19T05:25:53.011Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:54:33.988Z"
+    "updatedAt": "2026-09-19T05:25:57.316Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:54:38.617Z"
+    "updatedAt": "2026-09-19T05:26:01.931Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:54:43.313Z"
+    "updatedAt": "2026-09-19T05:26:06.597Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:54:47.639Z"
+    "updatedAt": "2026-09-19T05:26:10.957Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:54:52.640Z"
+    "updatedAt": "2026-09-19T05:26:15.748Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-19T00:54:57.260Z"
+    "updatedAt": "2026-09-19T05:26:20.383Z"
   }
 }
