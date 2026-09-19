@@ -8,25 +8,26 @@
     "updatedAt": "2026-09-19T10:07:36.857Z"
   },
   "AMD": {
-    "text": "AI-driven momentum and perception of cheap valuation after a 467% three‑year surge fuels buying.",
+    "text": "Strong AI demand and perception of cheap valuation after three‑year rally fuel buying pressure today",
     "source": "stock",
     "articleIds": [
       "832159c8-6dc5-38e6-b838-d7db7090ca09",
-      "c00eaa36-ebaf-3db7-8d18-d6cecf15bfb9"
+      "c00eaa36-ebaf-3db7-8d18-d6cecf15bfb9",
+      "8c03e28b-1cf5-34dd-a907-fad4160bfe16"
     ],
-    "updatedAt": "2026-09-19T19:53:40.618Z"
+    "updatedAt": "2026-09-19T22:02:44.332Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:53:45.268Z"
+    "updatedAt": "2026-09-19T22:02:48.748Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:53:50.334Z"
+    "updatedAt": "2026-09-19T22:02:54.012Z"
   },
   "SNDK": {
     "text": "Inclusion in the S&P 100 spurring index‑fund buying, propelling a rally into buy‑area momentum.",
@@ -42,7 +43,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:54:01.640Z"
+    "updatedAt": "2026-09-19T22:03:04.433Z"
   },
   "AVGO": {
     "text": "Revenue more than doubled in two years, highlighting rapid AI-driven growth momentum.",
@@ -53,10 +54,12 @@
     "updatedAt": "2026-09-19T10:08:09.671Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-19T19:54:11.750Z"
+    "text": "Revenue nearly doubled yet price remains flat since IPO, signaling investor skepticism about growth momentum.",
+    "source": "stock",
+    "articleIds": [
+      "1aa21023-4ddf-3dfc-8fe6-813437472cc9"
+    ],
+    "updatedAt": "2026-09-19T22:03:15.361Z"
   },
   "MRVL": {
     "text": "Expanded GlobalFoundries deal boosting SiGe capacity to meet AI‑driven high‑speed optical connectivity demand in data centers.",
@@ -93,13 +96,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:54:32.933Z"
+    "updatedAt": "2026-09-19T22:03:36.806Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:54:38.031Z"
+    "updatedAt": "2026-09-19T22:03:41.436Z"
   },
   "005930.KS": {
     "text": "Expanded AI partnership with Mistral and High‑NA EUV collaboration boosting semiconductor efficiency and precision.",
@@ -122,12 +125,13 @@
     "updatedAt": "2026-09-19T14:07:50.214Z"
   },
   "AAPL": {
-    "text": "Memory processor crunch prompting Bank of America to cut price target, weighing on investor sentiment.",
+    "text": "Bank of America cut target after memory‑processor shortage concerns, weighing on investor sentiment amid ongoing.",
     "source": "stock",
     "articleIds": [
+      "513e0799-e2d2-30d2-bcb2-01f0fcd8d10f",
       "03fda060-be28-3328-a9e3-e5707710ddb8"
     ],
-    "updatedAt": "2026-09-19T17:41:42.524Z"
+    "updatedAt": "2026-09-19T22:03:57.405Z"
   },
   "MSFT": {
     "text": "Growing backlash over AI industry’s poor communication of benefits raising investor concerns about Microsoft’s AI strategy",
@@ -157,37 +161,37 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:55:14.587Z"
+    "updatedAt": "2026-09-19T22:04:18.232Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:55:18.998Z"
+    "updatedAt": "2026-09-19T22:04:22.550Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:55:23.831Z"
+    "updatedAt": "2026-09-19T22:04:27.389Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:55:28.306Z"
+    "updatedAt": "2026-09-19T22:04:31.723Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:55:32.721Z"
+    "updatedAt": "2026-09-19T22:04:35.997Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:55:37.122Z"
+    "updatedAt": "2026-09-19T22:04:40.278Z"
   },
   "INFY.NS": {
     "text": "Former chief’s AI startup securing $53 million funding, drawing investor attention away.",
@@ -201,24 +205,24 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:55:47.125Z"
+    "updatedAt": "2026-09-19T22:04:50.371Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:55:51.528Z"
+    "updatedAt": "2026-09-19T22:04:54.681Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:55:56.581Z"
+    "updatedAt": "2026-09-19T22:04:59.567Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-19T19:56:01.386Z"
+    "updatedAt": "2026-09-19T22:05:04.219Z"
   }
 }
