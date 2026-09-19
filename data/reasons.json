@@ -1,39 +1,36 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-19T05:23:56.304Z"
+    "text": "Operating margin half that of rival highlights profitability concerns amid AI competition, pressuring investor sentiment.",
+    "source": "stock",
+    "articleIds": [
+      "7e42b803-9223-30f4-87cc-1fba407073bc"
+    ],
+    "updatedAt": "2026-09-19T10:07:36.857Z"
   },
   "AMD": {
-    "text": "Rumor of a 2027 GPU lineup promising a competitive edge against Nvidia fuels investor optimism.",
+    "text": "Rumor of a 2027 GPU lineup offering an AI advantage, plus AI-driven demand fueling optimism.",
     "source": "stock",
     "articleIds": [
       "832159c8-6dc5-38e6-b838-d7db7090ca09",
       "c00eaa36-ebaf-3db7-8d18-d6cecf15bfb9",
+      "8c03e28b-1cf5-34dd-a907-fad4160bfe16",
       "7d9fc887-1ab2-3b0e-82d7-3a6927d61502"
     ],
-    "updatedAt": "2026-09-19T05:24:01.836Z"
+    "updatedAt": "2026-09-19T10:07:42.684Z"
   },
   "NVDA": {
-    "text": "Marc Benioff’s praise and Jensen Huang’s charismatic leadership at Dreamforce boost investor confidence.",
+    "text": "Amazon’s Andy Jassy pledges deeper AI‑chip collaboration, easing Nvidia’s competition concerns.",
     "source": "stock",
     "articleIds": [
-      "2aad5e51-9528-451d-bf8a-ce047abb8dba",
-      "582404ac-8f94-3044-80a8-e4fa3fc8f9a4",
-      "e1602a1a-4bee-3acd-bdf8-04c44af056b0"
+      "c50cedcf-bb28-3e8a-ae2e-60a726bb7eeb"
     ],
-    "updatedAt": "2026-09-19T05:24:06.666Z"
+    "updatedAt": "2026-09-19T10:07:48.388Z"
   },
   "TSM": {
-    "text": "Accelerated 2nm commercial rollout and increased capex to meet global semiconductor arms race demands.",
-    "source": "stock",
-    "articleIds": [
-      "ce6a98ca-08dc-3710-b24e-5e2da52eaaa9",
-      "3bdd1259-e52e-3467-a6af-b89b2a2e38cc",
-      "9d4ff805-36f1-3794-95b7-284f5327bcc6"
-    ],
-    "updatedAt": "2026-09-19T05:24:12.319Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-19T10:07:53.549Z"
   },
   "SNDK": {
     "text": "Inclusion in the S&P 100 triggers mandatory purchases by index funds, boosting demand.",
@@ -57,23 +54,18 @@
     "updatedAt": "2026-09-19T05:24:22.763Z"
   },
   "AVGO": {
-    "text": "Strong earnings outlook and growing demand for data‑center components driving investor interest amid industry growth",
+    "text": "Revenue more than doubled in two years, highlighting rapid AI-driven growth momentum.",
     "source": "stock",
     "articleIds": [
-      "9f70cf68-36cc-39af-a92b-93c2e32bb02b"
+      "366fd1f0-ba71-3242-b757-ca92dd5d2a30"
     ],
-    "updatedAt": "2026-09-19T00:53:02.212Z"
+    "updatedAt": "2026-09-19T10:08:09.671Z"
   },
   "SPCX": {
-    "text": "Delay of Starship’s first orbital test flight to Sept 28 spooked investors, prompting sell‑offs.",
-    "source": "stock",
-    "articleIds": [
-      "152617ce-1689-49bf-b3c6-35232d4eead9",
-      "50b9b574-be17-3a78-83da-d60a0e7b1d61",
-      "c3d33ed3-5eaa-394d-a3ee-3b50dc652196",
-      "16d8390e-84b4-3ead-915c-6c26c117f2b6"
-    ],
-    "updatedAt": "2026-09-19T00:53:07.523Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-19T10:08:14.829Z"
   },
   "MRVL": {
     "text": "",
@@ -121,7 +113,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:24:58.951Z"
+    "updatedAt": "2026-09-19T10:08:42.374Z"
   },
   "005930.KS": {
     "text": "Expanded AI partnership with Mistral and High‑NA EUV collaboration boosting semiconductor efficiency in production.",
@@ -152,96 +144,96 @@
     "updatedAt": "2026-09-18T22:11:00.349Z"
   },
   "MSFT": {
-    "text": "NYT lawsuit alleging OpenAI data theft implicates Microsoft, raising legal risk concerns.",
+    "text": "NYT lawsuit over alleged OpenAI data theft and growing AI backlash hurting investor confidence",
     "source": "stock",
     "articleIds": [
-      "1f91360a-043b-48c3-a621-e7dcdb2fd60a"
+      "1f91360a-043b-48c3-a621-e7dcdb2fd60a",
+      "cf5dab08-45dc-3e5c-a470-181c00690f73"
     ],
-    "updatedAt": "2026-09-18T22:11:05.179Z"
+    "updatedAt": "2026-09-19T10:09:03.798Z"
   },
   "GOOGL": {
-    "text": "Antitrust ruling boosting ad revenue alongside launch of in‑house AI chips driving fresh growth.",
+    "text": "Key antitrust ruling boosts ad business, ending a decade‑long losing streak.",
     "source": "stock",
     "articleIds": [
-      "af97e416-e1b7-3202-9e59-0cadd262405c",
-      "324a48ea-d96b-39f7-a202-3c90ef28b6e5"
+      "af97e416-e1b7-3202-9e59-0cadd262405c"
     ],
-    "updatedAt": "2026-09-19T00:54:00.919Z"
+    "updatedAt": "2026-09-19T10:09:08.915Z"
   },
   "AMZN": {
-    "text": "Reworking its air fleet, Amazon plans 30 Airbus A330 freighters by 2027, boosting logistics efficiency.",
+    "text": "Andy Jassy’s remarks on cutting Nvidia reliance and new A330 freighter fleet boost investor confidence.",
     "source": "stock",
     "articleIds": [
+      "c50cedcf-bb28-3e8a-ae2e-60a726bb7eeb",
       "ec98384f-eec3-3263-b4fa-43a17dd0c526",
-      "56686008-30b6-322d-90f9-6d9c892b69be",
-      "44fdf105-7717-330b-9f7a-e994d8bef8b4"
+      "56686008-30b6-322d-90f9-6d9c892b69be"
     ],
-    "updatedAt": "2026-09-19T05:25:30.244Z"
+    "updatedAt": "2026-09-19T10:09:14.387Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:25:35.177Z"
+    "updatedAt": "2026-09-19T10:09:19.129Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:25:39.508Z"
+    "updatedAt": "2026-09-19T10:09:23.660Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:25:44.246Z"
+    "updatedAt": "2026-09-19T10:09:28.430Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:25:48.584Z"
+    "updatedAt": "2026-09-19T10:09:32.931Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:25:53.011Z"
+    "updatedAt": "2026-09-19T10:09:37.422Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:25:57.316Z"
+    "updatedAt": "2026-09-19T10:09:41.917Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:26:01.931Z"
+    "updatedAt": "2026-09-19T10:09:46.689Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:26:06.597Z"
+    "updatedAt": "2026-09-19T10:09:51.412Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:26:10.957Z"
+    "updatedAt": "2026-09-19T10:09:55.865Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:26:15.748Z"
+    "updatedAt": "2026-09-19T10:10:00.754Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-19T05:26:20.383Z"
+    "updatedAt": "2026-09-19T10:10:05.563Z"
   }
 }
