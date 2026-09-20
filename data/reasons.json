@@ -1,11 +1,12 @@
 {
   "INTC": {
-    "text": "Operating margin half that of rival highlights profitability concerns amid AI competition, pressuring investor sentiment.",
+    "text": "Supply constraints limiting output to half customer demand, highlighting weaker operating margins versus peers.",
     "source": "stock",
     "articleIds": [
+      "e00d481f-5a9e-3205-85c2-3f3c1fde3f16",
       "7e42b803-9223-30f4-87cc-1fba407073bc"
     ],
-    "updatedAt": "2026-09-19T10:07:36.857Z"
+    "updatedAt": "2026-09-20T00:33:23.696Z"
   },
   "AMD": {
     "text": "Strong AI demand and perception of cheap valuation after three‑year rally fuel buying pressure today",
@@ -18,32 +19,35 @@
     "updatedAt": "2026-09-19T22:02:44.332Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-19T22:02:48.748Z"
+    "text": "Forming AI Energy Management Alliance to create power‑flexible data center, boosting confidence in sustainable AI infrastructure.",
+    "source": "stock",
+    "articleIds": [
+      "73ff7a5d-f978-320f-a08d-fd42ce90a43e"
+    ],
+    "updatedAt": "2026-09-20T00:33:34.314Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:02:54.012Z"
+    "updatedAt": "2026-09-20T00:33:39.415Z"
   },
   "SNDK": {
-    "text": "Inclusion in the S&P 100 spurring index‑fund buying, propelling a rally into buy‑area momentum.",
+    "text": "Inclusion in the S&P 100 spurs index‑fund demand, driving a sharp buying surge today among investors",
     "source": "stock",
     "articleIds": [
       "832159c8-6dc5-38e6-b838-d7db7090ca09",
       "64194d7f-4ec7-3d3f-b1e5-fc97853afdcd",
-      "a79cf87c-d3f5-3e16-8ee6-e536ba767ccf"
+      "a79cf87c-d3f5-3e16-8ee6-e536ba767ccf",
+      "59fd590d-ffbb-39f7-9bc9-72bb0e3db4f6"
     ],
-    "updatedAt": "2026-09-19T17:40:44.349Z"
+    "updatedAt": "2026-09-20T00:33:45.040Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:03:04.433Z"
+    "updatedAt": "2026-09-20T00:33:50.047Z"
   },
   "AVGO": {
     "text": "Revenue more than doubled in two years, highlighting rapid AI-driven growth momentum.",
@@ -96,13 +100,13 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:03:36.806Z"
+    "updatedAt": "2026-09-20T00:34:21.394Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:03:41.436Z"
+    "updatedAt": "2026-09-20T00:34:26.139Z"
   },
   "005930.KS": {
     "text": "Expanded AI partnership with Mistral and High‑NA EUV collaboration boosting semiconductor efficiency and precision.",
@@ -114,32 +118,25 @@
     "updatedAt": "2026-09-19T19:54:43.249Z"
   },
   "000660.KS": {
-    "text": "Early, unfinalized talks with Intel on U.S. memory production and AI partnership boost investor confidence.",
-    "source": "stock",
-    "articleIds": [
-      "e1602a1a-4bee-3acd-bdf8-04c44af056b0",
-      "08d820f8-c144-37ec-9a9f-25be10ef3e94",
-      "3938c56d-99bb-3740-be67-12c9d2766d95",
-      "bedc8199-01c2-3879-bf47-e12fabee6cb5"
-    ],
-    "updatedAt": "2026-09-19T14:07:50.214Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-20T00:34:36.667Z"
   },
   "AAPL": {
-    "text": "Bank of America cut target after memory‑processor shortage concerns, weighing on investor sentiment amid ongoing.",
+    "text": "Bank of America cut price target amid memory processor crunch and larger iPhone credit offer",
     "source": "stock",
     "articleIds": [
-      "513e0799-e2d2-30d2-bcb2-01f0fcd8d10f",
+      "978a907e-a6cb-3ef6-8d30-2c91933170dc",
       "03fda060-be28-3328-a9e3-e5707710ddb8"
     ],
-    "updatedAt": "2026-09-19T22:03:57.405Z"
+    "updatedAt": "2026-09-20T00:34:42.230Z"
   },
   "MSFT": {
-    "text": "Growing backlash over AI industry’s poor communication of benefits raising investor concerns about Microsoft’s AI strategy",
-    "source": "stock",
-    "articleIds": [
-      "cf5dab08-45dc-3e5c-a470-181c00690f73"
-    ],
-    "updatedAt": "2026-09-19T14:08:01.047Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-20T00:34:46.732Z"
   },
   "GOOGL": {
     "text": "Anticipation of Berkshire Hathaway’s massive investment after a historic 9,000% price surge.",
@@ -161,37 +158,37 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:04:18.232Z"
+    "updatedAt": "2026-09-20T00:35:01.988Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:04:22.550Z"
+    "updatedAt": "2026-09-20T00:35:06.250Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:04:27.389Z"
+    "updatedAt": "2026-09-20T00:35:10.893Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:04:31.723Z"
+    "updatedAt": "2026-09-20T00:35:15.232Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:04:35.997Z"
+    "updatedAt": "2026-09-20T00:35:19.443Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:04:40.278Z"
+    "updatedAt": "2026-09-20T00:35:23.664Z"
   },
   "INFY.NS": {
     "text": "Former chief’s AI startup securing $53 million funding, drawing investor attention away.",
@@ -205,24 +202,24 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:04:50.371Z"
+    "updatedAt": "2026-09-20T00:35:33.421Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:04:54.681Z"
+    "updatedAt": "2026-09-20T00:35:38.126Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:04:59.567Z"
+    "updatedAt": "2026-09-20T00:35:42.982Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-19T22:05:04.219Z"
+    "updatedAt": "2026-09-20T00:35:47.550Z"
   }
 }
