@@ -1,182 +1,184 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-21T11:42:57.896Z"
+    "text": "AI demand surge and NVIDIA’s $5 B investment fueling record revenue growth and investor optimism",
+    "source": "stock",
+    "articleIds": [
+      "dd227320-73bc-33ca-ab26-64adeab65dfa",
+      "536392dc-7a13-3014-a850-4aae9e6735d3"
+    ],
+    "updatedAt": "2026-09-21T17:39:10.642Z"
   },
   "AMD": {
-    "text": "Recovery after AI leaders urged slower model development, prompting investors to re‑enter buying zones.",
+    "text": "Renewed AI chip demand and market‑cap milestone after strong AI computing bets drive investor optimism.",
     "source": "stock",
     "articleIds": [
-      "d72e4dfe-c9ef-3c82-9e5c-1635e330ed89",
-      "832159c8-6dc5-38e6-b838-d7db7090ca09"
+      "2c1ac7ba-3a00-4007-9415-95a495a0993f",
+      "20b92809-3da7-3f8a-9632-1b914ce177d3",
+      "962f9419-3a45-3b55-ac87-70b396098e6c",
+      "879f154b-fe81-355f-9453-4505d379c0dc",
+      "e5e065b0-1147-33f3-ae98-452b978abcae"
     ],
-    "updatedAt": "2026-09-21T05:46:35.166Z"
+    "updatedAt": "2026-09-21T17:39:16.072Z"
   },
   "NVDA": {
-    "text": "Potential boost from President Trump’s upcoming talks with Chinese leader Xi Jinping.",
-    "source": "stock",
-    "articleIds": [
-      "a4f80799-1385-3797-8b95-623477a26bf8"
-    ],
-    "updatedAt": "2026-09-21T11:43:08.286Z"
-  },
-  "TSM": {
-    "text": "Partnering with ASML to adapt next‑gen “High NA” EUV tools for larger AI data‑center chips.",
-    "source": "stock",
-    "articleIds": [
-      "15ec9370-c24c-3f90-9708-5082503f646c",
-      "ce6a98ca-08dc-3710-b24e-5e2da52eaaa9"
-    ],
-    "updatedAt": "2026-09-20T22:52:58.460Z"
-  },
-  "SNDK": {
-    "text": "Joining the S&P 100, prompting mandatory purchases by index funds and boosting demand.",
-    "source": "stock",
-    "articleIds": [
-      "832159c8-6dc5-38e6-b838-d7db7090ca09",
-      "aac879b5-ee1a-31b0-96ba-d49cc071551f",
-      "64194d7f-4ec7-3d3f-b1e5-fc97853afdcd",
-      "a79cf87c-d3f5-3e16-8ee6-e536ba767ccf"
-    ],
-    "updatedAt": "2026-09-21T11:43:18.486Z"
-  },
-  "MU": {
-    "text": "Memory rebound gains steam, boosting DRAM price outlook ahead of strong fiscal fourth‑quarter earnings.",
-    "source": "stock",
-    "articleIds": [
-      "b493f1e3-ccb2-3c8e-89fd-4360ed53e659",
-      "240beae1-6a02-36f8-a8c3-3728327d47b7",
-      "edeca94a-1382-35d2-9e52-7761a02e641f"
-    ],
-    "updatedAt": "2026-09-21T05:46:56.258Z"
-  },
-  "AVGO": {
-    "text": "CEO’s rebuttal to AI slowdown concerns, emphasizing Anthropic partnership as catalyst for accelerated custom chip demand.",
-    "source": "stock",
-    "articleIds": [
-      "115074e2-f565-366f-83bf-e36a2da73c30",
-      "366fd1f0-ba71-3242-b757-ca92dd5d2a30"
-    ],
-    "updatedAt": "2026-09-21T11:43:29.064Z"
-  },
-  "SPCX": {
-    "text": "Rising Vanguard ETF concentration risk prompting investors to trim exposure.",
-    "source": "stock",
-    "articleIds": [
-      "0f352d4c-2dec-3041-9ef4-a5fb915f6074"
-    ],
-    "updatedAt": "2026-09-21T05:47:06.445Z"
-  },
-  "MRVL": {
-    "text": "Expanded GlobalFoundries SiGe capacity for next‑gen AI optical transceivers fuels demand for Marvell’s data‑center connectivity components.",
-    "source": "stock",
-    "articleIds": [
-      "7692008d-d73a-3117-b78a-581933ece69b",
-      "0725a742-d212-397a-ab7e-f6ae0caff6e7",
-      "ec982d33-2c77-332f-9b7c-1e74e096a8fc"
-    ],
-    "updatedAt": "2026-09-21T11:43:39.283Z"
-  },
-  "ARM": {
-    "text": "Accelerating AI data‑center royalties and growing royalty stream across billions of devices driving investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "6f638813-0fd0-3557-a1a0-b73d55c80496",
-      "2c71df0c-2be4-324a-aeab-9933d0c2f87c",
-      "8157e598-ad5b-334a-b0ad-3afc64d92d93",
-      "e51bf971-71df-3bb3-9a0f-d2b1792ba618"
-    ],
-    "updatedAt": "2026-09-21T11:43:44.278Z"
-  },
-  "QCOM": {
-    "text": "Intensifying smartphone competition from MediaTek’s new 2‑nanometer flagship chip, amplifying Qualcomm’s handset market pressures.",
-    "source": "stock",
-    "articleIds": [
-      "2f976687-aa14-3d1a-86db-aea900370339",
-      "bf57e413-78cf-3eca-8f2b-0d373119a7b4",
-      "4e1f0533-bf42-3428-a4d5-db333aea80e1"
-    ],
-    "updatedAt": "2026-09-21T11:43:49.609Z"
-  },
-  "SKHY": {
-    "text": "Early talks with Intel on U.S. Ohio memory chip production reigniting valuation optimism for the",
-    "source": "stock",
-    "articleIds": [
-      "b493f1e3-ccb2-3c8e-89fd-4360ed53e659",
-      "b94a6baa-eb74-3184-ae25-c2eac89f1b66"
-    ],
-    "updatedAt": "2026-09-21T05:47:26.860Z"
-  },
-  "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-21T11:43:59.532Z"
-  },
-  "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-21T11:44:04.399Z"
+    "updatedAt": "2026-09-21T17:39:20.831Z"
+  },
+  "TSM": {
+    "text": "Expanding 88.7‑hectare packaging validation hub and partnering on High‑NA EUV tools to accelerate AI‑chip production.",
+    "source": "stock",
+    "articleIds": [
+      "1afd0f6f-b15b-33ad-b099-6c1e52afbdde",
+      "15ec9370-c24c-3f90-9708-5082503f646c"
+    ],
+    "updatedAt": "2026-09-21T17:39:26.184Z"
+  },
+  "SNDK": {
+    "text": "valuation hinges on uncertain future growth expectations, prompting investor caution.",
+    "source": "stock",
+    "articleIds": [
+      "bfe36328-e2cb-318e-b542-057284e39d8f"
+    ],
+    "updatedAt": "2026-09-21T17:39:31.528Z"
+  },
+  "MU": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-21T17:39:36.488Z"
+  },
+  "AVGO": {
+    "text": "Triple‑digit AI revenue growth and Anthropic becoming its largest custom‑chip client drive the rally today.",
+    "source": "stock",
+    "articleIds": [
+      "b2cf76b0-c22a-37fa-b8d5-d8ce325df2dd",
+      "1b7a0645-844a-3445-8274-fb931db5cc13",
+      "fecb5334-23e1-3a6f-8442-90e92d07dd62"
+    ],
+    "updatedAt": "2026-09-21T17:39:41.516Z"
+  },
+  "SPCX": {
+    "text": "Merger talks with Tesla and anticipation of Starship’s 14th test flight driving optimism.",
+    "source": "stock",
+    "articleIds": [
+      "937f0e44-8667-3914-b1bf-bd3315043336",
+      "6cc1c492-b695-37ec-80eb-77f9286a5958",
+      "15a004e7-348d-3f0d-9334-0faac10e37aa"
+    ],
+    "updatedAt": "2026-09-21T17:39:47.049Z"
+  },
+  "MRVL": {
+    "text": "Jensen Huang’s bullish AI outlook suggesting Marvell could double or quintuple its value soon.",
+    "source": "stock",
+    "articleIds": [
+      "5767618a-1464-3ec1-9f55-1904b0fbfabf"
+    ],
+    "updatedAt": "2026-09-21T17:39:52.436Z"
+  },
+  "ARM": {
+    "text": "Muse’s rapid adoption is driving fresh demand for Arm’s data‑center silicon, boosting its AI‑focused CPU outlook.",
+    "source": "stock",
+    "articleIds": [
+      "3411e0ee-5d09-33dc-92fb-f8318e5a9fb1",
+      "e5e065b0-1147-33f3-ae98-452b978abcae"
+    ],
+    "updatedAt": "2026-09-21T17:39:57.852Z"
+  },
+  "QCOM": {
+    "text": "AI interconnect demonstration and upcoming data‑center custom chip revenue boost confidence, offsetting handset slowdown trend.",
+    "source": "stock",
+    "articleIds": [
+      "e017ee35-93e6-3e21-96c1-0b773fd59f28",
+      "02d7aa47-2eca-367e-b742-2ae72eedfccf",
+      "7cb86934-01ef-3479-8a0a-e6daa3529d73"
+    ],
+    "updatedAt": "2026-09-21T17:40:03.576Z"
+  },
+  "SKHY": {
+    "text": "Potential U.S. memory partnership with Intel boosting investor interest amid AI demand.",
+    "source": "stock",
+    "articleIds": [
+      "47dc42b3-f5a3-3c57-a970-cb2897c13164"
+    ],
+    "updatedAt": "2026-09-21T17:40:08.867Z"
+  },
+  "MBLY": {
+    "text": "Software-defined vehicle demand surging, boosting Mobileye’s advanced driver‑assistance technology adoption and market optimism.",
+    "source": "stock",
+    "articleIds": [
+      "a68d119e-5faa-30e0-b301-24ffce95dd5b"
+    ],
+    "updatedAt": "2026-09-21T17:40:14.103Z"
+  },
+  "005930.KS": {
+    "text": "Rising AI data‑center demand and Anthropic IPO buzz boosting Samsung’s chip and infrastructure exposure.",
+    "source": "stock",
+    "articleIds": [
+      "fe313a19-4416-3b78-a196-eab40dc769fb"
+    ],
+    "updatedAt": "2026-09-21T17:40:19.073Z"
   },
   "000660.KS": {
-    "text": "Intel Ohio partnership talks reviving valuation focus, boosting investor optimism and recent price momentum.",
+    "text": "Potential U.S. memory partnership boosting investor optimism amid rising AI demand and favorable valuation outlook.",
     "source": "stock",
     "articleIds": [
-      "b94a6baa-eb74-3184-ae25-c2eac89f1b66"
+      "47dc42b3-f5a3-3c57-a970-cb2897c13164"
     ],
-    "updatedAt": "2026-09-21T05:47:41.075Z"
+    "updatedAt": "2026-09-21T17:40:24.325Z"
   },
   "AAPL": {
-    "text": "Layoffs in the Fitness+ division signal potential major restructuring of Apple’s subscription services.",
+    "text": "Sharp demand surge for the iPhone 18 Pro fuels investor optimism and pushes price higher.",
     "source": "stock",
     "articleIds": [
-      "bdf8796e-670d-39fa-a6b3-434265f9dc4b"
+      "e59f41d0-a861-3f84-81e6-51967ee52d71",
+      "24865427-7d8e-3561-acfe-d7101f769b3c",
+      "d53ed40c-1f56-3a59-ac31-f11975630544",
+      "4345e60a-ba43-36d2-8efc-ffa93f0a6545"
     ],
-    "updatedAt": "2026-09-21T11:44:14.795Z"
+    "updatedAt": "2026-09-21T17:40:29.963Z"
   },
   "MSFT": {
-    "text": "Investor worries over OpenAI's $1.2T valuation push, signaling massive $278B cash‑burn risk for its future.",
+    "text": "Strong July earnings beat expectations, fueling continued investor optimism despite near‑year‑low price.",
     "source": "stock",
     "articleIds": [
-      "9952a22a-9378-3ee8-a37f-88f92062822c"
+      "a92b23f1-7201-3f82-a678-4894dc63321b"
     ],
-    "updatedAt": "2026-09-21T11:44:20.684Z"
+    "updatedAt": "2026-09-21T17:40:35.500Z"
   },
   "GOOGL": {
-    "text": "Perceived safe‑haven appeal as investors flee broader tech selloff, driving fresh capital inflows.",
-    "source": "stock",
-    "articleIds": [
-      "1a1fc773-6cb6-3b83-847a-8d7504820a1d"
-    ],
-    "updatedAt": "2026-09-21T11:44:25.929Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-21T17:40:40.534Z"
   },
   "AMZN": {
-    "text": "Massive $220 billion AI infrastructure spend reassuring investors amid expanding cloud and logistics capabilities for future.",
+    "text": "$1.9 billion boost to AI‑driven delivery safety and driver experience, plus a major logistics contract supporting global data‑center expansion.",
     "source": "stock",
     "articleIds": [
-      "42eefff9-0db7-353a-ab5d-9d994bd5e608",
-      "602126b2-aedd-3f11-ad27-302f381d790f",
-      "a270c058-8111-3b22-9bb7-1da72fc988db",
-      "1773559b-04c1-3404-826a-78f6ae5c0b48"
+      "70e5bb38-81be-3f15-8aa0-b1d2abadfb97",
+      "3aeda4d5-c5d6-3c7c-92cc-5dee8d37fad0"
     ],
-    "updatedAt": "2026-09-21T11:44:31.644Z"
+    "updatedAt": "2026-09-21T17:40:46.098Z"
   },
   "META": {
-    "text": "French privacy probe into AI‑powered smart glasses raising regulatory concerns.",
+    "text": "Muse’s rapid adoption spurs AI hype, boosting confidence in Meta’s agentic AI leadership and growth prospects.",
     "source": "stock",
     "articleIds": [
-      "e595a0ef-225f-3e8c-bef1-e5bf53520be6"
+      "31d48d83-3af4-4bc6-9dc2-d63b3f1b66ef",
+      "3411e0ee-5d09-33dc-92fb-f8318e5a9fb1",
+      "eafaba66-cf1c-3acc-b706-eb7c77513eb7",
+      "e5e065b0-1147-33f3-ae98-452b978abcae",
+      "42e2076d-2bc8-3bde-8a6b-3e4bb98e663a"
     ],
-    "updatedAt": "2026-09-21T11:44:36.576Z"
+    "updatedAt": "2026-09-21T17:40:51.248Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-21T11:44:40.854Z"
+    "updatedAt": "2026-09-21T17:40:55.871Z"
   },
   "ICICIBANK.NS": {
     "text": "Clearance for ICICI Prudential AMC to acquire up to 9.95% stakes in multiple lenders fuels growth optimism.",
@@ -190,19 +192,19 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-21T11:44:51.344Z"
+    "updatedAt": "2026-09-21T17:41:05.627Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-21T11:44:55.746Z"
+    "updatedAt": "2026-09-21T17:41:09.953Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-21T11:45:00.023Z"
+    "updatedAt": "2026-09-21T17:41:14.328Z"
   },
   "INFY.NS": {
     "text": "Former chief’s AI startup securing $53 million funding, drawing investor attention away.",
@@ -224,18 +226,20 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-21T11:45:14.579Z"
+    "updatedAt": "2026-09-21T17:41:29.345Z"
   },
   "INDEX": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-09-21T11:45:19.375Z"
+    "text": "Midday rally in equities spurred investor optimism, driving heightened demand for broad‑market ETFs across sectors.",
+    "source": "macro",
+    "articleIds": [
+      "c37fdd10-faf4-3171-8983-185f1664c214"
+    ],
+    "updatedAt": "2026-09-21T17:41:34.671Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-21T11:45:24.026Z"
+    "updatedAt": "2026-09-21T17:41:39.483Z"
   }
 }
