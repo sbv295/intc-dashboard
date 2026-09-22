@@ -1,55 +1,59 @@
 {
   "INTC": {
-    "text": "Surging AI‑driven CPU demand and new Core Ultra Series 3 launch in Googlebook laptops, boosting revenues.",
+    "text": "Surging CPU demand driven by AI agents gaining traction fuels recent rally.",
     "source": "stock",
     "articleIds": [
       "4506485c-7f33-4d81-8e54-13a34726c873",
-      "2ef596ac-c13b-3f88-a38b-454cd15a8211"
+      "14354b6c-0e50-36af-be3e-e6c599d65a76",
+      "0ef5e7f0-9ea2-3b51-a889-a72adb6d38d0"
     ],
-    "updatedAt": "2026-09-22T19:28:44.669Z"
+    "updatedAt": "2026-09-22T22:37:43.426Z"
   },
   "AMD": {
-    "text": "Surging AI‑driven chip demand propels valuation breakthrough, cementing its entry into the trillion‑dollar club.",
+    "text": "Strong AI demand and recent $1 trillion market‑cap milestone boosting investor confidence.",
     "source": "stock",
     "articleIds": [
+      "97b5b87a-6a7b-34a8-9c13-0329999b8d6b",
+      "a21a3171-64f7-309c-84ab-c75c833015d1",
       "4962a044-f857-3d60-a686-a1d90d8c4030",
-      "2d5fa95e-f0c4-3106-b5f0-a8e11974f2e1",
-      "f40145e8-15bc-3ecd-bff7-abdf7d8a67a0"
+      "2d5fa95e-f0c4-3106-b5f0-a8e11974f2e1"
     ],
-    "updatedAt": "2026-09-22T19:28:50.049Z"
+    "updatedAt": "2026-09-22T22:37:48.943Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:28:54.443Z"
+    "updatedAt": "2026-09-22T22:37:54.280Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:28:59.971Z"
+    "updatedAt": "2026-09-22T22:37:59.532Z"
   },
   "SNDK": {
-    "text": "Rosenblatt’s Buy initiation and $2,400 target, citing AI‑driven storage scarcity and favorable NAND pricing outlook.",
+    "text": "AI-driven storage scarcity and new $2,400 price target spark investor optimism for data‑center demand growth",
     "source": "stock",
     "articleIds": [
-      "dcd15380-9d39-3387-8d2d-d49325f78037",
+      "280f5dd6-365f-3a6a-91c9-2a9551e64657",
+      "3a611b86-e977-3442-9bf0-229eea1fc121",
+      "c6542f67-80e6-3d65-a0b1-6e10e9213690",
       "18d3b8f2-8dd8-346a-8f40-e32a180cc1b3",
-      "12cb30fe-c5a6-3706-a0eb-82057b31536f",
-      "3d14c395-04fd-305e-a48f-4b6e4b11ea44"
+      "dcd15380-9d39-3387-8d2d-d49325f78037"
     ],
-    "updatedAt": "2026-09-22T19:29:05.734Z"
+    "updatedAt": "2026-09-22T22:38:05.298Z"
   },
   "MU": {
-    "text": "Tight memory supply and profit‑sharing negotiations boosting pricing power ahead of earnings.",
+    "text": "Revenue surge to $41.46B and AI‑driven memory demand spark investor optimism ahead of earnings report.",
     "source": "stock",
     "articleIds": [
-      "b44e00a9-b4cc-3ddd-ab28-74f6ad961315",
-      "c23e07ad-ed27-32b3-b3fc-c84e53a45bbc",
+      "7e47301c-a527-3aff-8c4f-0bbb6972fbdc",
+      "280f5dd6-365f-3a6a-91c9-2a9551e64657",
+      "c6542f67-80e6-3d65-a0b1-6e10e9213690",
       "248555df-b0ac-392d-a493-6f95b1e5c807"
     ],
-    "updatedAt": "2026-09-22T19:29:11.240Z"
+    "updatedAt": "2026-09-22T22:38:10.894Z"
   },
   "AVGO": {
     "text": "Analyst confidence in significant upside potential through 2027 fuels optimism.",
@@ -60,23 +64,23 @@
     "updatedAt": "2026-09-22T19:29:17.489Z"
   },
   "SPCX": {
-    "text": "Rapid adoption of Grok AI bot and booming AI revenue outlook driving investor optimism.",
+    "text": "Grok AI agent’s rapid adoption, surpassing 400,000 weekly users, fuels investor optimism.",
     "source": "stock",
     "articleIds": [
-      "2898fd86-5eb0-30d3-906d-b72f46455e2b",
-      "cf23f02c-dfb3-3238-b127-59a97fe2276f"
+      "2898fd86-5eb0-30d3-906d-b72f46455e2b"
     ],
-    "updatedAt": "2026-09-22T19:29:22.630Z"
+    "updatedAt": "2026-09-22T22:38:21.275Z"
   },
   "MRVL": {
-    "text": "Industry‑first 2nm optical interconnect launch for AI data‑center connectivity, boosting growth expectations.",
+    "text": "Industry‑first 2nm optical interconnect demos for AI data‑center connectivity unveiled at ECOC 2026.",
     "source": "stock",
     "articleIds": [
       "682ec492-4731-32a9-9e65-942f30876693",
       "6de794af-6d02-3ff6-a946-4032995d0571",
-      "6de87f52-c9ad-3cbc-a2e2-16b92268ded2"
+      "6de87f52-c9ad-3cbc-a2e2-16b92268ded2",
+      "e5fa4f74-ff08-38a8-83c4-974e18ba23f2"
     ],
-    "updatedAt": "2026-09-22T19:29:27.907Z"
+    "updatedAt": "2026-09-22T22:38:26.455Z"
   },
   "ARM": {
     "text": "CEO’s claim of off‑the‑charts AI chip demand and confidence hitting $2 B AGI revenue target for 2026",
@@ -89,16 +93,19 @@
     "updatedAt": "2026-09-22T19:29:33.681Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-22T19:29:38.481Z"
+    "text": "Launch of Snapdragon chips capable of running 30B MoE models locally, plus edge AI strategy.",
+    "source": "stock",
+    "articleIds": [
+      "aae58bf2-4a64-4130-9727-3c96035c0ef2",
+      "2cf01a87-561b-3370-9022-72d8f96d297c"
+    ],
+    "updatedAt": "2026-09-22T22:38:37.008Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:29:42.899Z"
+    "updatedAt": "2026-09-22T22:38:41.671Z"
   },
   "MBLY": {
     "text": "Valuation doubts intensify after fresh autonomous‑mobility funding and Beep, Inc. investment raises growth concerns.",
@@ -123,77 +130,72 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:29:59.018Z"
+    "updatedAt": "2026-09-22T22:38:57.419Z"
   },
   "AAPL": {
-    "text": "record high driven by fanfare over foldable iPhone Duo and new screen‑free health tracker prototypes",
+    "text": "Approaching $5 trillion market‑cap milestone and trading near a perceived buy point fuels modest gain.",
     "source": "stock",
     "articleIds": [
-      "8f3aa0c1-1e7f-4e8c-b912-d860d41ef296",
-      "1b96499e-5e89-32fb-9e8f-ee08e039fb81"
+      "0143595d-3423-3fca-8750-9ab0a98fa022",
+      "1055d02e-f8f1-3e79-9f3c-e62ad94a49d1"
     ],
-    "updatedAt": "2026-09-22T19:30:04.615Z"
+    "updatedAt": "2026-09-22T22:39:02.795Z"
   },
   "MSFT": {
-    "text": "Trump‑revealed $25 million insider sell‑off raising doubts despite Azure momentum",
-    "source": "stock",
-    "articleIds": [
-      "0e8a8c07-8654-34b0-8d38-1cf76b0f76e8",
-      "000dd324-4ebc-34f4-9c13-606dd3672cd3"
-    ],
-    "updatedAt": "2026-09-22T19:30:09.850Z"
-  },
-  "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:30:14.167Z"
+    "updatedAt": "2026-09-22T22:39:07.604Z"
   },
-  "AMZN": {
-    "text": "Banning AI agents from its digital storefront, raising concerns over platform accessibility and revenue.",
+  "GOOGL": {
+    "text": "Appeal of a $425 million privacy verdict over unauthorized mobile analytics collection.",
     "source": "stock",
     "articleIds": [
-      "6b480181-710d-3ee4-b8ae-40b91a5b5f7b",
-      "000dd324-4ebc-34f4-9c13-606dd3672cd3",
-      "4015c7f0-c1e5-33d5-8f8b-b428600a9e94"
+      "8b8ead41-a538-3d07-9dba-61b5ecbf2275"
     ],
-    "updatedAt": "2026-09-22T19:30:19.463Z"
+    "updatedAt": "2026-09-22T22:39:12.876Z"
+  },
+  "AMZN": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-22T22:39:17.938Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:30:24.521Z"
+    "updatedAt": "2026-09-22T22:39:22.899Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:30:28.950Z"
+    "updatedAt": "2026-09-22T22:39:27.409Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:30:33.757Z"
+    "updatedAt": "2026-09-22T22:39:32.434Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:30:38.080Z"
+    "updatedAt": "2026-09-22T22:39:36.937Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:30:42.396Z"
+    "updatedAt": "2026-09-22T22:39:41.348Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:30:46.751Z"
+    "updatedAt": "2026-09-22T22:39:45.821Z"
   },
   "INFY.NS": {
     "text": "Funding boost to ex‑CEO’s AI venture raising $53 million, sparking investor concerns over talent drain.",
@@ -207,23 +209,22 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:30:56.772Z"
+    "updatedAt": "2026-09-22T22:39:55.754Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-22T19:31:01.090Z"
+    "updatedAt": "2026-09-22T22:40:00.347Z"
   },
   "INDEX": {
-    "text": "Falling oil prices driven by emerging US‑Iran diplomatic talks, easing energy‑sector pressure on investors today.",
+    "text": "Falling oil prices on hopes of US‑Iran diplomatic resolution lifted market sentiment across ETFs today.",
     "source": "macro",
     "articleIds": [
       "79cb6843-c5fd-3450-bfc0-18d33d8b88e3",
-      "41850ff4-bac3-3505-bbea-581c4fa76b8f",
-      "c37fdd10-faf4-3171-8983-185f1664c214"
+      "41850ff4-bac3-3505-bbea-581c4fa76b8f"
     ],
-    "updatedAt": "2026-09-22T19:31:06.551Z"
+    "updatedAt": "2026-09-22T22:40:05.622Z"
   },
   "INDEX_IN": {
     "text": "Weak earnings, elevated valuations and absence of a compelling AI investment theme eroding investor confidence.",
