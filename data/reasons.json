@@ -1,111 +1,111 @@
 {
   "INTC": {
-    "text": "Investor skepticism that turnaround expectations exceed realistic execution prospects amid uncertain data‑center demand",
-    "source": "stock",
-    "articleIds": [
-      "8e0ee3e7-7a12-3bbc-aa8d-b168f2dcb558",
-      "e41d848e-ed20-3026-9049-d3c80646ecd7"
-    ],
-    "updatedAt": "2026-09-23T18:09:07.945Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-23T21:57:01.194Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:09:13.310Z"
+    "updatedAt": "2026-09-23T21:57:06.442Z"
   },
   "NVDA": {
-    "text": "Apple’s local‑AI push erodes cloud inference economics, undercutting Nvidia’s data‑center training dominance and future revenue prospects.",
-    "source": "stock",
-    "articleIds": [
-      "8e0ee3e7-7a12-3bbc-aa8d-b168f2dcb558",
-      "7a25acf7-977c-3e2b-8848-b7e652804f4f"
-    ],
-    "updatedAt": "2026-09-23T18:09:19.292Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-23T21:57:11.257Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:09:24.299Z"
+    "updatedAt": "2026-09-23T21:57:16.234Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:09:29.442Z"
+    "updatedAt": "2026-09-23T21:57:21.596Z"
   },
   "MU": {
-    "text": "Rising chip production easing supply constraints, threatening memory pricing amid AI demand concerns.",
+    "text": "Short position sparked by expectation memory prices will fall, threatening profitability.",
     "source": "stock",
     "articleIds": [
-      "c9467b31-ae5e-3429-8122-c99fab3fc047",
-      "1dcc1c9c-bc48-3440-9579-d1eb3e61a463"
+      "ba7611a7-b3a8-3b4b-a694-0d61f39140c9"
     ],
-    "updatedAt": "2026-09-23T18:09:35.260Z"
+    "updatedAt": "2026-09-23T21:57:27.266Z"
   },
   "AVGO": {
-    "text": "China’s audit of Broadcom’s dominance in state‑backed data centers raises regulatory uncertainty, pressuring the price.",
-    "source": "stock",
-    "articleIds": [
-      "77cf0635-6649-3eb4-b1bd-dd4cae75eacb"
-    ],
-    "updatedAt": "2026-09-23T18:09:40.652Z"
-  },
-  "SPCX": {
-    "text": "328 million shares unlocking tomorrow fuels dilution worries, pressuring the price amid investor scrutiny in the market.",
-    "source": "stock",
-    "articleIds": [
-      "189dbf9c-620c-3052-955e-d85d7b17e9c0",
-      "47149041-2e4f-3ab9-90c6-a92b573fb178"
-    ],
-    "updatedAt": "2026-09-23T18:09:46.273Z"
-  },
-  "MRVL": {
-    "text": "Investor concerns over delayed payoff from key AI chip deal, with gains projected only by fiscal 2029.",
-    "source": "stock",
-    "articleIds": [
-      "744e1e3e-1841-3576-a680-96d46c0090d3"
-    ],
-    "updatedAt": "2026-09-23T18:09:51.921Z"
-  },
-  "ARM": {
-    "text": "Sky‑high valuation—trading near 143 × forward earnings—raises doubts despite solid growth outlook.",
-    "source": "stock",
-    "articleIds": [
-      "da46c159-b955-3feb-b606-1232d34c79af",
-      "01027feb-1c1b-3338-bd7a-ea9e35e1638e",
-      "881f1f8e-34ce-3df3-9c51-599cf37e282c"
-    ],
-    "updatedAt": "2026-09-23T18:09:57.349Z"
-  },
-  "QCOM": {
-    "text": "Dual‑2nm chips expanding AI phone ambitions, prompting investor caution over shipment volumes and economics.",
-    "source": "stock",
-    "articleIds": [
-      "9cf824b4-c899-30c4-8d0c-7466cdad89e1"
-    ],
-    "updatedAt": "2026-09-23T18:10:03.328Z"
-  },
-  "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:10:08.102Z"
+    "updatedAt": "2026-09-23T21:57:32.087Z"
   },
-  "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-23T18:10:13.152Z"
-  },
-  "005930.KS": {
-    "text": "Attractive dividend yield drawing interest from Thornburg’s income‑focused fund.",
+  "SPCX": {
+    "text": "Impending share unlock combined with a $52 million executive sale fuels dilution and valuation worries significantly.",
     "source": "stock",
     "articleIds": [
+      "9045c360-e192-3b88-b796-70880beda755",
+      "c44070d1-aa0d-3c04-8d8d-2f99b50ba99a"
+    ],
+    "updatedAt": "2026-09-23T21:57:37.615Z"
+  },
+  "MRVL": {
+    "text": "Anticipation of previously announced product launches fueling investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "7bb8dca0-c178-33d7-b027-a056b7df2a02"
+    ],
+    "updatedAt": "2026-09-23T21:57:43.421Z"
+  },
+  "ARM": {
+    "text": "Agentic AI surge boosting server‑core demand, yet Arm’s awaited chip hasn’t shipped, limiting immediate royalty growth.",
+    "source": "stock",
+    "articleIds": [
+      "f979f5c0-a183-31a9-9e5f-0edcf3061b33",
+      "41f632ea-265d-3a41-a3f4-df1aeaea3692",
+      "da46c159-b955-3feb-b606-1232d34c79af"
+    ],
+    "updatedAt": "2026-09-23T21:57:49.279Z"
+  },
+  "QCOM": {
+    "text": "New AI‑focused edge processors and dual‑2nm chips raised concerns over shipment volumes and chip economics.",
+    "source": "stock",
+    "articleIds": [
+      "f48787c6-e989-38bd-bcc4-ddcf95b6703d",
+      "9cf824b4-c899-30c4-8d0c-7466cdad89e1"
+    ],
+    "updatedAt": "2026-09-23T21:57:55.055Z"
+  },
+  "SKHY": {
+    "text": "Analyst target hike failed to offset broader memory sector weakness, undermining confidence despite bullish outlook.",
+    "source": "stock",
+    "articleIds": [
+      "5d65f9c1-8f9c-3d37-90dd-329088df4b0f"
+    ],
+    "updatedAt": "2026-09-23T21:58:00.570Z"
+  },
+  "MBLY": {
+    "text": "Leadership reshuffle and doubts over valuation versus current sales pressure investors.",
+    "source": "stock",
+    "articleIds": [
+      "487880a3-7208-33b0-aab0-e0cb74642d42",
+      "2a50617b-1a59-380d-9d42-88b14d322805",
+      "e51d08a7-dc1f-37a0-911b-dd4080bc502e",
+      "6f650bae-3dbe-3f27-b3fd-b73506134dc0"
+    ],
+    "updatedAt": "2026-09-23T21:58:06.114Z"
+  },
+  "005930.KS": {
+    "text": "Robust demand outlook reinforced by dividend‑focused fund backing amid heightened DRAM competition in Asia",
+    "source": "stock",
+    "articleIds": [
+      "e87d9d32-caf5-3a65-b397-3b3ce1a49992",
       "3602135e-33f1-34dd-b8b9-ae5a9751ea48"
     ],
-    "updatedAt": "2026-09-23T18:10:18.633Z"
+    "updatedAt": "2026-09-23T21:58:12.016Z"
   },
   "000660.KS": {
     "text": "Exploring U.S. manufacturing partnership with Intel in Ohio, signaling growth potential and market expansion for",
@@ -116,80 +116,78 @@
     "updatedAt": "2026-09-23T07:10:31.742Z"
   },
   "AAPL": {
-    "text": "High‑cost $20k Macs eroding margins while longer iPhone 18 Pro wait times dampen consumer demand.",
+    "text": "Settlement payouts to eligible iPhone owners and costly AI‑focused Mac hardware driving investor concerns.",
     "source": "stock",
     "articleIds": [
-      "85c719a0-50e5-3df9-bec5-f1723d6716f1",
-      "78bdde6a-93ba-3679-95d8-a70e0239af11"
+      "a942b19a-1bd5-3066-99fb-900b8cbbe02c",
+      "85c719a0-50e5-3df9-bec5-f1723d6716f1"
     ],
-    "updatedAt": "2026-09-23T18:10:29.879Z"
+    "updatedAt": "2026-09-23T21:58:22.992Z"
   },
   "MSFT": {
-    "text": "$10 B Middle‑East investment commitment boosting growth outlook and regional AI infrastructure expansion.",
+    "text": "Analyst upgrades and raised price targets, bolstered by extended shareholder proposal rights through 2027.",
     "source": "stock",
     "articleIds": [
-      "c50e10dd-6226-3902-8c85-3381023cba40"
+      "87f2f4b3-94ae-38c6-aad5-741ff974d445",
+      "d58f22b9-0c1e-34a8-a98e-2ddbacfe66bc"
     ],
-    "updatedAt": "2026-09-23T18:10:35.450Z"
+    "updatedAt": "2026-09-23T21:58:28.336Z"
   },
   "GOOGL": {
-    "text": "Anthropic’s lower‑priced Claude model cuts Google Cloud revenue per workload, squeezing margins for its customers.",
+    "text": "Weakened sentiment ahead of Meta’s Connect conference and pressure from cheaper AI models by Anthropic and OpenAI.",
     "source": "stock",
     "articleIds": [
-      "11687c6b-e3e5-301a-be68-0ac22d936ba4",
-      "eeb3209d-beb2-3aee-997e-065d771fc243",
-      "f0c95ea3-7b96-3a04-82c0-08260c90b7cc"
+      "3e24d710-88cf-3aca-901e-14d9c1bf663e",
+      "c2c70bf5-17a3-3525-85de-0ea39691d908",
+      "1024ed47-8c65-3759-a83d-e0fadd71f42d",
+      "47c0be64-ef77-3933-b380-86527eb3d6b5"
     ],
-    "updatedAt": "2026-09-23T18:10:41.061Z"
+    "updatedAt": "2026-09-23T21:58:33.756Z"
   },
   "AMZN": {
-    "text": "Claude’s token‑bill cut slashes Bedrock inference fees, trimming revenue per workload despite usage boost",
-    "source": "stock",
-    "articleIds": [
-      "57e92608-4775-37f1-84c1-2d5839d6989e"
-    ],
-    "updatedAt": "2026-09-23T18:10:46.555Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-23T21:58:38.936Z"
   },
   "META": {
-    "text": "Muse AI agent’s strong performance and revenue potential, highlighted by user success stories and analyst upgrades.",
+    "text": "Muse chatbot sparked a tonal shift in AI narrative, driving heightened consumer interest and adoption.",
     "source": "stock",
     "articleIds": [
-      "537cad3d-286a-43b4-9321-e3558891e8ee",
-      "9d6ea023-7c1f-4f0a-833e-04e217e1fb2d",
-      "376ad51f-8312-43e8-b09a-690401c80e7b",
-      "6dd53d58-b2dc-371e-a7cd-e9540054ea0b"
+      "b678c7a9-67ee-4e84-9f13-8abafea7ae53",
+      "5286d1ee-e7cf-39bd-be74-c51bbf5ef68f"
     ],
-    "updatedAt": "2026-09-23T18:10:52.109Z"
+    "updatedAt": "2026-09-23T21:58:44.381Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:10:56.549Z"
+    "updatedAt": "2026-09-23T21:58:48.809Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:11:01.000Z"
+    "updatedAt": "2026-09-23T21:58:53.245Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:11:05.426Z"
+    "updatedAt": "2026-09-23T21:58:57.670Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:11:09.833Z"
+    "updatedAt": "2026-09-23T21:59:02.126Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:11:14.388Z"
+    "updatedAt": "2026-09-23T21:59:06.605Z"
   },
   "INFY.NS": {
     "text": "Funding boost to ex‑CEO’s AI venture raising $53 million, sparking investor concerns over talent drain.",
@@ -211,21 +209,20 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:11:29.807Z"
+    "updatedAt": "2026-09-23T21:59:21.364Z"
   },
   "INDEX": {
-    "text": "Investors rotating into enterprise software amid broader tech weakness.",
+    "text": "Long‑dated Treasury yields soaring to near‑two‑decade highs, prompting investors to favor enterprise software over broader tech.",
     "source": "macro",
     "articleIds": [
-      "f52d5a66-a27b-3617-80f5-634d218689ec",
-      "abee3456-c93a-3a8b-8995-913104ceab9f"
+      "f52d5a66-a27b-3617-80f5-634d218689ec"
     ],
-    "updatedAt": "2026-09-23T18:11:35.746Z"
+    "updatedAt": "2026-09-23T21:59:26.784Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-23T18:11:40.169Z"
+    "updatedAt": "2026-09-23T21:59:31.263Z"
   }
 }
