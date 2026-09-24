@@ -1,51 +1,54 @@
 {
   "INTC": {
-    "text": "valuation appears fully priced after massive 293% rally, sparking doubts about sustainable earnings growth",
+    "text": "Profit‑taking after a 293% YTD rally has pushed valuation to unsustainable levels for investors currently.",
     "source": "stock",
     "articleIds": [
+      "ff1a7cb2-04ae-32e7-8b8a-3d0b8e721eb7",
+      "b5e567c8-bcca-3183-b91a-8d9d05aaae45",
+      "3a950a05-87dd-33c3-9656-2f6593786501",
       "ce75065f-874b-3372-b3c5-2aedf013a165",
       "a4c78037-1355-3a78-ad3d-937bfbd4ab59"
     ],
-    "updatedAt": "2026-09-24T10:55:40.655Z"
+    "updatedAt": "2026-09-24T15:40:55.919Z"
   },
   "AMD": {
-    "text": "Profit‑taking after a near‑tripling rally and lofty valuation prompting rotation concerns.",
+    "text": "Profit‑taking after a massive rally and 223% year‑to‑date gain.",
     "source": "stock",
     "articleIds": [
-      "346b99a9-d6cb-3dbb-8626-848e564f037a",
-      "f0bfd8ff-3885-36cf-a677-22ebfbf1f8c8"
+      "ff1a7cb2-04ae-32e7-8b8a-3d0b8e721eb7",
+      "ceca9b04-873e-3b86-8d04-235b4cbb7798"
     ],
-    "updatedAt": "2026-09-24T05:45:16.920Z"
+    "updatedAt": "2026-09-24T15:41:02.809Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-24T10:55:50.818Z"
+    "text": "Heightened regulatory fears after AI “kill‑switch” warnings from top executives, sparking investor caution.",
+    "source": "stock",
+    "articleIds": [
+      "240b03e5-3633-3e1e-8e66-c44a519edff7"
+    ],
+    "updatedAt": "2026-09-24T15:41:08.062Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:55:55.732Z"
+    "updatedAt": "2026-09-24T15:41:12.711Z"
   },
   "SNDK": {
-    "text": "Fading memory rally as investors question lofty valuations, rising competition, and uncertain AI‑driven demand.",
-    "source": "stock",
-    "articleIds": [
-      "2aa46589-a739-3e67-b9d2-23d349855d3a",
-      "1f02ea87-5780-3e0e-9f23-18c2a01f0659",
-      "fa2c4ae6-2a41-3165-bf6f-b2e54813a765"
-    ],
-    "updatedAt": "2026-09-24T10:56:01.474Z"
-  },
-  "MU": {
-    "text": "Investors weigh lofty memory valuations, rising competition and uncertain AI demand ahead of earnings.",
+    "text": "Memory rally fizzles as investors question lofty valuations, rising competition and uncertain AI‑driven demand ahead of Micron’s earnings.",
     "source": "stock",
     "articleIds": [
       "2aa46589-a739-3e67-b9d2-23d349855d3a"
     ],
-    "updatedAt": "2026-09-24T10:56:07.229Z"
+    "updatedAt": "2026-09-24T15:41:18.047Z"
+  },
+  "MU": {
+    "text": "Overoptimistic pricing of a presumed memory shortage inflates valuation beyond earnings reality.",
+    "source": "stock",
+    "articleIds": [
+      "0e1d1541-c403-37a3-ab54-4aa338465a29"
+    ],
+    "updatedAt": "2026-09-24T15:41:23.566Z"
   },
   "AVGO": {
     "text": "Diminished growth outlook as analysts project weaker performance compared to the past five years.",
@@ -56,35 +59,38 @@
     "updatedAt": "2026-09-24T10:56:12.355Z"
   },
   "SPCX": {
-    "text": "319 million shares unlocking today, creating $49 billion insider selling pressure and dilution concerns for the company.",
+    "text": "Lockup expiry releasing over 328 million shares, valued at $48.7 billion, raising dilution concerns.",
     "source": "stock",
     "articleIds": [
-      "df0c8df9-cf95-39a1-9d0b-fb25b2ff9982",
-      "cd327a25-eceb-3a63-829d-5fd0c84b328e"
+      "21e4dcdb-bde5-3975-9d4b-c825657de694",
+      "f351cc5f-018f-32b6-bd25-6901bd4aed8a",
+      "4ea4ef27-1bfc-3937-95f2-9b73c1786012"
     ],
-    "updatedAt": "2026-09-24T10:56:19.680Z"
+    "updatedAt": "2026-09-24T15:41:34.229Z"
   },
   "MRVL": {
-    "text": "Anticipation of previously announced product launches fueling investor optimism.",
+    "text": "AI growth already priced in after months‑ahead product announcements, limiting further upside for investors",
     "source": "stock",
     "articleIds": [
+      "b6711bb9-9d5d-30fe-9574-baa73088a056",
+      "0dd411af-0709-3d31-b861-4a0de218822f",
       "7bb8dca0-c178-33d7-b027-a056b7df2a02"
     ],
-    "updatedAt": "2026-09-23T21:57:43.421Z"
+    "updatedAt": "2026-09-24T15:41:40.224Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:56:30.381Z"
+    "updatedAt": "2026-09-24T15:41:45.229Z"
   },
   "QCOM": {
-    "text": "New AI‑focused mobile chip announcements raised investor concerns over development costs and market adoption timeline.",
+    "text": "Dividend focus shifting toward higher payouts, signaling reduced reinvestment in AI growth initiatives.",
     "source": "stock",
     "articleIds": [
-      "f48787c6-e989-38bd-bcc4-ddcf95b6703d"
+      "738014f2-3806-33d8-83fe-a83a2ef21caf"
     ],
-    "updatedAt": "2026-09-24T05:46:03.007Z"
+    "updatedAt": "2026-09-24T15:41:50.572Z"
   },
   "SKHY": {
     "text": "Analyst target hike failed to offset broader memory sector weakness, undermining confidence despite bullish outlook.",
@@ -115,120 +121,116 @@
     "updatedAt": "2026-09-24T10:56:51.790Z"
   },
   "000660.KS": {
-    "text": "Launch of memory chips and talks to partner with Intel on a U.S. manufacturing site",
+    "text": "Launch of next‑gen memory chips boosting growth expectations and valuation.",
     "source": "stock",
     "articleIds": [
-      "48a58f70-efa4-3cf3-b8c4-534342a385b3",
-      "b7674bc6-de13-3614-a76d-6d8b3b0842d4"
+      "48a58f70-efa4-3cf3-b8c4-534342a385b3"
     ],
-    "updatedAt": "2026-09-24T05:46:23.384Z"
+    "updatedAt": "2026-09-24T15:42:12.143Z"
   },
   "AAPL": {
-    "text": "Fresh AI cost warnings raising concerns over profitability and potential overvaluation, pressuring investor sentiment.",
-    "source": "stock",
-    "articleIds": [
-      "1a3cd84c-76de-31c4-9efc-81468e6ef783",
-      "d37e2701-ca90-3e86-8fa6-d817a1765574",
-      "02fee728-a7ed-3f2e-97e5-a8c8fa19e399",
-      "a942b19a-1bd5-3066-99fb-900b8cbbe02c"
-    ],
-    "updatedAt": "2026-09-24T05:46:28.341Z"
-  },
-  "MSFT": {
-    "text": "Announcing expanded Copilot discounts for enterprise clients, boosting demand for its AI services and adoption.",
-    "source": "stock",
-    "articleIds": [
-      "ebe52a50-7fa4-3b51-baac-d7369c16e6e7"
-    ],
-    "updatedAt": "2026-09-24T10:57:08.411Z"
-  },
-  "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:57:13.334Z"
+    "updatedAt": "2026-09-24T15:42:17.103Z"
   },
-  "AMZN": {
-    "text": "UPS cutting Amazon shipping volume by half, shrinking logistics capacity and revenue.",
+  "MSFT": {
+    "text": "CEO’s call for an AI ‘kill switch’ sparked investor worries about backlash and development delays",
     "source": "stock",
     "articleIds": [
-      "df0ec194-b6d1-33bd-8db0-0f9693ab6a0e"
+      "240b03e5-3633-3e1e-8e66-c44a519edff7"
     ],
-    "updatedAt": "2026-09-24T10:57:18.631Z"
+    "updatedAt": "2026-09-24T15:42:22.699Z"
+  },
+  "GOOGL": {
+    "text": "Geothermal milestone achievement and successful AI‑chip space test boost confidence in diversified tech initiatives.",
+    "source": "stock",
+    "articleIds": [
+      "80cfe11a-2fab-3fb9-a7e9-d5bbc01d7fe4",
+      "5d4509ac-8c9b-3645-ab5f-6cf6a49c52cd"
+    ],
+    "updatedAt": "2026-09-24T15:42:28.156Z"
+  },
+  "AMZN": {
+    "text": "Investing $3 billion in India's quick‑commerce push, signaling heavy cash outlay amid fierce competition and market.",
+    "source": "stock",
+    "articleIds": [
+      "7c262369-021e-37cf-8838-23c9424decc3"
+    ],
+    "updatedAt": "2026-09-24T15:42:33.507Z"
   },
   "META": {
-    "text": "Muse chatbot launch and expanded hardware ecosystem boosting revenue prospects and AI narrative momentum.",
+    "text": "Launch of new smartglass lineup and Muse “holdable” chatbot igniting AI enthusiasm and consumer excitement.",
     "source": "stock",
     "articleIds": [
       "e7dc38fc-bffa-4c32-acf6-657fe665c9d3",
-      "b678c7a9-67ee-4e84-9f13-8abafea7ae53",
-      "930ac819-4579-3893-89e6-8faa362eb5c9"
+      "b678c7a9-67ee-4e84-9f13-8abafea7ae53"
     ],
-    "updatedAt": "2026-09-24T10:57:23.942Z"
+    "updatedAt": "2026-09-24T15:42:38.638Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:57:28.354Z"
+    "updatedAt": "2026-09-24T15:42:43.195Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:57:32.796Z"
+    "updatedAt": "2026-09-24T15:42:47.680Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:57:37.225Z"
+    "updatedAt": "2026-09-24T15:42:52.095Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:57:41.622Z"
+    "updatedAt": "2026-09-24T15:42:56.490Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:57:46.082Z"
+    "updatedAt": "2026-09-24T15:43:00.826Z"
   },
   "INFY.NS": {
-    "text": "Funding boost to ex‑CEO’s AI venture raising $53 million, sparking investor concerns over talent drain.",
+    "text": "Growth remains sluggish despite securing long‑term AI‑driven software contract with brake‑maker Knorr‑Bremse.",
     "source": "stock",
     "articleIds": [
+      "056dd423-ae90-3138-a1e6-cd67f6c77ef3",
       "01e484f7-8e3e-3275-ace4-31a1e37dec36"
     ],
-    "updatedAt": "2026-09-22T19:30:52.114Z"
+    "updatedAt": "2026-09-24T15:43:06.649Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:57:56.178Z"
+    "updatedAt": "2026-09-24T15:43:11.317Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:58:00.620Z"
+    "updatedAt": "2026-09-24T15:43:15.655Z"
   },
   "INDEX": {
-    "text": "Treasury yields spiking and uncertainty from the Trump‑Xi summit unsettling traders.",
+    "text": "Ongoing Middle East tensions and anticipation of upcoming US‑China talks dampened investor sentiment.",
     "source": "macro",
     "articleIds": [
-      "44c3de8a-dd69-3c8f-8115-18b378107108",
-      "ee97b314-cd5d-3e99-a189-c32f8f2ce9f5"
+      "690b52fd-1811-31e3-8462-ca43d95d8f4c"
     ],
-    "updatedAt": "2026-09-24T10:58:06.117Z"
+    "updatedAt": "2026-09-24T15:43:20.806Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-24T10:58:10.528Z"
+    "updatedAt": "2026-09-24T15:43:25.182Z"
   }
 }
