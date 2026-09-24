@@ -8,30 +8,33 @@
     "updatedAt": "2026-09-24T19:42:55.611Z"
   },
   "AMD": {
-    "text": "Breakout beyond key buy point highlights strong large‑cap momentum and growing investor confidence this year.",
+    "text": "Record $30.8 billion Taiwan chip exports and fresh price‑target upgrades fuel heightened investor optimism.",
     "source": "stock",
     "articleIds": [
-      "53eb0009-da58-362e-ac55-6783b6b3c975",
-      "5f76c4eb-503a-313f-be86-a243312eb427"
+      "5dc2a887-8827-3833-9eb8-68942b8c273a",
+      "b8eae4aa-f7ed-33bb-9966-deffb558b2ed",
+      "53eb0009-da58-362e-ac55-6783b6b3c975"
     ],
-    "updatedAt": "2026-09-24T19:43:01.030Z"
+    "updatedAt": "2026-09-24T22:55:34.008Z"
   },
   "NVDA": {
-    "text": "Market re‑rating of AI hype after valuation surge, prompting profit‑taking amid broader tech corrections.",
+    "text": "Rising Treasury yields prompting valuation concerns despite no fundamental warning.",
     "source": "stock",
     "articleIds": [
-      "11f78f02-5a79-4f73-9262-8925897b61b4"
+      "11f78f02-5a79-4f73-9262-8925897b61b4",
+      "ebfceeac-0b6b-4067-8cc8-942a50556b03"
     ],
-    "updatedAt": "2026-09-24T19:43:06.559Z"
+    "updatedAt": "2026-09-24T22:55:39.457Z"
   },
   "TSM": {
-    "text": "AI chip leadership driving demand, reinforced by institutional investors loading long‑dated call options.",
+    "text": "Collaborative shift to 12‑inch EUV photomasks, boosting scanner productivity and accelerating advanced chipmaking.",
     "source": "stock",
     "articleIds": [
-      "796ea5c1-0be6-38f9-8b7b-6d4bc89ce99f",
-      "beb40721-5b02-374f-88f9-74cc153d7f54"
+      "9719e72b-15d1-3921-95db-7883f430e216",
+      "3ab3c3eb-66c8-366d-ae1b-1bc75937dc69",
+      "796ea5c1-0be6-38f9-8b7b-6d4bc89ce99f"
     ],
-    "updatedAt": "2026-09-24T19:43:11.598Z"
+    "updatedAt": "2026-09-24T22:55:44.948Z"
   },
   "SNDK": {
     "text": "AI slowdown fears and heightened DRAM/NAND competition dampening growth expectations amid weak consumer demand currently",
@@ -43,38 +46,40 @@
     "updatedAt": "2026-09-24T19:43:17.112Z"
   },
   "MU": {
-    "text": "Higher pricing and robust demand ahead of earnings, fueling expectations of a strong quarterly performance.",
+    "text": "Analyst upgrades target by 8% amid expectations of a smoother memory‑chip cycle.",
     "source": "stock",
     "articleIds": [
-      "9627adab-daf1-3434-a88f-ee049e54d58d",
-      "b7470152-bd01-396a-a690-11df3da66f05",
-      "1313856e-8c11-32cb-9684-effe31e2eb4c",
-      "1c6483f4-fdba-35ec-abce-6b566808c2b7"
+      "24bbafbf-4155-3a19-a144-333c1731d5f5",
+      "00bc3318-0b0c-3d41-b883-9a5814816d48",
+      "a54a90ad-a14d-3ff8-9f09-e455a0eca8cf"
     ],
-    "updatedAt": "2026-09-24T19:43:22.322Z"
+    "updatedAt": "2026-09-24T22:55:57.365Z"
   },
   "AVGO": {
-    "text": "$230 billion AI delivery target failing its test, raising supply and margin concerns.",
+    "text": "Fresh AI demand fears and regulatory scrutiny casting doubt on cash‑flow sustainability.",
     "source": "stock",
     "articleIds": [
+      "d5d61afe-4cd9-332b-8484-e6d02c984f52",
       "806ae3c8-868d-3d9f-aeb0-ce6e5b99df0e",
       "73800dc9-ad56-3ed6-b696-5deea9da24e1"
     ],
-    "updatedAt": "2026-09-24T19:43:27.342Z"
+    "updatedAt": "2026-09-24T22:56:02.951Z"
   },
   "SPCX": {
-    "text": "Newly eligible 328 million shares after lockup expiry raise dilution concerns.",
-    "source": "stock",
-    "articleIds": [
-      "21e4dcdb-bde5-3975-9d4b-c825657de694"
-    ],
-    "updatedAt": "2026-09-24T19:43:32.851Z"
-  },
-  "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:43:37.752Z"
+    "updatedAt": "2026-09-24T22:56:08.029Z"
+  },
+  "MRVL": {
+    "text": "Investor skepticism after analysts deem Marvell’s AI growth already priced in.",
+    "source": "stock",
+    "articleIds": [
+      "73466a53-dbcf-3cbb-bd1c-6204dce40044",
+      "b6711bb9-9d5d-30fe-9574-baa73088a056",
+      "0dd411af-0709-3d31-b861-4a0de218822f"
+    ],
+    "updatedAt": "2026-09-24T22:56:13.841Z"
   },
   "ARM": {
     "text": "AI core royalty economics testing raises concerns over future revenue potential.",
@@ -85,14 +90,10 @@
     "updatedAt": "2026-09-24T19:43:42.929Z"
   },
   "QCOM": {
-    "text": "Apple's extended licensing pact lacks pricing specifics, prompting investor uncertainty.",
-    "source": "stock",
-    "articleIds": [
-      "538486b9-ed54-3493-83c9-40a5b31caae7",
-      "744cd2b0-c2d6-3775-ae5d-a7d96b4f1db9",
-      "0412a422-5fee-33a8-ab4d-b97c6520a9e0"
-    ],
-    "updatedAt": "2026-09-24T19:43:48.029Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-24T22:56:24.845Z"
   },
   "SKHY": {
     "text": "Analyst target hike failed to offset broader memory sector weakness, undermining confidence despite bullish outlook.",
@@ -106,15 +107,15 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:43:58.094Z"
+    "updatedAt": "2026-09-24T22:56:35.608Z"
   },
   "005930.KS": {
-    "text": "China’s CXMT hitting new DRAM production milestone, intensifying competition for Samsung’s mobile chip business market.",
+    "text": "CXMT narrowing DRAM cost gap while Samsung’s premium AI memory maintains distinct technical barriers",
     "source": "stock",
     "articleIds": [
-      "e87d9d32-caf5-3a65-b397-3b3ce1a49992"
+      "4456b8de-2f7a-379e-b192-40578cea338a"
     ],
-    "updatedAt": "2026-09-24T19:44:03.536Z"
+    "updatedAt": "2026-09-24T22:56:41.177Z"
   },
   "000660.KS": {
     "text": "Launch of next‑gen memory chips boosting growth expectations and valuation.",
@@ -125,100 +126,97 @@
     "updatedAt": "2026-09-24T15:42:12.143Z"
   },
   "AAPL": {
-    "text": "John Ternus’s debut leadership boost, sparking optimism after unprecedented performance since Tim Cook era.",
-    "source": "stock",
-    "articleIds": [
-      "5c3b5a12-3dcc-3423-b0b2-9699a36f7034",
-      "219281d0-b854-3dee-800d-f80e5360d253"
-    ],
-    "updatedAt": "2026-09-24T19:44:14.018Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-24T22:56:51.511Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:44:18.277Z"
+    "updatedAt": "2026-09-24T22:56:56.185Z"
   },
   "GOOGL": {
-    "text": "Launching orbital AI data centers and TPU tests, plus Gemini app integration driving investor optimism.",
+    "text": "Anthropic stake valued at $124 B, plus pioneering space‑based AI data‑center satellite boosting growth prospects.",
     "source": "stock",
     "articleIds": [
-      "2f6d55f1-218d-34b4-a423-18b2034fe37b",
-      "38412104-0765-38e3-9ed9-b6391f8ab531",
-      "1b7c2e25-7bc2-3b6e-a644-3c4870cbfc88"
+      "98ba4ecd-3859-372b-b0bd-ae7dc1bff9dd",
+      "1b43748b-c60c-37ae-8c5b-986180b9af23",
+      "2f6d55f1-218d-34b4-a423-18b2034fe37b"
     ],
-    "updatedAt": "2026-09-24T19:44:24.000Z"
+    "updatedAt": "2026-09-24T22:57:01.369Z"
   },
   "AMZN": {
-    "text": "Rapid AWS expansion coupled with a $1.9 B investment in driver safety tech and higher pay",
+    "text": "Opening seller data to Anthropic’s Claude after blocking Meta’s Muse signals AI strategy boost.",
     "source": "stock",
     "articleIds": [
-      "e9068a7c-580d-31a5-a4ac-ff35c047264c",
-      "719a9022-3120-3490-adc4-29fd3a678af1"
+      "47a52277-4ded-3479-8d6d-3e56623ab2ff"
     ],
-    "updatedAt": "2026-09-24T19:44:29.355Z"
+    "updatedAt": "2026-09-24T22:57:06.774Z"
   },
   "META": {
-    "text": "Massive $14 billion Scale AI investment and launch of $1,299 VR and camera‑less smart glasses lineup.",
+    "text": "Launch of Muse AI agent and AI-powered game‑creation tools fuels investor optimism and drives surge.",
     "source": "stock",
     "articleIds": [
-      "0e77d9c1-893e-48b2-a2ea-69aec136f0d8",
+      "01f91a2b-d855-4b59-b4fc-9dcbf989df91",
       "9f1b5831-d57c-4fb5-8b6e-39040ac2076f",
       "e7dc38fc-bffa-4c32-acf6-657fe665c9d3",
       "f756ec9f-c4db-4521-a464-ed9ac4e0f74d",
-      "bfb6efd4-709e-349d-ba54-02224681ae2f"
+      "b7504989-a89c-3a7d-8299-3622d2a77f2f"
     ],
-    "updatedAt": "2026-09-24T19:44:34.491Z"
+    "updatedAt": "2026-09-24T22:57:12.284Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:44:38.802Z"
+    "updatedAt": "2026-09-24T22:57:16.765Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:44:43.023Z"
+    "updatedAt": "2026-09-24T22:57:21.206Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:44:47.347Z"
+    "updatedAt": "2026-09-24T22:57:25.589Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:44:51.603Z"
+    "updatedAt": "2026-09-24T22:57:30.010Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:44:55.944Z"
+    "updatedAt": "2026-09-24T22:57:34.430Z"
   },
   "INFY.NS": {
-    "text": "Talent drain to ex‑CEO’s AI venture raising concerns over future innovation pipeline.",
+    "text": "Growth remains sluggish despite securing long‑term AI‑driven ERP contract with brake‑maker Knorr‑Bremse.",
     "source": "stock",
     "articleIds": [
+      "056dd423-ae90-3138-a1e6-cd67f6c77ef3",
       "01e484f7-8e3e-3275-ace4-31a1e37dec36"
     ],
-    "updatedAt": "2026-09-24T19:45:01.070Z"
+    "updatedAt": "2026-09-24T22:57:40.045Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:45:05.748Z"
+    "updatedAt": "2026-09-24T22:57:44.689Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:45:10.102Z"
+    "updatedAt": "2026-09-24T22:57:49.124Z"
   },
   "INDEX": {
     "text": "Ongoing Middle East tensions dampening investor sentiment ahead of upcoming US‑China discussions.",
@@ -233,6 +231,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-24T19:45:20.145Z"
+    "updatedAt": "2026-09-24T22:57:59.149Z"
   }
 }
