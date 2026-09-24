@@ -1,33 +1,37 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-23T21:57:01.194Z"
+    "text": "Only filling half of CPU demand and looming dividend cuts raise profit worries.",
+    "source": "stock",
+    "articleIds": [
+      "a4c78037-1355-3a78-ad3d-937bfbd4ab59",
+      "59bb9246-0f43-3ddf-ad06-66195c7d8f6e",
+      "84c269f3-7070-359a-829d-fa9e0a185dea"
+    ],
+    "updatedAt": "2026-09-24T00:14:48.319Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:57:06.442Z"
+    "updatedAt": "2026-09-24T00:14:53.584Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:57:11.257Z"
+    "updatedAt": "2026-09-24T00:14:58.416Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:57:16.234Z"
+    "updatedAt": "2026-09-24T00:15:03.261Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:57:21.596Z"
+    "updatedAt": "2026-09-24T00:15:08.119Z"
   },
   "MU": {
     "text": "Short position sparked by expectation memory prices will fall, threatening profitability.",
@@ -41,16 +45,16 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:57:32.087Z"
+    "updatedAt": "2026-09-24T00:15:18.832Z"
   },
   "SPCX": {
-    "text": "Impending share unlock combined with a $52 million executive sale fuels dilution and valuation worries significantly.",
+    "text": "Looming share unlock, a $52 million executive sale, and stretched valuations spook investors in the market.",
     "source": "stock",
     "articleIds": [
-      "9045c360-e192-3b88-b796-70880beda755",
-      "c44070d1-aa0d-3c04-8d8d-2f99b50ba99a"
+      "ae6b97b2-482e-3c07-a527-ea43fd29bf41",
+      "9045c360-e192-3b88-b796-70880beda755"
     ],
-    "updatedAt": "2026-09-23T21:57:37.615Z"
+    "updatedAt": "2026-09-24T00:15:24.304Z"
   },
   "MRVL": {
     "text": "Anticipation of previously announced product launches fueling investor optimism.",
@@ -88,15 +92,14 @@
     "updatedAt": "2026-09-23T21:58:00.570Z"
   },
   "MBLY": {
-    "text": "Leadership reshuffle and doubts over valuation versus current sales pressure investors.",
+    "text": "Leadership reshuffle and overvaluation concerns amid weak sales momentum and recent funding news.",
     "source": "stock",
     "articleIds": [
       "487880a3-7208-33b0-aab0-e0cb74642d42",
       "2a50617b-1a59-380d-9d42-88b14d322805",
-      "e51d08a7-dc1f-37a0-911b-dd4080bc502e",
-      "6f650bae-3dbe-3f27-b3fd-b73506134dc0"
+      "e51d08a7-dc1f-37a0-911b-dd4080bc502e"
     ],
-    "updatedAt": "2026-09-23T21:58:06.114Z"
+    "updatedAt": "2026-09-24T00:15:52.131Z"
   },
   "005930.KS": {
     "text": "Robust demand outlook reinforced by dividend‑focused fund backing amid heightened DRAM competition in Asia",
@@ -116,22 +119,21 @@
     "updatedAt": "2026-09-23T07:10:31.742Z"
   },
   "AAPL": {
-    "text": "Settlement payouts to eligible iPhone owners and costly AI‑focused Mac hardware driving investor concerns.",
+    "text": "Settlement payout to iPhone users amid Siri‑Intelligence lawsuit and Tim Draper’s criticism of Apple’s cash‑only balance sheet.",
     "source": "stock",
     "articleIds": [
-      "a942b19a-1bd5-3066-99fb-900b8cbbe02c",
-      "85c719a0-50e5-3df9-bec5-f1723d6716f1"
+      "02fee728-a7ed-3f2e-97e5-a8c8fa19e399",
+      "a942b19a-1bd5-3066-99fb-900b8cbbe02c"
     ],
-    "updatedAt": "2026-09-23T21:58:22.992Z"
+    "updatedAt": "2026-09-24T00:16:07.846Z"
   },
   "MSFT": {
-    "text": "Analyst upgrades and raised price targets, bolstered by extended shareholder proposal rights through 2027.",
+    "text": "Analysts upgraded rating and raised price target, boosting investor confidence in growth prospects, overall outlook.",
     "source": "stock",
     "articleIds": [
-      "87f2f4b3-94ae-38c6-aad5-741ff974d445",
-      "d58f22b9-0c1e-34a8-a98e-2ddbacfe66bc"
+      "87f2f4b3-94ae-38c6-aad5-741ff974d445"
     ],
-    "updatedAt": "2026-09-23T21:58:28.336Z"
+    "updatedAt": "2026-09-24T00:16:13.097Z"
   },
   "GOOGL": {
     "text": "Weakened sentiment ahead of Meta’s Connect conference and pressure from cheaper AI models by Anthropic and OpenAI.",
@@ -145,49 +147,52 @@
     "updatedAt": "2026-09-23T21:58:33.756Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-23T21:58:38.936Z"
-  },
-  "META": {
-    "text": "Muse chatbot sparked a tonal shift in AI narrative, driving heightened consumer interest and adoption.",
+    "text": "UPS cutting Amazon shipments by half, slashing a key logistics revenue stream and hurting margins.",
     "source": "stock",
     "articleIds": [
-      "b678c7a9-67ee-4e84-9f13-8abafea7ae53",
-      "5286d1ee-e7cf-39bd-be74-c51bbf5ef68f"
+      "df0ec194-b6d1-33bd-8db0-0f9693ab6a0e",
+      "2f81a44a-3f53-3352-bc5b-838988dbf2f3"
     ],
-    "updatedAt": "2026-09-23T21:58:44.381Z"
+    "updatedAt": "2026-09-24T00:16:24.280Z"
+  },
+  "META": {
+    "text": "Charging transaction fees on its new Muse AI agent and unveiling an integrated commerce stack that enables direct purchases.",
+    "source": "stock",
+    "articleIds": [
+      "6c094f6b-7518-498d-9717-26befab4098a",
+      "e7ae601b-49c2-3c7a-83be-520a036b1975"
+    ],
+    "updatedAt": "2026-09-24T00:16:29.698Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:58:48.809Z"
+    "updatedAt": "2026-09-24T00:16:33.949Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:58:53.245Z"
+    "updatedAt": "2026-09-24T00:16:38.196Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:58:57.670Z"
+    "updatedAt": "2026-09-24T00:16:42.449Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:59:02.126Z"
+    "updatedAt": "2026-09-24T00:16:46.730Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:59:06.605Z"
+    "updatedAt": "2026-09-24T00:16:50.979Z"
   },
   "INFY.NS": {
     "text": "Funding boost to ex‑CEO’s AI venture raising $53 million, sparking investor concerns over talent drain.",
@@ -209,7 +214,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:59:21.364Z"
+    "updatedAt": "2026-09-24T00:17:06.198Z"
   },
   "INDEX": {
     "text": "Long‑dated Treasury yields soaring to near‑two‑decade highs, prompting investors to favor enterprise software over broader tech.",
@@ -223,6 +228,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-23T21:59:31.263Z"
+    "updatedAt": "2026-09-24T00:17:16.122Z"
   }
 }
