@@ -16,49 +16,48 @@
     "updatedAt": "2026-09-25T20:58:57.947Z"
   },
   "NVDA": {
-    "text": "ASE Technology’s role in final chip packaging underscores a robust AI supply chain, fueling optimism.",
-    "source": "stock",
-    "articleIds": [
-      "b8eae4aa-f7ed-33bb-9966-deffb558b2ed"
-    ],
-    "updatedAt": "2026-09-25T20:59:03.286Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-25T23:53:49.217Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T20:59:08.109Z"
+    "updatedAt": "2026-09-25T23:53:53.979Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-25T20:59:13.164Z"
+    "text": "Strong AI memory demand and cleared buy points boost investor confidence in near‑term growth prospects.",
+    "source": "stock",
+    "articleIds": [
+      "e43f3c5d-0499-3bfb-bf29-5f9e5ef34889",
+      "9c392c28-9573-3d66-bbaf-087d17f68f07"
+    ],
+    "updatedAt": "2026-09-25T23:53:59.202Z"
   },
   "MU": {
-    "text": "U.S.-Iran peace optimism and falling oil prices boost market sentiment, lifting Micron in today's trading",
-    "source": "stock",
-    "articleIds": [
-      "225d690f-7913-3ffb-a43f-d4610f997f55"
-    ],
-    "updatedAt": "2026-09-25T20:59:18.919Z"
-  },
-  "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T20:59:23.335Z"
+    "updatedAt": "2026-09-25T23:54:04.163Z"
   },
-  "SPCX": {
-    "text": "Securing a $1.11 billion monthly contract and prepping Starship flight 14 fuels investor optimism.",
+  "AVGO": {
+    "text": "Market optimism as Nvidia’s $7 trillion target underscores Broadcom’s sizable valuation relevance",
     "source": "stock",
     "articleIds": [
-      "7e22365f-c329-397b-ba62-7fef8228438e",
-      "804033f9-7fd4-3d9d-be11-e339d850e423",
-      "6d48c29e-1367-39b5-99b4-a628243d31c9",
-      "dab6a876-a829-39aa-81d8-d91e3e9b2b49"
+      "2c31f60d-1d07-3178-8ab5-4cd32a783905"
     ],
-    "updatedAt": "2026-09-25T20:59:28.704Z"
+    "updatedAt": "2026-09-25T23:54:09.340Z"
+  },
+  "SPCX": {
+    "text": "Preparation for Starship Flight 14 and completed rehearsal boost investor confidence in upcoming launch schedule timeline.",
+    "source": "stock",
+    "articleIds": [
+      "473106f6-6763-38d5-b898-3f7ff08d4b61",
+      "7e22365f-c329-397b-ba62-7fef8228438e"
+    ],
+    "updatedAt": "2026-09-25T23:54:14.441Z"
   },
   "MRVL": {
     "text": "Anticipation of the upcoming investor day assessing its AI growth prospects and valuation justification.",
@@ -90,14 +89,14 @@
     "updatedAt": "2026-09-25T20:59:45.781Z"
   },
   "SKHY": {
-    "text": "Potential $150 billion IPO for Solidigm fuels optimism, suggesting massive growth and value creation.",
+    "text": "Potential $15 billion IPO of Solidigm, valuing unit at $150 billion, fuels investor optimism amid market anticipation.",
     "source": "stock",
     "articleIds": [
+      "b4ad19c6-1f38-354a-9984-35f55a82dac4",
       "2547e9e8-33e1-3a71-84dc-372834f318de",
-      "375d430b-2321-3c2d-9f93-fe4d43ccc65d",
-      "f4e07337-1ac4-3338-b00f-80720b9cec22"
+      "375d430b-2321-3c2d-9f93-fe4d43ccc65d"
     ],
-    "updatedAt": "2026-09-25T20:59:51.162Z"
+    "updatedAt": "2026-09-25T23:54:35.327Z"
   },
   "MBLY": {
     "text": "Record QNX automotive unit earnings and raised full‑year outlook driving significantly market optimism among",
@@ -108,103 +107,107 @@
     "updatedAt": "2026-09-25T17:44:01.879Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-25T21:00:01.155Z"
-  },
-  "000660.KS": {
-    "text": "Solidigm’s potential $150 billion IPO fuels optimism about future growth and capital infusion.",
+    "text": "Premium AI memory’s technical barriers keep demand strong despite CXMT narrowing the DRAM economics gap.",
     "source": "stock",
     "articleIds": [
+      "4456b8de-2f7a-379e-b192-40578cea338a"
+    ],
+    "updatedAt": "2026-09-25T23:54:45.962Z"
+  },
+  "000660.KS": {
+    "text": "Potential $15 billion Solidigm IPO boosting growth prospects and valuation expectations.",
+    "source": "stock",
+    "articleIds": [
+      "b4ad19c6-1f38-354a-9984-35f55a82dac4",
       "2547e9e8-33e1-3a71-84dc-372834f318de",
       "375d430b-2321-3c2d-9f93-fe4d43ccc65d",
       "f4e07337-1ac4-3338-b00f-80720b9cec22"
     ],
-    "updatedAt": "2026-09-25T21:00:06.156Z"
+    "updatedAt": "2026-09-25T23:54:50.979Z"
   },
   "AAPL": {
-    "text": "Outperformance of the QQQ this month fuels optimism despite analysts deeming valuation still below fair value.",
+    "text": "Outperformance versus QQQ combined with analyst undervaluation expectations spurs buying momentum toward $350 target now.",
     "source": "stock",
     "articleIds": [
+      "c98491e7-52ff-31be-a8db-6f53718eb780",
       "17587d1e-41ea-3a83-8279-1f77c115df23"
     ],
-    "updatedAt": "2026-09-25T21:00:11.823Z"
+    "updatedAt": "2026-09-25T23:54:56.076Z"
   },
   "MSFT": {
-    "text": "Copilot reboot targeting enterprise AI and cloud‑based Autopilot update boost investor confidence.",
+    "text": "Copilot reboot targeting enterprise AI, Autopilot upgrade rollout, and $10 billion Gulf cloud‑AI expansion driving momentum.",
     "source": "stock",
     "articleIds": [
       "b2262e41-7b0d-4dfd-a59c-3a3cdc9e7cc7",
       "85ea0734-d797-4c03-a7fd-6b53eaadb687",
       "4bbb806b-135f-415f-bc75-a4c8c2bd39a8",
-      "212786c2-c0cd-334e-b596-0ff398bd1df6",
-      "eba43582-5d51-31c0-9b9f-9f6f7a7ea9c9"
+      "a6b03a9d-2933-36c5-8f85-5ffdd603a7a4"
     ],
-    "updatedAt": "2026-09-25T21:00:17.403Z"
+    "updatedAt": "2026-09-25T23:55:01.732Z"
   },
   "GOOGL": {
-    "text": "$514B cloud backlog and rising AI demand lift growth outlook; veteran hiring expands talent pipeline.",
+    "text": "Massive $514 B cloud backlog and 82% revenue surge, driven by booming AI demand and Gemini Enterprise adoption.",
     "source": "stock",
     "articleIds": [
-      "c2c2399d-7263-355e-8960-c9a86b9a3b80",
-      "3ad12e94-c459-3dfb-a6d2-70c65e19aa55"
+      "c2c2399d-7263-355e-8960-c9a86b9a3b80"
     ],
-    "updatedAt": "2026-09-25T21:00:23.411Z"
+    "updatedAt": "2026-09-25T23:55:06.932Z"
   },
   "AMZN": {
-    "text": "Aggressive $200 B AI‑focused capex signals robust AWS demand, bolstering investor confidence amid quantum ambitions growth.",
+    "text": "Expanding quantum computing partnership and boosting Generac AI data‑center services fuels investor optimism in market",
     "source": "stock",
     "articleIds": [
       "00137f6d-6a12-39d6-9fa0-77a2981ba63f",
-      "0aa94b6d-db72-37f6-9f5a-e6aea47be437"
+      "97146c88-7382-3395-96f1-b11cde954901"
     ],
-    "updatedAt": "2026-09-25T21:00:29.338Z"
+    "updatedAt": "2026-09-25T23:55:12.455Z"
   },
   "META": {
-    "text": "Loss of New Mexico jury trial over Cambridge Analytica data scandal prompting investor concerns.",
+    "text": "Jury verdict finding Meta misled New Mexico users about Facebook data practices, sparking investor concerns.",
     "source": "stock",
     "articleIds": [
-      "51d991bd-ae64-3f7f-b7bb-36dfab433eda",
-      "5cc770df-c4de-38bf-bb97-b2bf434fa9d5"
+      "be32d2d2-62e7-35a4-87ce-03d8a0a909ca"
     ],
-    "updatedAt": "2026-09-25T21:00:36.190Z"
+    "updatedAt": "2026-09-25T23:55:17.788Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T21:00:40.638Z"
+    "updatedAt": "2026-09-25T23:55:22.024Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T21:00:44.954Z"
+    "updatedAt": "2026-09-25T23:55:26.308Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T21:00:49.284Z"
+    "updatedAt": "2026-09-25T23:55:30.542Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T21:00:53.723Z"
+    "updatedAt": "2026-09-25T23:55:35.210Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T21:00:58.116Z"
+    "updatedAt": "2026-09-25T23:55:39.476Z"
   },
   "INFY.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-25T21:01:02.522Z"
+    "text": "Growth remains sluggish despite securing long‑term AI‑driven ERP contract with brake‑maker Knorr‑Bremse.",
+    "source": "stock",
+    "articleIds": [
+      "056dd423-ae90-3138-a1e6-cd67f6c77ef3",
+      "01e484f7-8e3e-3275-ace4-31a1e37dec36"
+    ],
+    "updatedAt": "2026-09-25T23:55:44.982Z"
   },
   "RELIANCE.NS": {
     "text": "Government cut in windfall export taxes and announcement of a Rs 12,500 cr domestic bond issuance.",
@@ -218,21 +221,20 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T21:01:12.426Z"
+    "updatedAt": "2026-09-25T23:55:54.556Z"
   },
   "INDEX": {
-    "text": "Rising Treasury yields coupled with falling oil prices boosted investor confidence, driving broader market gains.",
+    "text": "Midday buying pressure in exchange‑traded funds lifted demand, supporting broader market momentum across U.S. equities.",
     "source": "macro",
     "articleIds": [
-      "b08d2909-8684-37a3-b456-818e7a390eb7",
-      "392049fa-a74d-3709-878a-0e6c9b579e61"
+      "b08d2909-8684-37a3-b456-818e7a390eb7"
     ],
-    "updatedAt": "2026-09-25T21:01:17.833Z"
+    "updatedAt": "2026-09-25T23:55:59.887Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-25T21:01:22.474Z"
+    "updatedAt": "2026-09-25T23:56:04.172Z"
   }
 }
