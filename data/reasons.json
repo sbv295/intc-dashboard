@@ -1,105 +1,103 @@
 {
   "INTC": {
-    "text": "Missing AI rally as investors favor Arm’s royalty-driven growth.",
+    "text": "Stagnant revenue growth compared to rapidly expanding rivals highlights weak AI momentum, pressuring valuation.",
     "source": "stock",
     "articleIds": [
-      "cdfbcc37-9b4f-3fbf-acf2-640bb5ea8811",
-      "1802b42c-5a17-3bf5-ab22-a8912694af1c"
+      "89b12a75-6c5a-3e7d-a08f-dd6e1fe304fb"
     ],
-    "updatedAt": "2026-09-25T17:42:57.949Z"
+    "updatedAt": "2026-09-25T20:58:52.825Z"
   },
   "AMD": {
-    "text": "Bank of America’s $720 target and $1 trillion market‑cap milestone lift AI‑driven server CPU outlook.",
+    "text": "ASE Technology’s role in finalizing AMD’s AI chip production boosts investor confidence.",
     "source": "stock",
     "articleIds": [
-      "a0d515ae-c7a4-30bd-add3-9e3249103717",
-      "0f500aaa-4f6f-377c-b5b5-751ea2779261",
-      "d1fd1f63-aece-32c7-b655-cf788a03dcee",
-      "62de8de5-7a60-3413-b756-31eaf71b3013"
+      "b8eae4aa-f7ed-33bb-9966-deffb558b2ed"
     ],
-    "updatedAt": "2026-09-25T17:43:03.399Z"
+    "updatedAt": "2026-09-25T20:58:57.947Z"
   },
   "NVDA": {
-    "text": "Anticipation of AI‑agent chips, robotics expansion and orbital data‑center plans fuels optimism.",
+    "text": "ASE Technology’s role in final chip packaging underscores a robust AI supply chain, fueling optimism.",
     "source": "stock",
     "articleIds": [
-      "e6a95d00-d5a7-3997-bf44-08409cc9d402"
+      "b8eae4aa-f7ed-33bb-9966-deffb558b2ed"
     ],
-    "updatedAt": "2026-09-25T17:43:08.694Z"
+    "updatedAt": "2026-09-25T20:59:03.286Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:43:13.523Z"
+    "updatedAt": "2026-09-25T20:59:08.109Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:43:18.715Z"
+    "updatedAt": "2026-09-25T20:59:13.164Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-25T17:43:23.837Z"
+    "text": "U.S.-Iran peace optimism and falling oil prices boost market sentiment, lifting Micron in today's trading",
+    "source": "stock",
+    "articleIds": [
+      "225d690f-7913-3ffb-a43f-d4610f997f55"
+    ],
+    "updatedAt": "2026-09-25T20:59:18.919Z"
   },
   "AVGO": {
-    "text": "AI compute demand and praise for its CEO’s execution boost investor confidence in the market",
-    "source": "stock",
-    "articleIds": [
-      "c686c759-1d1b-3ec0-bc9d-880072bd12b7",
-      "d0499b4c-e1ea-3bee-a37a-2029b5f3f077",
-      "241bc9e5-e9db-3a48-a85f-bec58a572d4e"
-    ],
-    "updatedAt": "2026-09-25T17:43:29.217Z"
-  },
-  "SPCX": {
-    "text": "Mizuho’s bullish call on a new $1.11 B monthly contract and upcoming chip rollout fuels optimism.",
-    "source": "stock",
-    "articleIds": [
-      "dab6a876-a829-39aa-81d8-d91e3e9b2b49",
-      "804033f9-7fd4-3d9d-be11-e339d850e423",
-      "8b1ae2f2-ef40-3b1f-b56f-335bb894cef0"
-    ],
-    "updatedAt": "2026-09-25T17:43:34.504Z"
-  },
-  "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:43:39.830Z"
+    "updatedAt": "2026-09-25T20:59:23.335Z"
+  },
+  "SPCX": {
+    "text": "Securing a $1.11 billion monthly contract and prepping Starship flight 14 fuels investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "7e22365f-c329-397b-ba62-7fef8228438e",
+      "804033f9-7fd4-3d9d-be11-e339d850e423",
+      "6d48c29e-1367-39b5-99b4-a628243d31c9",
+      "dab6a876-a829-39aa-81d8-d91e3e9b2b49"
+    ],
+    "updatedAt": "2026-09-25T20:59:28.704Z"
+  },
+  "MRVL": {
+    "text": "Anticipation of the upcoming investor day assessing its AI growth prospects and valuation justification.",
+    "source": "stock",
+    "articleIds": [
+      "b6bb8890-7cb2-38db-a3db-52d48d4a4b82"
+    ],
+    "updatedAt": "2026-09-25T20:59:34.653Z"
   },
   "ARM": {
-    "text": "Surge in AI‑CPU demand from Meta’s Muse inference workloads boosting royalty revenue expectations.",
+    "text": "Surge in AI‑driven CPU demand from Meta’s Muse agents boosting licensing and royalty revenue expectations.",
     "source": "stock",
     "articleIds": [
+      "89b12a75-6c5a-3e7d-a08f-dd6e1fe304fb",
+      "d66ade36-cef5-3f1f-9cad-0e956ef496a1",
       "cdfbcc37-9b4f-3fbf-acf2-640bb5ea8811",
-      "8efab8b6-9d68-3391-a3e3-245623b0bf57",
-      "2ee568ee-2584-3012-ab0a-35baaf19eba4",
-      "5a892c7b-46bc-39ce-89fe-62d54cdf7d06"
+      "8efab8b6-9d68-3391-a3e3-245623b0bf57"
     ],
-    "updatedAt": "2026-09-25T17:43:45.495Z"
+    "updatedAt": "2026-09-25T20:59:40.146Z"
   },
   "QCOM": {
-    "text": "Buyers reversed the Apple renewal sell‑off, buoyed by Snapdragon’s brand surge and new high‑profile partnerships.",
+    "text": "",
     "source": "stock",
     "articleIds": [
+      "4e32833e-ab95-3e77-91d1-92a514a75574",
       "82153cc2-3bf7-3648-af0e-b38a69f27278",
-      "d867bcb6-7428-42f7-ab65-c8dbc6c9d36d",
-      "cdfbcc37-9b4f-3fbf-acf2-640bb5ea8811"
+      "5f8679ff-0c38-386f-b8d3-a4f12b54984c"
     ],
-    "updatedAt": "2026-09-25T17:43:51.038Z"
+    "updatedAt": "2026-09-25T20:59:45.781Z"
   },
   "SKHY": {
-    "text": "Robust earnings outlook and accelerating semiconductor demand driving valuation uplift.",
+    "text": "Potential $150 billion IPO for Solidigm fuels optimism, suggesting massive growth and value creation.",
     "source": "stock",
     "articleIds": [
-      "f4e07337-1ac4-3338-b00f-80720b9cec22",
-      "48a58f70-efa4-3cf3-b8c4-534342a385b3"
+      "2547e9e8-33e1-3a71-84dc-372834f318de",
+      "375d430b-2321-3c2d-9f93-fe4d43ccc65d",
+      "f4e07337-1ac4-3338-b00f-80720b9cec22"
     ],
-    "updatedAt": "2026-09-25T17:43:56.212Z"
+    "updatedAt": "2026-09-25T20:59:51.162Z"
   },
   "MBLY": {
     "text": "Record QNX automotive unit earnings and raised full‑year outlook driving significantly market optimism among",
@@ -110,98 +108,103 @@
     "updatedAt": "2026-09-25T17:44:01.879Z"
   },
   "005930.KS": {
-    "text": "CXMT narrowing DRAM cost gap while Samsung’s premium AI memory maintains distinct technical barriers",
-    "source": "stock",
-    "articleIds": [
-      "4456b8de-2f7a-379e-b192-40578cea338a"
-    ],
-    "updatedAt": "2026-09-24T22:56:41.177Z"
-  },
-  "000660.KS": {
-    "text": "Earnings remain insufficient to justify current valuation, prompting concerns despite recent price gains.",
-    "source": "stock",
-    "articleIds": [
-      "f4e07337-1ac4-3338-b00f-80720b9cec22",
-      "48a58f70-efa4-3cf3-b8c4-534342a385b3"
-    ],
-    "updatedAt": "2026-09-25T17:44:12.216Z"
-  },
-  "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:44:17.234Z"
+    "updatedAt": "2026-09-25T21:00:01.155Z"
+  },
+  "000660.KS": {
+    "text": "Solidigm’s potential $150 billion IPO fuels optimism about future growth and capital infusion.",
+    "source": "stock",
+    "articleIds": [
+      "2547e9e8-33e1-3a71-84dc-372834f318de",
+      "375d430b-2321-3c2d-9f93-fe4d43ccc65d",
+      "f4e07337-1ac4-3338-b00f-80720b9cec22"
+    ],
+    "updatedAt": "2026-09-25T21:00:06.156Z"
+  },
+  "AAPL": {
+    "text": "Outperformance of the QQQ this month fuels optimism despite analysts deeming valuation still below fair value.",
+    "source": "stock",
+    "articleIds": [
+      "17587d1e-41ea-3a83-8279-1f77c115df23"
+    ],
+    "updatedAt": "2026-09-25T21:00:11.823Z"
   },
   "MSFT": {
-    "text": "Cloud‑based Autopilot update and expanded Copilot digital coworker capabilities boost AI ecosystem confidence.",
+    "text": "Copilot reboot targeting enterprise AI and cloud‑based Autopilot update boost investor confidence.",
     "source": "stock",
     "articleIds": [
+      "b2262e41-7b0d-4dfd-a59c-3a3cdc9e7cc7",
       "85ea0734-d797-4c03-a7fd-6b53eaadb687",
       "4bbb806b-135f-415f-bc75-a4c8c2bd39a8",
-      "946b33a3-aa6d-3e85-a990-28e6e58590ca"
+      "212786c2-c0cd-334e-b596-0ff398bd1df6",
+      "eba43582-5d51-31c0-9b9f-9f6f7a7ea9c9"
     ],
-    "updatedAt": "2026-09-25T17:44:22.414Z"
+    "updatedAt": "2026-09-25T21:00:17.403Z"
   },
   "GOOGL": {
-    "text": "Launch of mini orbital data center under Project Suncatcher fuels optimism for new revenue streams.",
+    "text": "$514B cloud backlog and rising AI demand lift growth outlook; veteran hiring expands talent pipeline.",
     "source": "stock",
     "articleIds": [
-      "bec83dcb-4a03-373c-95a0-ac643cc0ffcc",
-      "d1b2442b-ea0e-3d43-bb68-89a8b66416ad"
+      "c2c2399d-7263-355e-8960-c9a86b9a3b80",
+      "3ad12e94-c459-3dfb-a6d2-70c65e19aa55"
     ],
-    "updatedAt": "2026-09-25T17:44:27.698Z"
+    "updatedAt": "2026-09-25T21:00:23.411Z"
   },
   "AMZN": {
-    "text": "Massive $200 B AI‑focused capex commitment signals robust AWS demand for 2026, boosting investor confidence.",
+    "text": "Aggressive $200 B AI‑focused capex signals robust AWS demand, bolstering investor confidence amid quantum ambitions growth.",
     "source": "stock",
     "articleIds": [
+      "00137f6d-6a12-39d6-9fa0-77a2981ba63f",
       "0aa94b6d-db72-37f6-9f5a-e6aea47be437"
     ],
-    "updatedAt": "2026-09-25T17:44:33.139Z"
+    "updatedAt": "2026-09-25T21:00:29.338Z"
   },
   "META": {
-    "text": "HSBC's stark warning on Muse AI eroding confidence amid concerns over rapid rollout costs",
+    "text": "Loss of New Mexico jury trial over Cambridge Analytica data scandal prompting investor concerns.",
     "source": "stock",
     "articleIds": [
-      "ef99d436-b5a7-3744-a1de-496a3049090c"
+      "51d991bd-ae64-3f7f-b7bb-36dfab433eda",
+      "5cc770df-c4de-38bf-bb97-b2bf434fa9d5"
     ],
-    "updatedAt": "2026-09-25T17:44:38.810Z"
+    "updatedAt": "2026-09-25T21:00:36.190Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:44:43.193Z"
+    "updatedAt": "2026-09-25T21:00:40.638Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:44:47.548Z"
+    "updatedAt": "2026-09-25T21:00:44.954Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:44:51.999Z"
+    "updatedAt": "2026-09-25T21:00:49.284Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:44:56.336Z"
+    "updatedAt": "2026-09-25T21:00:53.723Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:45:00.702Z"
+    "updatedAt": "2026-09-25T21:00:58.116Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:45:05.762Z"
+    "updatedAt": "2026-09-25T21:01:02.522Z"
   },
   "RELIANCE.NS": {
     "text": "Government cut in windfall export taxes and announcement of a Rs 12,500 cr domestic bond issuance.",
@@ -215,22 +218,21 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:45:15.499Z"
+    "updatedAt": "2026-09-25T21:01:12.426Z"
   },
   "INDEX": {
-    "text": "Rising Treasury yields combined with declining oil prices lifted market sentiment.",
+    "text": "Rising Treasury yields coupled with falling oil prices boosted investor confidence, driving broader market gains.",
     "source": "macro",
     "articleIds": [
       "b08d2909-8684-37a3-b456-818e7a390eb7",
-      "392049fa-a74d-3709-878a-0e6c9b579e61",
-      "01c66279-dad3-39cd-97d6-56a85478b1cb"
+      "392049fa-a74d-3709-878a-0e6c9b579e61"
     ],
-    "updatedAt": "2026-09-25T17:45:20.738Z"
+    "updatedAt": "2026-09-25T21:01:17.833Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-25T17:45:25.103Z"
+    "updatedAt": "2026-09-25T21:01:22.474Z"
   }
 }
