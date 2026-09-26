@@ -8,26 +8,25 @@
     "updatedAt": "2026-09-25T20:58:52.825Z"
   },
   "AMD": {
-    "text": "Bank of America raised price target, citing continued momentum behind AMD’s AI and data‑center growth.",
+    "text": "Analyst upgrade and sustained AI chip demand boost confidence for continued momentum in upcoming quarters.",
     "source": "stock",
     "articleIds": [
-      "a59829b0-68d0-38aa-9ae0-30dc872bd925"
+      "a59829b0-68d0-38aa-9ae0-30dc872bd925",
+      "b8eae4aa-f7ed-33bb-9966-deffb558b2ed"
     ],
-    "updatedAt": "2026-09-26T08:59:02.027Z"
+    "updatedAt": "2026-09-26T13:40:49.767Z"
   },
   "NVDA": {
-    "text": "Strong AI growth outlook outshines Broadcom, reinforcing confidence in Nvidia’s data‑center revenue trajectory for investors.",
-    "source": "stock",
-    "articleIds": [
-      "c4f95a15-0edd-3173-89db-df6d1f819347"
-    ],
-    "updatedAt": "2026-09-26T08:59:07.262Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-26T13:40:54.102Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T08:59:11.804Z"
+    "updatedAt": "2026-09-26T13:40:58.754Z"
   },
   "SNDK": {
     "text": "Strong AI memory demand and cleared buy points boost investor confidence in near‑term growth prospects.",
@@ -39,13 +38,10 @@
     "updatedAt": "2026-09-25T23:53:59.202Z"
   },
   "MU": {
-    "text": "U.S.-Iran peace optimism and expected Q4 earnings boost from data‑center demand and higher pricing",
-    "source": "stock",
-    "articleIds": [
-      "225d690f-7913-3ffb-a43f-d4610f997f55",
-      "f06017ff-49f8-3fd8-b07d-3bf075317793"
-    ],
-    "updatedAt": "2026-09-26T08:59:22.347Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-26T13:41:09.417Z"
   },
   "AVGO": {
     "text": "Increasing demand for custom AI accelerators and networking tech fuels growth amid the AI boom.",
@@ -89,10 +85,9 @@
     "articleIds": [
       "dac0cc87-c83a-3704-a008-19b2371d7529",
       "a23a37e6-3d59-3f4b-b7a7-1f927d618313",
-      "4e32833e-ab95-3e77-91d1-92a514a75574",
-      "82153cc2-3bf7-3648-af0e-b38a69f27278"
+      "4e32833e-ab95-3e77-91d1-92a514a75574"
     ],
-    "updatedAt": "2026-09-26T03:02:01.523Z"
+    "updatedAt": "2026-09-26T13:41:35.263Z"
   },
   "SKHY": {
     "text": "Launch of AI‑focused venture arm and prospect of a $15 billion Solidigm IPO boost growth outlook.",
@@ -146,16 +141,15 @@
     "updatedAt": "2026-09-26T09:00:13.972Z"
   },
   "MSFT": {
-    "text": "Enterprise AI rollout with Copilot reboot and Autopilot update fuels renewed investor confidence.",
+    "text": "Enterprise AI rollouts and Copilot’s “AI operating system” positioning boost investor confidence in Microsoft’s growth prospects.",
     "source": "stock",
     "articleIds": [
-      "b2262e41-7b0d-4dfd-a59c-3a3cdc9e7cc7",
-      "85ea0734-d797-4c03-a7fd-6b53eaadb687",
-      "4bbb806b-135f-415f-bc75-a4c8c2bd39a8",
+      "c8a8b29f-d7b2-4377-a17b-8d465754485e",
+      "8362ce47-c19b-39c3-87a7-5687d57530e2",
       "f4b5ec2e-ebec-3b01-9b43-6ff11ad23f1f",
       "f5c4e369-1322-314d-885b-7489d6262388"
     ],
-    "updatedAt": "2026-09-26T03:02:33.427Z"
+    "updatedAt": "2026-09-26T13:42:06.803Z"
   },
   "GOOGL": {
     "text": "Experimental AI satellite launch and upcoming Waymo Singapore rollout boost growth outlook.",
@@ -167,46 +161,51 @@
     "updatedAt": "2026-09-26T09:00:24.780Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-26T09:00:29.823Z"
+    "text": "Massive $220 B data‑center investment delivering tangible returns, reinforcing confidence despite no dividend.",
+    "source": "stock",
+    "articleIds": [
+      "1c65430f-a720-3a2f-a4ba-584c010125e9",
+      "30027d31-a786-3242-af73-7560d1b49577"
+    ],
+    "updatedAt": "2026-09-26T13:42:16.987Z"
   },
   "META": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-26T09:00:34.417Z"
+    "text": "Outdated valuation metric after Muse mic drop undermines investor confidence, triggering sell‑off across the market",
+    "source": "stock",
+    "articleIds": [
+      "0eba56e1-2d68-4717-af10-240a887fd5af"
+    ],
+    "updatedAt": "2026-09-26T13:42:22.135Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T09:00:38.698Z"
+    "updatedAt": "2026-09-26T13:42:26.777Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T09:00:42.952Z"
+    "updatedAt": "2026-09-26T13:42:31.089Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T09:00:47.250Z"
+    "updatedAt": "2026-09-26T13:42:35.312Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T09:00:51.589Z"
+    "updatedAt": "2026-09-26T13:42:39.703Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T09:00:55.832Z"
+    "updatedAt": "2026-09-26T13:42:44.003Z"
   },
   "INFY.NS": {
     "text": "Growth remains sluggish despite securing a long‑term AI‑driven deal with brake‑maker Knorr‑Bremse.",
@@ -228,7 +227,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T09:01:10.143Z"
+    "updatedAt": "2026-09-26T13:42:58.501Z"
   },
   "INDEX": {
     "text": "Surge in semiconductor‑focused ETF buying fuels investor optimism, lifting broader market momentum.",
@@ -243,6 +242,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-26T09:01:19.682Z"
+    "updatedAt": "2026-09-26T13:43:07.573Z"
   }
 }
