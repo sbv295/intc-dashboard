@@ -17,16 +17,18 @@
     "updatedAt": "2026-09-26T17:34:05.151Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-26T17:34:09.710Z"
+    "text": "Weighing a $10 billion Anthropic IPO stake, signaling continued AI investment confidence.",
+    "source": "stock",
+    "articleIds": [
+      "37a12ae3-67eb-370b-8721-b237685bf9b3"
+    ],
+    "updatedAt": "2026-09-26T20:31:19.498Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T17:34:14.659Z"
+    "updatedAt": "2026-09-26T20:31:24.313Z"
   },
   "SNDK": {
     "text": "Strong AI memory demand and cleared buy points boost investor confidence in near‑term growth prospects.",
@@ -38,14 +40,15 @@
     "updatedAt": "2026-09-25T23:53:59.202Z"
   },
   "MU": {
-    "text": "AI demand and strategic customer agreements boosting earnings outlook, positioning it near a buy point.",
+    "text": "Announced $100 billion Syracuse fab and bullish RBC outlook on SCAs boosting AI‑driven memory demand prospects.",
     "source": "stock",
     "articleIds": [
-      "0eaa92ad-2d84-349a-ac98-9261deb1f78a",
+      "60e218e3-a6c1-3981-b7e6-3227b941e061",
       "473106f6-6763-38d5-b898-3f7ff08d4b61",
+      "0eaa92ad-2d84-349a-ac98-9261deb1f78a",
       "505d724a-5422-3f2b-983d-a78ff065b554"
     ],
-    "updatedAt": "2026-09-26T17:34:25.336Z"
+    "updatedAt": "2026-09-26T20:31:35.662Z"
   },
   "AVGO": {
     "text": "Record quarterly earnings and expanding role as custom AI accelerator supplier boost investor confidence significantly.",
@@ -59,15 +62,15 @@
     "updatedAt": "2026-09-26T17:34:31.009Z"
   },
   "SPCX": {
-    "text": "Elon Musk’s head‑table appearance at the White House dinner boosted investor confidence in policy support.",
+    "text": "ARK tokenizes its SpaceX holding on Ethereum, unlocking $1.3 billion liquidity and investor interest in markets.",
     "source": "stock",
     "articleIds": [
-      "fd2c12db-11fe-3380-9230-8befd8ae8818",
+      "cc0bb724-d7df-3dd1-85a3-e535c28d51ed",
       "473106f6-6763-38d5-b898-3f7ff08d4b61",
-      "964bced0-aa78-3ffb-aee0-d8a58df4b555",
-      "6d48c29e-1367-39b5-99b4-a628243d31c9"
+      "fd2c12db-11fe-3380-9230-8befd8ae8818",
+      "964bced0-aa78-3ffb-aee0-d8a58df4b555"
     ],
-    "updatedAt": "2026-09-26T17:34:36.401Z"
+    "updatedAt": "2026-09-26T20:31:47.065Z"
   },
   "MRVL": {
     "text": "Anticipation of the upcoming investor day assessing its AI growth prospects and valuation justification.",
@@ -138,31 +141,30 @@
     "updatedAt": "2026-09-26T17:35:14.217Z"
   },
   "AAPL": {
-    "text": "Launch of first foldable iPhone Duo with on‑device Siri AI, boosting premium hardware appeal and differentiation.",
+    "text": "Launch of foldable iPhone Duo with on‑device AI and entry into booming fitness‑tracker market driving.",
     "source": "stock",
     "articleIds": [
+      "c20180e3-074c-3409-a7cb-ac35926810e5",
       "4d0a12b7-86a4-3d14-888b-abaa98270a72"
     ],
-    "updatedAt": "2026-09-26T17:35:19.309Z"
+    "updatedAt": "2026-09-26T20:32:29.912Z"
   },
   "MSFT": {
-    "text": "Launch of enterprise‑focused Copilot AI reboot, positioning it as an AI operating system for workplaces.",
+    "text": "Copilot evolving into an AI operating system and expanded enterprise AI offerings boost investor confidence.",
     "source": "stock",
     "articleIds": [
-      "b2262e41-7b0d-4dfd-a59c-3a3cdc9e7cc7",
       "8362ce47-c19b-39c3-87a7-5687d57530e2",
       "f4b5ec2e-ebec-3b01-9b43-6ff11ad23f1f"
     ],
-    "updatedAt": "2026-09-26T17:35:24.813Z"
+    "updatedAt": "2026-09-26T20:32:35.117Z"
   },
   "GOOGL": {
-    "text": "Experimental AI satellite launch and upcoming Waymo Singapore rollout boost growth outlook.",
+    "text": "Accelerated Project Suncatcher launch, deploying experimental AI satellite in October, boosting confidence in space‑based data infrastructure.",
     "source": "stock",
     "articleIds": [
-      "79aed81a-b462-3d34-a610-b75f7369142d",
-      "0a6d7ea4-363b-3534-9401-c1895cde9f40"
+      "79aed81a-b462-3d34-a610-b75f7369142d"
     ],
-    "updatedAt": "2026-09-26T09:00:24.780Z"
+    "updatedAt": "2026-09-26T20:32:40.168Z"
   },
   "AMZN": {
     "text": "$220 billion data‑center spend signaling strong growth prospects and long‑term revenue upside.",
@@ -177,37 +179,37 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T17:35:40.932Z"
+    "updatedAt": "2026-09-26T20:32:50.759Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T17:35:45.299Z"
+    "updatedAt": "2026-09-26T20:32:55.144Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T17:35:49.747Z"
+    "updatedAt": "2026-09-26T20:32:59.450Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T17:35:54.121Z"
+    "updatedAt": "2026-09-26T20:33:03.831Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T17:35:58.504Z"
+    "updatedAt": "2026-09-26T20:33:08.155Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T17:36:02.941Z"
+    "updatedAt": "2026-09-26T20:33:12.502Z"
   },
   "INFY.NS": {
     "text": "Growth remains sluggish despite securing a long‑term AI‑driven deal with brake‑maker Knorr‑Bremse.",
@@ -229,7 +231,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-26T17:36:17.773Z"
+    "updatedAt": "2026-09-26T20:33:27.315Z"
   },
   "INDEX": {
     "text": "Surge in semiconductor‑focused ETF buying fuels investor optimism, lifting broader market momentum.",
@@ -244,6 +246,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-26T17:36:27.196Z"
+    "updatedAt": "2026-09-26T20:33:36.913Z"
   }
 }
