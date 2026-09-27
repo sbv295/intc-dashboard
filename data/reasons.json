@@ -1,27 +1,30 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-27T14:56:26.054Z"
+    "text": "excessive hype after a 40% September surge fueling valuation concerns",
+    "source": "stock",
+    "articleIds": [
+      "64bb5443-7534-3abb-9933-5928ee309eac"
+    ],
+    "updatedAt": "2026-09-27T18:53:00.102Z"
   },
   "AMD": {
-    "text": "Accelerating AI accelerator and data‑center growth via Edge AI partnership and Anthropic server CPU demand",
+    "text": "Expanding AI accelerator presence and new Edge AI partnerships driving heightened growth expectations.",
     "source": "stock",
     "articleIds": [
       "a89abf7b-fbf3-352c-aa43-f504d728bc21",
       "0d25e81f-e27b-3d22-9256-b88646e76319",
       "104d85c9-dc96-3d8e-84f3-a9b4f2ec3ddc",
-      "d8060d56-e2d2-33da-b91e-ac08f5d55df8",
-      "8598c84c-03cc-3675-8e5a-822fe4dfdb4c"
+      "d8060d56-e2d2-33da-b91e-ac08f5d55df8"
     ],
-    "updatedAt": "2026-09-27T14:56:31.715Z"
+    "updatedAt": "2026-09-27T18:53:05.553Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-27T14:56:36.142Z"
+    "text": "Potential Chinese approval for Alibaba and ByteDance to purchase RTX Pro 5500 chips fuels optimism in market",
+    "source": "stock",
+    "articleIds": [
+      "73c96d78-eaed-3e83-869b-ffcd78a3704a"
+    ],
+    "updatedAt": "2026-09-27T18:53:10.824Z"
   },
   "TSM": {
     "text": "valuation doubts as market may overprice future cash generation potential.",
@@ -42,38 +45,37 @@
     "updatedAt": "2026-09-27T14:56:46.392Z"
   },
   "MU": {
-    "text": "Anticipation of Q4 earnings and the 512 GB RDIMM launch, plus bullish RBC outlook on AI‑driven SCAs.",
+    "text": "Guidance of an 86% gross margin and RBC’s bullish view on SCAs fueling optimism.",
     "source": "stock",
     "articleIds": [
-      "58cae698-80e3-31da-9b57-216957b2fc58",
       "473106f6-6763-38d5-b898-3f7ff08d4b61",
+      "6185e950-f87e-385c-af48-b335b724c349",
       "0eaa92ad-2d84-349a-ac98-9261deb1f78a"
     ],
-    "updatedAt": "2026-09-27T14:56:51.859Z"
+    "updatedAt": "2026-09-27T18:53:27.496Z"
   },
   "AVGO": {
+    "text": "AI infrastructure demand surge and record‑high earnings, up 43% YoY, after strongest quarter, boosting confidence.",
+    "source": "stock",
+    "articleIds": [
+      "e170f0a7-31d2-3259-9e4e-604f099b869c",
+      "ae8244b5-6c4c-3188-8b65-9e82e3665cb7",
+      "3263abe2-da4c-3889-9445-bebd2e3ff2d3",
+      "c4f95a15-0edd-3173-89db-df6d1f819347"
+    ],
+    "updatedAt": "2026-09-27T18:53:33.041Z"
+  },
+  "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T14:56:56.764Z"
-  },
-  "SPCX": {
-    "text": "Anticipation of revenue‑generating Starship launch on Sept. 28 after costly demos fuels buying interest among investors.",
-    "source": "stock",
-    "articleIds": [
-      "02ece381-105c-3424-af52-3c1552254782",
-      "473106f6-6763-38d5-b898-3f7ff08d4b61"
-    ],
-    "updatedAt": "2026-09-27T14:57:01.975Z"
+    "updatedAt": "2026-09-27T18:53:38.166Z"
   },
   "MRVL": {
-    "text": "Raised fiscal 2028 revenue outlook to $18 B, driven by strong connectivity demand boosting growth prospects.",
-    "source": "stock",
-    "articleIds": [
-      "db22a2e7-0da6-3fe5-b68c-9ed284915dd0",
-      "b6bb8890-7cb2-38db-a3db-52d48d4a4b82"
-    ],
-    "updatedAt": "2026-09-27T09:44:11.433Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-27T18:53:43.047Z"
   },
   "ARM": {
     "text": "Surge in AI‑driven CPU demand from Meta’s Muse agents boosting licensing and royalty revenue expectations.",
@@ -87,14 +89,15 @@
     "updatedAt": "2026-09-25T20:59:40.146Z"
   },
   "QCOM": {
-    "text": "Renewed global patent license agreement with Apple, boosting revenue outlook and investor confidence.",
+    "text": "Renewed global patent license with Apple plus 61% automotive growth and new AI‑focused smartphone chipsets.",
     "source": "stock",
     "articleIds": [
+      "8b856d97-b3d1-3a90-af7d-f776a4536923",
       "4f90de41-a028-3082-8263-e54fd79f4682",
       "dac0cc87-c83a-3704-a008-19b2371d7529",
       "a23a37e6-3d59-3f4b-b7a7-1f927d618313"
     ],
-    "updatedAt": "2026-09-27T09:44:21.801Z"
+    "updatedAt": "2026-09-27T18:53:53.602Z"
   },
   "SKHY": {
     "text": "Launch of AI‑focused venture arm and prospect of a $15 billion Solidigm IPO boost growth outlook.",
@@ -120,7 +123,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T14:57:32.442Z"
+    "updatedAt": "2026-09-27T18:54:08.456Z"
   },
   "000660.KS": {
     "text": "Launching AI‑focused venture arm and eyeing $15 billion Solidigm IPO fuels growth optimism among investors today.",
@@ -143,76 +146,76 @@
     "updatedAt": "2026-09-27T14:57:43.985Z"
   },
   "MSFT": {
-    "text": "Integrating full Office suite into Copilot and launching agent‑style features spurs AI‑cloud demand, boosting investor confidence.",
+    "text": "Strong AI push, Azure milestone and expanding backlog signal long‑term revenue growth, fueling investor optimism.",
     "source": "stock",
     "articleIds": [
-      "99b6b5b1-1a8b-3565-8506-6e2a1305aba7"
+      "867d5ca4-11e6-32b4-9bea-e545ef2e8286",
+      "7591f02f-ea32-320b-9f2c-3e149eaf7fa9"
     ],
-    "updatedAt": "2026-09-27T14:57:48.842Z"
+    "updatedAt": "2026-09-27T18:54:25.047Z"
   },
   "GOOGL": {
-    "text": "",
+    "text": "Competing aggressively in the Agentic AI race against Meta’s Muse, boosting investor confidence.",
     "source": "stock",
     "articleIds": [
-      "28ea89b2-9e05-3410-ae0c-456feabefd85",
-      "a4651216-f4bf-3aca-a9ea-4f538c690eb6"
+      "e4a583f3-c7e0-3eca-95de-cd7dd72aa1d8"
     ],
-    "updatedAt": "2026-09-27T14:57:54.380Z"
+    "updatedAt": "2026-09-27T18:54:30.672Z"
   },
   "AMZN": {
-    "text": "Rolling out Seller Central tools enabling sellers to manage eBay, Shopify, TikTok, and Walmart listings, plus Prime delivery for multichannel merchants.",
+    "text": "Introducing a inbound shipment for eight countries and adopting Costco‑style member perks boosts seller efficiency.",
     "source": "stock",
     "articleIds": [
       "2a14fba3-33d0-3a69-b4ef-7772070b14a7",
-      "6f8029f9-c3fa-323c-bd5d-55ed7d0f64b8",
-      "d8902bf1-e6a5-3511-a807-624b7948eeea",
-      "6f5638d8-9945-38c2-8fa0-b1c75535a8ca"
+      "6f8029f9-c3fa-323c-bd5d-55ed7d0f64b8"
     ],
-    "updatedAt": "2026-09-27T14:57:59.667Z"
+    "updatedAt": "2026-09-27T18:54:35.970Z"
   },
   "META": {
-    "text": "Amazon’s Muse integration blocked by Amazon’s new Seller Central rollout, limiting Meta’s platform reach.",
+    "text": "Found liable for 44 million New Mexico violations, facing up to $219.5 b penalties and potential court",
     "source": "stock",
     "articleIds": [
-      "d8902bf1-e6a5-3511-a807-624b7948eeea"
+      "b5f0ee46-47d1-3b9f-bd60-e62bd413c83d"
     ],
-    "updatedAt": "2026-09-27T14:58:04.906Z"
+    "updatedAt": "2026-09-27T18:54:41.574Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T14:58:09.260Z"
+    "updatedAt": "2026-09-27T18:54:45.948Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T14:58:13.597Z"
+    "updatedAt": "2026-09-27T18:54:50.286Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T14:58:17.883Z"
+    "updatedAt": "2026-09-27T18:54:54.570Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T14:58:22.156Z"
+    "updatedAt": "2026-09-27T18:54:58.862Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T14:58:26.462Z"
+    "updatedAt": "2026-09-27T18:55:03.201Z"
   },
   "INFY.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-27T14:58:31.400Z"
+    "text": "Growth remains sluggish despite securing a long‑term AI‑driven deal with brake‑maker Knorr‑Bremse.",
+    "source": "stock",
+    "articleIds": [
+      "056dd423-ae90-3138-a1e6-cd67f6c77ef3"
+    ],
+    "updatedAt": "2026-09-27T18:55:08.412Z"
   },
   "RELIANCE.NS": {
     "text": "Government cut in windfall export taxes and announcement of a Rs 12,500 cr domestic bond issuance.",
@@ -226,7 +229,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T14:58:40.604Z"
+    "updatedAt": "2026-09-27T18:55:17.924Z"
   },
   "INDEX": {
     "text": "ETF inflows boost demand as investors favor semiconductor exposure and broader equity exposure amid optimism.",
@@ -241,6 +244,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-27T14:58:50.476Z"
+    "updatedAt": "2026-09-27T18:55:27.447Z"
   }
 }
