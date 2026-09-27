@@ -8,74 +8,76 @@
     "updatedAt": "2026-09-25T20:58:52.825Z"
   },
   "AMD": {
-    "text": "Bank of America raised its price target, citing exploding data‑center revenue and $1 trillion market cap.",
+    "text": "Collaboration accelerating Edge AI workloads and strong server CPU demand driving investor optimism.",
     "source": "stock",
     "articleIds": [
+      "0d25e81f-e27b-3d22-9256-b88646e76319",
       "104d85c9-dc96-3d8e-84f3-a9b4f2ec3ddc",
       "d8060d56-e2d2-33da-b91e-ac08f5d55df8",
-      "a59829b0-68d0-38aa-9ae0-30dc872bd925"
+      "8598c84c-03cc-3675-8e5a-822fe4dfdb4c"
     ],
-    "updatedAt": "2026-09-27T03:06:38.783Z"
+    "updatedAt": "2026-09-27T09:43:35.352Z"
   },
   "NVDA": {
-    "text": "Projected multi‑billion‑dollar AI earnings by 2030 fueling investor optimism.",
+    "text": "Investor optimism from Buffett‑style fundamentals: durable moat, consistent cash generation, and prudent capital allocation",
     "source": "stock",
     "articleIds": [
-      "a4651216-f4bf-3aca-a9ea-4f538c690eb6"
+      "21ebada8-e1f2-3fe9-a328-f2099d6e893d"
     ],
-    "updatedAt": "2026-09-27T03:06:43.963Z"
+    "updatedAt": "2026-09-27T09:43:40.488Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:06:48.901Z"
+    "updatedAt": "2026-09-27T09:43:45.446Z"
   },
   "SNDK": {
-    "text": "Strong AI memory demand and cleared buy points boost investor confidence in near‑term growth prospects.",
+    "text": "AI‑driven NAND demand surge as hyperscalers boost spending on training and inference workloads.",
     "source": "stock",
     "articleIds": [
+      "f89d2d25-f112-3c02-8216-8aea9ba9b150",
       "e43f3c5d-0499-3bfb-bf29-5f9e5ef34889",
-      "9c392c28-9573-3d66-bbaf-087d17f68f07"
+      "9c392c28-9573-3d66-bbaf-087d17f68f07",
+      "aaa00953-12e2-3ee1-8ebd-d5c0c7c40613"
     ],
-    "updatedAt": "2026-09-25T23:53:59.202Z"
+    "updatedAt": "2026-09-27T09:43:50.663Z"
   },
   "MU": {
-    "text": "Announced $100 billion Syracuse fab and bullish RBC outlook on SCAs boosting AI‑driven memory demand prospects.",
+    "text": "Anticipation of Q4 earnings and 512GB RDIMM launch fuels investor optimism ahead of buy points.",
     "source": "stock",
     "articleIds": [
-      "60e218e3-a6c1-3981-b7e6-3227b941e061",
+      "58cae698-80e3-31da-9b57-216957b2fc58",
       "473106f6-6763-38d5-b898-3f7ff08d4b61",
-      "0eaa92ad-2d84-349a-ac98-9261deb1f78a",
-      "505d724a-5422-3f2b-983d-a78ff065b554"
+      "60e218e3-a6c1-3981-b7e6-3227b941e061",
+      "0eaa92ad-2d84-349a-ac98-9261deb1f78a"
     ],
-    "updatedAt": "2026-09-26T20:31:35.662Z"
+    "updatedAt": "2026-09-27T09:43:55.818Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:07:04.753Z"
+    "updatedAt": "2026-09-27T09:44:00.757Z"
   },
   "SPCX": {
-    "text": "ARK tokenizes its SpaceX holding on Ethereum, unlocking $1.3 billion liquidity and investor interest for growth.",
+    "text": "Anticipation of upcoming major announcements and tokenized fund exposure driving investor optimism.",
     "source": "stock",
     "articleIds": [
-      "cc0bb724-d7df-3dd1-85a3-e535c28d51ed",
       "473106f6-6763-38d5-b898-3f7ff08d4b61",
-      "fd2c12db-11fe-3380-9230-8befd8ae8818",
-      "62b403c8-1083-3136-8274-085a462051f0",
-      "964bced0-aa78-3ffb-aee0-d8a58df4b555"
+      "cc0bb724-d7df-3dd1-85a3-e535c28d51ed",
+      "fd2c12db-11fe-3380-9230-8befd8ae8818"
     ],
-    "updatedAt": "2026-09-27T03:07:10.520Z"
+    "updatedAt": "2026-09-27T09:44:05.975Z"
   },
   "MRVL": {
-    "text": "Anticipation of the upcoming investor day assessing its AI growth prospects and valuation justification.",
+    "text": "Raised fiscal 2028 revenue outlook to $18 B, driven by strong connectivity demand boosting growth prospects.",
     "source": "stock",
     "articleIds": [
+      "db22a2e7-0da6-3fe5-b68c-9ed284915dd0",
       "b6bb8890-7cb2-38db-a3db-52d48d4a4b82"
     ],
-    "updatedAt": "2026-09-25T20:59:34.653Z"
+    "updatedAt": "2026-09-27T09:44:11.433Z"
   },
   "ARM": {
     "text": "Surge in AI‑driven CPU demand from Meta’s Muse agents boosting licensing and royalty revenue expectations.",
@@ -89,14 +91,14 @@
     "updatedAt": "2026-09-25T20:59:40.146Z"
   },
   "QCOM": {
-    "text": "Renewed global patent license agreement with Apple, securing future licensing revenue.",
+    "text": "Renewed global patent license agreement with Apple, boosting revenue outlook and investor confidence.",
     "source": "stock",
     "articleIds": [
+      "4f90de41-a028-3082-8263-e54fd79f4682",
       "dac0cc87-c83a-3704-a008-19b2371d7529",
-      "a23a37e6-3d59-3f4b-b7a7-1f927d618313",
-      "4e32833e-ab95-3e77-91d1-92a514a75574"
+      "a23a37e6-3d59-3f4b-b7a7-1f927d618313"
     ],
-    "updatedAt": "2026-09-26T13:41:35.263Z"
+    "updatedAt": "2026-09-27T09:44:21.801Z"
   },
   "SKHY": {
     "text": "Launch of AI‑focused venture arm and prospect of a $15 billion Solidigm IPO boost growth outlook.",
@@ -138,32 +140,29 @@
     "updatedAt": "2026-09-26T17:35:14.217Z"
   },
   "AAPL": {
-    "text": "Anticipation of a new fitness tracker entering a rapidly expanding market fuels investor optimism.",
+    "text": "Strong demand for new Duo foldable iPhone and expanding fitness tracker market boosting investor optimism.",
     "source": "stock",
     "articleIds": [
-      "c20180e3-074c-3409-a7cb-ac35926810e5"
+      "d48e75f4-7ef2-3b4b-8146-397b433aa22b",
+      "c20180e3-074c-3409-a7cb-ac35926810e5",
+      "392195c4-efab-3945-829a-45e2b1d8f514"
     ],
-    "updatedAt": "2026-09-27T03:07:53.491Z"
+    "updatedAt": "2026-09-27T09:44:47.913Z"
   },
   "MSFT": {
-    "text": "Copilot evolving into an AI operating system, reshaping growth narrative and boosting investor confidence significantly",
+    "text": "Copilot’s full Office integration boosting AI utility and accelerating Azure growth expectations.",
     "source": "stock",
     "articleIds": [
-      "8362ce47-c19b-39c3-87a7-5687d57530e2"
+      "99b6b5b1-1a8b-3565-8506-6e2a1305aba7",
+      "8498591d-3a8a-3020-bc88-4c3082506d13"
     ],
-    "updatedAt": "2026-09-27T03:07:58.811Z"
+    "updatedAt": "2026-09-27T09:44:52.783Z"
   },
   "GOOGL": {
-    "text": "Project Suncatcher’s inaugural space test of TPUs, showcasing AI hardware leadership and boosting investor confidence.",
-    "source": "stock",
-    "articleIds": [
-      "a4651216-f4bf-3aca-a9ea-4f538c690eb6",
-      "2137906b-3c0c-3af3-9c55-bbd8e3a70ba2",
-      "cc35ef7a-176e-3a74-8b90-9c02cc9a9dcb",
-      "6e2334ec-63d4-3e1d-aa51-344f61e392aa",
-      "7608fbc8-5467-30ac-86f7-010c34e199fe"
-    ],
-    "updatedAt": "2026-09-27T03:08:04.410Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-27T09:44:57.663Z"
   },
   "AMZN": {
     "text": "Long‑term backup‑generator supply agreement for its data‑center fleet, boosting revenue outlook.",
@@ -177,43 +176,43 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:08:14.839Z"
+    "updatedAt": "2026-09-27T09:45:07.855Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:08:19.258Z"
+    "updatedAt": "2026-09-27T09:45:12.143Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:08:23.646Z"
+    "updatedAt": "2026-09-27T09:45:16.470Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:08:28.018Z"
+    "updatedAt": "2026-09-27T09:45:20.744Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:08:32.415Z"
+    "updatedAt": "2026-09-27T09:45:25.015Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:08:36.846Z"
+    "updatedAt": "2026-09-27T09:45:29.355Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:08:41.966Z"
+    "updatedAt": "2026-09-27T09:45:34.357Z"
   },
   "RELIANCE.NS": {
     "text": "Government cut in windfall export taxes and announcement of a Rs 12,500 cr domestic bond issuance.",
@@ -227,21 +226,22 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:08:51.383Z"
+    "updatedAt": "2026-09-27T09:45:43.561Z"
   },
   "INDEX": {
-    "text": "Surge in semiconductor‑focused ETF buying fuels investor optimism, lifting broader market momentum.",
+    "text": "Strong demand for high‑yield covered‑call funds and semiconductor exposure fuels ETF inflows, supporting market momentum.",
     "source": "macro",
     "articleIds": [
+      "97a90416-d3bd-3b4c-8cb7-6c47a8ba7531",
       "02710dd2-5912-331d-8ead-8991e179b67c",
       "b08d2909-8684-37a3-b456-818e7a390eb7"
     ],
-    "updatedAt": "2026-09-26T03:03:30.064Z"
+    "updatedAt": "2026-09-27T09:45:48.672Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-27T03:09:00.969Z"
+    "updatedAt": "2026-09-27T09:45:52.953Z"
   }
 }
