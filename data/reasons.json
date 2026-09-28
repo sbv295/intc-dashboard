@@ -20,13 +20,12 @@
     "updatedAt": "2026-09-27T21:48:26.790Z"
   },
   "NVDA": {
-    "text": "",
+    "text": "Superior AI chip demand and data‑center growth outpacing SpaceX hype.",
     "source": "stock",
     "articleIds": [
-      "81b175ff-2c3d-3f28-9bf3-57eacb0595be",
-      "2146d96b-cef8-32b4-889c-2a60e4972d28"
+      "81b175ff-2c3d-3f28-9bf3-57eacb0595be"
     ],
-    "updatedAt": "2026-09-27T21:48:32.530Z"
+    "updatedAt": "2026-09-28T00:14:30.271Z"
   },
   "TSM": {
     "text": "valuation appears stretched, questioning cash generation versus market‑priced expectations",
@@ -48,32 +47,42 @@
     "updatedAt": "2026-09-27T14:56:46.392Z"
   },
   "MU": {
-    "text": "Guidance of an 86% gross margin and RBC’s bullish view on SCAs fueling optimism.",
+    "text": "Anticipation of Q4 earnings and 512 GB RDIMM launch, plus strategic customer agreements boosting AI‑driven demand.",
     "source": "stock",
     "articleIds": [
       "473106f6-6763-38d5-b898-3f7ff08d4b61",
-      "6185e950-f87e-385c-af48-b335b724c349",
+      "58cae698-80e3-31da-9b57-216957b2fc58",
       "0eaa92ad-2d84-349a-ac98-9261deb1f78a"
     ],
-    "updatedAt": "2026-09-27T18:53:27.496Z"
+    "updatedAt": "2026-09-28T00:14:46.186Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-27T21:48:53.662Z"
+    "text": "Record fiscal Q3 results and raised AI-driven earnings outlook boost analyst price targets.",
+    "source": "stock",
+    "articleIds": [
+      "e170f0a7-31d2-3259-9e4e-604f099b869c",
+      "aea028ec-6219-3d44-9f27-8200e869677c",
+      "ae8244b5-6c4c-3188-8b65-9e82e3665cb7",
+      "3263abe2-da4c-3889-9445-bebd2e3ff2d3",
+      "c4f95a15-0edd-3173-89db-df6d1f819347"
+    ],
+    "updatedAt": "2026-09-28T00:14:51.301Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T21:48:58.818Z"
+    "updatedAt": "2026-09-28T00:14:56.215Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-27T21:49:03.882Z"
+    "text": "Raised fiscal 2028 revenue outlook to $18 billion, propelled by robust connectivity demand.",
+    "source": "stock",
+    "articleIds": [
+      "e170f0a7-31d2-3259-9e4e-604f099b869c",
+      "db22a2e7-0da6-3fe5-b68c-9ed284915dd0",
+      "b6bb8890-7cb2-38db-a3db-52d48d4a4b82"
+    ],
+    "updatedAt": "2026-09-28T00:15:01.706Z"
   },
   "ARM": {
     "text": "Surge in AI‑driven CPU demand from Meta’s Muse agents boosting licensing and royalty revenue expectations.",
@@ -121,33 +130,38 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T21:49:29.209Z"
+    "updatedAt": "2026-09-28T00:15:27.614Z"
   },
   "000660.KS": {
-    "text": "Launching AI‑focused venture arm and eyeing $15 billion Solidigm IPO fuels growth optimism among investors today.",
+    "text": "Launch of AI‑focused venture arm and prospect of a $15 billion Solidigm IPO boost growth outlook",
     "source": "stock",
     "articleIds": [
       "66c4b2f4-0a89-3b3c-b289-b6f226dc6295",
+      "7c9d11de-8ac6-3669-aa00-0f64cfd6b32c",
       "b4ad19c6-1f38-354a-9984-35f55a82dac4",
       "2547e9e8-33e1-3a71-84dc-372834f318de",
       "375d430b-2321-3c2d-9f93-fe4d43ccc65d"
     ],
-    "updatedAt": "2026-09-26T17:35:14.217Z"
+    "updatedAt": "2026-09-28T00:15:32.956Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-27T21:49:40.005Z"
-  },
-  "MSFT": {
-    "text": "Embedding GitHub Copilot’s coding engine into Office Copilot and confronting Anthropic fuels investor optimism.",
+    "text": "Debut of the foldable iPhone Duo under new CEO Ternus ignites excitement and revenue optimism.",
     "source": "stock",
     "articleIds": [
-      "3c67168b-9d7c-368f-9b5d-2a6878b407b0",
-      "867d5ca4-11e6-32b4-9bea-e545ef2e8286"
+      "fdce35b5-37c9-3fe1-a474-3ddf06f4cbb7",
+      "ad88b7a0-56a7-3b99-a10c-65d20e102397",
+      "cbb53dab-f947-37c6-b1d5-716385638299",
+      "2146d96b-cef8-32b4-889c-2a60e4972d28"
     ],
-    "updatedAt": "2026-09-27T21:49:45.487Z"
+    "updatedAt": "2026-09-28T00:15:38.485Z"
+  },
+  "MSFT": {
+    "text": "Integration of GitHub Copilot’s coding engine into the Copilot app boosts developer productivity appeal significantly.",
+    "source": "stock",
+    "articleIds": [
+      "3c67168b-9d7c-368f-9b5d-2a6878b407b0"
+    ],
+    "updatedAt": "2026-09-28T00:15:43.596Z"
   },
   "GOOGL": {
     "text": "Anticipation of Gemini 4 launch fuels optimism as Alphabet nears a pivotal AI breakthrough for growth.",
@@ -159,14 +173,13 @@
     "updatedAt": "2026-09-27T21:49:50.758Z"
   },
   "AMZN": {
-    "text": "Accelerating cloud growth and new multi‑country inbound shipping program boosting profitability expectations among investors.",
+    "text": "Partnering with Prysmian and Rio Tinto for low‑carbon aluminum data‑center cables boosts growth outlook.",
     "source": "stock",
     "articleIds": [
-      "4edda801-696f-3656-8ca4-439c38a47d4f",
-      "2a14fba3-33d0-3a69-b4ef-7772070b14a7",
-      "6f8029f9-c3fa-323c-bd5d-55ed7d0f64b8"
+      "f95f3817-5263-3d7a-9f3d-895f2e573d46",
+      "4edda801-696f-3656-8ca4-439c38a47d4f"
     ],
-    "updatedAt": "2026-09-27T21:49:55.758Z"
+    "updatedAt": "2026-09-28T00:15:54.127Z"
   },
   "META": {
     "text": "Jury verdict found Meta misled New Mexico residents about Facebook data handling, violating the state’s unfair practices act.",
@@ -181,31 +194,31 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T21:50:05.801Z"
+    "updatedAt": "2026-09-28T00:16:03.599Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T21:50:10.353Z"
+    "updatedAt": "2026-09-28T00:16:08.359Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T21:50:14.631Z"
+    "updatedAt": "2026-09-28T00:16:12.655Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T21:50:18.931Z"
+    "updatedAt": "2026-09-28T00:16:16.885Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T21:50:23.223Z"
+    "updatedAt": "2026-09-28T00:16:21.143Z"
   },
   "INFY.NS": {
     "text": "Growth remains sluggish despite securing a long‑term AI‑driven deal with brake‑maker Knorr‑Bremse.",
@@ -227,7 +240,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-27T21:50:37.905Z"
+    "updatedAt": "2026-09-28T00:16:35.565Z"
   },
   "INDEX": {
     "text": "Six firms’ strong balance sheets neutralizing high‑yield rate pressure, sustaining market momentum.",
@@ -244,6 +257,6 @@
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-27T21:50:48.116Z"
+    "updatedAt": "2026-09-28T00:16:45.227Z"
   }
 }
