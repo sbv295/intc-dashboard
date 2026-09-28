@@ -9,52 +9,48 @@
     "updatedAt": "2026-09-27T21:48:21.105Z"
   },
   "AMD": {
-    "text": "Investor confidence surges as AMD’s $1 trillion valuation underscores its expanding AI system and accelerator ambitions.",
-    "source": "stock",
-    "articleIds": [
-      "33b5f28f-89d8-33c1-9497-bd5cb3cfccb3",
-      "a89abf7b-fbf3-352c-aa43-f504d728bc21",
-      "0d25e81f-e27b-3d22-9256-b88646e76319",
-      "104d85c9-dc96-3d8e-84f3-a9b4f2ec3ddc"
-    ],
-    "updatedAt": "2026-09-27T21:48:26.790Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-28T06:14:00.423Z"
   },
   "NVDA": {
-    "text": "Superior AI chip demand and data‑center growth outpacing SpaceX hype.",
+    "text": "Anticipation of Beijing allowing ByteDance and Alibaba to buy Nvidia’s lower‑end GPUs fuels investor optimism.",
     "source": "stock",
     "articleIds": [
-      "81b175ff-2c3d-3f28-9bf3-57eacb0595be"
+      "03279dc0-47b9-3a98-b2f0-da1748145379",
+      "b390ce37-f0b6-3c3b-8951-92eed1c4ce61"
     ],
-    "updatedAt": "2026-09-28T00:14:30.271Z"
+    "updatedAt": "2026-09-28T06:14:05.592Z"
   },
   "TSM": {
-    "text": "valuation appears stretched, questioning cash generation versus market‑priced expectations",
+    "text": "valuation perceived as over‑priced versus realistic cash generation prospects, prompting investor caution amid ongoing earnings scrutiny",
     "source": "stock",
     "articleIds": [
-      "8dc475dd-a143-3d1d-a661-c245e0a03d98",
-      "4f1f4d5e-7f45-328f-b48b-cc43b08ffd22"
+      "8dc475dd-a143-3d1d-a661-c245e0a03d98"
     ],
-    "updatedAt": "2026-09-27T21:48:37.853Z"
+    "updatedAt": "2026-09-28T06:14:10.932Z"
   },
   "SNDK": {
-    "text": "record results and rising AI‑driven NAND demand boosting investor confidence.",
+    "text": "$14 billion buyback boost plus rising AI‑driven NAND demand fueling investor optimism.",
     "source": "stock",
     "articleIds": [
-      "9ce4e4a5-d7bf-3c36-b8bb-be516b1cb0c1",
-      "f89d2d25-f112-3c02-8216-8aea9ba9b150",
-      "e43f3c5d-0499-3bfb-bf29-5f9e5ef34889"
+      "9940ed2d-44fb-34dc-98ed-79a19fae17b8",
+      "f89d2d25-f112-3c02-8216-8aea9ba9b150"
     ],
-    "updatedAt": "2026-09-27T14:56:46.392Z"
+    "updatedAt": "2026-09-28T06:14:16.016Z"
   },
   "MU": {
-    "text": "Anticipation of Q4 earnings and 512 GB RDIMM launch, plus strategic customer agreements boosting AI‑driven demand.",
+    "text": "AI‑driven demand and strong memory pricing boost confidence ahead of the upcoming earnings report.",
     "source": "stock",
     "articleIds": [
+      "03279dc0-47b9-3a98-b2f0-da1748145379",
+      "681ef32b-652f-38ef-aae9-0da200bfe184",
+      "ca674843-da3d-3e54-b75e-fa33bbd8d7c1",
       "473106f6-6763-38d5-b898-3f7ff08d4b61",
-      "58cae698-80e3-31da-9b57-216957b2fc58",
-      "0eaa92ad-2d84-349a-ac98-9261deb1f78a"
+      "77aa851d-3807-3b99-ac2e-69448d13b891"
     ],
-    "updatedAt": "2026-09-28T00:14:46.186Z"
+    "updatedAt": "2026-09-28T06:14:21.395Z"
   },
   "AVGO": {
     "text": "Record fiscal Q3 results and raised AI-driven earnings outlook boost analyst price targets.",
@@ -72,7 +68,7 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T00:14:56.215Z"
+    "updatedAt": "2026-09-28T06:14:31.857Z"
   },
   "MRVL": {
     "text": "Raised fiscal 2028 revenue outlook to $18 billion, propelled by robust connectivity demand.",
@@ -96,27 +92,23 @@
     "updatedAt": "2026-09-25T20:59:40.146Z"
   },
   "QCOM": {
-    "text": "Renewed global patent license with Apple plus 61% automotive growth and new AI‑focused smartphone chipsets.",
+    "text": "Renewed global patent license agreement with Apple and 61% automotive growth, raising non‑handset target to $40 B.",
     "source": "stock",
     "articleIds": [
       "8b856d97-b3d1-3a90-af7d-f776a4536923",
-      "4f90de41-a028-3082-8263-e54fd79f4682",
-      "dac0cc87-c83a-3704-a008-19b2371d7529",
-      "a23a37e6-3d59-3f4b-b7a7-1f927d618313"
+      "dac0cc87-c83a-3704-a008-19b2371d7529"
     ],
-    "updatedAt": "2026-09-27T18:53:53.602Z"
+    "updatedAt": "2026-09-28T06:14:48.397Z"
   },
   "SKHY": {
-    "text": "Launch of AI‑focused venture arm and prospect of a $15 billion Solidigm IPO boost growth outlook.",
+    "text": "Potential $15 billion Solidigm IPO valuation at $150 billion fuels growth optimism for its NAND business and AI expansion.",
     "source": "stock",
     "articleIds": [
+      "8b22eb5f-d8d2-372c-b92f-b4e7dea60f65",
       "66c4b2f4-0a89-3b3c-b289-b6f226dc6295",
-      "7c9d11de-8ac6-3669-aa00-0f64cfd6b32c",
-      "b4ad19c6-1f38-354a-9984-35f55a82dac4",
-      "2547e9e8-33e1-3a71-84dc-372834f318de",
-      "375d430b-2321-3c2d-9f93-fe4d43ccc65d"
+      "7c9d11de-8ac6-3669-aa00-0f64cfd6b32c"
     ],
-    "updatedAt": "2026-09-26T03:02:06.790Z"
+    "updatedAt": "2026-09-28T06:14:54.237Z"
   },
   "MBLY": {
     "text": "Record QNX automotive unit earnings and raised full‑year outlook driving significantly market optimism among",
@@ -127,41 +119,39 @@
     "updatedAt": "2026-09-25T17:44:01.879Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T00:15:27.614Z"
+    "updatedAt": "2026-09-28T06:15:04.080Z"
   },
   "000660.KS": {
-    "text": "Launch of AI‑focused venture arm and prospect of a $15 billion Solidigm IPO boost growth outlook",
+    "text": "Potential US IPO of Solidigm raising ownership‑dilution worries and future earnings uncertainty.",
     "source": "stock",
     "articleIds": [
-      "66c4b2f4-0a89-3b3c-b289-b6f226dc6295",
-      "7c9d11de-8ac6-3669-aa00-0f64cfd6b32c",
-      "b4ad19c6-1f38-354a-9984-35f55a82dac4",
-      "2547e9e8-33e1-3a71-84dc-372834f318de",
-      "375d430b-2321-3c2d-9f93-fe4d43ccc65d"
+      "c7472f5f-a9f2-3827-be3d-6333259ae740",
+      "8b22eb5f-d8d2-372c-b92f-b4e7dea60f65",
+      "34682d2b-6ea9-3ca0-8dfa-18a2663f777e"
     ],
-    "updatedAt": "2026-09-28T00:15:32.956Z"
+    "updatedAt": "2026-09-28T06:15:09.445Z"
   },
   "AAPL": {
-    "text": "Debut of the foldable iPhone Duo under new CEO Ternus ignites excitement and revenue optimism.",
+    "text": "Australian regulatory focus on social media boosting prospects, while dismissal of Musk‑led AI antitrust suit removes legal headwinds.",
     "source": "stock",
     "articleIds": [
-      "fdce35b5-37c9-3fe1-a474-3ddf06f4cbb7",
       "ad88b7a0-56a7-3b99-a10c-65d20e102397",
-      "cbb53dab-f947-37c6-b1d5-716385638299",
-      "2146d96b-cef8-32b4-889c-2a60e4972d28"
+      "cbb53dab-f947-37c6-b1d5-716385638299"
     ],
-    "updatedAt": "2026-09-28T00:15:38.485Z"
+    "updatedAt": "2026-09-28T06:15:14.634Z"
   },
   "MSFT": {
-    "text": "Integration of GitHub Copilot’s coding engine into the Copilot app boosts developer productivity appeal significantly.",
+    "text": "Comprehensive Copilot overhaul adding Home, Code, Autopilot workspace plus announced massive data‑center expansion to support AI workloads.",
     "source": "stock",
     "articleIds": [
+      "1388158f-3d3b-326e-bf0f-7561526f379e",
+      "41231ceb-9a08-39ce-a3bd-0515a83aa66d",
       "3c67168b-9d7c-368f-9b5d-2a6878b407b0"
     ],
-    "updatedAt": "2026-09-28T00:15:43.596Z"
+    "updatedAt": "2026-09-28T06:15:19.655Z"
   },
   "GOOGL": {
     "text": "Anticipation of Gemini 4 launch fuels optimism as Alphabet nears a pivotal AI breakthrough for growth.",
@@ -173,52 +163,53 @@
     "updatedAt": "2026-09-27T21:49:50.758Z"
   },
   "AMZN": {
-    "text": "Partnering with Prysmian and Rio Tinto for low‑carbon aluminum data‑center cables boosts growth outlook.",
+    "text": "Advocating AI safety while securing low‑carbon data‑center cables, reinforcing growth outlook and investor confidence optimism.",
     "source": "stock",
     "articleIds": [
+      "1b0922dc-0ed6-324c-a190-db055efc3050",
       "f95f3817-5263-3d7a-9f3d-895f2e573d46",
       "4edda801-696f-3656-8ca4-439c38a47d4f"
     ],
-    "updatedAt": "2026-09-28T00:15:54.127Z"
+    "updatedAt": "2026-09-28T06:15:30.429Z"
   },
   "META": {
-    "text": "Jury verdict found Meta misled New Mexico residents about Facebook data handling, violating the state’s unfair practices act.",
+    "text": "New Mexico jury verdict finding Meta misled residents about Facebook data handling.",
     "source": "stock",
     "articleIds": [
-      "71aa7ca6-e576-38d7-a06f-7d8ea3a98b94",
-      "b5f0ee46-47d1-3b9f-bd60-e62bd413c83d"
+      "a3fd4dbe-ec62-3bcb-a958-4107c8fffd37",
+      "71aa7ca6-e576-38d7-a06f-7d8ea3a98b94"
     ],
-    "updatedAt": "2026-09-27T21:50:01.558Z"
+    "updatedAt": "2026-09-28T06:15:35.599Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T00:16:03.599Z"
+    "updatedAt": "2026-09-28T06:15:40.175Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T00:16:08.359Z"
+    "updatedAt": "2026-09-28T06:15:44.482Z"
   },
   "DEEPAKFERT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T00:16:12.655Z"
+    "updatedAt": "2026-09-28T06:15:48.794Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T00:16:16.885Z"
+    "updatedAt": "2026-09-28T06:15:53.168Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T00:16:21.143Z"
+    "updatedAt": "2026-09-28T06:15:57.520Z"
   },
   "INFY.NS": {
     "text": "Growth remains sluggish despite securing a long‑term AI‑driven deal with brake‑maker Knorr‑Bremse.",
@@ -229,34 +220,31 @@
     "updatedAt": "2026-09-27T18:55:08.412Z"
   },
   "RELIANCE.NS": {
-    "text": "Government cut in windfall export taxes and announcement of a Rs 12,500 cr domestic bond issuance.",
-    "source": "stock",
-    "articleIds": [
-      "d0ec11ad-056a-3ece-b6d5-86c3dbf64246"
-    ],
-    "updatedAt": "2026-09-25T07:01:22.512Z"
-  },
-  "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T00:16:35.565Z"
+    "updatedAt": "2026-09-28T06:16:07.777Z"
+  },
+  "ASIANPAINT.NS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-28T06:16:12.191Z"
   },
   "INDEX": {
-    "text": "Six firms’ strong balance sheets neutralizing high‑yield rate pressure, sustaining market momentum.",
+    "text": "Six firms’ robust balance sheets are neutralizing rate‑pressure effects, sustaining investor confidence despite high Treasury yields.",
     "source": "macro",
     "articleIds": [
       "29d09feb-cb75-3e7c-a25f-2c44214d5858",
       "97a90416-d3bd-3b4c-8cb7-6c47a8ba7531",
-      "02710dd2-5912-331d-8ead-8991e179b67c",
-      "b08d2909-8684-37a3-b456-818e7a390eb7"
+      "02710dd2-5912-331d-8ead-8991e179b67c"
     ],
-    "updatedAt": "2026-09-27T21:50:43.822Z"
+    "updatedAt": "2026-09-28T06:16:17.493Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-09-28T00:16:45.227Z"
+    "updatedAt": "2026-09-28T06:16:21.935Z"
   }
 }
