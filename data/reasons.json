@@ -1,51 +1,53 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-28T21:00:11.041Z"
+    "text": "Disappointing quarterly earnings coupled with weaker‑than‑expected guidance on future revenue.",
+    "source": "stock",
+    "articleIds": [
+      "daa60517-6735-388e-bc98-e2ad7f7d2fdd"
+    ],
+    "updatedAt": "2026-09-29T00:55:33.958Z"
   },
   "AMD": {
-    "text": "",
+    "text": "acquiring Fei‑Fei Li’s World Labs for $8.2 billion, raising dilution concerns and integration uncertainty",
     "source": "stock",
     "articleIds": [
-      "c97226b7-3634-3157-b923-ef68d084b93a"
+      "02949969-e219-4164-903b-4e09c30cde76",
+      "662ecdca-9dcb-38c0-97fe-8f2bc45fc8e4",
+      "5ac969ac-e572-3e98-86ae-f66ca6f970d1",
+      "caf7ba70-59cc-3f83-b2ba-689de4a39224",
+      "5fb5c839-35ec-3ef0-861e-52200fb70eb6"
     ],
-    "updatedAt": "2026-09-28T21:00:17.236Z"
+    "updatedAt": "2026-09-29T00:55:39.608Z"
   },
   "NVDA": {
-    "text": "Announced a massive boost to its share‑buyback program, signaling the company believes it’s undervalued.",
+    "text": "$150 billion share‑buyback authorization, the largest ever, boosting investor confidence and driving the price surge.",
     "source": "stock",
     "articleIds": [
-      "f0546300-2c27-4d28-82f6-02ffde2c49e9",
-      "7ebfdb57-47a7-4a02-a808-ecc4aeb7d7a1",
-      "6a0d5bec-6282-34da-9a32-b1201eb11ccc"
+      "0c6c6b7e-ca93-4f21-85c3-99d565f5a283",
+      "4f274dd5-7ad1-4d1a-97af-46acf158494c",
+      "d3d65b6a-fb82-42b5-8983-e576be57db92",
+      "aab40f2c-a553-44d2-9e41-bbd0f6e3087a",
+      "50baa67b-93a6-396f-82ee-218fab2de56a"
     ],
-    "updatedAt": "2026-09-28T21:00:22.841Z"
+    "updatedAt": "2026-09-29T00:55:45.512Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T21:00:27.959Z"
+    "updatedAt": "2026-09-29T00:55:50.767Z"
   },
   "SNDK": {
-    "text": "OpenAI halted its AI model training, sparking broader AI hardware fatigue concerns for the company.",
-    "source": "stock",
-    "articleIds": [
-      "2f3dfc8a-4746-364d-94df-1d974701f488",
-      "352183a6-9429-365f-8441-1d6ae1a29e87",
-      "12661be9-a494-368e-84c6-37b08d2a613c"
-    ],
-    "updatedAt": "2026-09-28T21:00:34.364Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-29T00:55:55.848Z"
   },
   "MU": {
-    "text": "Guidance showing AI‑memory margins may not sustain added capacity and $50 billion memory test.",
-    "source": "stock",
-    "articleIds": [
-      "d6b82ce9-7270-32bf-a774-99a12b85b563"
-    ],
-    "updatedAt": "2026-09-28T21:00:39.961Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-29T00:56:00.544Z"
   },
   "AVGO": {
     "text": "Forecast $115 B revenue target raises conversion bar, prompting concerns over sustained hyperscaler deployment in the market.",
@@ -64,14 +66,15 @@
     "updatedAt": "2026-09-28T21:00:51.572Z"
   },
   "MRVL": {
-    "text": "AI hardware fatigue from OpenAI halting model training and reliance on a few hyperscaler partners.",
+    "text": "Heavy reliance on a few hyperscaler customers amid growing AI hardware fatigue concerns.",
     "source": "stock",
     "articleIds": [
+      "40663e75-cbfc-3679-b246-9ab433c87cfe",
+      "eb177e98-996e-3347-8e9e-5a0f8ef1b091",
       "9051be90-ca73-3645-8a68-99acb4fa4867",
-      "352183a6-9429-365f-8441-1d6ae1a29e87",
-      "eb4de593-12b5-3106-a1c5-43fe8b5009a1"
+      "352183a6-9429-365f-8441-1d6ae1a29e87"
     ],
-    "updatedAt": "2026-09-28T21:00:56.790Z"
+    "updatedAt": "2026-09-29T00:56:17.407Z"
   },
   "ARM": {
     "text": "$25 billion loan tied to its price pressuring investors amid SoftBank stake concerns.",
@@ -84,12 +87,13 @@
     "updatedAt": "2026-09-28T21:01:02.443Z"
   },
   "QCOM": {
-    "text": "Broader chip sell‑off triggered by Arm’s $25 billion loan tied to its share price pressure overall",
+    "text": "Samsung 2nm pricing standoff delaying manufacturing talks to 2027 amid broader tech selloff from rising yields.",
     "source": "stock",
     "articleIds": [
+      "83b44021-d2c7-3169-8ad2-aefd829df56c",
       "eb4de593-12b5-3106-a1c5-43fe8b5009a1"
     ],
-    "updatedAt": "2026-09-28T21:01:09.413Z"
+    "updatedAt": "2026-09-29T00:56:28.568Z"
   },
   "SKHY": {
     "text": "Rubin Memory integration spotlight and Bloomberg’s $100 B Solidigm IPO valuation sparking shareholder value concerns.",
@@ -110,118 +114,108 @@
     "updatedAt": "2026-09-28T21:01:20.824Z"
   },
   "005930.KS": {
-    "text": "AI‑RAN contracts with Korean carriers expanding chip business, prompting investor concerns amid market volatility.",
+    "text": "Investing $1 billion alongside KKR and Nvidia into Helix AI infrastructure fuels growth optimism for its future.",
     "source": "stock",
     "articleIds": [
-      "1e5367dd-64ba-37a2-9f21-b44b6b74e2fa",
-      "f7a2ebc2-c079-3c9f-b8bf-e28819f5b03e"
+      "50baa67b-93a6-396f-82ee-218fab2de56a",
+      "c907793b-c39d-3591-acde-52cbb64bf7b2"
     ],
-    "updatedAt": "2026-09-28T21:01:27.163Z"
+    "updatedAt": "2026-09-29T00:56:45.192Z"
   },
   "000660.KS": {
-    "text": "Potential $100 billion Solidigm IPO sparks investor concerns, prompting a sharp sell‑off amid market uncertainty today.",
+    "text": "Potential gains from Intel’s $100 billion U.S. chipmaking expansion, offering SK Hynix a new growth avenue.",
     "source": "stock",
     "articleIds": [
-      "f73f9cb5-75ae-3bef-8981-723dc5f7fb14",
-      "ce789ac3-b264-30a0-8894-5f0642823339",
-      "f7a2ebc2-c079-3c9f-b8bf-e28819f5b03e",
-      "53e7bb4e-3d17-31e6-8328-80ca61984190"
+      "eb39f777-5a63-3b0c-895b-da32a28f8529"
     ],
-    "updatedAt": "2026-09-28T21:01:32.596Z"
+    "updatedAt": "2026-09-29T00:56:50.632Z"
   },
   "AAPL": {
-    "text": "$5.7 billion jury verdict on haptic‑technology patents spurring investor concerns over massive liability.",
-    "source": "stock",
-    "articleIds": [
-      "c07e1dd8-bc74-3a95-96d8-7ea7085eba55"
-    ],
-    "updatedAt": "2026-09-28T21:01:38.331Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-29T00:56:55.094Z"
   },
   "MSFT": {
-    "text": "AI adoption gap widening to 12.6 points, highlighting slower uptake in the Global South.",
+    "text": "Michael Burry warned of $3 trillion hidden AI‑related risks from off‑balance‑sheet data‑center financing, sparking investor concern.",
     "source": "stock",
     "articleIds": [
-      "7bd9fa56-3b11-360d-801e-a1e8595d3f6b",
-      "be119da3-2e08-37e9-a07a-4f00be8fb7ed"
+      "5df116ec-391f-3aee-8361-58f438bb9eda",
+      "6b13a316-edd0-3562-a705-0c7e5f879ace"
     ],
-    "updatedAt": "2026-09-28T21:01:43.512Z"
+    "updatedAt": "2026-09-29T00:57:00.521Z"
   },
   "GOOGL": {
-    "text": "€403 million EU privacy fine amid heightened regulatory scrutiny and record AI‑infrastructure spending plans.",
+    "text": "Investor worries that Alphabet is lagging in the AI race after Meta’s groundbreaking Muse launch.",
     "source": "stock",
     "articleIds": [
-      "84f34ace-a9a8-34e9-8808-d2418bf17d62",
-      "bb96f805-1f17-33aa-b102-36ae48577855",
-      "52671945-63f4-3928-9878-00d7332a090f"
+      "aae7b90c-a2a2-3e0f-a03f-10becf8546d0"
     ],
-    "updatedAt": "2026-09-28T21:01:48.499Z"
+    "updatedAt": "2026-09-29T00:57:05.834Z"
   },
   "AMZN": {
-    "text": "Refusing Meta’s Muse integration, sparking loyalty concerns and prompting investor skepticism over platform strategy overall.",
+    "text": "Broader market weakness amplified Amazon’s decline today.",
     "source": "stock",
     "articleIds": [
-      "1f39dcd2-c588-37fc-952d-17594a076cf1",
-      "27a7ddb2-3b6d-3251-b97c-21ec5380397c"
+      "9a5efefa-592c-3ce1-b010-8df0349f74ab"
     ],
-    "updatedAt": "2026-09-28T21:01:54.053Z"
+    "updatedAt": "2026-09-29T00:57:11.342Z"
   },
   "META": {
-    "text": "Intense competition from OpenAI’s upcoming DevDay spotlight, raising concerns over Meta’s AI leadership.",
-    "source": "stock",
-    "articleIds": [
-      "b98b6905-ff10-31ab-a2e2-c39a394f5ff2"
-    ],
-    "updatedAt": "2026-09-28T21:01:59.658Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-29T00:57:16.294Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T21:02:04.158Z"
+    "updatedAt": "2026-09-29T00:57:20.638Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T21:02:08.592Z"
+    "updatedAt": "2026-09-29T00:57:24.967Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T21:02:12.986Z"
+    "updatedAt": "2026-09-29T00:57:29.305Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T21:02:17.451Z"
+    "updatedAt": "2026-09-29T00:57:33.666Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T21:02:21.750Z"
+    "updatedAt": "2026-09-29T00:57:37.980Z"
   },
   "INFY.NS": {
-    "text": "Securing a partnership with Chainlink to access 1.7 billion bank accounts, boosting growth prospects.",
+    "text": "Securing a long‑term AI‑driven enterprise software contract with brake‑maker Knorr‑Bremse, boosting growth outlook.",
     "source": "stock",
     "articleIds": [
-      "d94aa35d-0add-34a5-b0bc-e776fb459522"
+      "056dd423-ae90-3138-a1e6-cd67f6c77ef3"
     ],
-    "updatedAt": "2026-09-28T14:54:12.124Z"
+    "updatedAt": "2026-09-29T00:57:43.501Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T21:02:32.352Z"
+    "updatedAt": "2026-09-29T00:57:48.073Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-28T21:02:36.801Z"
+    "updatedAt": "2026-09-29T00:57:52.405Z"
   },
   "INDEX": {
     "text": "inflation concerns resurfacing, weighing on investor sentiment across the market",
@@ -233,9 +227,11 @@
     "updatedAt": "2026-09-28T21:02:42.400Z"
   },
   "INDEX_IN": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-09-28T21:02:47.426Z"
+    "text": "Foreign investors selling amid rising oil concerns.",
+    "source": "macro",
+    "articleIds": [
+      "db9beb50-0274-3f85-a853-ab7d0038df47"
+    ],
+    "updatedAt": "2026-09-29T00:58:02.462Z"
   }
 }
