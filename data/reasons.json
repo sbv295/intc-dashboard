@@ -1,222 +1,229 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T10:12:44.086Z"
+    "text": "Easing yield pressures and fading AI doubts reviving confidence in semiconductor demand.",
+    "source": "stock",
+    "articleIds": [
+      "3e9d174c-c6bc-3a4e-97e7-fb57832acf0d"
+    ],
+    "updatedAt": "2026-09-30T16:36:50.624Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T10:12:48.973Z"
+    "text": "Large ARK sell‑off and World Labs deal lacking near‑term revenue commitments.",
+    "source": "stock",
+    "articleIds": [
+      "442abb2c-5b07-3cac-b728-a7edd352aa55",
+      "9f66eccd-c076-3b42-877b-fa536b6462bd",
+      "52b52fcf-ce7a-32ba-a351-99acedfbab1a"
+    ],
+    "updatedAt": "2026-09-30T16:36:56.120Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T10:12:53.521Z"
+    "text": "Anticipated physical‑AI revenue next year and launch of Vera Rubin supercomputer driving heightened demand growth",
+    "source": "stock",
+    "articleIds": [
+      "43235f63-19ec-427e-8227-c1aa297e0369",
+      "d2996a92-cc1f-361d-a9cf-17363b81aa19"
+    ],
+    "updatedAt": "2026-09-30T16:37:01.529Z"
   },
   "TSM": {
+    "text": "Expanding U.S. footprint with $265 B Arizona commitment and potential Texas plant fuels investor optimism today",
+    "source": "stock",
+    "articleIds": [
+      "998023e7-77d2-3927-b52a-b91a6b563143",
+      "2f0e63b0-fa11-34fe-9142-421eb9a0e457",
+      "52634b2c-2710-3875-8c53-693c1caeef16"
+    ],
+    "updatedAt": "2026-09-30T16:37:07.162Z"
+  },
+  "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:12:58.470Z"
-  },
-  "SNDK": {
-    "text": "AI‑driven data‑center demand and new High‑Bandwidth Flash rollout highlighted at the Global Memory Innovation Forum.",
-    "source": "stock",
-    "articleIds": [
-      "82fe6367-3646-33b3-9b42-94007d10ebb0",
-      "68ad5b07-f94f-397b-8e18-79356fd1fe38",
-      "7fc069c6-3b6a-31fa-b216-c4dea7964259"
-    ],
-    "updatedAt": "2026-09-30T10:13:03.478Z"
+    "updatedAt": "2026-09-30T16:37:12.202Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:13:08.382Z"
+    "updatedAt": "2026-09-30T16:37:17.526Z"
   },
   "AVGO": {
-    "text": "AI semiconductor revenue tripled, fueling momentum as the season’s historic fourth‑quarter winning streak continues.",
-    "source": "stock",
-    "articleIds": [
-      "be185a67-4bbe-365a-af04-b5f030eff230",
-      "e1fcf27a-016f-3c7e-8e4f-89f9843ca2e9"
-    ],
-    "updatedAt": "2026-09-30T10:13:14.149Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-30T16:37:22.668Z"
   },
   "SPCX": {
-    "text": "Anticipated surge from three major launches and forecasts of doubling revenue by 2030 driving optimism.",
+    "text": "Announced AI compute contracts projected to deliver $54 billion annual revenue, fueling growth expectations for the company.",
     "source": "stock",
     "articleIds": [
-      "46c5b00e-7701-3d6a-9816-707f41fc3c1d",
-      "f412a637-c53e-374d-8f40-4e337780006c"
+      "e246e745-818c-3797-acd5-54948510015b",
+      "9184714d-a92b-3136-8621-f917ee31e06b",
+      "575c9dc2-e66b-3ef0-a064-51046290e01b"
     ],
-    "updatedAt": "2026-09-30T10:13:19.073Z"
+    "updatedAt": "2026-09-30T16:37:29.000Z"
   },
   "MRVL": {
-    "text": "Analyst buy ratings and $270‑$275 targets, driven by optical interconnect and custom silicon growth prospects.",
+    "text": "80‑times earnings multiple despite rapid revenue surge, prompting valuation concerns.",
     "source": "stock",
     "articleIds": [
-      "ad3e6d47-c38e-37bb-a829-075aef21b4d9",
-      "22bc4e85-cea3-31b4-9a6f-847b7c9984f4",
-      "4f2b9e7c-dbc6-3e72-bfb2-705595a2d400",
-      "a9b42d8f-fd55-38f0-918f-4a0f748e8f9e",
-      "855e43a6-6465-3a42-9e56-5e9a4042f883"
+      "4dffa1bd-459d-34bd-84a0-df90025ed34e",
+      "3e10db9a-96de-3130-947d-c5068599bacd"
     ],
-    "updatedAt": "2026-09-30T10:13:24.473Z"
+    "updatedAt": "2026-09-30T16:37:34.254Z"
   },
   "ARM": {
-    "text": "Nvidia’s AI safety architecture requiring dual silicon layers, boosting demand for Arm’s processor designs.",
+    "text": "BlueField‑4 AI royalty lane expansion amid concerns the 442% three‑year run has overvalued the company.",
     "source": "stock",
     "articleIds": [
-      "53f4972b-f7f0-3b72-807b-dd1bef3bbc18",
-      "a9b42d8f-fd55-38f0-918f-4a0f748e8f9e",
-      "5582d9a2-2f2a-378c-afea-52bcb709f621"
+      "530a597d-049a-30c8-89a9-7c56ec208ff0",
+      "b1d6e475-ee86-3b0c-99fe-ab1783f9609b"
     ],
-    "updatedAt": "2026-09-30T10:13:29.932Z"
+    "updatedAt": "2026-09-30T16:37:39.769Z"
   },
   "QCOM": {
-    "text": "Cooling AI and Apple rally combined with Samsung 2nm pricing standoff and rising yields dampening momentum.",
+    "text": "Renewed Apple patent license securing future chipset royalties and Snapdragon AI advancements boosting growth prospects.",
     "source": "stock",
     "articleIds": [
-      "3e81c11c-80a4-3479-82de-697ed095e54b",
-      "83b44021-d2c7-3169-8ad2-aefd829df56c"
+      "d292e475-91ad-377e-bbac-f28671d5da22",
+      "27f107ca-5c2f-33c4-8e85-7d241cfcc1d7",
+      "5d04d01a-60e3-3986-b87e-a7475901ae3b"
     ],
-    "updatedAt": "2026-09-30T10:13:35.285Z"
+    "updatedAt": "2026-09-30T16:37:45.090Z"
   },
   "SKHY": {
-    "text": "Strong memory demand expectations boosting investor confidence.",
+    "text": "New AI‑focused venture capital arm launch and Silicon Valley event spurring short‑term profit‑taking.",
     "source": "stock",
     "articleIds": [
-      "293d2e3a-cb39-3dfe-8e49-8030745b76c1"
+      "f8f4f316-1c8d-34ac-87e9-f483d3c9cbf4"
     ],
-    "updatedAt": "2026-09-30T10:13:40.420Z"
+    "updatedAt": "2026-09-30T16:37:50.502Z"
   },
   "MBLY": {
-    "text": "weaker quarterly earnings and muted guidance after reporting lower autonomous‑driving revenue",
+    "text": "Barclays downgrade citing insufficient advanced contract wins, slashing price target and dampening growth outlook.",
     "source": "stock",
     "articleIds": [
+      "f3d9476b-f20f-38f4-9cc8-c923a5d73fbb",
       "7704e2d5-78a8-3705-9ce7-0068001120e6"
     ],
-    "updatedAt": "2026-09-30T10:13:46.486Z"
+    "updatedAt": "2026-09-30T16:37:55.676Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:13:51.090Z"
+    "updatedAt": "2026-09-30T16:37:59.949Z"
   },
   "000660.KS": {
-    "text": "Strong memory demand expectations boost investor confidence, outpacing rivals and lifting market sentiment in Asia.",
+    "text": "Strong memory demand expectations outweigh concerns over lower profitability of high‑bandwidth memory.",
     "source": "stock",
     "articleIds": [
+      "cd88345b-b47a-3948-a588-bbc8f26d529a",
       "293d2e3a-cb39-3dfe-8e49-8030745b76c1"
     ],
-    "updatedAt": "2026-09-30T10:13:56.281Z"
+    "updatedAt": "2026-09-30T16:38:05.095Z"
   },
   "AAPL": {
-    "text": "UK class‑action exposure over restricted Amazon marketplace listings raises legal risk and potential revenue impact.",
-    "source": "stock",
-    "articleIds": [
-      "c61c889c-7492-3ab4-8196-992221ed8af6",
-      "12b696ee-3024-3799-b66f-c28e3308540f"
-    ],
-    "updatedAt": "2026-09-30T10:14:01.734Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-30T16:38:10.155Z"
   },
   "MSFT": {
-    "text": "Heavy AI spending pressures margins after 14‑fold growth under Nadella.",
+    "text": "New enterprise licensing tier driving massive AI revenue potential, projected $2 B annual boost by 2028.",
     "source": "stock",
     "articleIds": [
-      "705b72f7-8a8e-3706-bff2-8f9bdc500d76"
+      "938837d0-623a-3588-86f6-73d04a624213",
+      "6df04c95-9736-34da-8cfc-c536e549a545",
+      "ccfea19a-c80f-3f7a-9151-756858bb4e7e"
     ],
-    "updatedAt": "2026-09-30T10:14:07.144Z"
+    "updatedAt": "2026-09-30T16:38:15.693Z"
   },
   "GOOGL": {
-    "text": "Google's overhaul of its ad‑technology platform creating uncertainty and pressure on its valuation",
+    "text": "Voluntary AI safety accord with internal controls and independent audits boosts investor confidence in governance",
     "source": "stock",
     "articleIds": [
-      "349a3897-8a13-3f9d-b37b-e921ee1454fc"
+      "0aa7bb9e-5a0e-3f21-97c6-386236138a93",
+      "0786b52b-3960-3ae3-9542-9ad1b6952017"
     ],
-    "updatedAt": "2026-09-30T10:14:11.899Z"
+    "updatedAt": "2026-09-30T16:38:20.976Z"
   },
   "AMZN": {
-    "text": "Bezos’ $219 B stake valuation bolstering investor confidence.",
+    "text": "Rosenblatt lifted target, citing AI shopping agents won’t erode Amazon’s retail media advertising revenue.",
     "source": "stock",
     "articleIds": [
-      "60db1f3b-037c-37a1-ad60-f51be00d55ac",
-      "367b1c03-1e01-3305-9cce-e330a05bbaf9"
+      "9a1ba8a1-0567-3174-b180-4938fa7f160a",
+      "808a9097-e807-34f5-bbbf-945fa8a76a58"
     ],
-    "updatedAt": "2026-09-30T10:14:18.068Z"
+    "updatedAt": "2026-09-30T16:38:26.300Z"
   },
   "META": {
-    "text": "AI momentum from Muse agent performance and high‑profile AI safety discussions driving investor optimism.",
+    "text": "OpenAI’s Dots AI agents challenging Muse, intensifying AI competition and raising enterprise platform concerns.",
     "source": "stock",
     "articleIds": [
-      "6082f5d5-caef-42f9-a8cd-a771dcf3261c",
-      "008d40d5-7e9e-3f9e-8e55-f0674bb1222e",
-      "953c1de2-b2ed-3f5a-aed3-ea3f215c773d"
+      "049efd46-c1c1-4e90-9ed9-0b7f26ef71b1",
+      "016450e8-7a6c-3400-ac82-36cba3d9512b",
+      "1c204cd1-86dd-3fed-ba11-850b02ba3615",
+      "053bfabf-b29d-36ba-a1ce-965252d980ef"
     ],
-    "updatedAt": "2026-09-30T10:14:23.481Z"
+    "updatedAt": "2026-09-30T16:38:32.166Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:14:27.723Z"
+    "updatedAt": "2026-09-30T16:38:36.481Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:14:32.008Z"
+    "updatedAt": "2026-09-30T16:38:41.020Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:14:36.339Z"
+    "updatedAt": "2026-09-30T16:38:45.273Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:14:40.560Z"
+    "updatedAt": "2026-09-30T16:38:49.620Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:14:44.836Z"
+    "updatedAt": "2026-09-30T16:38:53.935Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:14:49.647Z"
+    "updatedAt": "2026-09-30T16:38:58.491Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:14:53.945Z"
+    "updatedAt": "2026-09-30T16:39:02.824Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T10:14:58.200Z"
+    "updatedAt": "2026-09-30T16:39:07.047Z"
   },
   "INDEX": {
-    "text": "Investors weighing profit‑taking versus fresh buying after Marvell’s 210% surge.",
+    "text": "Excellent PCE and ADP data combined with the Fed’s decision to pause October rate hikes.",
     "source": "macro",
     "articleIds": [
-      "4f2b9e7c-dbc6-3e72-bfb2-705595a2d400"
+      "05387849-539b-37a1-a1b6-7e6c51513a04"
     ],
-    "updatedAt": "2026-09-30T10:15:03.892Z"
+    "updatedAt": "2026-09-30T16:39:12.057Z"
   },
   "INDEX_IN": {
     "text": "Foreign investors selling amid rising oil concerns.",
