@@ -3,180 +3,227 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T03:30:48.529Z"
+    "updatedAt": "2026-09-30T10:12:44.086Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T03:30:52.774Z"
+    "updatedAt": "2026-09-30T10:12:48.973Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T03:30:57.070Z"
+    "updatedAt": "2026-09-30T10:12:53.521Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:01.411Z"
+    "updatedAt": "2026-09-30T10:12:58.470Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:05.638Z"
+    "text": "AI‑driven data‑center demand and new High‑Bandwidth Flash rollout highlighted at the Global Memory Innovation Forum.",
+    "source": "stock",
+    "articleIds": [
+      "82fe6367-3646-33b3-9b42-94007d10ebb0",
+      "68ad5b07-f94f-397b-8e18-79356fd1fe38",
+      "7fc069c6-3b6a-31fa-b216-c4dea7964259"
+    ],
+    "updatedAt": "2026-09-30T10:13:03.478Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:09.841Z"
+    "updatedAt": "2026-09-30T10:13:08.382Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:14.086Z"
+    "text": "AI semiconductor revenue tripled, fueling momentum as the season’s historic fourth‑quarter winning streak continues.",
+    "source": "stock",
+    "articleIds": [
+      "be185a67-4bbe-365a-af04-b5f030eff230",
+      "e1fcf27a-016f-3c7e-8e4f-89f9843ca2e9"
+    ],
+    "updatedAt": "2026-09-30T10:13:14.149Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:18.290Z"
+    "text": "Anticipated surge from three major launches and forecasts of doubling revenue by 2030 driving optimism.",
+    "source": "stock",
+    "articleIds": [
+      "46c5b00e-7701-3d6a-9816-707f41fc3c1d",
+      "f412a637-c53e-374d-8f40-4e337780006c"
+    ],
+    "updatedAt": "2026-09-30T10:13:19.073Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:22.548Z"
+    "text": "Analyst buy ratings and $270‑$275 targets, driven by optical interconnect and custom silicon growth prospects.",
+    "source": "stock",
+    "articleIds": [
+      "ad3e6d47-c38e-37bb-a829-075aef21b4d9",
+      "22bc4e85-cea3-31b4-9a6f-847b7c9984f4",
+      "4f2b9e7c-dbc6-3e72-bfb2-705595a2d400",
+      "a9b42d8f-fd55-38f0-918f-4a0f748e8f9e",
+      "855e43a6-6465-3a42-9e56-5e9a4042f883"
+    ],
+    "updatedAt": "2026-09-30T10:13:24.473Z"
   },
   "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:26.844Z"
+    "text": "Nvidia’s AI safety architecture requiring dual silicon layers, boosting demand for Arm’s processor designs.",
+    "source": "stock",
+    "articleIds": [
+      "53f4972b-f7f0-3b72-807b-dd1bef3bbc18",
+      "a9b42d8f-fd55-38f0-918f-4a0f748e8f9e",
+      "5582d9a2-2f2a-378c-afea-52bcb709f621"
+    ],
+    "updatedAt": "2026-09-30T10:13:29.932Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:31.060Z"
+    "text": "Cooling AI and Apple rally combined with Samsung 2nm pricing standoff and rising yields dampening momentum.",
+    "source": "stock",
+    "articleIds": [
+      "3e81c11c-80a4-3479-82de-697ed095e54b",
+      "83b44021-d2c7-3169-8ad2-aefd829df56c"
+    ],
+    "updatedAt": "2026-09-30T10:13:35.285Z"
   },
   "SKHY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:35.269Z"
+    "text": "Strong memory demand expectations boosting investor confidence.",
+    "source": "stock",
+    "articleIds": [
+      "293d2e3a-cb39-3dfe-8e49-8030745b76c1"
+    ],
+    "updatedAt": "2026-09-30T10:13:40.420Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:39.494Z"
+    "text": "weaker quarterly earnings and muted guidance after reporting lower autonomous‑driving revenue",
+    "source": "stock",
+    "articleIds": [
+      "7704e2d5-78a8-3705-9ce7-0068001120e6"
+    ],
+    "updatedAt": "2026-09-30T10:13:46.486Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:43.705Z"
+    "updatedAt": "2026-09-30T10:13:51.090Z"
   },
   "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:47.986Z"
+    "text": "Strong memory demand expectations boost investor confidence, outpacing rivals and lifting market sentiment in Asia.",
+    "source": "stock",
+    "articleIds": [
+      "293d2e3a-cb39-3dfe-8e49-8030745b76c1"
+    ],
+    "updatedAt": "2026-09-30T10:13:56.281Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:52.200Z"
+    "text": "UK class‑action exposure over restricted Amazon marketplace listings raises legal risk and potential revenue impact.",
+    "source": "stock",
+    "articleIds": [
+      "c61c889c-7492-3ab4-8196-992221ed8af6",
+      "12b696ee-3024-3799-b66f-c28e3308540f"
+    ],
+    "updatedAt": "2026-09-30T10:14:01.734Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:31:56.398Z"
+    "text": "Heavy AI spending pressures margins after 14‑fold growth under Nadella.",
+    "source": "stock",
+    "articleIds": [
+      "705b72f7-8a8e-3706-bff2-8f9bdc500d76"
+    ],
+    "updatedAt": "2026-09-30T10:14:07.144Z"
   },
   "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:00.570Z"
+    "text": "Google's overhaul of its ad‑technology platform creating uncertainty and pressure on its valuation",
+    "source": "stock",
+    "articleIds": [
+      "349a3897-8a13-3f9d-b37b-e921ee1454fc"
+    ],
+    "updatedAt": "2026-09-30T10:14:11.899Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:04.763Z"
+    "text": "Bezos’ $219 B stake valuation bolstering investor confidence.",
+    "source": "stock",
+    "articleIds": [
+      "60db1f3b-037c-37a1-ad60-f51be00d55ac",
+      "367b1c03-1e01-3305-9cce-e330a05bbaf9"
+    ],
+    "updatedAt": "2026-09-30T10:14:18.068Z"
   },
   "META": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:09.128Z"
+    "text": "AI momentum from Muse agent performance and high‑profile AI safety discussions driving investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "6082f5d5-caef-42f9-a8cd-a771dcf3261c",
+      "008d40d5-7e9e-3f9e-8e55-f0674bb1222e",
+      "953c1de2-b2ed-3f5a-aed3-ea3f215c773d"
+    ],
+    "updatedAt": "2026-09-30T10:14:23.481Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:13.291Z"
+    "updatedAt": "2026-09-30T10:14:27.723Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:17.504Z"
-  },
-  "DEEPAKFERT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:21.662Z"
-  },
-  "AARTIIND.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:25.832Z"
-  },
-  "TCS.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:30.009Z"
-  },
-  "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:34.239Z"
+    "updatedAt": "2026-09-30T10:14:32.008Z"
   },
-  "RELIANCE.NS": {
+  "DEEPAKFERT.NS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-30T10:14:36.339Z"
+  },
+  "AARTIIND.NS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-30T10:14:40.560Z"
+  },
+  "TCS.NS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-30T10:14:44.836Z"
+  },
+  "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:38.515Z"
+    "updatedAt": "2026-09-30T10:14:49.647Z"
+  },
+  "RELIANCE.NS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-09-30T10:14:53.945Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:42.672Z"
+    "updatedAt": "2026-09-30T10:14:58.200Z"
   },
   "INDEX": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:46.909Z"
+    "text": "Investors weighing profit‑taking versus fresh buying after Marvell’s 210% surge.",
+    "source": "macro",
+    "articleIds": [
+      "4f2b9e7c-dbc6-3e72-bfb2-705595a2d400"
+    ],
+    "updatedAt": "2026-09-30T10:15:03.892Z"
   },
   "INDEX_IN": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-09-30T03:32:51.158Z"
+    "text": "Foreign investors selling amid rising oil concerns.",
+    "source": "macro",
+    "articleIds": [
+      "db9beb50-0274-3f85-a853-ab7d0038df47"
+    ],
+    "updatedAt": "2026-09-30T10:15:08.751Z"
   }
 }
