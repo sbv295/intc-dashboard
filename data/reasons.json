@@ -1,53 +1,50 @@
 {
   "INTC": {
-    "text": "OpenShell's new agent policy enforcement feature boosting confidence in Intel's AI security capabilities.",
-    "source": "stock",
-    "articleIds": [
-      "535c00fb-678f-3766-8d5c-118387712585",
-      "811d9311-eef7-3c0c-b944-74b5feb65d98"
-    ],
-    "updatedAt": "2026-09-30T21:09:34.862Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-01T14:59:54.585Z"
   },
   "AMD": {
-    "text": "AI demand surge and upgraded $1,000 price target fueling investor optimism and momentum in 2026",
+    "text": "Quiet structural shift in cloud hyperscaler CPU preferences threatens future server‑CPU growth momentum.",
     "source": "stock",
     "articleIds": [
-      "d577f3fd-98fa-3537-a959-f420143a9942",
-      "956e2b7e-c1e5-30d4-892c-683fb4441024"
+      "a3eda242-94cf-345c-9c66-a137c1aef62e"
     ],
-    "updatedAt": "2026-09-30T21:09:40.214Z"
+    "updatedAt": "2026-10-01T14:59:59.872Z"
   },
   "NVDA": {
-    "text": "AI‑IoT synergy boost from Nvidia‑AMD collaboration and Semtech’s breakout prospects fuels optimism.",
+    "text": "Barclays sees $30B hyperscaler revenue upside, while $100B buyback capacity meets soaring chip demand through.",
     "source": "stock",
     "articleIds": [
-      "d577f3fd-98fa-3537-a959-f420143a9942"
+      "ceb7b593-1804-301b-a757-29df307f70ef",
+      "f3ff2dbe-abe7-3a7e-bcc9-a5081284f49c",
+      "70b82295-89ff-32b7-9ca6-949b7fcfb69a"
     ],
-    "updatedAt": "2026-10-01T01:00:14.151Z"
+    "updatedAt": "2026-10-01T15:00:07.241Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T07:06:25.676Z"
+    "updatedAt": "2026-10-01T15:00:13.172Z"
   },
   "SNDK": {
-    "text": "Bernstein’s 73% upside rating and fresh optimism from management’s Global Memory Innovation Forum appearance.",
-    "source": "stock",
-    "articleIds": [
-      "712158a3-140d-4a08-b1f5-71500d0bafe6",
-      "21084706-18f6-3ca1-8941-dc8f597fd5f4",
-      "774671f9-cad6-38ca-9543-bc13b8a7d32d",
-      "7bc70989-57f0-3ea8-bbe5-947c23746f2b",
-      "82fe6367-3646-33b3-9b42-94007d10ebb0"
-    ],
-    "updatedAt": "2026-09-30T21:09:57.440Z"
-  },
-  "MU": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T07:06:36.764Z"
+    "updatedAt": "2026-10-01T15:00:22.759Z"
+  },
+  "MU": {
+    "text": "margin guidance fell short despite record earnings, and a looming Taiwan strike vote fuels investor unease.",
+    "source": "stock",
+    "articleIds": [
+      "b190cb31-1b2e-491b-90eb-ff9ba2bc834a",
+      "a64974de-367e-30c6-ae7b-c7f094e267d6",
+      "5f6e8554-d4a8-3f1c-bce8-2f5074e2e587",
+      "65b5e790-d90e-3d10-b62a-e05210df33a4"
+    ],
+    "updatedAt": "2026-10-01T15:00:35.822Z"
   },
   "AVGO": {
     "text": "Removal from SCHD index in March 2024 cut institutional demand, prompting the decline.",
@@ -58,34 +55,32 @@
     "updatedAt": "2026-10-01T01:00:35.518Z"
   },
   "SPCX": {
-    "text": "NASA‑backed praise for SpaceX’s successful Starship orbital launch, highlighting mission significance and future collaboration.",
+    "text": "NASA Administrator praised SpaceX’s successful Starship orbital launch, highlighting its inspirational significance for future missions.",
     "source": "stock",
     "articleIds": [
       "d5650468-380c-378d-a854-2b317baa87d7",
-      "575c9dc2-e66b-3ef0-a064-51046290e01b",
-      "e246e745-818c-3797-acd5-54948510015b"
+      "575c9dc2-e66b-3ef0-a064-51046290e01b"
     ],
-    "updatedAt": "2026-10-01T07:06:47.808Z"
+    "updatedAt": "2026-10-01T15:01:03.584Z"
   },
   "MRVL": {
-    "text": "Analyst reaffirmed bullish outlook after 42% revenue surge and strong AI chip demand.",
+    "text": "record revenue and raised guidance amid lingering AI sentiment drag",
     "source": "stock",
     "articleIds": [
-      "4dffa1bd-459d-34bd-84a0-df90025ed34e",
-      "536418b0-78e9-3b4e-a358-aac7b6ffcefd",
-      "3e10db9a-96de-3130-947d-c5068599bacd",
-      "ad3e6d47-c38e-37bb-a829-075aef21b4d9"
+      "3c90c1df-d6e3-366f-a481-be74c0f06eb1",
+      "536418b0-78e9-3b4e-a358-aac7b6ffcefd"
     ],
-    "updatedAt": "2026-10-01T07:06:53.295Z"
+    "updatedAt": "2026-10-01T15:01:11.905Z"
   },
   "ARM": {
-    "text": "BlueField‑4 AI royalty lane expansion amid concerns the 442% three‑year run has overvalued the company.",
+    "text": "Nvidia’s safety architecture boost, linking Arm to dual‑silicon agent execution and independent infrastructure controls.",
     "source": "stock",
     "articleIds": [
-      "530a597d-049a-30c8-89a9-7c56ec208ff0",
-      "b1d6e475-ee86-3b0c-99fe-ab1783f9609b"
+      "e3a8e5a6-3b54-332b-88e7-fb9fe13d1174",
+      "53f4972b-f7f0-3b72-807b-dd1bef3bbc18",
+      "a9b42d8f-fd55-38f0-918f-4a0f748e8f9e"
     ],
-    "updatedAt": "2026-09-30T16:37:39.769Z"
+    "updatedAt": "2026-10-01T15:01:17.234Z"
   },
   "QCOM": {
     "text": "Renewed Apple patent license coupled with intensified AI and cloud expansion initiatives.",
@@ -97,13 +92,12 @@
     "updatedAt": "2026-09-30T21:10:30.292Z"
   },
   "SKHY": {
-    "text": "US IPO plans for Solidigm raise capital‑allocation concerns, prompting investor skepticism.",
+    "text": "New AI‑focused venture capital arm launch highlights growth ambitions, boosting investor optimism.",
     "source": "stock",
     "articleIds": [
-      "1c0eda27-52c1-32d7-8c0c-684ea9062dfc",
       "f8f4f316-1c8d-34ac-87e9-f483d3c9cbf4"
     ],
-    "updatedAt": "2026-10-01T07:07:09.716Z"
+    "updatedAt": "2026-10-01T15:01:27.778Z"
   },
   "MBLY": {
     "text": "Insufficient advanced contract wins failing to support growth expectations, prompting a downgrade and lower price target.",
@@ -130,112 +124,109 @@
     "updatedAt": "2026-10-01T07:07:25.055Z"
   },
   "AAPL": {
-    "text": "Anticipation of the iPhone Duo’s 6 million‑unit launch fuels investor optimism.",
+    "text": "Rising threat of AI consumer agents potentially disrupting its app store and services business limits upside.",
     "source": "stock",
     "articleIds": [
-      "28b9cb57-ecf6-3a30-a084-03d42662e487",
-      "fb5ee3d0-2a54-3217-a90d-5900322f754a",
-      "f0c0a255-852c-311f-a66a-111ee779e0cc"
+      "c9e39f15-a9aa-3eff-b90c-a1ec91a03885",
+      "d16cfa38-c0da-3359-ae15-68e3ed634493",
+      "fb5ee3d0-2a54-3217-a90d-5900322f754a"
     ],
-    "updatedAt": "2026-10-01T01:01:21.928Z"
+    "updatedAt": "2026-10-01T15:01:49.359Z"
   },
   "MSFT": {
-    "text": "Deepening ClickHouse integration across Fabric, OneLake, Azure and Marketplace, plus OpenAI Dots joining Teams.",
+    "text": "Strong quarterly earnings record and expanded ClickHouse partnership boosting data and AI growth expectations overall",
     "source": "stock",
     "articleIds": [
-      "bbb98a7a-bfe1-31cc-b45c-2795541a39e5",
-      "4b74643d-9746-36d3-a544-aa1f22425c86"
+      "9677ad9a-945e-33b5-9ae3-5f199bdb6006",
+      "bbb98a7a-bfe1-31cc-b45c-2795541a39e5"
     ],
-    "updatedAt": "2026-09-30T21:11:02.084Z"
+    "updatedAt": "2026-10-01T15:01:54.490Z"
   },
   "GOOGL": {
-    "text": "Release of Gemini 4 Argon, its most powerful AI model, boosting investor confidence amid AI competition.",
+    "text": "Delayed launch of Gemini 4 Argon AI model fuels investor uncertainty, pressuring price amid market expectations.",
     "source": "stock",
     "articleIds": [
-      "e687f8eb-c924-3e55-bec6-30e840903e06",
       "2b96bff5-d86a-36dc-9e88-284c6d61328e",
-      "6b310417-04e4-3a61-aa48-b38eb3246024"
+      "5f6e8554-d4a8-3f1c-bce8-2f5074e2e587"
     ],
-    "updatedAt": "2026-10-01T01:01:32.642Z"
+    "updatedAt": "2026-10-01T15:02:00.254Z"
   },
   "AMZN": {
-    "text": "Securing a $1 billion Synopsys partnership to accelerate custom chip development and AI infrastructure.",
-    "source": "stock",
-    "articleIds": [
-      "9d821a85-3fb0-32e2-8be0-fd1a231c90e3",
-      "5fd00b06-3774-3db2-89ff-3afac6c06607",
-      "f79b26cf-05fb-38f9-a219-37473916be5a",
-      "99959a2b-70c8-3379-b256-e130ed3b55a0"
-    ],
-    "updatedAt": "2026-10-01T01:01:38.142Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-01T15:02:05.049Z"
   },
   "META": {
-    "text": "IRS contesting $355 million tax break tied to Zuckerberg’s 2005‑2010 stock payout, prompting investor worry.",
+    "text": "Signing the White House AI safety accord raised investor concerns over heightened regulatory oversight.",
     "source": "stock",
     "articleIds": [
-      "b1fe5b0b-b8b4-31f9-a5b0-35e1ccd6612f",
-      "497fc438-4bd4-317e-81a2-40784d719e25",
-      "016450e8-7a6c-3400-ac82-36cba3d9512b"
+      "5b341acd-eaad-3d31-8792-d6a138d44b1e",
+      "5f0db929-7285-325e-a934-7b5eb0e05b78",
+      "b1fe5b0b-b8b4-31f9-a5b0-35e1ccd6612f"
     ],
-    "updatedAt": "2026-10-01T07:07:52.745Z"
+    "updatedAt": "2026-10-01T15:02:10.184Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T07:07:57.045Z"
+    "updatedAt": "2026-10-01T15:02:14.549Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T07:08:01.582Z"
+    "updatedAt": "2026-10-01T15:02:18.866Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T07:08:05.835Z"
+    "updatedAt": "2026-10-01T15:02:23.213Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T07:08:10.112Z"
+    "updatedAt": "2026-10-01T15:02:27.585Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T07:08:14.447Z"
+    "updatedAt": "2026-10-01T15:02:31.882Z"
   },
   "INFY.NS": {
-    "text": "Securing a partnership with Chainlink to access 1.7 billion bank accounts, boosting growth prospects.",
+    "text": "Record bookings dispelling AI demand fears, prompting sector‑wide confidence boost.",
     "source": "stock",
     "articleIds": [
+      "7f9b2753-9771-3b16-8085-1f9a52a7273a",
       "d94aa35d-0add-34a5-b0bc-e776fb459522"
     ],
-    "updatedAt": "2026-10-01T07:08:19.332Z"
+    "updatedAt": "2026-10-01T15:02:37.646Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T07:08:23.586Z"
+    "updatedAt": "2026-10-01T15:02:41.994Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T07:08:27.845Z"
+    "updatedAt": "2026-10-01T15:02:46.271Z"
   },
   "INDEX": {
-    "text": "Excellent PCE and ADP data combined with the Fed’s decision to pause October rate hikes.",
+    "text": "Rising bond yields and persistent inflation expectations keep borrowing costs elevated, pressuring market sentiment overall.",
     "source": "macro",
     "articleIds": [
-      "05387849-539b-37a1-a1b6-7e6c51513a04"
+      "e1fa3fac-175a-3058-bae1-f024b910edb4",
+      "0281c295-2774-3ed2-b4ae-f451a1272ab9",
+      "d97e2267-7e8c-34f6-a2f1-2844f8fd3f07"
     ],
-    "updatedAt": "2026-09-30T16:39:12.057Z"
+    "updatedAt": "2026-10-01T15:02:52.276Z"
   },
   "INDEX_IN": {
     "text": "Foreign investors selling amid rising oil concerns.",
