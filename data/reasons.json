@@ -26,13 +26,10 @@
     "updatedAt": "2026-10-01T01:00:14.151Z"
   },
   "TSM": {
-    "text": "Investors weigh the impact of a $265 billion U.S. expansion plan, prompting modest sell‑off.",
-    "source": "stock",
-    "articleIds": [
-      "5cf4bc85-c623-39ee-a24a-54735c9ecafe",
-      "00afcb9c-8d84-3512-8f0b-d6319f612124"
-    ],
-    "updatedAt": "2026-09-30T21:09:51.711Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-01T07:06:25.676Z"
   },
   "SNDK": {
     "text": "Bernstein’s 73% upside rating and fresh optimism from management’s Global Memory Innovation Forum appearance.",
@@ -47,16 +44,10 @@
     "updatedAt": "2026-09-30T21:09:57.440Z"
   },
   "MU": {
-    "text": "Record Q4 earnings beat expectations as AI-driven demand surges and memory supply remains constrained tight.",
-    "source": "stock",
-    "articleIds": [
-      "a11f0640-7125-4130-977f-f9f94a3d34e5",
-      "958fb542-74b3-3d16-bde8-baba1e31461e",
-      "a7a9c4e5-17a4-320c-9288-268acaf7bf28",
-      "aaf0b401-9858-3e69-835c-934e4726b270",
-      "8db034a8-a76f-3715-8bff-2d9f8c151d63"
-    ],
-    "updatedAt": "2026-10-01T01:00:30.451Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-01T07:06:36.764Z"
   },
   "AVGO": {
     "text": "Removal from SCHD index in March 2024 cut institutional demand, prompting the decline.",
@@ -67,23 +58,25 @@
     "updatedAt": "2026-10-01T01:00:35.518Z"
   },
   "SPCX": {
-    "text": "Potential Tesla merger facilitation and $54 B AI‑deal revenue outlook boosting optimism.",
+    "text": "NASA‑backed praise for SpaceX’s successful Starship orbital launch, highlighting mission significance and future collaboration.",
     "source": "stock",
     "articleIds": [
+      "d5650468-380c-378d-a854-2b317baa87d7",
       "575c9dc2-e66b-3ef0-a064-51046290e01b",
       "e246e745-818c-3797-acd5-54948510015b"
     ],
-    "updatedAt": "2026-10-01T01:00:40.867Z"
+    "updatedAt": "2026-10-01T07:06:47.808Z"
   },
   "MRVL": {
-    "text": "Analyst reaffirmed bullish outlook amid rapid revenue growth and accelerating sales momentum.",
+    "text": "Analyst reaffirmed bullish outlook after 42% revenue surge and strong AI chip demand.",
     "source": "stock",
     "articleIds": [
       "4dffa1bd-459d-34bd-84a0-df90025ed34e",
+      "536418b0-78e9-3b4e-a358-aac7b6ffcefd",
       "3e10db9a-96de-3130-947d-c5068599bacd",
       "ad3e6d47-c38e-37bb-a829-075aef21b4d9"
     ],
-    "updatedAt": "2026-10-01T01:00:46.146Z"
+    "updatedAt": "2026-10-01T07:06:53.295Z"
   },
   "ARM": {
     "text": "BlueField‑4 AI royalty lane expansion amid concerns the 442% three‑year run has overvalued the company.",
@@ -104,12 +97,13 @@
     "updatedAt": "2026-09-30T21:10:30.292Z"
   },
   "SKHY": {
-    "text": "IPO considerations for Solidigm raise ownership concerns, prompting investor uncertainty over capital allocation.",
+    "text": "US IPO plans for Solidigm raise capital‑allocation concerns, prompting investor skepticism.",
     "source": "stock",
     "articleIds": [
-      "1c0eda27-52c1-32d7-8c0c-684ea9062dfc"
+      "1c0eda27-52c1-32d7-8c0c-684ea9062dfc",
+      "f8f4f316-1c8d-34ac-87e9-f483d3c9cbf4"
     ],
-    "updatedAt": "2026-09-30T21:10:35.561Z"
+    "updatedAt": "2026-10-01T07:07:09.716Z"
   },
   "MBLY": {
     "text": "Insufficient advanced contract wins failing to support growth expectations, prompting a downgrade and lower price target.",
@@ -120,18 +114,20 @@
     "updatedAt": "2026-10-01T01:01:07.147Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-01T01:01:11.715Z"
-  },
-  "000660.KS": {
-    "text": "IPO speculation on Solidigm float raises capital‑allocation concerns, prompting investor caution.",
+    "text": "Helix partnership contributes $1 billion, boosting confidence in Samsung’s AI infrastructure expansion plans for future growth.",
     "source": "stock",
     "articleIds": [
-      "1c0eda27-52c1-32d7-8c0c-684ea9062dfc"
+      "529cfb79-06f7-36a5-9cec-d1992c720f6a"
     ],
-    "updatedAt": "2026-10-01T01:01:16.767Z"
+    "updatedAt": "2026-10-01T07:07:19.851Z"
+  },
+  "000660.KS": {
+    "text": "Launch of SK hynix Ventures and Silicon Valley event spotlighting AI push fuels investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "f8f4f316-1c8d-34ac-87e9-f483d3c9cbf4"
+    ],
+    "updatedAt": "2026-10-01T07:07:25.055Z"
   },
   "AAPL": {
     "text": "Anticipation of the iPhone Duo’s 6 million‑unit launch fuels investor optimism.",
@@ -174,61 +170,64 @@
     "updatedAt": "2026-10-01T01:01:38.142Z"
   },
   "META": {
-    "text": "AI personal‑assistant push facing OpenAI competition and concerns over costly enterprise platform rollout",
+    "text": "IRS contesting $355 million tax break tied to Zuckerberg’s 2005‑2010 stock payout, prompting investor worry.",
     "source": "stock",
     "articleIds": [
+      "b1fe5b0b-b8b4-31f9-a5b0-35e1ccd6612f",
       "497fc438-4bd4-317e-81a2-40784d719e25",
       "016450e8-7a6c-3400-ac82-36cba3d9512b"
     ],
-    "updatedAt": "2026-10-01T01:01:43.401Z"
+    "updatedAt": "2026-10-01T07:07:52.745Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T01:01:47.609Z"
+    "updatedAt": "2026-10-01T07:07:57.045Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T01:01:51.825Z"
+    "updatedAt": "2026-10-01T07:08:01.582Z"
   },
   "DEEPAKFERT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T01:01:56.086Z"
+    "updatedAt": "2026-10-01T07:08:05.835Z"
   },
   "AARTIIND.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T01:02:00.367Z"
+    "updatedAt": "2026-10-01T07:08:10.112Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T01:02:04.670Z"
+    "updatedAt": "2026-10-01T07:08:14.447Z"
   },
   "INFY.NS": {
+    "text": "Securing a partnership with Chainlink to access 1.7 billion bank accounts, boosting growth prospects.",
+    "source": "stock",
+    "articleIds": [
+      "d94aa35d-0add-34a5-b0bc-e776fb459522"
+    ],
+    "updatedAt": "2026-10-01T07:08:19.332Z"
+  },
+  "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T01:02:09.198Z"
-  },
-  "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-01T01:02:13.509Z"
+    "updatedAt": "2026-10-01T07:08:23.586Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-01T01:02:17.723Z"
+    "updatedAt": "2026-10-01T07:08:27.845Z"
   },
   "INDEX": {
     "text": "Excellent PCE and ADP data combined with the Fed’s decision to pause October rate hikes.",
