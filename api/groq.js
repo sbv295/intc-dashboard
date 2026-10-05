@@ -306,9 +306,6 @@ export default async function handler(req, res) {
       // Tier 1: stock-specific catalyst
       const news = await fetchNews(ticker);
       const relevant = filterRelevant(news, nameVariants, cutoff, ticker);
-      if (req.query.debug) {
-        return res.status(200).json({ debugNewsCount: news.length, debugTitles: news.map(n => n.content.title), debugRelevantCount: relevant.length, cutoff: cutoff.toISOString() });
-      }
       if (relevant.length) {
         const sentiments = await classifySentiment(apiKey, subject, relevant);
         const matching = relevant.filter((_, i) => sentiments[i] === direction);
