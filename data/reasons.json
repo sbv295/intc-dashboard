@@ -3,24 +3,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:05:57.135Z"
+    "updatedAt": "2026-10-05T09:01:27.128Z"
   },
   "AMD": {
-    "text": "Anticipated World Labs acquisition fueling growth expectations after hitting $1 trillion market cap",
+    "text": "Acquisition of World Labs fuels AI‑centric growth expectations, propelling market‑cap optimism.",
     "source": "stock",
     "articleIds": [
       "5235d50d-accb-336e-852d-9bcfaa22f607",
-      "a7f65063-6e5d-3fda-bc90-d44007cc4e31"
+      "a7f65063-6e5d-3fda-bc90-d44007cc4e31",
+      "8f7528c0-1d2b-31ff-933d-d825f71a186d"
     ],
-    "updatedAt": "2026-10-05T08:06:02.403Z"
+    "updatedAt": "2026-10-05T09:01:31.290Z"
   },
   "NVDA": {
-    "text": "Robust AI demand and strong earnings outlook fueling investor confidence and market momentum.",
+    "text": "Hon Hai’s better‑than‑expected revenue underscores AI infrastructure demand, fueling Nvidia’s momentum amid global AI",
     "source": "stock",
     "articleIds": [
-      "b98e0c13-f78a-3e19-ad93-12d5a340e701"
+      "de3670c4-0ccb-31c5-8ad6-0b54c41a1f23"
     ],
-    "updatedAt": "2026-10-05T08:06:07.384Z"
+    "updatedAt": "2026-10-05T09:01:36.897Z"
   },
   "TSM": {
     "text": "Musk’s hint of a possible collaboration ignited optimism around TSMC’s upcoming terafab and revenue prospects.",
@@ -34,44 +35,45 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:06:17.838Z"
+    "updatedAt": "2026-10-05T09:01:47.259Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:06:23.086Z"
+    "updatedAt": "2026-10-05T09:01:52.077Z"
   },
   "AVGO": {
-    "text": "Strong AI-driven demand boosting revenue outlook and supporting higher dividend growth expectations.",
+    "text": "AI chip sales surged 221% YoY, with $16.7 B booked this quarter and guidance for $21.7 B next.",
     "source": "stock",
     "articleIds": [
+      "dc6276a0-03f1-333c-b3f8-c00b2b1f57f4",
       "ca53511a-ab50-33aa-b670-5d8b6f2b1b3e",
-      "31083a69-ef58-36f9-96a1-c55df0ef5348",
       "a471d0a2-3a1b-3bc4-bbfb-9ffbfe2e36ec"
     ],
-    "updatedAt": "2026-10-05T08:06:28.120Z"
+    "updatedAt": "2026-10-05T09:01:57.324Z"
   },
   "SPCX": {
-    "text": "Renaming its AI division to SpaceXSI and heightened buying interest signal strong AI expansion confidence.",
+    "text": "Strong AI-driven earnings outlook and retail buying surge after positive quarterly metrics boost investor confidence.",
     "source": "stock",
     "articleIds": [
-      "ab2d1a04-8ceb-3273-b72f-2503bee15cb6",
+      "30522b1a-10ee-356f-9364-814c2f4cbb9f",
       "b98e0c13-f78a-3e19-ad93-12d5a340e701",
       "ae790719-be97-3bff-b150-edcb77b83ca6",
       "157aaad0-be1a-3c03-92db-528c675f9b6c"
     ],
-    "updatedAt": "2026-10-05T08:06:33.080Z"
+    "updatedAt": "2026-10-05T09:02:02.727Z"
   },
   "MRVL": {
-    "text": "Anticipation of upcoming product reveal and potential breakthrough technology fueling investor optimism driving significant interest",
+    "text": "Anticipation of the Oct 6 AI‑focused event unveiling new growth opportunities.",
     "source": "stock",
     "articleIds": [
       "b8701ae6-0c12-36b5-a1e6-f8ae9f61e732",
       "ed915355-854b-3ce4-ab3f-49cf3ae6df8d",
+      "38ceb0ee-f56a-3e24-8382-37a913a86c3a",
       "e6f57aa6-aef3-3419-8244-e4fc69db87c5"
     ],
-    "updatedAt": "2026-10-05T08:06:38.490Z"
+    "updatedAt": "2026-10-05T09:02:08.067Z"
   },
   "ARM": {
     "text": "Agentic AI‑driven CPU royalty repricing lifts margins and earnings outlook.",
@@ -84,24 +86,26 @@
     "updatedAt": "2026-10-05T06:57:01.421Z"
   },
   "QCOM": {
-    "text": "Multi‑year patent licensing deal with Huawei unlocking AI chip technology, boosting revenue expectations significantly.",
+    "text": "Multi‑year patent licensing deal with Huawei, including LogicFolding AI chip technology, fuels investor optimism.",
     "source": "stock",
     "articleIds": [
       "71871fab-dbb7-396f-ae75-baebf49b7e89",
       "3488a318-1a95-3a8f-a80e-6341665bd9eb",
       "81e56b66-db33-375e-b54c-d30b935c9fc6",
-      "ebcffa5b-becd-3e0b-a44c-0a44cf6db538"
+      "1899ebb2-810c-30b7-9a7f-cf5c2a7f785d",
+      "e09e750c-1a63-3c36-b829-929a5475c34d"
     ],
-    "updatedAt": "2026-10-05T08:06:49.449Z"
+    "updatedAt": "2026-10-05T09:02:18.789Z"
   },
   "SKHY": {
-    "text": "Repriced supply contracts amid tightening memory scarcity boost investor confidence, prompting a near‑1% gain today.",
+    "text": "Long‑term memory contracts with ten customers and strong operating margins boost earnings outlook.",
     "source": "stock",
     "articleIds": [
+      "94b8faa3-5b4e-3273-8767-a6b116697619",
       "48139c77-2b1f-3955-8e8f-f187d5abac89",
       "a23a5d24-e6a6-33be-b7aa-66b0a592c225"
     ],
-    "updatedAt": "2026-10-05T06:57:12.003Z"
+    "updatedAt": "2026-10-05T09:02:24.293Z"
   },
   "MBLY": {
     "text": "Strong ADAS demand bolstered by Porsche partnership and aggressive robotaxi rollout fuels investor optimism.",
@@ -115,19 +119,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:07:04.376Z"
+    "updatedAt": "2026-10-05T09:02:33.687Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:07:08.645Z"
+    "updatedAt": "2026-10-05T09:02:38.330Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:07:13.195Z"
+    "updatedAt": "2026-10-05T09:02:43.170Z"
   },
   "MSFT": {
     "text": "Investors rally on AI earnings focus and Copilot’s perceived edge in the competitive AI landscape.",
@@ -139,18 +143,18 @@
     "updatedAt": "2026-10-05T06:57:35.702Z"
   },
   "GOOGL": {
-    "text": "U.S. spending bill fuels AI cloud demand, underscoring Alphabet’s superior positioning over rivals in the market",
+    "text": "Anticipated profit surge propelling valuation toward a $5 trillion market cap by 2028.",
     "source": "stock",
     "articleIds": [
-      "861e5a86-6800-3fdc-9225-657207a16c2b"
+      "c72d1af8-6963-356f-9060-28df81360f31"
     ],
-    "updatedAt": "2026-10-05T06:57:41.077Z"
+    "updatedAt": "2026-10-05T09:02:54.025Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:07:28.314Z"
+    "updatedAt": "2026-10-05T09:02:59.090Z"
   },
   "META": {
     "text": "Surge in retail trader interest following strong earnings preview fuels buying pressure on the platform.",
@@ -164,49 +168,49 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:07:37.604Z"
+    "updatedAt": "2026-10-05T09:03:08.563Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:07:41.843Z"
+    "updatedAt": "2026-10-05T09:03:12.752Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:07:46.034Z"
+    "updatedAt": "2026-10-05T09:03:16.937Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:07:50.220Z"
+    "updatedAt": "2026-10-05T09:03:21.132Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:07:54.443Z"
+    "updatedAt": "2026-10-05T09:03:25.354Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:07:58.668Z"
+    "updatedAt": "2026-10-05T09:03:29.595Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:08:02.926Z"
+    "updatedAt": "2026-10-05T09:03:33.822Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-05T08:08:07.183Z"
+    "updatedAt": "2026-10-05T09:03:38.031Z"
   },
   "INDEX": {
     "text": "Strong midday inflows into ETFs buoyed broader market momentum.",
@@ -217,11 +221,9 @@
     "updatedAt": "2026-10-05T06:58:30.792Z"
   },
   "INDEX_IN": {
-    "text": "Investor optimism fueled by strong AI sector momentum and anticipated growth in AI-driven enterprises.",
-    "source": "macro",
-    "articleIds": [
-      "db9beb50-0274-3f85-a853-ab7d0038df47"
-    ],
-    "updatedAt": "2026-10-05T06:58:35.765Z"
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-10-05T09:03:48.292Z"
   }
 }
