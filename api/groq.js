@@ -198,7 +198,14 @@ function filterRelevant(articles, nameVariants, cutoff, ticker) {
 
 async function classifySentiment(apiKey, subject, articles) {
   const list = articles.map((a, i) => `${i}. ${a.title}${a.summary ? `\n   ${a.summary}` : ''}`).join('\n');
-  const prompt = `For ${subject}, classify whether each article below (if it were the ONLY news driving it today) would most likely make it go UP or DOWN. Some articles may cover multiple companies — base your judgment ONLY on the parts specifically about ${subject}, ignoring information about other companies mentioned. Respond with ONLY a JSON array of length ${articles.length}, each element "UP" or "DOWN", e.g. ["UP","DOWN"]. No other text.\n\n${list}`;
+  // Plain sentiment matching alone rewarded "forced" explanations: generic evergreen
+  // opinion pieces ("Should You Buy X?", "X vs Y: Which Is A Better Buy?", "Where Will
+  // X Be In 5 Years?") have a tone that often happens to agree with whichever direction
+  // the stock moved, even though they're not describing an actual dated news event that
+  // caused today's move. Explicitly classifying those as NONE (instead of forcing UP/DOWN)
+  // keeps the "stock" tier honest — it only fires for genuine news, not plausible-sounding
+  // recycled takes.
+  const prompt = `For ${subject}, look at each article below and decide: does it describe a SPECIFIC, dated news event (e.g. earnings/guidance, an analyst upgrade/downgrade, M&A, a legal/regulatory ruling, a product/contract announcement, an executive change) that would plausibly move the stock? If yes, classify whether that event would most likely make it go UP or DOWN. If the article is instead generic evergreen commentary with no new concrete development \u2014 e.g. "Should You Buy...", "X vs Y: Which Is A Better Buy", "Where Will X Be In 5 Years", other buy/sell/hold opinion or comparison pieces \u2014 classify it as NONE regardless of its tone, even if it sounds bullish or bearish. Some articles may cover multiple companies — base your judgment ONLY on the parts specifically about ${subject}, ignoring information about other companies mentioned. Respond with ONLY a JSON array of length ${articles.length}, each element "UP", "DOWN", or "NONE", e.g. ["UP","NONE","DOWN"]. No other text.\n\n${list}`;
   const content = await groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0, max_tokens: 200 });
   try {
     return JSON.parse(content);
@@ -209,9 +216,10 @@ async function classifySentiment(apiKey, subject, articles) {
 
 async function generateSentence(apiKey, subject, direction, chgPct, articles) {
   const list = articles.map(a => `- [${a.pubDate}] ${a.title}${a.summary ? `\n  ${a.summary}` : ''}`).join('\n');
-  const prompt = `Context: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nSome articles may mention other companies too \u2014 use ONLY the information specifically about ${subject}, ignoring parts about other companies. Write a phrase targeting 15 words (a little shorter or longer is fine, but stay concise) giving ONLY the causal reason, based only on these article(s). Do NOT restate the company/index name or generic words like "stock", "shares", "up", "down", "rises", "falls" \u2014 the reader already sees the name and direction elsewhere on the page. Start directly with the reason (e.g. "$15B stock sale sparking dilution concerns as it looks to fund its aggressive AI data-center build-out", not "Down due to a $15B stock sale"). Output ONLY the phrase, nothing else.`;
+  const prompt = `Context: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nSome articles may mention other companies too \u2014 use ONLY the information specifically about ${subject}, ignoring parts about other companies. Write a phrase targeting 15 words (a little shorter or longer is fine, but stay concise) giving ONLY the causal reason, based only on these article(s) \u2014 don't invent certainty the source doesn't have (e.g. prefer "likely" / "amid" framing over flatly stating it as fact if the article itself is an analyst opinion/speculative take rather than a confirmed hard event). Do NOT restate the company/index name or generic words like "stock", "shares", "up", "down", "rises", "falls" \u2014 the reader already sees the name and direction elsewhere on the page. Start directly with the reason (e.g. "$15B stock sale sparking dilution concerns as it looks to fund its aggressive AI data-center build-out", not "Down due to a $15B stock sale"). Output ONLY the phrase, nothing else.`;
   return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2, max_tokens: 300 });
 }
+
 
 // Signals that an article is about the broad market/macro conditions rather than
 // a single company — used to prefer genuinely market-wide drivers (Fed, inflation,
