@@ -101,29 +101,42 @@ function marketDaysCutoff(n) {
   return cur;
 }
 
+// Yahoo's `finance.yahoo.com/xhr/ncp` ticker-news stream started 404ing for
+// everyone (not just this app) around early Oct 2026 — it silently made every
+// single ticker fall to the "no company-specific news" tier forever. Replaced
+// with the still-working public search endpoint, which has no body snippet
+// field (title + relatedTickers only) — downstream relevance/roundup checks
+// were adapted to not depend on a summary. Yahoo has no indexed news at all
+// for NSE tickers via this endpoint either (tried by both .NS ticker and full
+// company name) — pre-existing limitation, not a regression from this change.
 async function fetchNews(symbol, count = 10) {
-  const url = 'https://finance.yahoo.com/xhr/ncp?queryRef=latestNews&serviceKey=ncp_fin';
-  const resp = await fetch(url, {
-    method: 'POST',
-    headers: { 'User-Agent': 'Mozilla/5.0', 'Content-Type': 'application/json' },
-    body: JSON.stringify({ serviceConfig: { snippetCount: count, s: [symbol] } }),
-  });
+  const url = `https://query1.finance.yahoo.com/v1/finance/search?q=${encodeURIComponent(symbol)}&newsCount=${count}&quotesCount=0`;
+  const resp = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
   if (!resp.ok) return [];
   const data = await resp.json();
-  const stream = data?.data?.tickerStream?.stream || [];
-  return stream.filter(a => !(a.ad && a.ad.length));
+  const items = data?.news || [];
+  return items.map(a => ({
+    id: a.uuid,
+    relatedTickers: a.relatedTickers || [],
+    content: {
+      title: a.title || '',
+      summary: '',
+      pubDate: a.providerPublishTime ? new Date(a.providerPublishTime * 1000).toISOString() : null,
+    },
+  }));
 }
 
 // "Roundup" articles (e.g. "Apple, Sandisk, SpaceX... Stocks That Explain Today's
-// Market") list many companies in the title, but Yahoo's summary snippet usually
-// only actually covers the first one or two — matching on title alone can pick up
-// an article whose visible content is entirely about a DIFFERENT company. For these,
-// additionally require the target name to appear in the summary itself.
+// Market") list many companies in the title but are usually really about just one
+// or two of them — matching on title alone can pick up an article that's actually
+// about a DIFFERENT company. No body summary is available to double-check against
+// (see fetchNews), so instead require Yahoo's own relatedTickers tagging to confirm
+// the target ticker is genuinely one of the article's subjects.
 function looksLikeRoundup(title) {
   return (title.match(/,/g) || []).length >= 2 || /stocks that explain|more stocks|earnings roundup/i.test(title);
 }
 
-function filterRelevant(articles, nameVariants, cutoff) {
+function filterRelevant(articles, nameVariants, cutoff, ticker) {
   const relevant = [];
   for (const item of articles) {
     const c = item.content || {};
@@ -136,7 +149,7 @@ function filterRelevant(articles, nameVariants, cutoff) {
     const nameRe = (v) => new RegExp(`\\b${v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
     const titleMatch = nameVariants.some(v => nameRe(v).test(title));
     if (!titleMatch) continue;
-    if (looksLikeRoundup(title) && !nameVariants.some(v => nameRe(v).test(summary))) continue;
+    if (looksLikeRoundup(title) && !(item.relatedTickers || []).includes(ticker)) continue;
     relevant.push({ id: item.id, pubDate, title, summary });
     if (relevant.length === 5) break;
   }
@@ -144,7 +157,7 @@ function filterRelevant(articles, nameVariants, cutoff) {
 }
 
 async function classifySentiment(apiKey, subject, articles) {
-  const list = articles.map((a, i) => `${i}. ${a.title}\n   ${a.summary}`).join('\n');
+  const list = articles.map((a, i) => `${i}. ${a.title}${a.summary ? `\n   ${a.summary}` : ''}`).join('\n');
   const prompt = `For ${subject}, classify whether each article below (if it were the ONLY news driving it today) would most likely make it go UP or DOWN. Some articles may cover multiple companies — base your judgment ONLY on the parts specifically about ${subject}, ignoring information about other companies mentioned. Respond with ONLY a JSON array of length ${articles.length}, each element "UP" or "DOWN", e.g. ["UP","DOWN"]. No other text.\n\n${list}`;
   const content = await groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0, max_tokens: 200 });
   try {
@@ -155,7 +168,7 @@ async function classifySentiment(apiKey, subject, articles) {
 }
 
 async function generateSentence(apiKey, subject, direction, chgPct, articles) {
-  const list = articles.map(a => `- [${a.pubDate}] ${a.title}\n  ${a.summary}`).join('\n');
+  const list = articles.map(a => `- [${a.pubDate}] ${a.title}${a.summary ? `\n  ${a.summary}` : ''}`).join('\n');
   const prompt = `Context: ${subject} is currently ${direction.toLowerCase()} ${Math.abs(chgPct).toFixed(2)}% today.\n\nNews article(s) consistent with this move:\n${list}\n\nSome articles may mention other companies too \u2014 use ONLY the information specifically about ${subject}, ignoring parts about other companies. Write a phrase targeting 15 words (a little shorter or longer is fine, but stay concise) giving ONLY the causal reason, based only on these article(s). Do NOT restate the company/index name or generic words like "stock", "shares", "up", "down", "rises", "falls" \u2014 the reader already sees the name and direction elsewhere on the page. Start directly with the reason (e.g. "$15B stock sale sparking dilution concerns as it looks to fund its aggressive AI data-center build-out", not "Down due to a $15B stock sale"). Output ONLY the phrase, nothing else.`;
   return groqChat(apiKey, [{ role: 'user', content: prompt }], { temperature: 0.2, max_tokens: 300 });
 }
@@ -292,7 +305,7 @@ export default async function handler(req, res) {
 
       // Tier 1: stock-specific catalyst
       const news = await fetchNews(ticker);
-      const relevant = filterRelevant(news, nameVariants, cutoff);
+      const relevant = filterRelevant(news, nameVariants, cutoff, ticker);
       if (relevant.length) {
         const sentiments = await classifySentiment(apiKey, subject, relevant);
         const matching = relevant.filter((_, i) => sentiments[i] === direction);
