@@ -28,7 +28,15 @@ async function fetchChgPct(ticker) {
   // findings in this repo) — interval=1m&range=2d is what the live dashboard cards use
   // and reliably populates meta.previousClose, so use the same variant here to make
   // sure the pct fed into the reason generator matches what's actually on-screen.
-  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1m&range=2d&includePrePost=true`;
+  // Routed through the site's own /api/yahoo Vercel proxy rather than calling
+  // query1.finance.yahoo.com directly — Yahoo silently started blocking/rate-limiting
+  // GitHub Actions runner IPs at some point (confirmed: every scheduled run since
+  // 2026-09-08 "succeeded" but fetchChgPct returned null for literally every ticker,
+  // so mergeEntry always just copied the existing stale entry forward — the committed
+  // reasons.json never changed, freezing it on whatever the market condition was that
+  // day). The Vercel proxy's IP isn't blocked (it's what the live page itself already
+  // relies on), so fetch through it instead.
+  const url = `${SITE}/api/yahoo?symbol=${encodeURIComponent(ticker)}&interval=1m&range=2d&includePrePost=true`;
   const resp = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
   if (!resp.ok) return null;
   const data = await resp.json();
