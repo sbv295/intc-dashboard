@@ -117,6 +117,7 @@ async function fetchNews(symbol, count = 10) {
   const items = data?.news || [];
   return items.map(a => ({
     id: a.uuid,
+    link: a.link,
     relatedTickers: a.relatedTickers || [],
     content: {
       title: a.title || '',
@@ -124,6 +125,45 @@ async function fetchNews(symbol, count = 10) {
       pubDate: a.providerPublishTime ? new Date(a.providerPublishTime * 1000).toISOString() : null,
     },
   }));
+}
+
+function decodeHtmlEntities(str) {
+  return str.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+}
+
+// Free, no-signup way to recover a real 1-2 sentence summary for an article that
+// the search endpoint only gave us a bare title for: the publisher's own
+// og:description/meta-description tag (the same text used for social-media link
+// previews, so it's meant to be public). Verified to add genuine content beyond
+// the headline (e.g. an AMD "$1 trillion market cap" headline's description
+// revealed the actual bearish thesis: "market is pricing AMD as if it has become
+// the best AI computing stock, but that's just not the case"). Best-effort —
+// paywalled publishers (Barron's, WSJ) often only expose a generic teaser line,
+// and some fetches may fail/time out entirely, so callers must tolerate ''.
+async function fetchArticleDescription(url) {
+  if (!url) return '';
+  try {
+    const resp = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(4000) });
+    if (!resp.ok) return '';
+    const html = await resp.text();
+    const og = html.match(/<meta[^>]+(?:property|name)=["']og:description["'][^>]*content=["']([^"']*)["']/i);
+    const std = og ? null : html.match(/<meta[^>]+name=["']description["'][^>]*content=["']([^"']*)["']/i);
+    const raw = (og || std)?.[1];
+    return raw ? decodeHtmlEntities(raw).trim() : '';
+  } catch {
+    return '';
+  }
+}
+
+// Fetch real descriptions for a short list of already-relevance-filtered
+// articles in parallel — keep this AFTER filtering down to the few candidates
+// actually being used, not over the raw unfiltered news list, to bound the
+// extra request count.
+async function enrichWithDescriptions(articles) {
+  await Promise.all(articles.map(async (a) => {
+    a.summary = await fetchArticleDescription(a.link);
+  }));
+  return articles;
 }
 
 // "Roundup" articles (e.g. "Apple, Sandisk, SpaceX... Stocks That Explain Today's
@@ -150,7 +190,7 @@ function filterRelevant(articles, nameVariants, cutoff, ticker) {
     const titleMatch = nameVariants.some(v => nameRe(v).test(title));
     if (!titleMatch) continue;
     if (looksLikeRoundup(title) && !(item.relatedTickers || []).includes(ticker)) continue;
-    relevant.push({ id: item.id, pubDate, title, summary });
+    relevant.push({ id: item.id, link: item.link, pubDate, title, summary });
     if (relevant.length === 5) break;
   }
   return relevant;
@@ -200,7 +240,7 @@ async function macroExplain(apiKey, subject, direction, pct, cutoff, { preferBro
   let macroRelevant = macroNews
     .map(item => {
       const c = item.content || {};
-      return { id: item.id, pubDate: c.pubDate, title: (c.title || '').trim(), summary: (c.summary || '').trim() };
+      return { id: item.id, link: item.link, pubDate: c.pubDate, title: (c.title || '').trim(), summary: (c.summary || '').trim() };
     })
     .filter(a => a.pubDate && new Date(a.pubDate) >= cutoff && a.title);
 
@@ -215,6 +255,7 @@ async function macroExplain(apiKey, subject, direction, pct, cutoff, { preferBro
   macroRelevant = macroRelevant.slice(0, 5);
 
   if (!macroRelevant.length) return null;
+  await enrichWithDescriptions(macroRelevant);
   const macroSentiments = await classifySentiment(apiKey, sentimentSubject, macroRelevant);
   const macroMatching = macroRelevant.filter((_, i) => macroSentiments[i] === direction);
   if (!macroMatching.length) return null;
@@ -307,6 +348,7 @@ export default async function handler(req, res) {
       const news = await fetchNews(ticker);
       const relevant = filterRelevant(news, nameVariants, cutoff, ticker);
       if (relevant.length) {
+        await enrichWithDescriptions(relevant);
         const sentiments = await classifySentiment(apiKey, subject, relevant);
         const matching = relevant.filter((_, i) => sentiments[i] === direction);
         if (matching.length) {
