@@ -3,58 +3,61 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:40:18.318Z"
+    "updatedAt": "2026-10-06T17:44:51.418Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:40:24.149Z"
+    "updatedAt": "2026-10-06T17:44:56.840Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:40:29.390Z"
+    "updatedAt": "2026-10-06T17:45:02.290Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:40:34.712Z"
+    "updatedAt": "2026-10-06T17:45:07.114Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:40:40.136Z"
+    "updatedAt": "2026-10-06T17:45:13.053Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:40:45.402Z"
+    "updatedAt": "2026-10-06T17:45:18.645Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:40:50.984Z"
+    "updatedAt": "2026-10-06T17:45:24.050Z"
   },
   "SPCX": {
-    "text": "Morgan Stanley’s $300 price target, deeming it cheap ahead of upcoming Starship test, fuels optimism.",
-    "source": "stock",
-    "articleIds": [
-      "565b2b33-8f5c-3d21-82f2-5b8b2ec49dc4",
-      "733a7e08-691f-388d-844a-3c579ed67442"
-    ],
-    "updatedAt": "2026-10-06T11:40:56.560Z"
-  },
-  "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:41:02.531Z"
+    "updatedAt": "2026-10-06T17:45:29.531Z"
+  },
+  "MRVL": {
+    "text": "Raised FY2028 revenue outlook to $20 B and unveiled FY2031 $70‑90 B target, highlighting AI‑driven growth strategy.",
+    "source": "stock",
+    "articleIds": [
+      "9b9651bc-fd4d-33b8-aa4b-6dab4b7c3640",
+      "2fa02b3b-de78-3c4a-8aba-564b864cf6db",
+      "0fc09310-da9b-31d8-8fb6-f906c9d743ad",
+      "c5510f05-6f07-32f3-8d1e-de999c9361de",
+      "b1cd9735-234d-43cd-b00a-5eacd66c1ef7"
+    ],
+    "updatedAt": "2026-10-06T17:45:35.139Z"
   },
   "ARM": {
     "text": "amid a Delaware court trial over withheld chip testing tools and potential royalty damages.",
@@ -68,136 +71,137 @@
     "updatedAt": "2026-10-05T17:43:18.497Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-06T11:41:14.022Z"
-  },
-  "SKHY": {
-    "text": "Caution ahead of upcoming third‑quarter earnings report dampening investor sentiment amid broader chip sector uncertainty.",
-    "source": "stock",
-    "articleIds": [
-      "8428138f-163e-3633-a5eb-d1702e99882f"
-    ],
-    "updatedAt": "2026-10-06T11:41:20.189Z"
-  },
-  "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:41:25.217Z"
+    "updatedAt": "2026-10-06T17:45:47.323Z"
+  },
+  "SKHY": {
+    "text": "Earnings caution ahead of Q3 results and anticipated rebalancing by Goldman, prompting investor wariness overall.",
+    "source": "stock",
+    "articleIds": [
+      "7a847e8b-0adf-3410-8ef7-66f78660d17f",
+      "8428138f-163e-3633-a5eb-d1702e99882f"
+    ],
+    "updatedAt": "2026-10-06T17:45:54.205Z"
+  },
+  "MBLY": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-06T17:46:00.125Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:41:29.452Z"
+    "updatedAt": "2026-10-06T17:46:04.509Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:41:33.705Z"
+    "updatedAt": "2026-10-06T17:46:08.748Z"
   },
   "AAPL": {
-    "text": "Recent insider sales by Cook and O'Leary totaling over $79 M may raise dilution concerns among investors.",
+    "text": "robust quarterly results and record fiscal Q3 revenue fueling investor optimism amid earnings growth expectations",
     "source": "stock",
     "articleIds": [
-      "cd553d92-c209-3a47-8c7c-68d46d9646e8",
-      "ed6d65e0-8859-3d85-88c2-f5b5a09f6890"
+      "f447db1c-24f2-3ce8-8043-bf8764a60b3e",
+      "9e8bb40d-425e-3a40-b877-179dce37665f"
     ],
-    "updatedAt": "2026-10-06T11:41:40.025Z"
+    "updatedAt": "2026-10-06T17:46:14.632Z"
   },
   "MSFT": {
-    "text": "BNP Paribas lifted its price target to $604, signaling stronger growth expectations and renewed confidence.",
+    "text": "AI safety initiatives driving a $665 target price, boosting investor optimism amid broader AI hype and expected revenue growth.",
     "source": "stock",
     "articleIds": [
-      "6596a27d-44ed-3b46-b2b4-c0c3d19735d9"
+      "dd4ddea0-d88c-3ac8-887d-ea5e871d6643"
     ],
-    "updatedAt": "2026-10-06T11:41:45.629Z"
+    "updatedAt": "2026-10-06T17:46:20.823Z"
   },
   "GOOGL": {
-    "text": "Signing a 20‑year, multi‑billion nuclear power purchase agreement with Constellation Energy, adding 890 MW capacity to.",
+    "text": "Likely boost from the sweeping nuclear‑power agreement with Constellation Energy enhancing data‑center energy supply capacity.",
     "source": "stock",
     "articleIds": [
-      "7165b687-4d93-395c-92bd-5dc9051cd676",
-      "417c512d-a920-3ee7-870e-e727d6868989",
-      "b31e1317-eee8-30f7-b74b-7002a9467982",
-      "8364d18e-6de0-3c4c-9e8a-a12aa1d7a82a",
-      "56370ade-cf7b-3c3a-8f52-79e4d735e718"
+      "ee60adc3-fab6-38ad-bdda-eb336cc3baad"
     ],
-    "updatedAt": "2026-10-06T11:41:51.683Z"
+    "updatedAt": "2026-10-06T17:46:26.672Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-06T11:41:57.440Z"
+    "text": "AI-driven ad platform launch and Emmy streaming agreement fueling growth optimism amid LA campus acquisition",
+    "source": "stock",
+    "articleIds": [
+      "dc314b29-a004-3b86-86db-4a77bed6af71",
+      "f3bc995d-77b3-33b4-8ec4-6c95d1366ccc",
+      "bc37105c-c6f7-3e6a-b869-8e202f0c7430"
+    ],
+    "updatedAt": "2026-10-06T17:46:33.171Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:02.260Z"
+    "updatedAt": "2026-10-06T17:46:38.549Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:06.484Z"
+    "updatedAt": "2026-10-06T17:46:42.959Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:10.678Z"
+    "updatedAt": "2026-10-06T17:46:47.339Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:14.955Z"
+    "updatedAt": "2026-10-06T17:46:51.596Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:19.293Z"
+    "updatedAt": "2026-10-06T17:46:55.843Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:23.566Z"
+    "updatedAt": "2026-10-06T17:47:00.160Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:27.792Z"
+    "updatedAt": "2026-10-06T17:47:04.457Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:32.103Z"
+    "updatedAt": "2026-10-06T17:47:08.738Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:36.385Z"
+    "updatedAt": "2026-10-06T17:47:13.033Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:41.297Z"
+    "updatedAt": "2026-10-06T17:47:18.241Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-06T11:42:46.591Z"
+    "updatedAt": "2026-10-06T17:47:23.548Z"
   }
 }
