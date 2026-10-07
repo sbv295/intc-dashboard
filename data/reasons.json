@@ -1,67 +1,62 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-07T08:15:02.047Z"
-  },
-  "AMD": {
-    "text": "Crossing $600 triggered Meta warrant activation, granting 160 million shares in the market and fueling investor enthusiasm.",
-    "source": "stock",
-    "articleIds": [
-      "2e066b68-ba65-37eb-8f08-c88af956f70e"
-    ],
-    "updatedAt": "2026-10-07T08:15:08.175Z"
-  },
-  "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:15:12.929Z"
+    "updatedAt": "2026-10-07T15:59:39.648Z"
+  },
+  "AMD": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-07T15:59:45.230Z"
+  },
+  "NVDA": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-07T15:59:50.922Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:15:18.183Z"
+    "updatedAt": "2026-10-07T15:59:56.417Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-07T08:15:23.401Z"
-  },
-  "MU": {
-    "text": "Union‑authorized strike vote in Taiwan over bonus reforms, heightening labor‑relations concerns.",
-    "source": "stock",
-    "articleIds": [
-      "632a9d18-b5d2-3e16-ba50-52f8d1ea4af2",
-      "e20c39fe-f31e-352e-b8af-a21a534db8a0"
-    ],
-    "updatedAt": "2026-10-07T08:15:29.207Z"
-  },
-  "AVGO": {
-    "text": "amid power bottleneck concerns but forecasts remain intact, boosted by Cathie Wood’s $13 M purchase",
-    "source": "stock",
-    "articleIds": [
-      "d1dc495e-c8c6-3be6-a29f-8e9141a79fc2",
-      "a34dee42-8f0e-3931-9061-36a63d1448b4"
-    ],
-    "updatedAt": "2026-10-06T22:09:26.775Z"
-  },
-  "SPCX": {
-    "text": "Starship Flight 14 success, TSMC AI‑chip partnership talks, and Beeline Kazakhstan Direct‑to‑Cell deal boosting growth prospects.",
-    "source": "stock",
-    "articleIds": [
-      "53fc4715-a7cf-307f-9cca-21c2756ad078"
-    ],
-    "updatedAt": "2026-10-07T08:15:40.574Z"
-  },
-  "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:15:46.072Z"
+    "updatedAt": "2026-10-07T16:00:04.157Z"
+  },
+  "MU": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-07T16:00:11.364Z"
+  },
+  "AVGO": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-07T16:00:22.049Z"
+  },
+  "SPCX": {
+    "text": "amid $40 billion financing push to purchase Nvidia AI chips, raising dilution and debt concerns.",
+    "source": "stock",
+    "articleIds": [
+      "2dbb9c4a-e54e-39b4-9db6-2d5b282b29d2",
+      "713a7766-f978-39b4-9e55-cea3ffc43a3b",
+      "62ee7605-b2cc-3e34-9ab8-fa5266c8ad7f",
+      "c52f313d-b6ac-3875-a2e8-639cec1860a1"
+    ],
+    "updatedAt": "2026-10-07T16:00:33.174Z"
+  },
+  "MRVL": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-07T16:00:40.036Z"
   },
   "ARM": {
     "text": "amid a Delaware court trial over withheld chip testing tools and potential royalty damages.",
@@ -75,132 +70,125 @@
     "updatedAt": "2026-10-05T17:43:18.497Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:15:56.965Z"
+    "updatedAt": "2026-10-07T16:00:58.363Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:16:02.117Z"
+    "updatedAt": "2026-10-07T16:01:03.839Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-07T08:16:06.547Z"
+    "text": "UBS cut its price target to $7.50, citing weaker growth outlook and reduced earnings expectations.",
+    "source": "stock",
+    "articleIds": [
+      "dcc82f0e-1996-3c8a-85b1-588e92f20ce7"
+    ],
+    "updatedAt": "2026-10-07T16:01:09.734Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:16:10.868Z"
+    "updatedAt": "2026-10-07T16:01:14.212Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:16:15.168Z"
+    "updatedAt": "2026-10-07T16:01:18.685Z"
   },
   "AAPL": {
-    "text": "Likely boost from Apple’s partnership with LG to co‑develop smart‑home accessories, revitalizing HomeKit ecosystem.",
-    "source": "stock",
-    "articleIds": [
-      "9554faf7-d41b-3ca9-a787-f991960b9b50"
-    ],
-    "updatedAt": "2026-10-07T01:59:23.198Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-07T16:01:23.734Z"
   },
   "MSFT": {
-    "text": "Anticipation of exclusive GTA VI streaming rights on Xbox Cloud, boosting growth expectations.",
-    "source": "stock",
-    "articleIds": [
-      "690e381b-c777-3a52-b0be-e4080618214f",
-      "733c9128-2637-356c-90ed-7de400acbc99"
-    ],
-    "updatedAt": "2026-10-07T08:16:26.189Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-07T16:01:29.124Z"
   },
   "GOOGL": {
-    "text": "Signing a long‑term 3.59 GW nuclear power agreement with Constellation Energy, bolstering sustainable data‑center energy supply.",
-    "source": "stock",
-    "articleIds": [
-      "9eb33879-b795-3750-bc3e-b5566dd2b748"
-    ],
-    "updatedAt": "2026-10-07T08:16:31.551Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-07T16:01:34.636Z"
   },
   "AMZN": {
-    "text": "Strategic Alexa+ partnership with eDreams ODIGEO to power AI travel search, boosting growth prospects.",
-    "source": "stock",
-    "articleIds": [
-      "8998bc84-4b71-342f-b2bc-fd5329a7d097"
-    ],
-    "updatedAt": "2026-10-07T08:16:37.025Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-07T16:01:41.781Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:16:42.492Z"
+    "updatedAt": "2026-10-07T16:01:47.183Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:16:46.763Z"
+    "updatedAt": "2026-10-07T16:01:51.734Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:16:51.052Z"
+    "updatedAt": "2026-10-07T16:01:56.336Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:16:55.422Z"
+    "updatedAt": "2026-10-07T16:02:01.026Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:16:59.678Z"
+    "updatedAt": "2026-10-07T16:02:05.717Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:17:03.956Z"
+    "updatedAt": "2026-10-07T16:02:10.231Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:17:08.213Z"
+    "updatedAt": "2026-10-07T16:02:14.714Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:17:12.472Z"
+    "updatedAt": "2026-10-07T16:02:19.325Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:17:16.746Z"
+    "updatedAt": "2026-10-07T16:02:23.834Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:17:21.757Z"
+    "updatedAt": "2026-10-07T16:02:29.146Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-07T08:17:27.210Z"
+    "updatedAt": "2026-10-07T16:02:34.896Z"
   }
 }
