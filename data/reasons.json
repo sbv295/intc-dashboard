@@ -3,80 +3,85 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:01:47.416Z"
+    "updatedAt": "2026-10-08T21:42:59.291Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-08T16:01:53.149Z"
-  },
-  "NVDA": {
-    "text": "Trump’s disclosed August buying and selling activity sparked investor uncertainty, weighing on sentiment amid AI hype.",
+    "text": "amid soaring oil prices after a tanker attack, prompting a broader chip-sector selloff.",
     "source": "stock",
     "articleIds": [
-      "5b9e4402-d5a7-3f2b-a666-7249a58a5e60"
+      "e146397b-2808-327a-a644-65337a2161dc",
+      "004b1f8b-cb67-3067-87ca-56ff8c044553"
     ],
-    "updatedAt": "2026-10-08T16:02:00.023Z"
+    "updatedAt": "2026-10-08T21:43:05.208Z"
+  },
+  "NVDA": {
+    "text": "Legal challenge to $20B Groq acquisition and rival chip compatibility eroding confidence amid market uncertainty.",
+    "source": "stock",
+    "articleIds": [
+      "912c14d5-75dd-3b06-8c98-1342aa079ab2",
+      "584febf3-db67-30c1-bf4f-5bd616259bfe"
+    ],
+    "updatedAt": "2026-10-08T21:43:11.238Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:02:05.076Z"
+    "updatedAt": "2026-10-08T21:43:16.945Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-08T16:02:10.486Z"
+    "text": "Tepper’s large sell‑off to fund a shift toward a trillion‑dollar AI chip leader sparked investor concerns.",
+    "source": "stock",
+    "articleIds": [
+      "16b37856-93e4-3dd3-82c9-ed1e4191f4d9"
+    ],
+    "updatedAt": "2026-10-08T21:43:22.727Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:02:16.098Z"
+    "updatedAt": "2026-10-08T21:43:28.177Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:02:21.699Z"
+    "updatedAt": "2026-10-08T21:43:33.757Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:02:27.855Z"
+    "updatedAt": "2026-10-08T21:43:39.297Z"
   },
   "MRVL": {
+    "text": "Analysts' aggressive AI target hikes amid $20 billion FY2028 revenue forecast spooked investors.",
+    "source": "stock",
+    "articleIds": [
+      "351144b8-7158-3b70-a5b8-a8600703096f"
+    ],
+    "updatedAt": "2026-10-08T21:43:45.491Z"
+  },
+  "ARM": {
+    "text": "Amid a federal trial over billions in alleged royalty breaches with Qualcomm.",
+    "source": "stock",
+    "articleIds": [
+      "fd97d152-178c-3313-9ecc-a49d6e31cd42"
+    ],
+    "updatedAt": "2026-10-08T21:43:51.236Z"
+  },
+  "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:02:33.497Z"
-  },
-  "ARM": {
-    "text": "Amid a federal trial over billions in Qualcomm royalty disputes, investor concerns weigh on sentiment.",
-    "source": "stock",
-    "articleIds": [
-      "fd97d152-178c-3313-9ecc-a49d6e31cd42",
-      "66120e5a-f8dd-3e3b-8f80-7118f8ac7618"
-    ],
-    "updatedAt": "2026-10-08T08:17:53.803Z"
-  },
-  "QCOM": {
-    "text": "$4.60 billion shelf registration for up to 25 million shares raising dilution concerns amid market uncertainty.",
-    "source": "stock",
-    "articleIds": [
-      "0be1a54f-743e-396f-8318-ba3e8d7a1e03"
-    ],
-    "updatedAt": "2026-10-08T08:17:59.343Z"
+    "updatedAt": "2026-10-08T21:43:56.446Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:02:52.013Z"
+    "updatedAt": "2026-10-08T21:44:01.822Z"
   },
   "MBLY": {
     "text": "UBS cut its price target to $7.50, citing weaker growth outlook and reduced earnings expectations.",
@@ -90,111 +95,104 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:03:02.233Z"
+    "updatedAt": "2026-10-08T21:44:12.355Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:03:06.955Z"
+    "updatedAt": "2026-10-08T21:44:16.754Z"
   },
   "AAPL": {
-    "text": "Amid Securitize’s launch of 1:1‑backed Apple tokens on Solana, investors are buoyed by new on‑chain ownership opportunities.",
-    "source": "stock",
-    "articleIds": [
-      "7b53f02f-1388-3159-ba2e-7b5fd5272c03",
-      "334a7316-dc08-30ca-af06-e7b8ce9781be",
-      "18cb392e-b702-3f3c-97f5-11490b3be873"
-    ],
-    "updatedAt": "2026-10-08T16:03:13.050Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-08T21:44:22.435Z"
   },
   "MSFT": {
-    "text": "Suspended from the U.S. green‑card program over alleged labor‑certification abuse, prompting investor concerns.",
+    "text": "amid OpenAI revenue doubts and a new federal hiring crackdown, investor sentiment weakened",
     "source": "stock",
     "articleIds": [
-      "91726ee2-e45a-3865-b6e3-1ade492866fd",
-      "e8221c7b-40f7-3c2e-b0a8-ea613e5e811e",
-      "a9cc7221-cbac-34bf-8f15-bdc39c3d2fdf",
-      "22cc3611-652a-3f3f-a18d-5feabe9aad80",
-      "d3e59463-ff54-345c-aa53-d6fcf440add6"
+      "967c17f2-b4d1-309f-8068-020a5b9ef5b9",
+      "7316ff75-2240-3d21-8459-e47c20bb8935"
     ],
-    "updatedAt": "2026-10-08T16:03:18.790Z"
+    "updatedAt": "2026-10-08T21:44:28.064Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:03:24.144Z"
+    "updatedAt": "2026-10-08T21:44:33.900Z"
   },
   "AMZN": {
+    "text": "Ban on external AI agents amid $309.5 million refund settlement fueling investor concerns about future prospects.",
+    "source": "stock",
+    "articleIds": [
+      "a93b8a46-2ef3-373a-b20c-3ad8e2d8eca6",
+      "6f567534-a6d0-48d9-b632-fb9eaca8bf6a",
+      "4f50e67a-fb23-32cb-b2a3-ff6d4c9a7168"
+    ],
+    "updatedAt": "2026-10-08T21:44:40.311Z"
+  },
+  "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:03:29.550Z"
-  },
-  "META": {
-    "text": "Blocked Chinese approval of its Manus acquisition raising uncertainty after founders repurchased the startup again.",
-    "source": "stock",
-    "articleIds": [
-      "c262af91-a54c-3dba-889b-089cdaccb70b"
-    ],
-    "updatedAt": "2026-10-08T16:03:36.005Z"
+    "updatedAt": "2026-10-08T21:44:45.977Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:03:40.384Z"
+    "updatedAt": "2026-10-08T21:44:50.505Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:03:44.790Z"
+    "updatedAt": "2026-10-08T21:44:54.960Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:03:49.139Z"
+    "updatedAt": "2026-10-08T21:44:59.400Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:03:53.427Z"
+    "updatedAt": "2026-10-08T21:45:03.922Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:03:57.850Z"
+    "updatedAt": "2026-10-08T21:45:08.530Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:04:02.435Z"
+    "updatedAt": "2026-10-08T21:45:13.014Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:04:06.843Z"
+    "updatedAt": "2026-10-08T21:45:17.476Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T16:04:11.453Z"
+    "updatedAt": "2026-10-08T21:45:21.845Z"
   },
   "INDEX": {
-    "text": "Higher oil prices spurred by Trump’s comment that he opposes an Iran deal, rattling markets.",
-    "source": "macro",
-    "articleIds": [
-      "158bd57c-83de-3b36-b6e5-61a55a121097"
-    ],
-    "updatedAt": "2026-10-08T16:04:17.271Z"
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-10-08T21:45:26.898Z"
   },
   "INDEX_IN": {
     "text": "RBI’s first rate hike in nearly four years and hawkish stance amid sticky inflation likely spurred the decline.",
