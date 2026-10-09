@@ -3,194 +3,192 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:18:55.709Z"
+    "updatedAt": "2026-10-09T15:44:11.590Z"
   },
   "AMD": {
-    "text": "CEO’s stark warning on a weakening chip market outlook, raising concerns over future demand and profitability.",
+    "text": "Ark’s $37 million off‑load by Cathie Wood prompting investor concerns over confidence in AMD’s AI outlook",
     "source": "stock",
     "articleIds": [
-      "7e123c61-fe8a-35d3-8814-0679bd6f7c78"
+      "ab90c592-5eed-3ab8-93a5-fdd0e0cb76e0"
     ],
-    "updatedAt": "2026-10-09T01:38:19.596Z"
+    "updatedAt": "2026-10-09T15:44:17.679Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:19:06.655Z"
+    "updatedAt": "2026-10-09T15:44:22.878Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:19:12.158Z"
+    "updatedAt": "2026-10-09T15:44:28.307Z"
   },
   "SNDK": {
-    "text": "Tepper’s large sell‑off to fund a shift toward a trillion‑dollar AI chip leader sparked investor concerns.",
-    "source": "stock",
-    "articleIds": [
-      "16b37856-93e4-3dd3-82c9-ed1e4191f4d9"
-    ],
-    "updatedAt": "2026-10-08T21:43:22.727Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-09T15:44:33.434Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:19:23.233Z"
+    "updatedAt": "2026-10-09T15:44:38.650Z"
   },
   "AVGO": {
-    "text": "Disclosure from another AI firm raised concerns about Broadcom’s competitive positioning, prompting investor caution.",
-    "source": "stock",
-    "articleIds": [
-      "4e0022ce-b6a8-3cc0-b788-2457105d4d9a"
-    ],
-    "updatedAt": "2026-10-09T08:19:28.667Z"
-  },
-  "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:19:33.960Z"
+    "updatedAt": "2026-10-09T15:44:43.657Z"
+  },
+  "SPCX": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-09T15:44:49.049Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:19:39.431Z"
+    "updatedAt": "2026-10-09T15:44:54.619Z"
   },
   "ARM": {
-    "text": "Amid a federal trial over billions in alleged royalty breaches with Qualcomm.",
+    "text": "Jury trial looming over Qualcomm breach lawsuit, heightening legal uncertainty and investor concerns.",
     "source": "stock",
     "articleIds": [
-      "fd97d152-178c-3313-9ecc-a49d6e31cd42"
+      "a22983b6-6494-3cc6-8f39-050a38b7c574"
     ],
-    "updatedAt": "2026-10-08T21:43:51.236Z"
+    "updatedAt": "2026-10-09T15:45:00.518Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-09T08:19:50.268Z"
+    "text": "Jury trial looming over Qualcomm’s breach‑of‑contract lawsuit against Arm, heightening legal uncertainty.",
+    "source": "stock",
+    "articleIds": [
+      "a22983b6-6494-3cc6-8f39-050a38b7c574"
+    ],
+    "updatedAt": "2026-10-09T15:45:06.423Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:19:55.300Z"
+    "updatedAt": "2026-10-09T15:45:11.874Z"
   },
   "MBLY": {
-    "text": "UBS cut its price target to $7.50, citing weaker growth outlook and reduced earnings expectations.",
-    "source": "stock",
-    "articleIds": [
-      "dcc82f0e-1996-3c8a-85b1-588e92f20ce7"
-    ],
-    "updatedAt": "2026-10-07T16:01:09.734Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-09T15:45:17.218Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:20:05.308Z"
+    "updatedAt": "2026-10-09T15:45:21.547Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:20:09.675Z"
+    "updatedAt": "2026-10-09T15:45:25.817Z"
   },
   "AAPL": {
-    "text": "Steve Smith’s appointment as M&A chief fuels optimism over accelerated buyback execution and strategic acquisitions.",
+    "text": "Cutting iPhone 18 Pro/Pro Max orders by 15% amid pricing and timing concerns.",
     "source": "stock",
     "articleIds": [
-      "d008776d-4514-310f-a242-8760f89ec348"
+      "9a9be037-eb1c-35d2-a868-05520c11a8db"
     ],
-    "updatedAt": "2026-10-09T08:20:15.162Z"
+    "updatedAt": "2026-10-09T15:45:31.350Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-09T08:20:20.132Z"
+    "text": "Accelerating Azure revenue growth boosting earnings, likely fueling today's price increase amid strong cloud demand.",
+    "source": "stock",
+    "articleIds": [
+      "8414bf21-eb7a-3406-b59d-15f6565cbeaa"
+    ],
+    "updatedAt": "2026-10-09T15:45:37.095Z"
   },
   "GOOGL": {
-    "text": "Amid congressional pushback over a $10 million Spirit Airlines data agreement for AI training",
+    "text": "Strong quarterly results and the Gemini Agent rollout, positioning Google as a leading enterprise AI infrastructure orchestrator.",
     "source": "stock",
     "articleIds": [
-      "2f31bab0-6ddd-376d-bb6b-b03cc9707d28",
-      "41c3b2b8-a4ce-322a-a1f7-20cd70425bad"
+      "3f45600a-0b57-33f2-81c3-67e54ed92f6e",
+      "8d0bb47a-71eb-3a1d-a6dd-4c1567630c73"
     ],
-    "updatedAt": "2026-10-09T08:20:25.674Z"
+    "updatedAt": "2026-10-09T15:45:42.768Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-09T08:20:30.942Z"
-  },
-  "META": {
-    "text": "amid a new ban on ByteDance ads across Facebook and Instagram in seven countries.",
+    "text": "Prime Big Deal Days driving nearly $10 billion U.S. online spend, likely boosting revenue expectations.",
     "source": "stock",
     "articleIds": [
-      "dcbcce1c-6c32-3665-a45c-355be4390cb6",
-      "7bf89008-c82a-31d9-9bff-db1ab1e5a05e",
-      "50e52fbb-48b6-34da-950a-11b32a2d59bf"
+      "84656455-2a80-3ae2-bbc7-73f8a3779982"
     ],
-    "updatedAt": "2026-10-09T08:20:36.619Z"
+    "updatedAt": "2026-10-09T15:45:48.341Z"
+  },
+  "META": {
+    "text": "Revenue surge driven by AI-powered advertising growth, despite sharply reduced free cash flow.",
+    "source": "stock",
+    "articleIds": [
+      "66be404c-8cd3-3222-a78d-7ac8f55d9e27"
+    ],
+    "updatedAt": "2026-10-09T15:45:53.992Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:20:40.981Z"
+    "updatedAt": "2026-10-09T15:45:58.251Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:20:45.338Z"
+    "updatedAt": "2026-10-09T15:46:02.514Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:20:49.796Z"
+    "updatedAt": "2026-10-09T15:46:06.876Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:20:54.139Z"
+    "updatedAt": "2026-10-09T15:46:11.226Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:20:58.565Z"
+    "updatedAt": "2026-10-09T15:46:15.459Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:21:02.917Z"
+    "updatedAt": "2026-10-09T15:46:19.841Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:21:07.363Z"
+    "updatedAt": "2026-10-09T15:46:24.089Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:21:11.970Z"
+    "updatedAt": "2026-10-09T15:46:28.448Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-09T08:21:17.018Z"
+    "updatedAt": "2026-10-09T15:46:33.689Z"
   },
   "INDEX_IN": {
     "text": "RBI’s first rate hike in nearly four years and hawkish stance amid sticky inflation likely spurred the decline.",
