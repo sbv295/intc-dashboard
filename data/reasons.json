@@ -3,31 +3,27 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:42:59.291Z"
+    "updatedAt": "2026-10-09T01:38:14.029Z"
   },
   "AMD": {
-    "text": "amid soaring oil prices after a tanker attack, prompting a broader chip-sector selloff.",
+    "text": "CEO’s stark warning on a weakening chip market outlook, raising concerns over future demand and profitability.",
     "source": "stock",
     "articleIds": [
-      "e146397b-2808-327a-a644-65337a2161dc",
-      "004b1f8b-cb67-3067-87ca-56ff8c044553"
+      "7e123c61-fe8a-35d3-8814-0679bd6f7c78"
     ],
-    "updatedAt": "2026-10-08T21:43:05.208Z"
+    "updatedAt": "2026-10-09T01:38:19.596Z"
   },
   "NVDA": {
-    "text": "Legal challenge to $20B Groq acquisition and rival chip compatibility eroding confidence amid market uncertainty.",
-    "source": "stock",
-    "articleIds": [
-      "912c14d5-75dd-3b06-8c98-1342aa079ab2",
-      "584febf3-db67-30c1-bf4f-5bd616259bfe"
-    ],
-    "updatedAt": "2026-10-08T21:43:11.238Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-09T01:38:25.369Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:43:16.945Z"
+    "updatedAt": "2026-10-09T01:38:30.971Z"
   },
   "SNDK": {
     "text": "Tepper’s large sell‑off to fund a shift toward a trillion‑dollar AI chip leader sparked investor concerns.",
@@ -41,27 +37,28 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:43:28.177Z"
+    "updatedAt": "2026-10-09T01:38:42.128Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-08T21:43:33.757Z"
+    "text": "amid disclosure from another AI firm and uncertainty converting its $21.7 billion semiconductor outlook this quarter",
+    "source": "stock",
+    "articleIds": [
+      "4e0022ce-b6a8-3cc0-b788-2457105d4d9a",
+      "1199cccb-2158-3703-937d-21f75d961c3c"
+    ],
+    "updatedAt": "2026-10-09T01:38:47.900Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:43:39.297Z"
+    "updatedAt": "2026-10-09T01:38:53.267Z"
   },
   "MRVL": {
-    "text": "Analysts' aggressive AI target hikes amid $20 billion FY2028 revenue forecast spooked investors.",
-    "source": "stock",
-    "articleIds": [
-      "351144b8-7158-3b70-a5b8-a8600703096f"
-    ],
-    "updatedAt": "2026-10-08T21:43:45.491Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-09T01:38:58.489Z"
   },
   "ARM": {
     "text": "Amid a federal trial over billions in alleged royalty breaches with Qualcomm.",
@@ -75,13 +72,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:43:56.446Z"
+    "updatedAt": "2026-10-09T01:39:09.207Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:44:01.822Z"
+    "updatedAt": "2026-10-09T01:39:14.327Z"
   },
   "MBLY": {
     "text": "UBS cut its price target to $7.50, citing weaker growth outlook and reduced earnings expectations.",
@@ -95,19 +92,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:44:12.355Z"
+    "updatedAt": "2026-10-09T01:39:24.362Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:44:16.754Z"
+    "updatedAt": "2026-10-09T01:39:28.646Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:44:22.435Z"
+    "updatedAt": "2026-10-09T01:39:34.103Z"
   },
   "MSFT": {
     "text": "amid OpenAI revenue doubts and a new federal hiring crackdown, investor sentiment weakened",
@@ -119,80 +116,78 @@
     "updatedAt": "2026-10-08T21:44:28.064Z"
   },
   "GOOGL": {
+    "text": "Lawmakers’ concerns over Alphabet’s plan to acquire Spirit Airlines data for AI models likely pressured the price.",
+    "source": "stock",
+    "articleIds": [
+      "41c3b2b8-a4ce-322a-a1f7-20cd70425bad"
+    ],
+    "updatedAt": "2026-10-09T01:39:45.941Z"
+  },
+  "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:44:33.900Z"
-  },
-  "AMZN": {
-    "text": "Ban on external AI agents amid $309.5 million refund settlement fueling investor concerns about future prospects.",
-    "source": "stock",
-    "articleIds": [
-      "a93b8a46-2ef3-373a-b20c-3ad8e2d8eca6",
-      "6f567534-a6d0-48d9-b632-fb9eaca8bf6a",
-      "4f50e67a-fb23-32cb-b2a3-ff6d4c9a7168"
-    ],
-    "updatedAt": "2026-10-08T21:44:40.311Z"
+    "updatedAt": "2026-10-09T01:39:51.355Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:44:45.977Z"
+    "updatedAt": "2026-10-09T01:39:56.746Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:44:50.505Z"
+    "updatedAt": "2026-10-09T01:40:01.099Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:44:54.960Z"
+    "updatedAt": "2026-10-09T01:40:05.391Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:44:59.400Z"
+    "updatedAt": "2026-10-09T01:40:09.772Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:45:03.922Z"
+    "updatedAt": "2026-10-09T01:40:14.091Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:45:08.530Z"
+    "updatedAt": "2026-10-09T01:40:18.433Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:45:13.014Z"
+    "updatedAt": "2026-10-09T01:40:22.734Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:45:17.476Z"
+    "updatedAt": "2026-10-09T01:40:27.072Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:45:21.845Z"
+    "updatedAt": "2026-10-09T01:40:31.372Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-08T21:45:26.898Z"
+    "updatedAt": "2026-10-09T01:40:36.442Z"
   },
   "INDEX_IN": {
     "text": "RBI’s first rate hike in nearly four years and hawkish stance amid sticky inflation likely spurred the decline.",
