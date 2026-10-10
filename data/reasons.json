@@ -11,25 +11,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:27:35.436Z"
+    "updatedAt": "2026-10-10T00:26:03.432Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:27:40.880Z"
+    "updatedAt": "2026-10-10T00:26:08.389Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:27:46.838Z"
+    "updatedAt": "2026-10-10T00:26:13.788Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:27:52.412Z"
+    "updatedAt": "2026-10-10T00:26:19.056Z"
   },
   "MU": {
     "text": "Investors remain cautious, questioning sustainability of AI‑driven memory demand despite record DRAM and NAND sales.",
@@ -40,76 +40,78 @@
     "updatedAt": "2026-10-09T20:27:58.255Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-09T20:28:04.429Z"
+    "text": "Open Networking initiatives targeting AI bottlenecks highlighted at OCP showcase, boosting investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "1e439465-a1ba-3d1b-848e-5c18581f0282"
+    ],
+    "updatedAt": "2026-10-10T00:26:30.669Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-09T20:28:10.046Z"
+    "text": "Spectrum licensing agreement spurs optimism as it promises new revenue streams and strategic market positioning.",
+    "source": "stock",
+    "articleIds": [
+      "0e0a7610-deaa-3754-bf0e-114f0cb79d0b",
+      "75639c37-06a1-3a5f-b4d8-123db7c18cf5",
+      "bf410b0f-34a8-352c-957c-e44281571981"
+    ],
+    "updatedAt": "2026-10-10T00:26:36.652Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:28:15.565Z"
+    "updatedAt": "2026-10-10T00:26:42.112Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:28:21.299Z"
+    "updatedAt": "2026-10-10T00:26:47.502Z"
   },
   "QCOM": {
-    "text": "amid reported iPhone 18 Pro component order cuts, dampening demand for its smartphone chips",
-    "source": "stock",
-    "articleIds": [
-      "fda463dd-3387-3448-9315-344e7db5544e"
-    ],
-    "updatedAt": "2026-10-09T20:28:27.278Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-10T00:26:52.732Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:28:32.694Z"
+    "updatedAt": "2026-10-10T00:26:57.824Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:28:38.018Z"
+    "updatedAt": "2026-10-10T00:27:02.500Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:28:42.612Z"
+    "updatedAt": "2026-10-10T00:27:06.856Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:28:47.145Z"
+    "updatedAt": "2026-10-10T00:27:11.243Z"
   },
   "AAPL": {
-    "text": "Weaker iPhone 18 Pro demand prompting component order cuts and AI‑driven staffing reductions.",
+    "text": "Suppliers told to slash iPhone 18 Pro/Max component orders by at least 15% for October.",
     "source": "stock",
     "articleIds": [
-      "0336c994-dcfc-3939-9654-59cc45b79d4b",
-      "54dabc16-9080-3368-8510-d945457a9cee",
-      "18112c24-ba16-3117-880e-9f9f333ac134"
+      "7b0832eb-8bfa-315e-a3bd-5f68341692fb"
     ],
-    "updatedAt": "2026-10-09T20:28:53.311Z"
+    "updatedAt": "2026-10-10T00:27:17.298Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:28:58.345Z"
+    "updatedAt": "2026-10-10T00:27:22.608Z"
   },
   "GOOGL": {
     "text": "Backing a 20‑year nuclear expansion with Constellation Energy, adding 890 MW and $4.3 B investments via AI‑driven power purchase.",
@@ -120,72 +122,70 @@
     "updatedAt": "2026-10-09T20:29:04.167Z"
   },
   "AMZN": {
-    "text": "AWS seeding federal AI initiatives with $50 million in cloud credits, boosting market optimism.",
-    "source": "stock",
-    "articleIds": [
-      "8873d789-320a-385b-ad09-1568b713d18c"
-    ],
-    "updatedAt": "2026-10-09T20:29:09.739Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-10T00:27:33.430Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:29:15.338Z"
+    "updatedAt": "2026-10-10T00:27:38.860Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:29:19.801Z"
+    "updatedAt": "2026-10-10T00:27:43.166Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:29:24.240Z"
+    "updatedAt": "2026-10-10T00:27:47.566Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:29:28.729Z"
+    "updatedAt": "2026-10-10T00:27:51.981Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:29:33.094Z"
+    "updatedAt": "2026-10-10T00:27:56.493Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:29:37.511Z"
+    "updatedAt": "2026-10-10T00:28:00.962Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:29:42.039Z"
+    "updatedAt": "2026-10-10T00:28:05.352Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:29:46.483Z"
+    "updatedAt": "2026-10-10T00:28:09.657Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:29:51.216Z"
+    "updatedAt": "2026-10-10T00:28:14.016Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-09T20:29:56.508Z"
+    "updatedAt": "2026-10-10T00:28:19.268Z"
   },
   "INDEX_IN": {
     "text": "RBI’s first rate hike in nearly four years and hawkish stance amid sticky inflation likely spurred the decline.",
