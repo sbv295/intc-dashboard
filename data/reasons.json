@@ -11,13 +11,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:12:50.783Z"
+    "updatedAt": "2026-10-10T18:10:08.165Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:12:56.171Z"
+    "updatedAt": "2026-10-10T18:10:13.334Z"
   },
   "TSM": {
     "text": "Surge in September sales shifting focus to capacity constraints and margin pressures, dampening investor optimism.",
@@ -31,7 +31,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:13:07.244Z"
+    "updatedAt": "2026-10-10T18:10:24.451Z"
   },
   "MU": {
     "text": "amid potential Taiwan strike and lingering investor doubts despite record DRAM/NAND sales, impacting future production",
@@ -43,159 +43,159 @@
     "updatedAt": "2026-10-10T13:13:12.958Z"
   },
   "AVGO": {
-    "text": "Open Networking initiatives targeting AI bottlenecks highlighted at OCP showcase, boosting investor optimism.",
+    "text": "AI revenue tripling and cloud firms’ shift to custom AI chips, boosted by Anthropic lending deal",
     "source": "stock",
     "articleIds": [
-      "1e439465-a1ba-3d1b-848e-5c18581f0282"
+      "b4a18e66-9724-34dc-99be-b5b32bb91adc"
     ],
-    "updatedAt": "2026-10-10T00:26:30.669Z"
+    "updatedAt": "2026-10-10T18:10:36.185Z"
   },
   "SPCX": {
-    "text": "Acquisition of Grain Management’s nationwide 800 MHz spectrum fueling expectations of massive new revenue streams",
-    "source": "stock",
-    "articleIds": [
-      "7d987833-0361-3c89-8849-a6b8def55b77"
-    ],
-    "updatedAt": "2026-10-10T13:13:24.847Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-10T18:10:41.538Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:13:30.679Z"
+    "updatedAt": "2026-10-10T18:10:46.890Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:13:36.153Z"
+    "updatedAt": "2026-10-10T18:10:52.342Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:13:41.762Z"
+    "updatedAt": "2026-10-10T18:10:57.783Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:13:47.086Z"
+    "updatedAt": "2026-10-10T18:11:03.218Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:13:51.610Z"
+    "updatedAt": "2026-10-10T18:11:07.640Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:13:56.078Z"
+    "updatedAt": "2026-10-10T18:11:11.935Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:00.568Z"
+    "updatedAt": "2026-10-10T18:11:16.271Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:05.960Z"
-  },
-  "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:11.423Z"
-  },
-  "GOOGL": {
-    "text": "Robust 82% cloud revenue surge and Gemini app hitting 950 M users, boosting AI optimism.",
+    "text": "Soft iPhone 18 Pro demand and higher memory chip costs prompting a 15‑20% order cut.",
     "source": "stock",
     "articleIds": [
-      "27a643a6-f383-38b4-b8bd-3de24e4a5180",
-      "a4cd76c1-6da8-318a-84ce-2394edd56470"
+      "54ef35d4-6007-3b3e-a442-17889b7309fe",
+      "7b0832eb-8bfa-315e-a3bd-5f68341692fb"
     ],
-    "updatedAt": "2026-10-10T13:14:17.717Z"
+    "updatedAt": "2026-10-10T18:11:22.243Z"
+  },
+  "MSFT": {
+    "text": "43% Azure growth and $100B revenue milestone driving optimism despite valuation discount to five-year average",
+    "source": "stock",
+    "articleIds": [
+      "ee2d800d-3332-3de6-9dee-71d270913fb8"
+    ],
+    "updatedAt": "2026-10-10T18:11:28.262Z"
+  },
+  "GOOGL": {
+    "text": "Waymo secures $5B loan for global robotaxi expansion and AI‑driven drug venture fuels growth optimism.",
+    "source": "stock",
+    "articleIds": [
+      "d3e1b449-313a-3704-87eb-84c0069d0f55",
+      "27a643a6-f383-38b4-b8bd-3de24e4a5180"
+    ],
+    "updatedAt": "2026-10-10T18:11:34.078Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:22.947Z"
+    "updatedAt": "2026-10-10T18:11:39.473Z"
   },
   "META": {
-    "text": "amid a New Mexico privacy‑law verdict and a sudden ban on ByteDance ads across its platforms.",
+    "text": "Liability for $43 million privacy-law violations in New Mexico, with potential penalties up to $219 billion.",
     "source": "stock",
     "articleIds": [
-      "db229b6a-42d6-30f5-a5a0-55ee99140204",
-      "14975200-0f4f-3373-b050-6ee6386aaa9c",
-      "9bbf3e39-fc96-33e3-8ca0-826737110ec4",
-      "a52245c5-1933-32f1-b219-2a90d49a8e8a"
+      "14975200-0f4f-3373-b050-6ee6386aaa9c"
     ],
-    "updatedAt": "2026-10-10T13:14:28.959Z"
+    "updatedAt": "2026-10-10T18:11:45.326Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:33.371Z"
+    "updatedAt": "2026-10-10T18:11:49.630Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:37.777Z"
+    "updatedAt": "2026-10-10T18:11:53.923Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:42.122Z"
+    "updatedAt": "2026-10-10T18:11:58.210Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:46.568Z"
+    "updatedAt": "2026-10-10T18:12:02.567Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:51.096Z"
+    "updatedAt": "2026-10-10T18:12:06.878Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:55.491Z"
+    "updatedAt": "2026-10-10T18:12:11.165Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:14:59.935Z"
+    "updatedAt": "2026-10-10T18:12:15.435Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:15:04.301Z"
+    "updatedAt": "2026-10-10T18:12:19.835Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:15:09.604Z"
+    "updatedAt": "2026-10-10T18:12:24.991Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-10T13:15:15.063Z"
+    "updatedAt": "2026-10-10T18:12:29.851Z"
   }
 }
