@@ -19,27 +19,28 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:09:24.970Z"
+    "updatedAt": "2026-10-11T01:28:28.283Z"
   },
   "TSM": {
-    "text": "Surge in September sales shifting focus to capacity constraints and margin pressures, dampening investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "eb8b7409-16a5-3a10-a9da-f39f46453d71"
-    ],
-    "updatedAt": "2026-10-10T13:13:01.703Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-11T01:28:33.167Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:09:35.905Z"
+    "updatedAt": "2026-10-11T01:28:38.636Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-10T22:09:41.280Z"
+    "text": "Union‑authorized strike in Taiwan over rejected bonus, raising supply‑chain concerns for key memory plant.",
+    "source": "stock",
+    "articleIds": [
+      "d798b2d9-5b60-3fbd-bcfc-36924ed0c26e",
+      "75c7536c-5162-3aaf-b859-79f6d3085ba8"
+    ],
+    "updatedAt": "2026-10-11T01:28:44.305Z"
   },
   "AVGO": {
     "text": "AI revenue tripling and cloud firms’ shift to custom AI chips, boosted by Anthropic lending deal",
@@ -61,49 +62,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:09:58.732Z"
+    "updatedAt": "2026-10-11T01:29:00.903Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:10:04.126Z"
+    "updatedAt": "2026-10-11T01:29:06.617Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:10:09.542Z"
+    "updatedAt": "2026-10-11T01:29:12.116Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:10:14.890Z"
+    "updatedAt": "2026-10-11T01:29:17.711Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:10:19.311Z"
+    "updatedAt": "2026-10-11T01:29:22.215Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:10:23.518Z"
+    "updatedAt": "2026-10-11T01:29:26.578Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:10:27.745Z"
+    "updatedAt": "2026-10-11T01:29:30.888Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:10:33.279Z"
+    "updatedAt": "2026-10-11T01:29:36.278Z"
   },
   "MSFT": {
     "text": "43% Azure growth and $100B revenue milestone driving optimism despite valuation discount to five-year average",
@@ -114,20 +115,19 @@
     "updatedAt": "2026-10-10T18:11:28.262Z"
   },
   "GOOGL": {
-    "text": "Securing a $5 billion Waymo loan and pursuing a $40‑50 billion AI drug‑discovery capital raise.",
+    "text": "Amid a $5 B Waymo financing push, a $50 B AI investment and Unity gaming partnership.",
     "source": "stock",
     "articleIds": [
-      "d3e1b449-313a-3704-87eb-84c0069d0f55"
+      "d3e1b449-313a-3704-87eb-84c0069d0f55",
+      "452779c1-aebb-3395-8800-536a3c81baa4"
     ],
-    "updatedAt": "2026-10-10T22:10:45.602Z"
+    "updatedAt": "2026-10-11T01:29:48.128Z"
   },
   "AMZN": {
-    "text": "Prime members’ new fuel‑discount program likely boosting consumer enthusiasm and driving today’s price gain.",
-    "source": "stock",
-    "articleIds": [
-      "a54bdf5c-b7a1-32bd-bc5f-368b09d8f35b"
-    ],
-    "updatedAt": "2026-10-10T22:10:51.179Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-11T01:29:53.478Z"
   },
   "META": {
     "text": "Liability for $43 million privacy-law violations in New Mexico, with potential penalties up to $219 billion.",
@@ -141,60 +141,60 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:11:01.162Z"
+    "updatedAt": "2026-10-11T01:30:04.216Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:11:05.371Z"
+    "updatedAt": "2026-10-11T01:30:08.502Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:11:09.630Z"
+    "updatedAt": "2026-10-11T01:30:12.804Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:11:13.869Z"
+    "updatedAt": "2026-10-11T01:30:17.148Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:11:18.136Z"
+    "updatedAt": "2026-10-11T01:30:21.426Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:11:22.447Z"
+    "updatedAt": "2026-10-11T01:30:25.706Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:11:26.690Z"
+    "updatedAt": "2026-10-11T01:30:30.081Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:11:31.091Z"
+    "updatedAt": "2026-10-11T01:30:34.422Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:11:36.332Z"
+    "updatedAt": "2026-10-11T01:30:39.728Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-10T22:11:41.327Z"
+    "updatedAt": "2026-10-11T01:30:45.032Z"
   }
 }
