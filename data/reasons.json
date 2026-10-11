@@ -3,40 +3,39 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:15:22.731Z"
+    "updatedAt": "2026-10-11T19:51:04.426Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:15:28.146Z"
+    "updatedAt": "2026-10-11T19:51:09.822Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:15:32.934Z"
+    "updatedAt": "2026-10-11T19:51:15.022Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:15:38.311Z"
+    "updatedAt": "2026-10-11T19:51:20.314Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:15:43.925Z"
+    "updatedAt": "2026-10-11T19:51:25.713Z"
   },
   "MU": {
-    "text": "Union‑authorized strike in Taiwan over rejected bonus, raising supply‑chain concerns for key memory plant.",
+    "text": "Union‑authorized strike in Taiwan over rejected bonus proposal lacking permanent profit sharing, pressuring performance outlook.",
     "source": "stock",
     "articleIds": [
-      "d798b2d9-5b60-3fbd-bcfc-36924ed0c26e",
-      "75c7536c-5162-3aaf-b859-79f6d3085ba8"
+      "d798b2d9-5b60-3fbd-bcfc-36924ed0c26e"
     ],
-    "updatedAt": "2026-10-11T01:28:44.305Z"
+    "updatedAt": "2026-10-11T19:51:31.907Z"
   },
   "AVGO": {
     "text": "AI revenue tripling and cloud firms’ shift to custom AI chips, boosted by Anthropic lending deal",
@@ -47,24 +46,27 @@
     "updatedAt": "2026-10-10T18:10:36.185Z"
   },
   "SPCX": {
-    "text": "Amid FCC approval granting SpaceX new spectrum, enabling competition with wireless giants.",
-    "source": "stock",
-    "articleIds": [
-      "b2b0fe56-7e35-3598-a594-ab81a0b78d44"
-    ],
-    "updatedAt": "2026-10-11T15:16:00.628Z"
-  },
-  "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:16:05.995Z"
+    "updatedAt": "2026-10-11T19:51:43.681Z"
+  },
+  "MRVL": {
+    "text": "Showcasing next‑gen AI data‑center solutions at OCP 2026, sparking optimism over hardware growth and market interest.",
+    "source": "stock",
+    "articleIds": [
+      "ee8d39e4-9cda-30cd-9ea0-275ea77e2f96"
+    ],
+    "updatedAt": "2026-10-11T19:51:49.549Z"
   },
   "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-11T15:16:11.548Z"
+    "text": "Lawsuit challenging Arm’s licensing agreements and royalty model, heightening uncertainty over future revenue streams.",
+    "source": "stock",
+    "articleIds": [
+      "8595ec9a-a0e4-3c9f-bc38-c94c84ff1aa5",
+      "c7fe0f7b-5066-3d99-99a3-a6a1f236c528"
+    ],
+    "updatedAt": "2026-10-11T19:51:55.205Z"
   },
   "QCOM": {
     "text": "Awaiting jury verdict on Arm licensing case, creating uncertainty and pressuring the price.",
@@ -78,55 +80,52 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:16:23.246Z"
+    "updatedAt": "2026-10-11T19:52:07.078Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:16:27.749Z"
+    "updatedAt": "2026-10-11T19:52:11.469Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:16:31.955Z"
+    "updatedAt": "2026-10-11T19:52:15.781Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:16:36.590Z"
+    "updatedAt": "2026-10-11T19:52:20.058Z"
   },
   "AAPL": {
-    "text": "Reduced iPhone 18 production orders likely dampening demand expectations, pressuring the price.",
-    "source": "stock",
-    "articleIds": [
-      "2251dd17-1be0-35db-add8-53eda98a93e6"
-    ],
-    "updatedAt": "2026-10-11T15:16:42.304Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-11T19:52:25.319Z"
   },
   "MSFT": {
-    "text": "43% Azure growth and $100B revenue milestone driving optimism despite valuation discount to five-year average",
-    "source": "stock",
-    "articleIds": [
-      "ee2d800d-3332-3de6-9dee-71d270913fb8"
-    ],
-    "updatedAt": "2026-10-10T18:11:28.262Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-11T19:52:30.284Z"
   },
   "GOOGL": {
-    "text": "Funding a $5 billion Waymo loan and pursuing a $40‑50 billion AI drug‑discovery raise to support expansion.",
+    "text": "Joint $420 B data‑center commitment and 82% cloud growth boost confidence in its cloud expansion",
     "source": "stock",
     "articleIds": [
-      "d3e1b449-313a-3704-87eb-84c0069d0f55"
+      "e61c640e-8f73-333f-bbfb-a97c76a2efec",
+      "0e7c43c2-e705-36f4-869c-30d923d0ea5e"
     ],
-    "updatedAt": "2026-10-11T15:16:53.262Z"
+    "updatedAt": "2026-10-11T19:52:36.266Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:16:58.434Z"
+    "updatedAt": "2026-10-11T19:52:41.756Z"
   },
   "META": {
     "text": "Regulatory pushback and competitive ad‑blockade after halting TikTok ads and abandoning the blocked Manus acquisition.",
@@ -140,60 +139,60 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:17:08.262Z"
+    "updatedAt": "2026-10-11T19:52:52.075Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:17:12.591Z"
+    "updatedAt": "2026-10-11T19:52:56.322Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:17:16.789Z"
+    "updatedAt": "2026-10-11T19:53:00.589Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:17:21.010Z"
+    "updatedAt": "2026-10-11T19:53:04.931Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:17:25.227Z"
+    "updatedAt": "2026-10-11T19:53:09.270Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:17:29.447Z"
+    "updatedAt": "2026-10-11T19:53:13.577Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:17:33.952Z"
+    "updatedAt": "2026-10-11T19:53:17.907Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:17:38.156Z"
+    "updatedAt": "2026-10-11T19:53:22.253Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:17:43.518Z"
+    "updatedAt": "2026-10-11T19:53:27.667Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-11T15:17:48.559Z"
+    "updatedAt": "2026-10-11T19:53:32.476Z"
   }
 }
