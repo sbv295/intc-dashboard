@@ -1,57 +1,57 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-11T23:22:14.482Z"
+    "text": "Musk’s unexpected partnership shift creates uncertainty over Intel’s AI chip roadmap, sparking investor concerns.",
+    "source": "stock",
+    "articleIds": [
+      "6a78b937-9eff-3430-add8-428c2bc7f287"
+    ],
+    "updatedAt": "2026-10-12T03:47:54.774Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:22:19.942Z"
+    "updatedAt": "2026-10-12T03:48:00.322Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:22:24.826Z"
+    "updatedAt": "2026-10-12T03:48:05.452Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:22:30.105Z"
+    "updatedAt": "2026-10-12T03:48:10.929Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:22:36.449Z"
+    "updatedAt": "2026-10-12T03:48:16.413Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:22:41.799Z"
+    "updatedAt": "2026-10-12T03:48:21.430Z"
   },
   "AVGO": {
-    "text": "amid expectations that its $42 B Anthropic loan will boost AI chip revenue and market positioning",
+    "text": "Launch of AI networking platform at OCP Global Summit, targeting hyperscale AI clusters, likely boosting investor optimism.",
     "source": "stock",
     "articleIds": [
-      "8e3046ce-6f7f-3003-bc83-01dbeb2eeade",
-      "b4a18e66-9724-34dc-99be-b5b32bb91adc"
+      "4a62a91b-f530-341e-9892-7297249a1fc4"
     ],
-    "updatedAt": "2026-10-11T23:22:48.029Z"
+    "updatedAt": "2026-10-12T03:48:27.392Z"
   },
   "SPCX": {
-    "text": "Following Starship Flight 14 success, investors anticipate further tech milestones and expanded space infrastructure.",
+    "text": "Starship Flight 14 success bolsters launch lead, prompting expectations of broader space‑infrastructure expansion in the sector.",
     "source": "stock",
     "articleIds": [
-      "5b029cb7-57b2-3133-b9ea-b9d9cba00434",
-      "a06c3a1f-251f-3272-82b9-9c0916175e1a"
+      "5b029cb7-57b2-3133-b9ea-b9d9cba00434"
     ],
-    "updatedAt": "2026-10-11T23:22:54.055Z"
+    "updatedAt": "2026-10-12T03:48:33.683Z"
   },
   "MRVL": {
     "text": "Showcasing next‑gen AI data‑center solutions at OCP 2026, sparking optimism over hardware growth and market interest.",
@@ -62,141 +62,141 @@
     "updatedAt": "2026-10-11T19:51:49.549Z"
   },
   "ARM": {
-    "text": "Lawsuit challenging Arm’s licensing agreements and royalty model, heightening uncertainty over future revenue streams.",
-    "source": "stock",
-    "articleIds": [
-      "8595ec9a-a0e4-3c9f-bc38-c94c84ff1aa5",
-      "c7fe0f7b-5066-3d99-99a3-a6a1f236c528"
-    ],
-    "updatedAt": "2026-10-11T19:51:55.205Z"
-  },
-  "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:23:11.613Z"
+    "updatedAt": "2026-10-12T03:48:44.846Z"
+  },
+  "QCOM": {
+    "text": "Awaiting jury verdict on Arm licensing case, creating uncertainty and pressuring the price.",
+    "source": "stock",
+    "articleIds": [
+      "c7fe0f7b-5066-3d99-99a3-a6a1f236c528"
+    ],
+    "updatedAt": "2026-10-12T03:48:50.465Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:23:17.420Z"
+    "updatedAt": "2026-10-12T03:48:55.825Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:23:22.053Z"
+    "updatedAt": "2026-10-12T03:49:00.360Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:23:26.413Z"
+    "updatedAt": "2026-10-12T03:49:04.700Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:23:30.750Z"
+    "updatedAt": "2026-10-12T03:49:08.978Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:23:36.271Z"
+    "updatedAt": "2026-10-12T03:49:14.164Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:23:41.330Z"
+    "updatedAt": "2026-10-12T03:49:19.570Z"
   },
   "GOOGL": {
-    "text": "Joint $420 B data‑center commitment and 82% cloud growth boost confidence in its cloud expansion",
+    "text": "$420 billion joint data‑center commitment fuels expectations of accelerated cloud growth and AI infrastructure expansion.",
     "source": "stock",
     "articleIds": [
-      "e61c640e-8f73-333f-bbfb-a97c76a2efec",
-      "0e7c43c2-e705-36f4-869c-30d923d0ea5e"
+      "e61c640e-8f73-333f-bbfb-a97c76a2efec"
     ],
-    "updatedAt": "2026-10-11T19:52:36.266Z"
+    "updatedAt": "2026-10-12T03:49:25.068Z"
   },
   "AMZN": {
-    "text": "Potential $7 billion acquisition of Decart AI, enhancing multi‑chip developer tools, amid strategic AI push.",
+    "text": "Near‑$7 billion Decart AI acquisition talks, bolstering custom chip and cloud AI capabilities, driving optimism.",
     "source": "stock",
     "articleIds": [
-      "23972825-d546-377d-9ea2-bbd46f4b7bf4",
-      "8dc92b08-da04-33a8-8582-620769fb4955",
-      "768818f0-a388-39e8-accc-26140ca2f7bf"
+      "c1ca8cbe-1c54-34f1-b3eb-c6a1c16dc466",
+      "e05f0bf3-ebd3-33e1-8e3e-739c1d5076eb",
+      "8dabd404-c7ab-3dfd-88ab-1295539eeae3",
+      "1b7779cc-848b-3aa5-8cc9-55397baa4ce4",
+      "23972825-d546-377d-9ea2-bbd46f4b7bf4"
     ],
-    "updatedAt": "2026-10-11T23:23:53.592Z"
+    "updatedAt": "2026-10-12T03:49:30.608Z"
   },
   "META": {
-    "text": "Regulatory pushback and competitive ad‑blockade after halting TikTok ads and abandoning the blocked Manus acquisition.",
+    "text": "Insider sell‑off totaling $21 million, sparking dilution worries amid concerns over leadership confidence in the company",
     "source": "stock",
     "articleIds": [
-      "6bffb53c-b6a1-3064-95a4-0a866b016950"
+      "eca214b3-e91b-3997-b77e-013df5f4dfc5"
     ],
-    "updatedAt": "2026-10-11T15:17:04.055Z"
+    "updatedAt": "2026-10-12T03:49:36.092Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:24:03.962Z"
+    "updatedAt": "2026-10-12T03:49:40.403Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:24:08.261Z"
+    "updatedAt": "2026-10-12T03:49:44.711Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:24:12.566Z"
+    "updatedAt": "2026-10-12T03:49:49.050Z"
   },
   "AARTIIND.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:24:16.945Z"
+    "updatedAt": "2026-10-12T03:49:53.343Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:24:21.243Z"
+    "updatedAt": "2026-10-12T03:49:57.605Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:24:25.749Z"
+    "updatedAt": "2026-10-12T03:50:01.939Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:24:30.185Z"
+    "updatedAt": "2026-10-12T03:50:06.230Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:24:34.467Z"
+    "updatedAt": "2026-10-12T03:50:10.585Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:24:40.145Z"
+    "updatedAt": "2026-10-12T03:50:15.990Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-11T23:24:45.290Z"
+    "updatedAt": "2026-10-12T03:50:21.171Z"
   }
 }
