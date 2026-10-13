@@ -3,199 +3,197 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:25:16.942Z"
+    "updatedAt": "2026-10-13T22:10:45.790Z"
   },
   "AMD": {
-    "text": "Backing a 222 MW Texas AI lease and securing a European AI supercomputer contract, boosting confidence.",
-    "source": "stock",
-    "articleIds": [
-      "d14e0627-634d-3dc0-88e9-fa9ce160e2f3",
-      "4aa712a7-1b04-32e4-927e-2b63b2b34a5b",
-      "d597c427-41a0-33ca-853e-e8e984f56dd2"
-    ],
-    "updatedAt": "2026-10-13T17:25:23.554Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-13T22:10:51.491Z"
   },
   "NVDA": {
-    "text": "Anticipation of a $2 billion European investment plan, boosting growth prospects and market confidence amid expansion.",
+    "text": "Using cash for minority stakes in French AI startups, expanding its next‑gen AI customer ecosystem.",
     "source": "stock",
     "articleIds": [
-      "2c683521-d996-3501-b083-b747d23931bb"
+      "fc54b1bf-2924-3599-ab82-2cd2a2820ec1"
     ],
-    "updatedAt": "2026-10-13T17:25:30.064Z"
+    "updatedAt": "2026-10-13T22:10:57.556Z"
   },
   "TSM": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-13T22:11:03.277Z"
+  },
+  "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:25:35.667Z"
-  },
-  "SNDK": {
-    "text": "Threat from CXMT's competitive NAND pricing torpedoed expectations, prompting investor concerns about market share outlook.",
-    "source": "stock",
-    "articleIds": [
-      "23879695-0b8d-304f-ad57-8b8b78b42c15"
-    ],
-    "updatedAt": "2026-10-13T17:25:41.824Z"
+    "updatedAt": "2026-10-13T22:11:08.744Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:25:47.553Z"
+    "updatedAt": "2026-10-13T22:11:14.376Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:25:53.143Z"
+    "updatedAt": "2026-10-13T22:11:19.677Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:25:58.708Z"
+    "updatedAt": "2026-10-13T22:11:25.436Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-13T17:26:04.589Z"
-  },
-  "ARM": {
-    "text": "hung jury in licensing breach trial fueling uncertainty over potential damages",
-    "source": "stock",
-    "articleIds": [
-      "9c4bfd5b-422f-30ae-96d3-11f424f78d18"
-    ],
-    "updatedAt": "2026-10-13T02:22:06.221Z"
-  },
-  "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:26:15.954Z"
+    "updatedAt": "2026-10-13T22:11:30.969Z"
+  },
+  "ARM": {
+    "text": "Winning the Outstanding AI Computing Ecosystem Contribution Award, highlighting its AI leadership, likely boosted sentiment.",
+    "source": "stock",
+    "articleIds": [
+      "2fc57216-5c61-317e-a6f4-9e7488f9ad11"
+    ],
+    "updatedAt": "2026-10-13T22:11:36.688Z"
+  },
+  "QCOM": {
+    "text": "Jury verdict favoring Qualcomm in its ARM licensing breach case, delivering a legal win and nominal damages.",
+    "source": "stock",
+    "articleIds": [
+      "0264fcfa-5d4a-3b3e-8d0d-e13db7636e44",
+      "d24d1a58-474b-3db6-8cb9-1bcc16ff5381",
+      "a8dbf134-1dcf-3428-9853-8a29b1fe9341"
+    ],
+    "updatedAt": "2026-10-13T22:11:43.264Z"
   },
   "SKHY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-13T17:26:21.640Z"
+    "text": "Amid CXMT’s breakthrough enabling denser, more efficient memory, investors fear competitive pressure on SK Hynix.",
+    "source": "stock",
+    "articleIds": [
+      "58915e4f-e33a-3dc7-9eb4-6b2500aae3e7"
+    ],
+    "updatedAt": "2026-10-13T22:11:49.023Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:26:27.205Z"
+    "updatedAt": "2026-10-13T22:11:54.484Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:26:31.757Z"
+    "updatedAt": "2026-10-13T22:11:59.042Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:26:36.204Z"
+    "updatedAt": "2026-10-13T22:12:03.964Z"
   },
   "AAPL": {
-    "text": "launch of HomeView smart‑home lineup expanding Siri AI, propelling market‑cap past $5 trillion, driving investor optimism",
-    "source": "stock",
-    "articleIds": [
-      "24f4c900-6a32-3a54-93bc-3771a43488e1",
-      "44e3206a-a255-3b83-94a0-ab1efc4b012f",
-      "7542b1fd-f262-3865-9f27-1b8aa7696370"
-    ],
-    "updatedAt": "2026-10-13T17:26:42.819Z"
-  },
-  "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:26:48.609Z"
+    "updatedAt": "2026-10-13T22:12:09.470Z"
+  },
+  "MSFT": {
+    "text": "Accelerating AI infrastructure spending via $130B data‑center leases and Xbox Labs launch for gaming tech.",
+    "source": "stock",
+    "articleIds": [
+      "de3b5c67-d437-32e4-960b-e680f1736d95",
+      "95150aee-caa3-317e-8656-8dc3419532cd"
+    ],
+    "updatedAt": "2026-10-13T22:12:15.758Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:26:53.794Z"
+    "updatedAt": "2026-10-13T22:12:21.468Z"
   },
   "AMZN": {
-    "text": "Buoyed by reports of a $7 billion acquisition of AI startup Decart to accelerate chip‑agnostic workloads.",
-    "source": "stock",
-    "articleIds": [
-      "5fa4dbdb-fb6a-376f-810a-b87978399445",
-      "1da0042b-158d-35be-b23d-845d56fe930b"
-    ],
-    "updatedAt": "2026-10-13T17:27:00.510Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-13T22:12:26.680Z"
   },
   "META": {
-    "text": "Unveiling Muse Wonder AI models, expanding its AI footprint and promising advanced agentic task performance.",
+    "text": "Truist’s upgraded price target and optimism on Muse AI agent’s revenue potential driving the gain.",
     "source": "stock",
     "articleIds": [
-      "3ace53ca-d7e0-3150-8fa4-87351f91871b"
+      "3d6504b6-45cf-33a2-ac1e-6022f36b0f24",
+      "0ad178cf-d9f0-331c-a5b2-1ba7b2c16fa6",
+      "07d44218-347d-3b20-b84c-b59899fb9fea"
     ],
-    "updatedAt": "2026-10-13T17:27:06.721Z"
+    "updatedAt": "2026-10-13T22:12:32.770Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:27:11.105Z"
+    "updatedAt": "2026-10-13T22:12:37.278Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:27:15.630Z"
+    "updatedAt": "2026-10-13T22:12:41.686Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:27:20.385Z"
+    "updatedAt": "2026-10-13T22:12:46.113Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:27:24.931Z"
+    "updatedAt": "2026-10-13T22:12:50.573Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:27:29.421Z"
+    "updatedAt": "2026-10-13T22:12:55.139Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:27:34.030Z"
+    "updatedAt": "2026-10-13T22:12:59.558Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:27:38.446Z"
+    "updatedAt": "2026-10-13T22:13:04.017Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:27:42.868Z"
+    "updatedAt": "2026-10-13T22:13:08.446Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:27:48.461Z"
+    "updatedAt": "2026-10-13T22:13:13.345Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-13T17:27:53.830Z"
+    "updatedAt": "2026-10-13T22:13:18.508Z"
   }
 }
