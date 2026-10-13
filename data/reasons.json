@@ -1,56 +1,56 @@
 {
   "INTC": {
-    "text": "AI‑related warning from Intel and Broadcom CEOs, sparking concerns over industry readiness and competitive pressures.",
-    "source": "stock",
-    "articleIds": [
-      "b9ca06a3-0989-35b4-85cf-62962b1abc13"
-    ],
-    "updatedAt": "2026-10-12T20:44:29.565Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-13T02:21:15.045Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:44:35.118Z"
+    "updatedAt": "2026-10-13T02:21:20.546Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-12T20:44:41.066Z"
+    "text": "Speculation over the Reflection AI partnership unsettling investors, raising doubts about market positioning and revenue outlook.",
+    "source": "stock",
+    "articleIds": [
+      "6d768b7e-7c71-3761-bc37-66b8c3ccd211"
+    ],
+    "updatedAt": "2026-10-13T02:21:26.460Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:44:46.282Z"
+    "updatedAt": "2026-10-13T02:21:31.548Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:44:51.848Z"
+    "updatedAt": "2026-10-13T02:21:37.115Z"
   },
   "MU": {
-    "text": "Amid CXMT’s reported progress on a competing high‑density memory chip, investors grew wary of Micron’s market positioning.",
-    "source": "stock",
-    "articleIds": [
-      "2d9b64de-8e4a-3498-b5fc-a5eece9ad2e7",
-      "8667ebee-0c5b-383f-a80f-5bb1d352befa"
-    ],
-    "updatedAt": "2026-10-12T20:44:57.504Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-13T02:21:42.524Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:45:03.235Z"
+    "updatedAt": "2026-10-13T02:21:47.969Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-12T20:45:09.026Z"
+    "text": "Launch of unified X Subscription bundling Grok, X, and Cursor, plus upbeat Starlink Mobile forecasts.",
+    "source": "stock",
+    "articleIds": [
+      "264baba5-e698-3bef-b867-42f179062b74",
+      "99bb7734-f149-3f66-98df-fc429ca60753"
+    ],
+    "updatedAt": "2026-10-13T02:21:53.894Z"
   },
   "MRVL": {
     "text": "$20 billion capital plan heightening ownership concentration, sparking investor dilution concerns amid aggressive expansion and strategic risk",
@@ -61,24 +61,26 @@
     "updatedAt": "2026-10-12T20:45:15.372Z"
   },
   "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-12T20:45:20.952Z"
-  },
-  "QCOM": {
-    "text": "Hung jury in licensing breach trial with Arm creates uncertainty, weighing on investor sentiment.",
+    "text": "hung jury in licensing breach trial fueling uncertainty over potential damages",
     "source": "stock",
     "articleIds": [
       "9c4bfd5b-422f-30ae-96d3-11f424f78d18"
     ],
-    "updatedAt": "2026-10-12T20:45:26.884Z"
+    "updatedAt": "2026-10-13T02:22:06.221Z"
+  },
+  "QCOM": {
+    "text": "Amid a $1.88 billion royalty dispute with Arm, investors fear AI‑driven licensing pressures could curb profitability.",
+    "source": "stock",
+    "articleIds": [
+      "b33d6e33-2e6e-3bf6-bd7e-6d5b3bec7ef2"
+    ],
+    "updatedAt": "2026-10-13T02:22:12.097Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:45:32.553Z"
+    "updatedAt": "2026-10-13T02:22:17.481Z"
   },
   "MBLY": {
     "text": "Deutsche Bank trimmed its price target to $12, citing weaker growth outlook and competitive pressures.",
@@ -92,109 +94,104 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:45:42.996Z"
+    "updatedAt": "2026-10-13T02:22:27.895Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:45:47.392Z"
+    "updatedAt": "2026-10-13T02:22:32.369Z"
   },
   "AAPL": {
-    "text": "JPMorgan’s price‑target boost ahead of the smart‑home rollout, bolstered by record Q3 market‑share gains and Cook’s high‑level China meeting.",
+    "text": "JPMorgan’s price‑target boost amid rising iPhone market share and anticipation of the upcoming smart‑home launch.",
     "source": "stock",
     "articleIds": [
       "886e8958-bc43-3c4a-8917-56a03cff9b11",
-      "24e414cc-1f6b-32f1-82b4-e7454d200833",
-      "35a540b0-3e49-3d82-8c58-498e22c4a3e9"
+      "24e414cc-1f6b-32f1-82b4-e7454d200833"
     ],
-    "updatedAt": "2026-10-12T20:45:53.625Z"
+    "updatedAt": "2026-10-13T02:22:38.290Z"
   },
   "MSFT": {
-    "text": "Unveiling its own Maia 300 AI chip, promising power efficiency and cost savings, fuels optimism.",
+    "text": "Three generations of proprietary AI chips boosting confidence in Microsoft’s data‑center capabilities and future revenue growth.",
     "source": "stock",
     "articleIds": [
-      "9eb9fd0e-0b44-3a04-b2d7-fcbf9ae3a93a",
-      "89ca8ecc-316f-30f8-8a30-15a32e07d242",
-      "4bb399c3-4d82-310f-8ef3-19b74c66c5e3"
+      "22b32b9f-71b9-34c4-91a4-f4ae1f27c0d2"
     ],
-    "updatedAt": "2026-10-12T20:46:00.269Z"
+    "updatedAt": "2026-10-13T02:22:43.622Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:46:05.230Z"
+    "updatedAt": "2026-10-13T02:22:49.029Z"
   },
   "AMZN": {
-    "text": "Leadership shuffle at Alexa amid upcoming tablet launch causing investor uncertainty and potential delays.",
-    "source": "stock",
-    "articleIds": [
-      "98d9b163-ea20-3587-b6fa-a513a1dd7903"
-    ],
-    "updatedAt": "2026-10-12T20:46:11.557Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-13T02:22:53.505Z"
   },
   "META": {
-    "text": "Rising optimism as Muse Wonder AI models match leading rivals on public benchmarks, boosting confidence in Meta’s AI strategy.",
+    "text": "Rapid adoption of Muse Enterprise Platform and frontier Muse Wonder AI models spurring heightened investor optimism.",
     "source": "stock",
     "articleIds": [
-      "06bfd5ba-b931-3ffc-a68d-07ef6744e238"
+      "2eedc891-200e-3f2a-94e7-ea75d25a998b"
     ],
-    "updatedAt": "2026-10-12T20:46:17.259Z"
+    "updatedAt": "2026-10-13T02:22:59.172Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:46:21.852Z"
+    "updatedAt": "2026-10-13T02:23:03.502Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:46:26.247Z"
+    "updatedAt": "2026-10-13T02:23:07.882Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:46:30.600Z"
+    "updatedAt": "2026-10-13T02:23:12.303Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:46:35.047Z"
+    "updatedAt": "2026-10-13T02:23:16.600Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:46:39.449Z"
+    "updatedAt": "2026-10-13T02:23:20.914Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:46:43.945Z"
+    "updatedAt": "2026-10-13T02:23:25.307Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:46:48.430Z"
+    "updatedAt": "2026-10-13T02:23:29.662Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:46:52.808Z"
+    "updatedAt": "2026-10-13T02:23:34.348Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-12T20:46:58.002Z"
+    "updatedAt": "2026-10-13T02:23:39.552Z"
   },
   "INDEX_IN": {
     "text": "RBI’s first rate hike in nearly four years and hawkish stance amid sticky inflation likely spurred the dip.",
