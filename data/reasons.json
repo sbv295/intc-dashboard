@@ -1,209 +1,194 @@
 {
   "INTC": {
-    "text": "Strongest revenue growth in fifteen years boosting investor optimism amid recovery uncertainty and performance expectations",
-    "source": "stock",
-    "articleIds": [
-      "d0730485-deec-3ba5-aebc-dfbeaad73c84"
-    ],
-    "updatedAt": "2026-10-14T12:46:03.421Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-14T17:44:04.091Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:46:09.212Z"
+    "updatedAt": "2026-10-14T17:44:10.088Z"
   },
   "NVDA": {
-    "text": "Amid a $250 million pledge of UK compute resources for agentic AI safety research by Nvidia.",
-    "source": "stock",
-    "articleIds": [
-      "66265a9c-f12c-369f-9f06-5fa8e3e9f228",
-      "76b13435-5335-3c47-9299-82e2f35813b7"
-    ],
-    "updatedAt": "2026-10-14T12:46:15.282Z"
-  },
-  "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:46:21.036Z"
+    "updatedAt": "2026-10-14T17:44:14.739Z"
+  },
+  "TSM": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-14T17:44:19.877Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:46:26.464Z"
+    "updatedAt": "2026-10-14T17:44:27.082Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:46:31.881Z"
+    "updatedAt": "2026-10-14T17:44:32.530Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:46:37.816Z"
+    "updatedAt": "2026-10-14T17:44:38.611Z"
   },
   "SPCX": {
-    "text": "Throttling Starlink speeds for Ukraine amid the Russia‑Ukraine conflict, raising concerns over service reliability.",
-    "source": "stock",
-    "articleIds": [
-      "496ab846-6b99-4cfb-906b-480c17533c26"
-    ],
-    "updatedAt": "2026-10-14T12:46:43.123Z"
-  },
-  "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:46:48.689Z"
+    "updatedAt": "2026-10-14T17:44:44.009Z"
+  },
+  "MRVL": {
+    "text": "Investor disappointment that sampling of new AI interconnect chips hasn’t yet translated into revenue.",
+    "source": "stock",
+    "articleIds": [
+      "700e9d14-d73d-35ae-acb1-cc92612616f7"
+    ],
+    "updatedAt": "2026-10-14T17:44:50.080Z"
   },
   "ARM": {
-    "text": "Winning the Outstanding AI Computing Ecosystem Contribution Award, highlighting its AI leadership, likely boosted sentiment.",
+    "text": "Jury verdict finding breach of Qualcomm licensing agreement, awarding only nominal damages, spooked investors today.",
     "source": "stock",
     "articleIds": [
-      "2fc57216-5c61-317e-a6f4-9e7488f9ad11"
+      "31531504-e37d-351a-ae89-08a71e935f0a",
+      "0264fcfa-5d4a-3b3e-8d0d-e13db7636e44",
+      "d24d1a58-474b-3db6-8cb9-1bcc16ff5381"
     ],
-    "updatedAt": "2026-10-13T22:11:36.688Z"
+    "updatedAt": "2026-10-14T17:44:56.747Z"
   },
   "QCOM": {
-    "text": "Delaware jury found Arm breached licensing agreement, boosting confidence in Qualcomm’s licensing revenue prospects future",
-    "source": "stock",
-    "articleIds": [
-      "0264fcfa-5d4a-3b3e-8d0d-e13db7636e44"
-    ],
-    "updatedAt": "2026-10-14T12:47:00.143Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-14T17:45:02.220Z"
   },
   "SKHY": {
-    "text": "Reassessment of AI demand amid fears of market saturation and rising Chinese memory competition.",
-    "source": "stock",
-    "articleIds": [
-      "78f49f03-3a1f-386e-b721-b330084cf7da"
-    ],
-    "updatedAt": "2026-10-14T12:47:07.186Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-14T17:45:08.605Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:47:12.897Z"
+    "updatedAt": "2026-10-14T17:45:14.842Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:47:17.860Z"
+    "updatedAt": "2026-10-14T17:45:19.244Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:47:22.323Z"
+    "updatedAt": "2026-10-14T17:45:23.711Z"
   },
   "AAPL": {
-    "text": "Unveiling HomeView smart‑home hub with Apple Intelligence and facial recognition boosting investor optimism.",
+    "text": "Milestone $5 trillion market‑cap achievement boosting investor confidence and fueling modest price uptick.",
     "source": "stock",
     "articleIds": [
-      "8f87cdb4-3a8b-3fb2-a732-06c9e9c78c4e"
+      "331ff3cf-2ec5-4285-b3b5-2f2f1247e95c"
     ],
-    "updatedAt": "2026-10-14T12:47:28.376Z"
+    "updatedAt": "2026-10-14T17:45:29.597Z"
   },
   "MSFT": {
-    "text": "Partnering with Devsinc to expand Dynamics 365 deployments, signaling scalable growth opportunities.",
+    "text": "Maia 300 rack’s 40% token boost per megawatt raising cost‑efficiency doubts for AI data‑center expansion",
     "source": "stock",
     "articleIds": [
-      "eab722b5-d54f-3517-8520-9c1d7f6ac35f"
+      "f2cfd8df-8a5d-3030-bfb9-682f5819a027"
     ],
-    "updatedAt": "2026-10-14T12:47:34.223Z"
+    "updatedAt": "2026-10-14T17:45:35.575Z"
   },
   "GOOGL": {
-    "text": "Launch of Lovelace AI engine on Cloud Marketplace and a 702 MW PPA fueling growth optimism",
-    "source": "stock",
-    "articleIds": [
-      "e3487f9d-05bc-30b2-9286-bd7f63874a08",
-      "2de41a25-e5dd-355e-a7f7-40e9e820e794",
-      "63d5f92a-3613-341b-ab2d-9b202e60e0b3"
-    ],
-    "updatedAt": "2026-10-14T12:47:40.510Z"
-  },
-  "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:47:45.195Z"
+    "updatedAt": "2026-10-14T17:45:41.164Z"
   },
-  "META": {
-    "text": "Analysts lifted price targets and AI benchmark ranking boost confidence in Meta’s AI resurgence.",
+  "AMZN": {
+    "text": "Alexa premium tablet's $550 price and design flaws raise concerns, pressuring investor sentiment amid uncertainty.",
     "source": "stock",
     "articleIds": [
-      "b761463f-9500-3f9c-89c1-4b74b1e0ce8c",
-      "96e8ab04-641e-30ad-84fa-edad897debf5",
-      "7e27f118-ad12-31ab-830e-661dec7aa14f"
+      "5c178f2b-fa8e-3d47-b248-73a3347dfc16"
     ],
-    "updatedAt": "2026-10-14T12:47:50.817Z"
+    "updatedAt": "2026-10-14T17:45:47.234Z"
+  },
+  "META": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-14T17:45:52.869Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:47:55.276Z"
+    "updatedAt": "2026-10-14T17:45:57.308Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:47:59.870Z"
+    "updatedAt": "2026-10-14T17:46:01.800Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:48:04.390Z"
+    "updatedAt": "2026-10-14T17:46:06.266Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:48:08.800Z"
+    "updatedAt": "2026-10-14T17:46:10.981Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:48:13.212Z"
+    "updatedAt": "2026-10-14T17:46:15.562Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:48:17.614Z"
+    "updatedAt": "2026-10-14T17:46:20.254Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:48:22.035Z"
+    "updatedAt": "2026-10-14T17:46:24.854Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:48:26.576Z"
+    "updatedAt": "2026-10-14T17:46:29.242Z"
   },
   "INDEX": {
-    "text": "Surprise CPI inflation data heightened rate‑hike concerns, prompting investor caution across the market today overall.",
-    "source": "macro",
-    "articleIds": [
-      "a9aa7eaa-2df2-3f6f-b548-5269d49f67bc"
-    ],
-    "updatedAt": "2026-10-14T12:48:32.333Z"
+    "text": "No plausible explanation for today’s movement.",
+    "source": "none",
+    "articleIds": [],
+    "updatedAt": "2026-10-14T17:46:35.796Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-14T12:48:37.672Z"
+    "updatedAt": "2026-10-14T17:46:40.888Z"
   }
 }
