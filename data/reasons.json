@@ -1,53 +1,61 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-14T01:31:37.984Z"
+    "text": "Amid expanded AI ecosystem collaborations and new D‑series GPU announcements, boosting confidence in Intel’s data‑center AI roadmap.",
+    "source": "stock",
+    "articleIds": [
+      "6060ab1f-83a4-3269-945e-5e195d0eb8eb"
+    ],
+    "updatedAt": "2026-10-14T06:59:24.413Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:31:43.447Z"
+    "updatedAt": "2026-10-14T06:59:29.790Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-14T01:31:48.345Z"
+    "text": "Boost from $250 M UK agentic safety compute pledge collaborations accelerating AI and data‑processing initiatives",
+    "source": "stock",
+    "articleIds": [
+      "051ec9b5-d86b-342e-9604-b5f6b5d4e7e7",
+      "2d3f8c57-4927-383f-9f50-ac08a0bea066",
+      "8de4494d-5ebd-35b9-a536-8b2b7bff5e17"
+    ],
+    "updatedAt": "2026-10-14T06:59:36.089Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:31:53.607Z"
+    "updatedAt": "2026-10-14T06:59:41.413Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:31:58.648Z"
+    "updatedAt": "2026-10-14T06:59:46.898Z"
   },
   "MU": {
-    "text": "Profit‑taking after recent AI‑driven rally and ex‑dividend payout sparked the 3.6% decline.",
-    "source": "stock",
-    "articleIds": [
-      "35521182-6f57-3262-bbb9-7c889f3c7acc"
-    ],
-    "updatedAt": "2026-10-14T01:32:04.408Z"
-  },
-  "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-14T01:32:10.187Z"
-  },
-  "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:32:15.497Z"
+    "updatedAt": "2026-10-14T06:59:51.995Z"
+  },
+  "AVGO": {
+    "text": "AI revenue guidance projecting ~30% sequential growth, boosting investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "101b8e68-83f9-356a-a194-b60f7dc28202"
+    ],
+    "updatedAt": "2026-10-14T06:59:57.662Z"
+  },
+  "SPCX": {
+    "text": "Amid Vodafone’s doubts on SpaceX’s European satellite‑phone rollout and AST’s FCC push, investor concerns rise.",
+    "source": "stock",
+    "articleIds": [
+      "19da97b1-ae1c-31f4-8106-02a4fd75fff5"
+    ],
+    "updatedAt": "2026-10-14T07:00:03.998Z"
   },
   "MRVL": {
     "text": "Raised FY2028 revenue outlook to $20 billion, surpassing consensus and fueling optimism about growth prospects.",
@@ -86,34 +94,33 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:32:43.977Z"
+    "updatedAt": "2026-10-14T07:00:34.488Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:32:48.290Z"
+    "updatedAt": "2026-10-14T07:00:38.843Z"
   },
   "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:32:52.650Z"
+    "updatedAt": "2026-10-14T07:00:43.345Z"
   },
   "AAPL": {
-    "text": "Launch of new smart‑home gadget lineup, pushing market cap near $5 trillion, likely spurring modest price uptick.",
+    "text": "Collaboration with LG on new Apple Home accessories likely boosting investor optimism about ecosystem expansion.",
     "source": "stock",
     "articleIds": [
-      "44e3206a-a255-3b83-94a0-ab1efc4b012f",
-      "d3667d87-c646-3bba-acee-f2232e1aca9c"
+      "eddce4b8-6a9e-3105-955b-4228656c5ce4"
     ],
-    "updatedAt": "2026-10-14T01:32:58.183Z"
+    "updatedAt": "2026-10-14T07:00:49.311Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:03.429Z"
+    "updatedAt": "2026-10-14T07:00:54.495Z"
   },
   "GOOGL": {
     "text": "AI forecast of $352 B prompting cash concerns as capital spending outpaces cash, funding infrastructure build‑out",
@@ -127,7 +134,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:14.353Z"
+    "updatedAt": "2026-10-14T07:01:05.405Z"
   },
   "META": {
     "text": "Muse AI traction boosting confidence, while Truist’s raised price target reflects heightened AI growth expectations.",
@@ -139,63 +146,65 @@
     "updatedAt": "2026-10-14T01:33:19.873Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:24.132Z"
-  },
-  "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:28.408Z"
-  },
-  "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:32.631Z"
+    "updatedAt": "2026-10-14T07:01:15.525Z"
+  },
+  "ICICIBANK.NS": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-14T07:01:19.834Z"
+  },
+  "DEEPAKFERT.NS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-14T07:01:24.186Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:36.911Z"
+    "updatedAt": "2026-10-14T07:01:28.561Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:41.185Z"
+    "updatedAt": "2026-10-14T07:01:32.923Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:45.501Z"
+    "updatedAt": "2026-10-14T07:01:37.254Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:49.793Z"
+    "updatedAt": "2026-10-14T07:01:41.601Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:54.003Z"
+    "updatedAt": "2026-10-14T07:01:45.972Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-14T01:33:59.011Z"
+    "updatedAt": "2026-10-14T07:01:51.126Z"
   },
   "INDEX_IN": {
-    "text": "No plausible explanation for today’s movement.",
-    "source": "none",
-    "articleIds": [],
-    "updatedAt": "2026-10-14T01:34:04.165Z"
+    "text": "RBI’s first rate hike in nearly four years and hawkish stance amid sticky inflation likely dampened sentiment.",
+    "source": "macro",
+    "articleIds": [
+      "96a8ca74-4a0a-36ef-b621-8dd58c002da5"
+    ],
+    "updatedAt": "2026-10-14T07:01:56.722Z"
   }
 }
