@@ -1,63 +1,65 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-14T21:11:41.673Z"
+    "text": "Explosion at Intel’s facility raising safety concerns, amid customer testing of its new 350‑watt inference GPU.",
+    "source": "stock",
+    "articleIds": [
+      "6ef32bf7-a9c7-345a-a975-6be9c2cc4a60",
+      "27933f59-c872-35cd-aded-8de0eab15d99"
+    ],
+    "updatedAt": "2026-10-15T00:14:44.287Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-14T21:11:47.364Z"
+    "text": "amid concerns that CoreWeave bond selloff signals weaker AI spending and chip demand",
+    "source": "stock",
+    "articleIds": [
+      "02b4e834-4dc3-3b57-9736-5c4291f5bfe7",
+      "c8f16b43-f778-336f-8dd1-d7cf59aefffd"
+    ],
+    "updatedAt": "2026-10-15T00:14:50.490Z"
   },
   "NVDA": {
+    "text": "Amid concerns over potential supply cuts to customers developing unsafe AI, prompting investor unease.",
+    "source": "stock",
+    "articleIds": [
+      "3af2fac7-8c21-3480-9c62-0aeae695f967"
+    ],
+    "updatedAt": "2026-10-15T00:14:57.276Z"
+  },
+  "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:11:52.215Z"
-  },
-  "TSM": {
-    "text": "Earnings reveal AI‑driven growth pressure and guidance scrutiny after September sales slipped sequentially.",
-    "source": "stock",
-    "articleIds": [
-      "037f36e3-34e4-3296-b765-843af8710ead"
-    ],
-    "updatedAt": "2026-10-14T21:11:58.002Z"
+    "updatedAt": "2026-10-15T00:15:02.517Z"
   },
   "SNDK": {
-    "text": "Delayed AI flash roadmap to January, raising doubts about meeting emerging high‑bandwidth flash demand.",
-    "source": "stock",
-    "articleIds": [
-      "85874266-f278-33e8-ab83-8ac39b8765fa"
-    ],
-    "updatedAt": "2026-10-14T21:12:04.678Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-15T00:15:08.370Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:12:10.420Z"
+    "updatedAt": "2026-10-15T00:15:14.212Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:12:17.780Z"
+    "updatedAt": "2026-10-15T00:15:19.832Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:12:23.680Z"
+    "updatedAt": "2026-10-15T00:15:26.646Z"
   },
   "MRVL": {
-    "text": "AI spending slowdown worries investors, fearing insufficient funding for upcoming AI data‑center initiatives.",
-    "source": "stock",
-    "articleIds": [
-      "2887bf7d-067f-33c2-963b-215e73ba519c"
-    ],
-    "updatedAt": "2026-10-14T21:12:30.021Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-15T00:15:32.331Z"
   },
   "ARM": {
     "text": "Jury verdict finding breach of Qualcomm licensing agreement, awarding only nominal damages, spooked investors today.",
@@ -73,7 +75,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:12:41.983Z"
+    "updatedAt": "2026-10-15T00:15:44.763Z"
   },
   "SKHY": {
     "text": "Amid heightened competition from China’s CXMT server‑memory push and an accelerated AI‑flash roadmap deadline.",
@@ -88,43 +90,43 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:12:53.367Z"
+    "updatedAt": "2026-10-15T00:15:55.918Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:12:57.865Z"
+    "updatedAt": "2026-10-15T00:16:00.385Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:02.467Z"
+    "updatedAt": "2026-10-15T00:16:04.805Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:08.277Z"
+    "updatedAt": "2026-10-15T00:16:10.296Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:13.374Z"
+    "updatedAt": "2026-10-15T00:16:15.889Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:18.757Z"
+    "updatedAt": "2026-10-15T00:16:21.559Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:24.246Z"
+    "updatedAt": "2026-10-15T00:16:27.251Z"
   },
   "META": {
     "text": "Analyst warns $225 billion spending forecast, heightening cost‑concern pressures amid aggressive AI expansion and future valuation.",
@@ -138,60 +140,60 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:34.709Z"
+    "updatedAt": "2026-10-15T00:16:38.146Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:39.179Z"
+    "updatedAt": "2026-10-15T00:16:42.627Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:43.624Z"
+    "updatedAt": "2026-10-15T00:16:47.086Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:48.110Z"
+    "updatedAt": "2026-10-15T00:16:51.621Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:52.613Z"
+    "updatedAt": "2026-10-15T00:16:56.107Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:13:57.048Z"
+    "updatedAt": "2026-10-15T00:17:00.660Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:14:01.538Z"
+    "updatedAt": "2026-10-15T00:17:05.369Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:14:06.068Z"
+    "updatedAt": "2026-10-15T00:17:09.888Z"
   },
   "INDEX": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:14:11.626Z"
+    "updatedAt": "2026-10-15T00:17:15.440Z"
   },
   "INDEX_IN": {
     "text": "No plausible explanation for today’s movement.",
     "source": "none",
     "articleIds": [],
-    "updatedAt": "2026-10-14T21:14:16.925Z"
+    "updatedAt": "2026-10-15T00:17:20.716Z"
   }
 }
