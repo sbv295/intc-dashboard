@@ -348,6 +348,23 @@ export default async function handler(req, res) {
         macroTicker: marketCfg.macroTicker,
         sentimentSubject: marketCfg.subject,
       });
+
+      // Index-mode equivalent of the per-ticker tier-2 fallback below: no single
+      // dated macro headline with matching-direction sentiment was found (common —
+      // most daily index moves are broad drift, not one identifiable catalyst).
+      // Without this, index requests fell all the way through to the tier-3
+      // "No plausible explanation" text almost every day (there was no tier-2 for
+      // index mode at all), which is what actually produced the "always generic"
+      // feel reported for the NASDAQ 100 / NIFTY 50 lines specifically.
+      if (!result) {
+        result = {
+          text: direction === 'UP'
+            ? `No single dominant catalyst \u2014 a broad rally across ${marketCfg.subject}.`
+            : `No single dominant catalyst \u2014 a broad pullback across ${marketCfg.subject}.`,
+          source: 'macro-generic',
+          articleIds: [],
+        };
+      }
     } else {
       const nameVariants = STOCK_META[ticker];
       const subject = displayName(ticker);
