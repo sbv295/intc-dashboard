@@ -1,202 +1,190 @@
 {
   "INTC": {
-    "text": "Amid looming Supreme Court ruling on hidden fees and fiduciary risks, investor sentiment soured.",
+    "text": "Amid looming Supreme Court ruling on hidden fees and fiduciary risks tied to Intel’s retirement‑fund litigation.",
     "source": "stock",
     "articleIds": [
-      "24649644-53ec-3b20-a2e7-663b8609f9bf",
-      "6ef32bf7-a9c7-345a-a975-6be9c2cc4a60"
+      "24649644-53ec-3b20-a2e7-663b8609f9bf"
     ],
-    "updatedAt": "2026-10-15T05:28:16.069Z"
+    "updatedAt": "2026-10-15T10:42:00.828Z"
   },
   "AMD": {
-    "text": "amid CoreWeave bond selloff, investors worry AI spending slowdown could curb chip demand",
-    "source": "stock",
-    "articleIds": [
-      "02b4e834-4dc3-3b57-9736-5c4291f5bfe7"
-    ],
-    "updatedAt": "2026-10-15T05:28:21.906Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-15T10:42:06.257Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:28:27.069Z"
+    "updatedAt": "2026-10-15T10:42:11.488Z"
   },
   "TSM": {
-    "text": "Earnings reveal AI‑driven growth pressure and guidance scrutiny after September sales slipped sequentially.",
-    "source": "stock",
-    "articleIds": [
-      "037f36e3-34e4-3296-b765-843af8710ead"
-    ],
-    "updatedAt": "2026-10-15T05:28:32.559Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-15T10:42:16.809Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:28:38.230Z"
+    "updatedAt": "2026-10-15T10:42:22.553Z"
   },
   "MU": {
-    "text": "Weak fiscal Q4 2026 results highlighting cyclical demand slowdown amid broader chip market weakness.",
-    "source": "stock",
-    "articleIds": [
-      "a0c61375-588f-33eb-82b2-3a29f3fa0902",
-      "68eb97c8-0ced-31f9-9fe0-b239c7fc2347"
-    ],
-    "updatedAt": "2026-10-15T05:28:43.783Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-15T10:42:27.659Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:28:49.300Z"
+    "updatedAt": "2026-10-15T10:42:33.230Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:28:54.874Z"
+    "updatedAt": "2026-10-15T10:42:38.705Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:29:00.617Z"
+    "updatedAt": "2026-10-15T10:42:44.012Z"
   },
   "ARM": {
-    "text": "Jury verdict finding breach of Qualcomm licensing agreement, awarding only nominal damages, spooked investors today.",
+    "text": "Federal jury finding of a licensing breach and limited damages, raising doubts over Arm’s licensing model.",
     "source": "stock",
     "articleIds": [
-      "31531504-e37d-351a-ae89-08a71e935f0a",
-      "0264fcfa-5d4a-3b3e-8d0d-e13db7636e44",
-      "d24d1a58-474b-3db6-8cb9-1bcc16ff5381"
+      "31531504-e37d-351a-ae89-08a71e935f0a"
     ],
-    "updatedAt": "2026-10-14T17:44:56.747Z"
+    "updatedAt": "2026-10-15T10:42:50.505Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:29:11.776Z"
+    "updatedAt": "2026-10-15T10:42:55.969Z"
   },
   "SKHY": {
-    "text": "Amid hotter U.S. inflation, Fed‑rate hike bets and AI funding concerns, SK Hynix’s request to export chip tools to China linked to its U.S. factory plan fuels investor unease.",
-    "source": "stock",
-    "articleIds": [
-      "2a3017cd-38b0-3f2b-882f-f443da3c5d0b",
-      "6fd044ac-4a09-3ccf-b8bc-71b121729fb4",
-      "fb52e116-5a43-30eb-8ca8-4dd460c9e9fa"
-    ],
-    "updatedAt": "2026-10-15T05:29:17.881Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-15T10:43:01.374Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:29:22.988Z"
+    "updatedAt": "2026-10-15T10:43:06.810Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:29:27.434Z"
+    "updatedAt": "2026-10-15T10:43:11.134Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:29:31.853Z"
+    "updatedAt": "2026-10-15T10:43:15.417Z"
   },
   "AAPL": {
-    "text": "Closing above the $5 trillion market‑cap milestone, bolstering confidence in Apple’s growth trajectory.",
+    "text": "Approval for its AI platform in mainland China lifts sentiment amid regulatory delay.",
     "source": "stock",
     "articleIds": [
-      "8564282f-171f-3556-a37a-bfa07f6156f7"
+      "7cf53388-4a38-3af1-8c31-6026d769a2e5"
     ],
-    "updatedAt": "2026-10-15T05:29:37.561Z"
+    "updatedAt": "2026-10-15T10:43:22.060Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:29:42.621Z"
+    "updatedAt": "2026-10-15T10:43:27.592Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:29:47.756Z"
+    "updatedAt": "2026-10-15T10:43:33.235Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-15T05:29:52.976Z"
+    "text": "FTC subpoenas targeting Amazon‑backed Anthropic over AI safety incidents, raising regulatory concerns.",
+    "source": "stock",
+    "articleIds": [
+      "498443be-ebc2-3e53-85b6-e7271ec53ec5"
+    ],
+    "updatedAt": "2026-10-15T10:43:39.279Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:29:58.426Z"
+    "updatedAt": "2026-10-15T10:43:44.784Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:30:03.535Z"
+    "updatedAt": "2026-10-15T10:43:49.114Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:30:07.992Z"
+    "updatedAt": "2026-10-15T10:43:53.509Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:30:12.530Z"
+    "updatedAt": "2026-10-15T10:43:57.878Z"
   },
   "AARTIIND.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:30:16.992Z"
+    "updatedAt": "2026-10-15T10:44:02.407Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:30:21.410Z"
+    "updatedAt": "2026-10-15T10:44:06.727Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:30:25.843Z"
+    "updatedAt": "2026-10-15T10:44:11.138Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:30:30.269Z"
+    "updatedAt": "2026-10-15T10:44:15.526Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:30:34.719Z"
+    "updatedAt": "2026-10-15T10:44:19.816Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:30:40.070Z"
+    "updatedAt": "2026-10-15T10:44:25.103Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T05:30:45.303Z"
+    "updatedAt": "2026-10-15T10:44:30.113Z"
   }
 }
