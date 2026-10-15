@@ -188,8 +188,15 @@ function filterRelevant(articles, nameVariants, cutoff, ticker) {
     if (pubDt < cutoff) continue;
     const nameRe = (v) => new RegExp(`\\b${v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
     const titleMatch = nameVariants.some(v => nameRe(v).test(title));
-    if (!titleMatch) continue;
-    if (looksLikeRoundup(title) && !(item.relatedTickers || []).includes(ticker)) continue;
+    // Yahoo's search endpoint (replaced the old per-ticker ncp feed, which died Oct
+    // 2026 — see fetchNews) returns generic keyword-matched results, not a curated
+    // per-company stream, and gives no body text to confirm relevance against — so a
+    // title-only requirement was throwing away plenty of genuinely relevant articles
+    // whose headline just doesn't happen to name the company (e.g. a sector-wide
+    // "chip sell-off deepens" piece that Yahoo itself tags with this ticker in
+    // relatedTickers). Trust that tagging as an equally valid relevance signal.
+    const taggedMatch = (item.relatedTickers || []).includes(ticker);
+    if (!taggedMatch && (!titleMatch || looksLikeRoundup(title))) continue;
     relevant.push({ id: item.id, link: item.link, pubDate, title, summary });
     if (relevant.length === 5) break;
   }
