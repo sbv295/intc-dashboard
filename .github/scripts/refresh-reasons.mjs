@@ -38,19 +38,31 @@ async function fetchChgPct(ticker) {
   // relies on), so fetch through it instead.
   const url = `${SITE}/api/yahoo?symbol=${encodeURIComponent(ticker)}&interval=1m&range=2d&includePrePost=true`;
   const resp = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-  if (!resp.ok) return null;
+  if (!resp.ok) {
+    console.error(`[debug] fetchChgPct(${ticker}): HTTP ${resp.status}`);
+    return null;
+  }
   const data = await resp.json();
   const meta = data?.chart?.result?.[0]?.meta;
-  if (!meta) return null;
+  if (!meta) {
+    console.error(`[debug] fetchChgPct(${ticker}): no meta, body=${JSON.stringify(data).slice(0, 300)}`);
+    return null;
+  }
   const price = meta.regularMarketPrice;
   const prevClose = meta.previousClose;
-  if (price == null || !prevClose) return null;
+  if (price == null || !prevClose) {
+    console.error(`[debug] fetchChgPct(${ticker}): price=${price} prevClose=${prevClose}`);
+    return null;
+  }
   return ((price - prevClose) / prevClose) * 100;
 }
 
 async function fetchReason(query) {
   const resp = await fetch(`${SITE}/api/groq?${query}`);
-  if (!resp.ok) return null;
+  if (!resp.ok) {
+    console.error(`[debug] fetchReason(${query}): HTTP ${resp.status}`);
+    return null;
+  }
   return resp.json();
 }
 
@@ -96,10 +108,12 @@ async function main() {
   for (const ticker of TICKERS) {
     const pct = await fetchChgPct(ticker);
     if (pct == null) {
+      console.error(`[debug] ${ticker}: pct null, carrying forward existing entry`);
       if (existing[ticker]) result[ticker] = existing[ticker];
       continue;
     }
     const fresh = await fetchReason(`ticker=${encodeURIComponent(ticker)}&chgPct=${pct}`);
+    console.error(`[debug] ${ticker}: pct=${pct.toFixed(2)} fresh.source=${fresh?.source} degraded=${fresh?.degraded} articleIds=${fresh?.articleIds?.length}`);
     result[ticker] = mergeEntry(existing[ticker], fresh);
     // Space out requests — bursting 15+ calls in a few seconds is what was tripping
     // Groq's rate limit and causing spurious "degraded" results on the very first run.
