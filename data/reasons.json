@@ -1,68 +1,67 @@
 {
   "INTC": {
-    "text": "Investor worries over CXMT’s advances and AI spending sustainability, compounded by a fatal factory blast.",
+    "text": "Fatal factory blast raising concerns over production capacity and potential output disruptions for the company",
     "source": "stock",
     "articleIds": [
-      "4916b235-d59a-3e56-a941-4f04365646c1",
       "3496f40a-fa65-3f17-a9d5-bbd1662f0dfa"
     ],
-    "updatedAt": "2026-10-15T19:37:48.100Z"
+    "updatedAt": "2026-10-16T00:56:54.765Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:50:15.478Z"
+    "updatedAt": "2026-10-16T00:57:00.211Z"
   },
   "NVDA": {
-    "text": "Heavy debt load worries amid AI expansion, prompting Deutsche Bank’s blunt warning and market pressure.",
-    "source": "stock",
-    "articleIds": [
-      "484dd0c5-243b-3e1e-b94e-875e80f9a4e5"
-    ],
-    "updatedAt": "2026-10-15T22:50:21.836Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-16T00:57:05.549Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:50:27.314Z"
+    "updatedAt": "2026-10-16T00:57:11.119Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:50:32.722Z"
+    "updatedAt": "2026-10-16T00:57:16.787Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:50:38.170Z"
+    "updatedAt": "2026-10-16T00:57:22.056Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:50:43.925Z"
+    "updatedAt": "2026-10-16T00:57:27.767Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:50:49.197Z"
+    "updatedAt": "2026-10-16T00:57:33.162Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:50:54.530Z"
+    "updatedAt": "2026-10-16T00:57:38.379Z"
   },
   "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-15T22:51:02.911Z"
+    "text": "13% surge in contract values fueling optimism for sustained Q2 momentum amid growing AI demand",
+    "source": "stock",
+    "articleIds": [
+      "79890cae-12fc-3eef-9149-274298fdb921"
+    ],
+    "updatedAt": "2026-10-16T00:57:44.353Z"
   },
   "QCOM": {
     "text": "Unveiling its first AI‑native Wi‑Fi 8 gateway for home broadband, sparking optimism over new revenue streams.",
@@ -76,37 +75,37 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:51:14.546Z"
+    "updatedAt": "2026-10-16T00:57:55.219Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:51:20.295Z"
+    "updatedAt": "2026-10-16T00:58:00.339Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:51:24.708Z"
+    "updatedAt": "2026-10-16T00:58:04.680Z"
   },
   "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:51:29.095Z"
+    "updatedAt": "2026-10-16T00:58:09.193Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:51:34.844Z"
+    "updatedAt": "2026-10-16T00:58:14.491Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:51:40.813Z"
+    "updatedAt": "2026-10-16T00:58:19.942Z"
   },
   "GOOGL": {
     "text": "Launch of the $180 Fitbit Edge smartwatch and JPMorgan’s raised cloud growth target fueling optimism",
@@ -121,72 +120,72 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:51:52.229Z"
+    "updatedAt": "2026-10-16T00:58:31.325Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:51:57.567Z"
+    "updatedAt": "2026-10-16T00:58:36.534Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:52:02.033Z"
+    "updatedAt": "2026-10-16T00:58:40.822Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:52:06.526Z"
+    "updatedAt": "2026-10-16T00:58:45.096Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:52:10.996Z"
+    "updatedAt": "2026-10-16T00:58:49.510Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:52:15.491Z"
+    "updatedAt": "2026-10-16T00:58:53.851Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:52:19.949Z"
+    "updatedAt": "2026-10-16T00:58:58.104Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:52:24.333Z"
+    "updatedAt": "2026-10-16T00:59:02.739Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:52:28.731Z"
+    "updatedAt": "2026-10-16T00:59:07.110Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:52:33.095Z"
+    "updatedAt": "2026-10-16T00:59:11.572Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:52:38.303Z"
+    "updatedAt": "2026-10-16T00:59:16.585Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-15T22:52:43.681Z"
+    "updatedAt": "2026-10-16T00:59:21.684Z"
   }
 }
