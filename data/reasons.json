@@ -11,45 +11,46 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:24:16.578Z"
+    "updatedAt": "2026-10-17T00:57:41.081Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:24:21.920Z"
+    "updatedAt": "2026-10-17T00:57:46.557Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:24:27.470Z"
+    "updatedAt": "2026-10-17T00:57:51.953Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:24:32.618Z"
+    "updatedAt": "2026-10-17T00:57:57.255Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:24:37.876Z"
+    "updatedAt": "2026-10-17T00:58:02.480Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:24:43.332Z"
+    "updatedAt": "2026-10-17T00:58:07.882Z"
   },
   "SPCX": {
-    "text": "Starlink restrictions in Ukraine prompting European satellite demand, pressuring SpaceX’s market outlook.",
+    "text": "Amid White House‑mandated Starshield throttling in Ukraine and heightened merger speculation with Tesla.",
     "source": "stock",
     "articleIds": [
+      "641a3b93-2ed5-3456-9af3-010cc7fe71a4",
       "27bf5950-9704-38a0-b2d7-1363f31288f0"
     ],
-    "updatedAt": "2026-10-16T22:24:49.008Z"
+    "updatedAt": "2026-10-17T00:58:13.540Z"
   },
   "MRVL": {
     "text": "Insider sale of 3,685 shares by data‑center president, raising dilution concerns amid funding needs.",
@@ -79,33 +80,33 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:25:11.330Z"
+    "updatedAt": "2026-10-17T00:58:35.486Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:25:16.678Z"
+    "updatedAt": "2026-10-17T00:58:40.746Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:25:20.910Z"
+    "updatedAt": "2026-10-17T00:58:45.070Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:25:25.147Z"
+    "updatedAt": "2026-10-17T00:58:49.387Z"
   },
   "AAPL": {
-    "text": "driven by a surge in iPhone Duo preorders, pushing delivery timelines into January",
+    "text": "Hiring former Meta executive Scott Tucker to head global litigation, signaling stronger legal strategy amid ongoing disputes.",
     "source": "stock",
     "articleIds": [
-      "4bb318f2-4454-3ac1-90a4-ce812b615d44"
+      "12a19546-b691-38fd-8a92-0a88758f06ef"
     ],
-    "updatedAt": "2026-10-16T22:25:30.944Z"
+    "updatedAt": "2026-10-17T00:58:55.087Z"
   },
   "MSFT": {
     "text": "Regulatory setbacks in the UK, where new compliance hurdles are intensifying scrutiny of its business operations.",
@@ -119,78 +120,78 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:25:41.658Z"
+    "updatedAt": "2026-10-17T00:59:06.143Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:25:47.071Z"
+    "updatedAt": "2026-10-17T00:59:11.293Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:25:52.071Z"
+    "updatedAt": "2026-10-17T00:59:16.535Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:25:56.331Z"
+    "updatedAt": "2026-10-17T00:59:20.879Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:26:00.562Z"
+    "updatedAt": "2026-10-17T00:59:25.160Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:26:04.820Z"
+    "updatedAt": "2026-10-17T00:59:29.506Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:26:09.022Z"
+    "updatedAt": "2026-10-17T00:59:33.834Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:26:13.304Z"
+    "updatedAt": "2026-10-17T00:59:38.129Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:26:17.548Z"
+    "updatedAt": "2026-10-17T00:59:42.532Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:26:21.803Z"
+    "updatedAt": "2026-10-17T00:59:46.933Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:26:26.065Z"
+    "updatedAt": "2026-10-17T00:59:51.207Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:26:31.197Z"
+    "updatedAt": "2026-10-17T00:59:56.383Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-16T22:26:36.115Z"
+    "updatedAt": "2026-10-17T01:00:00.862Z"
   }
 }
