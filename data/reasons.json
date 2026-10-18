@@ -11,25 +11,25 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:23:01.706Z"
+    "updatedAt": "2026-10-18T16:18:59.185Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:23:06.842Z"
+    "updatedAt": "2026-10-18T16:19:04.108Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:23:12.035Z"
+    "updatedAt": "2026-10-18T16:19:09.490Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:23:17.358Z"
+    "updatedAt": "2026-10-18T16:19:14.816Z"
   },
   "MU": {
     "text": "President Trump's large sale of Micron holdings likely spooked investors, prompting a sharp decline.",
@@ -43,13 +43,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:23:28.526Z"
+    "updatedAt": "2026-10-18T16:19:26.479Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:23:33.943Z"
+    "updatedAt": "2026-10-18T16:19:31.742Z"
   },
   "MRVL": {
     "text": "Insider sale of 3,685 shares worth $865,864 by data‑center president fuels dilution concerns among investors.",
@@ -60,67 +60,71 @@
     "updatedAt": "2026-10-18T02:35:50.670Z"
   },
   "ARM": {
-    "text": "Damaging Delaware jury verdict in Qualcomm licensing dispute, plus looming ruling on new chip designs.",
+    "text": "Jury verdict finding a breach of Qualcomm’s architectural license, raising legal and operational concerns.",
     "source": "stock",
     "articleIds": [
-      "d67d698f-6dae-3c62-b04a-b144f6cb0d4a"
+      "22e669aa-1ce3-3c90-8331-832c6a532d2b",
+      "b964ee44-021c-3eec-92d7-0c2f81dd346c"
     ],
-    "updatedAt": "2026-10-16T19:12:51.018Z"
+    "updatedAt": "2026-10-18T16:19:42.570Z"
   },
   "QCOM": {
-    "text": "Insider sale of $319 k shares amid a damaging jury verdict in the Arm licensing case, heightening sector pressure.",
+    "text": "Insider sale of $319,268 in shares, hinting at potential concerns over upcoming strategic initiatives.",
     "source": "stock",
     "articleIds": [
-      "58ad1819-947c-3f03-9338-8b6db92c2b45",
-      "d67d698f-6dae-3c62-b04a-b144f6cb0d4a"
+      "58ad1819-947c-3f03-9338-8b6db92c2b45"
     ],
-    "updatedAt": "2026-10-17T05:22:14.750Z"
+    "updatedAt": "2026-10-18T16:19:48.196Z"
   },
   "SKHY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-18T12:23:57.076Z"
+    "text": "Seeking U.S. approval to ship chipmaking equipment to China, raising geopolitical risk concerns and investor uncertainty.",
+    "source": "stock",
+    "articleIds": [
+      "b261919d-f6a9-37ec-a8f4-12fed5794c8a"
+    ],
+    "updatedAt": "2026-10-18T16:19:53.706Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:24:03.017Z"
+    "updatedAt": "2026-10-18T16:19:58.814Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:24:07.385Z"
+    "updatedAt": "2026-10-18T16:20:03.107Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:24:11.732Z"
+    "updatedAt": "2026-10-18T16:20:07.368Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-18T12:24:17.397Z"
-  },
-  "MSFT": {
-    "text": "Pulling out of the UK AI data‑centre partnership with Nscale, raising concerns over its AI infrastructure strategy.",
+    "text": "Strong iPhone Duo preorder demand and rapid sell‑out, despite delayed January deliveries, boosting sentiment.",
     "source": "stock",
     "articleIds": [
-      "3b41e591-4674-3182-9558-f0fc6aa9620c",
-      "0066be54-5d34-3cd3-9977-bb68bd062146",
-      "0267208b-fbe2-395f-8598-2118420b3aab"
+      "12a3184e-075e-3ca0-841d-7ee3d5d3e221"
     ],
-    "updatedAt": "2026-10-18T12:24:23.107Z"
+    "updatedAt": "2026-10-18T16:20:13.211Z"
+  },
+  "MSFT": {
+    "text": "Pulling out of the UK AI data‑centre partnership with Nscale amid tighter debt market conditions.",
+    "source": "stock",
+    "articleIds": [
+      "0a4f42f6-a1df-3080-b526-fe534c4623ad",
+      "3b41e591-4674-3182-9558-f0fc6aa9620c",
+      "0066be54-5d34-3cd3-9977-bb68bd062146"
+    ],
+    "updatedAt": "2026-10-18T16:20:19.018Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:24:28.557Z"
+    "updatedAt": "2026-10-18T16:20:24.299Z"
   },
   "AMZN": {
     "text": "FDA warning letter over unapproved STI drug listings, raising regulatory concerns and potential product seizures.",
@@ -134,66 +138,66 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:24:39.364Z"
+    "updatedAt": "2026-10-18T16:20:35.059Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:24:43.775Z"
+    "updatedAt": "2026-10-18T16:20:39.296Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:24:48.229Z"
+    "updatedAt": "2026-10-18T16:20:43.579Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:24:52.635Z"
+    "updatedAt": "2026-10-18T16:20:47.783Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:24:57.033Z"
+    "updatedAt": "2026-10-18T16:20:52.023Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:25:01.484Z"
+    "updatedAt": "2026-10-18T16:20:56.540Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:25:06.109Z"
+    "updatedAt": "2026-10-18T16:21:00.760Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:25:10.542Z"
+    "updatedAt": "2026-10-18T16:21:05.019Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:25:15.033Z"
+    "updatedAt": "2026-10-18T16:21:09.226Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:25:20.169Z"
+    "updatedAt": "2026-10-18T16:21:14.240Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T12:25:24.631Z"
+    "updatedAt": "2026-10-18T16:21:18.589Z"
   }
 }
