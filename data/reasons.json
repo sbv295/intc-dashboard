@@ -11,45 +11,45 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:18:59.185Z"
+    "updatedAt": "2026-10-18T19:10:50.211Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:19:04.108Z"
+    "updatedAt": "2026-10-18T19:10:55.482Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:19:09.490Z"
+    "updatedAt": "2026-10-18T19:11:00.731Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:19:14.816Z"
+    "updatedAt": "2026-10-18T19:11:06.328Z"
   },
   "MU": {
-    "text": "President Trump's large sale of Micron holdings likely spooked investors, prompting a sharp decline.",
-    "source": "stock",
-    "articleIds": [
-      "3d194f45-599a-30fb-be39-3604431b7785"
-    ],
-    "updatedAt": "2026-10-18T12:23:23.399Z"
-  },
-  "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:19:26.479Z"
+    "updatedAt": "2026-10-18T19:11:11.492Z"
+  },
+  "AVGO": {
+    "text": "Opposition to tokenizing its shares raises regulatory uncertainty, sparking investor concerns about future liquidity now.",
+    "source": "stock",
+    "articleIds": [
+      "8c53b8c8-7150-3aec-a8fc-0c2001d7a1f1"
+    ],
+    "updatedAt": "2026-10-18T19:11:17.097Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:19:31.742Z"
+    "updatedAt": "2026-10-18T19:11:22.878Z"
   },
   "MRVL": {
     "text": "Insider sale of 3,685 shares worth $865,864 by data‑center president fuels dilution concerns among investors.",
@@ -88,27 +88,27 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:19:58.814Z"
+    "updatedAt": "2026-10-18T19:11:50.549Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:20:03.107Z"
+    "updatedAt": "2026-10-18T19:11:54.893Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:20:07.368Z"
+    "updatedAt": "2026-10-18T19:11:59.235Z"
   },
   "AAPL": {
-    "text": "Strong iPhone Duo preorder demand and rapid sell‑out, despite delayed January deliveries, boosting sentiment.",
+    "text": "Launch buzz around Apple’s new HomeView tablet, sparking investor optimism amid broader AI hardware excitement.",
     "source": "stock",
     "articleIds": [
-      "12a3184e-075e-3ca0-841d-7ee3d5d3e221"
+      "34e6da13-bbd5-3447-bdca-37413fc48bbc"
     ],
-    "updatedAt": "2026-10-18T16:20:13.211Z"
+    "updatedAt": "2026-10-18T19:12:04.760Z"
   },
   "MSFT": {
     "text": "Pulling out of the UK AI data‑centre partnership with Nscale amid tighter debt market conditions.",
@@ -124,7 +124,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:20:24.299Z"
+    "updatedAt": "2026-10-18T19:12:15.573Z"
   },
   "AMZN": {
     "text": "FDA warning letter over unapproved STI drug listings, raising regulatory concerns and potential product seizures.",
@@ -135,69 +135,71 @@
     "updatedAt": "2026-10-17T23:43:40.265Z"
   },
   "META": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-18T16:20:35.059Z"
+    "text": "One‑time legal bill and $205 B AI spending tied to the $18 B teen‑safety settlement.",
+    "source": "stock",
+    "articleIds": [
+      "662f49c4-92a7-3969-b2ff-bf59a74fd40c"
+    ],
+    "updatedAt": "2026-10-18T19:12:26.988Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:20:39.296Z"
+    "updatedAt": "2026-10-18T19:12:31.403Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:20:43.579Z"
+    "updatedAt": "2026-10-18T19:12:35.712Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:20:47.783Z"
+    "updatedAt": "2026-10-18T19:12:40.036Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:20:52.023Z"
+    "updatedAt": "2026-10-18T19:12:44.360Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:20:56.540Z"
+    "updatedAt": "2026-10-18T19:12:48.714Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:21:00.760Z"
+    "updatedAt": "2026-10-18T19:12:53.063Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:21:05.019Z"
+    "updatedAt": "2026-10-18T19:12:57.342Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:21:09.226Z"
+    "updatedAt": "2026-10-18T19:13:01.676Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:21:14.240Z"
+    "updatedAt": "2026-10-18T19:13:06.539Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-18T16:21:18.589Z"
+    "updatedAt": "2026-10-18T19:13:10.940Z"
   }
 }
