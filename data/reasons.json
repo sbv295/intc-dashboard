@@ -3,59 +3,61 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:35:19.914Z"
+    "updatedAt": "2026-10-19T11:49:33.813Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-19T05:35:25.547Z"
+    "text": "Massive iShares SOXX divestiture of $143.7 million in AMD, prompting selling pressure amid portfolio overhaul this.",
+    "source": "stock",
+    "articleIds": [
+      "f656041e-37b8-3d70-8d27-4c5e9f66f170"
+    ],
+    "updatedAt": "2026-10-19T11:49:39.732Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:35:30.670Z"
+    "updatedAt": "2026-10-19T11:49:44.975Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:35:35.967Z"
+    "updatedAt": "2026-10-19T11:49:50.467Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-19T05:35:41.291Z"
+    "text": "amid a DRAM scare, investors fear reduced demand for SanDisk’s memory products, prompting sell‑off today",
+    "source": "stock",
+    "articleIds": [
+      "87f50899-69df-39a6-b272-3390549e5812"
+    ],
+    "updatedAt": "2026-10-19T11:49:56.104Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:35:46.422Z"
+    "updatedAt": "2026-10-19T11:50:01.145Z"
   },
   "AVGO": {
-    "text": "Opposition to tokenizing its shares raises regulatory uncertainty, sparking investor concerns about future liquidity now.",
-    "source": "stock",
-    "articleIds": [
-      "8c53b8c8-7150-3aec-a8fc-0c2001d7a1f1"
-    ],
-    "updatedAt": "2026-10-18T19:11:17.097Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-19T11:50:06.538Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:35:57.962Z"
+    "updatedAt": "2026-10-19T11:50:11.667Z"
   },
   "MRVL": {
-    "text": "Insider sale of 3,685 shares worth $865,864 by data‑center president fuels dilution concerns among investors.",
+    "text": "ETFs' net $66.3 million sell‑off on Oct. 15 likely pressured the price amid broader sector weakness and profit‑taking.",
     "source": "stock",
     "articleIds": [
-      "773a5ff6-fc07-3fb0-b6cc-e22ca3c6fa15"
+      "cc0a59a4-d294-3dee-807b-f2095b1f8460"
     ],
-    "updatedAt": "2026-10-18T02:35:50.670Z"
+    "updatedAt": "2026-10-19T11:50:18.144Z"
   },
   "ARM": {
     "text": "Jury verdict finding a breach of Qualcomm’s architectural license, raising legal and operational concerns.",
@@ -67,130 +69,137 @@
     "updatedAt": "2026-10-18T16:19:42.570Z"
   },
   "QCOM": {
-    "text": "Insider sale of $319,268 in shares, hinting at potential concerns over upcoming strategic initiatives.",
+    "text": "$63.4 million net ETF selling on Oct. 15 likely pressured the price.",
     "source": "stock",
     "articleIds": [
-      "58ad1819-947c-3f03-9338-8b6db92c2b45"
+      "2a7cbf25-3871-3310-9fa1-adc83d7760b7"
     ],
-    "updatedAt": "2026-10-18T16:19:48.196Z"
+    "updatedAt": "2026-10-19T11:50:29.259Z"
   },
   "SKHY": {
-    "text": "Seeking U.S. approval to ship chipmaking equipment to China, raising geopolitical risk concerns and investor uncertainty.",
+    "text": "Regulatory concerns over Solidigm listing potentially breaching South Korean rules, prompting investor unease.",
     "source": "stock",
     "articleIds": [
-      "b261919d-f6a9-37ec-a8f4-12fed5794c8a"
+      "b18f74b4-8759-3780-837a-def3cfe3f752"
     ],
-    "updatedAt": "2026-10-18T16:19:53.706Z"
+    "updatedAt": "2026-10-19T11:50:34.896Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:36:27.667Z"
+    "updatedAt": "2026-10-19T11:50:40.098Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-19T05:36:31.984Z"
-  },
-  "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-19T05:36:36.259Z"
-  },
-  "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:36:41.566Z"
+    "updatedAt": "2026-10-19T11:50:44.390Z"
   },
-  "MSFT": {
-    "text": "Pulling out of a major UK AI data‑centre partnership amid tighter debt markets, dampening growth expectations.",
-    "source": "stock",
-    "articleIds": [
-      "0a4f42f6-a1df-3080-b526-fe534c4623ad",
-      "3b41e591-4674-3182-9558-f0fc6aa9620c"
-    ],
-    "updatedAt": "2026-10-19T05:36:47.014Z"
-  },
-  "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+  "000660.KS": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:36:52.140Z"
+    "updatedAt": "2026-10-19T11:50:48.718Z"
+  },
+  "AAPL": {
+    "text": "significant purchases by SPDR and Invesco ETFs adding roughly $45 million of Apple holdings this week",
+    "source": "stock",
+    "articleIds": [
+      "2ec30d27-321f-36b3-93cd-053f10b4d465",
+      "9cbcd083-037d-3960-a9d4-27addf201118",
+      "b0507a64-43dc-3edc-a8ad-66f5d3d14ff8"
+    ],
+    "updatedAt": "2026-10-19T11:50:54.789Z"
+  },
+  "MSFT": {
+    "text": "Pulled from UK AI data‑center partnership amid power‑supply challenges, dampening British AI infrastructure plans future.",
+    "source": "stock",
+    "articleIds": [
+      "99122043-95e4-3bbd-9b22-fe62e31c58a1",
+      "d57d0b86-3f16-3c49-b4f8-20f5f27dbef0"
+    ],
+    "updatedAt": "2026-10-19T11:51:00.308Z"
+  },
+  "GOOGL": {
+    "text": "Heavy ETF net selling of $76.6 million, amid broader fund withdrawals, likely pressured the price.",
+    "source": "stock",
+    "articleIds": [
+      "bc9d1ca3-e3d8-332a-9f01-26e86c033774",
+      "afc68f6c-e19c-3ec1-8d0c-5c157f8dd66d"
+    ],
+    "updatedAt": "2026-10-19T11:51:06.006Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:36:57.121Z"
+    "updatedAt": "2026-10-19T11:51:11.054Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:02.375Z"
+    "updatedAt": "2026-10-19T11:51:16.250Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:06.706Z"
+    "updatedAt": "2026-10-19T11:51:20.581Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:11.028Z"
+    "updatedAt": "2026-10-19T11:51:24.893Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:15.305Z"
+    "updatedAt": "2026-10-19T11:51:29.191Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:19.636Z"
+    "updatedAt": "2026-10-19T11:51:33.482Z"
   },
   "TCS.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:23.924Z"
+    "updatedAt": "2026-10-19T11:51:37.813Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:28.212Z"
+    "updatedAt": "2026-10-19T11:51:42.182Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:32.481Z"
+    "updatedAt": "2026-10-19T11:51:46.491Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:36.836Z"
+    "updatedAt": "2026-10-19T11:51:50.788Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:42.104Z"
+    "updatedAt": "2026-10-19T11:51:55.719Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad pullback across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-19T05:37:46.502Z"
+    "updatedAt": "2026-10-19T11:52:00.172Z"
   }
 }
