@@ -1,26 +1,21 @@
 {
   "INTC": {
-    "text": "Construction milestone on the $28 B Ohio chip project and Musk‑hinted Terafab breakthrough likely fueling optimism.",
-    "source": "stock",
-    "articleIds": [
-      "18a2a1c6-da54-332e-aef3-d12263478505",
-      "86456a7f-49bd-36ec-ac00-96590df2d6cc"
-    ],
-    "updatedAt": "2026-10-21T19:52:19.231Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-21T22:58:15.526Z"
   },
   "AMD": {
-    "text": "Susquehanna’s raised price target and optimism from a new India AI project ahead of earnings.",
-    "source": "stock",
-    "articleIds": [
-      "56464c90-1dd9-331f-b8fc-f5c7a8bf2220"
-    ],
-    "updatedAt": "2026-10-21T19:52:25.775Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-21T22:58:21.212Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:52:30.996Z"
+    "updatedAt": "2026-10-21T22:58:26.736Z"
   },
   "TSM": {
     "text": "Moody’s upgrade to Aa2 amid booming AI demand and reinforced market dominance driving optimism.",
@@ -34,36 +29,31 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:52:42.043Z"
+    "updatedAt": "2026-10-21T22:58:38.124Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:52:47.588Z"
+    "updatedAt": "2026-10-21T22:58:43.528Z"
   },
   "AVGO": {
-    "text": "AI semiconductor revenue jumping 221% and new Arcot Scam Defense rollout boosting investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "f59388ac-02ac-3987-8218-ad3c3a442c7f",
-      "fd392d23-0917-3702-a93c-667730a20bee"
-    ],
-    "updatedAt": "2026-10-21T15:54:56.307Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-21T22:58:49.030Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:52:58.983Z"
+    "updatedAt": "2026-10-21T22:58:54.573Z"
   },
   "MRVL": {
-    "text": "Heavy ETF buying of $116.4 million by 28 funds likely fueling the recent price gain.",
-    "source": "stock",
-    "articleIds": [
-      "0b2b39bb-366e-38a2-8364-546e49641b0c"
-    ],
-    "updatedAt": "2026-10-21T15:55:07.889Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-21T22:58:59.870Z"
   },
   "ARM": {
     "text": "Judge's reluctance to intervene in Qualcomm licensing talks easing regulatory uncertainty for ARM",
@@ -74,21 +64,22 @@
     "updatedAt": "2026-10-21T15:55:13.956Z"
   },
   "QCOM": {
-    "text": "Quarterly $0.92 dividend announcement and Susquehanna’s target raise amid expected AI‑driven earnings upside.",
+    "text": "AI and server demand boosting earnings outlook, prompting Susquehanna to raise its target in 2026.",
     "source": "stock",
     "articleIds": [
-      "c69328e0-de0f-38d8-96a7-65e19cbbddc9",
-      "7bcdac46-70ad-354a-8cfe-f93210ceace3"
+      "024e4f6f-26b6-3abf-8827-74fe5083ec67",
+      "c69328e0-de0f-38d8-96a7-65e19cbbddc9"
     ],
-    "updatedAt": "2026-10-21T15:55:19.781Z"
+    "updatedAt": "2026-10-21T22:59:11.555Z"
   },
   "SKHY": {
-    "text": "Upgrading China memory plants to counter local AI rivals, boosting growth prospects amid AI demand.",
+    "text": "Upgraded Chinese plants amid U.S. export curbs, bolstered by a 76% operating margin surge recent.",
     "source": "stock",
     "articleIds": [
-      "66d3e180-1b25-3ac8-b5f8-e81561278155"
+      "a4e99cf4-724b-383e-bbab-1cf6053f1e55",
+      "929007e5-5017-3e07-acd9-f07e74086208"
     ],
-    "updatedAt": "2026-10-21T15:55:25.650Z"
+    "updatedAt": "2026-10-21T22:59:17.649Z"
   },
   "MBLY": {
     "text": "RBC downgrade citing structural vulnerabilities and growth risks in Mobileye’s advanced driver‑assistance technology segment.",
@@ -104,104 +95,104 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:53:33.426Z"
+    "updatedAt": "2026-10-21T22:59:27.927Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:53:37.717Z"
+    "updatedAt": "2026-10-21T22:59:32.377Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:53:43.004Z"
+    "updatedAt": "2026-10-21T22:59:38.011Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:53:48.489Z"
+    "updatedAt": "2026-10-21T22:59:43.555Z"
   },
   "GOOGL": {
-    "text": "Senators’ inquiries into Google’s AI‑in‑schools push, raising regulatory scrutiny concerns.",
-    "source": "stock",
-    "articleIds": [
-      "83bef6b7-d988-3295-ac56-177d6178a45b"
-    ],
-    "updatedAt": "2026-10-21T19:53:54.385Z"
-  },
-  "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:53:59.971Z"
+    "updatedAt": "2026-10-21T22:59:49.078Z"
+  },
+  "AMZN": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-21T22:59:54.249Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:05.782Z"
+    "updatedAt": "2026-10-21T22:59:59.555Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:10.677Z"
+    "updatedAt": "2026-10-21T23:00:04.005Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:15.275Z"
+    "updatedAt": "2026-10-21T23:00:08.720Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:19.599Z"
+    "updatedAt": "2026-10-21T23:00:13.141Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:23.921Z"
+    "updatedAt": "2026-10-21T23:00:17.515Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:28.214Z"
+    "updatedAt": "2026-10-21T23:00:21.962Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:32.613Z"
+    "updatedAt": "2026-10-21T23:00:26.566Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:37.006Z"
+    "updatedAt": "2026-10-21T23:00:31.008Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:41.914Z"
+    "updatedAt": "2026-10-21T23:00:35.410Z"
   },
   "INDEX": {
-    "text": "No single dominant catalyst — a broad rally across the broad US market.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:47.101Z"
+    "text": "Easing year‑ahead cost expectations amid fresh inflation signals from U.S. businesses tempering market optimism.",
+    "source": "macro",
+    "articleIds": [
+      "cfdbe20e-d468-3a49-81fe-0ed260f743e2"
+    ],
+    "updatedAt": "2026-10-21T23:00:41.370Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad pullback across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-21T19:54:51.518Z"
+    "updatedAt": "2026-10-21T23:00:45.936Z"
   }
 }
