@@ -873,6 +873,38 @@
             50% { box-shadow: 0 0 11px 4px currentColor; opacity: 1; }
         }
         .stock-sentiment canvas { cursor: crosshair; }
+        .chart-rangebar {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 4px;
+            padding: 0 2px;
+        }
+        .chart-range-btn {
+            background: transparent;
+            border: 1px solid transparent;
+            color: var(--text-dim);
+            font: inherit;
+            font-size: 0.66rem;
+            font-weight: 600;
+            padding: 2px 7px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .chart-range-btn:hover { color: var(--text); }
+        .chart-range-btn.active {
+            color: var(--text);
+            border-color: rgba(255,255,255,0.25);
+            background: rgba(255,255,255,0.08);
+        }
+        .chart-range-pct {
+            margin-left: auto;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--text-dim);
+        }
+        .chart-range-pct.up { color: var(--green); }
+        .chart-range-pct.down { color: var(--red); }
         .chart-tooltip {
             position: absolute;
             display: none;
@@ -1174,8 +1206,11 @@
     // "No plausible explanation" flip-flopping from a fresh LLM call every visit) and avoids
     // hitting Groq's rate limits from real visitor traffic. Loaded once here and applied to
     // every stock card + the NASDAQ 100 / watchlist mkt cap lines.
+    // Feature flag: set to true to re-enable the news summary text on cards / index line.
+    const ENABLE_REASONS = false;
     let reasonsData = null;
     async function loadReasonsData() {
+        if (!ENABLE_REASONS) return;
         try {
             const resp = await fetch('data/reasons.json', { cache: 'no-store' });
             if (!resp.ok) return;
@@ -1293,8 +1328,48 @@
     // State per stock
     const state = {};
     STOCKS.forEach(s => {
-        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null, currentPct: null, chartSeries: null, chartRange: null, hoverX: null };
+        state[s.ticker] = { nasdaqPrice: null, hlPrice: null, prevClose: null, sessionClose: null, prevNasdaq: null, prevHl: null, shares: null, mcap: null, extPrice: null, volume: null, currentPct: null, chartSeries: null, chartRange: null, hoverX: null, chartPeriod: '1D', periodData: {} };
     });
+
+    const CHART_PERIODS = ['1D', '1W', '1M', '1Y', '5Y', 'Max'];
+    const CHART_PERIOD_CFG = {
+        '1W': { interval: '15m', range: '5d' },
+        '1M': { interval: '60m', range: '1mo' },
+        '1Y': { interval: '1d', range: '1y' },
+        '5Y': { interval: '1wk', range: '5y' },
+        'Max': { interval: '1mo', range: 'max' },
+    };
+
+    async function setChartPeriod(ticker, period) {
+        const stock = STOCKS.find(s => s.ticker === ticker);
+        if (!stock) return;
+        const st = state[ticker];
+        st.chartPeriod = period;
+        st.hoverX = null;
+        document.querySelectorAll(`#rangebar-${sid(stock)} .chart-range-btn`).forEach(b => {
+            b.classList.toggle('active', b.dataset.period === period);
+        });
+        const cached = st.periodData[period];
+        const fresh = cached && (Date.now() - cached.fetchedAt < 5 * 60000);
+        if (period !== '1D' && !fresh) {
+            const pctEl = document.getElementById(`rangepct-${sid(stock)}`);
+            if (pctEl && !cached) { pctEl.className = 'chart-range-pct'; pctEl.textContent = 'Loading…'; }
+            try {
+                const cfg = CHART_PERIOD_CFG[period];
+                const json = await yahooFetch(`${YAHOO_BASE}${stock.ticker}?interval=${cfg.interval}&range=${cfg.range}`);
+                const result = json.chart.result[0];
+                const ts = result.timestamp || [], closes = result.indicators.quote[0].close || [];
+                const series = [];
+                for (let i = 0; i < ts.length; i++) if (closes[i] != null) series.push({ t: ts[i], c: closes[i] });
+                st.periodData[period] = { series, fetchedAt: Date.now() };
+            } catch (e) {
+                const pctEl = document.getElementById(`rangepct-${sid(stock)}`);
+                if (st.chartPeriod === period && pctEl) pctEl.textContent = 'Unavailable';
+                return;
+            }
+        }
+        if (st.chartPeriod === period) drawSentimentChart(ticker);
+    }
 
     // ─── Live Performance Mini-Chart ────────────────────────────────────────
     function updateSentiment(ticker, pctChange) {
@@ -1319,10 +1394,27 @@
         } else {
             st.hoverX = hoverX;
         }
-        const series = st.chartSeries, range = st.chartRange;
-        if (!series || series.length < 2 || !range) return;
+        const period = st.chartPeriod || '1D';
+        const is1D = period === '1D';
         const canvas = document.getElementById(`chart-${sid(stock)}`);
         if (!canvas) return;
+        const pctEl = document.getElementById(`rangepct-${sid(stock)}`);
+        let series, range, prevClose;
+        if (is1D) {
+            series = st.chartSeries; range = st.chartRange; prevClose = st.prevClose;
+            if (pctEl) pctEl.textContent = '';
+        } else {
+            const d = st.periodData[period];
+            series = d && d.series;
+            prevClose = series && series.length ? series[0].c : null;
+            if (!series || series.length < 2) {
+                canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+                const g = document.getElementById(`glow-${sid(stock)}`); if (g) g.style.display = 'none';
+                const t = document.getElementById(`tooltip-${sid(stock)}`); if (t) t.style.display = 'none';
+                return;
+            }
+        }
+        if (!series || series.length < 2 || (is1D && !range)) return;
         const rectW = canvas.clientWidth, rectH = canvas.clientHeight;
         if (!rectW || !rectH) return;
         const dpr = window.devicePixelRatio || 1;
@@ -1333,7 +1425,6 @@
         ctx.clearRect(0, 0, rectW, rectH);
 
         const padT = 8, padB = 6, padR = 4;
-        const prevClose = st.prevClose;
         let minP = Infinity, maxP = -Infinity;
         series.forEach(p => { if (p.c < minP) minP = p.c; if (p.c > maxP) maxP = p.c; });
         if (prevClose != null) { if (prevClose < minP) minP = prevClose; if (prevClose > maxP) maxP = prevClose; }
@@ -1360,9 +1451,15 @@
         });
         const padL = Math.min(48, Math.max(24, labelW + 6));
 
-        const span = Math.max(1, range.end - range.start);
+        const span = is1D ? Math.max(1, range.end - range.start) : 1;
         const plotW = rectW - padL - padR;
         const xScale = t => padL + (Math.min(Math.max(t, range.start), range.end) - range.start) / span * plotW;
+
+        if (!is1D && pctEl) {
+            const rangePct = ((lastClose - prevClose) / prevClose) * 100;
+            pctEl.textContent = `${rangePct >= 0 ? '+' : ''}${rangePct.toFixed(2)}%`;
+            pctEl.className = `chart-range-pct ${rangePct >= 0 ? 'up' : 'down'}`;
+        }
         const yScale = c => padT + (1 - (c - minP) / (maxP - minP)) * (rectH - padT - padB);
 
         // Subtle horizontal grid lines with price labels, echoing index.html's chart grid/price scale
@@ -1399,13 +1496,17 @@
             ctx.fillStyle = 'rgba(255,255,255,0.55)';
             ctx.textAlign = 'right';
             ctx.textBaseline = 'middle';
-            const pcLabel = `Prev Close ${fmtPrice(stock, prevClose)}`;
+            const pcLabel = `${is1D ? 'Prev Close' : 'Start'} ${fmtPrice(stock, prevClose)}`;
             const labelY = (pcy - padT < 9) ? pcy + 9 : pcy - 7;
             ctx.fillText(pcLabel, rectW - padR, labelY);
             ctx.restore();
         }
 
-        const points = series.map(p => ({ x: xScale(p.t), y: yScale(p.c) }));
+        // Multi-day ranges plot by index so overnight/weekend gaps don't leave flat stretches.
+        const points = series.map((p, i) => ({
+            x: is1D ? xScale(p.t) : padL + i / (series.length - 1) * plotW,
+            y: yScale(p.c)
+        }));
         const baseline = rectH - padB;
 
         // Area fill: gradient fading from the trend color down to transparent
@@ -1437,7 +1538,7 @@
         const glowEl = document.getElementById(`glow-${sid(stock)}`);
         if (glowEl) {
             const ms = stock.currency === 'KRW' ? getKrxMarketStatus() : getMarketStatus();
-            if (ms === 'market' && hoverX == null) {
+            if (is1D && ms === 'market' && hoverX == null) {
                 glowEl.style.left = (canvas.offsetLeft + last.x) + 'px';
                 glowEl.style.top = (canvas.offsetTop + last.y) + 'px';
                 glowEl.style.color = color;
@@ -1478,14 +1579,17 @@
             ctx.restore();
 
             if (tooltipEl) {
-                const timeStr = new Date(sp.t * 1000).toLocaleString('en-US', { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: '2-digit', hour12: true });
+                const fmtOpts = is1D ? { hour: 'numeric', minute: '2-digit', hour12: true }
+                    : (period === '1W' || period === '1M') ? { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true }
+                    : { month: 'short', day: 'numeric', year: 'numeric' };
+                const timeStr = new Date(sp.t * 1000).toLocaleString('en-US', { timeZone: 'Asia/Kolkata', ...fmtOpts });
                 let pctHtml = '';
                 if (prevClose != null) {
                     const pct = ((sp.c - prevClose) / prevClose) * 100;
                     const sign = pct >= 0 ? '+' : '';
                     pctHtml = ` <span class="chart-tooltip-pct ${pct >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
                 }
-                tooltipEl.innerHTML = `<div class="chart-tooltip-price">${fmtPrice(stock, sp.c)}${pctHtml}</div><div class="chart-tooltip-time">${timeStr} IST</div>`;
+                tooltipEl.innerHTML = `<div class="chart-tooltip-price">${fmtPrice(stock, sp.c)}${pctHtml}</div><div class="chart-tooltip-time">${timeStr}${is1D || period === '1W' || period === '1M' ? ' IST' : ''}</div>`;
                 tooltipEl.style.display = 'block';
                 const tw = tooltipEl.offsetWidth;
                 // Keep the callout pinned near the top of the chart; only its horizontal
@@ -1744,7 +1848,8 @@
                 </div>
                 <div class="stock-reason" id="reason-${id}"></div>
                 <div class="stock-collapse-body"><div class="stock-collapse-inner">
-                <div class="stock-sentiment" id="sentiment-${id}"><canvas class="sentiment-chart" id="chart-${id}"></canvas><div class="chart-glow-dot" id="glow-${id}"></div><div class="chart-tooltip" id="tooltip-${id}"></div></div>
+                <div class="stock-sentiment" id="sentiment-${id}"><canvas class="sentiment-chart" id="chart-${id}"></canvas><div class="chart-glow-dot" id="glow-${id}"></div><div class="chart-tooltip" id="tooltip-${id}"></div>
+                    <div class="chart-rangebar" id="rangebar-${id}">${CHART_PERIODS.map(p => `<button type="button" class="chart-range-btn${p === '1D' ? ' active' : ''}" data-period="${p}" onclick="setChartPeriod('${s.ticker}', '${p}')">${p}</button>`).join('')}<span class="chart-range-pct" id="rangepct-${id}"></span></div></div>
                 <div class="stock-ohl" id="ohl-${id}"></div>
                 <div class="stock-meta" id="meta-${id}"><span class="meta-vol" id="vol-${id}"></span><span class="meta-avgvol" id="avgvol-${id}"></span><span class="meta-mcap" id="mcap-${id}"></span></div>
                 <div class="stock-extended" id="ext-${id}"></div>
