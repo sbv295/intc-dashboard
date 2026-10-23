@@ -3,25 +3,27 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:05:47.523Z"
+    "updatedAt": "2026-10-23T00:20:22.083Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-22T21:05:53.140Z"
+    "text": "Ongoing component supply bottlenecks and cleanroom space constraints expected to curb equipment supply through 2027.",
+    "source": "stock",
+    "articleIds": [
+      "c8eb4734-e706-3f29-acfb-d861af2106d3"
+    ],
+    "updatedAt": "2026-10-23T00:20:28.091Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:05:58.897Z"
+    "updatedAt": "2026-10-23T00:20:33.456Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:06:04.302Z"
+    "updatedAt": "2026-10-23T00:20:39.035Z"
   },
   "SNDK": {
     "text": "Investor skepticism over Mizuho’s $2,050 billion AI‑storage revenue target dampens confidence ahead of earnings forecast.",
@@ -32,169 +34,166 @@
     "updatedAt": "2026-10-22T21:06:10.700Z"
   },
   "MU": {
-    "text": "AI‑chip demand outpacing wafer supply, prompting concerns over production constraints and heightened cost pressures.",
-    "source": "stock",
-    "articleIds": [
-      "89c6f99b-a7c2-3922-ac9a-2148aae46fad"
-    ],
-    "updatedAt": "2026-10-22T21:06:17.131Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-23T00:20:50.018Z"
   },
   "AVGO": {
-    "text": "Launch of Arcot Scam Defense AI fraud protection, prompting investor concerns over market reception.",
-    "source": "stock",
-    "articleIds": [
-      "3a908172-cdc4-39d1-9a35-bb5109c1c315"
-    ],
-    "updatedAt": "2026-10-22T21:06:22.814Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-23T00:20:55.414Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:06:28.429Z"
+    "updatedAt": "2026-10-23T00:21:00.799Z"
   },
   "MRVL": {
+    "text": "a supply warning from a chipmaking equipment supplier dampening AI data‑center demand expectations",
+    "source": "stock",
+    "articleIds": [
+      "f3620b09-92a3-3fb5-87c4-2add3e2db7e1"
+    ],
+    "updatedAt": "2026-10-23T00:21:06.551Z"
+  },
+  "ARM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:06:33.913Z"
-  },
-  "ARM": {
-    "text": "Amid a U.S. judge’s reluctance to intervene in Qualcomm‑Arm licensing negotiations, raising licensing‑deal uncertainty.",
-    "source": "stock",
-    "articleIds": [
-      "cb80e92d-9591-3d67-8bbc-304b42ae0c42"
-    ],
-    "updatedAt": "2026-10-22T21:06:39.735Z"
+    "updatedAt": "2026-10-23T00:21:11.740Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:06:45.322Z"
+    "updatedAt": "2026-10-23T00:21:16.993Z"
   },
   "SKHY": {
+    "text": "Scrapped Solidigm U.S. IPO amid market and regulatory headwinds, dampening growth‑funding expectations.",
+    "source": "stock",
+    "articleIds": [
+      "b5da6a39-8535-33ca-adae-eb30d63da066",
+      "d618ac57-a349-38dd-9cd3-7a219cdaf9c1"
+    ],
+    "updatedAt": "2026-10-23T00:21:22.583Z"
+  },
+  "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:06:50.648Z"
-  },
-  "MBLY": {
-    "text": "RBC downgrade citing structural headwinds and growth risks in Mobileye’s advanced driver‑assistance technology segment.",
-    "source": "stock",
-    "articleIds": [
-      "105af3de-0de8-3bd8-8db9-155ef4bf7b5f",
-      "66800ec0-a82d-3497-9d05-a865f7b09bda"
-    ],
-    "updatedAt": "2026-10-22T21:06:56.881Z"
+    "updatedAt": "2026-10-23T00:21:27.821Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:07:01.292Z"
+    "updatedAt": "2026-10-23T00:21:32.151Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:07:05.681Z"
+    "updatedAt": "2026-10-23T00:21:36.418Z"
   },
   "AAPL": {
-    "text": "Raised iPhone Duo shipment target 44% ahead of $1,999 foldable launch, fueling optimism.",
+    "text": "anticipation of first touchscreen MacBook Pro unveiling and 44% higher iPhone Duo shipment forecast",
     "source": "stock",
     "articleIds": [
+      "3c5482a9-0857-3709-9576-5c5abf7c2730",
       "e5d39268-89ce-310a-a821-d3f775eacbd6"
     ],
-    "updatedAt": "2026-10-22T21:07:11.369Z"
+    "updatedAt": "2026-10-23T00:21:42.239Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:07:16.655Z"
+    "updatedAt": "2026-10-23T00:21:47.628Z"
   },
   "GOOGL": {
-    "text": "Heavy spending on SpaceX compute contracts and sacrificing short‑term cloud revenue to fund frontier AI research.",
+    "text": "Heavy $11 B annual spend on SpaceX compute raising concentration risk concerns amid cloud expansion.",
     "source": "stock",
     "articleIds": [
-      "88dea359-f33c-3d7d-8fbe-72f4b7e14f34",
-      "0998fb1a-bbf3-3708-b57f-bbb3d0b1dccb"
+      "88dea359-f33c-3d7d-8fbe-72f4b7e14f34"
     ],
-    "updatedAt": "2026-10-22T21:07:22.281Z"
+    "updatedAt": "2026-10-23T00:21:53.309Z"
   },
   "AMZN": {
-    "text": "AWS’s push to monetize AI with PyTorch support and Trainium adoption testing dampens investor sentiment.",
-    "source": "stock",
-    "articleIds": [
-      "5e698c95-0534-39c6-80b3-da750969d2a0"
-    ],
-    "updatedAt": "2026-10-22T21:07:28.502Z"
-  },
-  "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:07:33.988Z"
+    "updatedAt": "2026-10-23T00:21:58.684Z"
+  },
+  "META": {
+    "text": "Investor worries over heightened capex and rising debt to finance AI expansion pressured the price.",
+    "source": "stock",
+    "articleIds": [
+      "543d1e7c-5cdc-350a-873c-1be582aa20b5",
+      "3c99b1cc-5589-4c1e-ab8a-bc0ade05e0d5"
+    ],
+    "updatedAt": "2026-10-23T00:22:04.581Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:07:38.412Z"
+    "updatedAt": "2026-10-23T00:22:08.897Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:07:42.846Z"
+    "updatedAt": "2026-10-23T00:22:13.231Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:07:47.235Z"
+    "updatedAt": "2026-10-23T00:22:17.516Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:07:51.579Z"
+    "updatedAt": "2026-10-23T00:22:21.807Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:07:55.926Z"
+    "updatedAt": "2026-10-23T00:22:26.188Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:08:00.285Z"
+    "updatedAt": "2026-10-23T00:22:30.518Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:08:04.943Z"
+    "updatedAt": "2026-10-23T00:22:34.914Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:08:09.324Z"
+    "updatedAt": "2026-10-23T00:22:39.335Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:08:14.231Z"
+    "updatedAt": "2026-10-23T00:22:44.315Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad pullback across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-22T21:08:18.848Z"
+    "updatedAt": "2026-10-23T00:22:48.715Z"
   }
 }
