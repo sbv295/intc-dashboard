@@ -62,6 +62,7 @@ const STOCK_META = {
   '005930.KS': ['Samsung'],
   '000660.KS': ['SK Hynix', 'SK hynix'],
   // IT watchlist
+  'ACN': ['ACN', 'Accenture'],
   'AAPL': ['AAPL', 'Apple'],
   'MSFT': ['MSFT', 'Microsoft'],
   'GOOGL': ['GOOGL', 'Google', 'Alphabet'],

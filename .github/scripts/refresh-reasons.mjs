@@ -16,7 +16,7 @@ const TICKERS = [
   'INTC', 'AMD', 'NVDA', 'TSM', 'SNDK', 'MU', 'AVGO', 'SPCX',
   'MRVL', 'ARM', 'QCOM', 'SKHY', 'MBLY', '005930.KS', '000660.KS',
   // IT watchlist
-  'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META',
+  'ACN', 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META',
   // Indian market watchlist
   'HDFCBANK.NS', 'ICICIBANK.NS', 'DEEPAKFERT.NS', 'AARTIIND.NS',
   'TCS.NS', 'INFY.NS', 'RELIANCE.NS', 'ASIANPAINT.NS',
