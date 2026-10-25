@@ -3,121 +3,123 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:54:59.263Z"
+    "updatedAt": "2026-10-25T08:01:06.291Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:55:04.695Z"
+    "updatedAt": "2026-10-25T08:01:11.661Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:55:09.795Z"
+    "updatedAt": "2026-10-25T08:01:16.644Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:55:15.343Z"
+    "updatedAt": "2026-10-25T08:01:21.694Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:55:21.036Z"
+    "updatedAt": "2026-10-25T08:01:26.950Z"
   },
   "MU": {
-    "text": "AI‑driven SSD development acceleration and a resolved Taiwan labor dispute boosting confidence.",
-    "source": "stock",
-    "articleIds": [
-      "53f3ce72-9fe0-3079-9e38-20f254fbf0a1",
-      "3daa6f63-f148-35c8-b50d-c207568b7560"
-    ],
-    "updatedAt": "2026-10-25T02:55:26.692Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-25T08:01:32.120Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:55:32.069Z"
+    "updatedAt": "2026-10-25T08:01:37.322Z"
   },
   "SPCX": {
-    "text": "Leasing thousands of Crown Castle towers and launching Nvidia‑powered data‑center cluster fuels investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "a6de41c7-5152-3ac1-a92b-e464cd807616",
-      "644d8535-9000-39c7-8bf8-4e949505c7f7"
-    ],
-    "updatedAt": "2026-10-25T02:55:38.225Z"
-  },
-  "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:55:43.587Z"
+    "updatedAt": "2026-10-25T08:01:42.924Z"
+  },
+  "MRVL": {
+    "text": "Record AI design wins and a multi‑billion Google partnership boosting growth expectations despite margin pressures.",
+    "source": "stock",
+    "articleIds": [
+      "6d0c9cff-940b-3613-a42b-b835cbc14f10",
+      "47de7dfb-87db-3250-b9db-6d93aeff00c1"
+    ],
+    "updatedAt": "2026-10-25T08:01:48.576Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:55:48.751Z"
+    "updatedAt": "2026-10-25T08:01:53.883Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:55:54.036Z"
+    "updatedAt": "2026-10-25T08:01:59.106Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:55:59.309Z"
+    "updatedAt": "2026-10-25T08:02:04.235Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-25T02:56:04.556Z"
+    "text": "Analysts’ split over growth risks and RBC’s downgrade citing Nvidia competition, trimming fair‑value targets.",
+    "source": "stock",
+    "articleIds": [
+      "f9b33669-32c6-3893-9fce-313786c462a9",
+      "583287c1-98f3-3130-8799-ab6e2eb4ba87"
+    ],
+    "updatedAt": "2026-10-25T08:02:09.893Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:56:08.809Z"
+    "updatedAt": "2026-10-25T08:02:14.102Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:56:13.046Z"
+    "updatedAt": "2026-10-25T08:02:18.315Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:56:18.287Z"
+    "updatedAt": "2026-10-25T08:02:23.504Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:56:23.780Z"
+    "updatedAt": "2026-10-25T08:02:28.700Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-25T02:56:28.954Z"
+    "text": "Investor confidence boosted by revelation that former CEO Steve Ballmer remains Microsoft’s largest individual shareholder.",
+    "source": "stock",
+    "articleIds": [
+      "11e1b7d9-8e99-321f-ab51-e2688cb3b9ed"
+    ],
+    "updatedAt": "2026-10-25T08:02:34.319Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:56:33.998Z"
+    "updatedAt": "2026-10-25T08:02:39.305Z"
   },
   "AMZN": {
     "text": "cancellation of a $427 million Loudoun County data‑center project amid AI cloud capacity constraints",
@@ -128,71 +130,69 @@
     "updatedAt": "2026-10-24T23:57:27.777Z"
   },
   "META": {
-    "text": "Revenue beat offset by weaker-than-expected earnings and cautious outlook, prompting investor sell‑off.",
-    "source": "stock",
-    "articleIds": [
-      "164ca4fe-37b1-32f5-8e4c-26f0ac4ee71e"
-    ],
-    "updatedAt": "2026-10-25T02:56:45.084Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-25T08:02:49.874Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:56:49.363Z"
+    "updatedAt": "2026-10-25T08:02:54.121Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:56:53.624Z"
+    "updatedAt": "2026-10-25T08:02:58.346Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:56:57.878Z"
+    "updatedAt": "2026-10-25T08:03:02.660Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:57:02.141Z"
+    "updatedAt": "2026-10-25T08:03:06.865Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:57:06.427Z"
+    "updatedAt": "2026-10-25T08:03:11.083Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:57:10.700Z"
+    "updatedAt": "2026-10-25T08:03:15.405Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:57:14.926Z"
+    "updatedAt": "2026-10-25T08:03:19.652Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:57:19.230Z"
+    "updatedAt": "2026-10-25T08:03:23.878Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:57:24.100Z"
+    "updatedAt": "2026-10-25T08:03:28.851Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad pullback across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-25T02:57:28.427Z"
+    "updatedAt": "2026-10-25T08:03:33.262Z"
   }
 }
