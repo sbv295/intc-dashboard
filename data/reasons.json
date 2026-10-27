@@ -1,219 +1,202 @@
 {
   "INTC": {
-    "text": "Heavy ETF buying, $127 million influx with 37 buyers versus 16 sellers, fuels recent gain today.",
-    "source": "stock",
-    "articleIds": [
-      "9dcda527-4c28-3890-b91e-ed5387105ef0"
-    ],
-    "updatedAt": "2026-10-27T11:24:43.545Z"
-  },
-  "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:24:48.789Z"
+    "updatedAt": "2026-10-27T17:13:33.202Z"
+  },
+  "AMD": {
+    "text": "Expanded AI partnership with Meta and broader semiconductor rally following Anthropic IPO filing boost confidence.",
+    "source": "stock",
+    "articleIds": [
+      "507a597f-9cdf-3726-9c45-d4568d809040",
+      "7d167cef-0d25-3286-b089-63b73b0f9470"
+    ],
+    "updatedAt": "2026-10-27T17:13:38.785Z"
   },
   "NVDA": {
-    "text": "Acquisition of a B200 compute node and upcoming AI neocloud services boosting demand expectations.",
+    "text": "Expanded Oracle cloud partnership broadening Nvidia AI chip deployment across multi‑supplier infrastructure, fueling investor optimism.",
     "source": "stock",
     "articleIds": [
-      "3ae43c3b-6025-3feb-9eda-10c84e5fa378"
+      "7c076d1d-3569-30e7-92ad-08c1e3fe4970"
     ],
-    "updatedAt": "2026-10-27T11:24:54.438Z"
+    "updatedAt": "2026-10-27T17:13:44.653Z"
   },
   "TSM": {
-    "text": "amid soaring demand for advanced chip packaging and capacity constraints, TSMC is considering up to 20% price hikes",
+    "text": "Strong AI demand driving higher earnings expectations amid announced capacity expansion.",
     "source": "stock",
     "articleIds": [
-      "faa2a2d7-374e-312d-ab07-5aa1bd88d737"
+      "a81830ce-1c4a-3878-84b3-87ac05de1a05"
     ],
-    "updatedAt": "2026-10-27T11:25:00.072Z"
+    "updatedAt": "2026-10-27T17:13:50.744Z"
   },
   "SNDK": {
-    "text": "Higher revenue, expanding margins and firm customer commitments for future bit shipments boosting valuation expectations.",
-    "source": "stock",
-    "articleIds": [
-      "ffd59df0-e1f9-3be8-b860-d2b2fcea7be1"
-    ],
-    "updatedAt": "2026-10-27T05:52:12.674Z"
-  },
-  "MU": {
-    "text": "Invesco’s S&P 500 Momentum ETF added Micron to its portfolio, driving buying pressure amid inflows.",
-    "source": "stock",
-    "articleIds": [
-      "137bbca3-9281-32ca-b2f7-023af4bd4083"
-    ],
-    "updatedAt": "2026-10-27T11:25:11.740Z"
-  },
-  "AVGO": {
-    "text": "Anticipated $30 B AI financing revenue plus $122 M net ETF inflows fueling investor optimism today.",
-    "source": "stock",
-    "articleIds": [
-      "d236c31e-204e-3286-b329-c7d0988a30a4",
-      "6993d41a-80ab-3919-84fa-7c318740ce01"
-    ],
-    "updatedAt": "2026-10-27T11:25:17.775Z"
-  },
-  "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:25:22.980Z"
+    "updatedAt": "2026-10-27T17:13:56.169Z"
+  },
+  "MU": {
+    "text": "Absorbing AI memory demand as SK Hynix sold out, prompting Micron to secure long‑term contracts.",
+    "source": "stock",
+    "articleIds": [
+      "e7e2e7e5-680e-3f1f-bd4c-4aba3381aa0b"
+    ],
+    "updatedAt": "2026-10-27T17:14:01.687Z"
+  },
+  "AVGO": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-27T17:14:06.984Z"
+  },
+  "SPCX": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-27T17:14:12.844Z"
   },
   "MRVL": {
-    "text": "ETFs added $75.2 million of holdings Friday, boosting demand and supporting the recent price gain.",
-    "source": "stock",
-    "articleIds": [
-      "9d0caca5-df8d-3ba3-a69e-c23270696bd4"
-    ],
-    "updatedAt": "2026-10-27T11:25:29.000Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-27T17:14:18.325Z"
   },
   "ARM": {
-    "text": "Agentic AI testing spurs optimism, highlighting silicon expansion and broader software ecosystem growth.",
-    "source": "stock",
-    "articleIds": [
-      "e7ee97a5-6158-3e63-af03-92a3338c8509"
-    ],
-    "updatedAt": "2026-10-27T11:25:34.871Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-27T17:14:24.241Z"
   },
   "QCOM": {
-    "text": "ETFs’ $77.1 million purchase on Oct. 23, bolstered by a reaffirmed $0.92 dividend, likely fueling the gain.",
+    "text": "Likely buoyed by the Anduril partnership launching BlueChip, a U.S.-made laptop line for defense and government markets.",
     "source": "stock",
     "articleIds": [
-      "b54bffea-25c4-33d1-ad07-9b2618c972bd",
-      "23cf914e-6be3-3eb1-83e1-cedff7639482",
-      "8771d9e1-eb04-3596-a602-909568814052"
+      "5a4bbe5c-4d7e-3538-b177-e4ef4dcc87c0",
+      "d6907c3f-73ca-3d7b-9a59-788014cdcd10"
     ],
-    "updatedAt": "2026-10-27T11:25:40.719Z"
+    "updatedAt": "2026-10-27T17:14:30.052Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:25:45.913Z"
+    "updatedAt": "2026-10-27T17:14:35.367Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:25:51.402Z"
+    "updatedAt": "2026-10-27T17:14:40.891Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:25:55.700Z"
+    "updatedAt": "2026-10-27T17:14:45.250Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:25:59.916Z"
+    "updatedAt": "2026-10-27T17:14:49.482Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:26:05.286Z"
+    "updatedAt": "2026-10-27T17:14:54.882Z"
   },
   "AAPL": {
-    "text": "State Street’s $119 million Apple divestiture prompting dilution concerns and pressure on valuation amid tech trimming",
-    "source": "stock",
-    "articleIds": [
-      "86865dfe-ef37-333c-a10f-53fd2a837142"
-    ],
-    "updatedAt": "2026-10-27T11:26:11.302Z"
-  },
-  "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:26:16.447Z"
+    "updatedAt": "2026-10-27T17:15:00.002Z"
+  },
+  "MSFT": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-27T17:15:05.333Z"
   },
   "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:26:20.795Z"
+    "updatedAt": "2026-10-27T17:15:10.581Z"
   },
   "AMZN": {
-    "text": "Dimensional US Large‑Cap Value ETF added $14.3 million of Amazon, driving a modest price lift today.",
-    "source": "stock",
-    "articleIds": [
-      "970187a3-ec06-3d08-badb-4d703043adce"
-    ],
-    "updatedAt": "2026-10-27T11:26:26.794Z"
-  },
-  "META": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:26:32.078Z"
+    "updatedAt": "2026-10-27T17:15:16.004Z"
+  },
+  "META": {
+    "text": "Capital raise, legal charge, and negative free cash flow sparking dilution concerns amid share class.",
+    "source": "stock",
+    "articleIds": [
+      "cfbb0e97-c81b-3178-82e2-bfbcebe93828"
+    ],
+    "updatedAt": "2026-10-27T17:15:21.911Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:26:36.317Z"
+    "updatedAt": "2026-10-27T17:15:26.283Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:26:40.581Z"
+    "updatedAt": "2026-10-27T17:15:30.532Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:26:44.821Z"
+    "updatedAt": "2026-10-27T17:15:34.850Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:26:49.143Z"
+    "updatedAt": "2026-10-27T17:15:39.146Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:26:53.362Z"
+    "updatedAt": "2026-10-27T17:15:43.463Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:26:57.611Z"
+    "updatedAt": "2026-10-27T17:15:47.710Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:27:01.856Z"
+    "updatedAt": "2026-10-27T17:15:52.008Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:27:06.151Z"
+    "updatedAt": "2026-10-27T17:15:56.367Z"
   },
   "INDEX": {
-    "text": "amid strong ETF inflows into major tech names, boosting market sentiment",
-    "source": "macro",
-    "articleIds": [
-      "cd4a06cf-79fb-3ffc-b7e1-22d9c81d52ed",
-      "bacbe005-18a3-3c99-b697-3fc5e59856f3",
-      "3e56c3a9-7e3c-3b63-b6c0-9b2451b9567d",
-      "6993d41a-80ab-3919-84fa-7c318740ce01",
-      "9dcda527-4c28-3890-b91e-ed5387105ef0"
-    ],
-    "updatedAt": "2026-10-27T11:27:11.513Z"
+    "text": "No single dominant catalyst — a broad rally across the broad US market.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-10-27T17:16:01.139Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-27T11:27:16.008Z"
+    "updatedAt": "2026-10-27T17:16:05.569Z"
   }
 }
