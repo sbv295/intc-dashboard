@@ -3,193 +3,213 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:43:36.238Z"
+    "updatedAt": "2026-10-28T19:14:19.285Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:43:41.697Z"
+    "updatedAt": "2026-10-28T19:14:24.776Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-28T13:43:47.106Z"
+    "text": "Amid DOJ antitrust probe into Nvidia's Hugging Face acquisition, investors grow cautious about regulatory risk.",
+    "source": "stock",
+    "articleIds": [
+      "a08ebee9-63f4-377f-8b30-44fa2cebb226"
+    ],
+    "updatedAt": "2026-10-28T19:14:30.915Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-28T13:43:52.913Z"
+    "text": "Anticipated AI‑chip packaging price increase and strong Q3 earnings outlook boosting investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "41307414-63b6-3846-ab20-6732931fa46b",
+      "124073b5-24e2-388d-93e0-3cef94e23d2e",
+      "653f4e23-802a-3b96-a81b-d7739239195c"
+    ],
+    "updatedAt": "2026-10-28T19:14:36.878Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-28T13:43:58.203Z"
+    "text": "Catalyst from a storage rival sparked the",
+    "source": "stock",
+    "articleIds": [
+      "9ea3a2ad-f749-3c40-bf77-671ec9dc67b0",
+      "b5a68c05-4830-3a58-9cbe-66c92f2a32d1"
+    ],
+    "updatedAt": "2026-10-28T19:14:42.939Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:44:03.514Z"
+    "updatedAt": "2026-10-28T19:14:48.290Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-28T13:44:08.750Z"
+    "text": "Anthropic financing deal linking sales to asset risk, with $63 billion structure and residual‑value support boosts.",
+    "source": "stock",
+    "articleIds": [
+      "128771f4-5219-3108-9390-642018e78833"
+    ],
+    "updatedAt": "2026-10-28T19:14:54.455Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:44:14.229Z"
+    "updatedAt": "2026-10-28T19:14:59.973Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:44:19.516Z"
+    "updatedAt": "2026-10-28T19:15:05.349Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:44:24.855Z"
+    "updatedAt": "2026-10-28T19:15:10.855Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-28T13:44:30.024Z"
+    "text": "Earnings preview projects Q4 revenue decline, likely pressuring sentiment amid weaker-than-expected performance expectations.",
+    "source": "stock",
+    "articleIds": [
+      "f3ae9e9d-569a-3a08-a09b-188bdc659e4d"
+    ],
+    "updatedAt": "2026-10-28T19:15:16.640Z"
   },
   "SKHY": {
+    "text": "record Q3 earnings beat and memory inventory sold out through 2029, fueling optimism on AI‑driven demand.",
+    "source": "stock",
+    "articleIds": [
+      "391dd0db-d6a7-3692-9869-1f71d05f7e7f",
+      "db4bc2af-9a89-349c-b06c-c677cbe492e3",
+      "6cada032-b5c3-3536-8741-bda642c2a07a"
+    ],
+    "updatedAt": "2026-10-28T19:15:23.049Z"
+  },
+  "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:44:34.946Z"
-  },
-  "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-28T13:44:39.907Z"
+    "updatedAt": "2026-10-28T19:15:27.914Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:44:44.350Z"
+    "updatedAt": "2026-10-28T19:15:32.213Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:44:48.639Z"
+    "updatedAt": "2026-10-28T19:15:36.716Z"
   },
   "ACN": {
-    "text": "Insider purchase of 12,200 shares and launch of Physical AI Safety Suite boost investor confidence.",
+    "text": "CEO’s $3 M share purchase and debut of Physical AI Safety Suite boosting investor confidence.",
     "source": "stock",
     "articleIds": [
+      "3b36ad1c-06de-3727-b5e8-0936b748ea0f",
       "f7c0af90-21d6-3a8a-ba90-de0bcc950750",
       "0d053de1-484c-3583-9e2a-19cef377b26b"
     ],
-    "updatedAt": "2026-10-28T13:44:54.612Z"
+    "updatedAt": "2026-10-28T19:15:42.322Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:00.063Z"
+    "text": "Anticipation of the November 6 M6 Mac launch dampening investor sentiment.",
+    "source": "stock",
+    "articleIds": [
+      "28df35bc-41b9-3461-b91d-c050be41014e"
+    ],
+    "updatedAt": "2026-10-28T19:15:48.167Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:05.632Z"
+    "updatedAt": "2026-10-28T19:15:53.385Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:10.858Z"
+    "updatedAt": "2026-10-28T19:15:58.501Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:16.420Z"
+    "updatedAt": "2026-10-28T19:16:03.477Z"
   },
   "META": {
-    "text": "Evercore's slight target cut reflecting modest concerns over Meta's growth outlook.",
+    "text": "Equity offering plans for a massive AI‑focused capital raise likely spurring dilution concerns.",
     "source": "stock",
     "articleIds": [
-      "11e35916-15a2-38f0-a449-2889a78098ff"
+      "b9d94b1f-7584-35cd-be25-aa76fd3b740e"
     ],
-    "updatedAt": "2026-10-28T13:45:23.091Z"
+    "updatedAt": "2026-10-28T19:16:09.236Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:27.573Z"
+    "updatedAt": "2026-10-28T19:16:13.569Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:31.916Z"
+    "updatedAt": "2026-10-28T19:16:17.916Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:36.261Z"
+    "updatedAt": "2026-10-28T19:16:22.191Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:40.760Z"
+    "updatedAt": "2026-10-28T19:16:26.431Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:45.254Z"
+    "updatedAt": "2026-10-28T19:16:30.679Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:49.555Z"
+    "updatedAt": "2026-10-28T19:16:35.042Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:53.914Z"
+    "updatedAt": "2026-10-28T19:16:39.302Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:45:58.231Z"
+    "updatedAt": "2026-10-28T19:16:43.614Z"
   },
   "INDEX": {
-    "text": "anticipation of the Fed’s upcoming rate decision fueling modest optimism among investors",
+    "text": "Fed’s decision to hold rates steady, despite two policymakers urging another hike, fuels optimism.",
     "source": "macro",
     "articleIds": [
-      "5eb98248-031a-325a-a899-82916dd59d82"
+      "69792a1d-bfd8-3f64-8ef0-248f4a8fc0e7"
     ],
-    "updatedAt": "2026-10-28T13:46:03.745Z"
+    "updatedAt": "2026-10-28T19:16:49.173Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad pullback across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-10-28T13:46:08.195Z"
+    "updatedAt": "2026-10-28T19:16:53.642Z"
   }
 }
