@@ -3,62 +3,58 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:40:23.079Z"
+    "updatedAt": "2026-11-01T20:03:29.159Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:40:28.394Z"
+    "updatedAt": "2026-11-01T20:03:34.810Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:40:33.356Z"
+    "updatedAt": "2026-11-01T20:03:39.827Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:40:38.577Z"
+    "updatedAt": "2026-11-01T20:03:45.540Z"
   },
   "SNDK": {
-    "text": "Analysts trimmed fair‑value amid sector multiple compression and doubts over sustained AI‑driven NAND demand.",
+    "text": "amid fading flash‑price surge concerns despite a strong Q1 earnings beat.",
     "source": "stock",
     "articleIds": [
-      "79098de8-e1e7-34f2-bc53-f02414e73bb1"
+      "5f00b854-2540-37b1-b41b-87f7da36b7d6",
+      "5ce44d21-220d-301e-8e8e-9ef20c8b2c8c"
     ],
-    "updatedAt": "2026-11-01T15:40:43.827Z"
+    "updatedAt": "2026-11-01T20:03:51.198Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:40:49.243Z"
+    "updatedAt": "2026-11-01T20:03:56.465Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:40:54.626Z"
+    "updatedAt": "2026-11-01T20:04:01.873Z"
   },
   "SPCX": {
-    "text": "Judge allowed NAACP Clean Air Act lawsuit over turbine emissions at Mississippi AI data centers to proceed.",
-    "source": "stock",
-    "articleIds": [
-      "4d0477bb-4a39-3e07-94c7-10ef1d4bcd22"
-    ],
-    "updatedAt": "2026-11-01T15:41:00.228Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-01T20:04:07.265Z"
   },
   "MRVL": {
-    "text": "amid reports of late‑stage Lumentum acquisition talks, premium tied to Marvell’s share price",
-    "source": "stock",
-    "articleIds": [
-      "9e738236-7362-3d13-9910-d6a215c3db7c",
-      "c05c98a1-6285-39b8-9dec-35929e995f33"
-    ],
-    "updatedAt": "2026-11-01T15:41:05.989Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-01T20:04:12.979Z"
   },
   "ARM": {
     "text": "Investor worries that Intel’s aggressive AI chip push could erode Arm’s market share, sparking sell‑off.",
@@ -81,7 +77,7 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:41:22.401Z"
+    "updatedAt": "2026-11-01T20:04:30.556Z"
   },
   "MBLY": {
     "text": "After TD Cowen downgraded to Hold with a $7 target, analysts cite weaker growth outlook.",
@@ -97,13 +93,13 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:41:32.335Z"
+    "updatedAt": "2026-11-01T20:04:40.495Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:41:36.598Z"
+    "updatedAt": "2026-11-01T20:04:44.785Z"
   },
   "ACN": {
     "text": "Fresh AI launch and recent partnerships boosting growth expectations, sparking investor optimism amid valuation debate.",
@@ -117,27 +113,27 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:41:47.931Z"
+    "updatedAt": "2026-11-01T20:04:56.299Z"
   },
   "MSFT": {
-    "text": "Voluntary buyouts announced for thousands of employees amid a low‑hire market, raising cost‑cutting concerns now.",
-    "source": "stock",
-    "articleIds": [
-      "bc74f675-fb9c-460a-b1e6-35b5492073bc"
-    ],
-    "updatedAt": "2026-11-01T15:41:53.616Z"
-  },
-  "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:41:58.689Z"
+    "updatedAt": "2026-11-01T20:05:01.591Z"
+  },
+  "GOOGL": {
+    "text": "Slower search and ad growth plus heavy AI, data‑center spending creating negative free cash flow.",
+    "source": "stock",
+    "articleIds": [
+      "aa7f6ef5-444d-3bef-b8b4-d0d4db2119d0"
+    ],
+    "updatedAt": "2026-11-01T20:05:07.283Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:04.103Z"
+    "updatedAt": "2026-11-01T20:05:12.311Z"
   },
   "META": {
     "text": "S&P’s negative outlook shift amid concerns over a cash shortfall larger than anticipated.",
@@ -151,60 +147,60 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:13.825Z"
+    "updatedAt": "2026-11-01T20:05:22.791Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:18.085Z"
+    "updatedAt": "2026-11-01T20:05:27.130Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:22.308Z"
+    "updatedAt": "2026-11-01T20:05:31.409Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:26.567Z"
+    "updatedAt": "2026-11-01T20:05:35.728Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:30.773Z"
+    "updatedAt": "2026-11-01T20:05:40.019Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:35.129Z"
+    "updatedAt": "2026-11-01T20:05:44.418Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:39.374Z"
+    "updatedAt": "2026-11-01T20:05:48.757Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:43.591Z"
+    "updatedAt": "2026-11-01T20:05:53.071Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:48.412Z"
+    "updatedAt": "2026-11-01T20:05:58.138Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-01T15:42:52.777Z"
+    "updatedAt": "2026-11-01T20:06:02.882Z"
   }
 }
