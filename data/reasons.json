@@ -3,97 +3,96 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:25:28.143Z"
+    "updatedAt": "2026-11-04T01:48:50.833Z"
   },
   "AMD": {
-    "text": "Beating Q3 forecasts and a 97%",
+    "text": "Strong third‑quarter earnings beat expectations, boosting investor confidence amid upcoming midterm election uncertainty in the",
     "source": "stock",
     "articleIds": [
-      "15876181-c675-4903-a791-b13aeea3adf1"
+      "e5be454d-07fd-3d94-8114-a4e8ff2910de",
+      "fd46cd91-e987-320e-8ee8-a14aed126cf6"
     ],
-    "updatedAt": "2026-11-03T21:25:34.873Z"
+    "updatedAt": "2026-11-04T01:48:57.079Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:25:40.502Z"
+    "updatedAt": "2026-11-04T01:49:02.373Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:25:46.074Z"
+    "updatedAt": "2026-11-04T01:49:07.924Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:25:51.535Z"
+    "updatedAt": "2026-11-04T01:49:13.634Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:25:57.270Z"
+    "updatedAt": "2026-11-04T01:49:18.971Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-03T21:26:03.288Z"
+    "text": "Launch of AI‑focused security solutions and JFrog partnership for zero‑touch remediation boosting investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "de912ad7-d8f3-34b6-a4a8-55bbee29a075"
+    ],
+    "updatedAt": "2026-11-04T01:49:24.739Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:26:08.730Z"
+    "updatedAt": "2026-11-04T01:49:30.398Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:26:14.167Z"
+    "updatedAt": "2026-11-04T01:49:35.778Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:26:21.166Z"
+    "updatedAt": "2026-11-04T01:49:41.210Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:26:26.849Z"
+    "updatedAt": "2026-11-04T01:49:46.598Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:26:32.410Z"
+    "updatedAt": "2026-11-04T01:49:52.117Z"
   },
   "MBLY": {
-    "text": "TD Cowen’s downgrade to Hold and reduced price target, amid concerns over growth outlook.",
-    "source": "stock",
-    "articleIds": [
-      "1c42d17f-ced5-39ab-9b03-254faf9afa8d",
-      "0f369e2c-c4f2-305a-ab32-eaec6f83fc6d",
-      "144d6232-3803-3adf-9f77-3ff8f5042bed"
-    ],
-    "updatedAt": "2026-11-03T21:26:38.135Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-04T01:49:57.226Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:26:42.527Z"
+    "updatedAt": "2026-11-04T01:50:01.597Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:26:46.838Z"
+    "updatedAt": "2026-11-04T01:50:06.096Z"
   },
   "ACN": {
     "text": "Heavy ETF outflows, with $3.76 B sold by SDY and $560 M across funds, prompting pressure today.",
@@ -108,92 +107,90 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:26:58.162Z"
+    "updatedAt": "2026-11-04T01:50:17.422Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:03.457Z"
+    "updatedAt": "2026-11-04T01:50:22.807Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:08.500Z"
+    "updatedAt": "2026-11-04T01:50:28.308Z"
   },
   "AMZN": {
-    "text": "joint development deal with X‑energy for a 960 MW Indiana nuclear plant fueling optimism",
-    "source": "stock",
-    "articleIds": [
-      "a4c68e8c-fdc0-3181-b157-5f376592dc2c"
-    ],
-    "updatedAt": "2026-11-03T21:27:14.227Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-04T01:50:33.993Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:19.830Z"
+    "updatedAt": "2026-11-04T01:50:39.518Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:24.300Z"
+    "updatedAt": "2026-11-04T01:50:43.944Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:28.721Z"
+    "updatedAt": "2026-11-04T01:50:48.314Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:33.029Z"
+    "updatedAt": "2026-11-04T01:50:52.896Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:37.415Z"
+    "updatedAt": "2026-11-04T01:50:57.280Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:41.731Z"
+    "updatedAt": "2026-11-04T01:51:01.710Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:46.043Z"
+    "updatedAt": "2026-11-04T01:51:06.094Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:50.351Z"
+    "updatedAt": "2026-11-04T01:51:10.542Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:27:54.685Z"
+    "updatedAt": "2026-11-04T01:51:14.942Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad rally across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:28:00.028Z"
+    "updatedAt": "2026-11-04T01:51:20.634Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-03T21:28:04.490Z"
+    "updatedAt": "2026-11-04T01:51:25.166Z"
   }
 }
