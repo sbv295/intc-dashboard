@@ -3,195 +3,200 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:19:45.286Z"
+    "updatedAt": "2026-11-05T03:00:31.090Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-04T22:19:50.954Z"
+    "text": "record Q3 revenue and strong AI demand boost optimism, though valuation concerns temper broader enthusiasm",
+    "source": "stock",
+    "articleIds": [
+      "cf792598-2a38-3967-8097-b48120b2b00f"
+    ],
+    "updatedAt": "2026-11-05T03:00:37.208Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:19:56.583Z"
+    "updatedAt": "2026-11-05T03:00:42.357Z"
   },
   "TSM": {
-    "text": "Facing a $53.3 billion quarterly hurdle, November sales data pressures expectations, prompting the dip.",
-    "source": "stock",
-    "articleIds": [
-      "3be8b7cd-9575-36bf-bfdd-3a8a43eb8665"
-    ],
-    "updatedAt": "2026-11-04T16:45:15.559Z"
-  },
-  "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:20:10.141Z"
+    "updatedAt": "2026-11-05T03:00:47.588Z"
+  },
+  "SNDK": {
+    "text": "amid Democratic midterm sweep and falling memory prices raising AI‑chip cost concerns",
+    "source": "stock",
+    "articleIds": [
+      "d5eba6ee-394c-3023-9036-fde75a07b157"
+    ],
+    "updatedAt": "2026-11-05T03:00:53.185Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:20:15.685Z"
+    "updatedAt": "2026-11-05T03:00:58.294Z"
   },
   "AVGO": {
-    "text": "$63 billion AI‑financing deal raising residual‑value risk concerns amid delayed equipment deliveries.",
-    "source": "stock",
-    "articleIds": [
-      "7990b7b5-8ab0-3321-aebd-20899b6296bd"
-    ],
-    "updatedAt": "2026-11-04T22:20:21.833Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-05T03:01:03.632Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:20:27.252Z"
+    "updatedAt": "2026-11-05T03:01:08.945Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:20:33.205Z"
+    "updatedAt": "2026-11-05T03:01:14.343Z"
   },
   "ARM": {
-    "text": "Quarterly earnings beat offset by modest current‑quarter guidance that fell short of analyst expectations.",
+    "text": "Beating forecasts yet issuing cautious guidance, prompting investor concerns about future growth.",
     "source": "stock",
     "articleIds": [
-      "f14a275c-0a43-3703-8513-a95551884d46",
-      "1fc87a52-b8d5-3a41-98f8-4cbe40a21002"
+      "f14a275c-0a43-3703-8513-a95551884d46"
     ],
-    "updatedAt": "2026-11-04T22:20:39.586Z"
+    "updatedAt": "2026-11-05T03:01:20.028Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:20:45.206Z"
+    "updatedAt": "2026-11-05T03:01:25.203Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:20:50.790Z"
+    "updatedAt": "2026-11-05T03:01:30.982Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:20:55.816Z"
+    "updatedAt": "2026-11-05T03:01:35.381Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:00.192Z"
+    "updatedAt": "2026-11-05T03:01:39.618Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:04.629Z"
+    "updatedAt": "2026-11-05T03:01:44.065Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:10.584Z"
+    "updatedAt": "2026-11-05T03:01:49.623Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:16.312Z"
+    "updatedAt": "2026-11-05T03:01:54.780Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:21.540Z"
+    "updatedAt": "2026-11-05T03:01:59.834Z"
   },
   "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:27.112Z"
-  },
-  "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:32.615Z"
-  },
-  "META": {
-    "text": "Latour’s appointment to lead branding strategy, signaling fresh creative direction and potential market revitalization.",
+    "text": "Isomorphic Labs' $5 billion fundraising talks signal strong AI investment momentum, boosting investor optimism.",
     "source": "stock",
     "articleIds": [
-      "72a8a4a6-bce1-3212-8a48-cb61a1633936"
+      "8cf40d72-6561-3f28-9ec3-d8c5c750c6e4"
     ],
-    "updatedAt": "2026-11-04T22:21:38.952Z"
+    "updatedAt": "2026-11-05T03:02:05.251Z"
+  },
+  "AMZN": {
+    "text": "amid $6.2 billion Anthropic convertible note exposure and Zoox global testing rollout driving investor optimism today",
+    "source": "stock",
+    "articleIds": [
+      "9fabd49c-a642-37e2-bb10-264c10f8ab91",
+      "a099cd17-827f-3bb4-8b88-c198f62911fa"
+    ],
+    "updatedAt": "2026-11-05T03:02:11.380Z"
+  },
+  "META": {
+    "text": "Walmart’s integration of Meta’s Muse AI shopping agent, boosting AI visibility and potential revenue streams.",
+    "source": "stock",
+    "articleIds": [
+      "857b71d5-1fed-3fd9-8f8f-fe9f62d6ba3a",
+      "a70033cc-dfbd-3348-a7db-61961ba0d326"
+    ],
+    "updatedAt": "2026-11-05T03:02:17.336Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:43.386Z"
+    "updatedAt": "2026-11-05T03:02:21.570Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:48.113Z"
+    "updatedAt": "2026-11-05T03:02:25.792Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:52.583Z"
+    "updatedAt": "2026-11-05T03:02:30.040Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:21:57.114Z"
+    "updatedAt": "2026-11-05T03:02:34.273Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:22:01.606Z"
+    "updatedAt": "2026-11-05T03:02:38.584Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:22:06.067Z"
+    "updatedAt": "2026-11-05T03:02:42.829Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:22:10.485Z"
+    "updatedAt": "2026-11-05T03:02:47.030Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:22:14.984Z"
+    "updatedAt": "2026-11-05T03:02:51.260Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad rally across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:22:20.148Z"
+    "updatedAt": "2026-11-05T03:02:56.179Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-04T22:22:25.139Z"
+    "updatedAt": "2026-11-05T03:03:01.090Z"
   }
 }
