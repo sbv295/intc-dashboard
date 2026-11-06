@@ -3,181 +3,192 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:32:54.563Z"
+    "updatedAt": "2026-11-06T21:12:28.649Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:32:59.923Z"
+    "updatedAt": "2026-11-06T21:12:34.166Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:33:04.949Z"
+    "updatedAt": "2026-11-06T21:12:39.921Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:33:10.260Z"
+    "updatedAt": "2026-11-06T21:12:45.705Z"
   },
   "SNDK": {
-    "text": "anticipation of an 8‑for‑1 split fueling investor optimism about increased liquidity and affordability in the",
-    "source": "stock",
-    "articleIds": [
-      "1e7b88c0-3888-3212-8114-d72c2daa20ba"
-    ],
-    "updatedAt": "2026-11-06T15:33:16.150Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-06T21:12:51.679Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:33:21.501Z"
+    "updatedAt": "2026-11-06T21:12:57.098Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:33:26.458Z"
+    "updatedAt": "2026-11-06T21:13:02.677Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-06T15:33:32.036Z"
-  },
-  "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-06T15:33:37.427Z"
-  },
-  "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-06T15:33:42.748Z"
-  },
-  "QCOM": {
-    "text": "added as a major new holding by a $25 billion fund, boosting demand.",
+    "text": "Musk’s aggressive revenue target, far exceeding analyst forecasts, fuels optimism about future growth prospects overall.",
     "source": "stock",
     "articleIds": [
-      "292ecb1e-7d38-3660-b408-1367d8859030"
+      "79fa1595-65d8-392e-985f-aeb045b43b77"
     ],
-    "updatedAt": "2026-11-06T15:33:48.198Z"
+    "updatedAt": "2026-11-06T21:13:09.108Z"
+  },
+  "MRVL": {
+    "text": "All‑stock acquisition of Lumentum’s photonics unit, valuing it at $115 billion, fuels investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "04869d39-247b-3fc8-af60-71d1413644f9"
+    ],
+    "updatedAt": "2026-11-06T21:13:14.970Z"
+  },
+  "ARM": {
+    "text": "Doubling data‑center royalties and triple‑digit growth outlook, driven by Arm‑based CPUs, boost earnings expectations.",
+    "source": "stock",
+    "articleIds": [
+      "4ae1f038-6eca-3497-bdd6-bd167e201a62",
+      "1c6f0107-dde1-3288-9bd7-6a68f67ecccc"
+    ],
+    "updatedAt": "2026-11-06T21:13:21.185Z"
+  },
+  "QCOM": {
+    "text": "Alphabet’s $548 million stake backing Qualcomm’s data‑center push, targeting $5 billion FY 2027 revenue.",
+    "source": "stock",
+    "articleIds": [
+      "c414e108-0c7b-3281-b192-793ea57f582e"
+    ],
+    "updatedAt": "2026-11-06T21:13:27.105Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:33:53.648Z"
+    "updatedAt": "2026-11-06T21:13:32.809Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:33:58.065Z"
+    "updatedAt": "2026-11-06T21:13:37.342Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:02.676Z"
+    "updatedAt": "2026-11-06T21:13:41.774Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:06.926Z"
+    "updatedAt": "2026-11-06T21:13:46.117Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:12.079Z"
+    "updatedAt": "2026-11-06T21:13:51.834Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:17.746Z"
+    "updatedAt": "2026-11-06T21:13:57.345Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:23.497Z"
-  },
-  "GOOGL": {
-    "text": "Google-backed Anthropic lease fueling AI optimism, driving recent price gain.",
+    "text": "contract delays with Microsoft slowing anticipated revenue from its cloud services partnership",
     "source": "stock",
     "articleIds": [
-      "8527820f-47be-3474-ab89-1118e5fdffba"
+      "5832fed5-79b8-3b1b-bd3f-a9b37b7c257f"
     ],
-    "updatedAt": "2026-11-06T15:34:28.975Z"
+    "updatedAt": "2026-11-06T21:14:03.368Z"
+  },
+  "GOOGL": {
+    "text": "Investments in a $17B Wyoming data center and a $125M Texas drone facility driving optimism",
+    "source": "stock",
+    "articleIds": [
+      "552c961c-44d7-3b17-8c5d-ef4171c92e27",
+      "c48bb786-a331-3853-ab82-e2c1aa2e0aab",
+      "cdd9ced4-bf41-3840-a018-d39b4d2ce07e"
+    ],
+    "updatedAt": "2026-11-06T21:14:09.904Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:34.152Z"
+    "text": "Facing new regulations requiring Amazon’s data centers to cover their own electricity costs, raising operational expenses.",
+    "source": "stock",
+    "articleIds": [
+      "431fe886-8b2c-3a78-8274-0fead36b8334"
+    ],
+    "updatedAt": "2026-11-06T21:14:15.772Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:39.348Z"
+    "updatedAt": "2026-11-06T21:14:21.676Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:43.589Z"
+    "updatedAt": "2026-11-06T21:14:26.085Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:47.874Z"
+    "updatedAt": "2026-11-06T21:14:30.710Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:52.151Z"
+    "updatedAt": "2026-11-06T21:14:35.123Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:34:56.896Z"
+    "updatedAt": "2026-11-06T21:14:39.644Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:35:01.204Z"
+    "updatedAt": "2026-11-06T21:14:44.049Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:35:05.492Z"
+    "updatedAt": "2026-11-06T21:14:48.474Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:35:09.879Z"
+    "updatedAt": "2026-11-06T21:14:52.901Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:35:14.187Z"
+    "updatedAt": "2026-11-06T21:14:57.293Z"
   },
   "INDEX": {
     "text": "amid stronger‑than‑expected October job growth boosting economic optimism",
@@ -191,6 +202,6 @@
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T15:35:24.325Z"
+    "updatedAt": "2026-11-06T21:15:08.094Z"
   }
 }
