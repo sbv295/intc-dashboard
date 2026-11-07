@@ -3,71 +3,69 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:08:15.341Z"
+    "updatedAt": "2026-11-07T15:19:17.962Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:08:21.052Z"
+    "updatedAt": "2026-11-07T15:19:23.667Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:08:26.531Z"
+    "updatedAt": "2026-11-07T15:19:28.565Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:08:31.728Z"
+    "updatedAt": "2026-11-07T15:19:34.316Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:08:36.950Z"
+    "updatedAt": "2026-11-07T15:19:39.857Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:08:42.443Z"
+    "updatedAt": "2026-11-07T15:19:44.943Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:08:47.684Z"
+    "updatedAt": "2026-11-07T15:19:50.371Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:08:52.815Z"
+    "updatedAt": "2026-11-07T15:19:55.854Z"
   },
   "MRVL": {
-    "text": "All‑stock acquisition of Lumentum’s photonics unit, valuing it at $115 billion, fuels investor optimism.",
+    "text": "Acquisition of Lumentum expected to strengthen AI optical connectivity, fueling optimism about competitive positioning in.",
     "source": "stock",
     "articleIds": [
-      "04869d39-247b-3fc8-af60-71d1413644f9"
+      "0ae4d8f4-f71d-33fb-973a-b68d7671175a"
     ],
-    "updatedAt": "2026-11-06T21:13:14.970Z"
+    "updatedAt": "2026-11-07T15:20:01.776Z"
   },
   "ARM": {
-    "text": "Data‑center royalty growth accelerating to triple‑digit rates, driven by Arm‑based CPUs from NVIDIA and cloud providers.",
-    "source": "stock",
-    "articleIds": [
-      "4ae1f038-6eca-3497-bdd6-bd167e201a62"
-    ],
-    "updatedAt": "2026-11-07T08:09:04.373Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-07T15:20:07.282Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:09:09.841Z"
+    "updatedAt": "2026-11-07T15:20:12.587Z"
   },
   "SKHY": {
     "text": "Unveiling low‑heat iHBM memory, easing data‑center cooling concerns amid growing AI energy scrutiny.",
@@ -78,125 +76,121 @@
     "updatedAt": "2026-11-07T08:09:15.439Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-07T08:09:20.075Z"
+    "text": "Revenue outlook raised to $2 bn‑plus and Q3 loss narrowing, boosting investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "31a8b7ac-2e94-33d4-9f69-c57fcca99128"
+    ],
+    "updatedAt": "2026-11-07T15:20:23.369Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:09:24.381Z"
+    "updatedAt": "2026-11-07T15:20:27.707Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:09:28.751Z"
+    "updatedAt": "2026-11-07T15:20:31.984Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:09:33.845Z"
+    "updatedAt": "2026-11-07T15:20:37.285Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:09:38.965Z"
+    "updatedAt": "2026-11-07T15:20:42.480Z"
   },
   "MSFT": {
-    "text": "Pulling back from neocloud data‑center deals, including ending the Oracle partnership, amid cost and regulatory pressures.",
-    "source": "stock",
-    "articleIds": [
-      "b3f39913-cf91-3f5b-8c8c-161cbb93932d",
-      "184891a8-3c3b-3102-98fb-9b10a5ca6d91"
-    ],
-    "updatedAt": "2026-11-07T08:09:44.291Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-07T15:20:47.631Z"
   },
   "GOOGL": {
-    "text": "Acquisition of Crusoe’s struggling Wyoming AI data center bolsters capacity, supporting recent price gain.",
-    "source": "stock",
-    "articleIds": [
-      "5e588d26-0aa8-3110-a71f-c6d58a82920c"
-    ],
-    "updatedAt": "2026-11-07T08:09:49.889Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-07T15:20:52.964Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:09:54.983Z"
+    "updatedAt": "2026-11-07T15:20:58.444Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:10:00.173Z"
+    "updatedAt": "2026-11-07T15:21:04.069Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:10:04.481Z"
+    "updatedAt": "2026-11-07T15:21:08.439Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:10:08.837Z"
+    "updatedAt": "2026-11-07T15:21:12.722Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:10:13.119Z"
+    "updatedAt": "2026-11-07T15:21:17.032Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:10:17.512Z"
+    "updatedAt": "2026-11-07T15:21:21.343Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:10:21.798Z"
+    "updatedAt": "2026-11-07T15:21:25.687Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:10:26.089Z"
+    "updatedAt": "2026-11-07T15:21:30.073Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:10:30.390Z"
+    "updatedAt": "2026-11-07T15:21:34.370Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:10:34.704Z"
+    "updatedAt": "2026-11-07T15:21:38.647Z"
   },
   "INDEX": {
-    "text": "Lam Research’s $25 billion buyback rally, bolstering semiconductor exposure amid stronger‑than‑expected October jobs data.",
+    "text": "Robust October payroll gains and a dip to 4.1% unemployment bolstering investor confidence in markets",
     "source": "macro",
     "articleIds": [
-      "17dd758c-4edc-365a-a186-487bd1c5039d",
-      "3f383c57-af73-37bf-9384-aa3b31e3444b"
+      "e0f61db4-17eb-3683-97be-7e133002693f"
     ],
-    "updatedAt": "2026-11-07T01:32:33.487Z"
+    "updatedAt": "2026-11-07T15:21:43.902Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T08:10:45.294Z"
+    "updatedAt": "2026-11-07T15:21:48.975Z"
   }
 }
