@@ -3,51 +3,51 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:12:28.649Z"
+    "updatedAt": "2026-11-07T01:30:07.088Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-06T21:12:34.166Z"
+    "text": "record quarterly revenue and a brighter 2027 growth outlook spurred investor optimism for the company",
+    "source": "stock",
+    "articleIds": [
+      "b2475c01-2bad-34ac-9c52-9f303973b84b"
+    ],
+    "updatedAt": "2026-11-07T01:30:13.406Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:12:39.921Z"
+    "updatedAt": "2026-11-07T01:30:18.624Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:12:45.705Z"
+    "updatedAt": "2026-11-07T01:30:24.240Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:12:51.679Z"
+    "updatedAt": "2026-11-07T01:30:29.699Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:12:57.098Z"
+    "updatedAt": "2026-11-07T01:30:35.352Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:13:02.677Z"
+    "updatedAt": "2026-11-07T01:30:40.549Z"
   },
   "SPCX": {
-    "text": "Musk’s aggressive revenue target, far exceeding analyst forecasts, fuels optimism about future growth prospects overall.",
-    "source": "stock",
-    "articleIds": [
-      "79fa1595-65d8-392e-985f-aeb045b43b77"
-    ],
-    "updatedAt": "2026-11-06T21:13:09.108Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-07T01:30:45.628Z"
   },
   "MRVL": {
     "text": "All‑stock acquisition of Lumentum’s photonics unit, valuing it at $115 billion, fuels investor optimism.",
@@ -58,150 +58,138 @@
     "updatedAt": "2026-11-06T21:13:14.970Z"
   },
   "ARM": {
-    "text": "Doubling data‑center royalties and triple‑digit growth outlook, driven by Arm‑based CPUs, boost earnings expectations.",
-    "source": "stock",
-    "articleIds": [
-      "4ae1f038-6eca-3497-bdd6-bd167e201a62",
-      "1c6f0107-dde1-3288-9bd7-6a68f67ecccc"
-    ],
-    "updatedAt": "2026-11-06T21:13:21.185Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-07T01:30:56.921Z"
   },
   "QCOM": {
-    "text": "Alphabet’s $548 million stake backing Qualcomm’s data‑center push, targeting $5 billion FY 2027 revenue.",
-    "source": "stock",
-    "articleIds": [
-      "c414e108-0c7b-3281-b192-793ea57f582e"
-    ],
-    "updatedAt": "2026-11-06T21:13:27.105Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-07T01:31:02.275Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:13:32.809Z"
+    "updatedAt": "2026-11-07T01:31:07.900Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:13:37.342Z"
+    "updatedAt": "2026-11-07T01:31:12.242Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:13:41.774Z"
+    "updatedAt": "2026-11-07T01:31:16.695Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:13:46.117Z"
+    "updatedAt": "2026-11-07T01:31:21.033Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:13:51.834Z"
+    "updatedAt": "2026-11-07T01:31:26.433Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:13:57.345Z"
+    "updatedAt": "2026-11-07T01:31:31.756Z"
   },
   "MSFT": {
-    "text": "contract delays with Microsoft slowing anticipated revenue from its cloud services partnership",
-    "source": "stock",
-    "articleIds": [
-      "5832fed5-79b8-3b1b-bd3f-a9b37b7c257f"
-    ],
-    "updatedAt": "2026-11-06T21:14:03.368Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-07T01:31:37.147Z"
   },
   "GOOGL": {
-    "text": "Investments in a $17B Wyoming data center and a $125M Texas drone facility driving optimism",
-    "source": "stock",
-    "articleIds": [
-      "552c961c-44d7-3b17-8c5d-ef4171c92e27",
-      "c48bb786-a331-3853-ab82-e2c1aa2e0aab",
-      "cdd9ced4-bf41-3840-a018-d39b4d2ce07e"
-    ],
-    "updatedAt": "2026-11-06T21:14:09.904Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-07T01:31:42.636Z"
   },
   "AMZN": {
-    "text": "Facing new regulations requiring Amazon’s data centers to cover their own electricity costs, raising operational expenses.",
-    "source": "stock",
-    "articleIds": [
-      "431fe886-8b2c-3a78-8274-0fead36b8334"
-    ],
-    "updatedAt": "2026-11-06T21:14:15.772Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-07T01:31:47.955Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:14:21.676Z"
+    "updatedAt": "2026-11-07T01:31:53.372Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:14:26.085Z"
+    "updatedAt": "2026-11-07T01:31:57.668Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:14:30.710Z"
+    "updatedAt": "2026-11-07T01:32:02.004Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:14:35.123Z"
+    "updatedAt": "2026-11-07T01:32:06.328Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:14:39.644Z"
+    "updatedAt": "2026-11-07T01:32:10.653Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:14:44.049Z"
+    "updatedAt": "2026-11-07T01:32:14.983Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:14:48.474Z"
+    "updatedAt": "2026-11-07T01:32:19.287Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:14:52.901Z"
+    "updatedAt": "2026-11-07T01:32:23.625Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:14:57.293Z"
+    "updatedAt": "2026-11-07T01:32:27.929Z"
   },
   "INDEX": {
-    "text": "amid stronger‑than‑expected October job growth boosting economic optimism",
+    "text": "Lam Research’s $25 billion buyback rally, bolstering semiconductor exposure amid stronger‑than‑expected October jobs data.",
     "source": "macro",
     "articleIds": [
+      "17dd758c-4edc-365a-a186-487bd1c5039d",
       "3f383c57-af73-37bf-9384-aa3b31e3444b"
     ],
-    "updatedAt": "2026-11-06T15:35:19.424Z"
+    "updatedAt": "2026-11-07T01:32:33.487Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-06T21:15:08.094Z"
+    "updatedAt": "2026-11-07T01:32:38.607Z"
   }
 }
