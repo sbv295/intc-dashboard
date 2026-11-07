@@ -3,77 +3,80 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:19:17.962Z"
+    "updatedAt": "2026-11-07T19:46:50.832Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:19:23.667Z"
+    "updatedAt": "2026-11-07T19:46:56.394Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-07T15:19:28.565Z"
+    "text": "Alphabet’s monthly payments for Nvidia GPUs powering Gemini Enterprise AI are likely boosting Nvidia’s momentum.",
+    "source": "stock",
+    "articleIds": [
+      "431c55b7-4842-3c07-8605-00dd6de24fa9"
+    ],
+    "updatedAt": "2026-11-07T19:47:02.240Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-07T15:19:34.316Z"
+    "text": "Speculation it may start producing Nvidia memory chips fuels optimism, driving a notable price surge.",
+    "source": "stock",
+    "articleIds": [
+      "7bcf10a2-a080-3fa7-b0d8-795899828022"
+    ],
+    "updatedAt": "2026-11-07T19:47:08.262Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:19:39.857Z"
+    "updatedAt": "2026-11-07T19:47:13.739Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:19:44.943Z"
+    "updatedAt": "2026-11-07T19:47:19.102Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:19:50.371Z"
+    "updatedAt": "2026-11-07T19:47:24.048Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:19:55.854Z"
+    "updatedAt": "2026-11-07T19:47:29.539Z"
   },
   "MRVL": {
-    "text": "Acquisition of Lumentum expected to strengthen AI optical connectivity, fueling optimism about competitive positioning in.",
-    "source": "stock",
-    "articleIds": [
-      "0ae4d8f4-f71d-33fb-973a-b68d7671175a"
-    ],
-    "updatedAt": "2026-11-07T15:20:01.776Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-07T19:47:35.180Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:20:07.282Z"
+    "updatedAt": "2026-11-07T19:47:40.770Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:20:12.587Z"
+    "updatedAt": "2026-11-07T19:47:46.516Z"
   },
   "SKHY": {
-    "text": "Unveiling low‑heat iHBM memory, easing data‑center cooling concerns amid growing AI energy scrutiny.",
+    "text": "Launch of low‑heat iHBM memory, targeting AI data‑center power and cooling concerns, boosting investor optimism.",
     "source": "stock",
     "articleIds": [
+      "7a1caeb7-8c5d-3cdc-9949-a6ee56fdd62e",
       "a1904fc5-c87b-3634-abbb-901393b3f4d2"
     ],
-    "updatedAt": "2026-11-07T08:09:15.439Z"
+    "updatedAt": "2026-11-07T19:47:52.582Z"
   },
   "MBLY": {
     "text": "Revenue outlook raised to $2 bn‑plus and Q3 loss narrowing, boosting investor optimism.",
@@ -87,97 +90,101 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:20:27.707Z"
+    "updatedAt": "2026-11-07T19:48:02.595Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:20:31.984Z"
+    "updatedAt": "2026-11-07T19:48:06.923Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:20:37.285Z"
+    "updatedAt": "2026-11-07T19:48:12.360Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:20:42.480Z"
+    "updatedAt": "2026-11-07T19:48:17.849Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-07T15:20:47.631Z"
+    "text": "Switching off Oracle‑rented AI servers amid concerns over aging GPU performance and cost inefficiencies.",
+    "source": "stock",
+    "articleIds": [
+      "2b92b9df-f230-3c8c-9916-395aea38ce62"
+    ],
+    "updatedAt": "2026-11-07T19:48:23.703Z"
   },
   "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-07T15:20:52.964Z"
+    "text": "Expanding its $69 billion SpaceX stake and securing Nvidia GPU access for Gemini Enterprise AI.",
+    "source": "stock",
+    "articleIds": [
+      "431c55b7-4842-3c07-8605-00dd6de24fa9"
+    ],
+    "updatedAt": "2026-11-07T19:48:29.350Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:20:58.444Z"
+    "updatedAt": "2026-11-07T19:48:34.639Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:21:04.069Z"
+    "updatedAt": "2026-11-07T19:48:40.088Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:21:08.439Z"
+    "updatedAt": "2026-11-07T19:48:44.984Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:21:12.722Z"
+    "updatedAt": "2026-11-07T19:48:49.404Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:21:17.032Z"
+    "updatedAt": "2026-11-07T19:48:53.843Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:21:21.343Z"
+    "updatedAt": "2026-11-07T19:48:58.269Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:21:25.687Z"
+    "updatedAt": "2026-11-07T19:49:02.698Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:21:30.073Z"
+    "updatedAt": "2026-11-07T19:49:07.198Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:21:34.370Z"
+    "updatedAt": "2026-11-07T19:49:11.551Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:21:38.647Z"
+    "updatedAt": "2026-11-07T19:49:15.900Z"
   },
   "INDEX": {
     "text": "Robust October payroll gains and a dip to 4.1% unemployment bolstering investor confidence in markets",
@@ -191,6 +198,6 @@
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-07T15:21:48.975Z"
+    "updatedAt": "2026-11-07T19:49:26.934Z"
   }
 }
