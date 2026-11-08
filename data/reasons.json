@@ -3,19 +3,21 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:58:22.584Z"
+    "updatedAt": "2026-11-08T16:56:40.799Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-08T10:58:27.788Z"
+    "text": "record quarterly earnings boost confidence amid broader AI sell‑off, driving investor optimism despite sector skepticism",
+    "source": "stock",
+    "articleIds": [
+      "169b4b71-5e86-3f68-bdc0-568b49ce2ab3"
+    ],
+    "updatedAt": "2026-11-08T16:56:46.741Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:58:32.872Z"
+    "updatedAt": "2026-11-08T16:56:52.121Z"
   },
   "TSM": {
     "text": "Speculation it may start producing Nvidia memory chips fuels optimism, driving a notable price surge.",
@@ -29,43 +31,43 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:58:43.590Z"
+    "updatedAt": "2026-11-08T16:57:03.558Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:58:48.911Z"
+    "updatedAt": "2026-11-08T16:57:09.104Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:58:54.197Z"
+    "updatedAt": "2026-11-08T16:57:14.731Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:58:59.505Z"
+    "updatedAt": "2026-11-08T16:57:20.345Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:59:04.990Z"
+    "updatedAt": "2026-11-08T16:57:26.112Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:59:10.390Z"
+    "updatedAt": "2026-11-08T16:57:31.569Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:59:15.560Z"
+    "updatedAt": "2026-11-08T16:57:36.998Z"
   },
   "SKHY": {
     "text": "Strong quarterly results highlighting leadership in memory market boost investor confidence amid growing demand globally.",
@@ -87,100 +89,101 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:59:30.781Z"
+    "updatedAt": "2026-11-08T16:57:52.934Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:59:35.106Z"
+    "updatedAt": "2026-11-08T16:57:57.287Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:59:40.581Z"
+    "updatedAt": "2026-11-08T16:58:02.790Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-08T10:59:45.995Z"
+    "text": "Senator Capito’s recent sale of Apple amid post‑election portfolio trimming.",
+    "source": "stock",
+    "articleIds": [
+      "a52d6ec0-fa8f-3390-90d0-c7344ca2b1b8"
+    ],
+    "updatedAt": "2026-11-08T16:58:08.609Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T10:59:51.221Z"
+    "updatedAt": "2026-11-08T16:58:13.760Z"
   },
   "GOOGL": {
-    "text": "Boosted by a $15 B Malaysia data‑center investment and expanded SpaceX stake fueling AI infrastructure growth.",
+    "text": "A $15 billion Malaysia data‑center investment fuels confidence in continued AI expansion despite the midterm concerns.",
     "source": "stock",
     "articleIds": [
-      "f94fecf9-0ece-37e6-ba1d-f65925f9214a",
-      "431c55b7-4842-3c07-8605-00dd6de24fa9"
+      "f94fecf9-0ece-37e6-ba1d-f65925f9214a"
     ],
-    "updatedAt": "2026-11-08T03:53:52.086Z"
+    "updatedAt": "2026-11-08T16:58:19.336Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:02.970Z"
+    "updatedAt": "2026-11-08T16:58:24.688Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:08.283Z"
+    "updatedAt": "2026-11-08T16:58:30.409Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:12.603Z"
+    "updatedAt": "2026-11-08T16:58:34.893Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:16.912Z"
+    "updatedAt": "2026-11-08T16:58:39.326Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:21.285Z"
+    "updatedAt": "2026-11-08T16:58:43.736Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:25.606Z"
+    "updatedAt": "2026-11-08T16:58:48.144Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:29.897Z"
+    "updatedAt": "2026-11-08T16:58:52.563Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:34.212Z"
+    "updatedAt": "2026-11-08T16:58:57.001Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:38.538Z"
+    "updatedAt": "2026-11-08T16:59:01.448Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:42.846Z"
+    "updatedAt": "2026-11-08T16:59:06.095Z"
   },
   "INDEX": {
     "text": "Robust October payroll gains and a dip to 4.1% unemployment bolstering investor confidence in markets",
@@ -194,6 +197,6 @@
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T11:00:53.739Z"
+    "updatedAt": "2026-11-08T16:59:17.063Z"
   }
 }
