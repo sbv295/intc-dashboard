@@ -3,73 +3,86 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:32:11.842Z"
+    "updatedAt": "2026-11-09T18:08:19.637Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-09T07:32:17.126Z"
+    "text": "Following Oppenheimer’s upgrade to Outperform and Google’s AI chip partnership, investors are boosting confidence significantly.",
+    "source": "stock",
+    "articleIds": [
+      "a47a8cc7-9113-3e18-946f-13676e199774",
+      "6b0ae772-9882-30fa-8847-61798b94f000",
+      "a4a2c7f7-7012-37de-9338-deb673fb3e3b"
+    ],
+    "updatedAt": "2026-11-09T18:08:26.252Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-09T07:32:22.311Z"
+    "text": "Startling CEO report raising leadership concerns, dampening investor confidence amid broader AI‑chip market optimism.",
+    "source": "stock",
+    "articleIds": [
+      "658d9a49-19e4-333f-8471-2a4f04b4b2f0"
+    ],
+    "updatedAt": "2026-11-09T18:08:31.775Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-09T07:32:27.781Z"
+    "text": "Following reports NVIDIA asked TSMC to produce unprecedented advanced memory, coupled with insider buying confidence.",
+    "source": "stock",
+    "articleIds": [
+      "93f58a05-f2a1-3c30-8e0b-f0a4b42cce47",
+      "19d7c109-c168-3367-b818-90511c42fb5f"
+    ],
+    "updatedAt": "2026-11-09T18:08:37.954Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:32:33.302Z"
+    "updatedAt": "2026-11-09T18:08:42.906Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:32:38.713Z"
+    "updatedAt": "2026-11-09T18:08:48.261Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-09T07:32:43.961Z"
+    "text": "Surprising AI‑software acquisition push sparking investor optimism amid intensifying competition.",
+    "source": "stock",
+    "articleIds": [
+      "d08fca5e-e6b9-3f6f-a102-5ad63aff59a3"
+    ],
+    "updatedAt": "2026-11-09T18:08:54.584Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:32:49.983Z"
+    "updatedAt": "2026-11-09T18:09:02.568Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:32:55.831Z"
+    "updatedAt": "2026-11-09T18:09:07.849Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:33:01.467Z"
+    "updatedAt": "2026-11-09T18:09:13.204Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:33:07.085Z"
+    "updatedAt": "2026-11-09T18:09:18.755Z"
   },
   "SKHY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-09T07:33:12.660Z"
+    "text": "Expanding U.S. workforce to strengthen ties with major customers, likely boosting growth prospects.",
+    "source": "stock",
+    "articleIds": [
+      "411dc5f2-6edc-388f-aab3-a33b3c486380"
+    ],
+    "updatedAt": "2026-11-09T18:09:24.530Z"
   },
   "MBLY": {
     "text": "Revenue outlook raised to $2 bn‑plus and Q3 loss narrowing, boosting investor optimism.",
@@ -83,112 +96,116 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:33:23.198Z"
+    "updatedAt": "2026-11-09T18:09:34.375Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:33:27.606Z"
+    "updatedAt": "2026-11-09T18:09:38.686Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:33:33.537Z"
+    "updatedAt": "2026-11-09T18:09:44.226Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-09T07:33:39.004Z"
+    "text": "$2.7 billion international tax benefit disclosed, likely boosting earnings expectations and fueling today’s gain.",
+    "source": "stock",
+    "articleIds": [
+      "b7d2d8f4-cc3f-32ca-a10b-36b37ae78c4b"
+    ],
+    "updatedAt": "2026-11-09T18:09:50.031Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:33:44.554Z"
+    "updatedAt": "2026-11-09T18:09:54.991Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:33:49.055Z"
+    "updatedAt": "2026-11-09T18:10:00.475Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-09T07:33:54.278Z"
-  },
-  "META": {
-    "text": "Anticipation of a new share class and upcoming split fuels investor optimism and buying pressure.",
+    "text": "JPMorgan adding Amazon to its focus list, highlighting AWS growth prospects, likely boosting investor confidence.",
     "source": "stock",
     "articleIds": [
-      "25169a6f-3ef8-32f3-9c67-01fa7c0c0c4c"
+      "c9672c92-5e51-3844-b117-8778310d8b4f"
     ],
-    "updatedAt": "2026-11-08T20:58:57.807Z"
+    "updatedAt": "2026-11-09T18:10:06.858Z"
+  },
+  "META": {
+    "text": "JPMorgan’s focus‑list addition, citing AI‑driven advertising growth amid a $135 B+ capex plan",
+    "source": "stock",
+    "articleIds": [
+      "cea99788-66b7-3dda-a247-f201bf01366f"
+    ],
+    "updatedAt": "2026-11-09T18:10:13.325Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:34:04.170Z"
+    "updatedAt": "2026-11-09T18:10:17.675Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:34:08.549Z"
+    "updatedAt": "2026-11-09T18:10:22.053Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:34:12.947Z"
+    "updatedAt": "2026-11-09T18:10:26.438Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:34:17.310Z"
+    "updatedAt": "2026-11-09T18:10:30.813Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:34:21.754Z"
+    "updatedAt": "2026-11-09T18:10:35.167Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:34:26.152Z"
+    "updatedAt": "2026-11-09T18:10:39.509Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:34:30.552Z"
+    "updatedAt": "2026-11-09T18:10:43.977Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:34:34.919Z"
+    "updatedAt": "2026-11-09T18:10:48.361Z"
   },
   "INDEX": {
-    "text": "Robust October payroll gains and a dip to 4.1% unemployment bolstering investor confidence in markets",
-    "source": "macro",
-    "articleIds": [
-      "e0f61db4-17eb-3683-97be-7e133002693f"
-    ],
-    "updatedAt": "2026-11-07T15:21:43.902Z"
-  },
-  "INDEX_IN": {
-    "text": "No single dominant catalyst — a broad pullback across the broad Indian market.",
+    "text": "No single dominant catalyst — a broad rally across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T07:34:45.981Z"
+    "updatedAt": "2026-11-09T18:10:53.264Z"
+  },
+  "INDEX_IN": {
+    "text": "Stronger earnings, lower oil prices and moderated AI spending expectations.",
+    "source": "macro",
+    "articleIds": [
+      "b297245a-5f9d-3605-974c-566a9faee2e8"
+    ],
+    "updatedAt": "2026-11-09T18:10:58.882Z"
   }
 }
