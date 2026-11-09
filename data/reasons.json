@@ -3,19 +3,21 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:57:07.463Z"
+    "updatedAt": "2026-11-09T00:33:59.689Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:57:13.153Z"
+    "updatedAt": "2026-11-09T00:34:05.376Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-08T20:57:19.148Z"
+    "text": "Trump’s commendation of CEO Jensen Huang, calling him honorable, likely boosted investor confidence.",
+    "source": "stock",
+    "articleIds": [
+      "3b3a156c-84a1-3c69-85af-432040742327"
+    ],
+    "updatedAt": "2026-11-09T00:34:11.369Z"
   },
   "TSM": {
     "text": "Speculation it may start producing Nvidia memory chips fuels optimism, driving a notable price surge.",
@@ -29,52 +31,52 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:57:30.810Z"
+    "updatedAt": "2026-11-09T00:34:22.810Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:57:36.325Z"
+    "updatedAt": "2026-11-09T00:34:28.472Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:57:42.088Z"
+    "updatedAt": "2026-11-09T00:34:33.499Z"
   },
   "SPCX": {
-    "text": "Anticipation of the Nov 13 Starship launch and positive AI‑compute payoff outlook boosting investor optimism.",
+    "text": "Anthropic’s $45 billion AI‑compute contract with SpaceX’s Colossus data centers likely fuels today’s surge.",
     "source": "stock",
     "articleIds": [
-      "66c4c895-64c7-3dea-b009-84beec2bd6d0",
-      "5f9ac577-a476-32e1-9ce0-ec31f69e5597"
+      "fd7a9138-e43d-3752-aac8-d390a6093d24",
+      "0e577eff-f3c1-3ec8-b3ad-b4c90c6786fe"
     ],
-    "updatedAt": "2026-11-08T20:57:48.193Z"
+    "updatedAt": "2026-11-09T00:34:39.577Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:57:53.847Z"
+    "updatedAt": "2026-11-09T00:34:45.202Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:57:59.388Z"
+    "updatedAt": "2026-11-09T00:34:50.884Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:58:05.027Z"
+    "updatedAt": "2026-11-09T00:34:56.349Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:58:10.750Z"
+    "updatedAt": "2026-11-09T00:35:01.831Z"
   },
   "MBLY": {
     "text": "Revenue outlook raised to $2 bn‑plus and Q3 loss narrowing, boosting investor optimism.",
@@ -85,22 +87,22 @@
     "updatedAt": "2026-11-07T15:20:23.369Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:58:20.889Z"
+    "updatedAt": "2026-11-09T00:35:11.874Z"
   },
   "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:58:25.262Z"
+    "updatedAt": "2026-11-09T00:35:16.302Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:58:30.948Z"
+    "updatedAt": "2026-11-09T00:35:22.023Z"
   },
   "AAPL": {
     "text": "amid looming congressional investigations into its practices, raising regulatory uncertainty",
@@ -114,19 +116,19 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:58:42.021Z"
+    "updatedAt": "2026-11-09T00:35:33.572Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:58:46.618Z"
+    "updatedAt": "2026-11-09T00:35:37.939Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:58:51.921Z"
+    "updatedAt": "2026-11-09T00:35:43.414Z"
   },
   "META": {
     "text": "Anticipation of a new share class and upcoming split fuels investor optimism and buying pressure.",
@@ -140,49 +142,49 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:59:02.324Z"
+    "updatedAt": "2026-11-09T00:35:53.598Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:59:06.754Z"
+    "updatedAt": "2026-11-09T00:35:57.930Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:59:11.129Z"
+    "updatedAt": "2026-11-09T00:36:02.698Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:59:15.582Z"
+    "updatedAt": "2026-11-09T00:36:07.087Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:59:19.995Z"
+    "updatedAt": "2026-11-09T00:36:11.611Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:59:24.424Z"
+    "updatedAt": "2026-11-09T00:36:16.006Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:59:28.811Z"
+    "updatedAt": "2026-11-09T00:36:20.409Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:59:33.263Z"
+    "updatedAt": "2026-11-09T00:36:24.779Z"
   },
   "INDEX": {
     "text": "Robust October payroll gains and a dip to 4.1% unemployment bolstering investor confidence in markets",
@@ -196,6 +198,6 @@
     "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-08T20:59:43.926Z"
+    "updatedAt": "2026-11-09T00:36:35.933Z"
   }
 }
