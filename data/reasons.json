@@ -3,78 +3,79 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:08:19.637Z"
+    "updatedAt": "2026-11-10T01:50:21.809Z"
   },
   "AMD": {
-    "text": "Following Oppenheimer’s upgrade to Outperform and Google’s AI chip partnership, investors are boosting confidence significantly.",
+    "text": "",
     "source": "stock",
     "articleIds": [
-      "a47a8cc7-9113-3e18-946f-13676e199774",
-      "6b0ae772-9882-30fa-8847-61798b94f000",
-      "a4a2c7f7-7012-37de-9338-deb673fb3e3b"
+      "67200fed-9c29-3a2a-aa33-080fd478f041",
+      "87ba85b4-eee3-3adf-9ecb-25d39350f8f1",
+      "6a5eacbf-5495-3d8e-b730-6a037d604b95"
     ],
-    "updatedAt": "2026-11-09T18:08:26.252Z"
+    "updatedAt": "2026-11-10T01:50:28.387Z"
   },
   "NVDA": {
-    "text": "Startling CEO report raising leadership concerns, dampening investor confidence amid broader AI‑chip market optimism.",
+    "text": "Amid heightened AI rivalry from Google’s new advanced TPUs and growing CEO scrutiny, confidence in Nvidia’s lead wanes.",
     "source": "stock",
     "articleIds": [
-      "658d9a49-19e4-333f-8471-2a4f04b4b2f0"
+      "5f1c7592-baf0-32f1-b4a2-dd91de43a7a4",
+      "db2f6d95-b7a5-3274-8193-c767d2b681c1"
     ],
-    "updatedAt": "2026-11-09T18:08:31.775Z"
+    "updatedAt": "2026-11-10T01:50:33.879Z"
   },
   "TSM": {
-    "text": "Following reports NVIDIA asked TSMC to produce unprecedented advanced memory, coupled with insider buying confidence.",
-    "source": "stock",
-    "articleIds": [
-      "93f58a05-f2a1-3c30-8e0b-f0a4b42cce47",
-      "19d7c109-c168-3367-b818-90511c42fb5f"
-    ],
-    "updatedAt": "2026-11-09T18:08:37.954Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-10T01:50:39.177Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:08:42.906Z"
+    "updatedAt": "2026-11-10T01:50:44.674Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:08:48.261Z"
+    "updatedAt": "2026-11-10T01:50:50.122Z"
   },
   "AVGO": {
-    "text": "Surprising AI‑software acquisition push sparking investor optimism amid intensifying competition.",
+    "text": "Anticipated surge in Google TPU demand, with Broadcom supplying chips and networking through 2031.",
     "source": "stock",
     "articleIds": [
-      "d08fca5e-e6b9-3f6f-a102-5ad63aff59a3"
+      "fc803abe-aa38-3fd7-a373-786f6d0bd58a"
     ],
-    "updatedAt": "2026-11-09T18:08:54.584Z"
+    "updatedAt": "2026-11-10T01:50:56.192Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:09:02.568Z"
+    "updatedAt": "2026-11-10T01:51:01.349Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:09:07.849Z"
+    "updatedAt": "2026-11-10T01:51:06.614Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:09:13.204Z"
+    "updatedAt": "2026-11-10T01:51:11.830Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-09T18:09:18.755Z"
+    "text": "following Alphabet’s disclosed $548 million stake and SpaceX selecting Qualcomm for Starlink Mobile 5G network",
+    "source": "stock",
+    "articleIds": [
+      "8e8867e4-358d-34d8-8fae-c0340c2bf94d",
+      "e017e309-886c-371c-a73a-364a6bdb92e3"
+    ],
+    "updatedAt": "2026-11-10T01:51:18.102Z"
   },
   "SKHY": {
     "text": "Expanding U.S. workforce to strengthen ties with major customers, likely boosting growth prospects.",
@@ -96,109 +97,109 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:09:34.375Z"
+    "updatedAt": "2026-11-10T01:51:34.130Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:09:38.686Z"
+    "updatedAt": "2026-11-10T01:51:38.528Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:09:44.226Z"
+    "updatedAt": "2026-11-10T01:51:43.871Z"
   },
   "AAPL": {
-    "text": "$2.7 billion international tax benefit disclosed, likely boosting earnings expectations and fueling today’s gain.",
+    "text": "Major AI pricing overhaul unlocking new revenue streams, fueling investor optimism amid emerging market potential.",
     "source": "stock",
     "articleIds": [
-      "b7d2d8f4-cc3f-32ca-a10b-36b37ae78c4b"
+      "9b1c07be-4b29-3976-9371-2d2adea1219b"
     ],
-    "updatedAt": "2026-11-09T18:09:50.031Z"
+    "updatedAt": "2026-11-10T01:51:49.616Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:09:54.991Z"
+    "updatedAt": "2026-11-10T01:51:54.812Z"
   },
   "GOOGL": {
+    "text": "After unveiling two new custom chips and securing AMD EPYC servers to power its cloud platform.",
+    "source": "stock",
+    "articleIds": [
+      "ebdb5691-7625-34c1-a45f-3eddc48b4a26",
+      "ad959127-468f-35e2-9042-1b31d3f1c408",
+      "544d9f43-0b7f-3c42-b942-64d1474d8198"
+    ],
+    "updatedAt": "2026-11-10T01:52:00.800Z"
+  },
+  "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:10:00.475Z"
-  },
-  "AMZN": {
-    "text": "JPMorgan adding Amazon to its focus list, highlighting AWS growth prospects, likely boosting investor confidence.",
-    "source": "stock",
-    "articleIds": [
-      "c9672c92-5e51-3844-b117-8778310d8b4f"
-    ],
-    "updatedAt": "2026-11-09T18:10:06.858Z"
+    "updatedAt": "2026-11-10T01:52:06.170Z"
   },
   "META": {
-    "text": "JPMorgan’s focus‑list addition, citing AI‑driven advertising growth amid a $135 B+ capex plan",
-    "source": "stock",
-    "articleIds": [
-      "cea99788-66b7-3dda-a247-f201bf01366f"
-    ],
-    "updatedAt": "2026-11-09T18:10:13.325Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-10T01:52:11.539Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:10:17.675Z"
+    "updatedAt": "2026-11-10T01:52:15.887Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:10:22.053Z"
+    "updatedAt": "2026-11-10T01:52:20.180Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:10:26.438Z"
+    "updatedAt": "2026-11-10T01:52:24.547Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:10:30.813Z"
+    "updatedAt": "2026-11-10T01:52:28.891Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:10:35.167Z"
+    "updatedAt": "2026-11-10T01:52:33.226Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:10:39.509Z"
+    "updatedAt": "2026-11-10T01:52:37.622Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:10:43.977Z"
+    "updatedAt": "2026-11-10T01:52:41.976Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:10:48.361Z"
+    "updatedAt": "2026-11-10T01:52:46.337Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad rally across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-09T18:10:53.264Z"
+    "updatedAt": "2026-11-10T01:52:51.506Z"
   },
   "INDEX_IN": {
     "text": "Stronger earnings, lower oil prices and moderated AI spending expectations.",
