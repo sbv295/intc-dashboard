@@ -1,199 +1,195 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:09:47.065Z"
+    "updatedAt": "2026-11-11T18:16:32.539Z"
   },
   "AMD": {
-    "text": "Surging demand from Meta’s 6‑GW GPU contract and back‑to‑back record quarters outpacing supply.",
-    "source": "stock",
-    "articleIds": [
-      "853be0de-486c-3058-a420-59ca2824fdb3"
-    ],
-    "updatedAt": "2026-11-11T10:09:53.096Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-11T18:16:38.288Z"
   },
   "NVDA": {
-    "text": "concerns over H200 chips sale to Chinese university despite U.S. blacklist prompting regulatory scrutiny",
-    "source": "stock",
-    "articleIds": [
-      "b18d4e18-f7f6-392e-b08d-3e2fb8a27908"
-    ],
-    "updatedAt": "2026-11-11T10:09:59.096Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-11T18:16:43.790Z"
   },
   "TSM": {
-    "text": "Board approval of a $1 billion Anthropic and OpenAI investment plus a dividend increase fuels optimism.",
-    "source": "stock",
-    "articleIds": [
-      "c27b1fb9-57b6-3940-9888-52f5ce97c49d",
-      "6f50a7a2-cf97-3b32-8695-87e6041ec26f"
-    ],
-    "updatedAt": "2026-11-11T10:10:04.874Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-11T18:16:49.137Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:10:10.160Z"
+    "updatedAt": "2026-11-11T18:16:54.341Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:10:15.338Z"
+    "updatedAt": "2026-11-11T18:16:59.628Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-11T10:10:21.082Z"
-  },
-  "SPCX": {
-    "text": "Launch of Mini 2 portable Starlink device, sparking investor optimism about new revenue streams and market expansion.",
+    "text": "Goldman labeling chips oversold and a $1 billion Anthropic investment for its AI ambitions driving future",
     "source": "stock",
     "articleIds": [
-      "6216e879-f9c2-3f19-a409-3a0ce472ad53"
+      "52271a82-541c-3f0d-8078-b64d31e54f5f"
     ],
-    "updatedAt": "2026-11-11T10:10:26.486Z"
+    "updatedAt": "2026-11-11T18:17:05.693Z"
+  },
+  "SPCX": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-11T18:17:11.526Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-11T10:10:31.960Z"
+    "text": "CoreWeave’s upgraded 2026 revenue outlook, signaling stronger AI‑chip demand, likely spurred the surge.",
+    "source": "stock",
+    "articleIds": [
+      "4ee41c18-11f6-3ebe-b644-8a3dc92c1b00",
+      "c9e38ac3-3b78-3403-a428-dd36339df6a3"
+    ],
+    "updatedAt": "2026-11-11T18:17:18.222Z"
   },
   "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-11T10:10:37.484Z"
-  },
-  "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:10:42.608Z"
+    "updatedAt": "2026-11-11T18:17:23.727Z"
+  },
+  "QCOM": {
+    "text": "Heavy ETF inflows and a new AI‑focused desktop OS partnership with Kora Systems fueling optimism.",
+    "source": "stock",
+    "articleIds": [
+      "a7233250-e630-3682-b50b-d0fce431c60c",
+      "d225cc78-e90a-339b-90e2-cc7749c155ef"
+    ],
+    "updatedAt": "2026-11-11T18:17:29.774Z"
   },
   "SKHY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:10:48.008Z"
+    "updatedAt": "2026-11-11T18:17:36.413Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:10:52.552Z"
+    "updatedAt": "2026-11-11T18:17:41.511Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:10:56.944Z"
+    "updatedAt": "2026-11-11T18:17:45.872Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:11:01.367Z"
+    "updatedAt": "2026-11-11T18:17:50.313Z"
   },
   "ACN": {
-    "text": "Qantas’ multiyear outsourcing partnership, including 850 job cuts, signals strong revenue growth prospects for Accenture.",
-    "source": "stock",
-    "articleIds": [
-      "6378219a-4b6c-312e-9dcb-a973358ca3ce"
-    ],
-    "updatedAt": "2026-11-11T02:29:19.657Z"
-  },
-  "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:11:12.652Z"
+    "updatedAt": "2026-11-11T18:17:55.970Z"
+  },
+  "AAPL": {
+    "text": "Targeting Apple as a new customer for MP Materials’ rare‑earth magnets, boosting expectations for supply‑chain enhancements.",
+    "source": "stock",
+    "articleIds": [
+      "d3b7047a-5926-3c49-aaa0-ebe74e482274"
+    ],
+    "updatedAt": "2026-11-11T18:18:01.658Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:11:18.002Z"
+    "updatedAt": "2026-11-11T18:18:06.911Z"
   },
   "GOOGL": {
-    "text": "amid dual‑currency Hong Kong and Singapore bond issuance plans, investors weigh dilution and funding risks",
+    "text": "Commitment of $10 billion to fund Anthropic’s IPO fuels investor optimism on AI growth prospects future",
     "source": "stock",
     "articleIds": [
-      "e7ce310f-9667-3c5d-a2c3-53c46170a292"
+      "0dbd6777-f31a-3e7f-9395-dd04baf66488"
     ],
-    "updatedAt": "2026-11-11T10:11:23.719Z"
+    "updatedAt": "2026-11-11T18:18:12.600Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:11:28.890Z"
+    "updatedAt": "2026-11-11T18:18:17.898Z"
   },
   "META": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:11:34.242Z"
+    "updatedAt": "2026-11-11T18:18:23.145Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:11:38.755Z"
+    "updatedAt": "2026-11-11T18:18:27.517Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:11:43.123Z"
+    "updatedAt": "2026-11-11T18:18:31.911Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:11:47.477Z"
+    "updatedAt": "2026-11-11T18:18:36.290Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:11:51.934Z"
+    "updatedAt": "2026-11-11T18:18:40.616Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:11:56.372Z"
+    "updatedAt": "2026-11-11T18:18:44.968Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:12:00.770Z"
+    "updatedAt": "2026-11-11T18:18:49.276Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:12:05.201Z"
+    "updatedAt": "2026-11-11T18:18:53.604Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T10:12:09.558Z"
+    "updatedAt": "2026-11-11T18:18:57.939Z"
   },
   "INDEX": {
-    "text": "Anticipation of higher loan costs this winter and renewed inflation concerns dampening investor sentiment overall",
-    "source": "macro",
-    "articleIds": [
-      "dc1dff53-6ee4-3132-9e09-857cda669124",
-      "e144c7d0-8d28-3103-8abd-d5626a05f80a"
-    ],
-    "updatedAt": "2026-11-11T10:12:15.372Z"
+    "text": "No single dominant catalyst — a broad rally across the broad US market.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-11T18:19:02.949Z"
   },
   "INDEX_IN": {
     "text": "Stronger earnings, lower oil prices and moderated AI spending expectations.",
