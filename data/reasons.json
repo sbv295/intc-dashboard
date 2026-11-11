@@ -1,102 +1,102 @@
 {
   "INTC": {
-    "text": "Fading chip rally and a weakening PC market cloud Q4 outlook, pressuring earnings expectations.",
-    "source": "stock",
-    "articleIds": [
-      "ea47f142-58f3-35ef-9924-e8308fda123f"
-    ],
-    "updatedAt": "2026-11-10T22:43:33.731Z"
-  },
-  "AMD": {
-    "text": "Investing $2.5 billion in Anthropic, signaling a stronger AI partnership and future revenue growth for its market.",
-    "source": "stock",
-    "articleIds": [
-      "1cd8c300-6128-3a65-a0c7-fdf51695bc0a"
-    ],
-    "updatedAt": "2026-11-11T02:28:05.111Z"
-  },
-  "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:28:10.590Z"
+    "updatedAt": "2026-11-11T10:09:47.065Z"
   },
-  "TSM": {
-    "text": "Surging October sales, up nearly 60% year‑over‑year, driven by accelerating AI demand.",
+  "AMD": {
+    "text": "Surging demand from Meta’s 6‑GW GPU contract and back‑to‑back record quarters outpacing supply.",
     "source": "stock",
     "articleIds": [
-      "ee66bacd-c253-3d8a-b790-4dc0bb85ee42"
+      "853be0de-486c-3058-a420-59ca2824fdb3"
     ],
-    "updatedAt": "2026-11-11T02:28:16.204Z"
+    "updatedAt": "2026-11-11T10:09:53.096Z"
+  },
+  "NVDA": {
+    "text": "concerns over H200 chips sale to Chinese university despite U.S. blacklist prompting regulatory scrutiny",
+    "source": "stock",
+    "articleIds": [
+      "b18d4e18-f7f6-392e-b08d-3e2fb8a27908"
+    ],
+    "updatedAt": "2026-11-11T10:09:59.096Z"
+  },
+  "TSM": {
+    "text": "Board approval of a $1 billion Anthropic and OpenAI investment plus a dividend increase fuels optimism.",
+    "source": "stock",
+    "articleIds": [
+      "c27b1fb9-57b6-3940-9888-52f5ce97c49d",
+      "6f50a7a2-cf97-3b32-8695-87e6041ec26f"
+    ],
+    "updatedAt": "2026-11-11T10:10:04.874Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:28:22.029Z"
+    "updatedAt": "2026-11-11T10:10:10.160Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:28:27.493Z"
+    "updatedAt": "2026-11-11T10:10:15.338Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:28:32.982Z"
+    "updatedAt": "2026-11-11T10:10:21.082Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-11T02:28:38.382Z"
+    "text": "Launch of Mini 2 portable Starlink device, sparking investor optimism about new revenue streams and market expansion.",
+    "source": "stock",
+    "articleIds": [
+      "6216e879-f9c2-3f19-a409-3a0ce472ad53"
+    ],
+    "updatedAt": "2026-11-11T10:10:26.486Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:28:43.869Z"
+    "updatedAt": "2026-11-11T10:10:31.960Z"
   },
   "ARM": {
-    "text": "Concerns that U.S. regulatory pushback on AI data centers may shift projects and jobs overseas, dampening sentiment.",
-    "source": "stock",
-    "articleIds": [
-      "f471b2bf-fcb0-3da4-a62d-9baa7fafcfc8",
-      "96ffb958-cc2d-3db3-bbb0-407fbc793d6a"
-    ],
-    "updatedAt": "2026-11-11T02:28:49.747Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-11T10:10:37.484Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:28:55.084Z"
+    "updatedAt": "2026-11-11T10:10:42.608Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:00.503Z"
+    "updatedAt": "2026-11-11T10:10:48.008Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:05.061Z"
+    "updatedAt": "2026-11-11T10:10:52.552Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:09.356Z"
+    "updatedAt": "2026-11-11T10:10:56.944Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:13.776Z"
+    "updatedAt": "2026-11-11T10:11:01.367Z"
   },
   "ACN": {
     "text": "Qantas’ multiyear outsourcing partnership, including 850 job cuts, signals strong revenue growth prospects for Accenture.",
@@ -110,87 +110,90 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:24.681Z"
+    "updatedAt": "2026-11-11T10:11:12.652Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:30.328Z"
+    "updatedAt": "2026-11-11T10:11:18.002Z"
   },
   "GOOGL": {
-    "text": "Amid concerns over privacy implications from the Spirit Airlines data sale agreement.",
+    "text": "amid dual‑currency Hong Kong and Singapore bond issuance plans, investors weigh dilution and funding risks",
     "source": "stock",
     "articleIds": [
-      "f5b21afb-2d2e-3268-a7c1-fbad2b5807e6"
+      "e7ce310f-9667-3c5d-a2c3-53c46170a292"
     ],
-    "updatedAt": "2026-11-11T02:29:36.403Z"
+    "updatedAt": "2026-11-11T10:11:23.719Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:41.663Z"
+    "updatedAt": "2026-11-11T10:11:28.890Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:46.712Z"
+    "updatedAt": "2026-11-11T10:11:34.242Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:51.142Z"
+    "updatedAt": "2026-11-11T10:11:38.755Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:55.464Z"
+    "updatedAt": "2026-11-11T10:11:43.123Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:29:59.752Z"
+    "updatedAt": "2026-11-11T10:11:47.477Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:30:04.075Z"
+    "updatedAt": "2026-11-11T10:11:51.934Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:30:08.417Z"
+    "updatedAt": "2026-11-11T10:11:56.372Z"
   },
   "INFY.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:30:12.790Z"
+    "updatedAt": "2026-11-11T10:12:00.770Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:30:17.067Z"
+    "updatedAt": "2026-11-11T10:12:05.201Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-11T02:30:21.398Z"
+    "updatedAt": "2026-11-11T10:12:09.558Z"
   },
   "INDEX": {
-    "text": "No single dominant catalyst — a broad pullback across the broad US market.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-11T02:30:26.916Z"
+    "text": "Anticipation of higher loan costs this winter and renewed inflation concerns dampening investor sentiment overall",
+    "source": "macro",
+    "articleIds": [
+      "dc1dff53-6ee4-3132-9e09-857cda669124",
+      "e144c7d0-8d28-3103-8abd-d5626a05f80a"
+    ],
+    "updatedAt": "2026-11-11T10:12:15.372Z"
   },
   "INDEX_IN": {
     "text": "Stronger earnings, lower oil prices and moderated AI spending expectations.",
