@@ -1,201 +1,201 @@
 {
   "INTC": {
-    "text": "CEO’s $9.7 million purchase after a 29% plunge, signaling confidence and prompting investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "b005f71b-42f1-3b2c-93aa-525ccea522e6"
-    ],
-    "updatedAt": "2026-11-12T09:05:25.469Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-12T17:50:22.657Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:05:31.420Z"
+    "updatedAt": "2026-11-12T17:50:28.130Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-12T09:05:37.320Z"
+    "text": "Jensen Huang’s resignation and CFO Colette Kress stepping in as interim CEO triggered the decline.",
+    "source": "stock",
+    "articleIds": [
+      "4188b371-0a5b-4b0d-8504-c62ed10923b6",
+      "c79e6817-1b8a-4113-979c-19990a784116",
+      "a9872060-fdb2-31ac-b154-bfc1755ed877"
+    ],
+    "updatedAt": "2026-11-12T17:50:34.256Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-12T09:05:42.638Z"
-  },
-  "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-12T09:05:48.057Z"
-  },
-  "MU": {
-    "text": "Surprise catalyst from CoreWeave’s AI‑chip demand surge, prompting expectations of heightened Micron memory sales.",
-    "source": "stock",
-    "articleIds": [
-      "f6f73fcf-f465-3308-9df2-618a74b5eef8"
-    ],
-    "updatedAt": "2026-11-12T09:05:54.137Z"
-  },
-  "AVGO": {
-    "text": "Amid Nvidia’s leadership turmoil, Broadcom is seen gaining potential business opportunities from the chip giant.",
-    "source": "stock",
-    "articleIds": [
-      "45fd0dd7-5cad-305e-8d43-bd3415c0b5a4"
-    ],
-    "updatedAt": "2026-11-12T09:06:00.139Z"
-  },
-  "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:05.474Z"
+    "updatedAt": "2026-11-12T17:50:39.445Z"
+  },
+  "SNDK": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-12T17:50:44.728Z"
+  },
+  "MU": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-12T17:50:50.111Z"
+  },
+  "AVGO": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-12T17:50:55.512Z"
+  },
+  "SPCX": {
+    "text": "State Street’s increased stake to 19.34 million shares signals confidence ahead of Flight 15 in mission.",
+    "source": "stock",
+    "articleIds": [
+      "94d170e2-4752-3f6a-9c50-78978f756873"
+    ],
+    "updatedAt": "2026-11-12T17:51:01.827Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:11.085Z"
+    "updatedAt": "2026-11-12T17:51:07.310Z"
   },
   "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:16.673Z"
+    "updatedAt": "2026-11-12T17:51:12.653Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:22.260Z"
+    "text": "New SpaceX partnership promising Starlink Mobile integration, boosting growth prospects and market optimism.",
+    "source": "stock",
+    "articleIds": [
+      "6a91a4ea-1a1a-3a9c-bebb-2d74bc3fe107"
+    ],
+    "updatedAt": "2026-11-12T17:51:18.705Z"
   },
   "SKHY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:27.581Z"
+    "updatedAt": "2026-11-12T17:51:24.095Z"
   },
   "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:32.704Z"
+    "updatedAt": "2026-11-12T17:51:29.212Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:37.237Z"
+    "updatedAt": "2026-11-12T17:51:33.475Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:41.706Z"
+    "updatedAt": "2026-11-12T17:51:37.848Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:47.531Z"
+    "updatedAt": "2026-11-12T17:51:43.111Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:52.922Z"
+    "updatedAt": "2026-11-12T17:51:48.333Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:06:58.837Z"
+    "updatedAt": "2026-11-12T17:51:53.605Z"
   },
   "GOOGL": {
-    "text": "Agreement to purchase $10 billion of Anthropic at IPO price fuels optimism over AI partnership strategic.",
-    "source": "stock",
-    "articleIds": [
-      "4e727a55-fc1f-39d9-86e7-0e9887dc83d8"
-    ],
-    "updatedAt": "2026-11-12T01:15:17.999Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-12T17:51:57.877Z"
   },
   "AMZN": {
-    "text": "Potential criminal trial in Italy over alleged unpaid import VAT and customs duties on non‑EU goods.",
-    "source": "stock",
-    "articleIds": [
-      "eb9fdf0d-5438-3137-8c51-ee5069706a35"
-    ],
-    "updatedAt": "2026-11-12T09:07:10.434Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-12T17:52:03.108Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:07:15.924Z"
+    "updatedAt": "2026-11-12T17:52:07.965Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:07:20.323Z"
+    "updatedAt": "2026-11-12T17:52:12.286Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:07:24.771Z"
+    "updatedAt": "2026-11-12T17:52:16.669Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:07:29.210Z"
+    "updatedAt": "2026-11-12T17:52:21.255Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:07:33.680Z"
+    "updatedAt": "2026-11-12T17:52:25.515Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:07:38.086Z"
+    "updatedAt": "2026-11-12T17:52:29.767Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:07:42.517Z"
+    "updatedAt": "2026-11-12T17:52:34.010Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:07:46.892Z"
+    "updatedAt": "2026-11-12T17:52:38.319Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:07:51.268Z"
+    "updatedAt": "2026-11-12T17:52:42.655Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad rally across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T09:07:56.325Z"
+    "updatedAt": "2026-11-12T17:52:47.648Z"
   },
   "INDEX_IN": {
-    "text": "Optimism from Nifty‑50 ETF debut and Citi’s bullish view on earnings, cheaper",
+    "text": "Foreign investors shifting from AI stocks to Indian equities amid AI selloff and ETF launch",
     "source": "macro",
     "articleIds": [
+      "128eaa91-95bb-3554-a84a-f0e9f2c354dd",
       "4c9f60d5-f703-3b20-898d-5fb87209c591",
-      "b297245a-5f9d-3605-974c-566a9faee2e8"
+      "b297245a-5f9d-3605-974c-566a9faee2e8",
+      "b8f93d53-1d25-325b-adbf-9e0fe431f24d"
     ],
-    "updatedAt": "2026-11-12T01:16:15.029Z"
+    "updatedAt": "2026-11-12T17:52:54.206Z"
   }
 }
