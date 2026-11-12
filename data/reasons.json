@@ -1,124 +1,117 @@
 {
   "INTC": {
+    "text": "CEO’s $9.7 million purchase after a 29% plunge, signaling confidence and prompting investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "b005f71b-42f1-3b2c-93aa-525ccea522e6"
+    ],
+    "updatedAt": "2026-11-12T09:05:25.469Z"
+  },
+  "AMD": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:13:38.740Z"
-  },
-  "AMD": {
-    "text": "Fresh AI chip demand signals and optimism for continued server growth driving the surge today",
-    "source": "stock",
-    "articleIds": [
-      "394278e1-03b2-3358-8579-f145710002f1"
-    ],
-    "updatedAt": "2026-11-12T01:13:44.641Z"
+    "updatedAt": "2026-11-12T09:05:31.420Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:13:49.995Z"
+    "updatedAt": "2026-11-12T09:05:37.320Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:13:55.239Z"
+    "updatedAt": "2026-11-12T09:05:42.638Z"
   },
   "SNDK": {
-    "text": "Analyst reaffirmed bullish rating and set a >150% upside target, sparking heightened investor optimism.",
-    "source": "stock",
-    "articleIds": [
-      "125c9285-d054-3a5c-bd1a-21fe05c39d48"
-    ],
-    "updatedAt": "2026-11-12T01:14:01.412Z"
-  },
-  "MU": {
-    "text": "$1 billion commitment to Anthropic’s AI‑infrastructure IPO, signaling strong AI‑focused growth investment.",
-    "source": "stock",
-    "articleIds": [
-      "07030490-e157-3b5b-ab37-0b2f608f5509"
-    ],
-    "updatedAt": "2026-11-12T01:14:07.056Z"
-  },
-  "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:14:12.303Z"
+    "updatedAt": "2026-11-12T09:05:48.057Z"
   },
-  "SPCX": {
-    "text": "Regulatory review of wireless network plan and jitters surrounding the imminent Starship test flight.",
+  "MU": {
+    "text": "Surprise catalyst from CoreWeave’s AI‑chip demand surge, prompting expectations of heightened Micron memory sales.",
     "source": "stock",
     "articleIds": [
-      "740b2dc2-2753-34ab-840e-5b3766861dc7",
-      "11edfef0-cb92-335f-acf4-eed485b07faf"
+      "f6f73fcf-f465-3308-9df2-618a74b5eef8"
     ],
-    "updatedAt": "2026-11-12T01:14:18.586Z"
+    "updatedAt": "2026-11-12T09:05:54.137Z"
+  },
+  "AVGO": {
+    "text": "Amid Nvidia’s leadership turmoil, Broadcom is seen gaining potential business opportunities from the chip giant.",
+    "source": "stock",
+    "articleIds": [
+      "45fd0dd7-5cad-305e-8d43-bd3415c0b5a4"
+    ],
+    "updatedAt": "2026-11-12T09:06:00.139Z"
+  },
+  "SPCX": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-12T09:06:05.474Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:14:24.223Z"
+    "updatedAt": "2026-11-12T09:06:11.085Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:14:29.541Z"
+    "updatedAt": "2026-11-12T09:06:16.673Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:14:35.540Z"
+    "updatedAt": "2026-11-12T09:06:22.260Z"
   },
   "SKHY": {
-    "text": "Quarterly ₩20,000 dividend paired with a fresh share‑repurchase program, boosting shareholder‑return expectations.",
-    "source": "stock",
-    "articleIds": [
-      "32161ce6-fd40-372e-b033-9fecc5aea28a"
-    ],
-    "updatedAt": "2026-11-12T01:14:41.223Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-12T09:06:27.581Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:14:46.590Z"
+    "updatedAt": "2026-11-12T09:06:32.704Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:14:50.919Z"
+    "updatedAt": "2026-11-12T09:06:37.237Z"
   },
   "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:14:55.215Z"
+    "updatedAt": "2026-11-12T09:06:41.706Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:15:00.764Z"
+    "updatedAt": "2026-11-12T09:06:47.531Z"
   },
   "AAPL": {
-    "text": "Google’s Gemini AI voice integration into CarPlay dashboards likely fuels optimism about Apple’s expanding AI ecosystem.",
-    "source": "stock",
-    "articleIds": [
-      "d90420f1-06a7-34da-9bf3-b16cd6e7d003"
-    ],
-    "updatedAt": "2026-11-12T01:15:06.585Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-12T09:06:52.922Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:15:12.035Z"
+    "updatedAt": "2026-11-12T09:06:58.837Z"
   },
   "GOOGL": {
     "text": "Agreement to purchase $10 billion of Anthropic at IPO price fuels optimism over AI partnership strategic.",
@@ -132,74 +125,69 @@
     "text": "Potential criminal trial in Italy over alleged unpaid import VAT and customs duties on non‑EU goods.",
     "source": "stock",
     "articleIds": [
-      "eb9fdf0d-5438-3137-8c51-ee5069706a35",
-      "a05afc08-5415-3fe5-b6d1-9c1540a56a42"
+      "eb9fdf0d-5438-3137-8c51-ee5069706a35"
     ],
-    "updatedAt": "2026-11-12T01:15:23.657Z"
+    "updatedAt": "2026-11-12T09:07:10.434Z"
   },
   "META": {
-    "text": "Amid looming EU fines up to 6% of revenue and United’s AI‑bot ban, plus the upcoming departure of its infrastructure chief.",
-    "source": "stock",
-    "articleIds": [
-      "474f45bf-574d-38dc-b5ac-c52146778003",
-      "72271530-a9c2-3f34-bdbc-d83774c1cc0d",
-      "54d3ca3c-2598-3f92-83a3-ac74b4593a15"
-    ],
-    "updatedAt": "2026-11-12T01:15:29.313Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-12T09:07:15.924Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:15:33.665Z"
+    "updatedAt": "2026-11-12T09:07:20.323Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:15:37.959Z"
+    "updatedAt": "2026-11-12T09:07:24.771Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:15:42.310Z"
+    "updatedAt": "2026-11-12T09:07:29.210Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:15:46.604Z"
+    "updatedAt": "2026-11-12T09:07:33.680Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:15:50.911Z"
+    "updatedAt": "2026-11-12T09:07:38.086Z"
   },
   "INFY.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:15:55.250Z"
+    "updatedAt": "2026-11-12T09:07:42.517Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:15:59.631Z"
+    "updatedAt": "2026-11-12T09:07:46.892Z"
   },
   "ASIANPAINT.NS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:16:03.918Z"
+    "updatedAt": "2026-11-12T09:07:51.268Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad rally across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-12T01:16:08.768Z"
+    "updatedAt": "2026-11-12T09:07:56.325Z"
   },
   "INDEX_IN": {
     "text": "Optimism from Nifty‑50 ETF debut and Citi’s bullish view on earnings, cheaper",
