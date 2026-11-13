@@ -3,198 +3,200 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:45:58.985Z"
+    "updatedAt": "2026-11-13T20:13:27.912Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-13T12:46:04.180Z"
-  },
-  "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:46:09.746Z"
+    "updatedAt": "2026-11-13T20:13:33.290Z"
+  },
+  "NVDA": {
+    "text": "amid turmoil over Jensen Huang’s ouster, clouding the AI trade outlook",
+    "source": "stock",
+    "articleIds": [
+      "440d40f4-191b-357c-b2e1-b240d361a7ff",
+      "d5bc562b-92b8-31b9-8cf0-d89c8b8db1a1"
+    ],
+    "updatedAt": "2026-11-13T20:13:39.373Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:46:15.113Z"
+    "updatedAt": "2026-11-13T20:13:45.038Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:46:20.447Z"
+    "updatedAt": "2026-11-13T20:13:50.832Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:46:25.903Z"
+    "updatedAt": "2026-11-13T20:13:56.526Z"
   },
   "AVGO": {
+    "text": "Rothschild & Co Redburn’s downgrade prompting investor caution.",
+    "source": "stock",
+    "articleIds": [
+      "ad5488ae-b9da-34b2-87c1-5773212dd65d"
+    ],
+    "updatedAt": "2026-11-13T20:14:02.787Z"
+  },
+  "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:46:31.467Z"
-  },
-  "SPCX": {
-    "text": "Anticipation of today’s Starship test flight and looming SPCX‑Tesla merger talks fueling investor optimism significantly.",
-    "source": "stock",
-    "articleIds": [
-      "4fa34c1e-5da4-3857-8dc8-c6f0616d3883",
-      "0533133e-08e9-3a3f-a79d-e2316af3cb45"
-    ],
-    "updatedAt": "2026-11-13T12:46:37.134Z"
+    "updatedAt": "2026-11-13T20:14:08.345Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-13T12:46:42.420Z"
+    "text": "Lumentum acquisition spread widening to 18% raising valuation concerns amid integration uncertainties for the company.",
+    "source": "stock",
+    "articleIds": [
+      "18ebcb15-176a-3c01-8e01-c90d99e42f35"
+    ],
+    "updatedAt": "2026-11-13T20:14:14.457Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:46:47.972Z"
+    "updatedAt": "2026-11-13T20:14:19.889Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-13T12:46:53.340Z"
-  },
-  "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:46:58.931Z"
+    "updatedAt": "2026-11-13T20:14:25.647Z"
+  },
+  "SKHY": {
+    "text": "Jensen Huang’s Nvidia leadership shock spooked investors, prompting foreign selling of its HBM business.",
+    "source": "stock",
+    "articleIds": [
+      "04bfdb3e-fa34-3322-92ab-8dffad30425b"
+    ],
+    "updatedAt": "2026-11-13T20:14:31.524Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:47:04.257Z"
+    "updatedAt": "2026-11-13T20:14:36.789Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:47:08.644Z"
+    "updatedAt": "2026-11-13T20:14:41.144Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:47:13.044Z"
+    "updatedAt": "2026-11-13T20:14:45.622Z"
   },
   "ACN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:47:18.634Z"
+    "updatedAt": "2026-11-13T20:14:50.893Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-13T12:47:23.962Z"
+    "text": "Launch of $299 Siri AI‑powered HomeView and Apple TV devices driving investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "cd4e138d-ef03-3c1c-8ffb-1116fe5f1a2d"
+    ],
+    "updatedAt": "2026-11-13T20:14:56.884Z"
   },
   "MSFT": {
-    "text": "Cerebras rally on announced partnership with Microsoft for AI chip collaboration, driving optimism about cloud services",
-    "source": "stock",
-    "articleIds": [
-      "a9186691-0557-3766-b87d-4e1bd0f0f247"
-    ],
-    "updatedAt": "2026-11-13T12:47:30.151Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-13T20:15:02.139Z"
   },
   "GOOGL": {
-    "text": "After signing an ENGIE renewable energy MOU and sizable purchases by SPDR and GPIX funds.",
-    "source": "stock",
-    "articleIds": [
-      "0e3f14f8-a6bb-3724-b744-787668e52394",
-      "f2cfc47c-091c-3575-a53c-488ff59f7468",
-      "ad402dcf-1c71-37d9-bb12-f5745c378611",
-      "8970899f-9f0b-38db-a5a8-61bb47a0e4ce"
-    ],
-    "updatedAt": "2026-11-13T12:47:36.180Z"
-  },
-  "AMZN": {
-    "text": "Plans to catalog all online products, signaling new data moat and revenue opportunities for growth.",
-    "source": "stock",
-    "articleIds": [
-      "e0b52dc8-19e6-31b1-8da5-2859764fc842"
-    ],
-    "updatedAt": "2026-11-13T12:47:42.498Z"
-  },
-  "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:47:47.756Z"
+    "updatedAt": "2026-11-13T20:15:07.339Z"
+  },
+  "AMZN": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-13T20:15:12.783Z"
+  },
+  "META": {
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-13T20:15:18.062Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:47:52.153Z"
+    "updatedAt": "2026-11-13T20:15:22.539Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:47:56.546Z"
+    "updatedAt": "2026-11-13T20:15:26.924Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:48:01.274Z"
+    "updatedAt": "2026-11-13T20:15:31.265Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:48:05.827Z"
+    "updatedAt": "2026-11-13T20:15:35.687Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:48:10.175Z"
+    "updatedAt": "2026-11-13T20:15:40.009Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:48:14.533Z"
+    "updatedAt": "2026-11-13T20:15:44.403Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:48:19.011Z"
+    "updatedAt": "2026-11-13T20:15:48.812Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:48:23.381Z"
+    "updatedAt": "2026-11-13T20:15:53.150Z"
   },
   "INDEX": {
-    "text": "No single dominant catalyst — a broad pullback across the broad US market.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-13T12:48:29.085Z"
+    "text": "Elevated wholesale inflation at 6.5% YoY stoking rate‑cut concerns and dampening market sentiment.",
+    "source": "macro",
+    "articleIds": [
+      "a0a06058-ce24-3361-9592-570007d578af",
+      "715ded28-639f-3e72-ae65-3f5169969d95"
+    ],
+    "updatedAt": "2026-11-13T20:15:59.015Z"
   },
   "INDEX_IN": {
     "text": "No single dominant catalyst — a broad pullback across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-13T12:48:34.633Z"
+    "updatedAt": "2026-11-13T20:16:04.604Z"
   }
 }
