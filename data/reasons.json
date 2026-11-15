@@ -1,27 +1,31 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-15T00:36:53.988Z"
+    "text": "Guidance shock and operational setbacks prompting a fair‑value reset, amid weaker PC demand and supply concerns.",
+    "source": "stock",
+    "articleIds": [
+      "c76cec6d-0f69-3384-b3bf-93e923fc548a",
+      "cb430129-13e4-36de-af2b-6f45dec63689",
+      "94b23fbf-1798-3191-b2c8-aaf986cc87ec"
+    ],
+    "updatedAt": "2026-11-15T07:26:06.896Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:36:59.384Z"
+    "updatedAt": "2026-11-15T07:26:12.119Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:37:04.595Z"
+    "updatedAt": "2026-11-15T07:26:17.488Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:37:09.962Z"
+    "updatedAt": "2026-11-15T07:26:22.694Z"
   },
   "SNDK": {
     "text": "BIT Capital’s 13F sale of its entire SanDisk position likely pressured price amid fund outflow.",
@@ -35,41 +39,37 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:37:21.440Z"
+    "updatedAt": "2026-11-15T07:26:33.598Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:37:26.498Z"
+    "updatedAt": "2026-11-15T07:26:38.653Z"
   },
   "SPCX": {
-    "text": "Investors fear congressional probes after Democratic midterm sweep, heightening political risk for SpaceX.",
-    "source": "stock",
-    "articleIds": [
-      "48bbaf17-9c25-39e8-9b29-6e092949a9e2"
-    ],
-    "updatedAt": "2026-11-15T00:37:32.092Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-15T07:26:43.955Z"
   },
   "MRVL": {
-    "text": "New directors signal heightened Lumentum integration risk, raising concerns over execution of its largest acquisition.",
-    "source": "stock",
-    "articleIds": [
-      "a2cdfd48-3a0b-361a-b02e-a64519e1553e"
-    ],
-    "updatedAt": "2026-11-15T00:37:38.007Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-15T07:26:49.029Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:37:43.295Z"
+    "updatedAt": "2026-11-15T07:26:56.445Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:37:48.511Z"
+    "updatedAt": "2026-11-15T07:27:01.661Z"
   },
   "SKHY": {
     "text": "Jensen Huang’s Nvidia leadership shock spooked investors, prompting foreign selling of its HBM business.",
@@ -83,43 +83,43 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:37:58.726Z"
+    "updatedAt": "2026-11-15T07:27:12.421Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:02.959Z"
+    "updatedAt": "2026-11-15T07:27:16.656Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:07.245Z"
+    "updatedAt": "2026-11-15T07:27:20.863Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:12.296Z"
+    "updatedAt": "2026-11-15T07:27:25.985Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:17.562Z"
+    "updatedAt": "2026-11-15T07:27:30.951Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:22.585Z"
+    "updatedAt": "2026-11-15T07:27:36.034Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:27.724Z"
+    "updatedAt": "2026-11-15T07:27:40.820Z"
   },
   "AMZN": {
     "text": "First binding North American union contract for warehouse workers, raising labor cost concerns amid ongoing negotiations.",
@@ -133,55 +133,55 @@
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:38.133Z"
+    "updatedAt": "2026-11-15T07:27:51.312Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:42.386Z"
+    "updatedAt": "2026-11-15T07:27:55.541Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:46.586Z"
+    "updatedAt": "2026-11-15T07:27:59.735Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:50.817Z"
+    "updatedAt": "2026-11-15T07:28:03.955Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:55.082Z"
+    "updatedAt": "2026-11-15T07:28:08.196Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:38:59.362Z"
+    "updatedAt": "2026-11-15T07:28:12.389Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:39:03.590Z"
+    "updatedAt": "2026-11-15T07:28:16.594Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:39:07.818Z"
+    "updatedAt": "2026-11-15T07:28:20.829Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:39:12.067Z"
+    "updatedAt": "2026-11-15T07:28:25.042Z"
   },
   "INDEX": {
     "text": "Elevated wholesale inflation at 6.5% YoY stoking rate‑cut concerns and dampening market sentiment.",
@@ -196,6 +196,6 @@
     "text": "No single dominant catalyst — a broad pullback across the broad Indian market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-15T00:39:23.771Z"
+    "updatedAt": "2026-11-15T07:28:36.243Z"
   }
 }
