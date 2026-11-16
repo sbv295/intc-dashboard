@@ -1,73 +1,63 @@
 {
   "INTC": {
-    "text": "Guidance shock and operational setbacks prompting a fair‑value reset, amid weaker PC demand and supply concerns.",
-    "source": "stock",
-    "articleIds": [
-      "c76cec6d-0f69-3384-b3bf-93e923fc548a",
-      "cb430129-13e4-36de-af2b-6f45dec63689",
-      "94b23fbf-1798-3191-b2c8-aaf986cc87ec"
-    ],
-    "updatedAt": "2026-11-15T07:26:06.896Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-16T07:32:18.289Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:37:14.316Z"
+    "updatedAt": "2026-11-16T07:32:23.493Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:37:19.634Z"
+    "updatedAt": "2026-11-16T07:32:28.665Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:37:25.064Z"
+    "updatedAt": "2026-11-16T07:32:33.727Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:37:30.550Z"
+    "updatedAt": "2026-11-16T07:32:39.285Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:37:36.010Z"
+    "updatedAt": "2026-11-16T07:32:44.387Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:37:41.447Z"
+    "updatedAt": "2026-11-16T07:32:49.405Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:37:46.949Z"
+    "updatedAt": "2026-11-16T07:32:54.559Z"
   },
   "MRVL": {
-    "text": "Amid investor worries that the $115 billion all‑stock Lumentum takeover could heavily dilute existing holdings.",
-    "source": "stock",
-    "articleIds": [
-      "ae9bac6d-cb7a-3498-8b35-4203c75db6e6",
-      "87b7622c-575d-3ce8-982c-5793a22e4968",
-      "6ebc286b-596b-3ded-84bc-e9895bdd7bea",
-      "a2cdfd48-3a0b-361a-b02e-a64519e1553e",
-      "317523f5-443a-3428-9d3b-8c2111684de5"
-    ],
-    "updatedAt": "2026-11-16T00:37:52.895Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-16T07:32:59.806Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:37:58.282Z"
+    "updatedAt": "2026-11-16T07:33:05.161Z"
   },
   "QCOM": {
     "text": "Weak handset revenue plunge and a “lousy” margin outlook cited as primary drivers.",
@@ -81,111 +71,117 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:38:09.649Z"
+    "updatedAt": "2026-11-16T07:33:16.326Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:38:14.745Z"
+    "updatedAt": "2026-11-16T07:33:21.198Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:38:19.128Z"
+    "updatedAt": "2026-11-16T07:33:25.425Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:38:23.570Z"
+    "updatedAt": "2026-11-16T07:33:29.642Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:38:29.013Z"
+    "updatedAt": "2026-11-16T07:33:34.856Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-16T00:38:34.476Z"
+    "text": "Strong quarterly earnings and Wall Street optimism propelled the rally to a 52‑week high today.",
+    "source": "stock",
+    "articleIds": [
+      "25dfff69-0508-3301-9762-4f3ca546c4d3"
+    ],
+    "updatedAt": "2026-11-16T07:33:40.636Z"
   },
   "MSFT": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-16T00:38:39.901Z"
+    "text": "amid AI partnership with Cerebras expanding its chip supplier base and designation as a US AI national champion",
+    "source": "stock",
+    "articleIds": [
+      "f6406004-cc09-345e-9b8d-88f7ab0a9552",
+      "c34e00da-4674-388b-8480-05fa03067ebc",
+      "f154b36a-28d7-3e35-93e9-4b15ac408e1d"
+    ],
+    "updatedAt": "2026-11-16T07:33:46.571Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:38:45.181Z"
+    "updatedAt": "2026-11-16T07:33:51.675Z"
   },
   "AMZN": {
-    "text": "Vulcan rocket failure destroying Amazon's satellite payload, raising concerns over its broadband constellation deployment.",
+    "text": "Stranding 40 satellites after the ULA rocket failure, raising concerns over Amazon’s satellite deployment timeline.",
     "source": "stock",
     "articleIds": [
-      "7040222e-3ca9-3551-8751-fa44fdc3b130"
+      "b78f10eb-47d0-35de-9ad5-5d196e4e1f82"
     ],
-    "updatedAt": "2026-11-15T20:44:17.189Z"
+    "updatedAt": "2026-11-16T07:33:57.329Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:38:56.547Z"
+    "updatedAt": "2026-11-16T07:34:02.716Z"
   },
   "HDFCBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:39:00.940Z"
+    "updatedAt": "2026-11-16T07:34:06.935Z"
   },
   "ICICIBANK.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:39:05.328Z"
+    "updatedAt": "2026-11-16T07:34:11.160Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:39:09.747Z"
+    "updatedAt": "2026-11-16T07:34:15.372Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:39:14.152Z"
+    "updatedAt": "2026-11-16T07:34:19.586Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:39:18.612Z"
+    "updatedAt": "2026-11-16T07:34:23.797Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:39:23.112Z"
+    "updatedAt": "2026-11-16T07:34:28.078Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:39:27.562Z"
+    "updatedAt": "2026-11-16T07:34:32.304Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T00:39:31.989Z"
+    "updatedAt": "2026-11-16T07:34:36.590Z"
   },
   "INDEX": {
     "text": "Elevated wholesale inflation at 6.5% YoY stoking rate‑cut concerns and dampening market sentiment.",
@@ -197,9 +193,13 @@
     "updatedAt": "2026-11-13T20:15:59.015Z"
   },
   "INDEX_IN": {
-    "text": "No single dominant catalyst — a broad pullback across the broad Indian market.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-16T00:39:43.883Z"
+    "text": "Foreign investors shifting from AI allocations to Indian equities, bolstered by new ETF launch and Citi’s upbeat outlook.",
+    "source": "macro",
+    "articleIds": [
+      "128eaa91-95bb-3554-a84a-f0e9f2c354dd",
+      "4c9f60d5-f703-3b20-898d-5fb87209c591",
+      "b297245a-5f9d-3605-974c-566a9faee2e8"
+    ],
+    "updatedAt": "2026-11-16T07:34:47.806Z"
   }
 }
