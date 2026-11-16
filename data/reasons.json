@@ -3,203 +3,210 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:32:18.289Z"
+    "updatedAt": "2026-11-16T17:46:42.004Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-16T07:32:23.493Z"
+    "text": "New Southeast Asian export restrictions threatening AMD's supply chain and market access, weighing on sentiment.",
+    "source": "stock",
+    "articleIds": [
+      "fb4b7d6f-97f7-31dc-97a8-8865f3f6dfca"
+    ],
+    "updatedAt": "2026-11-16T17:46:48.197Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-16T07:32:28.665Z"
+    "text": "First earnings without Jensen Huang sparking investor nervousness amid leadership transition.",
+    "source": "stock",
+    "articleIds": [
+      "0031663c-ed80-3ba5-8082-b42826bfe422",
+      "9d0511e5-7947-360f-b8e0-bd66c427405c"
+    ],
+    "updatedAt": "2026-11-16T17:46:53.857Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:32:33.727Z"
+    "updatedAt": "2026-11-16T17:46:59.284Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:32:39.285Z"
+    "updatedAt": "2026-11-16T17:47:04.910Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:32:44.387Z"
+    "updatedAt": "2026-11-16T17:47:10.044Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:32:49.405Z"
+    "updatedAt": "2026-11-16T17:47:15.625Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-16T07:32:54.559Z"
+    "text": "amid a broader tech selloff and muted investor reaction to the historic Starship catch",
+    "source": "stock",
+    "articleIds": [
+      "d0cce6ad-d3d8-380a-bff1-a2d5bb9eb0a9"
+    ],
+    "updatedAt": "2026-11-16T17:47:21.264Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:32:59.806Z"
+    "updatedAt": "2026-11-16T17:47:26.467Z"
   },
   "ARM": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-16T07:33:05.161Z"
-  },
-  "QCOM": {
-    "text": "Weak handset revenue plunge and a “lousy” margin outlook cited as primary drivers.",
+    "text": "CEO Rene Haas could be tapped to replace Jensen Huang at Nvidia, fueling uncertainty.",
     "source": "stock",
     "articleIds": [
-      "3f75d6a4-ab1d-36f3-ad94-8dc9569e531c"
+      "3db46b26-6866-3845-9abc-c7566fb55213"
     ],
-    "updatedAt": "2026-11-15T20:43:31.514Z"
+    "updatedAt": "2026-11-16T17:47:32.522Z"
   },
-  "SKHY": {
+  "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:33:16.326Z"
+    "updatedAt": "2026-11-16T17:47:37.474Z"
+  },
+  "SKHY": {
+    "text": "Amid new U.S. export licensing rule for advanced chips to five countries, prompting memory selloff.",
+    "source": "stock",
+    "articleIds": [
+      "2e2cd5c6-cf6c-33db-b287-8586b1347bdb"
+    ],
+    "updatedAt": "2026-11-16T17:47:43.313Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:33:21.198Z"
+    "updatedAt": "2026-11-16T17:47:48.909Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:33:25.425Z"
+    "updatedAt": "2026-11-16T17:47:53.138Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:33:29.642Z"
+    "updatedAt": "2026-11-16T17:47:57.470Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:33:34.856Z"
+    "updatedAt": "2026-11-16T17:48:02.587Z"
   },
   "AAPL": {
-    "text": "Strong quarterly earnings and Wall Street optimism propelled the rally to a 52‑week high today.",
+    "text": "Supply chain constraints and uncertainty over deploying excess cash under new CEO John Ternus.",
     "source": "stock",
     "articleIds": [
-      "25dfff69-0508-3301-9762-4f3ca546c4d3"
+      "a6504c96-90ce-3fe0-bc1f-fadf033cf6d6"
     ],
-    "updatedAt": "2026-11-16T07:33:40.636Z"
+    "updatedAt": "2026-11-16T17:48:08.433Z"
   },
   "MSFT": {
-    "text": "amid AI partnership with Cerebras expanding its chip supplier base and designation as a US AI national champion",
+    "text": "Hidden bug uncovered behind massive global outage, likely prompting investor caution and modest price dip.",
     "source": "stock",
     "articleIds": [
-      "f6406004-cc09-345e-9b8d-88f7ab0a9552",
-      "c34e00da-4674-388b-8480-05fa03067ebc",
-      "f154b36a-28d7-3e35-93e9-4b15ac408e1d"
+      "bf8b727d-8b78-34be-a374-94891df671d3"
     ],
-    "updatedAt": "2026-11-16T07:33:46.571Z"
+    "updatedAt": "2026-11-16T17:48:13.933Z"
   },
   "GOOGL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:33:51.675Z"
+    "updatedAt": "2026-11-16T17:48:19.300Z"
   },
   "AMZN": {
-    "text": "Stranding 40 satellites after the ULA rocket failure, raising concerns over Amazon’s satellite deployment timeline.",
+    "text": "Vulcan rocket failure destroying 40 Leo satellites, tightening capacity and raising concerns for Amazon’s network.",
     "source": "stock",
     "articleIds": [
-      "b78f10eb-47d0-35de-9ad5-5d196e4e1f82"
+      "4adc1665-388c-3e5d-8d68-c059ffc60a6b"
     ],
-    "updatedAt": "2026-11-16T07:33:57.329Z"
+    "updatedAt": "2026-11-16T17:48:25.382Z"
   },
   "META": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:34:02.716Z"
+    "updatedAt": "2026-11-16T17:48:30.576Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:34:06.935Z"
+    "updatedAt": "2026-11-16T17:48:34.954Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:34:11.160Z"
+    "updatedAt": "2026-11-16T17:48:39.346Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:34:15.372Z"
+    "updatedAt": "2026-11-16T17:48:43.669Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:34:19.586Z"
+    "updatedAt": "2026-11-16T17:48:47.910Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:34:23.797Z"
+    "updatedAt": "2026-11-16T17:48:52.219Z"
   },
   "INFY.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:34:28.078Z"
+    "updatedAt": "2026-11-16T17:48:56.535Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:34:32.304Z"
+    "updatedAt": "2026-11-16T17:49:00.796Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-16T07:34:36.590Z"
+    "updatedAt": "2026-11-16T17:49:05.038Z"
   },
   "INDEX": {
-    "text": "Elevated wholesale inflation at 6.5% YoY stoking rate‑cut concerns and dampening market sentiment.",
+    "text": "Weakness in AI‑linked stocks dampening investor sentiment amid broader market sell‑off.",
     "source": "macro",
     "articleIds": [
-      "a0a06058-ce24-3361-9592-570007d578af",
-      "715ded28-639f-3e72-ae65-3f5169969d95"
+      "96ad471f-021f-3bdc-97f1-ee268b7a88bd"
     ],
-    "updatedAt": "2026-11-13T20:15:59.015Z"
+    "updatedAt": "2026-11-16T17:49:10.409Z"
   },
   "INDEX_IN": {
-    "text": "Foreign investors shifting from AI allocations to Indian equities, bolstered by new ETF launch and Citi’s upbeat outlook.",
+    "text": "Foreign inflows surge as investors rotate from AI‑focused assets to Indian equities amid inflation‑driven RBI concerns.",
     "source": "macro",
     "articleIds": [
+      "b5df756b-93ca-3358-b687-65a431d9002b",
       "128eaa91-95bb-3554-a84a-f0e9f2c354dd",
       "4c9f60d5-f703-3b20-898d-5fb87209c591",
       "b297245a-5f9d-3605-974c-566a9faee2e8"
     ],
-    "updatedAt": "2026-11-16T07:34:47.806Z"
+    "updatedAt": "2026-11-16T17:49:16.240Z"
   }
 }
