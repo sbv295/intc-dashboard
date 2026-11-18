@@ -1,80 +1,76 @@
 {
   "INTC": {
-    "text": "Nvidia’s 25% stake dump, valued at $19.37 B, sparking investor unease amid Intel’s future prospects",
-    "source": "stock",
-    "articleIds": [
-      "88a77f9e-b266-31cb-8d20-56c4fec6786d",
-      "3b102373-1e04-3715-a5ad-c8e306454b6b",
-      "1bc02743-98af-35ca-a750-8460bf154477",
-      "c5da0c93-413c-314c-9298-05b2b43f8667"
-    ],
-    "updatedAt": "2026-11-17T19:00:43.015Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-18T01:58:57.797Z"
   },
   "AMD": {
-    "text": "Evergreen Quality Fund’s $7.2 B Q3 liquidation of its AMD position prompting selling pressure.",
-    "source": "stock",
-    "articleIds": [
-      "38a9cd3b-94c4-3090-8990-9409514bb98b"
-    ],
-    "updatedAt": "2026-11-17T19:00:49.038Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-18T01:59:03.450Z"
   },
   "NVDA": {
-    "text": "Amid a sudden leadership transition, the search for a new CEO fuels investor uncertainty.",
+    "text": "SEC investigation and refusal to rehire co‑founder Huang spark investor unease, weighing on valuation today",
     "source": "stock",
     "articleIds": [
-      "d2c06c38-7d33-37ef-9048-6d99db60d804"
+      "3de01241-d79d-3fed-8285-d00d554c4450"
     ],
-    "updatedAt": "2026-11-17T19:00:54.721Z"
+    "updatedAt": "2026-11-18T01:59:09.909Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:00:59.986Z"
+    "updatedAt": "2026-11-18T01:59:15.478Z"
   },
   "SNDK": {
-    "text": "Duquesne’s full 34,900‑share divestiture ahead of the 8‑for‑1 split spooked investors, raising demand concerns.",
+    "text": "Amid GF Securities’ warning of a 2027 NAND glut, investors anticipate pricing pressure on SanDisk.",
     "source": "stock",
     "articleIds": [
-      "3950a248-6a8a-394f-b72e-2b1bc3d44192"
+      "a50b6fe9-41bf-3b70-8042-3e1d9805579a"
     ],
-    "updatedAt": "2026-11-17T19:01:06.352Z"
+    "updatedAt": "2026-11-18T01:59:21.156Z"
   },
   "MU": {
-    "text": "Following a $7.2 B fund’s complete divestiture and analysts’ outlook for weaker NAND prices in 2027.",
+    "text": "Judge’s refusal to dismiss the DRAM price‑fixing class action, keeping litigation risk alive.",
     "source": "stock",
     "articleIds": [
-      "38a9cd3b-94c4-3090-8990-9409514bb98b",
-      "d21dba54-054a-3218-b122-a861372f7808"
+      "c0817daa-0713-3b8a-aabb-5fcbcaa635d6"
     ],
-    "updatedAt": "2026-11-17T19:01:12.507Z"
+    "updatedAt": "2026-11-18T01:59:26.805Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:01:17.732Z"
+    "updatedAt": "2026-11-18T01:59:32.396Z"
   },
   "SPCX": {
-    "text": "Bond sale of $4 billion amid $40 billion financing for Nvidia Vera Rubin chips and Starship milestone.",
+    "text": "advanced merger talks with Tesla and a $74 billion AI campus rollout driving optimism",
     "source": "stock",
     "articleIds": [
-      "a38aa365-d333-34a5-b78f-359dbf49b39a",
-      "029218c1-85bc-39d6-a9b9-396d6a0539a9"
+      "34d79838-fa9f-3c83-b0ec-93356ea76676",
+      "986c13c0-f146-39e7-93f2-5ef1595467c7"
     ],
-    "updatedAt": "2026-11-17T19:01:23.826Z"
+    "updatedAt": "2026-11-18T01:59:38.279Z"
   },
   "MRVL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-17T19:01:29.661Z"
+    "text": "Settlement of Credo patent dispute clears legal overhang in AI data‑center cable technology market.",
+    "source": "stock",
+    "articleIds": [
+      "58b21a83-33d9-3dec-8e7d-1a469b9dd9bf",
+      "81787ddb-08de-3c33-b883-5ee7dd914eab",
+      "e8e7b89e-7cdf-366e-8d70-a55ef779558c"
+    ],
+    "updatedAt": "2026-11-18T01:59:44.046Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:01:34.913Z"
+    "updatedAt": "2026-11-18T01:59:49.750Z"
   },
   "QCOM": {
     "text": "Altimeter Capital’s complete Q3 divestiture of its position, signaling reduced confidence in near‑term performance outlook.",
@@ -85,132 +81,137 @@
     "updatedAt": "2026-11-17T19:01:40.911Z"
   },
   "SKHY": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:01:46.236Z"
+    "updatedAt": "2026-11-18T02:00:01.288Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:01:50.586Z"
+    "updatedAt": "2026-11-18T02:00:05.951Z"
   },
   "005930.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:01:54.896Z"
+    "updatedAt": "2026-11-18T02:00:10.346Z"
   },
   "000660.KS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:01:59.281Z"
+    "updatedAt": "2026-11-18T02:00:14.703Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:02:04.636Z"
+    "updatedAt": "2026-11-18T02:00:19.926Z"
   },
   "AAPL": {
-    "text": "User reports of widespread Apple Services outages likely dampening investor sentiment.",
+    "text": "Apple Pay outage disrupting instant crypto purchases, likely dampening investor sentiment and nudging price lower.",
     "source": "stock",
     "articleIds": [
-      "106813f4-93ac-37d0-823a-c80f839f5273"
+      "43fe8d05-f239-3492-8a7e-37a480b34fe9"
     ],
-    "updatedAt": "2026-11-17T19:02:10.135Z"
+    "updatedAt": "2026-11-18T02:00:25.635Z"
   },
   "MSFT": {
-    "text": "",
-    "source": "stock",
-    "articleIds": [
-      "aa13360b-d576-304d-b9a5-f77e646f79b6"
-    ],
-    "updatedAt": "2026-11-17T19:02:16.666Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-18T02:00:31.192Z"
   },
   "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-17T19:02:22.133Z"
+    "text": "Waymo halted freeway testing after California DMV imposed new restrictions, raising concerns over autonomous‑driving rollout.",
+    "source": "stock",
+    "articleIds": [
+      "d19477a2-bf70-3bbc-aebe-5049aff7c305"
+    ],
+    "updatedAt": "2026-11-18T02:00:36.911Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-17T19:02:27.489Z"
+    "text": "Anticipated White House AI national champion designation and looming sizable Anthropic stake fueling investor optimism.",
+    "source": "stock",
+    "articleIds": [
+      "bf57b5b4-823e-3d2d-b31a-fcd4e7077a97",
+      "b44b4828-f449-3777-a05f-f98ca00e71ce",
+      "c079c6dc-3303-33b1-9922-5e6afaa91e87"
+    ],
+    "updatedAt": "2026-11-18T02:00:43.025Z"
   },
   "META": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-17T19:02:32.619Z"
+    "text": "Pershing Square trimmed its Meta position, reallocating capital to exchanges, eye‑care and streaming ventures strategically.",
+    "source": "stock",
+    "articleIds": [
+      "141603ce-bb0b-340f-bc6d-88dc24c2b545"
+    ],
+    "updatedAt": "2026-11-18T02:00:49.095Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:02:37.060Z"
+    "updatedAt": "2026-11-18T02:00:53.619Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:02:41.350Z"
+    "updatedAt": "2026-11-18T02:00:57.982Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:02:45.692Z"
+    "updatedAt": "2026-11-18T02:01:02.444Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:02:50.169Z"
+    "updatedAt": "2026-11-18T02:01:06.856Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:02:54.506Z"
+    "updatedAt": "2026-11-18T02:01:11.424Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:02:58.808Z"
+    "updatedAt": "2026-11-18T02:01:15.798Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:03:03.143Z"
+    "updatedAt": "2026-11-18T02:01:20.159Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:03:07.461Z"
+    "updatedAt": "2026-11-18T02:01:24.541Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-17T19:03:12.508Z"
+    "updatedAt": "2026-11-18T02:01:29.593Z"
   },
   "INDEX_IN": {
-    "text": "robust foreign inflows of $8.9 bn, driven by investors shifting from AI‑heavy Taiwan to Indian equities",
+    "text": "",
     "source": "macro",
     "articleIds": [
-      "b5df756b-93ca-3358-b687-65a431d9002b",
       "128eaa91-95bb-3554-a84a-f0e9f2c354dd",
       "4c9f60d5-f703-3b20-898d-5fb87209c591",
       "b297245a-5f9d-3605-974c-566a9faee2e8"
     ],
-    "updatedAt": "2026-11-17T10:02:16.166Z"
+    "updatedAt": "2026-11-18T02:01:35.918Z"
   }
 }
