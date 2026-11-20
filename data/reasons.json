@@ -1,205 +1,195 @@
 {
   "INTC": {
-    "text": "after its foundry secured its first external 18‑month customer, boosting growth expectations for revenue and market",
-    "source": "stock",
-    "articleIds": [
-      "b4394c30-dd2f-3191-be33-68aab1187bdf"
-    ],
-    "updatedAt": "2026-11-19T17:54:08.639Z"
-  },
-  "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:54:14.586Z"
+    "updatedAt": "2026-11-20T00:09:18.168Z"
+  },
+  "AMD": {
+    "text": "Amid a Hunterbrook Media report linking AMD to China partnerships, investors grew wary of potential regulatory scrutiny.",
+    "source": "stock",
+    "articleIds": [
+      "8125e322-a164-3d8a-b5b8-8324c612a39c"
+    ],
+    "updatedAt": "2026-11-20T00:09:23.901Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:54:20.261Z"
+    "updatedAt": "2026-11-20T00:09:29.167Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:54:25.855Z"
+    "updatedAt": "2026-11-20T00:09:34.385Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:54:31.428Z"
+    "updatedAt": "2026-11-20T00:09:39.691Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:54:36.873Z"
+    "updatedAt": "2026-11-20T00:09:45.012Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:54:42.446Z"
+    "updatedAt": "2026-11-20T00:09:50.375Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:54:47.632Z"
+    "updatedAt": "2026-11-20T00:09:55.907Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:54:52.724Z"
+    "updatedAt": "2026-11-20T00:10:01.571Z"
   },
   "ARM": {
-    "text": "Insider sale of over $1 million by chief architect fuels investor concerns about upcoming dilution pressure.",
-    "source": "stock",
-    "articleIds": [
-      "58e5fe13-5814-36f6-8c43-d0405193e844"
-    ],
-    "updatedAt": "2026-11-19T17:54:59.058Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-20T00:10:06.744Z"
   },
   "QCOM": {
-    "text": "Alphabet’s unexpected $",
-    "source": "stock",
-    "articleIds": [
-      "0efe7a72-542d-39e6-a15a-08b53f27813d"
-    ],
-    "updatedAt": "2026-11-19T17:55:05.406Z"
-  },
-  "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:55:11.059Z"
+    "updatedAt": "2026-11-20T00:10:12.060Z"
+  },
+  "SKHY": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-20T00:10:17.390Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:55:15.710Z"
+    "updatedAt": "2026-11-20T00:10:21.830Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:55:20.380Z"
+    "updatedAt": "2026-11-20T00:10:26.068Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:55:24.842Z"
+    "updatedAt": "2026-11-20T00:10:30.308Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:55:30.441Z"
+    "updatedAt": "2026-11-20T00:10:35.863Z"
   },
   "AAPL": {
-    "text": "Longtime director's $32 million sell-off raises dilution worries, prompting investor caution amid governance concerns about leadership.",
-    "source": "stock",
-    "articleIds": [
-      "eef3ad52-cb17-3c28-87bf-f2fbac74ac8f"
-    ],
-    "updatedAt": "2026-11-19T17:55:36.576Z"
-  },
-  "MSFT": {
-    "text": "first-time purchase by a $13 B hedge fund adding Microsoft to its portfolio",
-    "source": "stock",
-    "articleIds": [
-      "99cc54be-5fb1-334c-92a3-df6c194e3abc"
-    ],
-    "updatedAt": "2026-11-19T17:55:42.473Z"
-  },
-  "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:55:48.129Z"
+    "updatedAt": "2026-11-20T00:10:41.248Z"
+  },
+  "MSFT": {
+    "text": "An 80% server failure triggered a global outage, disrupting email and work for millions users.",
+    "source": "stock",
+    "articleIds": [
+      "ffef79af-fd9f-3eb0-9ec9-b3a92eaff70e"
+    ],
+    "updatedAt": "2026-11-20T00:10:46.837Z"
+  },
+  "GOOGL": {
+    "text": "Anthropic’s Nasdaq debut re‑valuating its stake and a $10B‑plus SpaceX loss amid rising share count",
+    "source": "stock",
+    "articleIds": [
+      "af598742-53b8-3f70-bfca-5e8c7acadf58",
+      "01400cf3-6155-3a15-b2d8-90c19bbc46a8"
+    ],
+    "updatedAt": "2026-11-20T00:10:52.635Z"
   },
   "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:55:53.790Z"
+    "updatedAt": "2026-11-20T00:10:57.877Z"
   },
   "META": {
-    "text": "$9.89 billion legal settlement turning a blockbuster ad quarter into an earnings miss.",
-    "source": "stock",
-    "articleIds": [
-      "eff776e8-ba96-3684-a935-586a8c10ac22"
-    ],
-    "updatedAt": "2026-11-19T17:55:59.481Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-20T00:11:03.262Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:56:03.947Z"
+    "updatedAt": "2026-11-20T00:11:07.568Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:56:08.369Z"
+    "updatedAt": "2026-11-20T00:11:11.826Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:56:12.888Z"
+    "updatedAt": "2026-11-20T00:11:16.032Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:56:17.422Z"
+    "updatedAt": "2026-11-20T00:11:20.297Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:56:21.884Z"
+    "updatedAt": "2026-11-20T00:11:24.559Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:56:26.304Z"
+    "updatedAt": "2026-11-20T00:11:28.806Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:56:30.748Z"
+    "updatedAt": "2026-11-20T00:11:33.069Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-19T17:56:35.129Z"
+    "updatedAt": "2026-11-20T00:11:37.357Z"
   },
   "INDEX": {
-    "text": "Amid Fed minutes highlighting AI financing risks, investor caution weighed on market sentiment today.",
-    "source": "macro",
-    "articleIds": [
-      "1a87ead2-d9c5-30b0-81ed-4c71d838c70a"
-    ],
-    "updatedAt": "2026-11-19T17:56:40.804Z"
+    "text": "No single dominant catalyst — a broad pullback across the broad US market.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-20T00:11:42.344Z"
   },
   "INDEX_IN": {
-    "text": "Foreign investors pivoting from AI assets to India, boosted by Nifty 51 ETF launch on SGX",
-    "source": "macro",
-    "articleIds": [
-      "128eaa91-95bb-3554-a84a-f0e9f2c354dd",
-      "4c9f60d5-f703-3b20-898d-5fb87209c591"
-    ],
-    "updatedAt": "2026-11-19T08:19:25.592Z"
+    "text": "No single dominant catalyst — a broad rally across the broad Indian market.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-20T00:11:47.938Z"
   }
 }
