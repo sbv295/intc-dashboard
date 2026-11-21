@@ -3,19 +3,21 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:49:55.912Z"
+    "updatedAt": "2026-11-21T23:40:32.190Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:50:01.212Z"
+    "updatedAt": "2026-11-21T23:40:37.550Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-21T18:50:06.441Z"
+    "text": "California probe into Nvidia's China dealings raising retirement‑fund exposure concerns, prompting investor sell‑off amid uncertainty.",
+    "source": "stock",
+    "articleIds": [
+      "5e26eb7a-7b32-364b-ba8c-638d3587e16a"
+    ],
+    "updatedAt": "2026-11-21T23:40:43.468Z"
   },
   "TSM": {
     "text": "Nvidia demand uncertainty and U.S. export curbs halting advanced chip shipments to China for customers",
@@ -30,33 +32,33 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:50:17.883Z"
+    "updatedAt": "2026-11-21T23:40:55.106Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:50:23.232Z"
+    "updatedAt": "2026-11-21T23:41:01.858Z"
   },
   "AVGO": {
+    "text": "after ARK Invest trimmed its holding, offloading roughly $6 million of Broadcom in Friday’s trade",
+    "source": "stock",
+    "articleIds": [
+      "fca47b3c-ad2d-3ac3-8392-d87cb076c6f2"
+    ],
+    "updatedAt": "2026-11-21T23:41:07.804Z"
+  },
+  "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:50:28.497Z"
-  },
-  "SPCX": {
-    "text": "Rejection of a $24 billion data‑center tax abatement in Texas, raising cost‑growth concerns for the project.",
-    "source": "stock",
-    "articleIds": [
-      "543f19eb-487d-3917-8275-f9dc34f9b723"
-    ],
-    "updatedAt": "2026-11-21T18:50:34.663Z"
+    "updatedAt": "2026-11-21T23:41:13.047Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:50:39.922Z"
+    "updatedAt": "2026-11-21T23:41:18.880Z"
   },
   "ARM": {
     "text": "Pledged‑share debt worries after 72% of holdings tied to SoftBank’s loans.",
@@ -70,123 +72,128 @@
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:50:51.423Z"
+    "updatedAt": "2026-11-21T23:41:30.243Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:50:56.735Z"
+    "updatedAt": "2026-11-21T23:41:35.981Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:01.793Z"
+    "updatedAt": "2026-11-21T23:41:40.970Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:06.086Z"
+    "updatedAt": "2026-11-21T23:41:45.248Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:10.349Z"
+    "updatedAt": "2026-11-21T23:41:49.498Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:15.664Z"
+    "updatedAt": "2026-11-21T23:41:54.985Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:20.751Z"
+    "updatedAt": "2026-11-21T23:41:59.905Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:25.973Z"
+    "updatedAt": "2026-11-21T23:42:05.015Z"
   },
   "GOOGL": {
-    "text": "Paying $30 billion to SpaceX, raising worries over capital allocation amid its AI chip expansion.",
+    "text": "Massive $78 billion debt issuance and a $30 billion SpaceX payment fuel financing concerns amid investor unease.",
     "source": "stock",
     "articleIds": [
+      "0e197144-8fd0-3afc-9d5c-de15ff65fee9",
       "67411126-309e-3266-a72d-e8e5f4a16039"
     ],
-    "updatedAt": "2026-11-21T18:51:31.354Z"
+    "updatedAt": "2026-11-21T23:42:10.994Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:36.549Z"
+    "text": "Mamdani‑backed Delivery Protection Act could raise NYC household costs up to $664 annually, sparking investor concern.",
+    "source": "stock",
+    "articleIds": [
+      "977974cd-7ac0-38b9-93d5-9af6e6798db7"
+    ],
+    "updatedAt": "2026-11-21T23:42:16.615Z"
   },
   "META": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:41.632Z"
+    "text": "Halting buybacks to fund AI initiatives, raising concerns over cash allocation and near‑term earnings pressure.",
+    "source": "stock",
+    "articleIds": [
+      "65275209-c973-374b-9e55-545d5a9636e8"
+    ],
+    "updatedAt": "2026-11-21T23:42:21.953Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:45.948Z"
+    "updatedAt": "2026-11-21T23:42:26.492Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:50.224Z"
+    "updatedAt": "2026-11-21T23:42:30.748Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:54.515Z"
+    "updatedAt": "2026-11-21T23:42:34.991Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:51:58.825Z"
+    "updatedAt": "2026-11-21T23:42:39.277Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:52:03.145Z"
+    "updatedAt": "2026-11-21T23:42:43.548Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:52:07.430Z"
+    "updatedAt": "2026-11-21T23:42:47.827Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:52:11.867Z"
+    "updatedAt": "2026-11-21T23:42:52.090Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:52:16.172Z"
+    "updatedAt": "2026-11-21T23:42:56.380Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-21T18:52:21.130Z"
+    "updatedAt": "2026-11-21T23:43:01.345Z"
   },
   "INDEX_IN": {
     "text": "Foreign investors shifting from AI allocations to India, boosted by SGX Nifty 50 ETF launch",
