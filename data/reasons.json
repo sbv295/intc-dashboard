@@ -1,202 +1,196 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-22T12:59:12.583Z"
-  },
-  "AMD": {
-    "text": "Short‑seller Hunterbrook’s report on blacklisted Chinese server firmware use, plus large fund sell‑offs, spooked investors.",
+    "text": "Layoffs affecting 7,300 employees amid revenue growth and surging data‑center processor demand.",
     "source": "stock",
     "articleIds": [
-      "f41b253c-1c05-3731-9c30-ec316cf458ce",
-      "e8ef82e3-3415-38da-96c1-55cace4a9069",
-      "8ddac365-0985-386f-8609-8dc8df9ec67f",
-      "ea409f62-7227-3589-9285-2cbcae0a6760"
+      "b198dcba-1950-3431-904c-016fd7517c0a"
     ],
-    "updatedAt": "2026-11-22T12:59:18.257Z"
+    "updatedAt": "2026-11-22T20:13:21.147Z"
+  },
+  "AMD": {
+    "text": "Alleged firmware supply to US‑blacklisted Chinese server maker IEIT Systems, prompting class‑action scrutiny.",
+    "source": "stock",
+    "articleIds": [
+      "6bad77ac-f4b2-3f14-9e1e-b1d6b2ba31a4"
+    ],
+    "updatedAt": "2026-11-22T20:13:27.177Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T12:59:23.506Z"
+    "updatedAt": "2026-11-22T20:13:32.953Z"
   },
   "TSM": {
-    "text": "Nvidia demand uncertainty and U.S. export curbs halting advanced chip shipments to China for customers",
-    "source": "stock",
-    "articleIds": [
-      "87f465c7-041e-372e-b545-283017109e76",
-      "d4197774-8048-3fb5-b152-8202e401112e"
-    ],
-    "updatedAt": "2026-11-21T11:58:36.712Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-22T20:13:38.208Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T12:59:34.431Z"
+    "updatedAt": "2026-11-22T20:13:44.045Z"
   },
   "MU": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T12:59:39.571Z"
+    "updatedAt": "2026-11-22T20:13:49.825Z"
   },
   "AVGO": {
-    "text": "Tepper’s Q3 sell‑off of Broadcom amid AI‑chip rotation prompting investor pressure.",
+    "text": "Likely impact from Google cutting AI accelerator orders, reducing Broadcom’s data‑center chip shipments.",
     "source": "stock",
     "articleIds": [
-      "ea409f62-7227-3589-9285-2cbcae0a6760"
+      "30a74f8a-b019-3af1-9c56-848d946c2533"
     ],
-    "updatedAt": "2026-11-22T12:59:45.690Z"
+    "updatedAt": "2026-11-22T20:13:55.897Z"
   },
   "SPCX": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T12:59:50.919Z"
+    "updatedAt": "2026-11-22T20:14:01.773Z"
   },
   "MRVL": {
-    "text": "Nvidia leadership turmoil and a California subpoena hurting AI chip sentiment, compounded by Marvell‑Lumentum all‑stock tie.",
-    "source": "stock",
-    "articleIds": [
-      "b7374b87-f34d-3683-a69d-c5555b3653ea"
-    ],
-    "updatedAt": "2026-11-22T12:59:56.491Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-22T20:14:07.343Z"
   },
   "ARM": {
-    "text": "Investor anxiety over 72% of its shares pledged as collateral for SoftBank loans fuels sell‑off.",
+    "text": "AI chip sell‑off pressure intensified as Nvidia recruiters courted CEO Haas, raising data‑center strategy doubts.",
     "source": "stock",
     "articleIds": [
+      "e98699a1-0017-3ddf-addd-73decb544e74",
       "cdd490c5-f3e9-30c5-833b-6b61cff44baa"
     ],
-    "updatedAt": "2026-11-22T13:00:02.599Z"
+    "updatedAt": "2026-11-22T20:14:13.345Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:00:08.395Z"
+    "updatedAt": "2026-11-22T20:14:19.034Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:00:13.775Z"
+    "updatedAt": "2026-11-22T20:14:24.481Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:00:18.773Z"
+    "updatedAt": "2026-11-22T20:14:29.919Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:00:23.016Z"
+    "updatedAt": "2026-11-22T20:14:34.301Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:00:27.272Z"
+    "updatedAt": "2026-11-22T20:14:38.665Z"
   },
   "ACN": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:00:32.392Z"
+    "updatedAt": "2026-11-22T20:14:44.190Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-22T13:00:37.582Z"
+    "text": "Unprecedented memory pricing and a $33 billion surge in purchase obligations likely squeezing margins.",
+    "source": "stock",
+    "articleIds": [
+      "42ddffb5-091e-39e5-9979-0fa004e7f8c0"
+    ],
+    "updatedAt": "2026-11-22T20:14:50.185Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:00:42.966Z"
+    "updatedAt": "2026-11-22T20:14:55.656Z"
   },
   "GOOGL": {
-    "text": "Heavy AI spending and uncertain near‑term monetization, plus record debt‑raising, prompting a fair‑value trim.",
+    "text": "Tiger Global's 42% stake reduction in Alphabet, amid cloud surge and negative free cash flow.",
     "source": "stock",
     "articleIds": [
-      "fe46cb84-40bc-3e27-a0c4-af1e1aa7698d",
-      "0e197144-8fd0-3afc-9d5c-de15ff65fee9"
+      "3cb77002-63c4-30af-97fe-c8210d667c49"
     ],
-    "updatedAt": "2026-11-22T04:38:09.985Z"
+    "updatedAt": "2026-11-22T20:15:01.987Z"
   },
   "AMZN": {
-    "text": "NYC $5 delivery fee increase sparking consumer backlash, pressuring margins and prompting sell‑off amid ongoing concerns.",
-    "source": "stock",
-    "articleIds": [
-      "8e0001fd-12b3-3675-b95a-86832b8c5944"
-    ],
-    "updatedAt": "2026-11-22T13:00:54.646Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-22T20:15:07.491Z"
   },
   "META": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:00:59.763Z"
+    "updatedAt": "2026-11-22T20:15:13.148Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:01:04.011Z"
+    "updatedAt": "2026-11-22T20:15:17.570Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:01:08.229Z"
+    "updatedAt": "2026-11-22T20:15:21.963Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:01:12.492Z"
+    "updatedAt": "2026-11-22T20:15:26.338Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:01:16.722Z"
+    "updatedAt": "2026-11-22T20:15:30.844Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:01:20.938Z"
+    "updatedAt": "2026-11-22T20:15:35.204Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:01:25.182Z"
+    "updatedAt": "2026-11-22T20:15:39.563Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:01:29.399Z"
+    "updatedAt": "2026-11-22T20:15:44.009Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:01:33.628Z"
+    "updatedAt": "2026-11-22T20:15:48.378Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-22T13:01:38.394Z"
+    "updatedAt": "2026-11-22T20:15:53.422Z"
   },
   "INDEX_IN": {
     "text": "Foreign investors shifting from AI allocations to India, boosted by SGX Nifty 50 ETF launch",
