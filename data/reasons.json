@@ -1,200 +1,189 @@
 {
   "INTC": {
-    "text": "Microsoft’s expanding AI partnerships embed Intel‑based Azure hardware across enterprise workloads, likely boosting demand.",
-    "source": "stock",
-    "articleIds": [
-      "271cb3c2-c843-316e-8853-4239314d50ef",
-      "a03a2ec4-4864-3651-86ac-8cbb4cc0f303"
-    ],
-    "updatedAt": "2026-11-24T06:40:10.899Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-24T18:33:10.548Z"
   },
   "AMD": {
-    "text": "Analyst Mark Newman’s renewed Buy rating and $650 target amid defense against recent short‑seller report.",
-    "source": "stock",
-    "articleIds": [
-      "6bd81df8-c38f-3b58-bf12-16e4e907d55a"
-    ],
-    "updatedAt": "2026-11-24T06:40:16.535Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-24T18:33:15.599Z"
   },
   "NVDA": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:40:21.884Z"
+    "updatedAt": "2026-11-24T18:33:20.883Z"
   },
   "TSM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:40:26.842Z"
+    "updatedAt": "2026-11-24T18:33:26.917Z"
   },
   "SNDK": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:40:32.012Z"
+    "updatedAt": "2026-11-24T18:33:32.237Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:40:37.610Z"
+    "updatedAt": "2026-11-24T18:33:37.525Z"
   },
   "AVGO": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:40:42.825Z"
+    "updatedAt": "2026-11-24T18:33:42.964Z"
   },
   "SPCX": {
-    "text": "Potential $3.5 trillion Tesla merger talks and anticipated extra chip supply fueling investor optimism amid buzz.",
-    "source": "stock",
-    "articleIds": [
-      "85b99975-6d03-38cc-bcf7-bd6d234104eb",
-      "7a825068-c85d-3b3c-8fa4-77137abdab5c"
-    ],
-    "updatedAt": "2026-11-24T06:40:49.207Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-24T18:33:48.916Z"
   },
   "MRVL": {
-    "text": "Good news for a key partner and fellow shareholder boosted confidence in Marvell’s AI chip prospects.",
-    "source": "stock",
-    "articleIds": [
-      "950caf8e-8e45-36fe-bc31-5d1200674221"
-    ],
-    "updatedAt": "2026-11-24T06:40:54.805Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-24T18:33:54.318Z"
   },
   "ARM": {
-    "text": "CEO Rene Haas contract extension through 2033 boosting investor confidence.",
-    "source": "stock",
-    "articleIds": [
-      "2d611f98-768a-3783-bd41-96d3bf120acb"
-    ],
-    "updatedAt": "2026-11-24T06:41:00.002Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-24T18:34:00.122Z"
   },
   "QCOM": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-24T06:41:05.618Z"
-  },
-  "SKHY": {
-    "text": "interest from a high‑stakes bidder amid Nvidia CEO Jensen Huang’s return spurring supplier rally",
+    "text": "Management’s AI conference showcase of Snapdragon and Cloud AI platforms supporting large models spurred optimism.",
     "source": "stock",
     "articleIds": [
-      "ba9dbe0a-1fde-329e-a698-e83261fdd239",
-      "8fcd9a1b-3790-38b1-ae1b-6e95781e8015"
+      "ee53adad-3183-3118-99c3-44589801aa27"
     ],
-    "updatedAt": "2026-11-24T06:41:11.298Z"
+    "updatedAt": "2026-11-24T18:34:05.987Z"
   },
-  "MBLY": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+  "SKHY": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:41:16.426Z"
+    "updatedAt": "2026-11-24T18:34:11.494Z"
+  },
+  "MBLY": {
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-24T18:34:17.070Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:41:20.645Z"
+    "updatedAt": "2026-11-24T18:34:21.461Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:41:24.908Z"
+    "updatedAt": "2026-11-24T18:34:25.832Z"
   },
   "ACN": {
-    "text": "Expanding AI-driven regulatory data and risk monitoring platform, attracting financial clients amid tighter compliance demands",
-    "source": "stock",
-    "articleIds": [
-      "00dd392d-12b5-3b5e-8ca5-d9c382a6c3d2"
-    ],
-    "updatedAt": "2026-11-24T06:41:30.877Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-24T18:34:31.107Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:41:35.973Z"
+    "updatedAt": "2026-11-24T18:34:36.494Z"
   },
   "MSFT": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:41:40.920Z"
+    "updatedAt": "2026-11-24T18:34:41.603Z"
   },
   "GOOGL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-24T06:41:45.611Z"
+    "text": "Likely pressured by reports of 1 million fewer TPU chips ordered for 2027, dampening AI outlook.",
+    "source": "stock",
+    "articleIds": [
+      "1767da7f-88e6-372c-b99c-021758e2602c"
+    ],
+    "updatedAt": "2026-11-24T18:34:47.204Z"
   },
   "AMZN": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:41:50.596Z"
+    "updatedAt": "2026-11-24T18:34:52.154Z"
   },
   "META": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-24T06:41:55.982Z"
+    "text": "Shareholder battle over control intensifies, raising governance concerns and potential strategic disruptions.",
+    "source": "stock",
+    "articleIds": [
+      "c990aae0-bbb8-3d50-86a9-eaac4b9008a2"
+    ],
+    "updatedAt": "2026-11-24T18:34:57.980Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:42:00.213Z"
+    "updatedAt": "2026-11-24T18:35:02.382Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:42:04.486Z"
+    "updatedAt": "2026-11-24T18:35:06.765Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:42:08.689Z"
+    "updatedAt": "2026-11-24T18:35:11.288Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:42:12.909Z"
+    "updatedAt": "2026-11-24T18:35:15.607Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:42:17.155Z"
+    "updatedAt": "2026-11-24T18:35:19.911Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:42:21.394Z"
+    "updatedAt": "2026-11-24T18:35:24.390Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:42:25.617Z"
+    "updatedAt": "2026-11-24T18:35:28.925Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:42:29.851Z"
+    "updatedAt": "2026-11-24T18:35:33.252Z"
   },
   "INDEX": {
-    "text": "No single dominant catalyst — a broad rally across the broad US market.",
+    "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-24T06:42:34.688Z"
+    "updatedAt": "2026-11-24T18:35:38.570Z"
   },
   "INDEX_IN": {
     "text": "amid $8.9 bn foreign inflows after October inflation breached the RBI’s target",
