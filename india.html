@@ -930,17 +930,24 @@
 
     <div class="stock-grid" id="stock-grid-in"></div>
 
+    <div class="section-label">Indian ETFs <span class="section-hours">Market 9:15 AM – 3:30 PM IST</span><button class="section-collapse-btn" id="collapse-btn-etf-in" onclick="toggleAllCards('etf')">−</button></div>
+    <div class="mcap-summary" id="mcap-summary-etf-in">
+        <span class="mcap-summary-label">Watchlist AUM</span>
+        <span class="mcap-summary-value" id="mcap-total-etf-in">—</span>
+        <span class="mcap-summary-change" id="mcap-chg-etf-in"></span>
+    </div>
+    <div class="stock-grid" id="stock-grid-etf-in"></div>
+
     <script>
     // ─── Stock Configuration ────────────────────────────────────────────────
     const STOCKS = [
         { ticker: 'HDFCBANK.NS', name: 'HDFC Bank', color: '#004C8F', logo: 'logos/HDFCBANK.png', displayTicker: 'HDFCBANK' },
         { ticker: 'ICICIBANK.NS', name: 'ICICI Bank', color: '#F58220', logo: 'logos/ICICIBANK.png', displayTicker: 'ICICIBANK' },
         { ticker: 'DEEPAKFERT.NS', name: 'Deepak Fertilisers', color: '#2E7D32', logo: 'logos/DEEPAKFERT.png', displayTicker: 'DEEPAKFERT' },
-        { ticker: 'AARTIIND.NS', name: 'Aarti Industries', color: '#0277BD', logo: 'logos/AARTIIND.png', displayTicker: 'AARTIIND' },
         { ticker: 'TCS.NS', name: 'TCS', color: '#0070C0', logo: 'logos/TCS.png', displayTicker: 'TCS' },
         { ticker: 'INFY.NS', name: 'Infosys', color: '#007CC3', logo: 'logos/INFY.png', displayTicker: 'INFY' },
         { ticker: 'RELIANCE.NS', name: 'Reliance Industries', color: '#A91E22', logo: 'logos/RELIANCE.png', displayTicker: 'RELIANCE' },
-        { ticker: 'ASIANPAINT.NS', name: 'Asian Paints', color: '#ED1C24', logo: 'logos/ASIANPAINT.png', displayTicker: 'ASIANPAINT' },
+        { ticker: 'SBIGOLD.NS', name: 'SBI Gold ETF', color: '#D4AF37', logo: 'logos/SBIGOLD.svg', displayTicker: 'SBIGOLD', type: 'etf' },
     ];
 
     function sid(s) { return (s.displayTicker || s.ticker).replace(/[^A-Za-z0-9]/g, '_'); }
@@ -1504,7 +1511,8 @@
     }
 
     function renderGrid() {
-        document.getElementById('stock-grid-in').innerHTML = STOCKS.map(renderCard).join('');
+        document.getElementById('stock-grid-in').innerHTML = STOCKS.filter(s => s.type !== 'etf').map(renderCard).join('');
+        document.getElementById('stock-grid-etf-in').innerHTML = STOCKS.filter(s => s.type === 'etf').map(renderCard).join('');
     }
 
     // ─── Fetch Stock Data ───────────────────────────────────────────────────
@@ -1753,14 +1761,23 @@
                     const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${stock.ticker}?modules=defaultKeyStatistics,summaryDetail,calendarEvents,financialData,earnings`;
                     const json = await yahooFetch(url);
                     const result = json.quoteSummary?.result?.[0];
+                    // totalAssets = Yahoo's "Net Assets" AUM figure, the canonical metric for ETFs
+                    const totalAssets = result?.summaryDetail?.totalAssets?.raw;
                     const mcapRaw = result?.summaryDetail?.marketCap?.raw || result?.summaryDetail?.nonDilutedMarketCap?.raw;
                     const shares = result?.defaultKeyStatistics?.sharesOutstanding?.raw;
+                    if (totalAssets) state[stock.ticker].totalAssets = totalAssets;
                     if (shares) {
                         state[stock.ticker].shares = shares;
+                        updateMarketCap(stock.ticker);
+                    } else if (totalAssets && state[stock.ticker].prevClose) {
+                        state[stock.ticker].shares = totalAssets / state[stock.ticker].prevClose;
                         updateMarketCap(stock.ticker);
                     } else if (mcapRaw && state[stock.ticker].price) {
                         state[stock.ticker].shares = mcapRaw / state[stock.ticker].price;
                         updateMarketCap(stock.ticker);
+                    } else if (totalAssets) {
+                        state[stock.ticker].mcap = totalAssets;
+                        displayMarketCap(stock.ticker, totalAssets);
                     } else if (mcapRaw) {
                         state[stock.ticker].mcap = mcapRaw;
                         displayMarketCap(stock.ticker, mcapRaw);
@@ -1789,6 +1806,7 @@
                     const forwardPE  = result?.summaryDetail?.forwardPE?.raw;
                     const pegRatio   = result?.defaultKeyStatistics?.pegRatio?.raw;
                     const targetPrice = result?.financialData?.targetMeanPrice?.raw;
+                    const expenseRatio = result?.defaultKeyStatistics?.annualReportExpenseRatio?.raw;
                     const fundamentalsEl = document.getElementById(`fundamentals-${_sid}`);
                     if (fundamentalsEl) {
                         const parts = [];
@@ -1797,6 +1815,7 @@
                         if (targetPrice != null) {
                             parts.push(`<span class="fund-label">Target</span> <span class="fund-target">${fmtPrice1(stock, targetPrice)}</span>`);
                         }
+                        if (expenseRatio != null) parts.push(`<span class="fund-label">Expense Ratio</span> <span class="fund-value">${(expenseRatio * 100).toFixed(2)}%</span>`);
                         if (parts.length > 0) fundamentalsEl.innerHTML = parts.join(' · ');
                     }
 
@@ -1917,7 +1936,8 @@
         const _sid = stock ? sid(stock) : ticker;
         const el = document.getElementById(`mcap-${_sid}`);
         if (!el) return;
-        el.textContent = `Mkt Cap: ${formatINR(mcap)}`;
+        const label = stock?.type === 'etf' ? 'Net Assets' : 'Mkt Cap';
+        el.textContent = `${label}: ${formatINR(mcap)}`;
     }
 
     function updateMarketCap(ticker) {
@@ -1936,11 +1956,16 @@
         updateTotalMarketCap();
     }
 
-    // ─── Total Market Cap Aggregation ────────────────────────────────────────
+    // ─── Total Market Cap / AUM Aggregation ──────────────────────────────────
     function updateTotalMarketCap() {
+        computeSectionTotal(s => s.type !== 'etf', 'mcap-total-in', 'mcap-chg-in');
+        computeSectionTotal(s => s.type === 'etf', 'mcap-total-etf-in', 'mcap-chg-etf-in');
+    }
+
+    function computeSectionTotal(filterFn, valId, chgId) {
         let totalCurrent = 0, totalPrev = 0;
         let hasAny = false;
-        for (const stock of STOCKS) {
+        for (const stock of STOCKS.filter(filterFn)) {
             const st = state[stock.ticker];
             if (!st.shares) continue;
             const ms = getIndiaMarketStatus();
@@ -1958,8 +1983,8 @@
             totalPrev += prevPrice * st.shares;
         }
         if (!hasAny) return;
-        const valEl = document.getElementById('mcap-total-in');
-        const chgEl = document.getElementById('mcap-chg-in');
+        const valEl = document.getElementById(valId);
+        const chgEl = document.getElementById(chgId);
         if (!valEl || !chgEl) return;
         valEl.textContent = formatINR(totalCurrent);
         if (totalPrev > 0) {
@@ -2238,10 +2263,12 @@
         btn.textContent = collapsed ? '+' : '−';
     }
 
-    function toggleAllCards() {
-        const grid = document.getElementById('stock-grid-in');
+    function toggleAllCards(section) {
+        const gridId = section === 'etf' ? 'stock-grid-etf-in' : 'stock-grid-in';
+        const colBtnId = section === 'etf' ? 'collapse-btn-etf-in' : 'collapse-btn-in';
+        const grid = document.getElementById(gridId);
         const cards = grid.querySelectorAll('.stock-card');
-        const colBtn = document.getElementById('collapse-btn-in');
+        const colBtn = document.getElementById(colBtnId);
         const shouldCollapse = colBtn ? colBtn.textContent.trim() === '−' : true;
         cards.forEach(c => {
             c.classList.toggle('collapsed', shouldCollapse);
