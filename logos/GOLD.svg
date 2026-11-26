@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">
+  <defs>
+    <radialGradient id="g" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fff2b8"/>
+      <stop offset="45%" stop-color="#e8c04c"/>
+      <stop offset="100%" stop-color="#a97c1f"/>
+    </radialGradient>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="url(#g)"/>
+  <text x="250" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="210" font-weight="700" text-anchor="middle" fill="#5c3e08">Au</text>
+</svg>

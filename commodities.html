@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commodities — Stock Dashboard</title>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="be0b9ce8-f4bc-4d6f-94fe-b0bcce0b7518"></script>
+    <style>
+        :root {
+            --bg: #0f0f14;
+            --surface: #1a1a24;
+            --surface2: #22222e;
+            --border: #2a2a3a;
+            --text: #e8e8f0;
+            --text-dim: #888899;
+            --green: #00c853;
+            --red: #ff1744;
+            --amber: #ffc107;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { overflow-x: hidden; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 16px;
+            position: relative;
+        }
+
+        /* ─── Navigation ─────────────────────────────────────── */
+        .nav-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 0;
+            position: relative;
+            top: -16px;
+        }
+        .nav-tabs a {
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 8px 8px 0 0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-bottom: none;
+            transition: all 0.2s;
+        }
+        .nav-tabs a.active {
+            color: var(--text);
+            background: var(--bg);
+            border-color: var(--text-dim);
+        }
+        .nav-tabs a:hover:not(.active) { color: var(--text); }
+
+        .nav-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0 2px 20px rgba(0,0,0,1), 0 0 40px rgba(0,0,0,0.8), 0 0 80px rgba(0,0,0,0.5);
+            text-align: center;
+            padding: 0 0 40px;
+            margin-top: -40px;
+            opacity: 1;
+            pointer-events: none;
+        }
+
+        @media (max-width: 640px) {
+            .nav-title { font-size: 1.2rem; letter-spacing: 3px; padding: 4px 0; margin-top: 10px; margin-bottom: 20px; }
+            body { padding: 8px; overflow-x: hidden; }
+            .nav-tabs { top: -8px; }
+        }
+
+        .nav-tabs, .nav-title, .section-label, .mcap-summary, .stock-grid, .disclaimer {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ─── Section label / info bar ──────────────────────── */
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-dim);
+            margin: 20px 0 10px;
+            padding: 8px 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        .section-label:first-of-type { margin-top: 0; }
+        .section-hours {
+            font-size: 0.65rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: var(--text-dim);
+            opacity: 0.7;
+            margin-left: 8px;
+            text-transform: none;
+        }
+
+        .mcap-summary {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 18px;
+            margin-bottom: 12px;
+        }
+        .mcap-summary-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+        }
+        .mcap-summary-value { font-size: 1.2rem; font-weight: 800; color: var(--text); }
+        .mcap-summary-change { font-size: 0.8rem; font-weight: 700; }
+        .mcap-summary-change .up { color: var(--green); }
+        .mcap-summary-change .down { color: var(--red); }
+
+        /* ─── Stock Grid / Card (same visual language as other tabs) ───── */
+        .stock-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+        @media (max-width: 640px) {
+            .stock-grid { grid-template-columns: 1fr; }
+        }
+
+        .stock-card {
+            background:
+                radial-gradient(ellipse at 15% 10%, color-mix(in srgb, var(--card-accent) 10%, transparent) 0%, transparent 60%),
+                radial-gradient(ellipse at 85% 90%, color-mix(in srgb, var(--card-accent) 5%, transparent) 0%, transparent 50%),
+                var(--surface);
+            border: 1px solid color-mix(in srgb, var(--card-accent) 18%, var(--border));
+            border-radius: 14px;
+            padding: 18px 20px 14px;
+            transition: transform 0.25s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .stock-card:hover {
+            transform: translateY(-3px);
+            border-color: color-mix(in srgb, var(--card-accent) 45%, var(--border));
+            box-shadow: 0 8px 32px -8px color-mix(in srgb, var(--card-accent) 25%, transparent), 0 2px 8px rgba(0,0,0,0.3);
+        }
+        .stock-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, color-mix(in srgb, var(--card-accent) 80%, white) 0%, var(--card-accent) 40%, transparent 100%);
+        }
+
+        .stock-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+        .stock-logo { width: 32px; height: 32px; border-radius: 8px; object-fit: contain; background: #fff; padding: 3px; }
+        .stock-name { font-size: 0.78rem; color: var(--text); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; }
+        .stock-ticker {
+            font-size: 0.65rem; color: var(--card-accent, var(--text-dim)); font-weight: 800; margin-left: auto;
+            background: color-mix(in srgb, var(--card-accent) 12%, transparent); padding: 3px 8px; border-radius: 4px;
+            letter-spacing: 1px; border: 1px solid color-mix(in srgb, var(--card-accent) 25%, transparent);
+        }
+
+        .price-block { text-align: center; }
+        .price-block-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-dim); margin-bottom: 2px; }
+        .price-block-value { font-size: 1.9rem; font-weight: 800; line-height: 1.2; }
+        .price-block-gram { font-size: 0.72rem; color: var(--text-dim); margin-top: 2px; }
+        .price-block-change { font-size: 1.0rem; font-weight: 600; margin-top: 5px; }
+        .price-block-change .up { color: var(--green); }
+        .price-block-change .down { color: var(--red); }
+        .price-block-change .prev-ref { color: var(--text-dim); font-weight: 400; }
+
+        .price-flash-up { animation: flashGreen 1s ease-out; }
+        .price-flash-down { animation: flashRed 1s ease-out; }
+        @keyframes flashGreen { 0% { color: var(--green); text-shadow: 0 0 12px rgba(0,200,83,0.5); } 100% { color: var(--text); text-shadow: none; } }
+        @keyframes flashRed { 0% { color: var(--red); text-shadow: 0 0 12px rgba(255,23,68,0.5); } 100% { color: var(--text); text-shadow: none; } }
+
+        .stock-ohl {
+            font-size: 0.64rem; color: var(--text-dim); margin-top: 10px; padding-top: 8px; padding-bottom: 8px;
+            border-top: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            border-bottom: 1px solid color-mix(in srgb, var(--card-accent) 12%, var(--border));
+            display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; column-gap: 8px; row-gap: 2px;
+        }
+        .stock-ohl:empty { display: none; }
+        .stock-ohl .ohl-group { white-space: nowrap; }
+        .stock-ohl .ohl-group:not(:last-child)::after { content: '·'; margin-left: 6px; color: var(--text-dim); }
+        .stock-ohl .ohl-label { font-weight: 600; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px; margin-right: 3px; }
+        .stock-ohl .ohl-value { color: var(--text) !important; font-weight: 600; }
+
+        .stock-ath {
+            font-size: 0.58rem; color: var(--text-dim); margin-top: 8px; padding-top: 4px; padding-bottom: 4px;
+            text-align: center; letter-spacing: 0.3px; white-space: nowrap; cursor: help;
+        }
+        .stock-ath .ath-label { font-weight: 700; color: var(--text-dim); letter-spacing: 0.5px; }
+        .stock-ath .ath-value { color: var(--text); font-weight: 600; }
+
+        /* ─── Sentiment / Sparkline ──────────────────────────── */
+        .stock-sentiment {
+            position: relative; text-align: center; margin-top: 8px; padding: 6px;
+            background: rgba(0,0,0,0.18); border-radius: 10px; overflow: hidden;
+        }
+        .stock-sentiment canvas { display: block; width: 100%; height: 140px; cursor: crosshair; }
+        .chart-glow-dot {
+            position: absolute; width: 6px; height: 6px; border-radius: 50%; background: currentColor;
+            transform: translate(-50%, -50%); pointer-events: none; display: none;
+            animation: chartDotPulse 1.6s ease-in-out infinite;
+        }
+        @keyframes chartDotPulse { 0%, 100% { box-shadow: 0 0 3px 1px currentColor; opacity: 0.85; } 50% { box-shadow: 0 0 11px 4px currentColor; opacity: 1; } }
+        .chart-tooltip {
+            position: absolute; display: none; pointer-events: none; z-index: 6;
+            background: rgba(15,15,20,0.92); border: 1px solid rgba(255,255,255,0.15); border-radius: 5px;
+            padding: 4px 7px; font-size: 0.68rem; line-height: 1.3; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        .chart-tooltip-price { font-weight: 700; color: var(--text); }
+        .chart-tooltip-price .chart-tooltip-pct { font-weight: 700; margin-left: 4px; }
+        .chart-tooltip-price .chart-tooltip-pct.up { color: var(--green); }
+        .chart-tooltip-price .chart-tooltip-pct.down { color: var(--red); }
+        .chart-tooltip-time { color: var(--text-dim); font-size: 0.62rem; }
+
+        .disclaimer {
+            font-size: 0.68rem;
+            color: var(--text-dim);
+            font-style: italic;
+            line-height: 1.5;
+            margin: 14px 2px 4px;
+            max-width: 900px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-tabs">
+        <a href="watchlist.html">Semicon</a>
+        <a href="it.html">IT</a>
+        <a href="india.html">Indian</a>
+        <a href="commodities.html" class="active">Commodities</a>
+    </div>
+
+    <div class="nav-title">Commodities</div>
+
+    <div class="section-label">Precious Metals <span class="section-hours">COMEX futures × live USD/INR</span></div>
+    <div class="mcap-summary" id="fx-bar">
+        <span class="mcap-summary-label">USD/INR</span>
+        <span class="mcap-summary-value" id="fx-value">—</span>
+        <span class="mcap-summary-change" id="fx-chg"></span>
+    </div>
+
+    <div class="stock-grid" id="stock-grid-commodities"></div>
+
+    <p class="disclaimer">
+        Prices are computed as (COMEX futures price ÷ 31.1034768g per troy oz) × 10 × the live USD/INR rate — a close
+        proxy for bullion-grade (≈99.5%+ fine) metal, not an official jeweller/dealer quote. Real-world 24K gold and
+        999 silver rates in India run higher once import duty, GST and making charges are added. 52-week range uses
+        today's live USD/INR rate applied across the year, so it's approximate for older dates.
+    </p>
+
+    <script>
+    const TROY_OZ_TO_GRAM = 31.1034768;
+
+    const COMMODITIES = [
+        { key: 'gold', name: 'Gold · 24K / 999', futures: 'GC=F', color: '#D4AF37', logo: 'logos/GOLD.svg' },
+        { key: 'silver', name: 'Silver · 999 Fine', futures: 'SI=F', color: '#C0C0C0', logo: 'logos/SILVER.svg' },
+    ];
+
+    const state = {};
+    COMMODITIES.forEach(c => { state[c.key] = { price: null, prevPrice: null, prevClose: null, dayHigh: null, dayLow: null, high52: null, low52: null, chartSeries: null, chartRange: null }; });
+    const fxState = { current: null, prevClose: null, series: [] };
+
+    function toINR10g(usdPerOz, fx) { return (usdPerOz / TROY_OZ_TO_GRAM) * 10 * fx; }
+    function fmtINR(val) { return '₹' + Math.round(val).toLocaleString('en-IN'); }
+    function fmtINRGram(val) { return '₹' + (val / 10).toLocaleString('en-IN', { maximumFractionDigits: 0 }) + ' / g'; }
+
+    // ─── Yahoo Finance API (via the shared Vercel proxy, same as other tabs) ─────
+    const YAHOO_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart/';
+    let proxyMode = 'unknown';
+
+    async function yahooFetch(url) {
+        if (proxyMode === 'vercel') return await fetchViaVercel(url);
+        if (proxyMode === 'allorigins') return await fetchViaAllorigins(url);
+        if (proxyMode === 'direct') { const r = await fetch(url); return r.json(); }
+
+        try { const d = await fetchViaVercel(url); proxyMode = 'vercel'; return d; } catch(e) {}
+        try { const r = await fetch(url); if (r.ok) { proxyMode = 'direct'; return r.json(); } } catch(e) {}
+        try { const d = await fetchViaAllorigins(url); proxyMode = 'allorigins'; return d; } catch(e) {}
+        throw new Error('All sources failed');
+    }
+
+    async function fetchViaVercel(url) {
+        const params = new URL(url).searchParams;
+        const ticker = url.match(/finance\/(?:chart|quoteSummary|timeseries)\/([A-Z0-9.=%^]+)/i)?.[1] || 'GC=F';
+        const apiUrl = '/api/yahoo?' + params.toString() + '&symbol=' + encodeURIComponent(ticker);
+        const resp = await fetch(apiUrl);
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        return resp.json();
+    }
+
+    async function fetchViaAllorigins(url) {
+        const resp = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(url));
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        return resp.json();
+    }
+
+    // ─── FX (USD/INR) ───────────────────────────────────────────────────────
+    async function fetchFX() {
+        try {
+            const json = await yahooFetch(`${YAHOO_BASE}INR=X?interval=5m&range=1d`);
+            const result = json.chart.result[0];
+            const meta = result.meta;
+            fxState.current = meta.regularMarketPrice;
+            fxState.prevClose = meta.previousClose || meta.chartPreviousClose;
+            const timestamps = result.timestamp || [];
+            const closes = result.indicators.quote[0].close;
+            fxState.series = [];
+            for (let i = 0; i < timestamps.length; i++) {
+                if (closes[i] != null) fxState.series.push({ t: timestamps[i], c: closes[i] });
+            }
+            const valEl = document.getElementById('fx-value');
+            if (valEl && fxState.current) valEl.textContent = fxState.current.toFixed(2);
+            const chgEl = document.getElementById('fx-chg');
+            if (chgEl && fxState.prevClose) {
+                const pct = (fxState.current - fxState.prevClose) / fxState.prevClose * 100;
+                chgEl.innerHTML = `<span class="${pct >= 0 ? 'up' : 'down'}">${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%</span>`;
+            }
+        } catch (e) {}
+    }
+
+    // Nearest FX sample at-or-before timestamp t (falls back to the live rate).
+    function fxAt(t) {
+        if (!fxState.series.length) return fxState.current || 1;
+        let best = fxState.series[0];
+        for (const p of fxState.series) { if (p.t <= t) best = p; else break; }
+        return best.c;
+    }
+
+    function sid(c) { return c.key; }
+
+    // ─── Fetch commodity (futures price converted to INR/10g) ───────────────
+    async function fetchCommodity(c) {
+        try {
+            const json = await yahooFetch(`${YAHOO_BASE}${c.futures}?interval=5m&range=1d`);
+            const result = json.chart.result[0];
+            const meta = result.meta;
+            const timestamps = result.timestamp || [];
+            const closes = result.indicators.quote[0].close;
+
+            const fxNow = fxState.current || 1;
+            const fxPrev = fxState.prevClose || fxNow;
+            const priceUsd = meta.regularMarketPrice;
+            const prevUsd = meta.previousClose || meta.chartPreviousClose;
+            if (priceUsd == null) return;
+
+            const current = toINR10g(priceUsd, fxNow);
+            const prevClose = prevUsd != null ? toINR10g(prevUsd, fxPrev) : null;
+
+            const st = state[c.key];
+            const _sid = sid(c);
+            const priceEl = document.getElementById(`price-${_sid}`);
+            if (priceEl) {
+                const prev = st.prevPrice;
+                if (prev !== null && current !== prev) {
+                    priceEl.classList.remove('price-flash-up', 'price-flash-down');
+                    void priceEl.offsetWidth;
+                    priceEl.classList.add(current > prev ? 'price-flash-up' : 'price-flash-down');
+                }
+                st.prevPrice = current;
+                st.price = current;
+                st.prevClose = prevClose;
+                priceEl.textContent = fmtINR(current);
+                const gramEl = document.getElementById(`gram-${_sid}`);
+                if (gramEl) gramEl.textContent = fmtINRGram(current);
+
+                const chgEl = document.getElementById(`chg-${_sid}`);
+                if (chgEl && prevClose) {
+                    const chg = current - prevClose;
+                    const pct = (chg / prevClose) * 100;
+                    const sign = chg >= 0 ? '+' : '';
+                    chgEl.innerHTML = `<span class="prev-ref">${fmtINR(prevClose)}</span> <span class="${chg >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
+                }
+            }
+
+            if (meta.regularMarketDayHigh != null && meta.regularMarketDayLow != null) {
+                st.dayHigh = toINR10g(meta.regularMarketDayHigh, fxNow);
+                st.dayLow = toINR10g(meta.regularMarketDayLow, fxNow);
+                const ohlEl = document.getElementById(`ohl-${_sid}`);
+                if (ohlEl) {
+                    ohlEl.innerHTML =
+                        `<span class="ohl-group"><span class="ohl-label">L</span><span class="ohl-value">${fmtINR(st.dayLow)}</span></span>` +
+                        `<span class="ohl-group"><span class="ohl-label">H</span><span class="ohl-value">${fmtINR(st.dayHigh)}</span></span>`;
+                }
+            }
+
+            const series = [];
+            for (let i = 0; i < timestamps.length; i++) {
+                if (closes[i] == null) continue;
+                series.push({ t: timestamps[i], c: toINR10g(closes[i], fxAt(timestamps[i])) });
+            }
+            if (series.length) {
+                st.chartSeries = series;
+                const tp = meta.currentTradingPeriod && meta.currentTradingPeriod.regular;
+                st.chartRange = tp ? { start: tp.start, end: tp.end } : { start: series[0].t, end: series[series.length - 1].t };
+                drawSentimentChart(c.key);
+            }
+        } catch (e) {}
+    }
+
+    async function fetch52w(c) {
+        try {
+            const json = await yahooFetch(`${YAHOO_BASE}${c.futures}?interval=1d&range=1y`);
+            const result = json.chart.result[0];
+            const closes = result.indicators.quote[0].close || [];
+            let hi = -Infinity, lo = Infinity;
+            closes.forEach(v => { if (v != null) { if (v > hi) hi = v; if (v < lo) lo = v; } });
+            if (hi === -Infinity) return;
+            const fxNow = fxState.current || 1;
+            const st = state[c.key];
+            st.high52 = toINR10g(hi, fxNow);
+            st.low52 = toINR10g(lo, fxNow);
+            const athEl = document.getElementById(`ath-${sid(c)}`);
+            if (athEl) athEl.innerHTML = `<span class="ath-label">52W:</span> <span class="ath-value">${fmtINR(st.low52)}</span> – <span class="ath-value">${fmtINR(st.high52)}</span>`;
+        } catch (e) {}
+    }
+
+    async function fetchAll() {
+        await fetchFX();
+        await Promise.allSettled(COMMODITIES.map(c => fetchCommodity(c)));
+    }
+
+    async function fetchAll52w() {
+        await Promise.allSettled(COMMODITIES.map(c => fetch52w(c)));
+    }
+
+    // ─── Sparkline chart (1-day only, with hover tooltip) ────────────────────
+    function drawSentimentChart(key, hoverX) {
+        const c = COMMODITIES.find(x => x.key === key);
+        if (!c) return;
+        const st = state[key];
+        const canvas = document.getElementById(`chart-${sid(c)}`);
+        if (!canvas) return;
+        const series = st.chartSeries, range = st.chartRange, prevClose = st.prevClose;
+        if (!series || series.length < 2 || !range) return;
+
+        const rectW = canvas.clientWidth, rectH = canvas.clientHeight;
+        if (!rectW || !rectH) return;
+        const dpr = window.devicePixelRatio || 1;
+        if (canvas.width !== rectW * dpr) canvas.width = rectW * dpr;
+        if (canvas.height !== rectH * dpr) canvas.height = rectH * dpr;
+        const ctx = canvas.getContext('2d');
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.clearRect(0, 0, rectW, rectH);
+
+        const padT = 8, padB = 6, padR = 4;
+        let minP = Infinity, maxP = -Infinity;
+        series.forEach(p => { if (p.c < minP) minP = p.c; if (p.c > maxP) maxP = p.c; });
+        if (prevClose != null) { if (prevClose < minP) minP = prevClose; if (prevClose > maxP) maxP = prevClose; }
+        if (minP === maxP) { minP -= 1; maxP += 1; }
+        const vPad = (maxP - minP) * 0.15;
+        minP -= vPad; maxP += vPad;
+
+        const lastClose = series[series.length - 1].c;
+        const negative = (prevClose != null) ? lastClose < prevClose : lastClose < series[0].c;
+        const color = negative ? '#ff1744' : '#00c853';
+
+        const tickValues = [maxP, (minP + maxP) / 2, minP];
+        const axisFont = '9px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        ctx.font = axisFont;
+        let labelW = 0;
+        const tickLabels = tickValues.map(v => {
+            const label = fmtINR(v);
+            labelW = Math.max(labelW, ctx.measureText(label).width);
+            return label;
+        });
+        const padL = Math.min(68, Math.max(30, labelW + 6));
+
+        const span = Math.max(1, range.end - range.start);
+        const plotW = rectW - padL - padR;
+        const xScale = t => padL + (Math.min(Math.max(t, range.start), range.end) - range.start) / span * plotW;
+        const yScale = v => padT + (1 - (v - minP) / (maxP - minP)) * (rectH - padT - padB);
+
+        ctx.strokeStyle = 'rgba(255,255,255,0.07)';
+        ctx.lineWidth = 1;
+        ctx.fillStyle = 'rgba(255,255,255,0.45)';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+        tickValues.forEach((val, i) => {
+            const gy = Math.round(yScale(val)) + 0.5;
+            ctx.beginPath();
+            ctx.moveTo(padL, gy);
+            ctx.lineTo(rectW, gy);
+            ctx.stroke();
+            const clampedY = Math.min(rectH - 7, Math.max(7, gy));
+            ctx.fillText(tickLabels[i], 2, clampedY);
+        });
+
+        if (prevClose != null) {
+            const pcy = Math.round(yScale(prevClose)) + 0.5;
+            ctx.save();
+            ctx.setLineDash([3, 3]);
+            ctx.strokeStyle = 'rgba(255,255,255,0.4)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(padL, pcy);
+            ctx.lineTo(rectW, pcy);
+            ctx.stroke();
+            ctx.restore();
+
+            ctx.save();
+            ctx.font = axisFont;
+            ctx.fillStyle = 'rgba(255,255,255,0.55)';
+            ctx.textAlign = 'right';
+            ctx.textBaseline = 'middle';
+            const labelY = (pcy - padT < 9) ? pcy + 9 : pcy - 7;
+            ctx.fillText(`Prev Close ${fmtINR(prevClose)}`, rectW - padR, labelY);
+            ctx.restore();
+        }
+
+        const points = series.map(p => ({ x: xScale(p.t), y: yScale(p.c) }));
+        const baseline = rectH - padB;
+
+        const gradient = ctx.createLinearGradient(0, padT, 0, baseline);
+        gradient.addColorStop(0, color + '4d');
+        gradient.addColorStop(1, color + '00');
+        ctx.beginPath();
+        ctx.moveTo(points[0].x, baseline);
+        points.forEach(pt => ctx.lineTo(pt.x, pt.y));
+        ctx.lineTo(points[points.length - 1].x, baseline);
+        ctx.closePath();
+        ctx.fillStyle = gradient;
+        ctx.fill();
+
+        ctx.beginPath();
+        points.forEach((pt, i) => { if (i === 0) ctx.moveTo(pt.x, pt.y); else ctx.lineTo(pt.x, pt.y); });
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 1.75;
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        ctx.stroke();
+
+        const last = points[points.length - 1];
+        const glowEl = document.getElementById(`glow-${sid(c)}`);
+        if (glowEl) {
+            if (hoverX == null) {
+                glowEl.style.left = (canvas.offsetLeft + last.x) + 'px';
+                glowEl.style.top = (canvas.offsetTop + last.y) + 'px';
+                glowEl.style.color = color;
+                glowEl.style.display = 'block';
+            } else {
+                glowEl.style.display = 'none';
+            }
+        }
+
+        const tooltipEl = document.getElementById(`tooltip-${sid(c)}`);
+        if (hoverX != null) {
+            let idx = 0, bestDist = Infinity;
+            for (let i = 0; i < points.length; i++) {
+                const d = Math.abs(points[i].x - hoverX);
+                if (d < bestDist) { bestDist = d; idx = i; }
+            }
+            const pt = points[idx], sp = series[idx];
+
+            ctx.save();
+            ctx.setLineDash([2, 2]);
+            ctx.strokeStyle = 'rgba(255,255,255,0.4)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(pt.x, padT);
+            ctx.lineTo(pt.x, rectH - padB);
+            ctx.stroke();
+            ctx.restore();
+
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(pt.x, pt.y, 3, 0, Math.PI * 2);
+            ctx.fillStyle = '#fff';
+            ctx.fill();
+            ctx.lineWidth = 1.5;
+            ctx.strokeStyle = color;
+            ctx.stroke();
+            ctx.restore();
+
+            if (tooltipEl) {
+                const timeStr = new Date(sp.t * 1000).toLocaleString('en-US', { timeZone: 'Asia/Kolkata', hour: 'numeric', minute: '2-digit', hour12: true });
+                let pctHtml = '';
+                if (prevClose != null) {
+                    const pct = ((sp.c - prevClose) / prevClose) * 100;
+                    const sign = pct >= 0 ? '+' : '';
+                    pctHtml = ` <span class="chart-tooltip-pct ${pct >= 0 ? 'up' : 'down'}">${sign}${pct.toFixed(2)}%</span>`;
+                }
+                tooltipEl.innerHTML = `<div class="chart-tooltip-price">${fmtINR(sp.c)}${pctHtml}</div><div class="chart-tooltip-time">${timeStr} IST</div>`;
+                tooltipEl.style.display = 'block';
+                const tw = tooltipEl.offsetWidth;
+                let tx = canvas.offsetLeft + pt.x + 8;
+                if (tx + tw > canvas.offsetLeft + rectW) tx = canvas.offsetLeft + pt.x - tw - 8;
+                if (tx < canvas.offsetLeft) tx = canvas.offsetLeft;
+                tooltipEl.style.left = tx + 'px';
+                tooltipEl.style.top = '2px';
+            }
+        } else if (tooltipEl) {
+            tooltipEl.style.display = 'none';
+        }
+    }
+
+    function attachChartHoverHandlers() {
+        COMMODITIES.forEach(c => {
+            const canvas = document.getElementById(`chart-${sid(c)}`);
+            if (!canvas || canvas._hoverAttached) return;
+            canvas._hoverAttached = true;
+            const move = (clientX) => {
+                const rect = canvas.getBoundingClientRect();
+                drawSentimentChart(c.key, clientX - rect.left);
+            };
+            canvas.addEventListener('mousemove', (e) => move(e.clientX));
+            canvas.addEventListener('mouseleave', () => drawSentimentChart(c.key, null));
+            canvas.addEventListener('touchstart', (e) => { if (e.touches[0]) move(e.touches[0].clientX); }, { passive: true });
+            canvas.addEventListener('touchmove', (e) => { if (e.touches[0]) move(e.touches[0].clientX); }, { passive: true });
+            canvas.addEventListener('touchend', () => drawSentimentChart(c.key, null));
+        });
+    }
+
+    // ─── Render ───────────────────────────────────────────────────────────
+    function renderCard(c) {
+        const id = sid(c);
+        return `
+            <div class="stock-card" id="card-${id}" style="--card-accent: ${c.color}">
+                <div class="stock-header">
+                    <img class="stock-logo" src="${c.logo}" alt="${c.name}">
+                    <span class="stock-name">${c.name}</span>
+                    <span class="stock-ticker">${c.futures}</span>
+                </div>
+                <div class="price-block">
+                    <div class="price-block-label">Price / 10 Grams (INR)</div>
+                    <div class="price-block-value" id="price-${id}">—</div>
+                    <div class="price-block-gram" id="gram-${id}"></div>
+                    <div class="price-block-change" id="chg-${id}"></div>
+                </div>
+                <div class="stock-ohl" id="ohl-${id}"></div>
+                <div class="stock-sentiment"><canvas class="sentiment-chart" id="chart-${id}"></canvas><div class="chart-glow-dot" id="glow-${id}"></div><div class="chart-tooltip" id="tooltip-${id}"></div></div>
+                <div class="stock-ath" id="ath-${id}"></div>
+            </div>
+        `;
+    }
+
+    function renderGrid() {
+        document.getElementById('stock-grid-commodities').innerHTML = COMMODITIES.map(renderCard).join('');
+    }
+
+    async function init() {
+        renderGrid();
+        attachChartHoverHandlers();
+        await fetchAll();
+        fetchAll52w();
+        setInterval(fetchAll, 30000);
+        setInterval(fetchAll52w, 15 * 60000);
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
