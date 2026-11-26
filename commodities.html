@@ -259,10 +259,11 @@
     <div class="stock-grid" id="stock-grid-commodities"></div>
 
     <p class="disclaimer">
-        Prices are computed as (COMEX futures price ÷ 31.1034768g per troy oz) × 10 × the live USD/INR rate — a close
-        proxy for bullion-grade (≈99.5%+ fine) metal, not an official jeweller/dealer quote. Real-world 24K gold and
-        999 silver rates in India run higher once import duty, GST and making charges are added. 52-week range uses
-        today's live USD/INR rate applied across the year, so it's approximate for older dates.
+        The 10g price = (COMEX futures ÷ 31.1034768g per troy oz) × 10 × live USD/INR rate × 1.092 (India's ~6%
+        customs duty + 3% GST on gold/silver imports). The /g sub-line is the raw international bullion price with no
+        India adjustment. Real-world jeweller rates can still run a bit higher — local bullion-dealer premiums and
+        making charges fluctuate daily and aren't included. 52-week range uses today's live USD/INR rate applied
+        across the year, so it's approximate for older dates.
     </p>
 
     <script>
@@ -277,9 +278,11 @@
     COMMODITIES.forEach(c => { state[c.key] = { price: null, prevPrice: null, prevClose: null, dayHigh: null, dayLow: null, high52: null, low52: null, chartSeries: null, chartRange: null }; });
     const fxState = { current: null, prevClose: null, series: [] };
 
+    const INDIA_DUTY_GST_MULTIPLIER = 1.092; // ~6% customs duty + 3% GST on gold/silver imports
     function toINR10g(usdPerOz, fx) { return (usdPerOz / TROY_OZ_TO_GRAM) * 10 * fx; }
+    function toINR10gIndia(usdPerOz, fx) { return toINR10g(usdPerOz, fx) * INDIA_DUTY_GST_MULTIPLIER; }
     function fmtINR(val) { return '₹' + Math.round(val).toLocaleString('en-IN'); }
-    function fmtINRGram(val) { return '₹' + (val / 10).toLocaleString('en-IN', { maximumFractionDigits: 0 }) + ' / g'; }
+    function fmtINRGram(rawPer10g) { return '₹' + (rawPer10g / 10).toLocaleString('en-IN', { maximumFractionDigits: 0 }) + ' / g (intl.)'; }
 
     // ─── Yahoo Finance API (via the shared Vercel proxy, same as other tabs) ─────
     const YAHOO_BASE = 'https://query1.finance.yahoo.com/v8/finance/chart/';
@@ -360,8 +363,9 @@
             const prevUsd = meta.previousClose || meta.chartPreviousClose;
             if (priceUsd == null) return;
 
-            const current = toINR10g(priceUsd, fxNow);
-            const prevClose = prevUsd != null ? toINR10g(prevUsd, fxPrev) : null;
+            const current = toINR10gIndia(priceUsd, fxNow);
+            const prevClose = prevUsd != null ? toINR10gIndia(prevUsd, fxPrev) : null;
+            const currentRaw = toINR10g(priceUsd, fxNow);
 
             const st = state[c.key];
             const _sid = sid(c);
@@ -378,7 +382,7 @@
                 st.prevClose = prevClose;
                 priceEl.textContent = fmtINR(current);
                 const gramEl = document.getElementById(`gram-${_sid}`);
-                if (gramEl) gramEl.textContent = fmtINRGram(current);
+                if (gramEl) gramEl.textContent = fmtINRGram(currentRaw);
 
                 const chgEl = document.getElementById(`chg-${_sid}`);
                 if (chgEl && prevClose) {
@@ -390,8 +394,8 @@
             }
 
             if (meta.regularMarketDayHigh != null && meta.regularMarketDayLow != null) {
-                st.dayHigh = toINR10g(meta.regularMarketDayHigh, fxNow);
-                st.dayLow = toINR10g(meta.regularMarketDayLow, fxNow);
+                st.dayHigh = toINR10gIndia(meta.regularMarketDayHigh, fxNow);
+                st.dayLow = toINR10gIndia(meta.regularMarketDayLow, fxNow);
                 const ohlEl = document.getElementById(`ohl-${_sid}`);
                 if (ohlEl) {
                     ohlEl.innerHTML =
@@ -403,7 +407,7 @@
             const series = [];
             for (let i = 0; i < timestamps.length; i++) {
                 if (closes[i] == null) continue;
-                series.push({ t: timestamps[i], c: toINR10g(closes[i], fxAt(timestamps[i])) });
+                series.push({ t: timestamps[i], c: toINR10gIndia(closes[i], fxAt(timestamps[i])) });
             }
             if (series.length) {
                 st.chartSeries = series;
@@ -424,8 +428,8 @@
             if (hi === -Infinity) return;
             const fxNow = fxState.current || 1;
             const st = state[c.key];
-            st.high52 = toINR10g(hi, fxNow);
-            st.low52 = toINR10g(lo, fxNow);
+            st.high52 = toINR10gIndia(hi, fxNow);
+            st.low52 = toINR10gIndia(lo, fxNow);
             const athEl = document.getElementById(`ath-${sid(c)}`);
             if (athEl) athEl.innerHTML = `<span class="ath-label">52W:</span> <span class="ath-value">${fmtINR(st.low52)}</span> – <span class="ath-value">${fmtINR(st.high52)}</span>`;
         } catch (e) {}
@@ -638,7 +642,7 @@
                     <span class="stock-ticker">${c.futures}</span>
                 </div>
                 <div class="price-block">
-                    <div class="price-block-label">Price / 10 Grams (INR)</div>
+                    <div class="price-block-label">Price / 10 Grams (INR, incl. Duty+GST)</div>
                     <div class="price-block-value" id="price-${id}">—</div>
                     <div class="price-block-gram" id="gram-${id}"></div>
                     <div class="price-block-change" id="chg-${id}"></div>
