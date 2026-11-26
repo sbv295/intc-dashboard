@@ -1,202 +1,202 @@
 {
   "INTC": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-26T03:53:01.595Z"
+    "text": "Deferring PC purchases for AI servers, Intel’s PC chip sales falling, slowdown expected through 2027.",
+    "source": "stock",
+    "articleIds": [
+      "c1db3eb5-3077-3d28-8326-db3561f30fce"
+    ],
+    "updatedAt": "2026-11-26T13:27:30.865Z"
   },
   "AMD": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:53:06.979Z"
+    "updatedAt": "2026-11-26T13:27:36.446Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:53:12.489Z"
+    "updatedAt": "2026-11-26T13:27:41.659Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:53:17.822Z"
+    "updatedAt": "2026-11-26T13:27:47.265Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:53:23.245Z"
+    "updatedAt": "2026-11-26T13:27:52.653Z"
   },
   "MU": {
-    "text": "Elevated CEO compensation and rapidly increasing security expenses raise governance concerns, pressuring investor sentiment today.",
-    "source": "stock",
-    "articleIds": [
-      "3bbbe1f5-d8ad-3ca7-8164-ccd560b6fb92"
-    ],
-    "updatedAt": "2026-11-26T03:53:29.301Z"
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-26T13:27:57.982Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:53:34.615Z"
+    "updatedAt": "2026-11-26T13:28:03.279Z"
   },
   "SPCX": {
-    "text": "FCC approval for a million AI data‑center satellites and renewed investor interest amid merger talks spurring optimism.",
-    "source": "stock",
-    "articleIds": [
-      "5dea6308-9ab8-37b2-8d6c-c1da0140e61d",
-      "1aa9d20c-7303-3783-90bc-65b50d50897d",
-      "e6446065-c201-3c43-befd-17070fb102bd",
-      "ff0678b7-e35b-3fd5-8810-b500233b294d"
-    ],
-    "updatedAt": "2026-11-26T03:53:40.454Z"
+    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "source": "macro-generic",
+    "articleIds": [],
+    "updatedAt": "2026-11-26T13:28:09.011Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:53:45.717Z"
+    "updatedAt": "2026-11-26T13:28:14.416Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:53:51.087Z"
+    "updatedAt": "2026-11-26T13:28:19.502Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:53:56.984Z"
+    "updatedAt": "2026-11-26T13:28:25.048Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:54:02.426Z"
+    "updatedAt": "2026-11-26T13:28:30.586Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:54:07.927Z"
+    "updatedAt": "2026-11-26T13:28:35.715Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:54:12.399Z"
+    "updatedAt": "2026-11-26T13:28:40.129Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:54:16.765Z"
+    "updatedAt": "2026-11-26T13:28:44.467Z"
   },
   "ACN": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-26T03:54:21.982Z"
+    "text": "ETF buying pressure of $17.9 million adding to Accenture holdings likely fuels today’s rally amid optimism.",
+    "source": "stock",
+    "articleIds": [
+      "4e125abe-c1cc-3e32-853b-0d6a2150ab75"
+    ],
+    "updatedAt": "2026-11-26T13:28:50.647Z"
   },
   "AAPL": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:54:27.212Z"
+    "updatedAt": "2026-11-26T13:28:55.925Z"
   },
   "MSFT": {
-    "text": "Reduced foreign‑worker sponsorships after layoffs and looming Trump‑proposed taxes on overseas data‑center investments.",
-    "source": "stock",
-    "articleIds": [
-      "910e899a-0cb4-315a-9020-4b4288b98db4",
-      "3835f8b2-d7d2-37c3-9ca4-13b3509f2a81"
-    ],
-    "updatedAt": "2026-11-26T03:54:32.771Z"
-  },
-  "GOOGL": {
-    "text": "Trump’s proposed tax on overseas data centers likely spooked investors, pressuring valuation outlook in the market.",
-    "source": "stock",
-    "articleIds": [
-      "3835f8b2-d7d2-37c3-9ca4-13b3509f2a81"
-    ],
-    "updatedAt": "2026-11-26T03:54:38.934Z"
-  },
-  "AMZN": {
-    "text": "Potential Trump‑imposed taxes on overseas data centers likely weighing on investor sentiment amid AI expansion.",
-    "source": "stock",
-    "articleIds": [
-      "3835f8b2-d7d2-37c3-9ca4-13b3509f2a81"
-    ],
-    "updatedAt": "2026-11-26T03:54:44.746Z"
-  },
-  "META": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
+    "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:54:49.730Z"
+    "updatedAt": "2026-11-26T13:29:00.935Z"
+  },
+  "GOOGL": {
+    "text": "Selling pressure from Tepper’s large trim and ETF net outflows, amid reports of reduced TPU order volumes.",
+    "source": "stock",
+    "articleIds": [
+      "c7f93abc-349b-377b-98ed-856236606512",
+      "4fa86a96-5766-3fd7-8785-36846fbd77de",
+      "0bd51293-5ddb-3a6c-8caf-be400572fc73"
+    ],
+    "updatedAt": "2026-11-26T13:29:06.540Z"
+  },
+  "AMZN": {
+    "text": "Doubling debt to fund aggressive AI expansion raises investor concerns over leverage and cash flow.",
+    "source": "stock",
+    "articleIds": [
+      "24ce4163-9907-30a7-9c41-201b99e9fa1a"
+    ],
+    "updatedAt": "2026-11-26T13:29:12.666Z"
+  },
+  "META": {
+    "text": "Partnering with Walmart on direct‑AI shopping integration, boosting growth prospects and market optimism.",
+    "source": "stock",
+    "articleIds": [
+      "4efb5a64-5a11-3599-835a-e668b40bcadf"
+    ],
+    "updatedAt": "2026-11-26T13:29:18.257Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:54:54.092Z"
+    "updatedAt": "2026-11-26T13:29:22.660Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:54:58.477Z"
+    "updatedAt": "2026-11-26T13:29:26.999Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:55:02.939Z"
+    "updatedAt": "2026-11-26T13:29:31.340Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:55:07.291Z"
+    "updatedAt": "2026-11-26T13:29:35.647Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:55:11.626Z"
+    "updatedAt": "2026-11-26T13:29:40.007Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:55:15.969Z"
+    "updatedAt": "2026-11-26T13:29:44.370Z"
   },
   "RELIANCE.NS": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
+    "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:55:20.291Z"
+    "updatedAt": "2026-11-26T13:29:48.718Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:55:24.639Z"
+    "updatedAt": "2026-11-26T13:29:53.048Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T03:55:29.719Z"
+    "updatedAt": "2026-11-26T13:29:58.070Z"
   },
   "INDEX_IN": {
-    "text": "No single dominant catalyst — a broad pullback across the broad Indian market.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-26T03:55:34.982Z"
+    "text": "Launch of ICICI Life’s guaranteed indexed pension product bolstering confidence in retirement‑linked financial solutions.",
+    "source": "macro",
+    "articleIds": [
+      "e8f8763d-b624-3f3c-8372-86aa40ddbd84"
+    ],
+    "updatedAt": "2026-11-26T13:30:03.656Z"
   }
 }
