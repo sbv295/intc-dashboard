@@ -1,95 +1,104 @@
 {
   "INTC": {
-    "text": "Deferring PC purchases for AI servers, Intel’s PC chip sales falling, slowdown expected through 2027.",
+    "text": "amid a class‑action lawsuit alleging misleading PC and AI disclosures, prompting an AI‑sector selloff.",
     "source": "stock",
     "articleIds": [
-      "c1db3eb5-3077-3d28-8326-db3561f30fce"
+      "e3cbc5b8-7479-3459-a0d6-560898551846"
     ],
-    "updatedAt": "2026-11-26T13:27:30.865Z"
+    "updatedAt": "2026-11-26T22:44:39.054Z"
   },
   "AMD": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-26T13:27:36.446Z"
+    "text": "Dilution worries after registering 337 million shares for resale, including 320 million AI‑linked penny warrants that vest.",
+    "source": "stock",
+    "articleIds": [
+      "a54b0c91-58fa-3bbc-b0aa-a8dd43e04d06"
+    ],
+    "updatedAt": "2026-11-26T22:44:44.972Z"
   },
   "NVDA": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:27:41.659Z"
+    "updatedAt": "2026-11-26T22:44:50.033Z"
   },
   "TSM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:27:47.265Z"
+    "updatedAt": "2026-11-26T22:44:55.455Z"
   },
   "SNDK": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:27:52.653Z"
+    "updatedAt": "2026-11-26T22:45:00.641Z"
   },
   "MU": {
-    "text": "No company-specific news — tracking a broader market/sector pullback.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-26T13:27:57.982Z"
+    "text": "Huawei competition and trimmed Chinese cloud orders prompting TrendForce’s 2027 NAND forecast cut, pressuring outlook.",
+    "source": "stock",
+    "articleIds": [
+      "e2aea28c-ba70-30ec-a310-db7a85401731",
+      "ac8b266b-f672-3c85-97e4-1ee1acd372fe"
+    ],
+    "updatedAt": "2026-11-26T22:45:06.608Z"
   },
   "AVGO": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:28:03.279Z"
+    "updatedAt": "2026-11-26T22:45:12.073Z"
   },
   "SPCX": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-26T13:28:09.011Z"
+    "text": "FCC approval of 1 million orbital data‑center satellites and fresh $30 M stake boost optimism for growth",
+    "source": "stock",
+    "articleIds": [
+      "2dc638a2-e6bd-387e-8ee5-c18ab14208a4",
+      "0fe209ad-e457-3620-a31c-40301ea1e657",
+      "29d56334-e63f-39ae-ab0b-c0df1379d076"
+    ],
+    "updatedAt": "2026-11-26T22:45:17.864Z"
   },
   "MRVL": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:28:14.416Z"
+    "updatedAt": "2026-11-26T22:45:23.180Z"
   },
   "ARM": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:28:19.502Z"
+    "updatedAt": "2026-11-26T22:45:28.351Z"
   },
   "QCOM": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:28:25.048Z"
+    "updatedAt": "2026-11-26T22:45:33.616Z"
   },
   "SKHY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:28:30.586Z"
+    "updatedAt": "2026-11-26T22:45:38.910Z"
   },
   "MBLY": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:28:35.715Z"
+    "updatedAt": "2026-11-26T22:45:44.779Z"
   },
   "005930.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:28:40.129Z"
+    "updatedAt": "2026-11-26T22:45:48.998Z"
   },
   "000660.KS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:28:44.467Z"
+    "updatedAt": "2026-11-26T22:45:53.260Z"
   },
   "ACN": {
     "text": "ETF buying pressure of $17.9 million adding to Accenture holdings likely fuels today’s rally amid optimism.",
@@ -100,96 +109,97 @@
     "updatedAt": "2026-11-26T13:28:50.647Z"
   },
   "AAPL": {
-    "text": "No company-specific news — tracking a broader market/sector rally.",
-    "source": "macro-generic",
-    "articleIds": [],
-    "updatedAt": "2026-11-26T13:28:55.925Z"
+    "text": "Investors favoring device‑based AI over cloud spending amid rising memory costs spurred the gain.",
+    "source": "stock",
+    "articleIds": [
+      "54c7458d-1299-3c9f-b6de-f75dec7d7b11",
+      "5b02de54-cf13-3cb2-a7da-0b4a5cc0b94f"
+    ],
+    "updatedAt": "2026-11-26T22:46:04.720Z"
   },
   "MSFT": {
+    "text": "Investors reacted to Nadella’s push for cheaper in‑house AI models, raising cost‑competition concerns.",
+    "source": "stock",
+    "articleIds": [
+      "9ac151eb-fd05-3564-87ee-b83d1b1f08bb"
+    ],
+    "updatedAt": "2026-11-26T22:46:10.412Z"
+  },
+  "GOOGL": {
+    "text": "record credit default swaps and $9.1 B cash burn from $51.4 B capex pressure amid",
+    "source": "stock",
+    "articleIds": [
+      "7802b6a7-836c-33de-b295-60721890b74b"
+    ],
+    "updatedAt": "2026-11-26T22:46:16.451Z"
+  },
+  "AMZN": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:29:00.935Z"
-  },
-  "GOOGL": {
-    "text": "Selling pressure from Tepper’s large trim and ETF net outflows, amid reports of reduced TPU order volumes.",
-    "source": "stock",
-    "articleIds": [
-      "c7f93abc-349b-377b-98ed-856236606512",
-      "4fa86a96-5766-3fd7-8785-36846fbd77de",
-      "0bd51293-5ddb-3a6c-8caf-be400572fc73"
-    ],
-    "updatedAt": "2026-11-26T13:29:06.540Z"
-  },
-  "AMZN": {
-    "text": "Doubling debt to fund aggressive AI expansion raises investor concerns over leverage and cash flow.",
-    "source": "stock",
-    "articleIds": [
-      "24ce4163-9907-30a7-9c41-201b99e9fa1a"
-    ],
-    "updatedAt": "2026-11-26T13:29:12.666Z"
+    "updatedAt": "2026-11-26T22:46:21.901Z"
   },
   "META": {
-    "text": "Partnering with Walmart on direct‑AI shopping integration, boosting growth prospects and market optimism.",
+    "text": "Surge of institutional buying, with 65 funds adding positions versus 34 selling, boosting confidence.",
     "source": "stock",
     "articleIds": [
-      "4efb5a64-5a11-3599-835a-e668b40bcadf"
+      "eaac61c3-28b9-3c64-8a41-a7ff4ab76b00"
     ],
-    "updatedAt": "2026-11-26T13:29:18.257Z"
+    "updatedAt": "2026-11-26T22:46:27.663Z"
   },
   "HDFCBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:29:22.660Z"
+    "updatedAt": "2026-11-26T22:46:31.902Z"
   },
   "ICICIBANK.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:29:26.999Z"
+    "updatedAt": "2026-11-26T22:46:36.175Z"
   },
   "DEEPAKFERT.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:29:31.340Z"
+    "updatedAt": "2026-11-26T22:46:40.381Z"
   },
   "AARTIIND.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:29:35.647Z"
+    "updatedAt": "2026-11-26T22:46:44.604Z"
   },
   "TCS.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:29:40.007Z"
+    "updatedAt": "2026-11-26T22:46:48.860Z"
   },
   "INFY.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:29:44.370Z"
+    "updatedAt": "2026-11-26T22:46:53.093Z"
   },
   "RELIANCE.NS": {
     "text": "No company-specific news — tracking a broader market/sector rally.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:29:48.718Z"
+    "updatedAt": "2026-11-26T22:46:57.329Z"
   },
   "ASIANPAINT.NS": {
     "text": "No company-specific news — tracking a broader market/sector pullback.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:29:53.048Z"
+    "updatedAt": "2026-11-26T22:47:01.550Z"
   },
   "INDEX": {
     "text": "No single dominant catalyst — a broad pullback across the broad US market.",
     "source": "macro-generic",
     "articleIds": [],
-    "updatedAt": "2026-11-26T13:29:58.070Z"
+    "updatedAt": "2026-11-26T22:47:06.708Z"
   },
   "INDEX_IN": {
     "text": "Launch of ICICI Life’s guaranteed indexed pension product bolstering confidence in retirement‑linked financial solutions.",
