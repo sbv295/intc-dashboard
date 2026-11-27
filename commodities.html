@@ -294,7 +294,7 @@
 
     <p class="disclaimer">
         Headline price = (COMEX futures ÷ 31.1034768g per troy oz) × unit grams (Gold: 10g, Silver: 1kg) × live
-        USD/INR rate × 1.092 (India's ~6% customs duty + 3% GST — applies to both metals). The /g sub-line is the raw
+        USD/INR rate × 1.1845 (India's 15% customs duty + 3% GST — applies to both metals). The /g sub-line is the raw
         international bullion price with no India adjustment. Real-world jeweller/bullion-dealer rates can still run
         higher — local premiums and making charges fluctuate daily (recently more so for silver) and aren't included.
         1D shows a rolling last-24-hours window, live 24/5 (COMEX + forex trade nearly around the clock on weekdays).
@@ -323,7 +323,7 @@
     COMMODITIES.forEach(c => { state[c.key] = { price: null, prevPrice: null, prevClose: null, dayHigh: null, dayLow: null, high52: null, low52: null, chartSeries: null, chartRange: null, chartPeriod: '1D', periodData: {}, hoverX: null }; });
     const fxState = { current: null, prevClose: null, series: [] };
 
-    const INDIA_DUTY_GST_MULTIPLIER = 1.092; // ~6% customs duty + 3% GST — applies to both gold and silver imports
+    const INDIA_DUTY_GST_MULTIPLIER = 1.1845; // 15% customs duty + 3% GST — applies to both gold and silver imports
     function toINRUnit(usdPerOz, fx, unitGrams) { return (usdPerOz / TROY_OZ_TO_GRAM) * unitGrams * fx; }
     function toINRUnitIndia(usdPerOz, fx, unitGrams) { return toINRUnit(usdPerOz, fx, unitGrams) * INDIA_DUTY_GST_MULTIPLIER; }
     function fmtINR(val) { return '₹' + Math.round(val).toLocaleString('en-IN'); }
